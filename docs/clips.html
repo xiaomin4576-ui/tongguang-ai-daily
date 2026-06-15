@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>同光 · 我的裁剪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fafaf7; --bg-2: #f0eee8; --bg-3: #e6e2d6;
+  --ink: #1a1714; --ink-2: #4a463e; --ink-3: #7a7466; --ink-4: #a09a8a;
+  --accent: #c2410c; --accent-2: #b8860b;
+  --line: #d4cebd; --line-2: #e8e3d2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14110d; --bg-2: #1c1813; --bg-3: #24201a;
+    --ink: #f5f1e8; --ink-2: #d4cdb8; --ink-3: #9b9381; --ink-4: #6a6457;
+    --line: #36312a; --line-2: #2a2620;
+    --accent: #fb923c;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg); color: var(--ink);
+  font-size: 14px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px 40px; }
+
+/* Topbar */
+.topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 0 14px; border-bottom: 1px solid var(--line);
+}
+.brand {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700; font-size: 1.4rem;
+  color: var(--ink); text-decoration: none;
+  display: flex; align-items: center; gap: 8px;
+}
+.brand .pin { width: 7px; height: 7px; background: var(--accent); border-radius: 50%; }
+.brand .sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem; color: var(--ink-3); font-weight: 400; margin-left: 4px;
+}
+.topbar-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tab-link {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+  padding: 5px 12px; border-radius: 6px; text-decoration: none;
+  color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2);
+  transition: all 0.15s;
+}
+.tab-link:hover { background: var(--bg-3); color: var(--ink); }
+.tab-link.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.page-title {
+  text-align: center; margin: 28px 0 6px;
+  font-family: 'Noto Serif SC', serif; font-weight: 700; font-size: 1.7rem;
+}
+.page-subtitle { text-align: center; font-size: 13px; color: var(--ink-3); }
+.page-meta {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--ink-4); margin: 6px 0 24px;
+}
+
+/* Layout */
+.layout { display: grid; grid-template-columns: 240px 1fr; gap: 24px; }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+}
+
+.sidebar {
+  position: sticky; top: 20px; align-self: start;
+  background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 10px; padding: 16px;
+  max-height: calc(100vh - 40px); overflow-y: auto;
+}
+.sidebar-section { margin-bottom: 20px; }
+.sidebar-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; text-transform: uppercase;
+  color: var(--ink-3); letter-spacing: 0.5px;
+  margin-bottom: 8px; padding-bottom: 4px;
+  border-bottom: 1px dashed var(--line);
+}
+.filter-item {
+  padding: 5px 10px; font-size: 12px;
+  border-radius: 5px; cursor: pointer;
+  transition: all 0.15s; color: var(--ink-2);
+  display: flex; justify-content: space-between; margin: 2px 0;
+}
+.filter-item:hover { background: var(--bg); color: var(--ink); }
+.filter-item.active { background: var(--ink); color: var(--bg); font-weight: 600; }
+.filter-item .count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; color: var(--ink-3);
+}
+.filter-item.active .count { color: var(--bg); opacity: 0.75; }
+
+/* Toolbar */
+.toolbar {
+  display: flex; gap: 10px; margin-bottom: 16px;
+  flex-wrap: wrap; align-items: center;
+}
+.toolbar input {
+  flex: 1; min-width: 200px;
+  padding: 8px 12px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--bg-2); color: var(--ink);
+  font-family: inherit; font-size: 13px;
+}
+.toolbar select, .toolbar button {
+  padding: 7px 12px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--bg-2); color: var(--ink);
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; cursor: pointer;
+}
+.toolbar button:hover { background: var(--bg-3); }
+.stats-pill {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  padding: 4px 10px; background: var(--bg-2); color: var(--ink-3);
+  border: 1px solid var(--line); border-radius: 6px;
+}
+
+/* Clip card */
+.clip {
+  background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; padding: 16px 20px; margin-bottom: 12px;
+  cursor: pointer; transition: all 0.15s;
+}
+.clip:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.clip-header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+}
+.clip-meta-left { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.clip-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--ink-3);
+}
+.clip-type-badge {
+  font-size: 10.5px; padding: 2px 8px;
+  border-radius: 3px; font-weight: 500;
+}
+.clip-type-badge.text { background: rgba(194,65,12,0.08); color: var(--accent); }
+.clip-type-badge.image { background: rgba(34,139,230,0.1); color: #1971c2; }
+@media (prefers-color-scheme: dark) {
+  .clip-type-badge.text { background: rgba(251,146,60,0.15); }
+  .clip-type-badge.image { background: rgba(102,168,237,0.15); color: #66a8ed; }
+}
+.clip-author {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--accent); font-weight: 500;
+}
+.clip-quote {
+  font-size: 13.5px; color: var(--ink-2); line-height: 1.7;
+  border-left: 3px solid var(--accent-2);
+  padding: 8px 14px; margin: 8px 0;
+  background: var(--bg-2); border-radius: 4px;
+  font-family: 'Noto Serif SC', serif;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clip-image-preview {
+  margin: 8px 0;
+  border-radius: 6px; overflow: hidden;
+  border: 1px solid var(--line);
+  max-height: 240px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-2);
+}
+.clip-image-preview img {
+  max-width: 100%; max-height: 240px;
+  object-fit: contain;
+}
+.clip-desc {
+  font-size: 12.5px; color: var(--ink-3); line-height: 1.6;
+  margin: 6px 0;
+}
+.clip-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px dashed var(--line);
+  flex-wrap: wrap; gap: 8px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--ink-3);
+}
+.clip-source-info { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.clip-file {
+  font-size: 10px; color: var(--ink-4);
+}
+.clip-link {
+  color: var(--accent); text-decoration: none;
+}
+.clip-link:hover { text-decoration: underline; }
+
+/* Empty / Loading */
+.loading, .empty { text-align: center; padding: 60px 20px; color: var(--ink-3); }
+.loading::after {
+  content: '...'; animation: dots 1.5s steps(4, end) infinite;
+}
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
+
+/* Modal */
+.modal {
+  position: fixed; inset: 0; background: var(--bg);
+  z-index: 9999; display: none; flex-direction: column;
+}
+.modal.show { display: flex; }
+.modal-toolbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; background: var(--bg-2);
+  border-bottom: 1px solid var(--line); flex-shrink: 0;
+}
+.modal-toolbar-left { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.modal-toolbar .brand-text {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700; font-size: 1rem;
+}
+.modal-toolbar .meta-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--ink-3);
+}
+.action-btn {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  padding: 5px 12px; border-radius: 5px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  cursor: pointer; text-decoration: none;
+}
+.action-btn:hover { background: var(--bg-3); }
+.action-btn.close { background: #b91c1c; color: white; border-color: #b91c1c; }
+.modal-toolbar-right { display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap; }
+
+.modal-content-wrap {
+  flex: 1; overflow-y: auto; padding: 40px 24px 80px;
+  display: flex; justify-content: center;
+}
+.modal-content {
+  max-width: 760px; width: 100%;
+  font-size: 16px; line-height: 1.8;
+}
+.modal-content h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.9rem; margin: 0 0 18px;
+  border-bottom: 2px solid var(--accent); padding-bottom: 10px;
+}
+.modal-content blockquote {
+  margin: 16px 0; padding: 14px 20px;
+  background: var(--bg-2); border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.05em;
+  color: var(--ink-2);
+}
+.modal-content img {
+  max-width: 100%; border-radius: 8px;
+  margin: 18px 0; border: 1px solid var(--line);
+}
+.modal-content p { margin: 0 0 14px; color: var(--ink-2); }
+.modal-content a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+.modal-content a:hover { border-bottom-style: solid; }
+.modal-info-card {
+  background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px 18px; margin: 18px 0;
+  font-size: 13px; line-height: 1.8;
+}
+.modal-info-card .row {
+  display: flex; gap: 10px; margin: 4px 0;
+}
+.modal-info-card .row .label {
+  flex-shrink: 0; width: 80px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: var(--ink-3); padding-top: 2px;
+}
+.modal-info-card .row .value { color: var(--ink); flex: 1; }
+.modal-info-card .row .value a { color: var(--accent); }
+
+footer {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--ink-4);
+  margin-top: 28px; padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+footer a { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 768px) {
+  .topbar { flex-direction: column; gap: 12px; }
+  .modal-content { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="topbar">
+  <a href="./index.html" class="brand">
+    <span class="pin"></span>
+    <span>同光</span>
+    <span class="sub">我的裁剪</span>
+  </a>
+  <div class="topbar-actions">
+    <a href="./index.html" class="tab-link">📚 阅读库</a>
+    <a href="./weekly.html" class="tab-link">📅 每周深度</a>
+    <a href="./map.html" class="tab-link">🗺️ AI 地图</a>
+    <a href="./stats.html" class="tab-link">📊 趋势</a>
+    <a href="./clips.html" class="tab-link active">📎 我的裁剪</a>
+  </div>
+</div>
+
+<h1 class="page-title">我的裁剪</h1>
+<div class="page-subtitle">来自网页 / 推特 / 各方裁剪 · 每天 8:00 自动汇总</div>
+<div class="page-meta" id="page-meta">加载中...</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">📂 类型</div>
+      <div id="filter-types"></div>
+    </div>
+    
+    <div class="sidebar-section">
+      <div class="sidebar-title">📅 日期 (按文件)</div>
+      <div id="filter-files"></div>
+    </div>
+    
+    <div class="sidebar-section">
+      <div class="sidebar-title">👤 作者 (Top 15)</div>
+      <div id="filter-authors"></div>
+    </div>
+  </aside>
+  
+  <main>
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="🔍 搜索内容 / 作者 / 来源...">
+      <select id="sort">
+        <option value="newest">最新</option>
+        <option value="oldest">最早</option>
+      </select>
+      <button onclick="resetFilters()">🔄 重置</button>
+      <span class="stats-pill" id="stat-shown">- / - 条</span>
+    </div>
+    
+    <div id="list">
+      <div class="loading">加载剪藏数据</div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  © 2026 同光 · 我的裁剪 · 每天 8:00 自动构建 ·
+  <a href="https://github.com/xiaomin4576-ui/my-clips" target="_blank">源 Repo</a> ·
+  <a href="./clip.html">📎 安装剪藏书签</a>
+</footer>
+
+</div>
+
+<!-- 全屏阅读 Modal -->
+<div class="modal" id="reader-modal">
+  <div class="modal-toolbar">
+    <div class="modal-toolbar-left">
+      <span class="brand-text" id="reader-title">阅读</span>
+      <span class="meta-text" id="reader-meta"></span>
+    </div>
+    <div class="modal-toolbar-right">
+      <a class="action-btn" id="reader-source-link" href="#" target="_blank" style="display:none">🔗 原文</a>
+      <a class="action-btn" id="reader-file-link" href="#" target="_blank">📁 文件</a>
+      <button class="action-btn close" onclick="closeReader()">✕ 关闭</button>
+    </div>
+  </div>
+  <div class="modal-content-wrap">
+    <div class="modal-content" id="reader-content"></div>
+  </div>
+</div>
+
+<script>
+let ALL_CLIPS = [];
+let META = {};
+let activeFilters = { file: '', type: '', author: '', search: '', sort: 'newest' };
+
+async function init() {
+  try {
+    const resp = await fetch('./data/clips-index.json?t=' + Date.now());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    
+    ALL_CLIPS = data.clips || [];
+    META = data;
+    
+    const dt = new Date(data.generated_at);
+    document.getElementById('page-meta').textContent = 
+      `${data.total_clips} 条裁剪 · ${data.total_with_images} 含图 · ${data.total_files} 个日期 · 更新于 ${dt.toLocaleString('zh-CN')}`;
+    
+    renderSidebar();
+    applyFilters();
+  } catch (e) {
+    document.getElementById('list').innerHTML = `
+      <div class="empty">
+        ❌ 加载失败: ${e.message}<br><br>
+        <small>请等待 GitHub Actions "构建剪藏索引" workflow 跑完(每天 8:00 自动跑)</small>
+      </div>
+    `;
+    document.getElementById('page-meta').textContent = '❌ 加载失败';
+  }
+}
+
+function renderSidebar() {
+  // 类型
+  const typesHtml = Object.entries(META.types || {}).map(([t, count]) => `
+    <div class="filter-item" data-type="type" data-value="${t}" onclick="toggleFilter('type', '${t}')">
+      <span>${t}</span>
+      <span class="count">${count}</span>
+    </div>
+  `).join('');
+  document.getElementById('filter-types').innerHTML = typesHtml;
+  
+  // 文件(按日期)
+  const filesHtml = (META.files || []).slice(0, 30).map(([file, count]) => `
+    <div class="filter-item" data-type="file" data-value="${file}" onclick="toggleFilter('file', '${file}')">
+      <span>${file.replace('.md', '')}</span>
+      <span class="count">${count}</span>
+    </div>
+  `).join('');
+  document.getElementById('filter-files').innerHTML = filesHtml || '<div style="font-size:11px;color:var(--ink-4);padding:6px 10px;">无</div>';
+  
+  // 作者
+  const authorsHtml = (META.top_authors || []).map(([a, count]) => `
+    <div class="filter-item" data-type="author" data-value="${a}" onclick="toggleFilter('author', '${a}')">
+      <span>${a}</span>
+      <span class="count">${count}</span>
+    </div>
+  `).join('');
+  document.getElementById('filter-authors').innerHTML = authorsHtml || '<div style="font-size:11px;color:var(--ink-4);padding:6px 10px;">无</div>';
+}
+
+function toggleFilter(type, value) {
+  if (activeFilters[type] === value) {
+    activeFilters[type] = '';
+  } else {
+    activeFilters[type] = value;
+  }
+  document.querySelectorAll('.filter-item').forEach(el => {
+    el.classList.toggle('active', 
+      el.dataset.type === type && el.dataset.value === value && activeFilters[type] === value
+    );
+  });
+  applyFilters();
+}
+
+function resetFilters() {
+  activeFilters = { file: '', type: '', author: '', search: '', sort: 'newest' };
+  document.getElementById('search').value = '';
+  document.getElementById('sort').value = 'newest';
+  document.querySelectorAll('.filter-item').forEach(el => el.classList.remove('active'));
+  applyFilters();
+}
+
+function applyFilters() {
+  activeFilters.search = document.getElementById('search').value.toLowerCase().trim();
+  activeFilters.sort = document.getElementById('sort').value;
+  
+  let filtered = ALL_CLIPS.filter(c => {
+    if (activeFilters.file && c.file !== activeFilters.file) return false;
+    if (activeFilters.type && c.type !== activeFilters.type) return false;
+    if (activeFilters.author && c.author !== activeFilters.author) return false;
+    if (activeFilters.search) {
+      const q = activeFilters.search;
+      if (!(
+        (c.quote || '').toLowerCase().includes(q) ||
+        (c.author_desc || '').toLowerCase().includes(q) ||
+        (c.author || '').toLowerCase().includes(q) ||
+        (c.title || '').toLowerCase().includes(q) ||
+        (c.source_page || '').toLowerCase().includes(q)
+      )) return false;
+    }
+    return true;
+  });
+  
+  if (activeFilters.sort === 'oldest') filtered.reverse();
+  
+  document.getElementById('stat-shown').textContent = `${filtered.length} / ${ALL_CLIPS.length} 条`;
+  
+  if (filtered.length === 0) {
+    document.getElementById('list').innerHTML = '<div class="empty">📭 没有匹配的裁剪</div>';
+    return;
+  }
+  
+  document.getElementById('list').innerHTML = filtered.map(c => renderClipCard(c)).join('');
+}
+
+function renderClipCard(c) {
+  const typeBadgeClass = c.type === '图片' ? 'image' : 'text';
+  const imageHtml = c.has_image && c.images.length > 0
+    ? `<div class="clip-image-preview"><img src="${escapeHtml(c.images[0].url)}" alt="${escapeHtml(c.images[0].alt || '')}" loading="lazy" onerror="this.style.display='none'"></div>`
+    : '';
+  
+  const quoteHtml = c.quote 
+    ? `<div class="clip-quote">${escapeHtml(c.quote)}</div>`
+    : '';
+  
+  const descHtml = (!c.quote && c.author_desc)
+    ? `<div class="clip-desc">${escapeHtml(c.author_desc)}</div>`
+    : '';
+  
+  return `
+    <div class="clip" onclick="openReader('${escapeAttr(c.id)}')">
+      <div class="clip-header">
+        <div class="clip-meta-left">
+          <span class="clip-time">${c.date} ${c.time}</span>
+          ${c.type ? `<span class="clip-type-badge ${typeBadgeClass}">${escapeHtml(c.type)}</span>` : ''}
+          ${c.author ? `<span class="clip-author">${escapeHtml(c.author)}</span>` : ''}
+        </div>
+      </div>
+      ${imageHtml}
+      ${quoteHtml}
+      ${descHtml}
+      <div class="clip-footer">
+        <div class="clip-source-info">
+          ${c.source_page ? `<a href="${escapeHtml(c.source_url)}" target="_blank" class="clip-link" onclick="event.stopPropagation()">📄 ${escapeHtml(c.source_page)}</a>` : ''}
+          <span class="clip-file">${c.file}</span>
+        </div>
+        <div>${c.source}</div>
+      </div>
+    </div>
+  `;
+}
+
+function openReader(id) {
+  const c = ALL_CLIPS.find(x => x.id === id);
+  if (!c) return;
+  
+  document.getElementById('reader-title').textContent = c.title;
+  document.getElementById('reader-meta').textContent = 
+    [c.date + ' ' + c.time, c.type, c.author, c.source_page].filter(Boolean).join(' · ');
+  
+  const sourceLink = document.getElementById('reader-source-link');
+  if (c.source_url) {
+    sourceLink.href = c.source_url;
+    sourceLink.style.display = 'inline-block';
+  } else {
+    sourceLink.style.display = 'none';
+  }
+  
+  document.getElementById('reader-file-link').href =
+    `https://github.com/xiaomin4576-ui/my-clips/blob/main/clips/${c.file}`;
+  
+  // 渲染完整内容
+  let html = '';
+  
+  // 标题
+  html += `<h1>${escapeHtml(c.title)}</h1>`;
+  
+  // 元信息卡片
+  html += `
+    <div class="modal-info-card">
+      <div class="row"><span class="label">时间</span><span class="value">${c.date} ${c.time}</span></div>
+      <div class="row"><span class="label">类型</span><span class="value">${escapeHtml(c.type)}</span></div>
+      ${c.author ? `<div class="row"><span class="label">作者</span><span class="value">${escapeHtml(c.author)}</span></div>` : ''}
+      ${c.source ? `<div class="row"><span class="label">平台</span><span class="value">${escapeHtml(c.source)}</span></div>` : ''}
+      ${c.source_page ? `<div class="row"><span class="label">所在页面</span><span class="value"><a href="${escapeHtml(c.source_url)}" target="_blank">${escapeHtml(c.source_page)}</a></span></div>` : ''}
+      <div class="row"><span class="label">归属文件</span><span class="value">${c.file}</span></div>
+    </div>
+  `;
+  
+  // 引用块
+  if (c.quote) {
+    html += `<blockquote>${escapeHtml(c.quote).replace(/\n/g, '<br>')}</blockquote>`;
+  }
+  
+  // 图片(可能多张)
+  if (c.has_image) {
+    c.images.forEach(img => {
+      html += `<img src="${escapeHtml(img.url)}" alt="${escapeHtml(img.alt || '')}" loading="lazy">`;
+    });
+  }
+  
+  // 作者描述(如果跟 quote 不重复)
+  if (c.author_desc && c.author_desc !== c.quote) {
+    html += `<p style="margin-top:18px;color:var(--ink-3);font-size:13.5px;line-height:1.8;border-top:1px dashed var(--line);padding-top:14px;">${escapeHtml(c.author_desc)}</p>`;
+  }
+  
+  document.getElementById('reader-content').innerHTML = html;
+  document.getElementById('reader-modal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    const wrap = document.querySelector('.modal-content-wrap');
+    if (wrap) wrap.scrollTop = 0;
+  }, 50);
+}
+
+function closeReader() {
+  document.getElementById('reader-modal').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+}
+function escapeAttr(s) { return String(s).replace(/'/g, "\\'"); }
+
+document.getElementById('search').addEventListener('input', applyFilters);
+document.getElementById('sort').addEventListener('change', applyFilters);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeReader(); });
+
+init();
+</script>
+
+</body>
+</html>

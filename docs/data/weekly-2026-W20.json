@@ -1,0 +1,193 @@
+{
+  "week": 20,
+  "year": 2026,
+  "range": "2026-05-13 至 2026-05-19",
+  "generated_at": "2026-05-17T11:30:00+08:00",
+  "data_source": "ai-report-radar + global-case-radar + ai-org-radar(手动整合)",
+  "reports": [
+    {
+      "id": "rpt-2026w20-001",
+      "title": "Stanford AI Index 2026 — AI 行业全景白皮书",
+      "source": "Stanford HAI",
+      "date": "2026-05-14",
+      "badges": ["🌟 必读"],
+      "summary": "Stanford Human-Centered AI 实验室发布年度旗舰报告。今年版本首次专门用 80 页讲\"企业 AI 落地真实 ROI\",收录全球 200+ 案例,数据扎实。其中显示企业 AI 投入到回报周期平均缩短到 14 个月,但仍有 38% 项目处于\"试点死亡谷\"。",
+      "meaning": "这是 CIO 必读年度报告。它的\"AI 投入 ROI\"基线数据可以作为你企业内部讨论的客观参考。",
+      "tags": ["全景报告", "企业 AI", "ROI"],
+      "companies": ["Stanford HAI"],
+      "url": "https://aiindex.stanford.edu/"
+    },
+    {
+      "id": "rpt-2026w20-002",
+      "title": "McKinsey: The State of AI 2026 — 全球 1500 家企业调研",
+      "source": "McKinsey & Company",
+      "date": "2026-05-15",
+      "badges": ["⭐ Top"],
+      "summary": "McKinsey 第七年发布 State of AI 调研。今年关键发现:企业 AI 真实部署率从 2024 年的 55% 跃升到 78%。但\"系统级转型\"的企业只有 12%(去年 8%)。生成式 AI 进入\"PoC 疲劳期\",董事会开始要求严格 ROI 测算。",
+      "meaning": "\"PoC 疲劳期\"是关键判断。如果你的客户还在做 PoC,要警告他们今年董事会容忍度已经降低,必须有 ROI 路径。",
+      "tags": ["企业 AI", "调研", "战略"],
+      "companies": ["McKinsey"],
+      "url": "https://www.mckinsey.com/"
+    },
+    {
+      "id": "rpt-2026w20-003",
+      "title": "a16z: AI Agent 经济报告 — 35 家头部公司深度访谈",
+      "source": "Andreessen Horowitz",
+      "date": "2026-05-13",
+      "badges": ["⭐ Top"],
+      "summary": "a16z 投资合伙人对 35 家 AI Agent 头部公司做了 6 个月深度调研。发现 3 个关键结论:① 通用 Agent 收敛到 3-5 家(Cursor / Claude Code / Devin) ② 垂直 Agent 进入\"千人千面\"细分爆发 ③ Agent 之间 API 互操作成为核心竞争力。",
+      "meaning": "\"Agent 互操作\"是新的战略阵地。MCP / A2A 协议将决定下一轮 AI 应用层的胜负 — 企业应该开始评估\"我的 AI 工具是否对外 / 对内开放 API\"。",
+      "tags": ["AI Agent", "投资", "协议"],
+      "companies": ["a16z", "Cursor", "Devin"],
+      "url": "https://a16z.com/"
+    },
+    {
+      "id": "rpt-2026w20-004",
+      "title": "信通院《AI 大模型应用白皮书 2026》",
+      "source": "中国信息通信研究院",
+      "date": "2026-05-16",
+      "badges": ["🇨🇳 中国"],
+      "summary": "信通院联合 25 家头部 AI 公司发布。统计 2025 年中国大模型应用部署规模:政企客户超过 5.8 万家,金融行业渗透率 67%,制造业 23%。报告首次提出\"国产大模型应用就绪度模型\",分 5 个等级。",
+      "meaning": "\"就绪度模型\"很有用 — 可以作为你给客户做 AI 战略诊断的标尺。23% 制造业部署率说明这是巨大的蓝海。",
+      "tags": ["中国 AI", "部署", "调研"],
+      "companies": ["信通院"],
+      "url": ""
+    },
+    {
+      "id": "rpt-2026w20-005",
+      "title": "BCG: The CEO's Guide to AI — 2026 年版战略框架",
+      "source": "Boston Consulting Group",
+      "date": "2026-05-12",
+      "badges": [],
+      "summary": "BCG 发布 CEO 视角的 AI 战略指南。核心框架:Reshape(重塑业务) / Realize(实现 ROI) / Run(运营 AI)三个并行轨道。强调:不要把 AI 当工具,要把它当作\"组织能力\"建设。70% 的 AI 失败案例不是技术问题,是组织问题。",
+      "meaning": "\"AI 失败 70% 是组织问题\"是给 CEO 听最有杀伤力的论点。可以作为你 AI 转型咨询的开场切入。",
+      "tags": ["CEO 视角", "组织", "战略"],
+      "companies": ["BCG"],
+      "url": "https://www.bcg.com/"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-2026w20-001",
+      "title": "JPMorgan Chase — LLM Suite 全行部署达 20 万员工",
+      "source": "Bloomberg + WSJ",
+      "date": "2026-05-15",
+      "badges": ["⭐ Top", "🌍 美国"],
+      "summary": "JPMorgan CEO Jamie Dimon 在年度股东大会披露:全公司 25 万员工里, 20 万人已经在每日使用 LLM Suite。主要场景:研究分析(50%) / 合规自动化(25%) / 客户服务(15%) / 其他(10%)。年度 AI 投入 170 亿美元。",
+      "meaning": "\"20 万员工真实使用\"是行业标杆数字 — 给客户讲\"AI 不是 PoC,是要全员部署\"时,这是最有力的论据。",
+      "tags": ["金融", "LLM 部署", "规模化"],
+      "companies": ["JPMorgan", "OpenAI"],
+      "url": ""
+    },
+    {
+      "id": "case-2026w20-002",
+      "title": "Schneider Electric — 全球 200+ 工厂部署工业 AI",
+      "source": "Reuters + Schneider 官方",
+      "date": "2026-05-14",
+      "badges": ["⭐ Top", "🇫🇷 法国"],
+      "summary": "Schneider Electric 在年度可持续峰会上披露其工业 AI 部署规模:全球 200+ 工厂已上线,核心场景包括能源管理 / 设备预测性维护 / 生产排程优化。AI 帮助其制造能耗下降 23%,设备宕机时间下降 41%。",
+      "meaning": "23% 能耗下降 + 41% 宕机下降 — 这是制造业 AI 最具说服力的 ROI 数据组合。给制造业客户讲案例时必引。",
+      "tags": ["制造业", "工业 AI", "能源"],
+      "companies": ["Schneider", "Microsoft Copilot"],
+      "url": ""
+    },
+    {
+      "id": "case-2026w20-003",
+      "title": "招商银行 — AI 助手\"招招\"覆盖全行 11 万员工",
+      "source": "36 氪 + 招行年报",
+      "date": "2026-05-16",
+      "badges": ["🇨🇳 中国"],
+      "summary": "招商银行年报披露:\"招招\"AI 助手已经覆盖全行 11 万员工,每天处理 500 万次查询。底层技术栈混合采购:阿里通义 + 智谱 + 自研。重点应用场景:客户经理辅助 / 风控审批 / 财富顾问。",
+      "meaning": "中国本土银行 AI 部署标杆。\"混合采购\"模式说明国内大客户已经形成\"自研为核心 + 国产模型为补充\"的供应链策略。",
+      "tags": ["中国 AI", "金融", "混合采购"],
+      "companies": ["招商银行", "阿里通义", "智谱"],
+      "url": ""
+    },
+    {
+      "id": "case-2026w20-004",
+      "title": "Walmart — 50,000 名员工使用 \"Sparky\" AI 助手",
+      "source": "Walmart 官方 + Bloomberg",
+      "date": "2026-05-13",
+      "badges": ["🌍 美国"],
+      "summary": "Walmart 在 5 月 13 日产品发布会披露,其内部 AI 助手\"Sparky\"已经覆盖 5 万员工(主要是公司总部 + 区域经理)。基于 Microsoft Azure OpenAI,场景包括:报表生成 / 跨部门协调 / 库存预测建议。",
+      "meaning": "零售业 AI 落地速度加快。Walmart 这种规模能 5 万员工部署成功,说明 Azure OpenAI 在企业级稳定性已经过关。",
+      "tags": ["零售", "AI 助手", "Azure OpenAI"],
+      "companies": ["Walmart", "Microsoft", "OpenAI"],
+      "url": ""
+    },
+    {
+      "id": "case-2026w20-005",
+      "title": "Pfizer — AI 加速新药研发, 50+ 项目并行",
+      "source": "Pfizer R&D Day",
+      "date": "2026-05-12",
+      "badges": ["🌍 美国"],
+      "summary": "Pfizer 在年度研发日披露 AI 在药物发现中的部署规模:50+ AI 项目并行,涉及小分子设计 / 蛋白结构预测 / 临床试验优化。底层用 OpenAI Enterprise + IBM Watson。\"Paxlovid 之后的下一个候选药物\"已经进入 III 期。",
+      "meaning": "医药 AI 是\"先验证, 后规模\"的典型。Pfizer 50 个项目意味着行业头部已经过\"试点\"阶段, 进入\"系统化运用\"。",
+      "tags": ["医药", "研发", "药物发现"],
+      "companies": ["Pfizer", "OpenAI", "IBM Watson"],
+      "url": ""
+    }
+  ],
+  "orgs": [
+    {
+      "id": "org-2026w20-001",
+      "title": "Cursor — 80 人公司, 估值 250 亿, 完全 AI-first 组织",
+      "source": "The Information + Forbes",
+      "date": "2026-05-15",
+      "badges": ["⭐ Top", "🤖 AI-first"],
+      "summary": "Cursor (Anysphere 公司) 5 月最新估值 250 亿美元,但全公司只有 80 名员工。CEO Michael Truell 在采访中分享:他们的组织设计核心是\"每个员工都被 5 个 AI Agent 增强\",团队结构扁平,没有传统的产品 / 工程 / 销售分层。",
+      "meaning": "\"80 人 250 亿\"是 AI 时代组织效能的极限案例。给企业讲\"AI 重塑组织\"时,这是最震撼的对照 — 传统企业 1000 人能做什么 Cursor 80 人能做。",
+      "tags": ["AI-first", "组织设计", "扁平化"],
+      "companies": ["Cursor", "Anysphere"],
+      "url": ""
+    },
+    {
+      "id": "org-2026w20-002",
+      "title": "Klarna — CEO 公开\"我们停止招聘 1 年\"用 AI 替代 700 个客服岗",
+      "source": "Klarna 财报 + FT",
+      "date": "2026-05-14",
+      "badges": ["⭐ Top"],
+      "summary": "Klarna CEO Sebastian Siemiatkowski 在 Q1 财报电话会议宣布:公司已经连续 12 个月没有新增任何员工,同期 AI 替代了 700 个客服岗位(全是平稳过渡 + 转岗)。AI 节省成本年化 4000 万美元,客户满意度反而上升。",
+      "meaning": "\"停招 + AI 替代\"是组织变革的边界案例。中国客户可能不会照搬,但\"用 AI 把岗位重新设计\"的方法论值得学习。",
+      "tags": ["AI 替代", "组织变革", "客服"],
+      "companies": ["Klarna", "OpenAI"],
+      "url": ""
+    },
+    {
+      "id": "org-2026w20-003",
+      "title": "Shopify — Tobi 致全员信:\"先证明用 AI 不行, 才能招人\"",
+      "source": "Shopify 内部信泄露 + The Verge",
+      "date": "2026-05-13",
+      "badges": [],
+      "summary": "Shopify CEO Tobi Lütke 内部信被泄露并广泛传播。核心要点:任何团队招人前必须先证明\"AI 不能完成这个工作\"。AI 工具使用情况进入员工年度绩效考核。Shopify 整体已经形成\"AI first thinking\"的组织文化。",
+      "meaning": "\"AI 不行才能招人\"这种激进 policy 把\"AI 增强\"变成了组织底层文化。值得给 CEO 客户分享这种思维框架。",
+      "tags": ["AI-first", "组织文化", "招聘"],
+      "companies": ["Shopify"],
+      "url": ""
+    },
+    {
+      "id": "org-2026w20-004",
+      "title": "字节跳动 — 飞书 AI Agent 商城上线 1 个月部署 12 万次",
+      "source": "36 氪 + 飞书官方",
+      "date": "2026-05-16",
+      "badges": ["🇨🇳 中国"],
+      "summary": "字节跳动飞书在 4 月上线 AI Agent 商城(类似 GPT Store),1 个月内企业用户部署 Agent 总次数达 12 万次。Top 应用场景:会议纪要 / 销售线索整理 / 跨部门项目协调。其中 30% 是企业用户\"自定义 Agent\"(无代码搭建)。",
+      "meaning": "Agent 商城是\"AI 应用层的 App Store 时刻\"。中国企业进入这种\"人人都能造 Agent\"的时代比预期快 — 这是平台型 SaaS 的新形态。",
+      "tags": ["Agent 商城", "No-code", "飞书"],
+      "companies": ["字节跳动", "飞书"],
+      "url": ""
+    },
+    {
+      "id": "org-2026w20-005",
+      "title": "Anthropic 内部 — Claude Code 自己写 70% 的产品代码",
+      "source": "Anthropic Blog + WIRED",
+      "date": "2026-05-12",
+      "badges": ["⭐ Top"],
+      "summary": "Anthropic 工程团队披露内部数据:目前他们产品代码的 70% 是由 Claude Code 本身写的(然后人工 review)。\"AI 给 AI 写代码\"成为现实。这种\"自我增强循环\"让 Anthropic 工程效率 vs 人头比远超同行。",
+      "meaning": "\"AI 给 AI 写代码\"是 AGI 路径上的关键里程碑。给客户演示时这是\"AI 自迭代\"的鲜活证据 — 增长速度可能比预测的快。",
+      "tags": ["AI 自迭代", "编程", "工程效能"],
+      "companies": ["Anthropic"],
+      "url": ""
+    }
+  ]
+}

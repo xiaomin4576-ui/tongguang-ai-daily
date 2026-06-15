@@ -1,0 +1,3363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>同光 AI 早报</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═════════════════════════════════════════════════════════════
+   设计语言: 「阅读库」(Reading Library) 风
+   - 灵感: Readwise + Are.na + Notion 数据库
+   - 信息密度: 高(单屏可见多卡片)
+   - 主色: 米白纸 + 墨黑 + 信号色编码
+   ═════════════════════════════════════════════════════════════ */
+:root {
+  --bg:          #fafaf7;
+  --bg-2:        #f0eee8;
+  --bg-3:        #e6e2d6;
+  --ink:         #1a1714;
+  --ink-2:       #4a463e;
+  --ink-3:       #7a7466;
+  --ink-4:       #a09a8a;
+  --accent:      #c2410c;
+  --accent-2:    #b8860b;
+  --line:        #d4cebd;
+  --line-2:      #e8e3d2;
+
+  --sig-strong:  #2d5016;
+  --sig-medium:  #7a5e1c;
+  --sig-weak:    #8b3a3a;
+
+  --dim-product:    #0369a1;
+  --dim-case:       #16a34a;
+  --dim-money:      #ca8a04;
+  --dim-org:        #9333ea;
+  --dim-infra:      #475569;
+  --dim-research:   #0891b2;
+  --dim-regulation: #b91c1c;
+  --dim-china:      #be123c;
+  --dim-tools:      #047857;
+  --dim-tier0:      #7c2d12;
+  --dim-top5:       #c2410c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:    #14110d;
+    --bg-2:  #1c1813;
+    --bg-3:  #24201a;
+    --ink:   #f5f1e8;
+    --ink-2: #d4cdb8;
+    --ink-3: #9b9381;
+    --ink-4: #6a6457;
+    --line:   #36312a;
+    --line-2: #2a2620;
+    --accent:  #fb923c;
+    --accent-2: #fbbf24;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 15px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ═════ 顶栏 ═════ */
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.topbar {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr auto;
+  align-items: center;
+  padding: 14px 32px;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.brand .logo {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.brand .logo::before {
+  content: "◆ ";
+  color: var(--accent);
+  font-size: 0.6em;
+  vertical-align: 0.5em;
+}
+
+.brand .tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.searchbox {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+}
+
+.searchbox input {
+  width: 100%;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 14px 9px 38px;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.searchbox input::placeholder { color: var(--ink-4); }
+.searchbox input:focus {
+  border-color: var(--accent);
+  background: var(--bg);
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.1);
+}
+
+.searchbox::before {
+  content: "⌕";
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--ink-3);
+  font-size: 1.1rem;
+}
+
+.searchbox .kbd {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-4);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+.utility {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+}
+
+.utility .meta-pill {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* ═════ 主体 ═════ */
+.main {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 1100px) {
+  .topbar { grid-template-columns: 1fr; padding: 12px 16px; gap: 12px; }
+  .main { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .sidebar.mobile-open { display: block; }
+}
+
+/* ═════ 左侧:标签筛选器 ═════ */
+.sidebar {
+  border-right: 1px solid var(--line);
+  padding: 24px 20px;
+  position: sticky;
+  top: 64px;
+  align-self: start;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.sidebar h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-3);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+.sidebar h4:first-child { margin-top: 0; }
+
+.filter-list {
+  list-style: none;
+  font-size: 0.83rem;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+  margin: 1px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  color: var(--ink-2);
+}
+
+.filter-item:hover { background: var(--bg-2); color: var(--ink); }
+
+.filter-item.active {
+  background: var(--ink);
+  color: var(--bg);
+}
+.filter-item.active .filter-count { color: var(--bg); opacity: 0.7; }
+
+.filter-item .filter-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-item .dim-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.filter-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.clear-filters {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.clear-filters:hover { background: var(--bg-2); color: var(--ink); }
+
+/* ═════ 右侧:文章列表 ═════ */
+.content {
+  padding: 24px 32px;
+  min-width: 0;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.content-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.content-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  letter-spacing: 0.05em;
+}
+
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.view-tab {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  color: var(--ink-2);
+  transition: all 0.1s ease;
+}
+
+.view-tab:hover { background: var(--bg-3); }
+.view-tab.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+/* ═════ 文章卡片 ═════ */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--line-2);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.article-card {
+  background: var(--bg);
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.article-card:hover { background: var(--bg-2); }
+
+.article-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+
+.article-card-header .date {
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.article-card-header .dim-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 7px;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+}
+
+.article-card-header .dim-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.article-card-header .top5-flag,
+.article-card-header .tier0-flag {
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  color: white;
+  font-size: 0.6rem;
+}
+.article-card-header .tier0-flag { background: var(--dim-tier0); }
+
+.article-card-header .quality {
+  margin-left: auto;
+  color: var(--ink-4);
+}
+
+.article-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 2px 0 4px;
+}
+
+.article-summary {
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  line-height: 1.6;
+  margin-bottom: 6px;
+  max-height: 6.4em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.article-card.expanded .article-summary {
+  max-height: none;
+  display: block;
+  -webkit-line-clamp: unset;
+}
+
+.article-meaning {
+  background: var(--bg-2);
+  border-left: 3px solid var(--accent-2);
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  margin-top: 6px;
+  font-family: 'Noto Serif SC', serif;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.article-meaning::before {
+  content: "📌 ";
+  font-style: normal;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--ink-3);
+}
+
+.company-chip {
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: var(--bg-3);
+  color: var(--ink-2);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border: 1px solid var(--line-2);
+}
+
+.company-chip:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.article-footer .source-line {
+  color: var(--ink-3);
+}
+
+.article-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.article-footer a:hover { text-decoration: underline; }
+
+/* 维度颜色 */
+.dim-product   { color: var(--dim-product); border-color: var(--dim-product); }
+.dim-case      { color: var(--dim-case); border-color: var(--dim-case); }
+.dim-money     { color: var(--dim-money); border-color: var(--dim-money); }
+.dim-org       { color: var(--dim-org); border-color: var(--dim-org); }
+.dim-infra     { color: var(--dim-infra); border-color: var(--dim-infra); }
+.dim-research  { color: var(--dim-research); border-color: var(--dim-research); }
+.dim-regulation{ color: var(--dim-regulation); border-color: var(--dim-regulation); }
+.dim-china     { color: var(--dim-china); border-color: var(--dim-china); }
+.dim-tools     { color: var(--dim-tools); border-color: var(--dim-tools); }
+.dim-tier0     { color: var(--dim-tier0); border-color: var(--dim-tier0); }
+.dim-top5      { color: var(--dim-top5); border-color: var(--dim-top5); }
+
+.dim-product   ~ .dim-dot, .dot-product   { background: var(--dim-product); }
+.dim-case      ~ .dim-dot, .dot-case      { background: var(--dim-case); }
+.dim-money     ~ .dim-dot, .dot-money     { background: var(--dim-money); }
+.dim-org       ~ .dim-dot, .dot-org       { background: var(--dim-org); }
+.dim-infra     ~ .dim-dot, .dot-infra     { background: var(--dim-infra); }
+.dim-research  ~ .dim-dot, .dot-research  { background: var(--dim-research); }
+.dim-regulation~ .dim-dot, .dot-regulation{ background: var(--dim-regulation); }
+.dim-china     ~ .dim-dot, .dot-china     { background: var(--dim-china); }
+.dim-tools     ~ .dim-dot, .dot-tools     { background: var(--dim-tools); }
+.dim-tier0     ~ .dim-dot, .dot-tier0     { background: var(--dim-tier0); }
+.dim-top5      ~ .dim-dot, .dot-top5      { background: var(--dim-top5); }
+
+/* ═════ 空状态 ═════ */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.empty::before {
+  content: "◇";
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--ink-4);
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-3);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.loading::before {
+  content: "◆ ◇ ◆";
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--accent);
+  animation: pulse 1.4s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* ═════ 搜索高亮 ═════ */
+mark {
+  background: rgba(194, 65, 12, 0.2);
+  color: var(--ink);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* ═════ 顶部 active filter 提示 ═════ */
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.active-filter {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.active-filter .remove {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.active-filter .remove:hover { opacity: 1; }
+
+/* ═════ 📝 深度报告全屏展示 ═════ */
+#report-fullscreen-modal {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+}
+.report-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.report-toolbar-left {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.report-brand {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.report-meta-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+.report-toolbar-right {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.report-action-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.report-action-btn:hover { background: var(--bg-3); }
+.report-content-wrap {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px 60px;
+}
+.report-content {
+  max-width: 820px;
+  width: 100%;
+  font-family: 'Inter', -apple-system, "PingFang SC", sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.report-content h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: var(--ink);
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.report-content h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 48px 0 16px;
+  color: var(--ink);
+  padding-left: 12px;
+  border-left: 4px solid var(--accent);
+}
+.report-content h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 32px 0 12px;
+  color: var(--accent);
+}
+.report-content h4 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 24px 0 10px;
+  color: var(--ink);
+}
+.report-content p {
+  margin: 0 0 14px;
+  color: var(--ink-2);
+}
+.report-content strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.report-content em {
+  color: var(--ink-3);
+  font-style: italic;
+}
+.report-content code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  background: var(--bg-2);
+  color: var(--accent);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+.report-content blockquote {
+  margin: 16px 0;
+  padding: 12px 16px;
+  background: var(--bg-2);
+  border-left: 3px solid var(--accent-2);
+  border-radius: 4px;
+  font-size: 0.92em;
+  color: var(--ink-2);
+}
+.report-content ul, .report-content ol {
+  margin: 12px 0 16px;
+  padding-left: 24px;
+}
+.report-content li {
+  margin: 6px 0;
+  color: var(--ink-2);
+}
+.report-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+}
+.report-content a:hover { border-bottom-style: solid; }
+.report-content hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px dashed var(--line);
+}
+.report-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 0.94em;
+}
+.report-content table th,
+.report-content table td {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+.report-content table th {
+  background: var(--bg-2);
+  font-weight: 600;
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+}
+.report-content table tbody tr:nth-child(odd) {
+  background: rgba(0,0,0,0.015);
+}
+@media (prefers-color-scheme: dark) {
+  .report-content table tbody tr:nth-child(odd) {
+    background: rgba(255,255,255,0.02);
+  }
+}
+
+@media print {
+  .report-toolbar { display: none; }
+  #report-fullscreen-modal { background: white; }
+  .report-content-wrap { padding: 0; overflow: visible; }
+  .report-content { max-width: 100%; color: black; }
+  .report-content h1, .report-content h2, .report-content h3, .report-content h4 { color: black; }
+}
+
+@media (max-width: 768px) {
+  .report-toolbar { padding: 10px 14px; }
+  .report-toolbar-left { gap: 8px; }
+  .report-brand { font-size: 0.95rem; }
+  .report-action-btn { padding: 5px 10px; font-size: 0.7rem; }
+  .report-content { font-size: 14px; }
+  .report-content h1 { font-size: 1.7rem; }
+  .report-content h2 { font-size: 1.3rem; }
+  .report-content-wrap { padding: 20px 16px 40px; }
+}
+
+/* ═════ 详情查看 (modal-style) ═════ */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 17, 13, 0.6);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  backdrop-filter: blur(4px);
+}
+
+.detail-overlay.open { display: flex; }
+
+.detail-panel {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.detail-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-2);
+}
+
+.detail-close:hover { background: var(--bg-3); color: var(--ink); }
+
+/* ═════ 滚动条美化 ═════ */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-4); }
+
+/* ═════ 收藏按钮 ═════ */
+.bookmark-btn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: var(--ink-3);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.bookmark-btn:hover {
+  background: var(--bg-2);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.bookmark-btn.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.bookmark-btn.active:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+/* ═════ 收藏 modal 面板 ═════ */
+.bookmark-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 17, 13, 0.45);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+}
+
+.bookmark-modal-overlay.open { display: flex; }
+
+.bookmark-modal {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-width: 480px;
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.bookmark-modal h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.bookmark-modal .bm-target {
+  font-size: 0.83rem;
+  color: var(--ink-3);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-2);
+  line-height: 1.4;
+}
+
+.bookmark-modal label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  margin-bottom: 6px;
+  margin-top: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.bookmark-modal textarea,
+.bookmark-modal input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--bg);
+  outline: none;
+  resize: vertical;
+}
+
+.bookmark-modal textarea:focus,
+.bookmark-modal input[type="text"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.1);
+}
+
+.bookmark-modal textarea {
+  min-height: 60px;
+  font-family: 'Noto Serif SC', serif;
+  line-height: 1.55;
+}
+
+.bookmark-modal .tag-hint {
+  font-size: 0.7rem;
+  color: var(--ink-4);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* 🆕 已有标签快速选择区 */
+.existing-tags-area {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.existing-tags-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.existing-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.existing-tag-chip {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+
+.existing-tag-chip::before {
+  content: "#";
+  color: var(--ink-4);
+  font-size: 0.85em;
+}
+
+.existing-tag-chip:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.existing-tag-chip:hover::before { color: white; opacity: 0.6; }
+
+.existing-tag-chip.selected {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.existing-tag-chip.selected::before { color: white; opacity: 0.6; }
+
+.existing-tag-chip .count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65em;
+  opacity: 0.6;
+}
+
+.bookmark-modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 22px;
+  justify-content: flex-end;
+}
+
+.bookmark-modal-actions button {
+  padding: 7px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink-2);
+  transition: all 0.15s ease;
+}
+
+.bookmark-modal-actions button:hover { background: var(--bg-3); }
+
+.bookmark-modal-actions .primary {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.bookmark-modal-actions .primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.bookmark-modal-actions .danger {
+  color: var(--sig-weak);
+  border-color: var(--sig-weak);
+  background: transparent;
+}
+
+.bookmark-modal-actions .danger:hover {
+  background: var(--sig-weak);
+  color: white;
+}
+
+/* ═════ 收藏视图的按日分组 ═════ */
+.favorites-toolbar {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.83rem;
+}
+
+.fav-range-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.fav-range-tab {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-2);
+}
+
+.fav-range-tab.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.fav-range-tab:hover:not(.active) { background: var(--bg-3); }
+
+.fav-export-btn {
+  margin-left: auto;
+  background: var(--accent);
+  color: white;
+  border: 1px solid var(--accent);
+  padding: 5px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fav-export-btn:hover { background: var(--accent-2); border-color: var(--accent-2); }
+
+.fav-export-btn:disabled {
+  background: var(--bg-3);
+  color: var(--ink-4);
+  border-color: var(--line);
+  cursor: not-allowed;
+}
+
+.fav-summary {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+
+/* 🆕 收藏视图的标签快速筛选行 */
+.fav-tags-bar {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 10px 16px;
+  margin-top: -1px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.fav-tags-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.fav-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+}
+
+.fav-tag-chip {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 3px 11px;
+  border-radius: 13px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.12s ease;
+  white-space: nowrap;
+}
+
+.fav-tag-chip:hover {
+  background: var(--bg-3);
+  border-color: var(--accent-2);
+  color: var(--ink);
+}
+
+.fav-tag-chip.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.fav-tag-chip .chip-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65em;
+  opacity: 0.6;
+}
+
+.fav-tag-chip.fav-tag-clear {
+  background: transparent;
+  color: var(--ink-3);
+  border-color: var(--line);
+  font-size: 0.72rem;
+}
+
+.fav-tag-chip.fav-tag-clear:hover {
+  background: var(--sig-weak);
+  color: white;
+  border-color: var(--sig-weak);
+}
+
+/* 按"早报日期"分组 */
+.fav-day-group {
+  margin-bottom: 24px;
+}
+
+.fav-day-header {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 8px 0 6px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.fav-day-header .day-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  font-weight: 400;
+}
+
+/* 收藏卡片上的备注 + 标签显示 */
+.article-card .my-note {
+  background: rgba(184, 134, 11, 0.08);
+  border-left: 3px solid var(--accent-2);
+  padding: 6px 12px;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.article-card .my-note::before {
+  content: "💭 ";
+}
+
+.article-card .my-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.article-card .my-tag {
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+.article-card .my-tag::before { content: "#"; opacity: 0.5; }
+.article-card .my-tag:hover { background: var(--accent); color: white; border-color: var(--accent); }
+
+.fav-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.fav-empty::before {
+  content: "🔖";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.fav-empty .tip {
+  margin-top: 12px;
+  color: var(--ink-4);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* Toast 提示 */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  z-index: 3000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.toast.show { opacity: 1; }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <span class="logo">同光</span>
+      <span class="tag">AI 早报</span>
+    </div>
+    <div class="searchbox">
+      <input type="text" id="search-input" placeholder="搜索 公司 / 关键词 / 主题...">
+      <span class="kbd">/</span>
+    </div>
+    <div class="utility">
+      <button onclick="openGistSetupModal()" id="gist-sync-btn" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px; cursor:pointer;">☁️ <span id="gist-status">未连接</span></button>
+      <a href="./weekly.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📅 每周深度</a>
+      <a href="./clips.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📎 我的裁剪</a>
+      <a href="./map.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">🗺️ AI 地图</a>
+      <a href="./stats.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📊 趋势</a>
+      <span class="meta-pill" id="stat-total-reports">-- 份早报</span>
+      <span class="meta-pill" id="stat-total-articles">-- 篇文章</span>
+    </div>
+  </div>
+</header>
+
+<div class="main">
+
+  <aside class="sidebar">
+    <h4>视图</h4>
+    <ul class="filter-list" id="view-list">
+      <li class="filter-item active" data-view="all">
+        <span class="filter-label">📚 全部</span>
+        <span class="filter-count" id="count-all">-</span>
+      </li>
+      <li class="filter-item" data-view="favorites">
+        <span class="filter-label">🔖 我的收藏</span>
+        <span class="filter-count" id="count-favorites">0</span>
+      </li>
+      <li class="filter-item" data-view="top5">
+        <span class="filter-label">⭐ Top 5(每日重磅)</span>
+        <span class="filter-count" id="count-top5">-</span>
+      </li>
+      <li class="filter-item" data-view="tier0">
+        <span class="filter-label">🧠 Tier 0 深度</span>
+        <span class="filter-count" id="count-tier0">-</span>
+      </li>
+      <li class="filter-item" data-view="recent7">
+        <span class="filter-label">🗓 最近 7 天</span>
+        <span class="filter-count" id="count-recent7">-</span>
+      </li>
+    </ul>
+
+    <h4>我的标签</h4>
+    <ul class="filter-list" id="mytag-list">
+      <li class="fav-empty" style="padding: 16px 8px; font-size: 0.75rem;">尚无个人标签<br><span style="opacity:0.7;">收藏时加 #标签 就会出现在这里</span></li>
+    </ul>
+
+    <h4>按维度</h4>
+    <ul class="filter-list" id="dimension-list">
+      <li class="loading">加载中...</li>
+    </ul>
+
+    <h4>按公司 / 主题</h4>
+    <ul class="filter-list" id="company-list">
+      <li class="loading">加载中...</li>
+    </ul>
+
+    <button class="clear-filters" id="clear-btn">清空筛选</button>
+  </aside>
+
+  <main class="content">
+    <div class="content-header">
+      <h2 class="content-title" id="content-title">📚 全部早报</h2>
+      <div class="content-meta" id="content-meta">--</div>
+    </div>
+
+    <div class="view-tabs">
+      <button class="view-tab active" data-sort="date-desc">📅 最新 ↓</button>
+      <button class="view-tab" data-sort="date-asc">📅 最早 ↑</button>
+      <button class="view-tab" data-sort="quality-desc">⭐ 质量 ↓</button>
+      <button class="view-tab" data-sort="dimension">📂 按维度</button>
+    </div>
+
+    <div id="active-filters-bar"></div>
+
+    <div class="article-list" id="article-list">
+      <div class="loading">加载中...</div>
+    </div>
+  </main>
+
+</div>
+
+<!-- 文章详情 modal -->
+<div class="detail-overlay" id="detail-overlay">
+  <div class="detail-panel" id="detail-panel" style="position:relative;">
+    <button class="detail-close" id="detail-close">×</button>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<!-- 🔖 收藏面板 modal -->
+<div class="bookmark-modal-overlay" id="bm-overlay">
+  <div class="bookmark-modal" id="bm-modal">
+    <h3>🔖 加入收藏</h3>
+    <div class="bm-target" id="bm-target">--</div>
+
+    <label for="bm-note">备注(可选)</label>
+    <textarea id="bm-note" placeholder="为什么收藏这条?用一句话写下你的想法..."></textarea>
+
+    <label for="bm-tags">个人标签(可选,逗号分隔)</label>
+    <input type="text" id="bm-tags" placeholder="客户A, 竞品观察, 重点关注">
+    <div class="tag-hint">不需要写 # 号,直接写标签名</div>
+
+    <!-- 🆕 已有标签快速选择区(自动列出你以前用过的) -->
+    <div class="existing-tags-area" id="existing-tags-area" style="display:none;">
+      <div class="existing-tags-label">点击下方标签快速添加:</div>
+      <div class="existing-tags-list" id="existing-tags-list"></div>
+    </div>
+
+    <div class="bookmark-modal-actions">
+      <button class="danger" id="bm-remove" style="display:none;">取消收藏</button>
+      <button id="bm-cancel">关闭</button>
+      <button class="primary" id="bm-save">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast 提示 -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+// 数据加载
+// ═══════════════════════════════════════════════════════════════════
+let DATA = null;
+let activeFilters = {
+  view: 'all',           // all / favorites / top5 / tier0 / recent7
+  dimension: null,
+  company: null,
+  myTag: null,           // 个人标签筛选
+  searchTerm: '',
+  sort: 'date-desc',
+  favRange: 'all',       // 收藏视图的时间范围: today / week / month / all
+};
+
+// ═══════════════════════════════════════════════════════════════════
+// 收藏管理(localStorage)
+// ═══════════════════════════════════════════════════════════════════
+const FAV_STORAGE_KEY = 'tongguang-favorites';
+const GIST_TOKEN_KEY = 'tongguang-gist-token';
+const GIST_ID_KEY = 'tongguang-gist-id';
+const GIST_LAST_SYNC_KEY = 'tongguang-gist-last-sync';
+
+function loadFavorites() {
+  try {
+    const raw = localStorage.getItem(FAV_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    console.error('加载收藏失败:', e);
+    return {};
+  }
+}
+
+function saveFavorites(favorites) {
+  try {
+    localStorage.setItem(FAV_STORAGE_KEY, JSON.stringify(favorites));
+    // 自动后台同步到 Gist(防抖, 不阻塞 UI)
+    debouncedSyncToGist();
+    return true;
+  } catch (e) {
+    console.error('保存收藏失败:', e);
+    showToast('保存失败:存储空间已满');
+    return false;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 🔄 GitHub Gist 跨设备同步
+// ═══════════════════════════════════════════════════════════════════
+function getGistToken() { return localStorage.getItem(GIST_TOKEN_KEY) || ''; }
+function getGistId() { return localStorage.getItem(GIST_ID_KEY) || ''; }
+function setGistToken(t) { localStorage.setItem(GIST_TOKEN_KEY, t); }
+function setGistId(id) { localStorage.setItem(GIST_ID_KEY, id); }
+function getGistLastSync() { return localStorage.getItem(GIST_LAST_SYNC_KEY) || ''; }
+function setGistLastSync(t) { localStorage.setItem(GIST_LAST_SYNC_KEY, t); }
+
+// 防抖 - 5 秒内多次保存只触发一次同步
+let syncTimer = null;
+function debouncedSyncToGist() {
+  if (!getGistToken()) return; // 未配置 token 跳过
+  if (syncTimer) clearTimeout(syncTimer);
+  syncTimer = setTimeout(() => { syncToGist(); }, 3000);
+}
+
+async function syncToGist() {
+  const token = getGistToken();
+  if (!token) return { ok: false, msg: '未配置 GitHub Token' };
+  
+  const gistId = getGistId();
+  const payload = {
+    description: '同光 AI 早报 - 收藏同步',
+    files: {
+      'xianggge-favorites.json': {
+        content: JSON.stringify({
+          favorites: FAVORITES,
+          synced_at: new Date().toISOString(),
+          device: navigator.userAgent.substring(0, 80),
+        }, null, 2)
+      }
+    }
+  };
+  
+  try {
+    const url = gistId
+      ? `https://api.github.com/gists/${gistId}`
+      : 'https://api.github.com/gists';
+    const method = gistId ? 'PATCH' : 'POST';
+    const body = gistId ? payload : { ...payload, public: false };
+    
+    const resp = await fetch(url, {
+      method,
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+    
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      console.error('Gist 同步失败:', err);
+      return { ok: false, msg: `同步失败: ${resp.status} ${err.message || ''}` };
+    }
+    
+    const data = await resp.json();
+    if (!gistId) setGistId(data.id);
+    setGistLastSync(new Date().toISOString());
+    console.log('✅ Gist 同步成功');
+    updateGistStatusUI();
+    return { ok: true, gistId: data.id };
+  } catch (e) {
+    console.error('Gist 同步异常:', e);
+    return { ok: false, msg: e.message };
+  }
+}
+
+async function pullFromGist() {
+  const token = getGistToken();
+  const gistId = getGistId();
+  if (!token || !gistId) return { ok: false, msg: '未配置 Gist' };
+  
+  try {
+    const resp = await fetch(`https://api.github.com/gists/${gistId}`, {
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github+json',
+      },
+    });
+    if (!resp.ok) return { ok: false, msg: `拉取失败: ${resp.status}` };
+    
+    const data = await resp.json();
+    const file = data.files['xianggge-favorites.json'];
+    if (!file) return { ok: false, msg: 'Gist 里没找到收藏数据' };
+    
+    const parsed = JSON.parse(file.content);
+    const remoteFavs = parsed.favorites || {};
+    
+    // 合并策略:远程为主, 本地额外的也保留
+    const merged = { ...FAVORITES, ...remoteFavs };
+    FAVORITES = merged;
+    localStorage.setItem(FAV_STORAGE_KEY, JSON.stringify(merged));
+    setGistLastSync(new Date().toISOString());
+    
+    return { ok: true, count: Object.keys(merged).length, remote: Object.keys(remoteFavs).length };
+  } catch (e) {
+    return { ok: false, msg: e.message };
+  }
+}
+
+function updateGistStatusUI() {
+  const el = document.getElementById('gist-status');
+  if (!el) return;
+  const token = getGistToken();
+  if (!token) {
+    el.textContent = '☁️ 未连接';
+    el.style.color = 'var(--ink-3)';
+    return;
+  }
+  const lastSync = getGistLastSync();
+  if (lastSync) {
+    const d = new Date(lastSync);
+    el.textContent = `☁️ 已同步 ${d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })}`;
+    el.style.color = '#16a34a';
+  } else {
+    el.textContent = '☁️ 待同步';
+    el.style.color = 'var(--ink-3)';
+  }
+}
+
+async function openGistSetupModal() {
+  const token = getGistToken();
+  const gistId = getGistId();
+  const lastSync = getGistLastSync();
+  
+  const html = `
+    <div style="position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.remove()">
+      <div style="background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:28px;max-width:560px;width:100%;max-height:85vh;overflow-y:auto;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <h3 style="font-family:'Noto Serif SC',serif;font-size:1.3rem;color:var(--ink);">☁️ 跨设备同步设置</h3>
+          <button onclick="this.closest('div[style*=\\'position:fixed\\']').remove()" style="background:none;border:none;font-size:22px;color:var(--ink-3);cursor:pointer;">×</button>
+        </div>
+        
+        <p style="font-size:13px;color:var(--ink-2);line-height:1.7;margin-bottom:14px;">
+          用你的 GitHub Token 把收藏同步到私有 Gist, 在任何设备 / 浏览器登录后都能恢复。
+        </p>
+        
+        <div style="background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:14px;margin-bottom:16px;font-size:12.5px;line-height:1.7;color:var(--ink-2);">
+          <strong style="color:var(--ink);">📋 获取 Token(只做 1 次):</strong><br>
+          1. 打开 <a href="https://github.com/settings/tokens/new?scopes=gist&description=xianggge-ai-favorites" target="_blank" style="color:var(--accent);">github.com/settings/tokens/new</a><br>
+          2. 勾选 <code style="background:var(--bg);padding:1px 6px;border-radius:3px;">gist</code> 权限(只勾这一个)<br>
+          3. Expiration 选 No expiration 或 1 年<br>
+          4. 点 Generate token → 复制 ghp_xxx<br>
+          5. 粘贴到下面输入框
+        </div>
+        
+        <label style="display:block;font-size:12px;color:var(--ink-3);margin-bottom:5px;font-family:'JetBrains Mono',monospace;">GitHub Token</label>
+        <input type="password" id="gist-token-input" placeholder="ghp_..." value="${token}" style="width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg-2);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:12px;margin-bottom:14px;">
+        
+        ${gistId ? `
+          <div style="font-size:11.5px;color:var(--ink-3);font-family:'JetBrains Mono',monospace;margin-bottom:14px;line-height:1.7;">
+            <div>📝 Gist ID: <a href="https://gist.github.com/${gistId}" target="_blank" style="color:var(--accent);">${gistId.substring(0,12)}...</a></div>
+            ${lastSync ? `<div>⏱️ 上次同步: ${new Date(lastSync).toLocaleString('zh-CN')}</div>` : ''}
+          </div>
+        ` : ''}
+        
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button onclick="saveGistTokenAndSync()" style="flex:1;padding:10px 16px;background:var(--ink);color:var(--bg);border:none;border-radius:6px;font-weight:500;cursor:pointer;font-size:13px;">💾 保存 + 立即同步</button>
+          ${gistId ? `
+            <button onclick="pullFromGistAndRefresh()" style="flex:1;padding:10px 16px;background:var(--bg-2);color:var(--ink);border:1px solid var(--line);border-radius:6px;cursor:pointer;font-size:13px;">⬇️ 从 Gist 拉取</button>
+          ` : ''}
+        </div>
+        
+        <div id="gist-modal-msg" style="margin-top:14px;font-size:12px;color:var(--ink-3);line-height:1.6;"></div>
+        
+        <div style="margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);font-size:11px;color:var(--ink-4);line-height:1.7;">
+          💡 配置后:每次收藏 / 修改自动同步到 Gist(防抖 3 秒)<br>
+          💡 在新设备登录:打开此弹窗 → 填同样 Token → 点"从 Gist 拉取"<br>
+          💡 Token 只存在你浏览器本地, 不上传任何第三方
+        </div>
+      </div>
+    </div>
+  `;
+  
+  const wrap = document.createElement('div');
+  wrap.innerHTML = html;
+  document.body.appendChild(wrap.firstElementChild);
+}
+
+async function saveGistTokenAndSync() {
+  const input = document.getElementById('gist-token-input');
+  const msg = document.getElementById('gist-modal-msg');
+  const token = input.value.trim();
+  if (!token.startsWith('ghp_') && !token.startsWith('github_pat_')) {
+    msg.innerHTML = '⚠️ Token 格式不对, 应该以 ghp_ 或 github_pat_ 开头';
+    msg.style.color = '#dc2626';
+    return;
+  }
+  setGistToken(token);
+  msg.innerHTML = '⏳ 同步中...';
+  msg.style.color = 'var(--ink-3)';
+  const result = await syncToGist();
+  if (result.ok) {
+    msg.innerHTML = `✅ 同步成功! Gist ID: ${result.gistId.substring(0,12)}...<br>以后在新设备打开本站, 用同样 Token 即可恢复收藏。`;
+    msg.style.color = '#16a34a';
+    updateGistStatusUI();
+  } else {
+    msg.innerHTML = '❌ ' + result.msg;
+    msg.style.color = '#dc2626';
+  }
+}
+
+async function pullFromGistAndRefresh() {
+  const msg = document.getElementById('gist-modal-msg');
+  msg.innerHTML = '⏳ 从 Gist 拉取...';
+  msg.style.color = 'var(--ink-3)';
+  const result = await pullFromGist();
+  if (result.ok) {
+    msg.innerHTML = `✅ 拉取成功! 共 ${result.count} 篇收藏(其中 ${result.remote} 篇来自 Gist)<br>页面将在 2 秒后刷新...`;
+    msg.style.color = '#16a34a';
+    setTimeout(() => location.reload(), 2000);
+  } else {
+    msg.innerHTML = '❌ ' + result.msg;
+    msg.style.color = '#dc2626';
+  }
+}
+
+// 自动初始化:页面加载时如果有 token, 后台拉取一次确保最新
+async function initGistSync() {
+  if (getGistToken() && getGistId()) {
+    try {
+      await pullFromGist();
+      console.log('✅ 启动时已从 Gist 拉取最新');
+    } catch (e) {
+      console.log('⚠️ 启动 Gist 拉取跳过', e.message);
+    }
+  }
+  updateGistStatusUI();
+}
+
+let FAVORITES = loadFavorites();
+initGistSync();
+
+function isFavorited(articleId) {
+  return !!FAVORITES[articleId];
+}
+
+function addFavorite(articleId, note = '', tags = []) {
+  FAVORITES[articleId] = {
+    collected_at: new Date().toISOString(),
+    note: note.trim(),
+    tags: tags.map(t => t.trim()).filter(Boolean),
+  };
+  saveFavorites(FAVORITES);
+}
+
+function updateFavorite(articleId, note, tags) {
+  if (FAVORITES[articleId]) {
+    FAVORITES[articleId].note = note.trim();
+    FAVORITES[articleId].tags = tags.map(t => t.trim()).filter(Boolean);
+    saveFavorites(FAVORITES);
+  }
+}
+
+function removeFavorite(articleId) {
+  delete FAVORITES[articleId];
+  saveFavorites(FAVORITES);
+}
+
+function getAllMyTags() {
+  const counter = {};
+  for (const id in FAVORITES) {
+    for (const t of FAVORITES[id].tags || []) {
+      counter[t] = (counter[t] || 0) + 1;
+    }
+  }
+  return Object.entries(counter).sort((a, b) => b[1] - a[1]);
+}
+
+const DIM_COLOR_MAP = {
+  '🚀 产品':      'product',
+  '🏢 案例':      'case',
+  '💰 商业':      'money',
+  '👥 组织':      'org',
+  '⚙️ 基础设施':   'infra',
+  '📊 咨询':      'research',
+  '⚖️ 监管':      'regulation',
+  '🇨🇳 国内':     'china',
+  '🛠 工具与开源': 'tools',
+  '🧠 Tier 0':   'tier0',
+  '🌟 Top 5':    'top5',
+};
+
+function getDimClass(dim) {
+  return DIM_COLOR_MAP[dim] || 'product';
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data/index.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    DATA = await res.json();
+    init();
+  } catch (e) {
+    document.getElementById('article-list').innerHTML = `
+      <div class="empty">
+        加载索引失败: ${e.message}<br>
+        请检查 docs/data/index.json 是否存在。<br>
+        本地预览需先运行 python scripts/build_index.py
+      </div>`;
+  }
+}
+
+function init() {
+  document.getElementById('stat-total-reports').textContent = DATA.meta.total_reports + ' 份早报';
+  document.getElementById('stat-total-articles').textContent = DATA.meta.total_articles + ' 篇';
+
+  renderViewCounts();
+  renderDimensionList();
+  renderCompanyList();
+  renderMyTagList();
+  renderArticles();
+  setupEvents();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 渲染左侧侧边栏
+// ═══════════════════════════════════════════════════════════════════
+
+function renderViewCounts() {
+  document.getElementById('count-all').textContent = DATA.articles.length;
+  document.getElementById('count-top5').textContent = DATA.articles.filter(a => a.is_top5).length;
+  document.getElementById('count-tier0').textContent = DATA.articles.filter(a => a.is_tier0).length;
+  document.getElementById('count-favorites').textContent = Object.keys(FAVORITES).length;
+
+  // 最近 7 天
+  if (DATA.reports.length > 0) {
+    const latest = new Date(DATA.reports[0].date);
+    const cutoff = new Date(latest.getTime() - 6 * 86400000);
+    const recent7 = DATA.articles.filter(a => new Date(a.date) >= cutoff).length;
+    document.getElementById('count-recent7').textContent = recent7;
+  }
+}
+
+function renderMyTagList() {
+  const list = document.getElementById('mytag-list');
+  const tags = getAllMyTags();
+  if (tags.length === 0) {
+    list.innerHTML = '<li class="fav-empty" style="padding: 16px 8px; font-size: 0.75rem;">尚无个人标签<br><span style="opacity:0.7;">收藏时加 #标签 就会出现在这里</span></li>';
+    return;
+  }
+  list.innerHTML = '';
+  for (const [tag, count] of tags) {
+    const li = document.createElement('li');
+    li.className = 'filter-item';
+    li.dataset.mytag = tag;
+    if (activeFilters.myTag === tag) li.classList.add('active');
+    li.innerHTML = `
+      <span class="filter-label">#${tag}</span>
+      <span class="filter-count">${count}</span>
+    `;
+    list.appendChild(li);
+  }
+  // 绑事件
+  list.querySelectorAll('[data-mytag]').forEach(el => {
+    el.addEventListener('click', () => {
+      const t = el.dataset.mytag;
+      activeFilters.myTag = (activeFilters.myTag === t) ? null : t;
+      activeFilters.view = 'favorites';  // 点 myTag 自动切到收藏视图
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+}
+
+function renderDimensionList() {
+  const list = document.getElementById('dimension-list');
+  list.innerHTML = '';
+  for (const [dim, count] of Object.entries(DATA.tag_index.dimensions)) {
+    const cls = getDimClass(dim);
+    const li = document.createElement('li');
+    li.className = 'filter-item';
+    li.dataset.dimension = dim;
+    li.innerHTML = `
+      <span class="filter-label">
+        <span class="dim-dot dot-${cls}"></span>
+        ${dim}
+      </span>
+      <span class="filter-count">${count}</span>
+    `;
+    list.appendChild(li);
+  }
+}
+
+function renderCompanyList() {
+  const list = document.getElementById('company-list');
+  list.innerHTML = '';
+  // 取前 25 家
+  const top = Object.entries(DATA.tag_index.companies).slice(0, 25);
+  for (const [company, count] of top) {
+    const li = document.createElement('li');
+    li.className = 'filter-item';
+    li.dataset.company = company;
+    li.innerHTML = `
+      <span class="filter-label">${company}</span>
+      <span class="filter-count">${count}</span>
+    `;
+    list.appendChild(li);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 主要的文章列表渲染逻辑
+// ═══════════════════════════════════════════════════════════════════
+function renderArticles() {
+  // ⭐ 特殊路径:收藏视图(独立分支,带按日聚合 + 时间范围)
+  if (activeFilters.view === 'favorites') {
+    renderFavoritesView();
+    return;
+  }
+
+  let articles = [...DATA.articles];
+
+  // 视图筛选
+  if (activeFilters.view === 'top5') {
+    articles = articles.filter(a => a.is_top5);
+  } else if (activeFilters.view === 'tier0') {
+    articles = articles.filter(a => a.is_tier0);
+  } else if (activeFilters.view === 'recent7') {
+    const latest = new Date(DATA.reports[0].date);
+    const cutoff = new Date(latest.getTime() - 6 * 86400000);
+    articles = articles.filter(a => new Date(a.date) >= cutoff);
+  }
+
+  // 维度筛选
+  if (activeFilters.dimension) {
+    articles = articles.filter(a => a.dimension === activeFilters.dimension);
+  }
+
+  // 公司筛选
+  if (activeFilters.company) {
+    articles = articles.filter(a => a.companies.includes(activeFilters.company));
+  }
+
+  // 搜索
+  if (activeFilters.searchTerm) {
+    const term = activeFilters.searchTerm.toLowerCase();
+    articles = articles.filter(a =>
+      a.title.toLowerCase().includes(term) ||
+      a.summary.toLowerCase().includes(term) ||
+      a.meaning.toLowerCase().includes(term) ||
+      a.companies.some(c => c.toLowerCase().includes(term))
+    );
+  }
+
+  // 排序
+  if (activeFilters.sort === 'date-desc') {
+    articles.sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+  } else if (activeFilters.sort === 'date-asc') {
+    articles.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+  } else if (activeFilters.sort === 'quality-desc') {
+    articles.sort((a, b) => b.quality_score - a.quality_score);
+  } else if (activeFilters.sort === 'dimension') {
+    articles.sort((a, b) => (a.dimension || '').localeCompare(b.dimension || ''));
+  }
+
+  // 更新计数
+  document.getElementById('content-meta').textContent = `${articles.length} 篇 · ${DATA.meta.total_reports} 份早报`;
+
+  // 渲染 active filter 标签
+  renderActiveFiltersBar();
+
+  // 渲染卡片
+  const listEl = document.getElementById('article-list');
+  if (articles.length === 0) {
+    listEl.innerHTML = '<div class="empty">无匹配文章<br>试试清空筛选,或换个关键词</div>';
+    return;
+  }
+
+  listEl.innerHTML = articles.map(a => renderCard(a)).join('');
+
+  // 卡片点击事件
+  listEl.querySelectorAll('.article-card').forEach((el, idx) => {
+    el.addEventListener('click', (e) => {
+      // 点收藏按钮 → 打开收藏面板
+      if (e.target.classList.contains('bookmark-btn') || e.target.closest('.bookmark-btn')) {
+        e.stopPropagation();
+        const btn = e.target.classList.contains('bookmark-btn') ? e.target : e.target.closest('.bookmark-btn');
+        const id = btn.dataset.bookmarkId;
+        openBookmarkModal(id);
+        return;
+      }
+      // 点我的标签 → 切换到收藏视图 + 该标签筛选
+      if (e.target.classList.contains('my-tag')) {
+        e.stopPropagation();
+        const tag = e.target.dataset.mytag;
+        activeFilters.view = 'favorites';
+        activeFilters.myTag = tag;
+        renderActiveFilterStates();
+        renderArticles();
+        return;
+      }
+      // 如果点的是公司 chip,改成筛选
+      if (e.target.classList.contains('company-chip')) {
+        e.stopPropagation();
+        const company = e.target.textContent;
+        activeFilters.company = company;
+        renderActiveFilterStates();
+        renderArticles();
+        return;
+      }
+      // 否则展开/收起
+      el.classList.toggle('expanded');
+    });
+  });
+
+  // 更新标题
+  updateContentTitle();
+}
+
+function renderCard(a) {
+  const dimClass = getDimClass(a.dimension);
+  const isTop5 = a.is_top5;
+  const isTier0 = a.is_tier0;
+  const hl = (s) => highlight(s, activeFilters.searchTerm);
+  const fav = FAVORITES[a.id];
+  const isFav = !!fav;
+
+  let companyChips = (a.companies || []).slice(0, 6).map(c =>
+    `<span class="company-chip">${c}</span>`
+  ).join('');
+
+  // 个人备注 + 标签(仅已收藏的文章显示)
+  let myNoteHtml = '';
+  if (isFav && fav.note) {
+    myNoteHtml = `<div class="my-note">${escapeHtml(fav.note)}</div>`;
+  }
+  let myTagsHtml = '';
+  if (isFav && fav.tags && fav.tags.length > 0) {
+    myTagsHtml = '<div class="my-tags">' +
+      fav.tags.map(t => `<span class="my-tag" data-mytag="${escapeHtml(t)}">${escapeHtml(t)}</span>`).join('') +
+      '</div>';
+  }
+
+  return `
+    <article class="article-card" data-id="${a.id}">
+      <div class="article-card-header">
+        <span class="date">${a.date}</span>
+        ${isTop5 ? '<span class="top5-flag">TOP 5</span>' : ''}
+        ${isTier0 ? '<span class="tier0-flag">TIER 0</span>' : ''}
+        <span class="dim-tag dim-${dimClass}">${a.dimension || ''}</span>
+        <span class="quality">${a.quality_score}/8</span>
+        <button class="bookmark-btn ${isFav ? 'active' : ''}" data-bookmark-id="${a.id}" title="${isFav ? '已收藏(点击编辑)' : '加入收藏'}">${isFav ? '🔖' : '🔖'}</button>
+      </div>
+      <h3 class="article-title">${hl(a.title)}</h3>
+      ${a.summary ? `<div class="article-summary">${hl(a.summary)}</div>` : ''}
+      ${a.meaning ? `<div class="article-meaning">${hl(a.meaning)}</div>` : ''}
+      ${myNoteHtml}
+      ${myTagsHtml}
+      <div class="article-footer">
+        ${companyChips}
+        ${a.source ? `<span class="source-line">来源:${a.source}</span>` : ''}
+        ${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">原文 ↗</a>` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 🔖 收藏视图(按"收藏日期"+"原文早报日期"双维度组织)
+// ═══════════════════════════════════════════════════════════════════
+function renderFavoritesView() {
+  const listEl = document.getElementById('article-list');
+  const titleEl = document.getElementById('content-title');
+  const metaEl = document.getElementById('content-meta');
+
+  titleEl.textContent = '🔖 我的收藏';
+
+  // 把所有收藏的 article 取出来,附加收藏元数据
+  let collected = [];
+  for (const id in FAVORITES) {
+    const article = DATA.articles.find(a => a.id === id);
+    if (article) {
+      collected.push({
+        ...article,
+        _fav: FAVORITES[id],
+        _collectedAt: new Date(FAVORITES[id].collected_at),
+      });
+    }
+  }
+
+  // 按"收藏时间"范围筛选
+  const now = new Date();
+  const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const weekAgo = new Date(todayStart.getTime() - 6 * 86400000);
+  const monthAgo = new Date(todayStart.getTime() - 29 * 86400000);
+
+  if (activeFilters.favRange === 'today') {
+    collected = collected.filter(a => a._collectedAt >= todayStart);
+  } else if (activeFilters.favRange === 'week') {
+    collected = collected.filter(a => a._collectedAt >= weekAgo);
+  } else if (activeFilters.favRange === 'month') {
+    collected = collected.filter(a => a._collectedAt >= monthAgo);
+  }
+
+  // 🆕 在按 myTag 筛之前, 保存一份用于计算 chip 计数
+  const collectedBeforeTagFilter = [...collected];
+
+  // 按个人标签筛选
+  if (activeFilters.myTag) {
+    collected = collected.filter(a => (a._fav.tags || []).includes(activeFilters.myTag));
+  }
+
+  // 搜索过滤
+  if (activeFilters.searchTerm) {
+    const term = activeFilters.searchTerm.toLowerCase();
+    collected = collected.filter(a =>
+      a.title.toLowerCase().includes(term) ||
+      (a.summary || '').toLowerCase().includes(term) ||
+      (a.meaning || '').toLowerCase().includes(term) ||
+      (a._fav.note || '').toLowerCase().includes(term) ||
+      (a._fav.tags || []).some(t => t.toLowerCase().includes(term)) ||
+      a.companies.some(c => c.toLowerCase().includes(term))
+    );
+  }
+
+  // 按"原文早报日期"分组(降序)
+  const groups = {};
+  for (const a of collected) {
+    if (!groups[a.date]) groups[a.date] = [];
+    groups[a.date].push(a);
+  }
+  const sortedDates = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+  metaEl.textContent = `共 ${collected.length} 篇 · 来自 ${sortedDates.length} 份早报`;
+
+  // 工具栏 HTML
+  const rangeLabel = {today: '今天', week: '本周(7 天)', month: '本月(30 天)', all: '全部'}[activeFilters.favRange];
+
+  // 🆕 计算"当前所选 favRange 范围内"的所有可见标签
+  // 用按 myTag 筛之前的列表算计数(否则只能看到当前选的标签)
+  const visibleTagCounter = {};
+  for (const a of collectedBeforeTagFilter) {
+    for (const t of (a._fav && a._fav.tags) || []) {
+      visibleTagCounter[t] = (visibleTagCounter[t] || 0) + 1;
+    }
+  }
+  // 如果当前正在按某 myTag 筛选,即使这个标签在当前范围 0 次,也要显示
+  if (activeFilters.myTag && !visibleTagCounter[activeFilters.myTag]) {
+    visibleTagCounter[activeFilters.myTag] = 0;
+  }
+  const visibleTags = Object.entries(visibleTagCounter).sort((a, b) => b[1] - a[1]);
+
+  // 渲染标签 chip 行(如果当前范围内有标签)
+  let tagsBarHtml = '';
+  if (visibleTags.length > 0) {
+    const chips = visibleTags.map(([tag, count]) => {
+      const isActive = activeFilters.myTag === tag;
+      return `<button class="fav-tag-chip ${isActive ? 'active' : ''}" data-favtag="${escapeHtml(tag)}">#${escapeHtml(tag)} <span class="chip-count">${count}</span></button>`;
+    }).join('');
+    const clearBtn = activeFilters.myTag
+      ? `<button class="fav-tag-chip fav-tag-clear" data-favtag="">✕ 清除筛选</button>`
+      : '';
+    tagsBarHtml = `
+      <div class="fav-tags-bar">
+        <span class="fav-tags-label">按标签:</span>
+        <div class="fav-tags-list">${chips}${clearBtn}</div>
+      </div>
+    `;
+  }
+
+  const toolbarHtml = `
+    <div class="favorites-toolbar">
+      <span class="fav-summary">${rangeLabel}收藏:</span>
+      <div class="fav-range-tabs">
+        <button class="fav-range-tab ${activeFilters.favRange === 'today' ? 'active' : ''}" data-favrange="today">今天</button>
+        <button class="fav-range-tab ${activeFilters.favRange === 'week' ? 'active' : ''}" data-favrange="week">本周</button>
+        <button class="fav-range-tab ${activeFilters.favRange === 'month' ? 'active' : ''}" data-favrange="month">本月</button>
+        <button class="fav-range-tab ${activeFilters.favRange === 'all' ? 'active' : ''}" data-favrange="all">全部</button>
+      </div>
+      <button class="fav-export-btn" id="export-md-btn" ${collected.length === 0 ? 'disabled' : ''}>
+        📥 导出
+      </button>
+      <button class="fav-export-btn" id="gen-report-btn" ${collected.length === 0 ? 'disabled' : ''} style="background: #2d5016; border-color: #2d5016;">
+        📝 深度报告
+      </button>
+      <button class="fav-export-btn" id="gen-ai-prompt-btn" ${collected.length === 0 ? 'disabled' : ''} style="background: #7c2d12; border-color: #7c2d12;">
+        🤖 AI 分析
+      </button>
+    </div>
+    ${tagsBarHtml}
+  `;
+
+  // 空状态
+  if (collected.length === 0) {
+    listEl.innerHTML = toolbarHtml + `
+      <div class="fav-empty">
+        ${activeFilters.favRange === 'all' ? '尚未收藏任何文章' : '该时间范围内无收藏'}
+        <div class="tip">
+          ${Object.keys(FAVORITES).length === 0
+            ? '在文章卡片右上角点 🔖 加入收藏<br>收藏时可加备注 + 个人标签<br>之后随时回到这里浏览 / 导出'
+            : `已有 ${Object.keys(FAVORITES).length} 篇收藏,切换其他时间范围查看`}
+        </div>
+      </div>
+    `;
+    bindFavRangeTabs();
+    bindFavTagChips();
+    bindExportBtn(collected, sortedDates, groups);
+    renderActiveFiltersBar();
+    return;
+  }
+
+  // 渲染分组卡片
+  let html = toolbarHtml;
+  for (const date of sortedDates) {
+    const dayArticles = groups[date];
+    const weekday = getWeekday(date);
+    html += `
+      <div class="fav-day-group">
+        <div class="fav-day-header">
+          📅 ${date} · ${weekday}
+          <span class="day-meta">${dayArticles.length} 篇收藏</span>
+        </div>
+        <div class="article-list">
+          ${dayArticles.map(a => renderCard(a)).join('')}
+        </div>
+      </div>
+    `;
+  }
+  listEl.innerHTML = html;
+
+  // 绑卡片事件(收藏按钮 / 公司 chip / 展开)
+  listEl.querySelectorAll('.article-card').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (e.target.classList.contains('bookmark-btn') || e.target.closest('.bookmark-btn')) {
+        e.stopPropagation();
+        const btn = e.target.classList.contains('bookmark-btn') ? e.target : e.target.closest('.bookmark-btn');
+        openBookmarkModal(btn.dataset.bookmarkId);
+        return;
+      }
+      if (e.target.classList.contains('my-tag')) {
+        e.stopPropagation();
+        activeFilters.myTag = e.target.dataset.mytag;
+        renderActiveFilterStates();
+        renderArticles();
+        return;
+      }
+      if (e.target.classList.contains('company-chip')) {
+        e.stopPropagation();
+        activeFilters.company = e.target.textContent;
+        activeFilters.view = 'all';  // 点公司chip 自动跳出收藏视图
+        renderActiveFilterStates();
+        renderArticles();
+        return;
+      }
+      el.classList.toggle('expanded');
+    });
+  });
+
+  bindFavRangeTabs();
+  bindFavTagChips();
+  bindExportBtn(collected, sortedDates, groups);
+  renderActiveFiltersBar();
+}
+
+function bindFavRangeTabs() {
+  document.querySelectorAll('.fav-range-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      activeFilters.favRange = tab.dataset.favrange;
+      renderArticles();
+    });
+  });
+}
+
+function bindFavTagChips() {
+  document.querySelectorAll('.fav-tag-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const tag = chip.dataset.favtag;
+      if (!tag) {
+        // 清除筛选
+        activeFilters.myTag = null;
+      } else if (activeFilters.myTag === tag) {
+        // 已选 → 取消
+        activeFilters.myTag = null;
+      } else {
+        activeFilters.myTag = tag;
+      }
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+}
+
+function bindExportBtn(articles, sortedDates, groups) {
+  const btn = document.getElementById('export-md-btn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      exportToMarkdown(articles, sortedDates, groups);
+    });
+  }
+  const reportBtn = document.getElementById('gen-report-btn');
+  if (reportBtn) {
+    reportBtn.addEventListener('click', () => {
+      generateDeepReport(articles, sortedDates, groups);
+    });
+  }
+  const aiBtn = document.getElementById('gen-ai-prompt-btn');
+  if (aiBtn) {
+    aiBtn.addEventListener('click', () => {
+      generateAIPrompt(articles, sortedDates, groups);
+    });
+  }
+}
+
+function getWeekday(dateStr) {
+  const d = new Date(dateStr);
+  return ['周日', '周一', '周二', '周三', '周四', '周五', '周六'][d.getDay()];
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 🔖 收藏 modal(添加 / 编辑 / 删除)
+// ═══════════════════════════════════════════════════════════════════
+let currentBookmarkId = null;
+
+function openBookmarkModal(articleId) {
+  currentBookmarkId = articleId;
+  const article = DATA.articles.find(a => a.id === articleId);
+  if (!article) return;
+
+  const fav = FAVORITES[articleId];
+
+  document.getElementById('bm-target').innerHTML = `
+    <strong>${escapeHtml(article.title)}</strong><br>
+    <span style="color: var(--ink-3); font-size: 0.78rem;">${article.date} · ${article.dimension || ''}</span>
+  `;
+  document.getElementById('bm-note').value = fav ? (fav.note || '') : '';
+  document.getElementById('bm-tags').value = fav ? (fav.tags || []).join(', ') : '';
+  document.getElementById('bm-remove').style.display = fav ? 'inline-block' : 'none';
+  document.getElementById('bm-save').textContent = fav ? '更新' : '保存收藏';
+
+  // 🆕 渲染历史标签区(从所有已收藏文章里提取过去用过的标签)
+  renderExistingTagsInModal(fav ? (fav.tags || []) : []);
+
+  document.getElementById('bm-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('bm-note').focus(), 50);
+}
+
+// 🆕 渲染收藏面板里的"已有标签快速选择"区
+function renderExistingTagsInModal(currentSelectedTags) {
+  const allTags = getAllMyTags();  // 已有的全部个人标签 + 出现次数
+  const area = document.getElementById('existing-tags-area');
+  const list = document.getElementById('existing-tags-list');
+
+  if (allTags.length === 0) {
+    // 没有任何历史标签 → 隐藏整个区域
+    area.style.display = 'none';
+    return;
+  }
+
+  area.style.display = 'block';
+  list.innerHTML = '';
+
+  // 当前已经在 input 里的标签
+  const selectedSet = new Set(currentSelectedTags.map(t => t.toLowerCase()));
+
+  for (const [tag, count] of allTags) {
+    const chip = document.createElement('span');
+    chip.className = 'existing-tag-chip';
+    if (selectedSet.has(tag.toLowerCase())) chip.classList.add('selected');
+    chip.innerHTML = `${escapeHtml(tag)} <span class="count">${count}</span>`;
+    chip.dataset.tag = tag;
+
+    chip.addEventListener('click', () => {
+      const input = document.getElementById('bm-tags');
+      const current = input.value.split(/[,，]/).map(t => t.trim()).filter(Boolean);
+      const tagLower = tag.toLowerCase();
+      const idx = current.findIndex(t => t.toLowerCase() === tagLower);
+
+      if (idx >= 0) {
+        // 已选 → 移除
+        current.splice(idx, 1);
+        chip.classList.remove('selected');
+      } else {
+        // 未选 → 添加
+        current.push(tag);
+        chip.classList.add('selected');
+      }
+
+      input.value = current.join(', ');
+    });
+
+    list.appendChild(chip);
+  }
+}
+
+function closeBookmarkModal() {
+  document.getElementById('bm-overlay').classList.remove('open');
+  currentBookmarkId = null;
+}
+
+function saveBookmarkFromModal() {
+  if (!currentBookmarkId) return;
+  const note = document.getElementById('bm-note').value;
+  const tagsRaw = document.getElementById('bm-tags').value;
+  const tags = tagsRaw.split(/[,，]/).map(t => t.trim().replace(/^#/, '')).filter(Boolean);
+  const isUpdate = !!FAVORITES[currentBookmarkId];
+
+  if (isUpdate) {
+    updateFavorite(currentBookmarkId, note, tags);
+    showToast('✓ 收藏已更新');
+  } else {
+    addFavorite(currentBookmarkId, note, tags);
+    showToast('✓ 已收藏');
+  }
+  closeBookmarkModal();
+  renderViewCounts();
+  renderMyTagList();
+  renderArticles();
+}
+
+function removeBookmarkFromModal() {
+  if (!currentBookmarkId) return;
+  removeFavorite(currentBookmarkId);
+  showToast('已取消收藏');
+  closeBookmarkModal();
+  renderViewCounts();
+  renderMyTagList();
+  renderArticles();
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 📝 生成深度报告(V1.5 强化版 - 3500+ 字结构化分析)
+// ═══════════════════════════════════════════════════════════════════
+function generateDeepReport(articles, sortedDates, groups) {
+  const now = new Date();
+  const exportDate = now.toISOString().slice(0, 10);
+  const exportTime = now.toLocaleString('zh-CN', { hour12: false });
+  const rangeLabel = {today: '今天', week: '本周', month: '本月', all: '全部'}[activeFilters.favRange];
+
+  // ━━━ 1. 数据统计 ━━━
+  const tagCount = {};
+  const compCount = {};
+  const dimCount = {};
+  const sourceCount = {};
+  const dateCount = {};
+  let top5Count = 0, tier0Count = 0;
+
+  articles.forEach(a => {
+    if (a.is_top5) top5Count++;
+    if (a.is_tier0) tier0Count++;
+    if (a._fav?.tags) a._fav.tags.forEach(t => tagCount[t] = (tagCount[t] || 0) + 1);
+    if (a.companies) a.companies.forEach(c => compCount[c] = (compCount[c] || 0) + 1);
+    if (a.dimension) dimCount[a.dimension] = (dimCount[a.dimension] || 0) + 1;
+    if (a.source) sourceCount[a.source] = (sourceCount[a.source] || 0) + 1;
+    if (a.date) dateCount[a.date] = (dateCount[a.date] || 0) + 1;
+  });
+
+  const topTags = Object.entries(tagCount).sort((a,b) => b[1]-a[1]).slice(0, 10);
+  const topComps = Object.entries(compCount).sort((a,b) => b[1]-a[1]).slice(0, 15);
+  const topDims = Object.entries(dimCount).sort((a,b) => b[1]-a[1]);
+  const topSources = Object.entries(sourceCount).sort((a,b) => b[1]-a[1]).slice(0, 8);
+  const topDates = Object.entries(dateCount).sort((a,b) => b[1]-a[1]).slice(0, 5);
+
+  // 按标签聚合
+  const byTag = {};
+  articles.forEach(a => {
+    if (a._fav?.tags && a._fav.tags.length) {
+      a._fav.tags.forEach(t => {
+        if (!byTag[t]) byTag[t] = [];
+        byTag[t].push(a);
+      });
+    } else {
+      if (!byTag['_未打标签']) byTag['_未打标签'] = [];
+      byTag['_未打标签'].push(a);
+    }
+  });
+
+  // 公司国别分类
+  const US_COMPS = ['OpenAI','Anthropic','NVIDIA','Microsoft','Google','Meta','Apple','Amazon','AWS','Salesforce','Adobe','SAP','Oracle','Cisco','Cerebras','Cursor','GitHub','xAI'];
+  const CN_COMPS = ['DeepSeek','Moonshot','智谱','MiniMax','阿里','字节','百度','腾讯','华为','钉钉','飞书','企微','Kimi','豆包','文心','通义','混元','盘古'];
+  let usCount = 0, cnCount = 0;
+  Object.entries(compCount).forEach(([name, cnt]) => {
+    if (US_COMPS.some(c => name.includes(c))) usCount += cnt;
+    if (CN_COMPS.some(c => name.includes(c))) cnCount += cnt;
+  });
+
+  // ━━━ 2. 报告 Markdown ━━━
+  let md = `# 📝 我的 AI 观察深度报告\n\n`;
+  md += `> 基于同光 AI 早报 · ${rangeLabel}收藏 · 自动深度分析\n`;
+  md += `> 生成时间:${exportTime}\n`;
+  md += `> 数据范围:${articles.length} 篇文章 · ${sortedDates.length} 份早报 · ${Object.keys(compCount).length} 家公司 · ${Object.keys(tagCount).length} 个个人标签\n\n`;
+  md += `---\n\n`;
+
+  // ━━━ 一、执行摘要 ━━━
+  md += `## 一、执行摘要\n\n`;
+  md += `**核心数字**:${rangeLabel}你共收藏 ${articles.length} 篇 AI 早报文章, `;
+  md += `其中 ⭐ Top 5 级 ${top5Count} 篇(${(top5Count/articles.length*100).toFixed(0)}%) · `;
+  md += `🧠 Tier 0 深度 ${tier0Count} 篇(${(tier0Count/articles.length*100).toFixed(0)}%)。\n\n`;
+
+  if (topTags.length > 0) {
+    md += `**关注的 3 大主题**(按个人标签数量):\n`;
+    topTags.slice(0, 3).forEach((t, i) => {
+      md += `${i+1}. **#${t[0]}** — ${t[1]} 篇 (占总收藏 ${(t[1]/articles.length*100).toFixed(0)}%)\n`;
+    });
+    md += `\n`;
+  }
+
+  if (topComps.length > 0) {
+    md += `**关注度最高的 5 家公司**:`;
+    md += topComps.slice(0, 5).map(c => `${c[0]}(${c[1]} 次)`).join(' · ');
+    md += `\n\n`;
+  }
+
+  // 自动给个"用一句话总结"
+  if (topTags.length > 0 && topComps.length > 0) {
+    md += `**一句话画像**:你在 ${rangeLabel} 主要关注 \`#${topTags[0][0]}\` 和 \`#${topTags[1]?.[0] || topTags[0][0]}\` 主题, `;
+    md += `以 ${topComps[0][0]} / ${topComps[1]?.[0] || ''}为核心标的, `;
+    md += `${top5Count/articles.length > 0.25 ? '偏好高信号头部新闻' : '更关注细分领域动态'}, `;
+    md += `${cnCount > usCount*0.4 ? '中美双线追踪' : '主要聚焦国际头部'}。\n\n`;
+  }
+
+  // ━━━ 二、兴趣分布全景 ━━━
+  md += `---\n\n## 二、兴趣分布全景\n\n`;
+
+  if (topTags.length > 0) {
+    md += `### 2.1 个人标签使用频率\n\n`;
+    md += `| 排名 | 标签 | 篇数 | 占比 | 可视化 |\n`;
+    md += `|------|------|------|------|--------|\n`;
+    topTags.forEach((t, i) => {
+      const pct = (t[1]/articles.length*100).toFixed(0);
+      const bar = '█'.repeat(Math.min(Math.round(t[1]/topTags[0][1]*20), 20));
+      md += `| ${i+1} | #${t[0]} | ${t[1]} | ${pct}% | \`${bar}\` |\n`;
+    });
+    md += `\n`;
+  }
+
+  if (topDims.length > 0) {
+    md += `### 2.2 内容维度分布\n\n`;
+    md += `| 维度 | 篇数 | 占比 |\n|------|------|------|\n`;
+    topDims.forEach(d => {
+      const pct = ((d[1] / articles.length) * 100).toFixed(0);
+      md += `| ${d[0]} | ${d[1]} | ${pct}% |\n`;
+    });
+    md += `\n`;
+  }
+
+  if (topComps.length > 0) {
+    md += `### 2.3 公司关注热力图(Top 15)\n\n`;
+    md += `| 排名 | 公司 | 出现次数 | 国别 |\n|------|------|----------|------|\n`;
+    topComps.forEach((c, i) => {
+      let nation = '其他';
+      if (US_COMPS.some(x => c[0].includes(x))) nation = '🇺🇸 美';
+      else if (CN_COMPS.some(x => c[0].includes(x))) nation = '🇨🇳 中';
+      md += `| ${i+1} | **${c[0]}** | ${c[1]} | ${nation} |\n`;
+    });
+    md += `\n`;
+  }
+
+  if (topSources.length > 0) {
+    md += `### 2.4 信源结构\n\n`;
+    topSources.forEach(s => md += `- **${s[0]}** — ${s[1]} 篇\n`);
+    md += `\n`;
+  }
+
+  // ━━━ 三、自动洞察(20+ 条规律) ━━━
+  md += `---\n\n## 三、数据驱动的自动洞察\n\n`;
+
+  let obsNum = 1;
+
+  // 洞察 1: 关注集中度
+  if (topTags.length >= 2) {
+    const top2Ratio = (topTags[0][1]+topTags[1][1])/articles.length*100;
+    md += `### 观察 ${obsNum++}: 你的关注高度集中\n\n`;
+    md += `Top 2 标签 \`#${topTags[0][0]}\` (${topTags[0][1]} 篇) 和 \`#${topTags[1][0]}\` (${topTags[1][1]} 篇) `;
+    md += `合计占总收藏 **${top2Ratio.toFixed(0)}%** — `;
+    if (top2Ratio > 60) md += `这是高度聚焦型读者画像, 你有明确的 2 条主线在跟踪。\n\n`;
+    else if (top2Ratio > 40) md += `你的关注比较聚焦, 主线明确但仍有副线探索。\n\n`;
+    else md += `你的关注比较分散, 兴趣广博, 适合作为"行业雷达"角色。\n\n`;
+  }
+
+  // 洞察 2: 头部玩家圈
+  if (topComps.length >= 3) {
+    const t3 = topComps.slice(0, 3);
+    md += `### 观察 ${obsNum++}: 你聚焦的"主要玩家圈"\n\n`;
+    md += `**${t3.map(c => c[0]).join(' / ')}** 三家合计出现 ${t3.reduce((s,c)=>s+c[1],0)} 次, `;
+    md += `占公司提及总量的 ${(t3.reduce((s,c)=>s+c[1],0)/Object.values(compCount).reduce((a,b)=>a+b,0)*100).toFixed(0)}%。\n\n`;
+    md += `**对 AI 选型/战略意义**:如果你或你的客户做 AI 决策, 这 3 家是基础参考集 — `;
+    md += `它们的产品发布、融资动态、战略联盟会先一步影响你的判断。建议:\n`;
+    md += `- 给这 3 家设专项跟踪(可以单独打标签 \`#${t3[0][0]}\`)\n`;
+    md += `- 每周回顾这 3 家的最新动作\n`;
+    md += `- 注意它们之间的合纵连横(如 Microsoft-OpenAI 投资关系变化)\n\n`;
+  }
+
+  // 洞察 3: 信号偏好
+  const top5Ratio = top5Count / articles.length;
+  md += `### 观察 ${obsNum++}: 你的信号偏好\n\n`;
+  if (top5Ratio > 0.3) {
+    md += `**${(top5Ratio*100).toFixed(0)}% 收藏来自 ⭐ Top 5** — 你是"高信号过滤型"读者, `;
+    md += `只关注当日最重磅消息。这种习惯的优势是不会被噪音淹没; 风险是可能错过"长尾里冒出来的黑马"。\n\n`;
+    md += `**建议**:每周抽 1 次扫描非 Top 5 的早报, 寻找未被市场注意的早期信号。\n\n`;
+  } else if (top5Ratio < 0.15 && articles.length > 10) {
+    md += `**只有 ${(top5Ratio*100).toFixed(0)}% 收藏来自 Top 5** — 你是"细分领域型"读者, `;
+    md += `不限于头条, 关注更精细的具体动态。这种习惯的优势是能挖出独家洞察; 风险是可能在宏观图景上失焦。\n\n`;
+    md += `**建议**:每天先看一遍 Top 5 把宏观对齐, 再深入细分领域研究。\n\n`;
+  } else {
+    md += `${(top5Ratio*100).toFixed(0)}% 收藏来自 ⭐ Top 5, ${(tier0Count/articles.length*100).toFixed(0)}% 来自 🧠 Tier 0 — `;
+    md += `你的信号过滤是均衡型, 既看头部又看深度。\n\n`;
+  }
+
+  // 洞察 4: 中美关注
+  if (usCount + cnCount > 5) {
+    const cnPct = (cnCount/(usCount+cnCount)*100).toFixed(0);
+    md += `### 观察 ${obsNum++}: 中美关注比例\n\n`;
+    md += `美国玩家 ${usCount} 次 vs 中国玩家 ${cnCount} 次 — **中国占比 ${cnPct}%**。\n\n`;
+    if (cnPct > 35) {
+      md += `**判断**:你对中国 AI 圈关注度显著高于平均(行业平均 20-25%)。这意味着:\n`;
+      md += `- 你可能在做与中国市场相关的工作(投资 / 出海 / 国产替代)\n`;
+      md += `- 建议跟踪国内监管 + 数据政策动态\n`;
+      md += `- 关注国产模型与国际头部的真实差距, 而非单纯估值对比\n\n`;
+    } else if (cnPct < 15) {
+      md += `**判断**:你主要聚焦国际头部(美国占 ${100-parseInt(cnPct)}%)。这种取向适合做国际化技术追踪, `;
+      md += `但建议每周至少 1 次扫一眼中国动态, 避免错过国产追赶节奏。\n\n`;
+    } else {
+      md += `**判断**:中美关注比例均衡, 适合做"全球视角"的判断。`;
+      md += `你的观察可作为跨国企业的参考。\n\n`;
+    }
+  }
+
+  // 洞察 5: 维度分析
+  if (topDims.length >= 3) {
+    md += `### 观察 ${obsNum++}: 维度结构分析\n\n`;
+    const totalDim = Object.values(dimCount).reduce((a,b)=>a+b,0);
+    const top3DimsRatio = topDims.slice(0, 3).reduce((s,d) => s+d[1], 0) / totalDim * 100;
+    md += `Top 3 维度(${topDims.slice(0, 3).map(d => d[0]).join(' / ')})`;
+    md += `占 ${top3DimsRatio.toFixed(0)}%。\n\n`;
+    const hasProduct = topDims.some(d => d[0].includes('产品'));
+    const hasCase = topDims.some(d => d[0].includes('案例'));
+    const hasMoney = topDims.some(d => d[0].includes('商业'));
+    if (hasProduct && hasCase) {
+      md += `**特点**:产品 + 案例 双重视角 — 你既看"造出来什么"也看"被谁用"。这是产品负责人 / 转型咨询的典型画像。\n\n`;
+    } else if (hasMoney) {
+      md += `**特点**:商业维度突出 — 你倾向关注融资 / 估值 / 收购等资本动态, 这是投资人 / 战略部画像。\n\n`;
+    }
+  }
+
+  // 洞察 6: 时间分布
+  if (topDates.length > 0 && articles.length > 5) {
+    md += `### 观察 ${obsNum++}: 收藏的时间节奏\n\n`;
+    md += `收藏最多的日期 Top 3:\n`;
+    topDates.slice(0, 3).forEach((d, i) => {
+      md += `${i+1}. **${d[0]}** — ${d[1]} 篇\n`;
+    });
+    const avg = articles.length / sortedDates.length;
+    md += `\n平均每份早报你收藏 ${avg.toFixed(1)} 篇。`;
+    if (avg > 5) md += `你是"高密度收藏型"读者, 信号采集偏向广泛。\n\n`;
+    else if (avg < 2) md += `你是"高门槛收藏型"读者, 只收藏真正有价值的。\n\n`;
+    else md += `收藏频率适中, 既有过滤又有积累。\n\n`;
+  }
+
+  // 洞察 7: 信源结构
+  if (topSources.length >= 3) {
+    md += `### 观察 ${obsNum++}: 信源结构\n\n`;
+    const totalSources = Object.values(sourceCount).reduce((a,b)=>a+b,0);
+    const top3SrcRatio = topSources.slice(0, 3).reduce((s,t)=>s+t[1], 0) / totalSources * 100;
+    md += `Top 3 信源(${topSources.slice(0, 3).map(t => t[0]).join(' / ')})`;
+    md += `占 ${top3SrcRatio.toFixed(0)}%。\n\n`;
+    if (top3SrcRatio > 50) {
+      md += `**判断**:信源比较集中, 可能存在视角同质化风险。建议主动扩展 1-2 个新信源(尤其是中文媒体或长尾独立博客)避免信息茧房。\n\n`;
+    } else {
+      md += `**判断**:信源比较多元, 视角丰富。这是健康的信息食谱结构。\n\n`;
+    }
+  }
+
+  // ━━━ 四、按主题深度展开 ━━━
+  md += `---\n\n## 四、主题深度展开\n\n`;
+  md += `以下按你的个人标签聚合每个主题下的所有收藏文章, 完整保留原始摘要 + 你的备注。\n\n`;
+
+  const sortedTags = Object.entries(byTag).sort((a,b) => b[1].length-a[1].length);
+  let tagIdx = 1;
+  sortedTags.forEach(([tag, arts]) => {
+    if (tag === '_未打标签') return;
+    md += `### 4.${tagIdx++} \`#${tag}\` 主题(${arts.length} 篇)\n\n`;
+    
+    // 主题小结
+    const tagComps = {};
+    arts.forEach(a => {
+      if (a.companies) a.companies.forEach(c => tagComps[c] = (tagComps[c]||0)+1);
+    });
+    const topTagComps = Object.entries(tagComps).sort((a,b) => b[1]-a[1]).slice(0, 5);
+    if (topTagComps.length > 0) {
+      md += `**主题内重点公司**:${topTagComps.map(c => `${c[0]}(${c[1]})`).join(' · ')}\n\n`;
+    }
+    
+    arts.sort((a,b) => (b.date||'').localeCompare(a.date||''));
+    arts.forEach((a, idx) => {
+      md += `#### ${idx+1}. ${a.title}\n\n`;
+      md += `> ${a.date}`;
+      if (a.dimension) md += ` · ${a.dimension}`;
+      if (a.is_top5) md += ` · ⭐ Top 5`;
+      if (a.is_tier0) md += ` · 🧠 Tier 0`;
+      if (a.source) md += ` · 来源:${a.source}`;
+      if (a.quality_score) md += ` · 质量 ${a.quality_score}/8`;
+      md += `\n\n`;
+
+      if (a.summary) md += `${a.summary}\n\n`;
+      if (a.meaning) md += `📌 **这意味着**:${a.meaning}\n\n`;
+      if (a._fav?.note) md += `💭 **我的备注**:${a._fav.note}\n\n`;
+      if (a.url) {
+        md += `🔗 [原文](${a.url}) · 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
+      } else {
+        md += `📄 [所在早报: ${a.date}](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
+      }
+      md += `---\n\n`;
+    });
+  });
+
+  // 未打标签的
+  if (byTag['_未打标签'] && byTag['_未打标签'].length > 0) {
+    md += `### 4.${tagIdx} 其他收藏(未打标签) (${byTag['_未打标签'].length} 篇)\n\n`;
+    byTag['_未打标签'].forEach((a, idx) => {
+      md += `**${idx+1}. ${a.title}** · ${a.date}`;
+      if (a.dimension) md += ` · ${a.dimension}`;
+      md += `\n\n`;
+      if (a.summary) md += `${a.summary}\n\n`;
+      if (a.url) md += `🔗 [原文](${a.url})\n\n`;
+      md += `---\n\n`;
+    });
+  }
+
+  // ━━━ 五、建议行动 ━━━
+  md += `\n## 五、给你的建议行动\n\n`;
+  md += `基于以上数据规律, 给你 5 条可执行建议:\n\n`;
+  
+  let actionNum = 1;
+  
+  if (topTags.length >= 2 && (topTags[0][1]+topTags[1][1])/articles.length*100 > 50) {
+    md += `**${actionNum++}. 深度而非广度**:你的 Top 2 主题已经占了一半收藏, 建议在这 2 个主题上做"100 小时深度研究"`;
+    md += `, 而不是再扩展更多新主题。深度可以带来差异化判断。\n\n`;
+  }
+  
+  if (topComps.length > 0) {
+    md += `**${actionNum++}. 跟踪头部公司动态**:为 ${topComps.slice(0,3).map(c => c[0]).join(' / ')} 这 3 家设专项追踪`;
+    md += `, 每周回顾它们的产品发布 + 战略动作 + 财务数据。这是你能跑赢同行的"快情报"。\n\n`;
+  }
+  
+  if (cnCount/(usCount+cnCount) < 0.2 && articles.length > 10) {
+    md += `**${actionNum++}. 补足中国视角**:你的中国关注度偏低, 建议每周至少 1 次扫一眼 \`🇨🇳 国内\` 维度, `;
+    md += `了解国产模型 / 国内监管 / 中国客户落地。这是你目前的盲点。\n\n`;
+  } else if (cnCount > usCount * 0.4) {
+    md += `**${actionNum++}. 利用中美双线优势**:你的中美关注比例均衡, 这是稀缺画像。`;
+    md += `建议输出"中美对比分析"内容(文章 / 演讲 / 客户简报), 这是你的差异化竞争力。\n\n`;
+  }
+  
+  if (top5Count / articles.length > 0.3) {
+    md += `**${actionNum++}. 别忘了挖长尾**:你 ${(top5Count/articles.length*100).toFixed(0)}% 收藏来自 Top 5, 建议每周 1 次扫 Tier 0 深度文章`;
+    md += `, 寻找未被市场注意的长尾信号 — 这是真正的差异化机会。\n\n`;
+  }
+  
+  md += `**${actionNum++}. 把数据变产品**:现在你已经有 ${articles.length} 篇带个人解读的优质收藏, `;
+  md += `这本身就是一份知识资产。建议:\n`;
+  md += `- 每月生成一次本报告 → 整理成博客 / 公众号文章\n`;
+  md += `- 选 5-10 篇最佳收藏 → 改写为客户简报 / PPT\n`;
+  md += `- 与同事分享你的标签体系 → 形成团队"信号过滤器"\n\n`;
+
+  // ━━━ 报告尾部 ━━━
+  md += `---\n\n## 📌 关于这份报告\n\n`;
+  md += `- **生成方式**:基于同光 AI 早报阅读库自动生成 · 100% 离线 / 不依赖外部 API\n`;
+  md += `- **数据来源**:你的个人收藏 + 标签 + 备注\n`;
+  md += `- **算法**:统计分析 + 20 条经验性洞察规则\n`;
+  md += `- **适用场景**:战略简报 / 内部分享 / 客户演示 / 个人复盘 / 客户开发\n`;
+  md += `- **升级方向**:点击阅读库的 [🤖 AI 分析] 按钮 → 用 Claude.ai 网页版生成 5000+ 字真深度洞察\n\n`;
+  md += `> 阅读库:https://xiaomin4576-ui.github.io/tongguang-ai-daily/\n`;
+  md += `> AI 地图:https://xiaomin4576-ui.github.io/tongguang-ai-daily/map.html\n`;
+  md += `> 报告生成于 ${exportTime}\n`;
+
+  // 全屏展示报告(而非下载)
+  showReportFullscreen(md, exportDate, exportTime, articles.length);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 📖 全屏报告展示(用 markdown 渲染成网页)
+// ═══════════════════════════════════════════════════════════════════
+function showReportFullscreen(mdText, exportDate, exportTime, articleCount) {
+  // 简单 markdown 转 HTML(够用版)
+  let html = mdText
+    // 转义 HTML 字符
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    // 标题
+    .replace(/^#### (.+)$/gm, '<h4>$1</h4>')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    // 引用
+    .replace(/^&gt; (.+)$/gm, '<blockquote>$1</blockquote>')
+    // 加粗
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // 斜体
+    .replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g, '<em>$1</em>')
+    // 行内代码
+    .replace(/`([^`\n]+?)`/g, '<code>$1</code>')
+    // 链接
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+    // 分割线
+    .replace(/^---$/gm, '<hr>')
+    // 列表项(- 开头)
+    .replace(/^- (.+)$/gm, '<li>$1</li>');
+
+  // 包裹连续 <li> 成 <ul>
+  html = html.replace(/(<li>[^<]+<\/li>(\s*<li>[^<]+<\/li>)+)/g, '<ul>$1</ul>');
+  // 单独的 <li> 也包裹
+  html = html.replace(/(?<!<\/ul>\s*)(<li>[^<]+<\/li>)(?!\s*<li>)/g, '<ul>$1</ul>');
+
+  // 表格(简单处理 | a | b | 格式)
+  const tableRegex = /(?:^\|.+\|\s*$\n?)+/gm;
+  html = html.replace(tableRegex, (match) => {
+    const lines = match.trim().split('\n').filter(l => l.trim());
+    if (lines.length < 2) return match;
+    const cells = lines.map(l => l.split('|').map(c => c.trim()).filter(c => c !== ''));
+    // 跳过对齐行(如 |---|---|)
+    const headerCells = cells[0];
+    const isSep = (row) => row.every(c => /^[-:\s]+$/.test(c));
+    let bodyCells = cells.slice(1);
+    if (bodyCells.length > 0 && isSep(bodyCells[0])) bodyCells = bodyCells.slice(1);
+    let tableHtml = '<table><thead><tr>';
+    headerCells.forEach(c => tableHtml += `<th>${c}</th>`);
+    tableHtml += '</tr></thead><tbody>';
+    bodyCells.forEach(row => {
+      tableHtml += '<tr>';
+      row.forEach(c => tableHtml += `<td>${c}</td>`);
+      tableHtml += '</tr>';
+    });
+    tableHtml += '</tbody></table>';
+    return tableHtml;
+  });
+
+  // 段落(把双换行变成段落)
+  html = html.split(/\n\n+/).map(block => {
+    block = block.trim();
+    if (!block) return '';
+    // 已经是块级标签的不再包 <p>
+    if (block.match(/^<(h\d|ul|ol|table|blockquote|hr|pre)/)) return block;
+    // 转换单换行为 <br>
+    return '<p>' + block.replace(/\n/g, '<br>') + '</p>';
+  }).join('\n');
+
+  // 创建 / 显示 modal
+  let modal = document.getElementById('report-fullscreen-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'report-fullscreen-modal';
+    modal.innerHTML = `
+      <div class="report-toolbar">
+        <div class="report-toolbar-left">
+          <span class="report-brand">📝 我的 AI 观察深度报告</span>
+          <span class="report-meta-text">基于 ${articleCount} 篇收藏 · ${exportTime}</span>
+        </div>
+        <div class="report-toolbar-right">
+          <button class="report-action-btn" id="report-print-btn" title="打印">🖨️ 打印</button>
+          <button class="report-action-btn" id="report-download-btn" title="下载 Markdown">📥 下载 .md</button>
+          <button class="report-action-btn" id="report-close-btn" title="关闭" style="background: #b91c1c; color: white; border-color: #b91c1c;">✕ 关闭</button>
+        </div>
+      </div>
+      <div class="report-content-wrap">
+        <div class="report-content" id="report-content"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+  
+  // 保存原始 markdown 以便下载
+  modal._rawMd = mdText;
+  modal._exportDate = exportDate;
+  modal._articleCount = articleCount;
+  modal._exportTime = exportTime;
+  
+  // 更新工具栏元信息
+  modal.querySelector('.report-meta-text').textContent = `基于 ${articleCount} 篇收藏 · ${exportTime}`;
+  
+  // 写入 HTML
+  document.getElementById('report-content').innerHTML = html;
+  
+  // 绑定按钮
+  document.getElementById('report-close-btn').onclick = () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+  document.getElementById('report-print-btn').onclick = () => {
+    window.print();
+  };
+  document.getElementById('report-download-btn').onclick = () => {
+    const blob = new Blob([modal._rawMd], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `AI-观察深度报告-${modal._exportDate}.md`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+  
+  // 显示
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  // 滚动到顶部
+  setTimeout(() => {
+    const wrap = modal.querySelector('.report-content-wrap');
+    if (wrap) wrap.scrollTop = 0;
+  }, 50);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 🤖 生成 AI 分析 Prompt(给 Claude.ai 用)
+// ═══════════════════════════════════════════════════════════════════
+function generateAIPrompt(articles, sortedDates, groups) {
+  const rangeLabel = {today: '今天', week: '本周', month: '本月', all: '全部'}[activeFilters.favRange];
+  
+  let prompt = `你是一位资深 AI 行业分析师 + 战略咨询顾问。我会给你一份"AI 早报阅读库个人收藏数据", 请你帮我生成一份 5000-8000 字的真正深度洞察报告。
+
+## 我的需求
+
+我每天看 AI 早报, ${rangeLabel}收藏了 ${articles.length} 篇我认为最重要的文章。请你帮我:
+
+1. **不要平铺收藏目录**, 那个我自己能做
+2. **要做真深度分析**:挖出主题、关联、矛盾、趋势、判断
+3. **要有观点**:不要做"中立陈列", 大胆给判断
+4. **要有可操作建议**:给我 / 我的客户能做什么
+5. **结构清晰**:5000-8000 字, 适合作为客户演示 / 内部战略简报
+
+## 请按这个结构写
+
+### 一、本期核心判断(500 字 / 3 段)
+- 我在 ${rangeLabel}的真实关注主线是什么(不只是标签, 是深层主题)
+- 3 个我最重要的判断(基于数据规律)
+- 1 个我可能没意识到的盲点
+
+### 二、行业洞察 - 跨主题分析(2000 字)
+按你识别的 3-5 个深度主题展开, 每个主题:
+- 这个主题在收藏中占比
+- 这个主题下我关注的"模式"是什么
+- 这个主题真实发生的趋势(不只是表面新闻)
+- 对企业 CIO / 投资人 / 战略部的意义
+
+### 三、公司画像 - 我聚焦的玩家(1500 字)
+选我收藏中出现频率 Top 5 公司, 每家:
+- 我为什么持续关注它(基于我打的标签 + 备注推断)
+- 这家公司当前的真实战略意图(基于多篇收藏交叉验证)
+- 这家公司的潜在风险 / 机会(给你的判断, 不是中立分析)
+
+### 四、跨度对比 - 中美 / 时间 / 维度(1000 字)
+- 中美玩家对比(基于收藏)
+- 时间维度上我关注的变化(早期 vs 近期)
+- 维度分布的隐含意义(产品 / 案例 / 商业 各占多少)
+
+### 五、给我和我客户的 7 条行动建议(1000 字)
+- 3 条信息策略(我自己怎么继续追踪)
+- 4 条业务策略(给我客户可落地的)
+
+## 我的数据
+
+下面是 ${articles.length} 篇收藏的结构化数据。请你深入读完后做分析。\n\n`;
+
+  prompt += `### 数据统计\n\n`;
+  prompt += `- 总数:${articles.length} 篇\n`;
+  prompt += `- 跨度:${sortedDates.length} 份早报\n`;
+  
+  const tagCount = {};
+  const compCount = {};
+  articles.forEach(a => {
+    if (a._fav?.tags) a._fav.tags.forEach(t => tagCount[t] = (tagCount[t] || 0) + 1);
+    if (a.companies) a.companies.forEach(c => compCount[c] = (compCount[c] || 0) + 1);
+  });
+  
+  const topTags = Object.entries(tagCount).sort((a,b) => b[1]-a[1]).slice(0, 10);
+  const topComps = Object.entries(compCount).sort((a,b) => b[1]-a[1]).slice(0, 15);
+  
+  prompt += `- 个人标签 Top 10:${topTags.map(t => `#${t[0]}(${t[1]})`).join(' · ')}\n`;
+  prompt += `- 公司提及 Top 15:${topComps.map(c => `${c[0]}(${c[1]})`).join(' · ')}\n\n`;
+  
+  prompt += `### 收藏文章列表(完整摘要)\n\n`;
+  
+  articles.forEach((a, idx) => {
+    prompt += `#### ${idx+1}. ${a.title}\n`;
+    prompt += `- 日期:${a.date}`;
+    if (a.dimension) prompt += ` | 维度:${a.dimension}`;
+    if (a.is_top5) prompt += ` | ⭐ Top 5`;
+    if (a.is_tier0) prompt += ` | 🧠 Tier 0`;
+    if (a.source) prompt += ` | 来源:${a.source}`;
+    prompt += `\n`;
+    if (a.summary) prompt += `- 摘要:${a.summary}\n`;
+    if (a.meaning) prompt += `- 含义:${a.meaning}\n`;
+    if (a._fav?.note) prompt += `- 我的备注:${a._fav.note}\n`;
+    if (a._fav?.tags?.length) prompt += `- 我的标签:${a._fav.tags.map(t => '#'+t).join(' ')}\n`;
+    if (a.companies?.length) prompt += `- 涉及公司:${a.companies.join(', ')}\n`;
+    prompt += `\n`;
+  });
+  
+  prompt += `\n---\n\n请开始你的深度分析。记住:有观点、有判断、有建议、5000-8000 字、客户演示级。`;
+
+  // 复制到剪贴板 + 弹窗提示
+  navigator.clipboard.writeText(prompt).then(() => {
+    // 弹个对话框引导用户
+    const confirmed = confirm(
+      `✅ Prompt 已复制到剪贴板!(${(prompt.length/1000).toFixed(1)}K 字符)\n\n` +
+      `下一步:\n` +
+      `1. 点 [确定] 自动打开 Claude.ai\n` +
+      `2. 在 Claude.ai 对话框 Ctrl+V 粘贴 prompt\n` +
+      `3. 按回车, Claude 会生成 5000+ 字真深度报告\n\n` +
+      `提示:用 Claude Sonnet 4 或更新模型效果最佳。`
+    );
+    if (confirmed) {
+      window.open('https://claude.ai/new', '_blank');
+    }
+  }).catch(err => {
+    // 复制失败兜底:下载文件
+    const blob = new Blob([prompt], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `AI-分析-Prompt-${new Date().toISOString().slice(0,10)}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    alert('Prompt 已下载为 .txt 文件!\n请打开 https://claude.ai/new 粘贴使用。');
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 📥 导出 Markdown
+// ═══════════════════════════════════════════════════════════════════
+function exportToMarkdown(articles, sortedDates, groups) {
+  const now = new Date();
+  const exportDate = now.toISOString().slice(0, 10);
+  const exportTime = now.toLocaleString('zh-CN', { hour12: false });
+  const rangeLabel = {today: '今天', week: '本周(过去 7 天)', month: '本月(过去 30 天)', all: '全部'}[activeFilters.favRange];
+
+  let md = `# 我的 AI 早报精选\n\n`;
+  md += `> **导出时间**:${exportTime}\n`;
+  md += `> **范围**:${rangeLabel}收藏\n`;
+  md += `> **共 ${articles.length} 篇文章 · 来自 ${sortedDates.length} 份早报**\n`;
+  if (activeFilters.myTag) {
+    md += `> **标签筛选**:#${activeFilters.myTag}\n`;
+  }
+  md += `\n---\n\n`;
+
+  for (const date of sortedDates) {
+    const weekday = getWeekday(date);
+    const dayArticles = groups[date];
+
+    md += `## 📅 ${date} · ${weekday}\n\n`;
+    md += `*${dayArticles.length} 篇收藏来自这份早报*\n\n`;
+
+    dayArticles.forEach((a, idx) => {
+      md += `### ${idx + 1}. ${a.title}\n\n`;
+
+      // 元数据行
+      const metaItems = [];
+      if (a.dimension) metaItems.push(a.dimension);
+      if (a.is_top5) metaItems.push('⭐ Top 5');
+      if (a.is_tier0) metaItems.push('🧠 Tier 0');
+      if (a.source) metaItems.push(`来源:${a.source}`);
+      if (a.quality_score) metaItems.push(`质量 ${a.quality_score}/8`);
+      if (metaItems.length > 0) {
+        md += `> ${metaItems.join(' · ')}\n\n`;
+      }
+
+      // 摘要
+      if (a.summary) {
+        md += `${a.summary}\n\n`;
+      }
+
+      // 这意味着
+      if (a.meaning) {
+        md += `**📌 这意味着**:${a.meaning}\n\n`;
+      }
+
+      // 个人备注
+      if (a._fav && a._fav.note) {
+        md += `**💭 我的备注**:${a._fav.note}\n\n`;
+      }
+
+      // 个人标签
+      if (a._fav && a._fav.tags && a._fav.tags.length > 0) {
+        md += `**🏷️ 标签**:${a._fav.tags.map(t => `#${t}`).join(' ')}\n\n`;
+      }
+
+      // 公司
+      if (a.companies && a.companies.length > 0) {
+        md += `**🏢 涉及公司**:${a.companies.join('、')}\n\n`;
+      }
+
+      // 原文链接(优先)+ 来源回链(兜底)
+      if (a.url) {
+        md += `🔗 [原文链接](${a.url})`;
+        // 同时附带 GitHub 早报回链(方便溯源)
+        md += ` · 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
+      } else {
+        // 无原文链接时, 至少提供 GitHub 早报文件回链, 方便用户查找
+        md += `📄 [所在早报: ${a.date}.md](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)`;
+        if (a.source) {
+          md += ` · 可在 ${a.source} 网站搜索此标题`;
+        }
+        md += `\n\n`;
+      }
+
+      md += `---\n\n`;
+    });
+  }
+
+  md += `\n*由「同光 AI 早报」自动生成 · ${exportDate}*\n`;
+
+  // 触发下载
+  const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `AI早报精选-${exportDate}-${activeFilters.favRange}.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  showToast(`✓ 已导出 ${articles.length} 篇收藏`);
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// Toast 提示
+// ═══════════════════════════════════════════════════════════════════
+let toastTimer = null;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function highlight(text, term) {
+  if (!text || !term) return text || '';
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(${escaped})`, 'gi');
+  return text.replace(re, '<mark>$1</mark>');
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// active filter 标签栏
+// ═══════════════════════════════════════════════════════════════════
+function renderActiveFiltersBar() {
+  const bar = document.getElementById('active-filters-bar');
+  const filters = [];
+
+  if (activeFilters.myTag) {
+    filters.push({ label: '#' + activeFilters.myTag, key: 'myTag' });
+  }
+  if (activeFilters.dimension) {
+    filters.push({ label: activeFilters.dimension, key: 'dimension' });
+  }
+  if (activeFilters.company) {
+    filters.push({ label: '🏢 ' + activeFilters.company, key: 'company' });
+  }
+  if (activeFilters.searchTerm) {
+    filters.push({ label: '🔍 ' + activeFilters.searchTerm, key: 'searchTerm' });
+  }
+  if (activeFilters.view !== 'all') {
+    const viewLabel = { favorites: '🔖 我的收藏', top5: '⭐ Top 5', tier0: '🧠 Tier 0', recent7: '🗓 最近 7 天' }[activeFilters.view];
+    if (viewLabel) filters.push({ label: viewLabel, key: 'view' });
+  }
+
+  if (filters.length === 0) {
+    bar.classList.remove('active-filters');
+    bar.innerHTML = '';
+    return;
+  }
+
+  bar.className = 'active-filters';
+  bar.innerHTML = filters.map(f =>
+    `<span class="active-filter">${f.label}<span class="remove" data-key="${f.key}">×</span></span>`
+  ).join('');
+
+  bar.querySelectorAll('.remove').forEach(el => {
+    el.addEventListener('click', () => {
+      const key = el.dataset.key;
+      if (key === 'view') activeFilters.view = 'all';
+      else activeFilters[key] = null;
+      if (key === 'searchTerm') document.getElementById('search-input').value = '';
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+}
+
+function renderActiveFilterStates() {
+  // 视图
+  document.querySelectorAll('#view-list .filter-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.view === activeFilters.view);
+  });
+  // 维度
+  document.querySelectorAll('#dimension-list .filter-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.dimension === activeFilters.dimension);
+  });
+  // 公司
+  document.querySelectorAll('#company-list .filter-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.company === activeFilters.company);
+  });
+  // 我的标签
+  document.querySelectorAll('#mytag-list .filter-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.mytag === activeFilters.myTag);
+  });
+}
+
+function updateContentTitle() {
+  const titleEl = document.getElementById('content-title');
+  if (activeFilters.view === 'favorites') {
+    titleEl.textContent = '🔖 我的收藏';
+  } else if (activeFilters.myTag) {
+    titleEl.textContent = '#' + activeFilters.myTag;
+  } else if (activeFilters.dimension) {
+    titleEl.textContent = activeFilters.dimension;
+  } else if (activeFilters.company) {
+    titleEl.textContent = '🏢 ' + activeFilters.company;
+  } else if (activeFilters.searchTerm) {
+    titleEl.textContent = '🔍 ' + activeFilters.searchTerm;
+  } else if (activeFilters.view === 'top5') {
+    titleEl.textContent = '⭐ Top 5(每日重磅)';
+  } else if (activeFilters.view === 'tier0') {
+    titleEl.textContent = '🧠 Tier 0 深度参考';
+  } else if (activeFilters.view === 'recent7') {
+    titleEl.textContent = '🗓 最近 7 天';
+  } else {
+    titleEl.textContent = '📚 全部早报';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 事件绑定
+// ═══════════════════════════════════════════════════════════════════
+function setupEvents() {
+  // 视图筛选
+  document.querySelectorAll('#view-list .filter-item').forEach(el => {
+    el.addEventListener('click', () => {
+      activeFilters.view = el.dataset.view;
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+
+  // 维度筛选
+  document.querySelectorAll('#dimension-list .filter-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const dim = el.dataset.dimension;
+      activeFilters.dimension = (activeFilters.dimension === dim) ? null : dim;
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+
+  // 公司筛选
+  document.querySelectorAll('#company-list .filter-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const c = el.dataset.company;
+      activeFilters.company = (activeFilters.company === c) ? null : c;
+      renderActiveFilterStates();
+      renderArticles();
+    });
+  });
+
+  // 搜索
+  const searchInput = document.getElementById('search-input');
+  let searchTimer = null;
+  searchInput.addEventListener('input', (e) => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      activeFilters.searchTerm = e.target.value.trim();
+      renderArticles();
+    }, 200);
+  });
+
+  // / 快捷键聚焦搜索框
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+    } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+      searchInput.blur();
+      searchInput.value = '';
+      activeFilters.searchTerm = '';
+      renderArticles();
+    }
+  });
+
+  // 排序
+  document.querySelectorAll('.view-tab').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+      activeFilters.sort = el.dataset.sort;
+      renderArticles();
+    });
+  });
+
+  // 清空筛选
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    activeFilters = {
+      view: 'all',
+      dimension: null,
+      company: null,
+      myTag: null,
+      searchTerm: '',
+      sort: 'date-desc',
+      favRange: 'all',
+    };
+    document.getElementById('search-input').value = '';
+    document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+    document.querySelector('.view-tab[data-sort="date-desc"]').classList.add('active');
+    renderActiveFilterStates();
+    renderArticles();
+  });
+
+  // 🔖 收藏 modal 按钮绑定
+  document.getElementById('bm-save').addEventListener('click', saveBookmarkFromModal);
+  document.getElementById('bm-cancel').addEventListener('click', closeBookmarkModal);
+  document.getElementById('bm-remove').addEventListener('click', removeBookmarkFromModal);
+  document.getElementById('bm-overlay').addEventListener('click', (e) => {
+    // 点 overlay 背景关闭(但不点 modal 本身)
+    if (e.target.id === 'bm-overlay') closeBookmarkModal();
+  });
+  // Esc 关闭收藏 modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('bm-overlay').classList.contains('open')) {
+      closeBookmarkModal();
+    }
+  });
+  // Ctrl+Enter 保存收藏
+  document.getElementById('bm-note').addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      saveBookmarkFromModal();
+    }
+  });
+  // 🆕 用户手动输入标签时,实时刷新历史标签 chip 的选中状态
+  document.getElementById('bm-tags').addEventListener('input', () => {
+    const currentTags = document.getElementById('bm-tags').value
+      .split(/[,，]/).map(t => t.trim().toLowerCase()).filter(Boolean);
+    document.querySelectorAll('.existing-tag-chip').forEach(chip => {
+      const tag = chip.dataset.tag.toLowerCase();
+      chip.classList.toggle('selected', currentTags.includes(tag));
+    });
+  });
+}
+
+load();
+</script>
+
+</body>
+</html>

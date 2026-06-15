@@ -1,0 +1,197 @@
+name: 自动合并 Claude 早报 PR
+
+# ════════════════════════════════════════════════════════════════
+# 触发条件: Claude Routine 开 PR 到 main 分支
+# 功能: 验证 PR 是否安全 → 自动合并 → 删除源分支
+# 不会触发的情况:
+#   - PR 不是来自 claude/* 分支
+#   - PR 改了 reports/ 之外的文件
+#   - PR 是空的(0 文件改动)
+#   - PR 标题不含 "daily-briefing"
+#   - 你手动 close 了 PR
+# 安全机制:
+#   - 改非 reports/ 文件 → 跳过 + 在 PR 留评论
+#   - 改超过 5 个文件 → 跳过(早报通常只改 1-2 个)
+#   - PR 内容 < 1000 字符 → 跳过(避免合并空早报)
+# ════════════════════════════════════════════════════════════════
+
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: '要手动合并的 PR 编号'
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 0. 获取 PR 编号
+        id: pr
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PR_NUM="${{ github.event.inputs.pr_number }}"
+          else
+            PR_NUM="${{ github.event.pull_request.number }}"
+          fi
+          echo "number=$PR_NUM" >> $GITHUB_OUTPUT
+          echo "📋 处理 PR #$PR_NUM"
+
+      - name: 1. 获取 PR 元数据
+        id: meta
+        run: |
+          PR_DATA=$(gh pr view ${{ steps.pr.outputs.number }} \
+            --repo ${{ github.repository }} \
+            --json title,headRefName,author,files,state,additions)
+
+          STATE=$(echo "$PR_DATA" | jq -r '.state')
+          TITLE=$(echo "$PR_DATA" | jq -r '.title')
+          BRANCH=$(echo "$PR_DATA" | jq -r '.headRefName')
+          AUTHOR=$(echo "$PR_DATA" | jq -r '.author.login')
+          FILE_COUNT=$(echo "$PR_DATA" | jq -r '.files | length')
+          ADDITIONS=$(echo "$PR_DATA" | jq -r '.additions')
+          FILES=$(echo "$PR_DATA" | jq -r '.files[].path' | tr '\n' '|')
+
+          echo "state=$STATE"           >> $GITHUB_OUTPUT
+          echo "title=$TITLE"           >> $GITHUB_OUTPUT
+          echo "branch=$BRANCH"         >> $GITHUB_OUTPUT
+          echo "author=$AUTHOR"         >> $GITHUB_OUTPUT
+          echo "file_count=$FILE_COUNT" >> $GITHUB_OUTPUT
+          echo "additions=$ADDITIONS"   >> $GITHUB_OUTPUT
+          echo "files=$FILES"           >> $GITHUB_OUTPUT
+
+          echo ""
+          echo "═══════════ PR 信息 ═══════════"
+          echo "  State:       $STATE"
+          echo "  Title:       $TITLE"
+          echo "  Branch:      $BRANCH"
+          echo "  Author:      $AUTHOR"
+          echo "  File count:  $FILE_COUNT"
+          echo "  Additions:   $ADDITIONS lines"
+          echo "  Files:       $FILES"
+          echo "═══════════════════════════════"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 2. 安全护栏校验
+        id: gate
+        run: |
+          SKIP_REASON=""
+
+          # 护栏 1: PR 必须是 open 状态
+          if [ "${{ steps.meta.outputs.state }}" != "OPEN" ]; then
+            SKIP_REASON="PR 不是 open 状态 (当前: ${{ steps.meta.outputs.state }})"
+          fi
+
+          # 护栏 2: 分支必须以 claude/ 开头
+          if [ -z "$SKIP_REASON" ] && [[ ! "${{ steps.meta.outputs.branch }}" =~ ^claude/ ]]; then
+            SKIP_REASON="分支不是 claude/* 格式 (当前: ${{ steps.meta.outputs.branch }})"
+          fi
+
+          # 护栏 3: 标题必须是合法批次前缀(5 种)
+          if [ -z "$SKIP_REASON" ] && [[ ! "${{ steps.meta.outputs.title }}" =~ ^(daily-briefing|authority-batch|industry-batch|china-batch|research-batch|weekly-batch-1|weekly-batch-2|weekly-batch-3|weekly-merge): ]]; then
+            SKIP_REASON="PR 标题不符合规范 (期望以 daily-briefing/authority-batch/industry-batch/china-batch/research-batch/weekly-batch-1/weekly-batch-2/weekly-batch-3/weekly-merge 开头, 当前: ${{ steps.meta.outputs.title }})"
+          fi
+
+          # 护栏 4: 文件数 1-5 (早报通常只改 reports/YYYY-MM-DD.md + reports/index.md)
+          FILE_COUNT=${{ steps.meta.outputs.file_count }}
+          if [ -z "$SKIP_REASON" ] && [ "$FILE_COUNT" -lt 1 ]; then
+            SKIP_REASON="PR 没有文件改动 (空 PR)"
+          fi
+          if [ -z "$SKIP_REASON" ] && [ "$FILE_COUNT" -gt 5 ]; then
+            SKIP_REASON="PR 改动文件数 $FILE_COUNT 超过 5(异常,可能不是早报 PR)"
+          fi
+
+          # 护栏 5: 改动行数 >= 100 (避免合并极小内容)
+          ADDITIONS=${{ steps.meta.outputs.additions }}
+          if [ -z "$SKIP_REASON" ] && [ "$ADDITIONS" -lt 100 ]; then
+            SKIP_REASON="PR 新增行数 $ADDITIONS 少于 100(可能是空早报或错误)"
+          fi
+
+          # 护栏 6: 所有改动必须在 reports/ 目录下
+          FILES="${{ steps.meta.outputs.files }}"
+          if [ -z "$SKIP_REASON" ]; then
+            for f in $(echo "$FILES" | tr '|' '\n'); do
+              if [ -n "$f" ] && [[ ! "$f" =~ ^reports/ ]]; then
+                SKIP_REASON="PR 改动了 reports/ 之外的文件: $f"
+                break
+              fi
+            done
+          fi
+
+          # 结果
+          if [ -n "$SKIP_REASON" ]; then
+            echo "❌ 跳过合并: $SKIP_REASON"
+            echo "skip=true"            >> $GITHUB_OUTPUT
+            echo "reason=$SKIP_REASON"  >> $GITHUB_OUTPUT
+          else
+            echo "✅ 6 道护栏全部通过,可以安全合并"
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 3-A. [跳过分支] 在 PR 留评论提醒人工
+        if: steps.gate.outputs.skip == 'true'
+        run: |
+          gh pr comment ${{ steps.pr.outputs.number }} \
+            --repo ${{ github.repository }} \
+            --body "🤖 **auto-merge workflow 已跳过此 PR**
+
+          原因: ${{ steps.gate.outputs.reason }}
+
+          请人工审查并决定是否合并。"
+
+          echo "已在 PR 留评论"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 3-B. [合并分支] 自动合并 PR
+        if: steps.gate.outputs.skip == 'false'
+        run: |
+          echo "🚀 正在合并 PR #${{ steps.pr.outputs.number }}"
+
+          gh pr merge ${{ steps.pr.outputs.number }} \
+            --repo ${{ github.repository }} \
+            --merge \
+            --delete-branch \
+            --body "由 GitHub Actions auto-merge workflow 自动合并的 Claude Routine 早报 PR。"
+
+          echo ""
+          echo "✅ ═══════════════════════════════════════════"
+          echo "   PR #${{ steps.pr.outputs.number }} 已合并到 main"
+          echo "   源分支 ${{ steps.meta.outputs.branch }} 已删除"
+          echo "   接下来 notify.yml 会自动触发飞书通知"
+          echo "═══════════════════════════════════════════ ✅"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 3-C. 显式触发 Pages 自动部署(关键!)
+        if: steps.gate.outputs.skip == 'false'
+        run: |
+          echo "🔔 显式触发 build-and-deploy-pages workflow..."
+          echo "(因为 GITHUB_TOKEN 推的 commit 不会自动触发后续 workflow)"
+          
+          gh workflow run build-and-deploy-pages.yml \
+            --repo ${{ github.repository }} \
+            --ref main
+          
+          echo ""
+          echo "✅ 已触发 build-and-deploy-pages workflow"
+          echo "   2-3 分钟后阅读库将自动更新"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 4. 失败时不删分支(保留供调试)
+        if: failure()
+        run: |
+          echo "⚠️ 此次 auto-merge 失败"
+          echo "PR #${{ steps.pr.outputs.number }} 和分支 ${{ steps.meta.outputs.branch }} 保留"
+          echo "请去 GitHub 人工排查"

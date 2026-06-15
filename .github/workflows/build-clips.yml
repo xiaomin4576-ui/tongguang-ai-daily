@@ -1,0 +1,88 @@
+name: 构建剪藏索引到 docs/data/clips-index.json
+
+# 触发条件:
+# 1. 每天北京时间 8:00 自动跑(UTC 00:00)
+# 2. push 到 main 时(如更新解析脚本)
+# 3. 手工触发
+on:
+  schedule:
+    - cron: '0 0 * * *'        # 每天 UTC 00:00 = 北京 08:00
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_clips_index.py'
+      - '.github/workflows/build-clips.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  build-clips:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tongguang-ai-daily
+        uses: actions/checkout@v4
+      
+      - name: Checkout my-clips
+        uses: actions/checkout@v4
+        with:
+          repository: xiaomin4576-ui/my-clips
+          path: my-clips
+          token: ${{ secrets.MY_CLIPS_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: 1. 解析 my-clips/clips/ 为 JSON
+        env:
+          CLIPS_DIR: my-clips/clips
+          OUTPUT_PATH: docs/data/clips-index.json
+        run: |
+          python3 scripts/build_clips_index.py
+          echo ""
+          echo "=== 验证 clips-index.json ==="
+          ls -la docs/data/clips-index.json
+          echo "字节数: $(wc -c < docs/data/clips-index.json)"
+          echo "总裁剪数: $(python3 -c 'import json; print(json.load(open(\"docs/data/clips-index.json\"))[\"total_clips\"])')"
+      
+      - name: 2. Commit 更新的 clips-index.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/clips-index.json
+          if git diff --staged --quiet; then
+            echo "clips-index.json 无变化, 跳过 commit"
+          else
+            git commit -m "chore: 自动更新 clips 索引 (每日 8:00 跑) [skip ci]"
+            git push origin main
+            echo "✅ 已 push clips-index.json 更新"
+          fi
+      
+      - name: 3. 显式触发 Pages 自动部署
+        run: |
+          echo "🔔 显式触发 build-and-deploy-pages workflow..."
+          gh workflow run build-and-deploy-pages.yml \
+            --repo ${{ github.repository }} \
+            --ref main
+          echo "✅ 已触发 Pages 部署"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 4. 输出摘要
+        run: |
+          echo "═══════════════════════════════════════════"
+          echo "✅ 剪藏索引构建完成"
+          echo "═══════════════════════════════════════════"
+          python3 -c "
+          import json
+          d = json.load(open('docs/data/clips-index.json'))
+          print(f'生成时间: {d[\"generated_at\"]}')
+          print(f'源文件数: {d[\"total_files\"]}')
+          print(f'总裁剪数: {d[\"total_clips\"]}')
+          print(f'Top 信源: {d[\"top_sources\"][:3]}')
+          print(f'Top 作者: {d[\"top_authors\"][:5]}')
+          "

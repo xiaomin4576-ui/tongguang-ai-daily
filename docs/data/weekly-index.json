@@ -1,0 +1,12 @@
+{
+  "weeks": [
+    {
+      "week": 20,
+      "year": 2026,
+      "range": "2026-05-13 至 2026-05-19",
+      "generated_at": "2026-05-17T11:30:00+08:00",
+      "file": "weekly-2026-W20.json"
+    }
+  ],
+  "note": "最新周放数组开头, weekly-merge Routine 每周日自动追加"
+}

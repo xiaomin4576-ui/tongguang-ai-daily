@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temporary files Claude Routine 可能生成
+.tmp/
+*.tmp
+
+# 不提交 routine 配置里的 token (如果你手动 export 出来)
+.routine-token
+.api-key
+*.secret
+
+# 本地工具配置(可能含个人 token,不进仓库——避免误泄露)
+.claude/settings.local.json
+.claude/launch.json
+__pycache__/

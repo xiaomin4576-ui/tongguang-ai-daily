@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>同光观澜·AI早报 · 趋势分析</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg:       #fafaf7;
+  --bg-2:     #f0eee8;
+  --bg-3:     #e6e2d6;
+  --ink:      #1a1714;
+  --ink-2:    #4a463e;
+  --ink-3:    #7a7466;
+  --ink-4:    #a09a8a;
+  --accent:   #c2410c;
+  --accent-2: #b8860b;
+  --line:     #d4cebd;
+  --line-2:   #e8e3d2;
+
+  --sig-strong:  #2d5016;
+  --sig-medium:  #7a5e1c;
+  --sig-weak:    #8b3a3a;
+
+  --c1: #c2410c; /* accent */
+  --c2: #0369a1;
+  --c3: #16a34a;
+  --c4: #ca8a04;
+  --c5: #9333ea;
+  --c6: #be123c;
+  --c7: #047857;
+  --c8: #b91c1c;
+  --c9: #7c2d12;
+  --c10: #475569;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14110d; --bg-2: #1c1813; --bg-3: #24201a;
+    --ink: #f5f1e8; --ink-2: #d4cdb8; --ink-3: #9b9381; --ink-4: #6a6457;
+    --line: #36312a; --line-2: #2a2620;
+    --accent: #fb923c; --accent-2: #fbbf24;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 15px; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 0.93rem;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* 顶栏 — 与 index.html 一致 */
+header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.topbar {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 14px 32px;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.brand .logo {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.brand .logo::before {
+  content: "◆ ";
+  color: var(--accent);
+  font-size: 0.6em;
+  vertical-align: 0.5em;
+}
+
+.brand .tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.tab {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink-2);
+  border: 1px solid transparent;
+}
+
+.tab:hover { background: var(--bg-2); }
+.tab.active {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* 主内容 */
+.main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 28px 32px;
+}
+
+.page-header {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--line);
+}
+
+.page-title {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.page-subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  letter-spacing: 0.05em;
+}
+
+/* 总览数据 */
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.stat-card .stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.stat-card .stat-value {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.stat-card .stat-detail {
+  font-size: 0.75rem;
+  color: var(--ink-3);
+  margin-top: 6px;
+}
+
+.stat-card.accent { border-top: 3px solid var(--accent); }
+.stat-card.gold   { border-top: 3px solid var(--accent-2); }
+.stat-card.strong { border-top: 3px solid var(--sig-strong); }
+.stat-card.medium { border-top: 3px solid var(--sig-medium); }
+.stat-card.weak   { border-top: 3px solid var(--sig-weak); }
+
+/* 图表区 */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .chart-grid { grid-template-columns: 1fr; }
+  .topbar { flex-wrap: wrap; padding: 12px 16px; gap: 12px; }
+  .main { padding: 20px 16px; }
+}
+
+.chart-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.chart-card h3 {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.chart-card .chart-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  margin-bottom: 14px;
+}
+
+.chart-canvas-wrap {
+  position: relative;
+  height: 280px;
+}
+
+.chart-canvas-wrap.tall {
+  height: 380px;
+}
+
+/* 排行榜 */
+.rank-list {
+  list-style: none;
+  font-size: 0.86rem;
+}
+
+.rank-item {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.rank-item:last-child { border-bottom: none; }
+
+.rank-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  text-align: right;
+  font-weight: 500;
+}
+
+.rank-item:nth-child(1) .rank-num { color: var(--accent); font-weight: 700; font-size: 0.9rem; }
+.rank-item:nth-child(2) .rank-num { color: var(--accent-2); font-weight: 700; }
+.rank-item:nth-child(3) .rank-num { color: var(--sig-medium); }
+
+.rank-name {
+  font-weight: 500;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rank-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  background: var(--bg-2);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+/* 信号分布表 */
+.signal-bars {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.signal-segment {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: white;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.signal-segment.strong { background: var(--sig-strong); }
+.signal-segment.medium { background: var(--sig-medium); }
+.signal-segment.weak   { background: var(--sig-weak); }
+
+.signal-legend {
+  display: flex;
+  gap: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  margin-top: 10px;
+}
+
+.signal-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.signal-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.signal-legend-dot.strong { background: var(--sig-strong); }
+.signal-legend-dot.medium { background: var(--sig-medium); }
+.signal-legend-dot.weak   { background: var(--sig-weak); }
+
+/* 公司频次 timeline */
+.company-timeline {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.company-timeline:last-child { border-bottom: none; }
+
+.company-timeline-name {
+  font-size: 0.83rem;
+  font-weight: 500;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.company-timeline-bars {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  gap: 1px;
+  height: 18px;
+}
+
+.company-timeline-cell {
+  background: var(--bg-2);
+  border-radius: 1px;
+  position: relative;
+}
+
+.company-timeline-cell.level-1 { background: rgba(194, 65, 12, 0.25); }
+.company-timeline-cell.level-2 { background: rgba(194, 65, 12, 0.5); }
+.company-timeline-cell.level-3 { background: rgba(194, 65, 12, 0.75); }
+.company-timeline-cell.level-4 { background: var(--accent); }
+
+/* 空状态/加载 */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-3);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+}
+.empty::before { content: "◇"; display: block; font-size: 2rem; margin-bottom: 12px; color: var(--ink-4); }
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-3);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.loading::before {
+  content: "◆ ◇ ◆";
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--accent);
+  animation: pulse 1.4s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* 数据少时的提示 */
+.early-data-notice {
+  background: var(--bg-2);
+  border-left: 3px solid var(--accent-2);
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+
+.early-data-notice strong { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <span class="logo">同光观澜</span>
+      <span class="tag">趋势分析</span>
+    </div>
+    <nav class="tabs">
+      <a class="tab" href="./index.html">📚 阅读库</a>
+      <a class="tab active" href="./stats.html">📊 趋势</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main" id="main">
+  <div class="loading">加载数据中...</div>
+</main>
+
+<script>
+// 数据加载
+let DATA = null;
+
+async function load() {
+  try {
+    const res = await fetch('./data/index.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    DATA = await res.json();
+    render();
+  } catch (e) {
+    document.getElementById('main').innerHTML = `
+      <div class="empty">加载失败: ${e.message}<br>请检查 docs/data/index.json 是否存在</div>
+    `;
+  }
+}
+
+function render() {
+  const main = document.getElementById('main');
+  const m = DATA.meta;
+  const tag = DATA.tag_index;
+  const trends = DATA.trends || { timeline_30d: [], top_companies_timeline: {}, top10_companies: [] };
+
+  // 计算覆盖天数
+  const reportDays = DATA.reports.length;
+  const isEarly = reportDays < 7;
+
+  // 信号分布百分比
+  const sigStrong = tag.signal_days.strong || 0;
+  const sigMedium = tag.signal_days.medium || 0;
+  const sigWeak = tag.signal_days.weak || 0;
+  const sigTotal = sigStrong + sigMedium + sigWeak || 1;
+  const pctStrong = (sigStrong / sigTotal * 100).toFixed(0);
+  const pctMedium = (sigMedium / sigTotal * 100).toFixed(0);
+  const pctWeak = (sigWeak / sigTotal * 100).toFixed(0);
+
+  // 平均每日篇数
+  const avgPerDay = (m.total_articles / Math.max(reportDays, 1)).toFixed(1);
+
+  // Top 5 / Tier 0 总数
+  const top5Count = DATA.articles.filter(a => a.is_top5).length;
+  const tier0Count = DATA.articles.filter(a => a.is_tier0).length;
+
+  main.innerHTML = `
+    <div class="page-header">
+      <div class="page-title">📊 过去 ${reportDays} 天 · 数据趋势分析</div>
+      <div class="page-subtitle">
+        DATE RANGE: ${m.date_range[0]} → ${m.date_range[1]} · 
+        ${reportDays} 份早报 · 
+        ${m.total_articles} 篇文章 · 
+        ${Object.keys(tag.companies).length} 家公司
+      </div>
+    </div>
+
+    ${isEarly ? `
+      <div class="early-data-notice">
+        <strong>📈 数据积累中:</strong>当前仅 ${reportDays} 天数据,趋势线尚未稳定。
+        预计 30 天后(${m.total_articles >= 100 ? '已达到' : '尚未达到'} 100 篇阈值),趋势图会显著有意义。
+      </div>
+    ` : ''}
+
+    <!-- 总览数据 -->
+    <div class="overview">
+      <div class="stat-card accent">
+        <div class="stat-label">早报总数</div>
+        <div class="stat-value">${reportDays}</div>
+        <div class="stat-detail">${m.date_range[0]} 起</div>
+      </div>
+      <div class="stat-card gold">
+        <div class="stat-label">文章总数</div>
+        <div class="stat-value">${m.total_articles}</div>
+        <div class="stat-detail">平均 ${avgPerDay} 篇/日</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">⭐ Top 5</div>
+        <div class="stat-value">${top5Count}</div>
+        <div class="stat-detail">每日重磅</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">🧠 Tier 0 深度</div>
+        <div class="stat-value">${tier0Count}</div>
+        <div class="stat-detail">扩窗 7 天</div>
+      </div>
+      <div class="stat-card strong">
+        <div class="stat-label">强信号日</div>
+        <div class="stat-value">${sigStrong}</div>
+        <div class="stat-detail">${pctStrong}% 占比</div>
+      </div>
+    </div>
+
+    <!-- 信号强度分布 -->
+    <div class="chart-card" style="margin-bottom: 20px;">
+      <h3>信号强度分布</h3>
+      <div class="chart-meta">${reportDays} 天里的强/中/弱信号分布</div>
+      <div class="signal-bars">
+        ${sigStrong > 0 ? `<div class="signal-segment strong" style="flex: ${sigStrong};">${pctStrong}%</div>` : ''}
+        ${sigMedium > 0 ? `<div class="signal-segment medium" style="flex: ${sigMedium};">${pctMedium}%</div>` : ''}
+        ${sigWeak > 0 ? `<div class="signal-segment weak" style="flex: ${sigWeak};">${pctWeak}%</div>` : ''}
+      </div>
+      <div class="signal-legend">
+        <div class="signal-legend-item"><span class="signal-legend-dot strong"></span>强信号(${sigStrong} 天)</div>
+        <div class="signal-legend-item"><span class="signal-legend-dot medium"></span>中等(${sigMedium} 天)</div>
+        <div class="signal-legend-item"><span class="signal-legend-dot weak"></span>弱信号(${sigWeak} 天)</div>
+      </div>
+    </div>
+
+    <!-- 时间序列 + 维度饼图 -->
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>📈 每日文章数趋势</h3>
+        <div class="chart-meta">过去 30 天 · 主报告 + Tier 0 深度参考</div>
+        <div class="chart-canvas-wrap"><canvas id="chart-timeline"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>📂 维度分布</h3>
+        <div class="chart-meta">${Object.keys(tag.dimensions).length} 个维度的文章占比</div>
+        <div class="chart-canvas-wrap"><canvas id="chart-dimension"></canvas></div>
+      </div>
+    </div>
+
+    <!-- 公司排行 + 公司 timeline -->
+    <div class="chart-grid">
+      <div class="chart-card">
+        <h3>🏢 Top 10 高频公司 · 30 天提及热力图</h3>
+        <div class="chart-meta">每格 = 该公司在某天的提及次数</div>
+        <div id="company-timeline-container" style="margin-top: 12px;">${renderCompanyTimeline()}</div>
+      </div>
+      <div class="chart-card">
+        <h3>🏆 Top 15 公司排行</h3>
+        <div class="chart-meta">出现次数最多</div>
+        <ol class="rank-list" style="margin-top: 8px;">
+          ${renderTopCompanies()}
+        </ol>
+      </div>
+    </div>
+
+    <!-- 早报详情列表 -->
+    <div class="chart-card" style="margin-top: 20px;">
+      <h3>📅 每日早报概览</h3>
+      <div class="chart-meta">点日期跳转到该日早报详情</div>
+      <ol class="rank-list" style="margin-top: 8px;">
+        ${renderDailyReports()}
+      </ol>
+    </div>
+  `;
+
+  // 渲染 Chart.js 图
+  renderTimelineChart();
+  renderDimensionChart();
+}
+
+function renderCompanyTimeline() {
+  const trends = DATA.trends;
+  if (!trends || !trends.top10_companies || trends.top10_companies.length === 0) {
+    return '<div class="empty">暂无数据</div>';
+  }
+
+  // 计算最近 30 天日期序列(从最早早报开始)
+  if (DATA.reports.length === 0) return '<div class="empty">暂无早报</div>';
+  const latest = new Date(DATA.reports[0].date);
+  const dates = [];
+  for (let i = 29; i >= 0; i--) {
+    const d = new Date(latest.getTime() - i * 86400000);
+    dates.push(d.toISOString().slice(0, 10));
+  }
+
+  let html = '';
+  for (const company of trends.top10_companies.slice(0, 10)) {
+    const counts = trends.top_companies_timeline[company] || {};
+    const cells = dates.map(d => {
+      const n = counts[d] || 0;
+      let level = '';
+      if (n >= 4) level = 'level-4';
+      else if (n >= 3) level = 'level-3';
+      else if (n >= 2) level = 'level-2';
+      else if (n >= 1) level = 'level-1';
+      const title = `${company} · ${d} · ${n} 次`;
+      return `<div class="company-timeline-cell ${level}" title="${title}"></div>`;
+    }).join('');
+
+    html += `
+      <div class="company-timeline">
+        <div class="company-timeline-name">${company}</div>
+        <div class="company-timeline-bars">${cells}</div>
+      </div>
+    `;
+  }
+  return html;
+}
+
+function renderTopCompanies() {
+  const top = Object.entries(DATA.tag_index.companies).slice(0, 15);
+  return top.map(([company, count], i) => `
+    <li class="rank-item">
+      <span class="rank-num">${(i + 1).toString().padStart(2, '0')}</span>
+      <span class="rank-name">${company}</span>
+      <span class="rank-count">${count}</span>
+    </li>
+  `).join('');
+}
+
+function renderDailyReports() {
+  return DATA.reports.map((r, i) => {
+    const sigClass = r.signal_strength;
+    const sigText = sigClass === 'strong' ? '强' : sigClass === 'weak' ? '弱' : '中';
+    const sigColor = sigClass === 'strong' ? 'var(--sig-strong)' : sigClass === 'weak' ? 'var(--sig-weak)' : 'var(--sig-medium)';
+    return `
+      <li class="rank-item">
+        <span class="rank-num" style="color: ${sigColor};">${sigText}</span>
+        <span class="rank-name">
+          <strong>${r.date}</strong> · ${r.weekday}
+          <span style="color: var(--ink-3); font-size: 0.85em;"> · ${r.summary || ''}</span>
+        </span>
+        <span class="rank-count">${r.main_count}+${r.tier0_count}</span>
+      </li>
+    `;
+  }).join('');
+}
+
+// Chart.js 配置 — 深浅色自适应
+function getChartColors() {
+  const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  return {
+    text: dark ? '#d4cdb8' : '#4a463e',
+    grid: dark ? '#36312a' : '#e8e3d2',
+    accent: dark ? '#fb923c' : '#c2410c',
+  };
+}
+
+function renderTimelineChart() {
+  const trends = DATA.trends || { timeline_30d: [] };
+  const data = trends.timeline_30d;
+  if (!data || data.length === 0) return;
+
+  const colors = getChartColors();
+  const ctx = document.getElementById('chart-timeline');
+  if (!ctx) return;
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.map(d => d.date.slice(5)), // MM-DD
+      datasets: [{
+        label: '文章数',
+        data: data.map(d => d.count),
+        backgroundColor: data.map(d => d.count > 0 ? colors.accent : 'rgba(0,0,0,0.05)'),
+        borderRadius: 3,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: (items) => data[items[0].dataIndex].date,
+            label: (item) => `${item.raw} 篇文章`,
+          }
+        }
+      },
+      scales: {
+        x: {
+          ticks: { color: colors.text, font: { size: 10 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 },
+          grid: { display: false },
+        },
+        y: {
+          beginAtZero: true,
+          ticks: { color: colors.text, font: { size: 10 }, stepSize: 10 },
+          grid: { color: colors.grid },
+        }
+      }
+    }
+  });
+}
+
+function renderDimensionChart() {
+  const dims = DATA.tag_index.dimensions;
+  const entries = Object.entries(dims).filter(([k]) => k !== '🌟 Top 5'); // 不算 Top 5(它和其他维度有重叠)
+  if (entries.length === 0) return;
+
+  const colors = getChartColors();
+  const ctx = document.getElementById('chart-dimension');
+  if (!ctx) return;
+
+  const palette = [
+    '#c2410c', '#0369a1', '#16a34a', '#ca8a04',
+    '#9333ea', '#475569', '#0891b2', '#b91c1c',
+    '#be123c', '#047857', '#7c2d12'
+  ];
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: entries.map(([k]) => k),
+      datasets: [{
+        data: entries.map(([, v]) => v),
+        backgroundColor: palette.slice(0, entries.length),
+        borderColor: getComputedStyle(document.body).getPropertyValue('--bg') || '#fafaf7',
+        borderWidth: 2,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: { color: colors.text, font: { size: 11 }, padding: 8, usePointStyle: true, boxWidth: 8 },
+        },
+        tooltip: {
+          callbacks: {
+            label: (item) => {
+              const total = entries.reduce((sum, [, v]) => sum + v, 0);
+              const pct = ((item.raw / total) * 100).toFixed(1);
+              return `${item.label}: ${item.raw} 篇 (${pct}%)`;
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+load();
+</script>
+
+</body>
+</html>

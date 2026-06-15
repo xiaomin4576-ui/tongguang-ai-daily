@@ -1,0 +1,397 @@
+{
+  "_meta": {
+    "version": "v5.0",
+    "lastUpdate": "2026-05-13",
+    "totalSources": 181,
+    "executionMode": "claude.ai-single-run",
+    "philosophy": "v5 全量纳入 Karpathy 92 信源(2026 年 1 月推荐,2025 HN 最受欢迎博客)+ v4 企业 AI 视角 64 源 + 用户指定扩展 30 源。但物理纳入 ≠ 全部必抓。每次跑早报时,Claude 按 Tier 优先级 + 维度配额 + 企业 AI 视角过滤,Karpathy 92 中纯个人随笔/复古计算/Linux 内核类的源即使在 24h 内有更新也不收录到早报里(除非内容罕见地与企业 AI 强相关)。",
+    "notes": "Tier 0 是 Karpathy 92 源里和企业 AI 强相关的精选(必抓);Tier 1-2 是 v4 企业 AI 核心(必抓);Tier 3-4 是分析师 + 国内中文 + 大厂(常规抓);Tier 5 是 Karpathy 92 剩余源(兜底);Tier 6 是聚合(兜底)。"
+  },
+
+  "tier0_karpathy_enterprise_picks": {
+    "_description": "Tier 0 · Karpathy 92 信源中与企业 AI / AI 战略 / AI 商业化强相关的精选(必抓,~18 个)。这是 v5 的新核心。",
+    "sources": [
+      {
+        "id": "simonwillison",
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net",
+        "feed": "https://simonwillison.net/atom/everything/",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["产品", "工程", "实用 AI"],
+        "_note": "高产高质,实用 AI 第一人,几乎每天更新"
+      },
+      {
+        "id": "gwern",
+        "name": "Gwern Branwen",
+        "url": "https://gwern.net",
+        "feed": "https://gwern.substack.com/feed",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["AI 战略", "深度分析"]
+      },
+      {
+        "id": "dwarkesh",
+        "name": "Dwarkesh Patel",
+        "url": "https://dwarkesh.com",
+        "feed": "https://www.dwarkeshpatel.com/feed",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["AI 高质量访谈", "战略"]
+      },
+      {
+        "id": "wheresyoured",
+        "name": "Where's Your Ed At (Ed Zitron)",
+        "url": "https://wheresyoured.at",
+        "feed": "https://www.wheresyoured.at/rss/",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["AI 商业批判"],
+        "_note": "AI 泡沫/商业逻辑的尖锐批判者"
+      },
+      {
+        "id": "garymarcus",
+        "name": "Marcus on AI (Gary Marcus)",
+        "url": "https://garymarcus.substack.com",
+        "feed": "https://garymarcus.substack.com/feed",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["AI 批判", "监管"]
+      },
+      {
+        "id": "minimaxir",
+        "name": "Max Woolf (minimaxir)",
+        "url": "https://minimaxir.com",
+        "feed": "https://minimaxir.com/index.xml",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["实用 AI", "工程"]
+      },
+      {
+        "id": "antirez",
+        "name": "Salvatore Sanfilippo (antirez/Redis)",
+        "url": "http://antirez.com",
+        "feed": "http://antirez.com/rss",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["工程", "AI 开发者视角"]
+      },
+      {
+        "id": "mitchellh",
+        "name": "Mitchell Hashimoto",
+        "url": "https://mitchellh.com",
+        "feed": "https://mitchellh.com/feed.xml",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["工程", "基础设施"]
+      },
+      {
+        "id": "geoffreylitt",
+        "name": "Geoffrey Litt",
+        "url": "https://geoffreylitt.com",
+        "feed": "https://www.geoffreylitt.com/feed.xml",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["AI 工具产品"]
+      },
+      {
+        "id": "steveblank",
+        "name": "Steve Blank",
+        "url": "https://steveblank.com",
+        "feed": "https://steveblank.com/feed/",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["创业方法论", "AI 创业"]
+      },
+      {
+        "id": "paulgraham",
+        "name": "Paul Graham Essays",
+        "url": "https://paulgraham.com",
+        "feed": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["创业", "产业思考"]
+      },
+      {
+        "id": "pluralistic",
+        "name": "Pluralistic (Cory Doctorow)",
+        "url": "https://pluralistic.net",
+        "feed": "https://pluralistic.net/feed/",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["科技批判", "监管"]
+      },
+      {
+        "id": "anildash",
+        "name": "Anil Dash",
+        "url": "https://anildash.com",
+        "feed": "https://anildash.com/feed.xml",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["科技社会评论"]
+      },
+      {
+        "id": "lcamtuf",
+        "name": "Michał Zalewski (lcamtuf)",
+        "url": "https://lcamtuf.substack.com",
+        "feed": "https://lcamtuf.substack.com/feed",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["安全", "AI 安全"]
+      },
+      {
+        "id": "joanwestenberg",
+        "name": "Joan Westenberg",
+        "url": "https://joanwestenberg.com",
+        "feed": "https://joanwestenberg.com/rss",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["科技文化", "AI 评论"]
+      },
+      {
+        "id": "experimental-history",
+        "name": "Experimental History (Adam Mastroianni)",
+        "url": "https://experimental-history.com",
+        "feed": "https://www.experimental-history.com/feed",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["科学方法论", "AI 研究批判"]
+      },
+      {
+        "id": "derekthompson",
+        "name": "Derek Thompson (The Atlantic)",
+        "url": "https://derekthompson.org",
+        "feed": "https://www.theatlantic.com/feed/author/derek-thompson/",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["商业分析", "宏观"]
+      },
+      {
+        "id": "daringfireball",
+        "name": "Daring Fireball (John Gruber)",
+        "url": "https://daringfireball.net",
+        "feed": "https://daringfireball.net/feeds/main",
+        "authority": "tier0-karpathy",
+        "primaryDimensions": ["科技产业评论"]
+      }
+    ]
+  },
+
+  "tier1_enterprise_core": {
+    "_description": "Tier 1 · 企业 AI 核心源(必抓 22 个,继承自 v4),失败重试 1 次 + web_search 兜底",
+    "财经商业一线": [
+      {"id": "the-information", "name": "The Information", "url": "https://www.theinformation.com", "authority": "tier1", "primaryDimensions": ["商业", "案例"]},
+      {"id": "bloomberg-tech", "name": "Bloomberg Technology", "url": "https://www.bloomberg.com/technology", "authority": "tier1", "primaryDimensions": ["商业", "监管"]},
+      {"id": "reuters-tech", "name": "Reuters Technology", "url": "https://www.reuters.com/technology", "authority": "tier1", "primaryDimensions": ["商业", "监管"]},
+      {"id": "ft-ai", "name": "Financial Times AI", "url": "https://www.ft.com/artificial-intelligence", "authority": "tier1", "primaryDimensions": ["商业", "组织"]},
+      {"id": "fortune-ai", "name": "Fortune AI", "url": "https://fortune.com/section/ai/", "authority": "tier1", "primaryDimensions": ["商业", "组织"]},
+      {"id": "wsj-ai", "name": "Wall Street Journal AI", "url": "https://www.wsj.com/news/types/artificial-intelligence", "authority": "tier1", "primaryDimensions": ["商业", "企业战略"]}
+    ],
+    "咨询商学院": [
+      {"id": "mckinsey", "name": "McKinsey AI / QuantumBlack", "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "bcg-ai", "name": "BCG AI", "url": "https://www.bcg.com/capabilities/artificial-intelligence", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "bain-ai", "name": "Bain AI", "url": "https://www.bain.com/insights/topics/artificial-intelligence/", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "deloitte-ai", "name": "Deloitte AI Institute", "url": "https://www2.deloitte.com/us/en/pages/consulting/topics/artificial-intelligence.html", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "pwc-ai", "name": "PwC AI", "url": "https://www.pwc.com/us/en/tech-effect/ai-analytics.html", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "accenture-ai", "name": "Accenture AI", "url": "https://www.accenture.com/us-en/insights/artificial-intelligence-index", "authority": "tier1", "primaryDimensions": ["咨询研究"]},
+      {"id": "hbr-ai", "name": "Harvard Business Review AI", "url": "https://hbr.org/topic/subject/ai-and-machine-learning", "authority": "tier1", "primaryDimensions": ["组织", "咨询研究"]},
+      {"id": "mit-sloan-ai", "name": "MIT Sloan Management Review AI", "url": "https://sloanreview.mit.edu/topic/ai-machine-learning/", "authority": "tier1", "primaryDimensions": ["组织", "案例"]}
+    ],
+    "科技媒体一线": [
+      {"id": "techcrunch-ai", "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/", "authority": "tier1", "primaryDimensions": ["产品", "融资"]},
+      {"id": "venturebeat-ai", "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/", "authority": "tier1", "primaryDimensions": ["产品", "案例"]},
+      {"id": "theverge-ai", "name": "The Verge AI", "url": "https://www.theverge.com/ai-artificial-intelligence", "authority": "tier1", "primaryDimensions": ["产品", "监管"]},
+      {"id": "mit-tech-review-ai", "name": "MIT Technology Review AI", "url": "https://www.technologyreview.com/topic/artificial-intelligence/", "authority": "tier1", "primaryDimensions": ["综合", "监管"]},
+      {"id": "ars-technica-ai", "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/", "authority": "tier1", "primaryDimensions": ["技术分析"]},
+      {"id": "wired-ai", "name": "Wired AI", "url": "https://www.wired.com/tag/artificial-intelligence/", "authority": "tier1", "primaryDimensions": ["综合"]}
+    ],
+    "顶级VC": [
+      {"id": "a16z-ai", "name": "Andreessen Horowitz AI", "url": "https://a16z.com/ai/", "authority": "tier1", "primaryDimensions": ["商业", "产品趋势"]},
+      {"id": "sequoia-ai", "name": "Sequoia Capital AI", "url": "https://www.sequoiacap.com/perspectives-category/ai/", "authority": "tier1", "primaryDimensions": ["商业", "组合公司"]}
+    ]
+  },
+
+  "tier2_enterprise_blogs": {
+    "_description": "Tier 2 · 企业大厂 AI 官方博客(必抓,22 个,v4 14 个 + v5 新增 8 个)",
+    "sources": [
+      {"id": "anthropic", "name": "Anthropic News", "url": "https://www.anthropic.com/news", "authority": "official", "primaryDimensions": ["产品", "基础设施"]},
+      {"id": "openai", "name": "OpenAI Blog", "url": "https://openai.com/blog", "authority": "official", "primaryDimensions": ["产品", "基础设施"]},
+      {"id": "deepmind", "name": "Google DeepMind", "url": "https://deepmind.google/discover/blog/", "authority": "official", "primaryDimensions": ["产品", "研究"]},
+      {"id": "google-ai", "name": "Google Research Blog", "url": "https://blog.research.google", "authority": "official", "primaryDimensions": ["产品", "研究"]},
+      {"id": "microsoft-ai", "name": "Microsoft AI Blog", "url": "https://blogs.microsoft.com/ai/", "authority": "official", "primaryDimensions": ["产品", "案例"]},
+      {"id": "microsoft-research", "name": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/blog/", "authority": "official", "primaryDimensions": ["研究"]},
+      {"id": "aws-ml", "name": "AWS Machine Learning Blog", "url": "https://aws.amazon.com/blogs/machine-learning/", "authority": "official", "primaryDimensions": ["案例", "基础设施"]},
+      {"id": "salesforce-ai", "name": "Salesforce AI", "url": "https://www.salesforce.com/news/topic/ai/", "authority": "official", "primaryDimensions": ["产品", "案例"]},
+      {"id": "databricks", "name": "Databricks Blog (GenAI)", "url": "https://www.databricks.com/blog/category/generative-ai", "authority": "official", "primaryDimensions": ["产品", "案例"]},
+      {"id": "snowflake-ai", "name": "Snowflake AI", "url": "https://www.snowflake.com/blog/category/ai-data-science/", "authority": "official", "primaryDimensions": ["产品", "案例"]},
+      {"id": "servicenow", "name": "ServiceNow Blog", "url": "https://www.servicenow.com/blogs.html", "authority": "official", "primaryDimensions": ["产品", "案例"]},
+      {"id": "meta-ai", "name": "Meta AI", "url": "https://ai.meta.com/blog/", "authority": "official", "primaryDimensions": ["开源 LLM"]},
+      {"id": "huggingface-blog", "name": "Hugging Face Blog", "url": "https://huggingface.co/blog", "authority": "official", "primaryDimensions": ["基础设施", "开源"]},
+      {"id": "mistral-ai", "name": "Mistral AI News", "url": "https://mistral.ai/news/", "authority": "official", "primaryDimensions": ["开源 LLM"]},
+
+      {"id": "oracle-ai", "name": "Oracle AI", "url": "https://www.oracle.com/artificial-intelligence/", "authority": "official", "primaryDimensions": ["产品", "案例"], "_v5_new": true},
+      {"id": "ibm-ai", "name": "IBM AI Blog", "url": "https://www.ibm.com/think/topics/artificial-intelligence", "authority": "official", "primaryDimensions": ["产品", "咨询"], "_v5_new": true},
+      {"id": "nvidia-blog", "name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/blog/category/generative-ai/", "authority": "official", "primaryDimensions": ["基础设施", "硬件"], "_v5_new": true},
+      {"id": "cisco-ai", "name": "Cisco AI", "url": "https://blogs.cisco.com/tag/artificial-intelligence", "authority": "official", "primaryDimensions": ["基础设施", "网络"], "_v5_new": true},
+      {"id": "sap-news", "name": "SAP News", "url": "https://news.sap.com/topics/artificial-intelligence/", "authority": "official", "primaryDimensions": ["产品", "案例"], "_v5_new": true},
+      {"id": "adobe-ai", "name": "Adobe AI", "url": "https://blog.adobe.com/en/topics/ai", "authority": "official", "primaryDimensions": ["产品", "创意 AI"], "_v5_new": true},
+      {"id": "workday-ai", "name": "Workday AI", "url": "https://blog.workday.com/en-us/tags/ai.html", "authority": "official", "primaryDimensions": ["产品", "HR"], "_v5_new": true},
+      {"id": "cohere", "name": "Cohere Blog", "url": "https://cohere.com/blog", "authority": "official", "primaryDimensions": ["企业 LLM"], "_v5_new": true}
+    ]
+  },
+
+  "tier3_analysts": {
+    "_description": "Tier 3 · 独立分析师 & 思考者(必抓,13 个,v4 10 个 + v5 新增 3 个研究者:Karpathy/Lilian Weng/Chollet)",
+    "sources": [
+      {"id": "stratechery", "name": "Stratechery (Ben Thompson)", "url": "https://stratechery.com", "authority": "tier1", "primaryDimensions": ["商业战略"]},
+      {"id": "latent-space", "name": "Latent Space (swyx)", "url": "https://www.latent.space", "authority": "tier1", "primaryDimensions": ["产品", "工程"]},
+      {"id": "import-ai", "name": "Import AI (Jack Clark)", "url": "https://jack-clark.net", "authority": "tier1", "primaryDimensions": ["综合", "政策"]},
+      {"id": "sebastian-raschka", "name": "Sebastian Raschka (Ahead of AI)", "url": "https://magazine.sebastianraschka.com", "authority": "tier1", "primaryDimensions": ["ML 实践"]},
+      {"id": "nathan-lambert", "name": "Nathan Lambert (Interconnects)", "url": "https://www.interconnects.ai", "authority": "tier1", "primaryDimensions": ["RLHF", "对齐"]},
+      {"id": "pragmatic-engineer", "name": "The Pragmatic Engineer", "url": "https://newsletter.pragmaticengineer.com", "authority": "tier1", "primaryDimensions": ["工程组织"]},
+      {"id": "one-useful-thing", "name": "One Useful Thing (Ethan Mollick)", "url": "https://www.oneusefulthing.org", "authority": "tier1", "primaryDimensions": ["企业 AI 落地"]},
+      {"id": "every", "name": "Every (Dan Shipper)", "url": "https://every.to", "authority": "tier1", "primaryDimensions": ["AI 工作方式"]},
+      {"id": "ai-snake-oil", "name": "AI Snake Oil", "url": "https://www.aisnakeoil.com", "authority": "tier1", "primaryDimensions": ["监管", "批判视角"]},
+
+      {"id": "karpathy-blog", "name": "Andrej Karpathy Blog", "url": "https://karpathy.ai", "authority": "tier1", "primaryDimensions": ["AI 原理", "教育"], "_v5_new": true, "_note": "更新频次低但每篇必读"},
+      {"id": "lilian-weng", "name": "Lilian Weng (翁荔)", "url": "https://lilianweng.github.io", "authority": "tier1", "primaryDimensions": ["AI 研究综述"], "_v5_new": true, "_note": "OpenAI 研究员长文"},
+      {"id": "francois-chollet", "name": "François Chollet (Keras 作者)", "url": "https://fchollet.substack.com", "authority": "tier1", "primaryDimensions": ["ARC-AGI", "深度学习"], "_v5_new": true}
+    ]
+  },
+
+  "tier4_chinese": {
+    "_description": "Tier 4 · 国内中文媒体(必抓,17 个,v4 10 个 + v5 新增 7 个)",
+    "sources": [
+      {"id": "36kr-ai", "name": "36氪 AI", "url": "https://36kr.com/information/AI", "authority": "tier1-cn", "primaryDimensions": ["商业", "融资", "组织"]},
+      {"id": "jiqizhixin", "name": "机器之心", "url": "https://www.jiqizhixin.com", "authority": "tier1-cn", "primaryDimensions": ["产品", "技术"]},
+      {"id": "qbitai", "name": "量子位", "url": "https://www.qbitai.com", "authority": "tier1-cn", "primaryDimensions": ["产品", "案例"]},
+      {"id": "zhidx", "name": "智东西", "url": "https://zhidx.com", "authority": "tier1-cn", "primaryDimensions": ["硬科技", "产业"]},
+      {"id": "xinzhiyuan", "name": "新智元", "url": "https://www.xinzhiyuan.com", "authority": "tier2-cn", "primaryDimensions": ["前沿技术"]},
+      {"id": "leiphone-ai", "name": "雷锋网 AI 科技评论", "url": "https://www.leiphone.com/category/AI", "authority": "tier2-cn", "primaryDimensions": ["产业", "案例"]},
+      {"id": "tmtpost", "name": "钛媒体", "url": "https://www.tmtpost.com", "authority": "tier2-cn", "primaryDimensions": ["商业", "监管"]},
+      {"id": "infoq-cn", "name": "InfoQ 中文 AI", "url": "https://www.infoq.cn/topic/AI", "authority": "tier2-cn", "primaryDimensions": ["工程", "案例"]},
+      {"id": "geekpark", "name": "极客公园", "url": "https://www.geekpark.net", "authority": "tier2-cn", "primaryDimensions": ["产品"]},
+      {"id": "huxiu-ai", "name": "虎嗅 AI", "url": "https://www.huxiu.com/channel/106.html", "authority": "tier1-cn", "primaryDimensions": ["商业", "分析"]},
+
+      {"id": "jiemian-ai", "name": "界面新闻 科技", "url": "https://www.jiemian.com/lists/55.html", "authority": "tier1-cn", "primaryDimensions": ["商业", "监管"], "_v5_new": true},
+      {"id": "thepaper-tech", "name": "澎湃科技", "url": "https://www.thepaper.cn/list_25462", "authority": "tier1-cn", "primaryDimensions": ["监管", "政策"], "_v5_new": true},
+      {"id": "future-think-tank", "name": "未来智库", "url": "https://www.vzkoo.com", "authority": "tier2-cn", "primaryDimensions": ["研究报告"], "_v5_new": true},
+      {"id": "xinzhijun", "name": "心智君 (公众号)", "url": "https://mp.weixin.qq.com/", "authority": "tier2-cn", "primaryDimensions": ["AI 分析"], "_v5_new": true, "_note": "微信公众号,需 search 兜底"},
+      {"id": "yicai-ai", "name": "第一财经 AI", "url": "https://www.yicai.com/topic/100322822", "authority": "tier1-cn", "primaryDimensions": ["商业", "财经"], "_v5_new": true},
+      {"id": "stcn", "name": "证券时报", "url": "https://www.stcn.com", "authority": "tier2-cn", "primaryDimensions": ["商业", "政策"], "_v5_new": true},
+      {"id": "caixin-tech", "name": "财新科技", "url": "https://www.caixin.com/", "authority": "tier1-cn", "primaryDimensions": ["商业", "深度"], "_v5_new": true}
+    ]
+  },
+
+  "tier4b_industry_verticals": {
+    "_description": "Tier 4B · 行业垂类(制造 AI,v5 新增 5 个)",
+    "sources": [
+      {"id": "industry-week-ai", "name": "IndustryWeek AI", "url": "https://www.industryweek.com/technology-and-iiot/artificial-intelligence", "authority": "tier2", "primaryDimensions": ["制造 AI"], "_v5_new": true},
+      {"id": "manufacturing-net", "name": "Manufacturing.net AI", "url": "https://www.manufacturing.net/artificial-intelligence", "authority": "tier2", "primaryDimensions": ["制造 AI"], "_v5_new": true},
+      {"id": "sme-smart-manufacturing", "name": "SME Smart Manufacturing", "url": "https://www.sme.org/technologies/", "authority": "tier2", "primaryDimensions": ["制造 AI"], "_v5_new": true},
+      {"id": "caict", "name": "中国信通院", "url": "http://www.caict.ac.cn", "authority": "tier1-cn", "primaryDimensions": ["政策", "研究报告"], "_v5_new": true},
+      {"id": "automation-com", "name": "Automation.com", "url": "https://www.automation.com/en-us/articles/", "authority": "tier2", "primaryDimensions": ["制造 AI", "自动化"], "_v5_new": true}
+    ]
+  },
+
+  "tier4c_vc_sequoia_extended": {
+    "_description": "Tier 4C · 红杉系 VC 扩展(v5 新增 3 个)",
+    "sources": [
+      {"id": "sequoia-china", "name": "红杉中国 / Sequoia China", "url": "https://www.sequoiacap.com/china/", "authority": "tier1", "primaryDimensions": ["商业", "国内 VC"], "_v5_new": true},
+      {"id": "hsg-wechat", "name": "红杉资本 公众号 (HSGCN)", "url": "https://mp.weixin.qq.com/", "authority": "tier2-cn", "primaryDimensions": ["商业", "国内 VC"], "_v5_new": true, "_note": "微信公众号,需 search 兜底"},
+      {"id": "yc-news", "name": "Y Combinator (W26/S26)", "url": "https://www.ycombinator.com/blog", "authority": "tier1", "primaryDimensions": ["创业", "VC"], "_v5_new": true}
+    ]
+  },
+
+  "tier5_karpathy_other_blogs": {
+    "_description": "Tier 5 · Karpathy 92 信源中剩余 74 个(兜底用)。这些主要是个人技术博客 / 复古计算 / Linux 内核 / 安全研究 / 历史随笔。**不优先抓**,只在前面 Tier 抓取量明显不足且其中某条罕见地涉及企业 AI 时才纳入早报。完整列表保留是为了让用户拥有 Karpathy 92 的全清单资产。",
+    "sources": [
+      {"id": "jeffgeerling", "name": "Jeff Geerling", "url": "https://www.jeffgeerling.com", "feed": "https://www.jeffgeerling.com/blog.xml"},
+      {"id": "seangoedecke", "name": "Sean Goedecke", "url": "https://seangoedecke.com", "feed": "https://www.seangoedecke.com/rss.xml"},
+      {"id": "krebsonsecurity", "name": "Krebs on Security", "url": "https://krebsonsecurity.com", "feed": "https://krebsonsecurity.com/feed/"},
+      {"id": "ericmigi", "name": "Eric Migicovsky (Pebble)", "url": "https://ericmigi.com", "feed": "https://ericmigi.com/rss.xml"},
+      {"id": "idiallo", "name": "idiallo", "url": "https://idiallo.com", "feed": "https://idiallo.com/feed.rss"},
+      {"id": "maurycyz", "name": "maurycyz", "url": "https://maurycyz.com", "feed": "https://maurycyz.com/index.xml"},
+      {"id": "shkspr", "name": "Terence Eden (shkspr.mobi)", "url": "https://shkspr.mobi", "feed": "https://shkspr.mobi/blog/feed/"},
+      {"id": "dynomight", "name": "Dynomight", "url": "https://dynomight.net", "feed": "https://dynomight.net/feed.xml"},
+      {"id": "utcc-cks", "name": "Chris Siebenmann (utcc)", "url": "https://utcc.utoronto.ca/~cks", "feed": "https://utcc.utoronto.ca/~cks/space/blog/?atom"},
+      {"id": "xeiaso", "name": "Xe Iaso", "url": "https://xeiaso.net", "feed": "https://xeiaso.net/blog.rss"},
+      {"id": "oldnewthing", "name": "The Old New Thing (Raymond Chen)", "url": "https://devblogs.microsoft.com/oldnewthing", "feed": "https://devblogs.microsoft.com/oldnewthing/feed"},
+      {"id": "righto", "name": "Ken Shirriff (righto.com)", "url": "https://righto.com", "feed": "https://www.righto.com/feeds/posts/default"},
+      {"id": "lucumr", "name": "Armin Ronacher (lucumr/Flask)", "url": "https://lucumr.pocoo.org", "feed": "https://lucumr.pocoo.org/feed.atom"},
+      {"id": "skyfall", "name": "skyfall.dev", "url": "https://skyfall.dev", "feed": "https://skyfall.dev/rss.xml"},
+      {"id": "rachelbythebay", "name": "Rachel by the Bay", "url": "https://rachelbythebay.com", "feed": "https://rachelbythebay.com/w/atom.xml"},
+      {"id": "overreacted", "name": "Overreacted (Dan Abramov)", "url": "https://overreacted.io", "feed": "https://overreacted.io/rss.xml"},
+      {"id": "timsh", "name": "timsh.org", "url": "https://timsh.org", "feed": "https://timsh.org/rss/"},
+      {"id": "johndcook", "name": "John D. Cook", "url": "https://johndcook.com", "feed": "https://www.johndcook.com/blog/feed/"},
+      {"id": "gilesthomas", "name": "Giles Thomas", "url": "https://gilesthomas.com", "feed": "https://gilesthomas.com/feed/rss.xml"},
+      {"id": "matklad", "name": "matklad", "url": "https://matklad.github.io", "feed": "https://matklad.github.io/feed.xml"},
+      {"id": "evanhahn", "name": "Evan Hahn", "url": "https://evanhahn.com", "feed": "https://evanhahn.com/feed.xml"},
+      {"id": "terriblesoftware", "name": "terriblesoftware.org", "url": "https://terriblesoftware.org", "feed": "https://terriblesoftware.org/feed/"},
+      {"id": "rakhim", "name": "Rakhim", "url": "https://rakhim.exotext.com", "feed": "https://rakhim.exotext.com/rss.xml"},
+      {"id": "xania", "name": "xania.org", "url": "https://xania.org", "feed": "https://xania.org/feed"},
+      {"id": "micahflee", "name": "Micah Lee", "url": "https://micahflee.com", "feed": "https://micahflee.com/feed/"},
+      {"id": "nesbitt", "name": "nesbitt.io", "url": "https://nesbitt.io", "feed": "https://nesbitt.io/feed.xml"},
+      {"id": "construction-physics", "name": "Construction Physics", "url": "https://construction-physics.com", "feed": "https://www.construction-physics.com/feed"},
+      {"id": "tedium", "name": "Tedium", "url": "https://tedium.co", "feed": "https://feed.tedium.co/"},
+      {"id": "susam", "name": "Susam Pal", "url": "https://susam.net", "feed": "https://susam.net/feed.xml"},
+      {"id": "entropicthoughts", "name": "Entropic Thoughts", "url": "https://entropicthoughts.com", "feed": "https://entropicthoughts.com/feed.xml"},
+      {"id": "hillelwayne", "name": "Hillel Wayne", "url": "https://buttondown.com/hillelwayne", "feed": "https://buttondown.com/hillelwayne/rss"},
+      {"id": "borretti", "name": "borretti.me", "url": "https://borretti.me", "feed": "https://borretti.me/feed.xml"},
+      {"id": "jayd-ml", "name": "jayd.ml", "url": "https://jayd.ml", "feed": "https://jayd.ml/feed.xml"},
+      {"id": "geohot", "name": "George Hotz (geohot)", "url": "https://geohot.github.io", "feed": "https://geohot.github.io/blog/feed.xml"},
+      {"id": "filfre", "name": "The Digital Antiquarian (filfre)", "url": "https://filfre.net", "feed": "https://www.filfre.net/feed/"},
+      {"id": "jim-nielsen", "name": "Jim Nielsen", "url": "https://blog.jim-nielsen.com", "feed": "https://blog.jim-nielsen.com/feed.xml"},
+      {"id": "dfarq", "name": "dfarq.homeip.net", "url": "https://dfarq.homeip.net", "feed": "https://dfarq.homeip.net/feed/"},
+      {"id": "jyn-dev", "name": "jyn.dev", "url": "https://jyn.dev", "feed": "https://jyn.dev/atom.xml"},
+      {"id": "downtowndougbrown", "name": "Doug Brown", "url": "https://downtowndougbrown.com", "feed": "https://www.downtowndougbrown.com/feed/"},
+      {"id": "brutecat", "name": "brutecat.com", "url": "https://brutecat.com", "feed": "https://brutecat.com/rss.xml"},
+      {"id": "eli-greenplace", "name": "Eli Bendersky (thegreenplace)", "url": "https://eli.thegreenplace.net", "feed": "https://eli.thegreenplace.net/feeds/all.atom.xml"},
+      {"id": "abortretry", "name": "Abort Retry Fail", "url": "https://abortretry.fail", "feed": "https://www.abortretry.fail/feed"},
+      {"id": "fabiensanglard", "name": "Fabien Sanglard", "url": "https://fabiensanglard.net", "feed": "https://fabiensanglard.net/rss.xml"},
+      {"id": "oldvcr", "name": "Old VCR", "url": "https://oldvcr.blogspot.com", "feed": "https://oldvcr.blogspot.com/feeds/posts/default"},
+      {"id": "bogdanthegeek", "name": "BogdanTheGeek", "url": "https://bogdanthegeek.github.io", "feed": "https://bogdanthegeek.github.io/blog/index.xml"},
+      {"id": "hugotunius", "name": "Hugo Tunius", "url": "https://hugotunius.se", "feed": "https://hugotunius.se/feed.xml"},
+      {"id": "berthub", "name": "Bert Hubert", "url": "https://berthub.eu", "feed": "https://berthub.eu/articles/index.xml"},
+      {"id": "chadnauseam", "name": "chadnauseam", "url": "https://chadnauseam.com", "feed": "https://chadnauseam.com/rss.xml"},
+      {"id": "simone-org", "name": "simone.org", "url": "https://simone.org", "feed": "https://simone.org/feed/"},
+      {"id": "it-notes-dragas", "name": "Dragas IT Notes", "url": "https://it-notes.dragas.net", "feed": "https://it-notes.dragas.net/feed/"},
+      {"id": "beej", "name": "Beej's Guide", "url": "https://beej.us", "feed": "https://beej.us/blog/rss.xml"},
+      {"id": "hey-paris", "name": "hey.paris", "url": "https://hey.paris", "feed": "https://hey.paris/index.xml"},
+      {"id": "danielwirtz", "name": "Daniel Wirtz", "url": "https://danielwirtz.com", "feed": "https://danielwirtz.com/rss.xml"},
+      {"id": "matduggan", "name": "Mat Duggan", "url": "https://matduggan.com", "feed": "https://matduggan.com/rss/"},
+      {"id": "refactoringenglish", "name": "Refactoring English", "url": "https://refactoringenglish.com", "feed": "https://refactoringenglish.com/index.xml"},
+      {"id": "worksonmymachine", "name": "Works on My Machine", "url": "https://worksonmymachine.substack.com", "feed": "https://worksonmymachine.substack.com/feed"},
+      {"id": "philiplaine", "name": "Philip Laine", "url": "https://philiplaine.com", "feed": "https://philiplaine.com/index.xml"},
+      {"id": "bernsteinbear", "name": "Max Bernstein", "url": "https://bernsteinbear.com", "feed": "https://bernsteinbear.com/feed.xml"},
+      {"id": "danieldelaney", "name": "Daniel Delaney", "url": "https://danieldelaney.net", "feed": "https://danieldelaney.net/feed"},
+      {"id": "troyhunt", "name": "Troy Hunt", "url": "https://troyhunt.com", "feed": "https://www.troyhunt.com/rss/"},
+      {"id": "herman-bearblog", "name": "Herman", "url": "https://herman.bearblog.dev", "feed": "https://herman.bearblog.dev/feed/"},
+      {"id": "tomrenner", "name": "Tom Renner", "url": "https://tomrenner.com", "feed": "https://tomrenner.com/index.xml"},
+      {"id": "pixelmelt", "name": "PixelMelt", "url": "https://blog.pixelmelt.dev", "feed": "https://blog.pixelmelt.dev/rss/"},
+      {"id": "martinalderson", "name": "Martin Alderson", "url": "https://martinalderson.com", "feed": "https://martinalderson.com/feed.xml"},
+      {"id": "danielchasehooper", "name": "Daniel Chase Hooper", "url": "https://danielchasehooper.com", "feed": "https://danielchasehooper.com/feed.xml"},
+      {"id": "sgtatham", "name": "Simon Tatham (PuTTY)", "url": "https://chiark.greenend.org.uk/~sgtatham", "feed": "https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/feed.xml"},
+      {"id": "grantslatton", "name": "Grant Slatton", "url": "https://grantslatton.com", "feed": "https://grantslatton.com/rss.xml"},
+      {"id": "aresluna", "name": "aresluna.org", "url": "https://aresluna.org", "feed": "https://aresluna.org/main.rss"},
+      {"id": "stapelberg", "name": "Michael Stapelberg", "url": "https://michael.stapelberg.ch", "feed": "https://michael.stapelberg.ch/feed.xml"},
+      {"id": "miguelgrinberg", "name": "Miguel Grinberg", "url": "https://miguelgrinberg.com", "feed": "https://blog.miguelgrinberg.com/feed"},
+      {"id": "keygen", "name": "Keygen", "url": "https://keygen.sh", "feed": "https://keygen.sh/blog/feed.xml"},
+      {"id": "mjg59", "name": "Matthew Garrett (mjg59)", "url": "https://mjg59.dreamwidth.org", "feed": "https://mjg59.dreamwidth.org/data/rss"},
+      {"id": "computer-rip", "name": "computer.rip", "url": "https://computer.rip", "feed": "https://computer.rip/rss.xml"},
+      {"id": "tedunangst", "name": "Ted Unangst", "url": "https://tedunangst.com", "feed": "https://www.tedunangst.com/flak/rss"}
+    ]
+  },
+
+  "tier6_aggregators": {
+    "_description": "Tier 6 · 聚合 & Newsletter(兜底用 8 个)",
+    "sources": [
+      {"id": "bens-bites", "name": "Ben's Bites", "url": "https://www.bensbites.com", "authority": "tier2"},
+      {"id": "rundown-ai", "name": "The Rundown AI", "url": "https://www.therundown.ai", "authority": "tier2"},
+      {"id": "tldr-ai", "name": "TLDR AI", "url": "https://tldr.tech/ai", "authority": "tier2"},
+      {"id": "alphasignal", "name": "AlphaSignal", "url": "https://alphasignal.ai", "authority": "tier2"},
+      {"id": "ai-hub-today", "name": "AI Hub Today", "url": "https://ai.hubtoday.app", "authority": "tier3"},
+      {"id": "ai-business", "name": "AI Business", "url": "https://aibusiness.com", "authority": "tier2"},
+      {"id": "axios-ai", "name": "Axios AI", "url": "https://www.axios.com/technology/artificial-intelligence", "authority": "tier2"},
+      {"id": "hn-buzzing-ai", "name": "HN Buzzing (中文 HN 精选)", "url": "https://hn.buzzing.cc", "authority": "tier3"}
+    ]
+  },
+
+  "search_fallback_queries": {
+    "_description": "当 Tier 0-2 源抓不到或量不够时,用这些 query 兜底",
+    "queries_per_dimension": {
+      "产品": ["enterprise AI product launch past 24 hours", "B2B AI tool announcement today", "AI agent platform release", "企业 AI 产品发布"],
+      "案例": ["Fortune 500 AI deployment case study", "company implements AI today", "AI ROI enterprise case", "企业 AI 落地案例"],
+      "商业": ["AI startup funding past 24 hours", "AI company acquisition today", "AI company revenue ARR announcement", "AI 融资 今日"],
+      "组织": ["AI native organization today", "AI replaces jobs report past 24 hours", "AI workforce restructuring"],
+      "基础设施": ["LLM inference cost reduction today", "GPU AI chip announcement", "model API pricing change"],
+      "咨询": ["McKinsey AI report past 24 hours", "BCG enterprise AI study today", "Deloitte AI survey", "HBR AI article today", "Bain AI insights"],
+      "监管": ["AI regulation EU US today", "AI lawsuit copyright past 24 hours", "AI compliance enterprise"],
+      "制造垂类": ["manufacturing AI deployment today", "industrial AI agent", "制造业 AI 落地"],
+      "国内": ["国内 AI 企业 今日", "AI 国产大模型 今天", "AI Agent 落地 中国"]
+    }
+  }
+}

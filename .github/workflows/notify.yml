@@ -1,0 +1,152 @@
+name: 飞书早报通知
+
+# 当 Routine commit 了新早报到 reports/*.md 时触发
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'reports/*.md'
+      - '!reports/index.md'  # 排除目录文件，避免重复触发
+  workflow_dispatch:  # 也支持手动触发（测试用）
+
+jobs:
+  notify-feishu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # 拿到上一个 commit,用于 diff
+
+      - name: Find latest report file
+        id: latest
+        run: |
+          # 找最新的非 index.md 文件
+          LATEST=$(ls -t reports/*.md | grep -v 'index.md' | head -1)
+          DATE=$(basename "$LATEST" .md)
+          REPO="${{ github.repository }}"
+          URL="https://github.com/${REPO}/blob/main/${LATEST}"
+
+          # 提取早报头部信息（前 6 行）作为预览
+          PREVIEW=$(head -6 "$LATEST" | tail -5 | tr '\n' ' ' | head -c 200)
+
+          # 计数：当天主报告条数（看 markdown 里的 "### [" 开头数）
+          MAIN_COUNT=$(grep -c '^### \[' "$LATEST" || echo "0")
+          KARPATHY_COUNT=$(grep -c '^### K-' "$LATEST" || echo "0")
+
+          # 提取 commit message 里的标签（[strong-signal] / [weak-signal] / [partial]）
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          TAG=$(echo "$COMMIT_MSG" | grep -oE '\[(strong|medium|weak)-signal\]|\[partial\]' || echo '')
+
+          # 把所有变量塞进 GITHUB_OUTPUT（多行字符串用 EOF）
+          {
+            echo "file=$LATEST"
+            echo "date=$DATE"
+            echo "url=$URL"
+            echo "main_count=$MAIN_COUNT"
+            echo "karpathy_count=$KARPATHY_COUNT"
+            echo "tag=$TAG"
+            echo "repo=$REPO"
+            echo "preview<<EOF"
+            echo "$PREVIEW"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+
+      - name: Build Feishu card payload
+        id: payload
+        run: |
+          # 飞书富文本卡片消息
+          # 飞书 webhook 文档: https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/im-v1/message-card/specifications/message-card-format
+          cat > /tmp/payload.json << 'EOF'
+          {
+            "msg_type": "interactive",
+            "card": {
+              "config": { "wide_screen_mode": true },
+              "header": {
+                "title": {
+                  "tag": "plain_text",
+                  "content": "📰 同光 · 企业 AI 早报"
+                },
+                "template": "blue"
+              },
+              "elements": [
+                {
+                  "tag": "div",
+                  "fields": [
+                    { "is_short": true, "text": { "tag": "lark_md", "content": "**📅 日期**\n${{ steps.latest.outputs.date }}" } },
+                    { "is_short": true, "text": { "tag": "lark_md", "content": "**🏷 标签**\n${{ steps.latest.outputs.tag }}" } },
+                    { "is_short": true, "text": { "tag": "lark_md", "content": "**📊 主报告**\n${{ steps.latest.outputs.main_count }} 篇" } },
+                    { "is_short": true, "text": { "tag": "lark_md", "content": "**🧠 Tier 0 深度参考**\n${{ steps.latest.outputs.karpathy_count }} 篇" } }
+                  ]
+                },
+                { "tag": "hr" },
+                {
+                  "tag": "div",
+                  "text": {
+                    "tag": "lark_md",
+                    "content": "**预览**\n${{ steps.latest.outputs.preview }}..."
+                  }
+                },
+                { "tag": "hr" },
+                {
+                  "tag": "action",
+                  "actions": [
+                    {
+                      "tag": "button",
+                      "text": { "tag": "plain_text", "content": "📖 阅读完整早报" },
+                      "type": "primary",
+                      "url": "${{ steps.latest.outputs.url }}"
+                    },
+                    {
+                      "tag": "button",
+                      "text": { "tag": "plain_text", "content": "📚 历史目录" },
+                      "type": "default",
+                      "url": "https://github.com/${{ steps.latest.outputs.repo }}/blob/main/reports/index.md"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+          EOF
+
+          echo "payload.json 已生成"
+          cat /tmp/payload.json | head -30
+
+      - name: Send to Feishu webhook
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: |
+          if [ -z "$FEISHU_WEBHOOK" ]; then
+            echo "⚠️ FEISHU_WEBHOOK secret 未配置,跳过通知。"
+            echo "如需启用:Settings → Secrets and variables → Actions → New repository secret"
+            echo "Name: FEISHU_WEBHOOK"
+            echo "Value: <你的飞书机器人 webhook URL>"
+            exit 0
+          fi
+
+          RESPONSE=$(curl -sS -X POST "$FEISHU_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d @/tmp/payload.json)
+
+          echo "飞书响应:"
+          echo "$RESPONSE"
+
+          # 飞书成功返回 {"code":0,"msg":"success"}，code 非 0 视为失败
+          CODE=$(echo "$RESPONSE" | grep -oE '"code":[0-9]+' | head -1 | cut -d: -f2)
+          if [ "$CODE" != "0" ]; then
+            echo "❌ 飞书 webhook 返回非 0 code,通知可能失败"
+            exit 1
+          fi
+
+          echo "✅ 飞书通知发送成功"
+
+      - name: Summary
+        run: |
+          echo "═══════════════════════════════════════"
+          echo "📰 早报: ${{ steps.latest.outputs.file }}"
+          echo "🔗 URL: ${{ steps.latest.outputs.url }}"
+          echo "📊 ${{ steps.latest.outputs.main_count }} 篇主报告 + ${{ steps.latest.outputs.karpathy_count }} 篇 Tier 0"
+          echo "🏷  ${{ steps.latest.outputs.tag }}"
+          echo "═══════════════════════════════════════"

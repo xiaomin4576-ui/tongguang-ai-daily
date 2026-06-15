@@ -1,0 +1,77 @@
+name: 构建并部署阅读库到 GitHub Pages
+
+# 触发条件:任何 main 上的 push 都触发(简化, 避免 paths 通配符在某些场景失效)
+# 早报 / 脚本 / 阅读库改动都会触发
+# 唯一不需要触发的情况是 docs-meta/ 改动, 但这个 workflow 跑 30 秒, 无所谓
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:          # 手动触发选项
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 同时只跑一个,避免并发冲突
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 1. 解析 reports/ 生成 index.json
+        run: |
+          python3 scripts/build_index.py
+          echo ""
+          echo "=== 验证 docs/data/index.json ==="
+          ls -la docs/data/
+          echo "字节数: $(wc -c < docs/data/index.json)"
+
+      - name: 2. Commit 更新的 index.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/index.json
+          if git diff --staged --quiet; then
+            echo "index.json 无变化, 跳过 commit"
+          else
+            git commit -m "chore: 自动更新 index.json [skip ci]"
+            git push origin main
+          fi
+
+      - name: 3. Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: 4. Upload docs/ as Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: 5. Print URL
+        run: |
+          echo "═══════════════════════════════════════════"
+          echo "✅ GitHub Pages 部署完成"
+          echo "🔗 URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "═══════════════════════════════════════════"
