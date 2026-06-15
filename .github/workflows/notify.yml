@@ -32,8 +32,8 @@ jobs:
           PREVIEW=$(head -6 "$LATEST" | tail -5 | tr '\n' ' ' | head -c 200)
 
           # 计数：当天主报告条数（看 markdown 里的 "### [" 开头数）
-          MAIN_COUNT=$(grep -c '^### \[' "$LATEST" || echo "0")
-          KARPATHY_COUNT=$(grep -c '^### K-' "$LATEST" || echo "0")
+          MAIN_COUNT=$(grep -c '^### \[' "$LATEST" || true)
+          KARPATHY_COUNT=$(grep -c '^### K-' "$LATEST" || true)
 
           # 提取 commit message 里的标签（[strong-signal] / [weak-signal] / [partial]）
           COMMIT_MSG=$(git log -1 --pretty=%B)

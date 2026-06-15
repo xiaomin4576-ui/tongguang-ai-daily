@@ -30,7 +30,6 @@ jobs:
         with:
           repository: xiaomin4576-ui/my-clips
           path: my-clips
-          token: ${{ secrets.MY_CLIPS_TOKEN }}
       
       - name: Setup Python
         uses: actions/setup-python@v5
