@@ -1,17 +1,59 @@
 {
-  "generated_at": "2026-06-15T14:57:28.412322+08:00",
-  "source_repo": "本地 clips/",
-  "source_path": "clips",
-  "total_files": 0,
-  "total_clips": 0,
+  "generated_at": "2026-06-15T17:21:31.252034+08:00",
+  "source_repo": "xiaomin4576-ui/my-clips",
+  "source_path": "my-clips/clips",
+  "total_files": 1,
+  "total_clips": 1,
   "total_with_images": 0,
   "types": {
-    "文字": 0,
+    "文字": 1,
     "图片": 0,
     "其他": 0
   },
-  "top_sources": [],
-  "top_authors": [],
-  "files": [],
-  "clips": []
+  "top_sources": [
+    [
+      "社交媒体",
+      1
+    ]
+  ],
+  "top_authors": [
+    [
+      "@tongguang",
+      1
+    ]
+  ],
+  "files": [
+    [
+      "2026-06-15.md",
+      1
+    ]
+  ],
+  "clips": [
+    {
+      "id": "2026-06-15_001",
+      "file": "2026-06-15.md",
+      "date": "2026-06-15",
+      "time": "16:53:48",
+      "type": "文字",
+      "title": "同光剪藏功能测试 ✅(这条是验证用,可随时删)",
+      "quote": "同光剪藏功能测试 ✅(这条是验证用,可随时删)",
+      "images": [],
+      "has_image": false,
+      "author": "@tongguang",
+      "author_desc": "",
+      "source": "社交媒体",
+      "source_page": "剪藏功能测试",
+      "source_url": "https://example.com",
+      "all_urls": [
+        "https://example.com"
+      ],
+      "tags": [
+        "文字",
+        "@tongguang"
+      ],
+      "preview": "同光剪藏功能测试 ✅(这条是验证用,可随时删)",
+      "raw": "16:53:48 · 文字\n\n> 同光剪藏功能测试 ✅(这条是验证用,可随时删)\n\n来源: @tongguang  所在页面: [剪藏功能测试](https://example.com)",
+      "datetime": "2026-06-15T16:53:48+08:00"
+    }
+  ]
 }
