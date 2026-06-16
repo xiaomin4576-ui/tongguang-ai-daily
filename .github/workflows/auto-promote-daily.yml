@@ -1,0 +1,44 @@
+name: 自动并入每日早报到 main
+
+# Routine 每天把早报推到 claude/* 分支(默认行为)。
+# 本流程检测到 claude/* 分支上的 daily-briefing 提交后,自动把它并入 main,
+# 再显式触发"部署看板"和"飞书通知",实现每日全自动上线。
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    # 只处理"每日早报"提交,避免误并其他 claude 分支
+    if: startsWith(github.event.head_commit.message, 'daily-briefing:')
+    steps:
+      - name: 检出 main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 合并 claude 分支到 main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          BR='${{ github.ref_name }}'
+          echo "并入分支: $BR"
+          git fetch origin "$BR"
+          git merge --no-ff -m "auto: 并入每日早报 ($BR)" "origin/$BR"
+          git push origin main
+          echo "✅ 已并入 main"
+
+      - name: 触发看板部署 + 飞书通知
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run build-and-deploy-pages.yml --repo "${{ github.repository }}" --ref main
+          gh workflow run notify.yml --repo "${{ github.repository }}" --ref main
+          echo "✅ 已触发部署 + 飞书"
