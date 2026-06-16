@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-16 周二](./2026-06-16.md) — 39 篇 — 关键词：G7峰会AI自愿承诺 / Fable5出口管制第4天 / OpenAI万亿IPO / AI裁员40%归因 / KPMG27.6万人部署Agent365
 - [2026-05-26 周二](./2026-05-26.md) — 72 篇 — 关键词：Anthropic$30B+融资超OpenAI / OpenAI秘密IPO / 教皇首份AI通谕 / Karpathy加入Anthropic / 三部门智能体监管意见
 - [2026-05-15 周五](./2026-05-15.md) — 36 篇 — 关键词：Anthropic首超OpenAI企业采用率 / Musk-OpenAI审判终陈词 / Anthropic$950B估值 / EU AI Act高风险8月截止 / SpaceXAI人才大流失
 - [2026-05-14 周四](./2026-05-14.md) — 41 篇 — 关键词：SAP Sapphire自主企业 / Anthropic超越OpenAI企业客户 / Deloitte仅21%成熟Agent治理 / OpenAI DeployCo驻场模式 / EU AI Act 8月截止仍有效
