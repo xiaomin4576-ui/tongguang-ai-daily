@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-18 周四](./2026-06-18.md) — 39 篇 — 关键词：Bloomberg AI泡沫债务警告 / Anthropic出口管制第6天+欧洲主权觉醒 / Databricks Omnigent+Agent Bricks / OpenAI $150M Partner Network+Pentagon / VivaTech+GTC Paris开幕
 - [2026-06-17 周三](./2026-06-17.md) — 37 篇 — 关键词：MicrosoftWorkIQ-GA / Salesforce多Agent协同GA / SarvamAI印度独角兽$234M / Fable5禁令第5天+智谱GLM5.2开源反击 / Gartner裁员≠ROI
 - [2026-06-16 周二](./2026-06-16.md) — 39 篇 — 关键词：G7峰会AI自愿承诺 / Fable5出口管制第4天 / OpenAI万亿IPO / AI裁员40%归因 / KPMG27.6万人部署Agent365
 - [2026-05-26 周二](./2026-05-26.md) — 72 篇 — 关键词：Anthropic$30B+融资超OpenAI / OpenAI秘密IPO / 教皇首份AI通谕 / Karpathy加入Anthropic / 三部门智能体监管意见
