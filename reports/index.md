@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-19 周五](./2026-06-19.md) — 36 篇 — 关键词：Noam Shazeer跳槽OpenAI / Midjourney超声波扫描仪 / AI定价token→订阅制 / Anthropic首尔NAVER全员Claude / G7 Évian AI治理峰会
 - [2026-06-18 周四](./2026-06-18.md) — 39 篇 — 关键词：Bloomberg AI泡沫债务警告 / Anthropic出口管制第6天+欧洲主权觉醒 / Databricks Omnigent+Agent Bricks / OpenAI $150M Partner Network+Pentagon / VivaTech+GTC Paris开幕
 - [2026-06-17 周三](./2026-06-17.md) — 37 篇 — 关键词：MicrosoftWorkIQ-GA / Salesforce多Agent协同GA / SarvamAI印度独角兽$234M / Fable5禁令第5天+智谱GLM5.2开源反击 / Gartner裁员≠ROI
 - [2026-06-16 周二](./2026-06-16.md) — 39 篇 — 关键词：G7峰会AI自愿承诺 / Fable5出口管制第4天 / OpenAI万亿IPO / AI裁员40%归因 / KPMG27.6万人部署Agent365
