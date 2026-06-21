@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-06-19T16:18:46.735837+00:00",
-    "total_reports": 19,
-    "total_articles": 1146,
+    "generated_at": "2026-06-21T11:33:26.114942+00:00",
+    "total_reports": 20,
+    "total_articles": 1177,
     "date_range": [
       "2026-05-14",
-      "2026-06-20"
+      "2026-06-21"
     ]
   },
   "reports": [
+    {
+      "date": "2026-06-21",
+      "weekday": "周日",
+      "signal_strength": "medium",
+      "main_count": 24,
+      "tier0_count": 3,
+      "summary": "Trump 告诉 Axios：Anthropic \"一周前也许是\"国家安全威胁，但现在不是了——同日 Politico 曝光白宫与 Anthropic 正在联合",
+      "url": "reports/2026-06-21.md",
+      "article_count": 31
+    },
     {
       "date": "2026-06-20",
       "weekday": "周六",
@@ -201,6 +211,547 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260621-T01",
+      "date": "2026-06-21",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Trump 告诉 Axios：Anthropic \"一周前也许是\"国家安全威胁，但现在不是了——同日 Politico 曝光白宫与 Anthropic 正在联合起草 AI 风险评估框架",
+      "summary": "Trump 在 Axios Show 独家采访中被问及是否仍将 Anthropic 视为国家安全威胁，回答：\"现在不了，但一周前也许是。\"他认为 Anthropic 对管制令的响应\"非常迅速且负责\"。与此同时，Politico 6 月 18 日独家披露白宫与 Anthropic 正在联合起草 AI 安全漏洞分级标准，将决定未来政府何时可以干预私营 AI 公司——这一框架可能成为所有 AI 企业的行业标杆。",
+      "meaning": "：AI 供应商和企业客户的合规团队应密切关注这份\"联合风险框架\"的最终文本——它将定义\"什么级别的 AI 安全漏洞会触发政府干预\"，直接影响企业 AI 部署的风险评估和应急预案。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-T02",
+      "date": "2026-06-21",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "OpenAI 发布 Codex Record & Replay：录一遍操作，Codex 永远帮你重复——macOS 首发",
+      "summary": "OpenAI 为 Codex macOS 版推出 Record & Replay 插件：用户执行一遍工作流程，Codex 将其转化为可重用的 SKILL.md 技能文件，支持变量输入（如日期/文件名），后续自动执行。核心场景：报销流程、休假申请、定期报告等重复性办公任务。首发仅限 macOS，暂不覆盖 EEA/英国/瑞士。需启用 Computer Use 权限。",
+      "meaning": "：运营/财务/HR 团队应立即评估 Record & Replay 对高频重复流程的自动化潜力——但需注意其依赖 Computer Use 权限意味着安全审批流程前置，IT 部门应提前制定访问策略。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-T03",
+      "date": "2026-06-21",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "中国收紧铟出口审查——AI 数据中心光芯片供应链的新咽喉",
+      "summary": "Reuters 6 月 19 日报道，中国对铟金属的出口审查趋严。中国占全球铟产量近 70%，铟磷化合物是 AI 数据中心下一代光通信芯片的核心材料（无替代品）。自 2025 年 2 月列入出口管制清单以来，6 英寸铟磷晶圆均价飙升 250% 至约 $5,000。NVIDIA 投资的 Coherent CEO 已亲赴北京向中方提出关切。",
+      "meaning": "：正在规划 AI 数据中心扩建的企业需将\"铟磷供应链风险\"纳入基础设施采购评估——光通信芯片的供给卡脖子可能在 12-18 个月内转化为 AI 推理成本上涨。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "NVIDIA",
+        "Cohere",
+        "Reuters"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-T04",
+      "date": "2026-06-21",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "挪威宣布几乎全面禁止小学使用生成式 AI——6-13 岁学生秋季开学起执行",
+      "summary": "挪威首相 Jonas Gahr Stoere 6 月 19 日宣布：一至七年级（6-13 岁）学生将被禁止使用生成式 AI 工具，14-16 岁学生仅限在教师监督下使用。新规将在 8 月下旬新学年开始时生效。此举背景是挪威教育测试成绩持续下滑——2024 年已禁止校园手机，现在扩展到 AI。政府同步提案增加课堂纸质书籍采购预算。",
+      "meaning": "：教育科技（EdTech）厂商的欧洲市场策略需要分层调整——K-7 市场将收缩，\"教师辅助模式\"而非\"学生直接使用\"将成为北欧合规准入的必要条件。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-T05",
+      "date": "2026-06-21",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Meta 与 Crusoe 签订 1.6GW AI 算力协议——两座数据中心横跨德克萨斯和密苏里",
+      "summary": "Bloomberg/Manila Times 6 月 20 日报道，Meta 与可持续数据中心运营商 Crusoe Energy Systems 签署新协议，在德克萨斯州 Childress 和密苏里州 Warrenton 两地获得约 1.6GW 计算容量。Crusoe 此前已与 Oracle、Microsoft 和 Google 签署数据中心合作。交付时间和金额未披露。",
+      "meaning": "：AI 基础设施的\"GW 级军备竞赛\"正在从超大规模云厂商扩展到社交/消费互联网巨头——企业在选择 AI 云供应商时应评估其底层算力的长期供给保障，而非仅看当前可用容量。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Oracle",
+        "Bloomberg",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-006",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison 2026-06-15 \"Personality clashes sent Anthropic's models offline\"",
+      "summary": "Willison 深度分析 Fable 5/Mythos 5 被禁事件的内幕：揭示 Anthropic Frontier Red Team 负责人 Logan Graham、安全防护主管 Dave Orr 和 Nicholas Carlini 三人正与商务部会面谈判。Willison 指出事件的核心矛盾——Anthropic 的安全透明度策略（主动披露模型能力边界）反而成为政府管制的依据，形成\"越透明越被惩罚\"的扭曲激励。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Simon Willison",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-007",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus 2026-06-13 \"The White House's shambolic AI policy\"",
+      "summary": "Marcus 系统批评 Trump 6 月 2 日的 AI 行政令和随后的商务部管制令：① 行政令中的安全测试要求是自愿的，企业可选择忽略；② 管制令仅聚焦网络安全漏洞，未覆盖生物安全/社会操纵等更广泛的 AI 风险；③ 政策在\"推动创新\"和\"管控风险\"之间缺乏一致性框架——一边说 AI 是国家竞争力，一边用出口管制打击本国领先企业。Marcus 认为这是\"反应式\"而非\"系统式\"的 AI 治理。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Gary Marcus"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-008",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Stratechery (Ben Thompson) 2026-06-18 \"E-commerce in the Age of AI\"",
+      "summary": "Thompson 采访 Michael Morton 深入探讨 AI 对电商的结构性影响：当 AI Agent 开始代替消费者做购买决策时，\"分销模式\"（流量入口/搜索排名）将被\"推荐模式\"（Agent 直接选品）颠覆。讨论了\"不可证伪的悲观论\"陷阱——总有人说 AI 会摧毁 X 行业但无法给出时间线。Thompson 认为 AI 对电商的影响路径更接近\"渐进渗透\"而非\"颠覆替代\"，核心变量是消费者对 Agent 代理购买的信任建立速度。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Stratechery"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-009",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI Codex Record & Replay：录制一遍，自动重复——桌面工作流自动化",
+      "summary": "OpenAI 为 macOS 版 Codex 推出 Record & Replay 插件。用户执行一次完整工作流程（如报销/时休申请/YouTube 上传），Codex 捕获操作序列和窗口细节，生成可编辑的 SKILL.md 技能文件。后续运行时接受变量输入（新日期/文件），实现重复任务的全自动执行。同步上线批量操作管理（标记已读/归档）。限制：仅 macOS、需启用 Computer Use、暂不覆盖 EEA/英国/瑞士。",
+      "meaning": "：运营团队应将高频重复流程（月度报表/审批链/合规检查）列为 Record & Replay 试点候选——但 Computer Use 权限意味着 IT 安全审批必须前置，建议从低敏感度流程开始试水",
+      "source": "The Decoder / CryptoBriefing / Department of Product",
+      "quality_score": 7,
+      "url": "https://the-decoder.com/openais-codex-can-now-watch-you-work-once-and-repeat-the-task-forever/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-010",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Oracle AI 六月更新：Cohere Rerank 4 + 多模态扩展 + 阿联酋新区域",
+      "summary": "OCI 生成式 AI 六月更新三项重点：① Cohere Rerank 4 上线——32K token 上下文窗口、自学习能力、两个变体适配不同工作负载；② Cohere Embed 4 多模态支持——文本+图片联合嵌入；③ 新增阿联酋中央（阿布扎比）区域。Enterprise AI 同步新增可导入模型清单（阿里 Qwen、Google Gemma），支持在 B200 专用集群上托管 OpenAI gpt-oss-20b/120b。",
+      "meaning": "：使用 OCI 的中东企业客户现在可在本地区域运行 AI 推理——数据主权要求严格的金融/政府客户应评估阿联酋区域是否满足合规需求，同时 Rerank 4 的自学习能力可提升 RAG 管线的检索精度",
+      "source": "Oracle Blog",
+      "quality_score": 6,
+      "url": "https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-june-2026",
+      "companies": [
+        "OpenAI",
+        "Google",
+        "Cohere",
+        "Oracle",
+        "阿里"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-011",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Probably 获 a16z $900 万种子轮——目标 AI 输出 99.99% 准确率",
+      "summary": "创始人 Peter Elias 创立的 Probably 获得 Andreessen Horowitz 领投的 $900 万种子轮。公司目标：将 AI 输出的准确率提升至 99.99%——确定性系统的标准但对 AI 极其困难。核心方法：在 AI 输出到达用户之前拦截幻觉和事实错误。",
+      "meaning": "：在医疗/法律/金融等\"零容错\"行业部署 AI 的企业应关注\"AI 输出验证层\"赛道——Probably 的 a16z 背书表明投资者认为\"准确率基础设施\"是独立于模型厂商的新品类",
+      "source": "TechCrunch",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-012",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Anthropic Project Fetch Phase 2：Claude Opus 4.7 控制机器狗速度超人类 20 倍",
+      "summary": "Anthropic Frontier Red Team 发布 Project Fetch 第二阶段结果：Claude Opus 4.7 在最小人工监督下独立编程控制机器狗完成任务，速度约为去年最佳人类团队（配合 Opus 4.1）的 20 倍。但精细物理操作（如轻推沙滩球到精确位置）仍然失败——实时物理反馈仍是人类优势。",
+      "meaning": "：工业自动化/机器人企业应将\"AI 编程控制\"纳入评估——Opus 4.7 在任务编程速度上的 20 倍优势意味着机器人部署周期可大幅压缩，但精细操控仍需人机协作方案",
+      "source": "Anthropic Research / ForkLog",
+      "quality_score": 7,
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-013",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Anthropic Mythos 早期测试客户（Dragos/Cisco）在政府禁令后仍保有访问权",
+      "summary": "Bloomberg 6 月 19 日报道：尽管美国政府 6 月 12 日下令 Anthropic 关闭 Fable 5/Mythos 5 的所有外国用户访问，但部分通过 Project Glasswing 获得 Mythos Preview 的早期测试客户——包括网络安全公司 Dragos 和 Cisco——仍保有访问权。这些客户是在管制令之前通过 Glasswing 安全评估流程获得的受控访问。Anthropic 正在将 Glasswing 合作扩展到约 150 个组织覆盖 15+ 国家。",
+      "meaning": "：Glasswing 的\"安全评估准入\"模式可能成为未来前沿 AI 模型分发的标准——企业安全团队应主动申请类似项目的评估资格，因为在出口管制常态化后，\"预先通过安全审查\"将决定你能否在危机中保持访问",
+      "source": "Outlook Business / Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.outlookbusiness.com/deeptech/anthropics-mythos-still-accessible-to-early-users-despite-us-shutdown-order",
+      "companies": [
+        "Anthropic",
+        "Cisco",
+        "Bloomberg",
+        "Mythos",
+        "Glasswing",
+        "Project Glasswing"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-014",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Databricks 数据仓库业务 ARR 翻倍至 $15 亿——AI 工作负载驱动增长",
+      "summary": "Databricks 对标 Snowflake 的数据仓库产品年化收入在一年内翻倍，达到 $15 亿。增长驱动力：① AI 工作负载对统一数据平台的需求加速；② 客户从其他平台迁移。Databricks 整体年化收入约 $69 亿，公司正筹划以 $1,750 亿估值融资。",
+      "meaning": "：数据基础设施的\"AI 就绪度\"正在决定市场份额——Databricks 的增长表明企业正在用脚投票选择\"AI 原生数据平台\"，CDO 在评估数据栈时应将 Agent 工作负载兼容性列为核心标准",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/databricks-sales-double-for-product-that-competes-with-snowflake",
+      "companies": [
+        "Databricks",
+        "Snowflake"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-015",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "VivaTech 2026 闭幕：200,000 人参会，AI 主导议程——从巴黎看欧洲 AI 战略",
+      "summary": "VivaTech 2026（6 月 17-20 日）在巴黎闭幕，十周年纪念版吸引约 200,000 名参会者（含 Jeff Bezos）。AI 是绝对核心主题：15,000 家初创、4,000 名投资人参与。NVIDIA 在此举办 GTC Paris 主题演讲，聚焦主权 AI 基础设施和物理 AI。LVMH、Orange、L'Oréal、Airbus 等欧洲巨头展示 AI 应用。闭幕日首次开设\"Festival 公众日\"。",
+      "meaning": "：欧洲 AI 市场的\"买方信心\"正在建立——VivaTech 的规模和参与者质量表明欧洲企业已从\"观望 AI\"转向\"采购 AI\"，面向欧洲的 AI 供应商应加大本地化投入",
+      "source": "IndexBox / TechTimes",
+      "quality_score": 6,
+      "url": "https://www.indexbox.io/blog/vivatech-2026-ai-dominates-as-europes-largest-tech-event-draws-200000-in-paris/",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-016",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Meta 与 Crusoe Energy 签署 1.6GW AI 数据中心协议",
+      "summary": "Meta 与可持续数据中心运营商 Crusoe Energy Systems 签署新协议，在德克萨斯州 Childress 和密苏里州 Warrenton 两地合计获得约 1.6GW 计算容量。Crusoe 成立于 2018 年，已与 Oracle、Microsoft 和 Google 签署三座数据中心合作。交付时间和投资金额未披露。",
+      "meaning": "：AI 基础设施的\"能源-算力绑定\"模式正在成熟——Crusoe 同时服务 Meta/Oracle/Microsoft/Google 表明数据中心行业已出现\"AI 算力供应商\"新角色，企业在长期算力规划中应考虑直接与此类供应商合作而非仅依赖云厂商",
+      "source": "Bloomberg / Manila Times / Yahoo Finance",
+      "quality_score": 7,
+      "url": "https://finance.yahoo.com/technology/ai/articles/meta-strikes-ai-computing-deals-201346076.html",
+      "companies": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Oracle",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-017",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "ASML 上调 2026 展望至 €360-400 亿；美国警告中国可能已获取顶级光刻机",
+      "summary": "两条同日新闻交织：① ASML Q1 营收 €88 亿、净利润 €28 亿，AI 芯片需求推动上调全年展望至 €360-400 亿；② Commerce 部长 Lutnick 在近期会议中向 ASML 高层表达关切——认为一台顶级 EUV 光刻机可能已流入中国。ASML 否认：\"该设备从未存在于中国。\"中国区收入占比从 Q4 的 36% 降至 Q1 的 19%。",
+      "meaning": "：芯片供应链的地缘政治紧张度再升一级——企业在选择 AI 芯片供应商时应评估\"供应链断裂风险\"，特别是依赖 TSMC 先进制程的芯片（NVIDIA/Apple/AMD）可能受间接影响",
+      "source": "Bloomberg / TechCrunch",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-018",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Amazon 印度实现\"水正值\"：AI 数据中心扩张中的 ESG 样本",
+      "summary": "Amazon 6 月 19 日宣布其印度业务（含数据中心、办公室和仓库）已实现\"水正值\"——回馈给社区的水量超过消耗量，比原计划提前一年。关键做法：印度数据中心不使用水冷却；在恒河流域地区开展水系恢复项目（年回补数亿升水）。背景：Amazon 计划到 2030 年在印度投资超 $350 亿以提升 AI 能力。",
+      "meaning": "：AI 基础设施的\"水足迹\"正在成为新的 ESG 监管焦点——在印度等水资源稀缺地区扩建数据中心的企业应参考 Amazon 的\"不用水冷+流域修复\"模式，因为这可能成为未来审批的隐性门槛",
+      "source": "Arab News / iTechPost",
+      "quality_score": 6,
+      "url": "https://www.arabnews.com/node/2647809/world",
+      "companies": [
+        "Amazon"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-019",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Pew 研究：半数美国人使用 AI 聊天机器人，但仅 16% 认为 AI 对社会有积极影响",
+      "summary": "Pew 2026 年 6 月 17 日发布的大规模调研：约 50% 美国成年人使用 AI 聊天机器人（2024 年夏季以来大幅增长），约 25% 每日使用。但仅 16% 认为 AI 对社会有积极影响，40% 认为将产生负面影响。近 2/3 认为 AI 发展速度过快。67% 不相信政府能有效监管 AI，59% 不信任企业安全开发 AI。30 岁以下年轻人最悲观（仅 14% 正面评价）。",
+      "meaning": "：企业部署面向消费者的 AI 功能时必须将\"信任建设\"前置——Pew 数据表明\"使用 ≠ 信任\"，产品设计应强调透明度/可控性/退出机制，否则高使用率可能伴随高投诉率",
+      "source": "Pew Research Center",
+      "quality_score": 8,
+      "url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-020",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Reuters 数字新闻报告：全球 10% 人口每周用 AI 聊天机器人获取新闻",
+      "summary": "Reuters Institute 2026 数字新闻报告（48 个市场、近 10 万受访者）：AI 聊天机器人新闻使用率从 2025 年的 7% 升至 10%，但仅 1% 将 AI 视为主要新闻来源。35 岁以下用户达 16%。增长集中在亚洲、非洲、拉美和南/东欧。用户最看重 AI 的\"追问/摘要/解释/多源整合\"能力而非单纯获取标题。",
+      "meaning": "：媒体/内容企业应将\"AI 可发现性\"纳入分发策略——当 10% 受众通过 AI 聊天机器人接触新闻时，内容的结构化程度（能否被 AI 正确摘要和引用）将影响传播效率",
+      "source": "Reuters Institute / GIJN",
+      "quality_score": 7,
+      "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+      "companies": [
+        "Reuters"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-021",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "制造业 AI 调研：98% 在探索，但仅 20% 已做好规模化准备",
+      "summary": "Redwood 2026 制造业 AI 展望调研：98% 的制造商正在探索或考虑 AI 驱动自动化，但仅 20% 自认完全准备好规模化应用。大多数企业卡在\"中期自动化成熟度\"——单系统内完成了自动化，但跨系统的数据流、异常处理和工作流编排仍是手工操作。瓶颈不再是机器本身，而是\"指挥机器的智能\"。",
+      "meaning": "：制造业 CTO 应优先投资\"跨系统编排层\"（工作流引擎/数据集成/异常路由）而非继续增加单点 AI 应用——Redwood 数据表明 78% 企业被困在\"有 AI 但不能编排\"的阶段",
+      "source": "Redwood Software / Automation.com",
+      "quality_score": 6,
+      "url": "https://www.prnewswire.com/news-releases/manufacturing-ai-and-automation-outlook-2026-98-of-manufacturers-exploring-ai-but-only-20-fully-prepared-302665033.html",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-022",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "中国收紧铟出口审查——AI 数据中心光通信芯片面临供应链风险",
+      "summary": "中国加强对铟金属出口的海关审查，此前已于 2025 年 2 月将铟磷化合物列入出口管制清单。中国占全球铟产量约 70%。铟磷是 AI 数据中心下一代高速光通信芯片的不可替代材料。自管制以来，6 英寸铟磷晶圆均价飙升 250% 至约 $5,000。此前只需一天的出口审批现在需数天。NVIDIA 投资的 Coherent CEO 曾随 Trump 访华团提出此议题。",
+      "meaning": "：数据中心建设方和云厂商需将铟磷供应链纳入采购风险管理——建议锁定 12-24 个月的光通信组件库存，并跟踪替代材料（如硅光子）的商业化进度",
+      "source": "Reuters / Business Standard / Mining.com",
+      "quality_score": 7,
+      "url": "https://www.investing.com/news/stock-market-news/china-tightens-indium-export-checks-as-ai-demand-increases-4751353",
+      "companies": [
+        "NVIDIA",
+        "Cohere"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-023",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "中国规划 ¥2 万亿（$2,950 亿）全国 AI 数据中心网络——要求 80% 国产芯片",
+      "summary": "Bloomberg 独家：国家发改委正牵头起草蓝图，五年内投入约 ¥2 万亿建设全国互联的 AI 算力枢纽网络。中国移动/中国电信运营主体，华为等本土供应商至少供应 80% 芯片（实质排挤 NVIDIA）。目标 2028 年完成全国算力网格，含电网升级在内总投资可能超 ¥5 万亿。资金来源：主权债务 + 国家基金 + 银行贷款 + 民间投资。",
+      "meaning": "：依赖 NVIDIA GPU 的中国企业需评估向华为昇腾/寒武纪迁移的时间表——80% 国产化要求意味着 NVIDIA 在中国 AI 数据中心市场的份额将被系统性压缩",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
+      "companies": [
+        "NVIDIA",
+        "华为",
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-024",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Trump 告诉 Axios：不再视 Anthropic 为国家安全威胁",
+      "summary": "Trump 在 Axios Show 独家采访中回应\"是否仍视 Anthropic 为国家安全威胁\"：**\"现在不了，但一周前也许是。\"** 他肯定 Anthropic 对管制令的响应\"非常迅速且负责\"。此番表态与一周前 Commerce 部的强硬立场形成鲜明对比——当时 Anthropic 仅获 90 分钟通知即被要求关闭 Fable 5/Mythos 5。",
+      "meaning": "：总统级别的\"降温信号\"降低了 Anthropic 特定风险，但**不改变\"模型层出口管制\"的制度性先例**——企业合规团队应区分\"个案缓和\"和\"系统性风险\"，后者不会因一次采访消失",
+      "source": "Axios / Bloomberg / CNBC",
+      "quality_score": 8,
+      "url": "https://www.axios.com/2026/06/19/trump-anthropic-national-security-the-axios-show",
+      "companies": [
+        "Anthropic",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-025",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "白宫与 Anthropic 联合起草 AI 安全漏洞分级标准——可能成为行业标杆",
+      "summary": "Politico 独家：白宫和 Anthropic 正在联合起草一份\"AI 安全漏洞严重程度分级标准\"，将定义哪些级别的漏洞应触发政府干预、何种情况下可要求模型下线。这份框架同时承载 Anthropic 的技术判断（什么是技术上可修复的）和政府的管制意愿（什么程度的风险不可接受）。",
+      "meaning": "：所有 AI 供应商和使用前沿 AI 的企业都应为这份框架的发布做预案——作为\"监管者+被监管者联合制定\"的标准，它极可能成为其他国家/行业参照的模板",
+      "source": "Politico / TheStreet / Yahoo Finance",
+      "quality_score": 8,
+      "url": "https://www.thestreet.com/technology/anthropic-white-house-ai-security-scare-regulations",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-026",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "TechCrunch 深度分析：\"从 PGP 到 Mythos——出口管制从未阻止过任何人\"",
+      "summary": "Lorenzo Franceschi-Bicchierai 系统回顾出口管制历史：① 1990 年代加密软件（PGP）出口管制——最终因技术扩散和产业压力而放松；② 2010 年代间谍软件出口管制——Pegasus/FinFisher 在管制下仍然全球扩散；③ 现在的 AI 模型管制——Anthropic Fable/Mythos 是首个真正的测试案例。文章论证：AI 模型比加密软件更难管控，因为权重可复制、开源替代品涌现、技术扩散速度更快。",
+      "meaning": "：企业不应假设出口管制是\"一次性事件\"——历史表明管制措施通常会经历\"收紧→产业反弹→部分放松\"的周期，合规策略应为 12-18 个月的波动期做准备",
+      "source": "TechCrunch",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "companies": [
+        "Anthropic",
+        "TechCrunch",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-027",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "挪威宣布小学几乎全面禁用生成式 AI——秋季开学执行",
+      "summary": "挪威首相 6 月 19 日宣布：1-7 年级（6-13 岁）禁止使用生成式 AI，8-10 年级（14-16 岁）仅限教师监督下使用。8 月下旬新学年起执行。背景：教育测试成绩持续下滑，2024 年已禁止校园手机，现在扩展到 AI。政府同步提案增加纸质书籍采购预算，逆转此前的\"全面数字化\"趋势。",
+      "meaning": "：EdTech 企业面向欧洲 K-12 市场的产品策略需要分层——6-13 岁市场转向\"教师工具\"（AI 辅助备课/评估）而非\"学生工具\"，产品定位从\"学生直接使用 AI\"转为\"教师用 AI 提升教学质量\"",
+      "source": "US News / Engadget / Slashdot",
+      "quality_score": 7,
+      "url": "https://www.usnews.com/news/world/articles/2026-06-19/norway-imposes-near-ban-on-ai-in-elementary-school",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-028",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "欧洲零售业协会要求 AI 生成广告豁免 EU AI Act 透明度规则",
+      "summary": "Eurocommerce（成员含 Amazon、H&M、Inditex、Ikea）6 月 19 日致信欧盟科技主管 Henna Virkkunen，要求将 AI 生成的商业广告排除在 EU AI Act 的\"深度伪造\"标注义务之外。Eurocommerce 论点：商业广告无意误导用户，不应被归类为\"深度伪造\"。EU AI Act 将于 2026 年 8 月 2 日全面生效，要求所有 AI 生成/修改的图片/视频/音频内容标注\"AI 生成\"。",
+      "meaning": "：使用 AI 生成营销内容的品牌方应在 8 月 2 日前建立\"AI 标注流程\"——无论 Eurocommerce 的豁免请求是否成功，合规准备不能等，因为违规处罚可达全球营收的 3%",
+      "source": "Reuters / The Daily Guardian / Influencer Magazine",
+      "quality_score": 6,
+      "url": "https://influencermagazine.uk/2026/06/retail-industry-urges-eu-to-exempt-ai-generated-advertisements-from-transparency-mandate/",
+      "companies": [
+        "Amazon"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260621-029",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "科罗拉多 AI 法案被推迟至 2027 年 1 月并大幅缩减——企业合规压力暂缓",
+      "summary": "科罗拉多州长 5 月 14 日签署 SB 189，将 AI 法案生效日期从 2026 年 6 月 30 日推迟至 2027 年 1 月 1 日，同时大幅缩减原始要求。重大修改包括：① 限制开发者与部署者之间的责任分配基于过错原则；② 废除部分赔偿条款；③ 仅由州检察长执行（无私人诉讼权）。4 月 27 日联邦法官已暂停原法案执行。",
+      "meaning": "：原本为 6 月 30 日 deadline 做合规准备的企业获得喘息——但不应停止准备，因为 SB 189 的\"简化版\"仍然生效，且其他州（加州/德州）的类似法案可能参照科罗拉多的修改方向",
+      "source": "Hunton / Alston & Bird / Littler",
+      "quality_score": 6,
+      "url": "https://www.alstonprivacy.com/compliance-deadline-for-colorado-ai-act-delayed-until-june-30-2026/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-030",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "金山办公 WPS Comate \"企业大脑\"即将上线——面向中大型组织的 AI 办公平台",
+      "summary": "金山办公副总裁王少康 6 月 20 日在\"2026 人民数据大会\"上宣布：组织级 AI 办公产品\"企业大脑\"WPS Comate 将于 7 月正式上线。区别于个人效率工具，\"企业大脑\"面向知识密集型中大型组织，整合激活组织内分散的结构化和非结构化数据。核心架构围绕四大维度：记忆（云盘/邮件/IM 数据整合）、感知（理解组织架构和协作关系）、思考（AI 推理）、行动（生成数字员工参与业务决策）。",
+      "meaning": "：正在评估国产 AI 办公方案的中大型企业应关注 WPS Comate 的 7 月上线——其\"组织知识整合\"定位直接对标 Microsoft 365 Copilot，但数据主权优势在政府/国企场景中具备天然竞争力",
+      "source": "IT 之家 / 网易 / 证券时报",
+      "quality_score": 6,
+      "url": "https://www.ithome.com/0/966/500.htm",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260621-031",
+      "date": "2026-06-21",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "中国 $2,950 亿数据中心建设计划要求 80% 国产芯片——NVIDIA 面临系统性排挤",
+      "summary": "国家发改委牵头起草 AI 数据中心蓝图：五年投入约 ¥2 万亿（$2,950 亿），中国移动/中国电信运营，华为等本土厂商供应至少 80% 芯片。目标 2028 年完成全国算力网格。含电网升级在内总投资可能超 ¥5 万亿。但分析师指出，中国当前国产 AI 芯片产能尚无法支撑 80% 目标，这一时间线可能面临技术瓶颈。",
+      "meaning": "：在中国市场销售 AI 基础设施的国际供应商（NVIDIA/AMD/Intel）应做好份额被系统性压缩的准备——但短期内国产芯片产能不足意味着\"过渡期窗口\"仍存在，关键是在 2027-2028 年前锁定合同",
+      "source": "Bloomberg / Tom's Hardware",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
+      "companies": [
+        "NVIDIA",
+        "华为"
+      ],
+      "keywords": []
+    },
     {
       "id": "20260620-T01",
       "date": "2026-06-20",
@@ -19947,47 +20498,47 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 181,
-      "🇨🇳 国内": 174,
-      "💰 商业": 136,
-      "⚙️ 基础设施": 105,
+      "🚀 产品": 185,
+      "🇨🇳 国内": 176,
+      "💰 商业": 139,
+      "⚙️ 基础设施": 107,
+      "🏢 案例": 102,
       "📊 咨询": 101,
-      "🏢 案例": 99,
-      "🧠 Tier 0": 97,
-      "🌟 Top 5": 95,
-      "⚖️ 监管": 83,
-      "👥 组织": 75
+      "🌟 Top 5": 100,
+      "🧠 Tier 0": 100,
+      "⚖️ 监管": 89,
+      "👥 组织": 78
     },
     "companies": {
-      "Anthropic": 185,
-      "OpenAI": 163,
-      "Google": 113,
-      "NVIDIA": 66,
+      "Anthropic": 192,
+      "OpenAI": 166,
+      "Google": 116,
+      "NVIDIA": 71,
       "AWS": 65,
-      "FT": 53,
+      "FT": 55,
       "DeepSeek": 53,
-      "Amazon": 48,
+      "Amazon": 50,
+      "Microsoft": 42,
       "MIT": 41,
-      "Microsoft": 40,
       "xAI": 34,
       "Bedrock": 33,
+      "Meta": 32,
       "腾讯": 32,
-      "Meta": 30,
-      "Gary Marcus": 29,
-      "TechCrunch": 29,
-      "Mythos": 27,
-      "Simon Willison": 27,
+      "Mythos": 31,
+      "Gary Marcus": 30,
+      "TechCrunch": 30,
+      "Simon Willison": 28,
       "Hugging Face": 27,
+      "阿里": 26,
       "智谱": 26,
-      "阿里": 25,
       "DeepMind": 24,
       "Deloitte": 22,
       "Salesforce": 21,
+      "Bloomberg": 20,
       "Kimi": 20,
       "Stanford": 19,
+      "Stratechery": 18,
       "SAP": 18,
-      "Bloomberg": 17,
-      "Stratechery": 17,
       "豆包": 17,
       "BCG": 17,
       "IBM": 17,
@@ -19996,30 +20547,26 @@
       "PwC": 16,
       "Accenture": 15,
       "字节": 15,
-      "Databricks": 13,
+      "Databricks": 14,
       "Apple": 13,
       "混元": 13,
       "百度": 13,
+      "Snowflake": 12,
+      "华为": 12,
       "ServiceNow": 12,
-      "Snowflake": 11,
       "通义": 11,
       "Ring": 10,
-      "华为": 10,
       "文心": 10,
+      "Reuters": 9,
       "Mistral": 9,
-      "Bain": 9,
-      "Moonshot": 9
+      "Bain": 9
     },
     "signal_days": {
-      "medium": 19
+      "medium": 20
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-05-22",
-        "count": 69
-      },
       {
         "date": "2026-05-23",
         "count": 69
@@ -20135,10 +20682,15 @@
       {
         "date": "2026-06-20",
         "count": 37
+      },
+      {
+        "date": "2026-06-21",
+        "count": 27
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-06-21": 7,
         "2026-06-20": 10,
         "2026-06-19": 11,
         "2026-06-18": 9,
@@ -20160,6 +20712,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-06-21": 3,
         "2026-06-20": 5,
         "2026-06-19": 8,
         "2026-06-18": 7,
@@ -20181,6 +20734,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-06-21": 3,
         "2026-06-20": 1,
         "2026-06-19": 6,
         "2026-06-18": 2,
@@ -20202,6 +20756,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-06-21": 5,
         "2026-06-20": 5,
         "2026-06-19": 2,
         "2026-06-18": 4,
@@ -20242,6 +20797,7 @@
         "2026-05-14": 6
       },
       "FT": {
+        "2026-06-21": 2,
         "2026-06-20": 3,
         "2026-06-19": 4,
         "2026-06-18": 4,
@@ -20277,6 +20833,7 @@
         "2026-05-14": 1
       },
       "Amazon": {
+        "2026-06-21": 2,
         "2026-06-20": 1,
         "2026-06-18": 1,
         "2026-06-17": 1,
@@ -20292,6 +20849,25 @@
         "2026-05-17": 2,
         "2026-05-16": 6,
         "2026-05-15": 5,
+        "2026-05-14": 4
+      },
+      "Microsoft": {
+        "2026-06-21": 2,
+        "2026-06-20": 3,
+        "2026-06-19": 4,
+        "2026-06-18": 2,
+        "2026-06-17": 5,
+        "2026-06-16": 4,
+        "2026-05-27": 5,
+        "2026-05-26": 1,
+        "2026-05-25": 1,
+        "2026-05-22": 1,
+        "2026-05-21": 2,
+        "2026-05-20": 2,
+        "2026-05-19": 1,
+        "2026-05-17": 1,
+        "2026-05-16": 3,
+        "2026-05-15": 1,
         "2026-05-14": 4
       },
       "MIT": {
@@ -20310,24 +20886,6 @@
         "2026-05-16": 2,
         "2026-05-15": 2,
         "2026-05-14": 2
-      },
-      "Microsoft": {
-        "2026-06-20": 3,
-        "2026-06-19": 4,
-        "2026-06-18": 2,
-        "2026-06-17": 5,
-        "2026-06-16": 4,
-        "2026-05-27": 5,
-        "2026-05-26": 1,
-        "2026-05-25": 1,
-        "2026-05-22": 1,
-        "2026-05-21": 2,
-        "2026-05-20": 2,
-        "2026-05-19": 1,
-        "2026-05-17": 1,
-        "2026-05-16": 3,
-        "2026-05-15": 1,
-        "2026-05-14": 4
       }
     },
     "top10_companies": [
@@ -20339,8 +20897,8 @@
       "FT",
       "DeepSeek",
       "Amazon",
-      "MIT",
-      "Microsoft"
+      "Microsoft",
+      "MIT"
     ]
   }
 }
