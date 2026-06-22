@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-23 周二](./2026-06-23.md) — 20 篇 — 关键词：Micron-Anthropic战略供应协议 / GPT-5.6发布窗口开启 / CNN-AI监管一团糟+100专家联名信 / xAI-Grok免费Office插件 / 豆包付费流失610万
 - [2026-06-22 周日](./2026-06-22.md) — 21 篇 — 关键词：Fable5免费窗口关闭 / SpaceX收购Cursor$600亿 / ChatGPT份额跌破50% / FERC电网改革AI数据中心 / Agentjacking劫持编程Agent
 - [2026-06-21 周日](./2026-06-21.md) — 24 篇 — 关键词：Trump撤回Anthropic威胁论 / OpenAI Codex Record&Replay / 中国铟出口管控 / 挪威禁止小学AI / Meta-Crusoe 1.6GW
 - [2026-06-20 周六](./2026-06-20.md) — 32 篇 — 关键词：Lutnick出口管制法律先例 / AWS Summit NYC Continuum+Kiro / Gallup不用AI裁员概率3倍 / Microsoft取消Claude Code / Salesforce $36亿收购Fin
