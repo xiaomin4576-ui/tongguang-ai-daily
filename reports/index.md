@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-25 周四](./2026-06-25.md) — 32 篇 — 关键词：Qualcomm确认$39亿收购Modular / Oracle SEC年报首提AI裁员21000人 / Tencent双线AI:Xiaowei+Dayuan / 印度IT Nifty权重22年新低 / Baseten$15亿估值$130亿
 - [2026-06-24 周三](./2026-06-24.md) — 34 篇 — 关键词：KOSPI暴跌10%触发熔断 / OpenAI GPT-5.5-Cyber+Patch the Planet / Fable5转付费$10/$50 / SpaceX-Reflection $63亿算力协议 / Qualcomm双线并购$120-140亿
 - [2026-06-23 周二](./2026-06-23.md) — 20 篇 — 关键词：Micron-Anthropic战略供应协议 / GPT-5.6发布窗口开启 / CNN-AI监管一团糟+100专家联名信 / xAI-Grok免费Office插件 / 豆包付费流失610万
 - [2026-06-22 周日](./2026-06-22.md) — 21 篇 — 关键词：Fable5免费窗口关闭 / SpaceX收购Cursor$600亿 / ChatGPT份额跌破50% / FERC电网改革AI数据中心 / Agentjacking劫持编程Agent
