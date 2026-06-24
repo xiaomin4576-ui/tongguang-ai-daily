@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-06-24T10:36:44.567567+00:00",
-    "total_reports": 23,
-    "total_articles": 1266,
+    "generated_at": "2026-06-24T16:15:40.004727+00:00",
+    "total_reports": 24,
+    "total_articles": 1304,
     "date_range": [
       "2026-05-14",
-      "2026-06-24"
+      "2026-06-25"
     ]
   },
   "reports": [
+    {
+      "date": "2026-06-25",
+      "weekday": "周四",
+      "signal_strength": "medium",
+      "main_count": 31,
+      "tier0_count": 5,
+      "summary": "Qualcomm 正式确认 $39 亿收购 AI 软件公司 Modular",
+      "url": "reports/2026-06-25.md",
+      "article_count": 38
+    },
     {
       "date": "2026-06-24",
       "weekday": "周三",
@@ -241,6 +251,660 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260625-T01",
+      "date": "2026-06-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Qualcomm 正式确认 $39 亿收购 AI 软件公司 Modular",
+      "summary": "Qualcomm 以 1920 万股换股方式收购 Modular，获得跨硬件 AI 推理优化软件栈，预计下半年完成交割，加速数据中心 + 端侧 AI 双线布局。",
+      "meaning": "：正在选型 AI 推理芯片的企业需重新评估 Qualcomm 生态——Modular 的 MAX 引擎意味着\"一次部署、多硬件运行\"成为可能，采购 RFP 应增加\"跨芯片可移植性\"维度。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-T02",
+      "date": "2026-06-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Oracle SEC 年报首次将 AI 列为裁员原因：一年砍 21,000 人",
+      "summary": "Oracle FY2026 10-K 披露员工从 162,000 降至 141,000，重组支出 $18.4 亿，资本开支同比增 162% 至 $557 亿投入 AI 数据中心，销售团队缩减 19%。",
+      "meaning": "：AI 裁员从\"管理层暗示\"进入\"法律文件明示\"阶段——企业 HR 和法务团队应立即审查自身 SEC 披露措辞，避免被投资者或监管引用为先例。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Oracle"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-T03",
+      "date": "2026-06-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Tencent 双线出击：Xiaowei 进驻微信 14 亿用户 + Dayuan 用 DeepSeek V4 武装企业微信",
+      "summary": "消费端 Xiaowei 接入微信小程序生态做任务型助手，企业端 Dayuan 基于 DeepSeek V4 模型读取企微聊天/邮件/日历数据，自动生成行业简报和客户分析。",
+      "meaning": "：在企微做 B2B 销售的 SaaS 厂商面临\"平台级 AI 内卷\"——Tencent 用自有数据闭环构建壁垒，第三方 CRM Agent 产品需证明自己比平台原生方案多出的差异化价值。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-T04",
+      "date": "2026-06-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "印度 IT 巨头在 Nifty 50 权重创 22 年新低：AI 恐慌吞噬外包股",
+      "summary": "TCS/Infosys/HCLTech 等五家 IT 公司在 Nifty 50 指数中权重跌破 7.6%，为 2002 年以来最低。2 月单月暴跌 21% 蒸发 $500 亿市值，全年跌逾 27%。",
+      "meaning": "：CIO 重新谈判外包合同时有了新筹码——印度 IT 服务商估值暴跌意味着它们急需\"AI 转型叙事\"，甲方应要求供应商在续约条款中绑定明确的 AI 交付里程碑和效率提升 KPI。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-T05",
+      "date": "2026-06-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Baseten 融资 $15 亿估值 $130 亿——AI 推理基础设施战争白热化",
+      "summary": "推理平台 Baseten 单季度 ARR 从 $2 亿飙至 $6 亿，5 个月估值翻 2.6 倍，日处理超 10 亿次推理调用，客户含 Cursor/Mercor 等，报告较闭源 API 节省 30% 成本。",
+      "meaning": "：企业 AI 采购负责人应把\"推理成本\"从固定预算改为弹性竞标——Baseten 的开源模型推理 + 30% 成本优势正在侵蚀 OpenAI/Anthropic 的企业 API 定价权。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-006",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (June 17) \"GLM-5.2 is probably the most powerful text-only open weights LLM\"",
+      "summary": "Willison 深度评测智谱 GLM-5.2 开源模型，认为其在纯文本能力上可能是目前最强的开源权重 LLM，尤其在长上下文推理和代码生成上表现突出。同时用 Claude Code 在浏览器端移植了 Moebius 0.2B 图像修复模型（6/22）。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "智谱",
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-007",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus (June 13) \"You can't get more 2026 than that\"",
+      "summary": "Marcus 揭露 KPMG 一份关于\"企业成功使用 AI\"的报告中，核心案例研究竟是 AI 幻觉生成的虚假内容——用 AI 写关于 AI 成功的报告，结果案例本身就是编造的，堪称\"2026 年最讽刺事件\"。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Gary Marcus"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-008",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ed Zitron (June 12) \"We're approaching the end of this era\"",
+      "summary": "Zitron 指出 OpenAI 和 Anthropic 都已提交 IPO 文件，但两家\"每年烧掉数十亿美元且没有盈利路径\"，认为 AI 行业正逼近泡沫破裂临界点。同时批评 OpenAI 正考虑\"大幅降价\"是示弱信号。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Ed Zitron"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-009",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus (June 11) \"Google liable for hallucinations — potentially huge\"",
+      "summary": "Marcus 分析一项德国法院裁定：Google 可能需要为 AI 生成的幻觉信息承担法律责任，这与 Section 230 对平台的保护可能发生冲突，是全球范围内 AI 幻觉问责的里程碑判例。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Google",
+        "Gary Marcus"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-010",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ben Thompson / Stratechery (June 2026) \"AI and the Human Condition\"",
+      "summary": "Thompson 讨论 AI 对人类社会的深层影响，认为 LLM 生成的个性化内容无法创造\"共同基础\"——社区的形成需要共享的文化产物，而非算法个性化。同时发布了对 Microsoft CEO Nadella 关于 AI 平台战略的深度访谈。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT",
+        "Stratechery"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-011",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Qualcomm 确认 $39 亿收购 AI 软件公司 Modular，加速跨硬件推理生态",
+      "summary": "Qualcomm 正式宣布以约 $39 亿全股票交易收购 Modular。Modular 成立于 2022 年，已融资 $3.8 亿，其核心产品 MAX 引擎允许 AI 模型在不同硬件架构上高效运行。Qualcomm 将以 1920 万股支付，预计 2026 下半年交割。此举旨在减少对手机市场的依赖，向数据中心和自动驾驶芯片市场扩展。",
+      "meaning": "：正在做 AI 芯片选型的企业应将\"跨硬件可移植性\"纳入评估维度——Modular 的 MAX 引擎一旦与 Qualcomm 芯片深度绑定，可能形成端-云一体的推理生态，打破 NVIDIA CUDA 的锁定效应",
+      "source": "Bloomberg / CNBC",
+      "quality_score": 8,
+      "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-012",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Tencent 用 DeepSeek V4 武装企业微信：Dayuan 读取群聊/邮件/日历生成商业洞察",
+      "summary": "Tencent 开始向部分 WeCom（企业微信）用户推送 Dayuan 智能助手，基于 DeepSeek V4 模型，能读取用户群聊记录、邮件、日历和会议纪要，自动生成客户分析和行业日报。与 DingTalk/Lark 正面竞争，利用 WeCom 已有的企业数据闭环构建差异化壁垒。",
+      "meaning": "：在企微生态内运营的 B2B SaaS 厂商（CRM、协同、BI）面临平台级 AI 内卷——需在 3 个月内证明自己比平台原生方案的差异化价值，否则可能被降维替代",
+      "source": "Bloomberg",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/tencent-tests-deepseek-powered-ai-agent-for-wechat-corporate-app",
+      "companies": [
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-013",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI 推出企业版使用量分析和支出管控：AI FinOps 进入标配时代",
+      "summary": "OpenAI 为 ChatGPT Enterprise 和 Codex 推出信用额度分析看板和分层支出管控。管理员可按用户/产品/模型查看消耗趋势，设置工作区级别和个人级别的额度上限。员工可自助查看余额并申请追加。背景：Uber 据报在 2026 年 4 月就烧完了全年 AI 编程预算。",
+      "meaning": "：每个部署 ChatGPT Enterprise 的公司都应在本周启用这些管控——Uber 的教训表明，不设限的 AI 工具访问 3 个月就能烧光年度预算。CFO 应要求 IT 部门提交月度 AI 使用量报告",
+      "source": "OpenAI 官方",
+      "quality_score": 7,
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-014",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Writer 发布事件驱动型自主 Agent：监控 Gmail/Slack/Gong 自动执行工作流",
+      "summary": "Writer 为其 Agent 平台新增事件触发功能，Agent 可监控 Gmail、Gong、Google Calendar、SharePoint 和 Slack 中的业务信号，无需人工触发即可自动执行多步骤工作流。同步发布 Adobe Experience Manager 连接器和自带加密密钥（BYOK）等企业级治理功能。Salesforce Ventures 和 Adobe Ventures 均为投资方。",
+      "meaning": "：IT 团队评估\"Agent 平台\"时应把\"事件驱动 vs 提示驱动\"作为分水岭——事件触发型 Agent 才能真正实现\"无人值守自动化\"，提示驱动型只是更智能的聊天机器人",
+      "source": "VentureBeat",
+      "quality_score": 6,
+      "url": "https://venturebeat.com/technology/writer-launches-ai-agents-that-can-act-without-prompts-taking-on-amazon-microsoft-and-salesforce",
+      "companies": [
+        "Google",
+        "Salesforce",
+        "Adobe"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-015",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Alteryx 在 Inspire 2026 发布 Agent Studio + MCP Server：分析师直接把数据工作流变成 AI Agent",
+      "summary": "Alteryx One 平台新增 Agent Studio（6 月预览），允许业务分析师将已有的数据清洗/转换工作流直接转化为自主 Agent。同步发布 Alteryx One MCP Server，将这些 Agent 暴露为 Claude/OpenAI 等大模型可调用的工具，连接 Slack/Teams 等协作平台。核心卖点：业务上下文是 Agent 可信度的瓶颈，而非模型能力。",
+      "meaning": "：已有 Alteryx 数据工作流资产的企业获得了最短路径的 Agent 化升级——不需要重写代码，MCP Server 让现有 ETL 逻辑直接变成 AI 可调用的能力，IT 团队应优先评估存量工作流的 Agent 化 ROI",
+      "source": "Enterprise DNA / Diginomica",
+      "quality_score": 6,
+      "url": "https://enterprisedna.co/resources/news/alteryx-agent-studio-inspire-2026-analytics-ai-agents/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-016",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "HPE + NVIDIA 扩展 AI Factory：发布 Agent Toolkit 打造企业级 Agent 操作系统",
+      "summary": "HPE Discover 2026 发布：NVIDIA Agent Toolkit（含 Nemotron 开源模型、OpenShell 安全运行时、NemoClaw 蓝图）集成到 HPE Private Cloud AI。新增 Agent 注册/审批机制——企业可在中心化治理策略下批准 AI 模型和工具才能运行。HPE Zerto 新增\"流氓 Agent 检测 + 连续数据保护回滚\"功能。同步推出基于 NVIDIA Vera CPU 的 Agent 专用服务器。",
+      "meaning": "：准备在私有云部署多 Agent 系统的企业有了第一个\"交钥匙\"方案——但应关注 NVIDIA 生态锁定风险，采购时要求 HPE 明确 Agent Toolkit 对非 NVIDIA 硬件的兼容路线图",
+      "source": "NVIDIA Blog / HPE",
+      "quality_score": 6,
+      "url": "https://blogs.nvidia.com/blog/hpe-ai-factory-agentic-enterprise/",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-017",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Perplexity 开源 Bumblebee：首个将 MCP 配置文件纳入扫描面的供应链安全工具",
+      "summary": "Perplexity AI 开源 Bumblebee v0.1.1，一个只读型开发者端点扫描器，覆盖 npm/PyPI/Go/Ruby 等包管理器、编辑器扩展、浏览器扩展和 MCP 配置文件。用 Go 编写，零外部依赖，Apache 2.0 协议。三种扫描模式（baseline/project/deep）支持从日常盘点到事件响应。关键设计：从不执行安装脚本、从不调用包管理器，防止\"扫描触发攻击\"。",
+      "meaning": "：所有部署了 MCP 集成（Claude/Cursor/Gemini CLI）的开发团队应立即将 Bumblebee 纳入 CI 流水线——MCP 配置文件是全新的攻击面，目前几乎没有企业在扫描它",
+      "source": "Perplexity 官方博客",
+      "quality_score": 6,
+      "url": "https://www.perplexity.ai/hub/blog/perplexity-is-open-sourcing-bumblebee",
+      "companies": [
+        "Perplexity"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-018",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "UnitedHealth $30 亿 AI 押注：AI Bot 给医生打电话预约、护士车上听 AI 读病历",
+      "summary": "UnitedHealth 计划 2026-2027 年投入 $30 亿用于 AI 部署。试点项目包括：AI Agent 自动拨打诊所为患者预约、AI 实时朗读病历摘要供出诊护士在车上收听、AI 监听数百万客服电话识别投诉根因。高管声称看到 2:1 投入产出比。但隐忧在于：患者不知道 AI 何时参与了决策，也不清楚 AI Agent 代表谁的利益。",
+      "meaning": "：医疗健康行业的 CIO 在部署 AI Agent 时必须前置\"患者知情权\"设计——UnitedHealth 的\"AI 打电话给医生\"场景一旦引发公众反弹，整个行业的 AI 部署节奏都会被拖慢",
+      "source": "Bloomberg / Modern Healthcare",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-19/unitedhealth-bets-3-billion-on-ai-to-cut-costs-tame-backlash",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-019",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "OpenAI 展示 GPT-5 帮免疫学家破解 3 年未解之谜：AI 预测实验结果获实验验证",
+      "summary": "免疫学家 Derya Unutmaz 将 T 细胞实验数据上传至 GPT-5 Pro，模型提出\"脱氧葡萄糖干扰 IL-2 蛋白合成从而解除 Th17 细胞分化屏障\"的假说。更关键的是：当 Unutmaz 让 GPT-5 预测一个尚未发表的 CD8+ 杀伤淋巴瘤实验结果时，模型正确预测了结果——排除了从互联网获取答案的可能。",
+      "meaning": "：制药/生物科技企业应建立\"AI 假说生成→湿实验验证\"标准流程——GPT-5 级别的模型已能在专业科学领域产生可验证的新假说，研发周期可能缩短数月到数年",
+      "source": "OpenAI 官方",
+      "quality_score": 7,
+      "url": "https://openai.com/index/gpt-5-immunology-mystery/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-020",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Google DeepMind 投资 $7500 万入股 A24：AI 进入好莱坞生产流程",
+      "summary": "Google 以 $7500 万获得独立电影公司 A24 的少数股权，双方建立多年期非排他研究合作。DeepMind 研究人员将深入 A24 的电影制作流程开发新型 AI 工作流。A24 Labs 负责人明确表示\"不是为了让电影更便宜\"，而是开发 AI 分镜脚本等创作工具。这是 Google 首次持有电影公司股权。",
+      "meaning": "：内容产业的 B2B AI 创业者应关注\"创作者协同\"而非\"创作者替代\"的定位——A24 明确拒绝了\"降本\"叙事，证明高端内容客户要的是 AI 增强创意而非廉价替代",
+      "source": "TechCrunch / Variety",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+      "companies": [
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-021",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Alibaba HappyHorse 1.1 跃居全球 AI 视频第二：OpenAI Sora 停服、字节 Seedance 冻结国际化",
+      "summary": "Alibaba 发布 HappyHorse 1.1，含 150 亿参数、音频集成、全 API 企业级接入，首两周 40% 折扣。OpenAI Sora 因财务不可持续于 4 月关闭消费端。ByteDance Seedance 2.0 因 Netflix/Disney/Sony 等版权诉讼冻结国际发布。Google Veo 3.1 成为西方市场唯一主要竞争者。",
+      "meaning": "：企业市场部/创意团队选型 AI 视频工具时应做好\"供应商存续风险\"评估——Sora 说关就关的教训表明，API 集成要预留替代方案，合同中应包含数据导出和迁移条款",
+      "source": "VentureBeat",
+      "quality_score": 6,
+      "url": "https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away",
+      "companies": [
+        "OpenAI",
+        "Google",
+        "字节"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-022",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Baseten 融资 $15 亿估值 $130 亿：5 个月翻 2.6 倍，AI 推理成为独立基础设施赛道",
+      "summary": "Baseten 完成 $15 亿 Series F，由 Altimeter Capital、Conviction、Spark Capital 联合领投。5 个月内估值从 $50 亿升至 $130 亿。单季度 ARR 从 $2 亿飙至 $6 亿，日处理超 10 亿次推理调用，覆盖 87 个集群、18 朵云。客户报告较闭源 API 节省 30% 成本。年内计划 3 倍扩招。",
+      "meaning": "：CTO 在规划 AI 推理架构时应将\"推理即服务\"作为独立预算科目——推理市场正从\"模型厂商附属品\"独立出来成为千亿级赛道，Baseten 的 30% 成本优势正在蚕食 OpenAI/Anthropic 的企业 API 份额",
+      "source": "BusinessWire / TechCrunch",
+      "quality_score": 7,
+      "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-$1.5-Billion-to-Power-the-Next-Era-of-AI-Inference",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-023",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Morgan Stanley：全球 AI 相关债务将翻倍至 $5700 亿——AI 从股票叙事变成债券叙事",
+      "summary": "Morgan Stanley 预测 2026 年全球 AI 关联债务发行将接近 $5700 亿，较去年翻倍。截至 5 月底已发行 $2360 亿，同比增 4 倍。Alphabet/Amazon/Microsoft/Meta 今年资本开支预计达 $7000 亿，2027 年将突破 $1 万亿。AI 债券正成为投资级信用市场最大单一板块，直接影响 401(k) 等退休账户的底层资产配置。",
+      "meaning": "：企业 CFO 应将 AI 基础设施融资从\"权益融资\"扩展到\"债券+ABS\"渠道——利率环境和债券市场对 AI 投入的接受度正在打开新的融资窗口，但也意味着企业信用风险与 AI 投资回报直接挂钩",
+      "source": "Reuters / Yahoo Finance",
+      "quality_score": 7,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-forecasts-ai-debt-135325015.html",
+      "companies": [
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-024",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Nobel 奖得主 John Jumper 离开 Google DeepMind 加入 Anthropic",
+      "summary": "AlphaFold 核心作者、2024 年 Nobel 化学奖得主 John Jumper 宣布离开 DeepMind 加入 Anthropic。Jumper 在 DeepMind 近 9 年，近期参与了 AI 编程开发。Anthropic 2026 年来持续布局生命科学：开设湿实验室、发布生物学 Agent 研究、与 Allen 研究所和 Howard Hughes 医学研究所达成旗舰合作。",
+      "meaning": "：生物医药企业选择 AI 合作伙伴时应关注 Anthropic 的 BioAI 布局——Jumper 的加盟意味着 Anthropic 可能在蛋白质结构预测和药物发现领域推出垂直化产品，这将直接冲击现有 CRO 的定价模型",
+      "source": "TechCrunch / Bloomberg",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-025",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "月之暗面（Moonshot AI）再融 $20 亿瞄准 $300 亿估值：半年翻近 7 倍",
+      "summary": "Kimi 母公司月之暗面正在接洽新一轮 $20 亿融资，对应投前估值 $300 亿（约 2035 亿人民币），较 2025 年 12 月的 $43 亿暴涨近 7 倍。这是半年内的第三轮大额融资。账上现金超 100 亿元人民币，同时推进港股 IPO 筹备。",
+      "meaning": "：中国 AI 大模型赛道的资本集中度已超预期——中小创业者在\"通用大模型\"层面几乎没有融资空间，应转向垂直场景 Agent 或行业专用模型赛道寻求差异化",
+      "source": "36氪 / 钛媒体",
+      "quality_score": 6,
+      "url": "https://36kr.com/p/3845696736131721",
+      "companies": [
+        "Moonshot",
+        "Kimi"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-026",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Anthropic 与 Microsoft 洽谈 Maia 200 芯片合作：推理工作负载多云布局再下一城",
+      "summary": "Anthropic 正与 Microsoft 就通过 Azure 租用 Maia 200 AI 芯片进行早期谈判，聚焦推理工作负载。Maia 200 采用台积电 3nm 工艺，216GB HBM3e，据 Nadella 称\"每美元 token 产出提升 30%+\"。Anthropic 目前已在 AWS 和 Google Cloud 上运行，Maia 合作将进一步扩展其多云策略。",
+      "meaning": "：企业采购 Anthropic Claude API 时，未来可能通过 Azure 获得更低推理成本——多云部署的 AI 供应商意味着企业不再被锁定在单一云平台上，应在采购合同中保留\"选择推理后端\"的灵活性",
+      "source": "CNBC",
+      "quality_score": 6,
+      "url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "Microsoft",
+        "AWS",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-027",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Oracle 10-K 首次将 AI 列为裁员原因：21,000 人一年内被裁，重组支出 $18.4 亿",
+      "summary": "Oracle FY2026 10-K 于 6 月 23 日提交 SEC，披露全球员工从 ~162,000 降至 ~141,000。销售团队缩减 19%（31K→25K），研发团队减 14%（50K→43K）。文件明确写道 AI 部署\"已经并可能继续导致员工减少\"。重组成本 $18.4 亿（上年 $3.74 亿），资本开支暴增 162% 至 $557 亿投入 AI 数据中心。",
+      "meaning": "：企业法务和 IR 团队必须立即审查本公司 SEC 披露中关于 AI 与员工的措辞——Oracle 开了先河，SEC 审查员和投资者律师未来可能要求所有大型科技公司做类似披露，不如主动规范措辞",
+      "source": "CNBC / Tom's Hardware",
+      "quality_score": 8,
+      "url": "https://www.cnbc.com/2026/06/23/oracle-ai-job-cuts-layoffs-21000.html",
+      "companies": [
+        "Oracle"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-028",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "印度 IT 巨头 Nifty 50 权重跌至 22 年新低：AI 恐慌蒸发 $500 亿",
+      "summary": "TCS/Infosys/HCLTech/Wipro/LTM 五家公司在 Nifty 50 权重降至 7.6% 以下，创 2002 年以来最低。2 月单月暴跌 21%（2003 年以来最大月跌幅），全年累计跌逾 27%。触发因素：Anthropic Claude Cowork 等 AI 工具可自动化法务/销售/数据分析——正是印度 IT 服务 20 年来为 Fortune 500 做的工作。6 月初出现 8% 反弹，部分投资者开始将 AI 视为增长催化剂。",
+      "meaning": "：正在续签印度 IT 外包合同的 CIO 应利用供应商估值下跌窗口重新谈判——要求在合同中绑定\"AI 增效\"条款：供应商必须在 12 个月内用 AI 提效 20%+，否则自动触发价格下调机制",
+      "source": "Bloomberg",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-24/indian-tech-s-nifty-share-shrinks-to-record-low-on-ai-worries",
+      "companies": [
+        "Anthropic",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-029",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "BCG 调查：74% 一线员工每天用 AI，42% 省下一整天——但 66% 不知道省下的时间该干什么",
+      "summary": "BCG 第四版\"AI at Work\"调查覆盖 12,000 名全球员工。一线 AI 使用率从 2025 年的 51% 飙升至 74%（+23pp）。42% 的常规 AI 用户每周省出 8 小时（=1 个工作日）。营销部门 60%、IT 53%、HR 50% 省时效果最强。但 66% 的员工未获得如何利用省下时间的指导，超半数未将省下时间投入更有战略价值的工作。",
+      "meaning": "：CHRO 应在 Q3 内推出\"AI 红利再分配\"计划——不能让员工自行决定省下的 8 小时干什么。配套动作：识别高价值任务清单、为释放出的产能设定新 KPI、将\"AI 省时→战略任务转化率\"纳入管理者考核",
+      "source": "BCG",
+      "quality_score": 7,
+      "url": "https://www.bcg.com/publications/2026/ai-at-work-why-strategy-matters-more-than-tools",
+      "companies": [
+        "BCG"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-030",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "2026 年科技裁员追踪：267 起事件裁 18.6 万人，56% 明确引用 AI 为原因",
+      "summary": "截至 6 月 23 日，2026 年已发生 267 起科技裁员事件，涉及 185,894 名员工，日均约 1,068 人。56% 的裁员事件明确引用 AI/自动化/机器学习。5 月是近两年最严峻月份（>38,000 人），AI 是最常被引用的原因。但数据也显示\"再分配\"趋势：某大厂 5 月裁 8,000 人同时将 7,000 人转入 AI 团队。",
+      "meaning": "：企业 HR 在做 AI 转型规划时应同步准备\"内部人才市场\"机制——裁员+再分配的模式正在成为标配，提前建立\"AI 技能测评→岗位匹配→快速转岗\"流程，能把裁员成本转化为竞争优势",
+      "source": "TechCrunch / SkillSyncer",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-031",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "NVIDIA 数据中心收入 FY2026 达 $1935 亿：AI 算力仍处供不应求状态",
+      "summary": "NVIDIA FY2026 数据中心收入 $1935 亿（FY2025 为 $1162 亿，+66%）。GTC 2026 发布 Groq 3 语言处理单元和 Vera CPU 机架，直接瞄准 Intel/AMD 的 CPU 市场。RTX Spark Superchip 将于秋季进入 Dell/Lenovo 笔记本，Blackwell 代 6144 核 GPU 与 CPU 共享内存运行大型模型。",
+      "meaning": "：企业 AI 采购团队在 NVIDIA GPU 交付周期仍为 6-9 个月的背景下，应同步评估 Baseten/Groq/AMD MI455X 等替代推理方案——NVIDIA 生态虽强，但单一供应商风险在算力供不应求时会放大",
+      "source": "NVIDIA 财报 / 综合",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-032",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "超大规模云厂资本开支 2026 年达 $7000 亿，2027 年将破 $1 万亿",
+      "summary": "Alphabet/Amazon/Microsoft/Meta 四家 2026 年资本开支预计合计达 $7000 亿，其中绝大部分投向 AI 数据中心和算力。Morgan Stanley 预计 2027 年将突破 $1 万亿。Microsoft 单家资本开支承诺 $1900 亿，OpenAI Stargate 项目目标 10GW AI 数据中心容量。AI 基础设施投入正以史无前例的速度增长。",
+      "meaning": "：企业在选择云 AI 服务商时应关注各家\"资本开支→算力交付\"的转化效率——$1 万亿级投入意味着 2027-2028 年可能出现算力过剩窗口，届时推理成本可能大幅下降，当前长期锁定合同需谨慎",
+      "source": "Morgan Stanley / 综合",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Microsoft",
+        "Meta",
+        "Amazon",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-033",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Intel 年底发布 Crescent Island AI GPU：数据中心三方混战进入新阶段",
+      "summary": "Intel 计划 2026 年底推出 Crescent Island AI 数据中心 GPU，直接挑战 NVIDIA 和 AMD。Intel 正将产能从消费级 PC 转向服务器芯片，最新季度数据中心收入达 $47 亿。AMD 在 CES 2026 展示 Helios 系统，以 72 颗 MI455X GPU 对标 NVIDIA NVL72，标志着数据中心 AI 芯片进入真正的三方竞争。",
+      "meaning": "：大型企业自建 AI 集群的采购策略应从\"全 NVIDIA\"转向\"多供应商竞标\"——2026 年底 Intel 入场后，GPU 供应商之间的价格战将给买方带来 15-25% 的议价空间",
+      "source": "Barchart / 综合",
+      "quality_score": 5,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-034",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "EU AI Act Omnibus：高风险 AI 合规期限推迟至 2027-2028，透明度义务 8 月 2 日不变",
+      "summary": "5 月 7 日欧盟立法机构就 AI Act Omnibus 修正案达成政治协议。高风险 AI 系统（招聘/信用评分/执法/教育/边境控制）合规期限从 2026 年 8 月推迟至 2027 年 12 月；嵌入受监管产品的 AI 推迟至 2028 年 8 月。但 Article 50 透明度义务（用户交互 AI 时的告知义务）维持 2026 年 8 月 2 日不变。修正案尚待欧洲议会和理事会正式批准。",
+      "meaning": "：面向欧盟市场的企业应区分\"必须立即合规\"和\"获得缓冲\"的两类义务——透明度（8 月 2 日）无延期，必须在 5 周内完成 AI 交互告知机制的部署；高风险系统合规获得 18 个月缓冲，可更从容地建设治理框架",
+      "source": "Gibson Dunn / Latham",
+      "quality_score": 7,
+      "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-035",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Colorado 推倒重来：SB 26-189 以更窄框架取代 2024 年里程碑式 AI 法案",
+      "summary": "5 月 14 日 Colorado 州长签署 SB 26-189，废除并取代 2024 年的 AI 法案，2027 年 1 月 1 日生效。删除算法歧视注意义务、风险管理计划、影响评估和年度报告等要求。新法核心三条：使用前通知消费者、不利决定后 30 天内通知、消费者有权要求人工复核。执行权仅归州总检察长，违规方有 60 天修正窗口。",
+      "meaning": "：在 Colorado 部署 AI 辅助决策的企业获得了监管确定性——新法以\"通知+修正\"替代了旧法的\"全链条治理\"，合规成本大幅降低，但\"不利决定通知\"机制仍需在产品流程中内嵌",
+      "source": "Colorado General Assembly / 多家律所",
+      "quality_score": 6,
+      "url": "https://leg.colorado.gov/bills/sb26-189",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260625-036",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "Tencent 在微信内测 Xiaowei AI 助手：14 亿用户的超级 App 正式进入 AI 时代",
+      "summary": "Tencent 在微信（Weixin）小范围测试\"小微\"（Xiaowei）原生 AI 助手，支持文字和语音交互，可调用微信小程序完成任务。底层主要使用 Weixin 自研 WeLM 大模型，部分查询调用 DeepSeek。Q3 目标向更广泛用户开放。这是微信自 2011 年上线以来最大的功能架构变革。",
+      "meaning": "：微信生态内的 SaaS 和小程序开发者应立即评估 Xiaowei 的 API 接口——一旦 AI 助手成为用户入口，\"小程序发现\"逻辑可能从\"搜索/分享\"变为\"AI 推荐\"，不适配者将失去流量入口",
+      "source": "CNBC / Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html",
+      "companies": [
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-037",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "月之暗面半年估值涨 7 倍至 $300 亿：中国 AI 大模型融资加速向头部集中",
+      "summary": "Kimi 母公司月之暗面接洽第三轮大额融资（$20 亿），投前估值 $300 亿。2025 年 12 月估值仅 $43 亿，半年翻近 7 倍。账上现金超 100 亿元人民币，同步推进港股 IPO 拆红筹。资本正以极高效率向头部大模型公司集中。",
+      "meaning": "：中国 AI 赛道的中小创业者融资窗口正在急速收窄——通用大模型层面的资本已被 Moonshot/智谱/百川等头部锁定，中小团队应在 3 个月内明确\"垂直场景 Agent\"定位，否则将面临融资断档",
+      "source": "36氪 / 钛媒体",
+      "quality_score": 6,
+      "url": "https://36kr.com/p/3845696736131721",
+      "companies": [
+        "Kimi"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260625-038",
+      "date": "2026-06-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "中国四部委印发 AI+能源双向赋能行动方案：国家级 AI 产业政策加速落地",
+      "summary": "四部委联合印发《关于促进人工智能与能源双向赋能的行动方案》，国家数据局同步发布《关于推进行业高质量数据集建设行动的实施方案》。这是国家层面首次对数据赋能 AI 发展作出系统性部署。商务部等 8 部门另发布《关于加快\"人工智能+消费\"发展的实施意见》，17 项具体举措涵盖商品消费和服务消费两大领域。",
+      "meaning": "：在中国布局 AI 的企业应将\"数据集合规\"前置到产品规划之前——国家数据局的实施方案意味着\"高质量数据集\"将有官方标准，提前对齐标准的企业将在政府采购和合规审查中获得先发优势",
+      "source": "新华网 / 综合",
+      "quality_score": 5,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
     {
       "id": "20260624-T01",
       "date": "2026-06-24",
@@ -22074,55 +22738,55 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 199,
-      "🇨🇳 国内": 178,
-      "💰 商业": 150,
-      "⚙️ 基础设施": 117,
-      "🌟 Top 5": 115,
-      "🏢 案例": 112,
-      "🧠 Tier 0": 108,
+      "🚀 产品": 206,
+      "🇨🇳 国内": 181,
+      "💰 商业": 155,
+      "🌟 Top 5": 120,
+      "⚙️ 基础设施": 120,
+      "🏢 案例": 116,
+      "🧠 Tier 0": 113,
       "📊 咨询": 101,
-      "⚖️ 监管": 98,
-      "👥 组织": 88
+      "⚖️ 监管": 100,
+      "👥 组织": 92
     },
     "companies": {
-      "Anthropic": 209,
-      "OpenAI": 186,
-      "Google": 128,
-      "NVIDIA": 82,
-      "AWS": 72,
-      "FT": 62,
-      "Amazon": 58,
-      "DeepSeek": 55,
-      "Microsoft": 48,
+      "Anthropic": 213,
+      "OpenAI": 192,
+      "Google": 134,
+      "NVIDIA": 85,
+      "AWS": 73,
+      "FT": 68,
+      "Amazon": 60,
+      "DeepSeek": 58,
+      "Microsoft": 52,
       "MIT": 43,
       "xAI": 39,
       "Bedrock": 36,
+      "Gary Marcus": 34,
+      "Meta": 34,
+      "Simon Willison": 33,
       "Mythos": 33,
-      "Simon Willison": 32,
-      "Gary Marcus": 32,
-      "Meta": 32,
       "腾讯": 32,
       "TechCrunch": 30,
-      "智谱": 28,
+      "智谱": 29,
       "Hugging Face": 27,
+      "DeepMind": 26,
       "阿里": 26,
-      "Salesforce": 24,
-      "DeepMind": 24,
-      "Kimi": 23,
+      "Salesforce": 25,
+      "Kimi": 25,
       "Deloitte": 23,
       "Stanford": 20,
       "Bloomberg": 20,
+      "Stratechery": 19,
+      "BCG": 19,
       "豆包": 19,
-      "BCG": 18,
-      "Stratechery": 18,
       "SAP": 18,
       "PwC": 17,
       "IBM": 17,
       "Karpathy": 17,
+      "字节": 16,
       "McKinsey": 16,
       "Accenture": 15,
-      "字节": 15,
       "Apple": 14,
       "ServiceNow": 14,
       "Databricks": 14,
@@ -22131,22 +22795,18 @@
       "通义": 12,
       "Snowflake": 12,
       "华为": 12,
+      "Oracle": 10,
+      "Moonshot": 10,
       "Ring": 10,
       "文心": 10,
-      "Reuters": 9,
-      "Mistral": 9,
-      "Bain": 9
+      "Reuters": 9
     },
     "signal_days": {
-      "medium": 23
+      "medium": 24
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-05-26",
-        "count": 60
-      },
       {
         "date": "2026-05-27",
         "count": 67
@@ -22262,10 +22922,15 @@
       {
         "date": "2026-06-24",
         "count": 37
+      },
+      {
+        "date": "2026-06-25",
+        "count": 36
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-06-25": 4,
         "2026-06-24": 7,
         "2026-06-23": 6,
         "2026-06-22": 4,
@@ -22291,6 +22956,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-06-25": 6,
         "2026-06-24": 6,
         "2026-06-23": 7,
         "2026-06-22": 7,
@@ -22316,6 +22982,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-06-25": 6,
         "2026-06-24": 6,
         "2026-06-23": 5,
         "2026-06-22": 1,
@@ -22341,6 +23008,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-06-25": 3,
         "2026-06-24": 6,
         "2026-06-23": 5,
         "2026-06-21": 5,
@@ -22365,6 +23033,7 @@
         "2026-05-14": 2
       },
       "AWS": {
+        "2026-06-25": 1,
         "2026-06-24": 2,
         "2026-06-23": 1,
         "2026-06-22": 4,
@@ -22387,6 +23056,7 @@
         "2026-05-14": 6
       },
       "FT": {
+        "2026-06-25": 6,
         "2026-06-24": 4,
         "2026-06-23": 2,
         "2026-06-22": 1,
@@ -22410,6 +23080,7 @@
         "2026-05-14": 4
       },
       "Amazon": {
+        "2026-06-25": 2,
         "2026-06-24": 1,
         "2026-06-23": 4,
         "2026-06-22": 3,
@@ -22432,6 +23103,7 @@
         "2026-05-14": 4
       },
       "DeepSeek": {
+        "2026-06-25": 3,
         "2026-06-23": 1,
         "2026-06-22": 1,
         "2026-05-27": 5,
@@ -22450,6 +23122,7 @@
         "2026-05-14": 1
       },
       "Microsoft": {
+        "2026-06-25": 4,
         "2026-06-24": 4,
         "2026-06-23": 2,
         "2026-06-21": 2,
