@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-06-27 周六](./2026-06-27.md) — 36 篇 — 关键词：Alphabet蒸发$2700亿+DeepMind六天四走续 / Jalapeño推理芯片量产路线明确 / Alibaba蒸馏攻击2880万次 / Gemini 3.5 Flash原生Computer Use / GPT-5.6赔率逆转83%→18%
 - [2026-06-26 周五](./2026-06-26.md) — 36 篇 — 关键词：OpenAI+Broadcom Jalapeño首款推理芯片 / Anthropic指控Alibaba 2.5万假账号蒸馏Claude / Google DeepMind六天四走 / Claude Tag常驻Slack / EU AI Act透明度倒计时5周
 - [2026-06-25 周四](./2026-06-25.md) — 32 篇 — 关键词：Qualcomm确认$39亿收购Modular / Oracle SEC年报首提AI裁员21000人 / Tencent双线AI:Xiaowei+Dayuan / 印度IT Nifty权重22年新低 / Baseten$15亿估值$130亿
 - [2026-06-24 周三](./2026-06-24.md) — 34 篇 — 关键词：KOSPI暴跌10%触发熔断 / OpenAI GPT-5.5-Cyber+Patch the Planet / Fable5转付费$10/$50 / SpaceX-Reflection $63亿算力协议 / Qualcomm双线并购$120-140亿
