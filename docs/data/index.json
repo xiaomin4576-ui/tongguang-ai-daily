@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-06-27T09:19:21.182140+00:00",
-    "total_reports": 26,
-    "total_articles": 1390,
+    "generated_at": "2026-06-27T16:12:00.077214+00:00",
+    "total_reports": 27,
+    "total_articles": 1432,
     "date_range": [
       "2026-05-14",
-      "2026-06-27"
+      "2026-06-28"
     ]
   },
   "reports": [
+    {
+      "date": "2026-06-28",
+      "weekday": "周日",
+      "signal_strength": "medium",
+      "main_count": 34,
+      "tier0_count": 7,
+      "summary": "美国政府放行 Anthropic Claude Mythos 5，首批 100+ 美国机构获准使用",
+      "url": "reports/2026-06-28.md",
+      "article_count": 42
+    },
     {
       "date": "2026-06-27",
       "weekday": "周六",
@@ -271,6 +281,742 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260628-T01",
+      "date": "2026-06-28",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "美国政府放行 Anthropic Claude Mythos 5，首批 100+ 美国机构获准使用",
+      "summary": "商务部长 Lutnick 确认\"已建立适当安全保障\"，解除两周前因可被越狱而下架的出口管制。Fable 5 何时放行仍未明确，同日 OpenAI GPT-5.6 也以同一机制向~20 家政府审批合作方发布。",
+      "meaning": "：企业采购前沿模型的审批流程正在从\"自选货架\"变成\"政府许可清单\"——CIO 需要在 RFP 中增加\"出口管制合规状态\"评估维度，并为模型突然下架建立备用方案。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-T02",
+      "date": "2026-06-28",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "OpenAI 发布 GPT-5.6 Sol/Terra/Luna 三档模型，仅限~20 家政府审批合作方预览",
+      "summary": "白宫要求 OpenAI 限制首发范围，每个合作账户需经政府逐一审批。OpenAI 回应称\"不认为这种政府审批流程应成为长期默认\"。",
+      "meaning": "：最前沿模型的发布节奏正在从\"全球同步上线\"转向\"分级许可\"——企业如需首批使用权，需提前建立与政府的合规对接通道。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-T03",
+      "date": "2026-06-28",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Apple Vision Pro 硬件负责人 Paul Meade 跳槽 OpenAI，加入 Jony Ive 硬件团队",
+      "summary": "Meade 在 Apple 主导 Vision Pro 硬件和智能眼镜项目 7 年，下周起加入 OpenAI 硬件部门，与前 Apple 同事 Jony Ive、Tang Tan、Evans Hankey 会合。出走背景是 John Ternus 9 月接替 Tim Cook 出任 CEO 后的团队重组。",
+      "meaning": "：OpenAI 的硬件布局从\"收购 Ive 团队\"升级为\"系统性挖 Apple 硬件核心\"——正在评估 AI 硬件合作方的企业应重新审视 OpenAI 的设备产品线路线图。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Apple"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-T04",
+      "date": "2026-06-28",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "CNBC 封面报道：\"Tokenmaxxing\"时代终结，企业从\"尽情用 AI\"转向\"ROI 管控\"",
+      "summary": "Uber 四个月烧完全年 AI 预算后设$1500/月上限；Lindy 从 Claude 全量切换 DeepSeek 省下数百万美元；OpenAI 和 Anthropic 的增长率面临企业客户预算紧缩压力。",
+      "meaning": "：CFO 正在从\"放养式 AI 鼓励\"转向\"精细化 token 预算管理\"——AI 厂商的定价策略必须适配企业从\"试用期\"到\"运营期\"的成本敏感度跃升。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-T05",
+      "date": "2026-06-28",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Google 推迟 Gemini 3.5 Pro 至 7 月，DeepMind 人才流失加速",
+      "summary": "Business Insider 报道 Google 正利用额外时间优化编码和长任务性能。同周 Jonas Adler 和 Alexander Pritzel 两名 AlphaFold 研究员也宣布加入 Anthropic，使六天内离职高管达到六人。",
+      "meaning": "：依赖 Google AI 生态的企业需为 Gemini 3.5 Pro 延期调整集成时间表，同时重新评估 Google 在前沿模型竞赛中的交付确定性。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-006",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison 2026-06-22 \"Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code\"",
+      "summary": "Simon Willison 用 Claude Code 将 Moebius 0.2B 图像修复模型移植到浏览器端运行，全程展示了 AI 编程助手如何在一个下午完成一个完整的模型移植工程任务——包括模型量化、WebAssembly 编译和前端 UI 搭建。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-007",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison 2026-06-17 \"GLM-5.2 is probably the most powerful text-only open weights LLM\"",
+      "summary": "Simon Willison 评测智谱 GLM-5.2 开源模型，认为它可能是当前最强的纯文本开源 LLM，在多项基准上超越同级别闭源模型，标志着中国开源模型在文本任务上达到新高度。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "智谱",
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-008",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Stratechery (Ben Thompson) 2026-06-22 \"Apple Price Increases, Apple Intelligence and the E.U.\"",
+      "summary": "Thompson 分析 Apple 提高欧洲市场设备价格但不向欧盟用户推送 Siri AI 的策略——Apple 以合规成本为由变相惩罚欧盟监管。这揭示了 AI 功能地理可用性正在成为企业 IT 采购的新变量。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Apple",
+        "Stratechery"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-009",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Fortune 2026-06-23 \"Anthropic engineering head says Claude Code made employees' work a 'lonely experience'\"",
+      "summary": "Anthropic Claude Code 团队负责人 Fiona Fung 透露，团队成员因过度依赖 AI 编程助手而感到工作孤独——平均每位工程师季度代码产出是 2021-2025 年的 8 倍，但团队协作氛围下降。公司通过编程午餐、Hackathon 和共享\"maker time\"来恢复协作。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-010",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Anthropic 2026-06 \"Economic Index: Cadences\"",
+      "summary": "Anthropic 发布第二期经济指数报告，基于约 9700 名用户调查：86% 报告生产力提升，35% 预期 AI 将在 12 个月内处理大部分任务。最引人注目的发现：**工作自动化程度越高的人对自身就业前景越乐观**，但 33% 预期初级同事失业概率超过 60%。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-011",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Stratechery (Ben Thompson) 2026-06-10 \"Fable 5 and Anthropic\"",
+      "summary": "Thompson 分析 Fable 5（Mythos 的公开版本）的发布，认为虽然模型非常强大，但其发布方式开创了令人不安的先例——政府介入模型发布审批的\"新常态\"正在形成。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Stratechery",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-012",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus 2026-06 \"AI 批判系列\"",
+      "summary": "Marcus 持续发文质疑 AI 投资回报的可持续性，在 DeepMind 人才流失和 Gartner \"裁员不等于 ROI\" 报告的背景下，其\"AI 泡沫\"论点获得了更多数据支撑。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "DeepMind",
+        "Gary Marcus"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-013",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "美国政府放行 Anthropic Claude Mythos 5，首批 100+ 机构获准使用",
+      "summary": "商务部长 Howard Lutnick 致信确认\"已建立适当安全保障措施，允许特定可信合作伙伴访问 Claude Mythos 5 模型\"。两周前，该模型因 Amazon 等公司警告可被越狱用于恶意目的而被紧急下架。Fable 5（Mythos 的较弱公开版本）何时放行仍未明确，知情人士称谈判正在推进但时间表未定。同日 OpenAI 也以相同\"政府审批\"机制发布了 GPT-5.6。",
+      "meaning": "：前沿 AI 模型发布正进入\"分级许可\"时代——企业 IT 采购团队需在供应商评估中增加\"模型可用性政策风险\"维度，并为模型突然下架建立技术备用方案",
+      "source": "Semafor / 9to5Mac / CNBC",
+      "quality_score": 8,
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Amazon",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-014",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI 发布 GPT-5.6 Sol/Terra/Luna，仅限~20 家政府审批合作方预览",
+      "summary": "OpenAI 正式发布 GPT-5.6 三档模型：Sol（最强）、Terra（均衡）、Luna（低成本高速）。白宫国家网络安全办公室和科技政策办公室要求 OpenAI 限制首发范围，每个合作账户需经政府逐一审批。OpenAI 表示\"不认为这种政府审批流程应成为长期默认\"，希望在数周内向更广泛用户开放。",
+      "meaning": "：模型分层定价从\"按性能选\"扩展为\"按许可等级选\"——企业需评估 Sol/Terra/Luna 的成本-性能曲线，并判断是否值得为首批访问权投入合规资源",
+      "source": "Axios / The Next Web / Business Standard",
+      "quality_score": 8,
+      "url": "https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-015",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI GPT-4.5 正式从 ChatGPT 退役",
+      "summary": "经过 30 天过渡期，GPT-4.5 于 6 月 26/27 日正式从 ChatGPT 下架（API 暂不受影响）。使用 GPT-4.5 的历史对话将自动迁移至 GPT-5.5。GPT-5 和 GPT-5.3-Codex 在所有关键基准上已全面超越 GPT-4.5。",
+      "meaning": "：仍在使用 GPT-4.5 API 的企业应加速迁移计划——API 退役时间表虽未公布，但\"先 ChatGPT 后 API\"的退役模式意味着 API 下架只是时间问题",
+      "source": "OpenAI Help Center / gHacks",
+      "quality_score": 6,
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-016",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Gemini 3.5 Flash 原生内置 Computer Use，开发者可构建跨平台 Agent",
+      "summary": "Google 将 Computer Use 作为内置工具集成到 Gemini 3.5 Flash——不再需要单独的 Computer Use 模型。开发者可用同一个 Flash 模型实现函数调用、搜索、地图和屏幕操控。OSWorld-Verified 得分 78.4，成本约为 GPT-5.5 的三分之一。目前处于公开预览阶段。",
+      "meaning": "：企业 RPA 团队应开始评估 Gemini 3.5 Flash 作为\"统一 Agent 底座\"的可行性——一个模型同时做 API 调用和屏幕操控意味着 Agent 架构大幅简化",
+      "source": "Google Blog / TechTimes",
+      "quality_score": 7,
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "companies": [
+        "Google"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-017",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Salesforce 推出 Agentforce Help Agent，部署时间缩至分钟级，按解决成功计费",
+      "summary": "Agentforce Help Agent 是一个自主客服 Agent，支持引导式设置、分钟级部署、全渠道覆盖。定价模式创新：如果客户给出负面反馈或要求人工接入，不收费——企业投入与成功解决率直接挂钩。Agentforce ARR 已达 $12 亿，同比增长 205%。",
+      "meaning": "：按\"成功解决\"计费模式将成为 AI 客服产品的新基准——正在评估 AI 客服方案的企业可以用 Salesforce 的定价模型倒逼其他供应商提供同等承诺",
+      "source": "Salesforce Press",
+      "quality_score": 7,
+      "url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+      "companies": [
+        "Salesforce"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-018",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Google 推迟 Gemini 3.5 Pro 至 7 月发布",
+      "summary": "Google 原计划 6 月发布 Gemini 3.5 Pro，现推迟至 7 月。正在根据早期测试者反馈优化编码能力、token 效率和长任务性能。此延期叠加人才流失，使 Google 在与 GPT-5.6 和 Claude Opus 4.7（均瞄准 7 月中发布）的竞争中承压。",
+      "meaning": "：7 月将出现 GPT-5.6 广发 + Gemini 3.5 Pro + Claude Opus 4.7 三线齐发的罕见窗口——企业可利用这个\"模型密集发布期\"做横向评测和议价",
+      "source": "Business Insider / CryptoBriefing",
+      "quality_score": 7,
+      "url": "https://cryptobriefing.com/google-delays-gemini-35-pro-launch-to-july-2026/",
+      "companies": [
+        "Google"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-019",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "可灵 AI 全系模型上线\"视频音效\"功能，发布 Kling-Foley 模型",
+      "summary": "可灵 AI 发布自研多模态视频生音效模型 Kling-Foley，支持在视频生成时同步生成高质量立体声音效，实现帧级音画对齐。支持任意时长音频、空间定向声源建模，目前限时免费开放。",
+      "meaning": "：AI 视频生成从\"纯视觉\"进入\"音画一体\"阶段——做 AI 内容生产的企业可以用单一工具链完成视频+音效，不再需要分步骤后期配音",
+      "source": "新浪财经 / 央广网",
+      "quality_score": 6,
+      "url": "https://t.cj.sina.com.cn/articles/view/2286037382/8842298602001dei0",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260628-020",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI 为企业版推出 Usage Analytics 和 Spend Controls",
+      "summary": "OpenAI 为 ChatGPT Enterprise 推出全新用量分析和支出管控功能：全局管理控制台按用户/产品/模型展示 credit 消耗，管理员可设置工作区默认额度、组别额度和个人覆盖额度。员工可查看个人 credit 使用量并申请增额。",
+      "meaning": "：OpenAI 终于提供了企业 CFO 要求的\"AI 支出可见性\"——正在使用 ChatGPT Enterprise 的公司应立即启用此功能，在 token 成本失控前建立预算护栏",
+      "source": "OpenAI / Computerworld / CIO",
+      "quality_score": 6,
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-021",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Uber 四个月烧完全年 AI 预算，设$1500/月/人上限",
+      "summary": "Uber 在推行全员 AI 编程后，Claude Code 和 Cursor 的月均 API 成本达$500-$2000/工程师，四个月内烧完全年预算。COO Andrew Macdonald 坦言\"AI 工具使用量激增与面向消费者的创新之间的联系尚未建立\"。公司现设$1500/月上限，并建设内部仪表板监控使用。",
+      "meaning": "：Uber 的教训是 AI 工具采购的\"预算管理必须前置到部署之前\"——CIO 在推广 AI 编程工具时应设定试运行预算上限，并建立使用效果评估指标后再全面放量",
+      "source": "Fortune / TechCrunch / Inc",
+      "quality_score": 8,
+      "url": "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260628-022",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Lindy 全量从 Claude 切换至 DeepSeek，成本\"断崖式下降\"",
+      "summary": "25 人 AI 创业公司 Lindy 将 100% 流量从 Anthropic Claude 迁移至 DeepSeek，CEO Flo Crivello 称成本\"断崖式下降\"，数月内省下数百万美元。关键数据：DeepSeek V4-Pro 每百万 token $1.07 vs Claude Opus 4.7 $4.81——超过 4 倍价差。Crivello 表示\"如果 Anthropic 降价我会换回来，这是生存问题\"。",
+      "meaning": "：模型供应商的定价战已从\"功能竞争\"进入\"生存竞争\"——企业在签订年度 API 合同时应保留模型切换弹性条款，不要锁定单一供应商",
+      "source": "CNBC / The Decoder / The New Stack",
+      "quality_score": 7,
+      "url": "https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html",
+      "companies": [
+        "Anthropic",
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-023",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Warner Bros. Discovery 用 AWS Agent AI 重构广告技术栈",
+      "summary": "WBD 宣布与 AWS 合作，部署 Agentic AI 驱动的新一代广告技术平台，覆盖美国线性和数字频道的媒体规划、受众预测、归因、订单管理和定价全链路。基于 Amazon Bedrock AgentCore 构建，Q3 推出统一媒体规划，Q4 分阶段上线订单管理和定价模块。",
+      "meaning": "：传统媒体广告技术栈的 Agent 化改造已从概念变为落地——广告技术厂商需评估自身产品是否能与 Agent 化的甲方系统对接",
+      "source": "MediaPost / WBD Press / TVBEurope",
+      "quality_score": 7,
+      "url": "https://www.wbd.com/news/warner-bros-discovery-announces-agentic-ai-powered-advertising-technology-built-aws-its",
+      "companies": [
+        "Amazon",
+        "AWS",
+        "Bedrock"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-024",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Amazon 推出 Alexa+ Agentic Ads，对话式广告可直接完成购买",
+      "summary": "Alexa+ Agentic Ads 是首个从看广告到完成购买全程在对话内完成的广告格式。用户在 Echo Show 上看到广告后，通过语音对话细化选项（座位偏好、数量、口味）并直接下单。首批合作伙伴包括 Papa Johns 和多位音乐艺人。",
+      "meaning": "：对话式商务从\"搜索+点击\"进化为\"对话+购买\"——零售和快消企业的电商团队应开始测试\"语音购买转化率\"指标，这将成为 Alexa 生态的新流量入口",
+      "source": "Amazon Ads / Adweek / Variety",
+      "quality_score": 7,
+      "url": "https://advertising.amazon.com/library/news/alexa-agentic-ads",
+      "companies": [
+        "Amazon"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-025",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "OpenAI ChatGPT 广告业务启动，目标 2026 年$25 亿广告收入",
+      "summary": "OpenAI 1 月在 ChatGPT 免费版和 Go 版推出\"tinted box\"广告格式，定价介于社交媒体和传统搜索广告之间。早期试点数周内年化收入突破 $1 亿，吸引 600+ 广告主。Premium 层（Plus $20/月、Pro $200/月）保持无广告。目标 2026 年 $25 亿→2028 年 $250 亿→2030 年 $1000 亿。",
+      "meaning": "：AI 对话界面正在成为新的广告分发渠道——品牌营销团队需开始测试 ChatGPT 广告投放效果，并将其纳入数字营销预算分配",
+      "source": "OpenAI Blog / ALM Corp",
+      "quality_score": 6,
+      "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-026",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Anthropic Claude 付费用户增长 75%，ChatGPT 份额首次跌破 50%",
+      "summary": "信用卡交易分析公司 Indagari 数据显示，Claude 付费用户和收入自 1 月以来增长约 75%。ChatGPT 全球市场份额从 2024 年 3 月的 81% 跌至 2026 年 3 月首次低于 50%。Claude 同期从 5.1% 升至 10%。DataCamp 上\"Claude\"已成最热门搜索词，超过\"AI\"。",
+      "meaning": "：AI 消费市场正从 ChatGPT 一家独大走向多头竞争——企业在选择面向员工的 AI 工具时，不应默认选 ChatGPT，应基于实际任务做 A/B 测试后决定",
+      "source": "TechCrunch / SQ Magazine",
+      "quality_score": 8,
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-027",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "DeepSeek V4-Pro 75% 降价永久化，AI 定价战升级",
+      "summary": "DeepSeek 将 V4-Pro 原定 5 月 31 日到期的 75% 促销价永久化。新定价区间$0.003625-$0.87/百万 token，远低于 GPT-5（$2.50 输入/$10 输出）、Claude Opus 4.7（$5/$25）和 Gemini 3.5 Flash（$0.15/$0.60）。DeepSeek 声明\"这不是折扣而是效率提升的传导\"。",
+      "meaning": "：模型定价的\"地板价\"正在被中国厂商持续压低——企业签订年度 API 合同时应加入\"最惠国条款\"，确保在竞品降价时获得同等优惠",
+      "source": "DeepSeek Blog / Engadget / The Next Web",
+      "quality_score": 7,
+      "url": "https://deepseek.ai/blog/deepseek-v4-pro-api-price-cut-permanent",
+      "companies": [
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-028",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Databricks 数仓业务翻倍至$15 亿 ARR，AI 需求驱动",
+      "summary": "Databricks 数据仓库业务年化收入达$15 亿，同比翻倍。增长主要来自 AI 工作负载需求和从竞争平台（主要是 Snowflake）的客户迁移。同时推出 Genie One（全新 Agentic 协作助手）和 Azure Databricks Lakebase（AI Agent 专用数据库）。",
+      "meaning": "：AI 工作负载正在改变数据平台的竞争格局——企业数据团队在续约 Snowflake/Databricks 时，应将\"AI Agent 支持能力\"纳入评估权重",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-16/databricks-sales-double-for-product-that-competes-with-snowflake",
+      "companies": [
+        "Databricks",
+        "Snowflake"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-029",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Gartner：AI Agent 软件支出预计 2026 年达$2065 亿，同比增长 139%",
+      "summary": "Gartner 预测 2026 年全球 AI Agent 软件支出达$2065 亿（2025 年$864 亿），2027 年将达$3763 亿。AI Agent 增速（139%）是整体 AI 支出增速（47%）的近 3 倍，是企业软件中增长最快的品类。全球 AI 总支出预计$2.59 万亿。",
+      "meaning": "：AI Agent 是企业软件投资的最大增量——尚未启动 Agent 战略的企业正在错失窗口期，因为先行者正在通过 Agent 重构业务流程获取竞争优势",
+      "source": "Gartner",
+      "quality_score": 7,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260628-030",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Paul Meade 从 Apple 跳槽 OpenAI，AI 硬件人才争夺白热化",
+      "summary": "Apple Vision Pro 和智能眼镜硬件负责人 Paul Meade 确认下周起加入 OpenAI 硬件部门。他在 Apple 主导 Vision Pro 硬件 7 年，将与前 Apple CDO Jony Ive、Tang Tan、Evans Hankey 合作打造 OpenAI 的 AI 设备产品线。此前 OpenAI 以$65 亿收购了 Ive 团队的 AI 硬件创业公司。",
+      "meaning": "：OpenAI 正在系统性组建世界级硬件团队——对 Apple 而言是核心人才流失；对企业采购团队而言，OpenAI 的 AI 硬件路线图正在从\"概念\"变成\"可信赖的产品线\"",
+      "source": "Bloomberg / 9to5Mac / TechTimes",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-26/apple-s-vision-pro-and-smart-glasses-chief-paul-meade-is-leaving-for-openai",
+      "companies": [
+        "OpenAI",
+        "Apple"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-031",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "CNBC 深度报道：\"Tokenmaxxing\"时代终结，企业 AI 支出进入紧缩周期",
+      "summary": "CNBC 深度报道企业从\"鼓励员工尽可能多用 AI\"（tokenmaxxing）转向\"精细化 ROI 管控\"。曾经以 token 消耗量作为创新代理指标的企业，现在要求更清晰的投资回报。OpenAI 和 Anthropic 的指数级增长率面临可持续性质疑。",
+      "meaning": "：AI 工具预算管理正从\"部门自行采购\"转向\"集中管控\"——CHR 和 CFO 需要联手建立企业级 AI 工具采购和使用治理框架",
+      "source": "CNBC",
+      "quality_score": 8,
+      "url": "https://www.cnbc.com/2026/06/26/openai-anthropic-new-ai-spending-reality-as-users-shift-to-efficiency.html",
+      "companies": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-032",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Google DeepMind 人才流失加速：六天六走，Alphabet 蒸发$2690 亿",
+      "summary": "继 Noam Shazeer（→OpenAI）、John Jumper（→Anthropic）之后，Jonas Adler 和 Alexander Pritzel 也宣布加入 Anthropic，David Silver 创业。一周内六位高管离职导致 Alphabet 单日蒸发$2690 亿市值。内部计算资源分配紧张和团队竞争被认为是核心推动因素。",
+      "meaning": "：人才流失已从\"个别跳槽\"升级为\"系统性脱钩\"——依赖 Google AI 技术栈的企业应评估 DeepMind 研究能力持续性的风险，并建立多供应商策略",
+      "source": "Axios / Fortune / Bloomberg",
+      "quality_score": 8,
+      "url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-033",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Anthropic 工程负责人：Claude Code 让工作变成\"孤独体验\"，产出 8 倍但士气下降",
+      "summary": "Anthropic Claude Code 团队负责人 Fiona Fung 在 Lenny's Podcast 透露：AI 编程工具使工程师季度代码产出达 2021-2025 年的 8 倍，但团队成员因长时间与 Agent 独处而感到\"孤独\"。公司通过编程午餐、Hackathon 和共享 maker time 恢复协作氛围。",
+      "meaning": "：企业在部署 AI 编程工具时，必须同步设计\"刻意协作\"机制（pair programming、code review、hackathon）——否则生产力提升可能被工程师离职率上升抵消",
+      "source": "Fortune",
+      "quality_score": 7,
+      "url": "https://fortune.com/2026/06/23/anthropic-engineering-head-claude-code-lonely-experience-big-tech-morale/",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-034",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Anthropic 经济指数：86% 报告生产力提升，但 33% 预期初级同事将失业",
+      "summary": "基于约 9700 名用户调查，Anthropic 发布第二期经济指数。核心发现：工作 AI 化程度越高的人对自身就业前景越乐观（悖论），但 33% 预期初级同事失业概率超 60%。工作相关查询在周末明显下降，高薪职业下降幅度最小。",
+      "meaning": "：HR 团队需警惕\"幸存者乐观偏差\"——高级员工的安全感不代表团队整体风险可控，应对初级岗位做独立的 AI 影响评估",
+      "source": "Anthropic Research",
+      "quality_score": 7,
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-035",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "2026 年科技裁员已达 14.2 万人，AI 归因占比 17%",
+      "summary": "2026 年至今科技行业已裁员约 14.2 万人，其中约 5 万人直接归因于 AI。Block（Square）将员工从 1 万裁至不到 6 千（CEO Jack Dorsey 直接归因于 AI）、Cisco 裁约 4000 人、Citigroup 预计减少约 2 万人。同比增长 66%。",
+      "meaning": "：企业 AI 部署决策必须包含\"组织影响评估\"——不是\"要不要用 AI\"的问题，而是\"用 AI 后如何重新设计岗位而非简单裁员\"的问题",
+      "source": "eWeek / CBS News / Programs.com",
+      "quality_score": 6,
+      "url": "https://www.eweek.com/news/tech-layoffs-ai-investment-2026/",
+      "companies": [
+        "Cisco"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-036",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "OpenAI 与 Broadcom 联合打造 Jalapeño 推理芯片，目标降低 50% 服务成本",
+      "summary": "OpenAI 与 Broadcom 联合设计的首款定制 AI 芯片 Jalapeño 亮相，专注 LLM 推理优化，目标将推理服务成本降低 50%。此举标志着 OpenAI 从纯模型公司向\"模型+芯片\"垂直整合演进。",
+      "meaning": "：头部 AI 公司自研芯片将改变推理成本结构——企业在规划 AI 基础设施预算时，应考虑 2027 年后推理成本可能大幅下降的情景",
+      "source": "The GPU Trade / CNBC",
+      "quality_score": 7,
+      "url": "https://thegputrade.com/news/openai-retires-gpt-45-and-o3-as-ipo-talk-heats-up-bbsl5asb/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-037",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "NVIDIA Vera Rubin 平台量产，与 OpenAI 签署 10GW 部署合作",
+      "summary": "NVIDIA Rubin 平台进入全面量产，首批云合作伙伴包括 AWS、Google Cloud、Microsoft、OCI 及 CoreWeave 等。OpenAI 与 NVIDIA 达成至少 10GW AI 数据中心部署协议，首批 1GW 将于 2026 年下半年部署。DSX MaxLPS 在相同功率预算下增加 40% GPU。",
+      "meaning": "：算力供给正在从\"稀缺\"转向\"大规模量产\"——企业不必急于签署长期算力锁定合同，2027 年算力价格可能因供给放量而显著下降",
+      "source": "NVIDIA Newsroom",
+      "quality_score": 7,
+      "url": "https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems",
+      "companies": [
+        "OpenAI",
+        "Google",
+        "Microsoft",
+        "AWS",
+        "NVIDIA",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-038",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "CNBC：\"Tokenmaxxing 终结\"背后的定价战——DeepSeek V4-Pro 定价仅为 Claude 的 1/4",
+      "summary": "Tokenmaxxing 退潮的直接催化剂是中国模型的定价冲击：DeepSeek V4-Pro $0.44/百万输入 token vs Claude Opus 4.7 $5.00——超过 10 倍价差。DeepSeek 声明降价是\"效率提升的传导而非促销\"，意味着这个定价将长期持续。",
+      "meaning": "：模型选择不再只是\"谁最强\"的问题，而是\"强度/价格比\"——企业 AI 架构师应建立\"模型性价比评估矩阵\"，按任务类型选择不同价位的模型",
+      "source": "CNBC / Fortune / Stocktwits",
+      "quality_score": 7,
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tokenmaxxing-fading-experts-means-nvidia-113407281.html",
+      "companies": [
+        "DeepSeek"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-039",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "全球 AI 总支出预计 2026 年达$2.59 万亿，同比增长 47%",
+      "summary": "Gartner 最新预测全球 AI 支出 2026 年达$2.59 万亿，较 2025 年增长 47%。AI Agent 软件是增速最快的子品类（$2065 亿，+139%）。需求端从 $1 万亿至 2027 年已排满。",
+      "meaning": "：AI 预算占企业 IT 总支出的比重正在从\"创新实验\"升级为\"核心运营\"——CFO 需要将 AI 支出从\"创新预算\"迁移到\"运营预算\"进行管理",
+      "source": "Gartner",
+      "quality_score": 6,
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260628-040",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "五角大楼修订 AI 瞄准准则：从\"人在环中\"转向\"人监督 AI 行动\"",
+      "summary": "五角大楼在 4 月不公开批准了修订后的作战瞄准原则，从\"人在环中\"（human in the loop, 人发起行动）转向\"AI 发起行动、人监控\"（human monitoring）。6 月 5 日 NSPM-11 号安全备忘录要求国防部长 90 天内更新自主武器指令 3000.09，此后每年审查。众议院军事委员会 2027 财年国防授权案要求将该指令扩展至任务规划和目标选择。",
+      "meaning": "：军事 AI 的\"人在环中\"原则正在被\"人在环上\"取代——国防科技企业和 AI 伦理团队需紧跟这一教条级变化，它将直接影响合同竞标资质要求",
+      "source": "Bloomberg / The Nation / CSIS",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/pentagon-sees-broader-role-for-ai-in-setting-military-targets",
+      "companies": [
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260628-041",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "EU AI Act 第 50 条透明度义务 8 月 2 日如期生效，未被推迟",
+      "summary": "尽管 EU Digital Omnibus 协议推迟了高风险 AI 合规期限，但第 50 条透明度义务仍按原定 8 月 2 日生效：必须告知用户正在与 AI 系统交互、标记 AI 生成内容、标记深度伪造。AI 生成内容的水印/机器可读标记要求 12 月 2 日生效。",
+      "meaning": "：在欧盟运营的企业还有 5 周准备时间——8 月 2 日前必须在所有 AI 对话界面添加 AI 交互声明，在所有 AI 生成内容添加标记，否则面临合规处罚",
+      "source": "Sidley / Latham & Watkins / BlackFog",
+      "quality_score": 7,
+      "url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260628-042",
+      "date": "2026-06-28",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "美国 AI 模型发布进入\"政府审批\"时代——Mythos 5 与 GPT-5.6 同日获限制性放行",
+      "summary": "同一天内，Anthropic Mythos 5 获准向 100+ 美国机构发布，OpenAI GPT-5.6 Sol 向~20 家政府审批合作方发布。CNN 此前报道白宫要求 OpenAI 限制发布范围。这标志着美国前沿 AI 模型发布事实上进入了\"逐案审批\"的新常态。",
+      "meaning": "：企业法务和合规团队需要开始为\"AI 模型访问许可\"建立内部流程——就像出口管制合规一样，前沿模型的使用权可能需要政府层面的审批",
+      "source": "CNBC / CNN / Semafor",
+      "quality_score": 7,
+      "url": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Mythos"
+      ],
+      "keywords": []
+    },
     {
       "id": "20260627-T01",
       "date": "2026-06-27",
@@ -24250,61 +24996,61 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 221,
+      "🚀 产品": 229,
       "🇨🇳 国内": 181,
-      "💰 商业": 167,
-      "🌟 Top 5": 130,
-      "⚙️ 基础设施": 128,
-      "🏢 案例": 126,
-      "🧠 Tier 0": 125,
-      "⚖️ 监管": 109,
-      "👥 组织": 102,
+      "💰 商业": 172,
+      "🌟 Top 5": 135,
+      "🧠 Tier 0": 132,
+      "⚙️ 基础设施": 132,
+      "🏢 案例": 131,
+      "⚖️ 监管": 112,
+      "👥 组织": 107,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 238,
-      "OpenAI": 211,
-      "Google": 146,
-      "NVIDIA": 87,
-      "AWS": 75,
-      "FT": 74,
-      "Amazon": 61,
-      "DeepSeek": 60,
-      "Microsoft": 56,
+      "Anthropic": 252,
+      "OpenAI": 226,
+      "Google": 151,
+      "NVIDIA": 88,
+      "AWS": 77,
+      "FT": 75,
+      "DeepSeek": 64,
+      "Amazon": 64,
+      "Microsoft": 57,
       "MIT": 47,
       "xAI": 41,
+      "Mythos": 39,
+      "Simon Willison": 38,
+      "Gary Marcus": 37,
+      "Bedrock": 37,
       "Meta": 37,
-      "Simon Willison": 36,
-      "Gary Marcus": 36,
-      "Bedrock": 36,
-      "Mythos": 35,
+      "DeepMind": 35,
       "腾讯": 34,
-      "DeepMind": 32,
-      "智谱": 32,
+      "智谱": 33,
       "TechCrunch": 31,
+      "Salesforce": 28,
       "阿里": 28,
-      "Salesforce": 27,
       "Hugging Face": 27,
       "Kimi": 25,
+      "Stratechery": 23,
       "BCG": 23,
       "Deloitte": 23,
-      "Stratechery": 21,
       "Bloomberg": 21,
       "豆包": 20,
       "Stanford": 20,
+      "Apple": 19,
       "SAP": 19,
+      "Databricks": 18,
       "PwC": 18,
       "字节": 18,
-      "Databricks": 17,
+      "Snowflake": 17,
       "IBM": 17,
       "Karpathy": 17,
-      "Snowflake": 16,
-      "Apple": 16,
       "McKinsey": 16,
+      "Ring": 15,
       "Accenture": 15,
       "ServiceNow": 14,
       "华为": 13,
-      "Ring": 13,
       "通义": 13,
       "混元": 13,
       "百度": 13,
@@ -24314,15 +25060,11 @@
       "Dario Amodei": 9
     },
     "signal_days": {
-      "medium": 26
+      "medium": 27
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-05-29",
-        "count": 0
-      },
       {
         "date": "2026-05-30",
         "count": 0
@@ -24438,10 +25180,15 @@
       {
         "date": "2026-06-27",
         "count": 43
+      },
+      {
+        "date": "2026-06-28",
+        "count": 41
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-06-28": 14,
         "2026-06-27": 14,
         "2026-06-26": 11,
         "2026-06-25": 4,
@@ -24470,6 +25217,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-06-28": 15,
         "2026-06-27": 11,
         "2026-06-26": 8,
         "2026-06-25": 6,
@@ -24498,6 +25246,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-06-28": 5,
         "2026-06-27": 7,
         "2026-06-26": 5,
         "2026-06-25": 6,
@@ -24526,6 +25275,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-06-28": 1,
         "2026-06-26": 2,
         "2026-06-25": 3,
         "2026-06-24": 6,
@@ -24552,6 +25302,7 @@
         "2026-05-14": 2
       },
       "AWS": {
+        "2026-06-28": 2,
         "2026-06-27": 1,
         "2026-06-26": 1,
         "2026-06-25": 1,
@@ -24577,6 +25328,7 @@
         "2026-05-14": 6
       },
       "FT": {
+        "2026-06-28": 1,
         "2026-06-27": 3,
         "2026-06-26": 3,
         "2026-06-25": 6,
@@ -24602,7 +25354,30 @@
         "2026-05-15": 1,
         "2026-05-14": 4
       },
+      "DeepSeek": {
+        "2026-06-28": 4,
+        "2026-06-27": 1,
+        "2026-06-26": 1,
+        "2026-06-25": 3,
+        "2026-06-23": 1,
+        "2026-06-22": 1,
+        "2026-05-27": 5,
+        "2026-05-26": 2,
+        "2026-05-25": 3,
+        "2026-05-24": 4,
+        "2026-05-23": 8,
+        "2026-05-22": 4,
+        "2026-05-21": 2,
+        "2026-05-20": 4,
+        "2026-05-19": 3,
+        "2026-05-18": 3,
+        "2026-05-17": 6,
+        "2026-05-16": 5,
+        "2026-05-15": 3,
+        "2026-05-14": 1
+      },
       "Amazon": {
+        "2026-06-28": 3,
         "2026-06-27": 1,
         "2026-06-25": 2,
         "2026-06-24": 1,
@@ -24626,28 +25401,8 @@
         "2026-05-15": 5,
         "2026-05-14": 4
       },
-      "DeepSeek": {
-        "2026-06-27": 1,
-        "2026-06-26": 1,
-        "2026-06-25": 3,
-        "2026-06-23": 1,
-        "2026-06-22": 1,
-        "2026-05-27": 5,
-        "2026-05-26": 2,
-        "2026-05-25": 3,
-        "2026-05-24": 4,
-        "2026-05-23": 8,
-        "2026-05-22": 4,
-        "2026-05-21": 2,
-        "2026-05-20": 4,
-        "2026-05-19": 3,
-        "2026-05-18": 3,
-        "2026-05-17": 6,
-        "2026-05-16": 5,
-        "2026-05-15": 3,
-        "2026-05-14": 1
-      },
       "Microsoft": {
+        "2026-06-28": 1,
         "2026-06-27": 2,
         "2026-06-26": 2,
         "2026-06-25": 4,
@@ -24700,8 +25455,8 @@
       "NVIDIA",
       "AWS",
       "FT",
-      "Amazon",
       "DeepSeek",
+      "Amazon",
       "Microsoft",
       "MIT"
     ]
