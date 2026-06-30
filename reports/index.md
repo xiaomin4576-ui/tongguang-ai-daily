@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-01 周三](./2026-07-01.md) — 29 篇 — 关键词：GitHub Copilot计量计费首月10-50x账单冲击 / Claude Microsoft Foundry正式GA+GB300 / California全州五折用Claude / Palantir+NVIDIA主权AI气隙部署 / 奥地利邀Anthropic入欧AI主权争夺
 - [2026-06-30 周二](./2026-06-30.md) — 25 篇 — 关键词：Anthropic+加州政府Claude首开全州AI / HP-OpenAI安全审查30天→1天 / Colorado AI Act原定生效日到来已替代 / Coinbase AI支出减半缓存命中60% / AAA Legal Context Protocol Agent交易法律框架
 - [2026-06-29 周一](./2026-06-29.md) — 26 篇 — 关键词：Anthropic首个盈利季Q2$109亿 / OpenAI IPO推迟2027 / BCG AI Radar CEO预算翻倍 / EU AI Act透明度倒计时35天 / CVE-2026-LGTM Agent安全盲区
 - [2026-06-28 周日](./2026-06-28.md) — 34 篇 — 关键词：Mythos 5出口管制放行100+机构 / GPT-5.6 Sol限~20家审批伙伴 / Apple Vision Pro负责人Meade跳槽OpenAI / Tokenmaxxing终结+Uber烧完AI预算 / Gemini 3.5 Pro推迟至7月
