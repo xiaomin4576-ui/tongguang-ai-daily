@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-06-30T16:12:53.184735+00:00",
-    "total_reports": 30,
-    "total_articles": 1535,
+    "generated_at": "2026-07-01T16:21:11.979727+00:00",
+    "total_reports": 31,
+    "total_articles": 1562,
     "date_range": [
       "2026-05-14",
-      "2026-07-01"
+      "2026-07-02"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-02",
+      "weekday": "周四",
+      "signal_strength": "medium",
+      "main_count": 22,
+      "tier0_count": 3,
+      "summary": "Anthropic 一天完成产品矩阵重塑：Sonnet 5 默认全推 + Fable/Mythos 出口管制解除全球恢复",
+      "url": "reports/2026-07-02.md",
+      "article_count": 27
+    },
     {
       "date": "2026-07-01",
       "weekday": "周三",
@@ -311,6 +321,479 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260702-T01",
+      "date": "2026-07-02",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Anthropic 一天完成产品矩阵重塑：Sonnet 5 默认全推 + Fable/Mythos 出口管制解除全球恢复",
+      "summary": "Claude Sonnet 5 于 6/30 上线并成为所有 Free/Pro 用户的默认模型，介绍期定价 $2/$10（8/31 前）；同日美国商务部解除 Fable 5 和 Mythos 5 出口管制，7/1 全球恢复访问。",
+      "meaning": "：企业 AI 采购窗口已重新打开——正在评估 Claude 的 CTO 应在 7 月完成 Sonnet 5 基准测试，同时把\"Fable 5 恢复后的能力 vs 竞品旗舰\"纳入模型选型矩阵。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-T02",
+      "date": "2026-07-02",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Meta 宣布进军云计算：Meta Compute 将出售富余 AI 算力和托管模型",
+      "summary": "Bloomberg 7/1 独家报道，Meta 正建设名为 Meta Compute 的云业务，计划出售\"裸\"算力和托管 AI 模型（含闭源 Muse Spark），直接挑战 AWS/Azure/GCP，消息推动 Meta 股价盘前涨超 10%。",
+      "meaning": "：AI 云市场从三巨头变四强——正在做推理基础设施采购的企业多了一个高性价比选项，但 CoreWeave/Nebius 等新云公司的生存空间进一步收窄。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Meta",
+        "AWS",
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-T03",
+      "date": "2026-07-02",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "MGX 关闭 $490 亿 AI 基金——史上最大 AI 专项投资工具",
+      "summary": "阿布扎比主权基金 MGX 于 7/1 宣布 Fund I 以 $490 亿关闭（超 $450 亿目标），LP 涵盖中东、北美、亚洲和欧洲机构。已投 14 家公司，包括联合领投 Anthropic $300 亿轮和 OpenAI $1220 亿轮。",
+      "meaning": "：中东资本在 AI 基础设施的话语权已不亚于硅谷 VC——企业在寻求 AI 战略投资时，中东主权基金应与传统 VC 并列为首选谈判对象。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-T04",
+      "date": "2026-07-02",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Bloomberg：科技/金融行业月均流失 2.8 万个岗位——AI 是首因",
+      "summary": "Bloomberg 7/1 报道，美国信息业和金融业——AI 采用率最高的两个行业——2026 年月均减少约 28,000 个岗位，这是首次出现 AI 驱动的持续性行业级就业下降的政府数据。",
+      "meaning": "：HR 部门不能再把 AI 裁员视为\"个别公司事件\"——28K/月是行业级信号，人力规划必须把\"AI 替代速率\"作为结构性变量纳入 3 年人才模型。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-T05",
+      "date": "2026-07-02",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Claude Code 隐写指纹风波——Anthropic 承认并紧急移除",
+      "summary": "开发者 6/30 发现 Claude Code 在系统提示中嵌入不可见 Unicode 字符，用于识别通过中国关联代理/AI 实验室基础设施路由的请求。Anthropic 承认代码存在并发布 2.1.197 版本移除，但未在更新日志中提及。",
+      "meaning": "：使用第三方 API 网关或自定义 ANTHROPIC_BASE_URL 的企业必须立即审计是否受影响——更深层的教训是\"AI 开发工具的供应链透明度\"必须纳入安全评估。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-006",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Andrej Karpathy (2026-06 中旬) Sequoia Ascent 演讲 \"Software 3.0\"",
+      "summary": "Karpathy 在 Sequoia Ascent 大会上正式定义 Software 3.0：大语言模型自动化\"人类可验证\"的一切——只要正确答案能通过测试套件、博弈得分或形式化证明器检查，LLM 就能被训练或提示来生成。他将 2025 年 12 月标记为\"Agentic 编程从实验到可靠\"的拐点，程序员开始把整个子系统重构委托给 AI。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "FT",
+        "Karpathy"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-007",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-06-28) CVE-2026-LGTM——两个 AI Agent 在代码审查中循环对骂产生 $41,255 推理费用",
+      "summary": "Willison 分享了 Andrew Nesbitt 撰写的一份高度逼真的假设性事故报告：两个来自不同厂商的 AI 代码审查 Agent 对一个包是否恶意产生分歧，进入争论循环，在被财务部门撤销 API 密钥之前产生了 340 条评论和 $41,255 的推理费用。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-008",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-06-28) \"Hack Your Summer\"——第二批免费 AI 编程教育开放",
+      "summary": "Willison 宣布 \"Hack Your Summer\" 第二期免费编程教育于 7 月 13 日启动（申请截止 7/8），面向学生群体教授如何用 AI 工具构建软件项目。这标志着 AI 编程教育正从精英技术圈扩展到通识教育。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-009",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Anthropic 发布 Claude Sonnet 5——最具 Agent 能力的 Sonnet，介绍期价格低于 Sonnet 4.6",
+      "summary": "Claude Sonnet 5 是 Anthropic 迄今最具 Agent 能力的 Sonnet 模型，在推理、工具使用、编码和知识工作方面较 Sonnet 4.6 有大幅提升，性能接近旗舰 Opus 4.8 但成本低 40-60%。介绍期定价 $2/$10（8/31 前），随后调至 $3/$15。已成为 Free/Pro 计划的默认模型。网络安全防护默认启用，可实时检测和阻止危险网络用途。",
+      "meaning": "：正在做多模型路由的企业应在 7 月用 Sonnet 5 替换部分 Opus 调用做 A/B 测试——如果性能差距在容忍范围内，推理成本可直降 40%+",
+      "source": "Anthropic / VentureBeat / Help Net Security",
+      "quality_score": 8,
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-010",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Mistral 发布 OCR 4——结构感知文档 AI，$4/千页，支持自托管",
+      "summary": "Mistral OCR 4 从纯文本提取升级为结构化文档智能：返回边界框、区块分类和逐词置信度分数，支持 170 种语言、PDF/DOC/PPT 格式，可作为单容器部署在企业自有基础设施上。独立评测中 OCR 4 的偏好率平均达 72%，OlmOCRBench 得分 85.20 领先全部竞品。定价 $4/千页，比 Azure 自定义层低最高 15 倍。",
+      "meaning": "：仍在用 Azure Document Intelligence 或 AWS Textract 的企业应启动 OCR 4 的 PoC——15 倍价格差 + 自托管能力意味着文档处理成本可能是当前最容易砍的 AI 支出项",
+      "source": "VentureBeat / Mistral / MarkTechPost",
+      "quality_score": 7,
+      "url": "https://mistral.ai/news/ocr-4/",
+      "companies": [
+        "Mistral"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-011",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "California Poppy 7 月 1 日全州上线——2,800 名州员工试点后的 AI 助手平台",
+      "summary": "加州技术部（CDT）7/1 正式推出 Poppy 数字助手，覆盖全州政府机构。该平台由加州州员工自主研发，运行在州政府安全网络上，提供多 GenAI 模型选择、模型并排对比、定制工作区等能力，数据不出州境。定价 $8/用户/月（按量付费）或部门级承诺容量。此前 2,800+ 名员工在 67 个部门完成试点。",
+      "meaning": "：Poppy 的\"厂商中立 + 州内自建 + $8/人/月\"模式为政务 AI 采购树立了新标杆——省级政府 IT 部门应研究此模式是否可复制，特别是\"平台自建 + 多模型接入\"的架构选择",
+      "source": "GovTech / CDT / TechPolicy.Press",
+      "quality_score": 7,
+      "url": "https://www.cdt.ca.gov/poppy/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260702-012",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "ChatGPT 即将部署到五角大楼 GenAI.mil——覆盖 300 万国防人员",
+      "summary": "OpenAI 将于 7 月初在五角大楼 GenAI.mil 平台部署 ChatGPT，覆盖超 300 万国防人员，通过 Impact Level 5 认证（可处理受控非密信息）。部署在政府授权云基础设施中运行，数据完全隔离、不用于训练外部模型。GenAI.mil 于 2025 年 12 月推出，目前已有超 130 万活跃用户、开发了 10 万+ AI Agent。",
+      "meaning": "：美国国防部的 AI 部署规模从\"百万用户\"跨入\"三百万用户\"——做国防/政府 AI 的厂商必须具备 IL5 级别合规能力，否则连投标资格都拿不到",
+      "source": "Defense One / PYMNTS / Nextgov",
+      "quality_score": 8,
+      "url": "https://www.defenseone.com/defense-systems/2026/06/chatgpt-debut-pentagon-openai/414237/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-013",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Meta 宣布 Meta Compute 云计算业务——出售富余 AI 算力和托管模型",
+      "summary": "Meta 正在建设 Meta Compute 云业务，将通过两条路线运营：出售\"裸\"算力容量（对标 CoreWeave 模式）和托管 AI 模型访问（包括闭源 Muse Spark）。项目由基础设施负责人 Santosh Janardhan、Meta Superintelligence Labs 负责人 Daniel Gross 和总裁 Dina Powell McCormick 联合领导。消息公布后 Meta 股价涨超 10%，CoreWeave/Nebius/IREN 等新云公司股价下跌。",
+      "meaning": "：正在签 AI 推理算力长期合同的企业应暂缓——Meta 入局意味着算力卖方市场正在瓦解，6-12 个月后的议价空间会显著扩大",
+      "source": "Bloomberg / TechCrunch / Seeking Alpha",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute",
+      "companies": [
+        "Meta"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-014",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Netflix + ElevenLabs：AI 重建 Gene Wilder 声音用于真人秀",
+      "summary": "Netflix 与 AI 语音公司 ElevenLabs 合作，用 AI 重建已故演员 Gene Wilder 的声音，用于真人秀节目 \"Wonka's The Golden Ticket\"（9/23 首播）。该项目获得 Wilder 遗产方授权。这是 AI 语音合成首次进入顶级流媒体的正式商业制作，标志着技术从研究演示迈入高端娱乐生产。",
+      "meaning": "：内容/媒体行业的法务团队需要立即建立\"AI 声音/肖像使用许可框架\"——Netflix 案例表明\"遗产方授权 + AI 厂商合作\"将成为行业标准流程，先建框架的企业占据先机",
+      "source": "Variety / Deadline / Engadget",
+      "quality_score": 6,
+      "url": "https://variety.com/2026/tv/news/gene-wilder-voice-ai-willy-wonka-netflix-series-1236799327/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260702-015",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Microsoft Copilot Cowork 计量计费 7/1 启动——Agent 工作流按用量收费",
+      "summary": "Microsoft Copilot Cowork（企业级 Agent 协作平台）于 7/1 正式启动计量计费，从固定订阅转向按 Agent 工作流用量收费。同日 Microsoft 365 商业版整体价格调整生效，AI 功能从\"可选附加\"变为\"捆绑默认\"。此外，Agent 365 采购新增 E5 许可前置要求——Microsoft 要求客户先具备安全/合规/身份管理基础能力。",
+      "meaning": "：所有 M365 企业客户从 7/1 起自动为 Copilot 功能付费——IT 采购应在 Q3 审计\"被动消费 vs 主动使用\"比例，确保不为未使用的 AI 能力买单",
+      "source": "Microsoft Learn / Windows Forum",
+      "quality_score": 6,
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-june",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-016",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Together AI 完成 $8 亿 C 轮融资——$83 亿估值，沙特 Aramco 旗下 Prosperity7 领投",
+      "summary": "Together AI 7/1 宣布完成 $8 亿 C 轮融资，估值 $83 亿，由 Aramco Ventures 领投，Vista Equity、General Catalyst、NVIDIA 等参投。公司帮助企业在 DeepSeek、Nemotron、MiniMax、Kimi 等开源模型上训练和运行工作负载，年化营收已达约 $10 亿（较 2025 年中增长 3 倍+）。资金将用于基础设施扩张（预计 5 年内增长 50 倍）。",
+      "meaning": "：开源模型推理基础设施正成为独立赛道——正在自建推理栈的企业应评估 Together 等\"开源模型即服务\"平台是否比自建更经济，特别是在多模型路由场景下",
+      "source": "BusinessWire / Yahoo Finance / Sacra",
+      "quality_score": 7,
+      "url": "https://www.businesswire.com/news/home/20260701243402/en/Together-AI-Raises-$800-Million-at-$8.3-Billion-Valuation-to-Make-Frontier-AI-Accessible-to-All",
+      "companies": [
+        "NVIDIA",
+        "DeepSeek",
+        "Kimi"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-017",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "MGX 关闭 $490 亿 AI 基金——史上最大 AI 专项投资工具",
+      "summary": "阿布扎比 MGX 宣布 Fund I 以 $490 亿关闭（超 $450 亿目标），LP 涵盖全球主要机构和私人投资者。MGX 成立于 2024 年，由 Mubadala 和 G42 合作，Sheikh Tahnoon bin Zayed 担任主席。已投 14 家公司，覆盖半导体、AI 基础设施和 AI 平台——包括联合领投 Anthropic $300 亿轮、OpenAI $1220 亿轮和 xAI $200 亿轮。",
+      "meaning": "：$490 亿单基金改变了 AI 资本的重力中心——做 AI 基础设施的中国企业应把中东主权基金视为与美元 VC 同等重要的融资渠道",
+      "source": "CNBC / Bloomberg / The National",
+      "quality_score": 7,
+      "url": "https://www.cnbc.com/2026/07/01/mgx-ai-fund-uae-49-billion.html",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "xAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-018",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Twelve Labs 完成 $1 亿 B 轮——Amazon 参投，视频 AI 搜索瞄准企业级市场",
+      "summary": "视频 AI 搜索公司 Twelve Labs 完成 $1 亿 B 轮，由 NEA 和 Naver 联合领投，Amazon、Radical Ventures、Index Ventures 等参投。AWS 签署多年合同在 Trainium 芯片上托管其工作负载。公司开发多模态视频原生基础模型，让机器像人类一样搜索和分析视频。将在纽约和伦敦开设新办公室。",
+      "meaning": "：拥有大量视频资产的企业（媒体/安防/制造质检/培训）应关注 Twelve Labs 的 AWS 原生部署——视频 AI 搜索正从\"酷技术\"变成\"可采购的企业服务\"",
+      "source": "Bloomberg / CryptoBriefing / AWS Startups",
+      "quality_score": 6,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/video-search-startup-raises-100-million-from-amazon-vc-funds",
+      "companies": [
+        "Amazon",
+        "AWS"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-019",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Guggenheim 升级 Salesforce 和 ServiceNow——\"AI 对软件业的死亡威胁是幻觉\"",
+      "summary": "Guggenheim 分析师 John DiFucci 7/1 将 Salesforce 和 ServiceNow 从中性升级至买入，认为当前估值隐含\"软件公司将因 AI 永久衰退\"的预期是\"幻觉\"。Salesforce 目标价 $228，ServiceNow 目标价 $125（7.5x EV/NTM 经常性收入）。核心论点：AI 带来的竞争确实存在，但致命熊市论是过度定价。",
+      "meaning": "：Guggenheim 的逆向观点对企业 SaaS 采购策略有直接影响——如果头部 SaaS 不会被 AI 替代，企业应深化而非逃离 Salesforce/ServiceNow 生态，把 AI 当作增强现有平台的工具",
+      "source": "Bloomberg / Seeking Alpha / Benzinga",
+      "quality_score": 6,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/software-gains-as-guggenheim-says-ai-no-death-knell-for-sector",
+      "companies": [
+        "Salesforce",
+        "ServiceNow"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-020",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Bloomberg：科技/金融行业月均流失 2.8 万岗位——AI 驱动的行业级就业下降首现政府数据",
+      "summary": "Bloomberg 7/1 分析美国政府就业数据发现：信息业和金融活动业——AI 采用率最快的两个行业——2026 年平均每月减少约 28,000 个岗位。这是首次从政府统计层面证实 AI 驱动的持续性行业级就业下降，超出个别公司裁员事件范畴。",
+      "meaning": "：28K/月是结构性信号——CHRO 在做 3 年人力规划时必须把\"AI 替代速率\"作为等同于\"自然流失率\"的结构性变量，而非将其视为一次性裁员事件",
+      "source": "Bloomberg",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/tech-and-finance-sectors-losing-28-000-jobs-monthly-show-ai-impact-on-labor",
+      "companies": [
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-021",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Uber 解雇 AI 数据标注业务两名高管——新兴 AI 业务线遭遇领导层动荡",
+      "summary": "Uber 解雇了 AI 数据标注业务的两名技术领导人——高级工程总监 Naga Kasu 和产品总监 Pankaj Kamat，二人均在 Uber 工作超过 10 年。数据标注业务成立于 2024 年，被 Uber 定位为关键增长引擎。此事发生在 Uber 5 月因 AI 预算穿仓、6 月裁员 23% HR 人员之后。",
+      "meaning": "：Uber 的 AI 业务扩张遭遇\"成本失控→领导层清洗\"循环——企业在设立新 AI 业务线时应设定\"里程碑式预算门控\"而非年度预算，避免规模扩张先于商业验证",
+      "source": "Bloomberg / Dealroom",
+      "quality_score": 6,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/uber-shakes-up-ai-data-labeling-business-dismissing-top-leaders",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260702-022",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Google 内耗拖累 AI 编程能力——DeepMind/Cloud/Labs/Android 多线混战",
+      "summary": "Bloomberg 7/1 发表深度分析：Google 在 AI 编程领域落后的根因不是技术而是组织内耗——DeepMind、Google Cloud、Core、Labs 和 Android 五条线各自为政，AI 研究者的\"快速发布\"哲学与传统资深工程师的\"极致代码质量\"之间存在根本冲突。Transformer 发明者 Noam Shazeer、诺贝尔奖得主 John Jumper 等核心人才持续流失至 OpenAI 和 Anthropic。",
+      "meaning": "：依赖 Google AI 工具的企业应制定\"备选方案路线图\"——组织内耗导致的产品延迟不是短期现象，Gemini 3.5 Pro 推迟至 7 月只是冰山一角",
+      "source": "Bloomberg / TechTimes / Axios",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/opinion/articles/2026-07-01/google-s-power-struggles-are-killing-its-ai-mojo",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "DeepMind",
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-023",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "美国商务部解除 Fable 5/Mythos 5 出口管制——Anthropic 加固安全后全球恢复访问",
+      "summary": "美国商务部 6/30 解除对 Claude Fable 5 和 Mythos 5 的出口管制，Fable 5 于 7/1 全球恢复访问。管制起因于 6/12 Amazon 研究者发现 Fable 5 越狱漏洞（可绕过安全防护识别软件漏洞），Anthropic 随后训练了新安全分类器，在 99%+ 的案例中阻断报告的绕过技术。Mythos 5 已于 6/26 获批恢复给一组美国机构。",
+      "meaning": "：出口管制的\"冻结-修复-解冻\"循环已成为 AI 模型发布的新常态——企业采购合同必须加入\"模型可用性中断\"条款，明确出口管制期间的 SLA 降级方案和替代模型切换流程",
+      "source": "CNBC / Forbes / CoinDesk",
+      "quality_score": 8,
+      "url": "https://www.cnbc.com/amp/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html",
+      "companies": [
+        "Anthropic",
+        "Amazon",
+        "Mythos"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-024",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Claude Code 隐写指纹事件——通过不可见 Unicode 字符标记中国关联代理流量",
+      "summary": "开发者逆向 Claude Code 二进制文件发现：工具在系统提示中嵌入不可见 Unicode 字符，将 147 个中国科技公司/云服务商/AI 实验室/代理镜像（包括百度、阿里、字节、Moonshot、MiniMax）的请求路由信息进行隐写标记。直接使用 Anthropic API 的用户不受影响。该代码已存在至少 3 个月。Anthropic 确认并发布 2.1.197 版本移除。",
+      "meaning": "：使用企业 API 网关、自定义 ANTHROPIC_BASE_URL 或内部代理路由 Claude 请求的企业应审计是否受影响——此事件暴露的深层问题是\"AI 开发工具的供应链可审计性\"必须纳入 CISO 评估",
+      "source": "TechTimes / CyberSecurityNews / TechStartups",
+      "quality_score": 7,
+      "url": "https://www.techtimes.com/articles/319415/20260701/claude-code-hid-proxy-fingerprints-system-prompts-anthropic-promises-fix.htm",
+      "companies": [
+        "Anthropic",
+        "字节",
+        "阿里",
+        "百度",
+        "Moonshot"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-025",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Five Eyes 联盟警告：AI 驱动的网络攻击能力在数月内将突破政府和企业防线",
+      "summary": "美国、英国、澳大利亚、新西兰和加拿大五国情报联盟发布罕见联合声明：能够发动大规模网络攻击的 AI 模型距离突破政府和企业防线只有\"数月而非数年\"。声明直接引用了 Anthropic AI Agent 在数小时内渗透 NSA 和美国网络司令部管理的几乎所有密级系统的事件。建议企业投资网络防御、升级老旧系统、限制关键系统访问权限。",
+      "meaning": "：CISO 应立即启动\"AI 攻击面审计\"——如果 Five Eyes 判断 AI 攻击能力\"数月内成熟\"，Q3 就是最后的加固窗口，优先补丁老旧系统和收紧 AI Agent 权限",
+      "source": "CNN / CBS News / Cybersecurity Dive",
+      "quality_score": 7,
+      "url": "https://www.cnn.com/2026/06/23/world/ai-five-eyes-warning-cyber-threat-intl-hnk",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-026",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "AI 对冲基金交易拥挤风险——华尔街研究者警告模型趋同放大系统性风险",
+      "summary": "Bloomberg 7/1 报道多项研究结果：当越来越多对冲基金使用相似 AI 模型时，它们会买入相同股票、对相同新闻做出反应、犯相同错误。AI 缩短盈利信号寿命（投资者趋同于相同机会），模型可通过信息操控被愚弄，风险承担变得更难控制。对冲基金组合高度集中于 AI 半导体/云基础设施/超大规模科技平台，杠杆在回调时放大损失。",
+      "meaning": "：企业资金管理/投资团队在配置 AI 相关资产时应评估\"AI 交易拥挤度\"——如果多数量化基金用同类 AI 模型选股，超额收益将迅速收敛至零，分散化策略比追逐 AI 信号更重要",
+      "source": "Bloomberg",
+      "quality_score": 6,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/wall-street-s-ai-race-is-fueling-new-fears-of-crowded-trading",
+      "companies": [
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260702-027",
+      "date": "2026-07-02",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "ByteDance Seedance 2.5 企业版 beta 启动——好莱坞版权纠纷悬而未决",
+      "summary": "ByteDance 于 6/23 发布 Seedance 2.5 进入全球企业级限量 beta，目标公开上线时间为 7 月初。2.5 版本支持原生 30 秒无拼接 AI 视频生成。此前 Seedance 2.0 因好莱坞六大制片厂（Disney/WBD/Paramount/Netflix/Sony/环球）集体发送停止函而暂停全球推广，2.0 目前仅在中国通过火山引擎可用。2.5 版本是否彻底解决了版权投诉尚无明确声明。",
+      "meaning": "：企业级 AI 视频生成市场正在经历\"版权合规 vs 技术能力\"的拉锯——做内容生产的企业在评估 Seedance 2.5 时必须要求 ByteDance 提供版权合规的书面保证，否则面临连带诉讼风险",
+      "source": "TechTimes / Variety / The Decoder",
+      "quality_score": 6,
+      "url": "https://www.techtimes.com/articles/318975/20260624/bytedance-seedance-25-native-30-second-ai-video-no-stitching-required.htm",
+      "companies": [],
+      "keywords": []
+    },
     {
       "id": "20260701-T01",
       "date": "2026-07-01",
@@ -26800,79 +27283,75 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 245,
-      "🇨🇳 国内": 185,
-      "💰 商业": 183,
-      "🌟 Top 5": 150,
-      "🧠 Tier 0": 148,
-      "🏢 案例": 143,
+      "🚀 产品": 249,
+      "💰 商业": 187,
+      "🇨🇳 国内": 186,
+      "🌟 Top 5": 155,
+      "🧠 Tier 0": 151,
+      "🏢 案例": 146,
       "⚙️ 基础设施": 142,
-      "⚖️ 监管": 122,
-      "👥 组织": 116,
+      "⚖️ 监管": 126,
+      "👥 组织": 119,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 276,
-      "OpenAI": 240,
-      "Google": 157,
-      "NVIDIA": 98,
-      "FT": 82,
-      "AWS": 80,
-      "Amazon": 68,
-      "DeepSeek": 67,
-      "Microsoft": 64,
+      "Anthropic": 285,
+      "OpenAI": 244,
+      "Google": 158,
+      "NVIDIA": 99,
+      "FT": 84,
+      "AWS": 82,
+      "Amazon": 70,
+      "DeepSeek": 68,
+      "Microsoft": 65,
       "MIT": 54,
-      "xAI": 43,
-      "Simon Willison": 42,
-      "Mythos": 41,
+      "Simon Willison": 44,
+      "xAI": 44,
+      "Mythos": 43,
+      "Meta": 42,
       "Gary Marcus": 40,
-      "Meta": 40,
+      "DeepMind": 38,
       "Bedrock": 38,
-      "DeepMind": 37,
       "智谱": 35,
       "腾讯": 34,
+      "Salesforce": 31,
       "TechCrunch": 31,
-      "Salesforce": 30,
+      "Kimi": 29,
+      "阿里": 29,
       "BCG": 29,
       "Hugging Face": 28,
-      "Kimi": 28,
-      "阿里": 28,
+      "Bloomberg": 27,
       "Stratechery": 24,
       "Deloitte": 24,
-      "Bloomberg": 22,
       "豆包": 21,
       "IBM": 20,
       "Databricks": 20,
       "Stanford": 20,
+      "字节": 19,
       "Snowflake": 19,
       "Apple": 19,
       "SAP": 19,
+      "Karpathy": 18,
       "PwC": 18,
-      "字节": 18,
-      "Karpathy": 17,
       "Oracle": 16,
       "Accenture": 16,
       "McKinsey": 16,
+      "ServiceNow": 15,
       "Ring": 15,
-      "ServiceNow": 14,
+      "百度": 14,
+      "Moonshot": 13,
       "华为": 13,
       "通义": 13,
       "混元": 13,
-      "百度": 13,
-      "Moonshot": 12,
-      "Dario Amodei": 10,
-      "Reuters": 10
+      "Mistral": 10,
+      "Dario Amodei": 10
     },
     "signal_days": {
-      "medium": 30
+      "medium": 31
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-02",
-        "count": 0
-      },
       {
         "date": "2026-06-03",
         "count": 0
@@ -26988,10 +27467,15 @@
       {
         "date": "2026-07-01",
         "count": 34
+      },
+      {
+        "date": "2026-07-02",
+        "count": 25
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-02": 9,
         "2026-07-01": 11,
         "2026-06-30": 8,
         "2026-06-29": 5,
@@ -27024,6 +27508,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-07-02": 4,
         "2026-07-01": 2,
         "2026-06-30": 5,
         "2026-06-29": 7,
@@ -27056,6 +27541,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-07-02": 1,
         "2026-07-01": 1,
         "2026-06-30": 3,
         "2026-06-29": 2,
@@ -27088,6 +27574,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-07-02": 1,
         "2026-07-01": 6,
         "2026-06-29": 4,
         "2026-06-28": 1,
@@ -27117,6 +27604,7 @@
         "2026-05-14": 2
       },
       "FT": {
+        "2026-07-02": 2,
         "2026-07-01": 4,
         "2026-06-30": 1,
         "2026-06-29": 2,
@@ -27147,6 +27635,7 @@
         "2026-05-14": 4
       },
       "AWS": {
+        "2026-07-02": 2,
         "2026-06-30": 1,
         "2026-06-29": 2,
         "2026-06-28": 2,
@@ -27175,6 +27664,7 @@
         "2026-05-14": 6
       },
       "Amazon": {
+        "2026-07-02": 2,
         "2026-07-01": 3,
         "2026-06-29": 1,
         "2026-06-28": 3,
@@ -27202,6 +27692,7 @@
         "2026-05-14": 4
       },
       "DeepSeek": {
+        "2026-07-02": 1,
         "2026-07-01": 3,
         "2026-06-28": 4,
         "2026-06-27": 1,
@@ -27225,6 +27716,7 @@
         "2026-05-14": 1
       },
       "Microsoft": {
+        "2026-07-02": 1,
         "2026-07-01": 4,
         "2026-06-30": 1,
         "2026-06-29": 2,
