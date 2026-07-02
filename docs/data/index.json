@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-07-02T10:19:04.550656+00:00",
-    "total_reports": 31,
-    "total_articles": 1562,
+    "generated_at": "2026-07-02T16:15:35.607819+00:00",
+    "total_reports": 32,
+    "total_articles": 1593,
     "date_range": [
       "2026-05-14",
-      "2026-07-02"
+      "2026-07-03"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-03",
+      "weekday": "周五",
+      "signal_strength": "medium",
+      "main_count": 26,
+      "tier0_count": 3,
+      "summary": "Microsoft 成立 Frontier Company：$25 亿投入 + 6,000 人嵌入客户现场做 AI 落地",
+      "url": "reports/2026-07-03.md",
+      "article_count": 31
+    },
     {
       "date": "2026-07-02",
       "weekday": "周四",
@@ -321,6 +331,549 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260703-T01",
+      "date": "2026-07-03",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Microsoft 成立 Frontier Company：$25 亿投入 + 6,000 人嵌入客户现场做 AI 落地",
+      "summary": "Microsoft 7/2 宣布成立 Microsoft Frontier Company，投资 $25 亿、配备 6,000 名行业专家和 AI 工程师，以驻场模式帮客户从选型到部署全链路落地 AI。LSEG、Unilever、Novo Nordisk 已是首批客户。",
+      "meaning": "：企业 AI 实施从\"买工具\"进入\"买人+工具\"时代——CIO 评估 Microsoft vs AWS 的 AI 落地服务时，要把\"驻场工程团队规模和行业专长\"纳入供应商打分卡。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-T02",
+      "date": "2026-07-03",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "AWS 跟进 $10 亿前线部署工程：45 天周期、5-6 人 pod 驻场交付",
+      "summary": "AWS 宣布 $10 亿 Forward Deployed Engineering 组织，数千名工程师以 45 天周期、每 pod 5-6 人的模式嵌入客户团队，已服务 Allen Institute、NBA、NFL、Southwest Airlines 等。",
+      "meaning": "：Microsoft 和 AWS 同时押注\"驻场 AI 工程\"——正在做 AI 供应商选型的企业可以把两家的 FDE 报价放在一起竞标，用交付周期和留存培训条款对比议价。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "AWS",
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-T03",
+      "date": "2026-07-03",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "AI Engineer World's Fair 闭幕：MCP Registry 近万条目 + 多 Agent 生产框架发布",
+      "summary": "6,000+ AI 工程师齐聚旧金山的 AIEWF 2026 于 7/2 闭幕。Anthropic 公布 MCP Registry API（已近 10,000 条目）并宣布企业级 Auth 即将上线（Okta/Atlassian/Figma）；大会发布了全新的多 Agent 生产化框架。",
+      "meaning": "：MCP 从\"协议实验\"进入\"企业基础设施\"——平台工程团队应开始评估 MCP Registry 的 Auth 集成，提前规划内部 Agent 工具目录的标准化。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-T04",
+      "date": "2026-07-03",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "EU AI Act 透明度条款进入倒计时：8 月 2 日 Article 50 生效，整一个月",
+      "summary": "EU AI Act 第 50 条（深度伪造标注、AI 生成内容标签、透明度义务）将于 8/2 正式生效。所有向欧盟提供 AI 服务的企业必须在此之前完成合规评估和 CE 标识。",
+      "meaning": "：面向欧洲客户的 AI 产品团队如果还没做 Article 50 合规评估，7 月是最后窗口——优先检查\"AI 生成内容标注\"和\"深度伪造检测\"两项硬要求。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-T05",
+      "date": "2026-07-03",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Gemini 3.5 Pro 推迟至 7 月 + Deep Think 推理模式锁定 $250/月 Ultra 订阅",
+      "summary": "Google 将 Gemini 3.5 Pro 从 6 月推迟至 7 月 GA，原因是 token 效率和多步推理质量未达旗舰标准。新模型拥有 200 万 token 上下文窗口和\"Deep Think\"慢推理模式，但后者仅面向 $250/月 Ultra 用户。",
+      "meaning": "：正在等 Gemini 3.5 Pro 做 PoC 的企业可以先用 3.5 Flash 跑基线——同时关注 Deep Think 的定价信号：Google 正将深度推理能力定义为\"高端付费功能\"。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Google"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-006",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Dwarkesh Patel (2026-06 下旬) \"Economics of AGI\" — Alex Imas & Phil Trammell",
+      "summary": "Dwarkesh 与经济学家 Imas 和 Trammell 深度对谈 AGI 经济学：AI 生成财富如何最优征税和再分配、劳动力市场在 AI 替代下的结构转型路径、以及\"只有经济学能回答\"的 AI 治理问题。核心论点：税制设计必须先于技术部署，否则 AI 收益将不可逆地集中。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Dwarkesh"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-007",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus (2026-06 下旬) \"The (Possibly) Coming AI Backlash and Information Warfare\"",
+      "summary": "Marcus 警告：生成式 AI 正在加速信息战能力的平民化，当 AI 泡沫的经济后果与信息污染叠加时，公众对 AI 的情绪可能快速翻转为全面抵制。他类比 2008 金融危机，预言 AI 行业可能面临\"太大而不能倒\"的政治困境。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Gary Marcus"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-008",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-06 下旬) \"Agent 终于有了足够共识的定义\"",
+      "summary": "Willison 指出 \"agent\" 一词在 2026 年中终于从模糊的营销术语进化为有共识的工程概念：能自主调用工具、持续执行多步任务、在循环中自我纠错的 AI 系统。他认为这个定义的收敛是 agentic engineering 从\"实验\"进入\"可工程化\"的标志。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison",
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-009",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "GPT-5.6 Sol 将在 7 月登陆 Cerebras：750 tok/s 推理速度创前沿模型纪录",
+      "summary": "OpenAI 宣布 GPT-5.6 Sol 将于 7 月在 Cerebras 硬件上启动，推理速度高达 750 tok/s，面向有实时推理需求的企业客户（初期限定名额）。定价 $5/$30 per 1M tokens。Sol/Terra/Luna 三级模型仍处于约 20 家组织的有限预览阶段，需经美国政府逐客审批。",
+      "meaning": "：对推理延迟敏感的企业（实时客服、交易决策）首次可以在前沿模型上拿到亚秒级响应——但\"政府逐客审批\"意味着采购流程要额外预留 2-4 周的合规周期",
+      "source": "OpenAI + Cerebras",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Cerebras"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-010",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Claude Apps Gateway：企业级自托管控制面板覆盖 Bedrock + GCP + Azure Foundry",
+      "summary": "Anthropic 发布 Claude Apps Gateway，一个自托管的控制面板容器，为 Claude Code 提供企业 SSO、集中策略、RBAC、每用户成本追踪和花费上限。支持 Amazon Bedrock、Google Cloud 和 Microsoft Foundry 三路由自动故障转移。同日 Claude 在 Microsoft Foundry 正式 GA。",
+      "meaning": "：已在多云环境部署 Claude 的企业终于有了统一治理入口——安全团队可以用一个 Gateway 同时管理 Bedrock 和 GCP 的 Claude 用量，不必再为每个云单独搭建管控",
+      "source": "Anthropic",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "FT",
+        "Bedrock"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-011",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Alteryx Agent Studio + MCP Server：让业务分析师直接构建自治 Agent",
+      "summary": "Alteryx 在 Inspire 2026 发布 Agent Studio（将数据工作流转为自治 Agent）和 Alteryx One MCP Server（通过 MCP 协议将 Agent 接入 Slack/Teams/Claude/OpenAI）。核心卖点：业务分析师不依赖 IT 团队即可把已有的业务逻辑转为 Agent 可调用的工具。",
+      "meaning": "：数据团队可以把已有的 Alteryx 工作流\"零代码 Agent 化\"——但 IT 需警惕治理盲区：谁审批哪些工作流可以暴露为 MCP 工具、Agent 的调用权限边界如何划定",
+      "source": "Alteryx",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-012",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Informatica \"Headless AI\"：数据治理能力跨 Google Cloud / Snowflake / Databricks 可调用",
+      "summary": "Salesforce 旗下 Informatica 将数据质量、治理和主数据管理能力拆分为\"无头\"可调用服务，通过 MCP Server 接入 Snowflake Cortex AI、Databricks Agent Bricks 和 Google Cloud。AI Agent 可在工作流中途调用数据治理检查，无需切换平台。",
+      "meaning": "：构建多 Agent 系统的企业在数据治理层终于可以\"写一次、到处调用\"——但需注意 Databricks 集成要等到 10 月 GA，短期内 Snowflake 和 Google Cloud 路径先行",
+      "source": "Informatica (Salesforce)",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Google",
+        "Databricks",
+        "Snowflake",
+        "Salesforce"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-013",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Anthropic 联合四大厂商提出 Jailbreak 严重度评分框架（JCSS）",
+      "summary": "Anthropic 联合 Amazon、Microsoft、Google 及 Glasswing 合作伙伴，提出行业级 Jailbreak 严重度评分框架，从四个维度打分：能力增益幅度、解锁攻击面宽度、武器化难度、可发现性。设计思路类比 CVSS（通用漏洞评分系统）。",
+      "meaning": "：安全团队可以用 JCSS 框架标准化内部 AI 安全事件的分级——把\"模型被越狱了\"从模糊告警变成可量化的 P1/P2/P3 工单",
+      "source": "Anthropic + Amazon + Microsoft + Google",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "FT",
+        "Glasswing"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-014",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Microsoft Frontier Company 首批客户：LSEG、Unilever、Land O'Lakes、Novo Nordisk",
+      "summary": "Microsoft Frontier Company 首批客户涵盖金融（LSEG Workspace 嵌入 AI）、消费品（Unilever）、农业（Land O'Lakes）、制药（Novo Nordisk）四大行业。核心承诺：客户的数据和 IP 不会被用于训练模型，\"保护客户的 IQ\"是 Frontier Company 的核心原则。",
+      "meaning": "：正在考虑大厂 AI 咨询服务的企业可以拿 Microsoft Frontier Company 的\"IP 不训练\"条款作为谈判基线——要求所有 AI 供应商在合同中明确数据用途边界",
+      "source": "Microsoft Blog",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-015",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "AWS Forward Deployed Engineering 已驻场：NBA、NFL、Southwest Airlines、Ricoh",
+      "summary": "AWS FDE 团队已嵌入 Allen Institute（科研）、Cox Automotive（汽车）、NBA/NFL（体育）、Ricoh（办公设备）和 Southwest Airlines（航空）。交付模式是 45 天一周期，最终交付知识图谱、运维手册和已培训的内部团队——目标是让客户自主运营而非长期依赖。",
+      "meaning": "：AWS 的\"45 天自主化\"交付模式与传统咨询的\"按年续约\"模式形成对比——采购 AI 实施服务时，问\"交付结束后我们能否独立运营\"应成为评估核心问题",
+      "source": "AWS / CNBC",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "AWS",
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-016",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "UBTECH 发布 UWORLD U1 量产人形机器人：13,361 台预购，起售 ¥119,800",
+      "summary": "优必选在深圳发布 UWORLD U1 系列全尺寸仿生人形机器人（Lite/Pro/Ultra 三版），88 自由度，可复现 90% 基础人类动作。截至发布日已累计预购 13,361 台。搭载情感驱动大模型和多模态情境感知系统。",
+      "meaning": "：中国人形机器人已进入\"万台级预购+量产定价\"阶段——制造业 CTO 评估工厂 AI 自动化时，人形机器人的 TCO 开始可以与工业机械臂做对比计算",
+      "source": "UBTECH / TechNode",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-017",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "8090 Labs 完成 $1.35 亿 A 轮：Chamath 亲任 CEO，Salesforce Ventures 领投",
+      "summary": "Chamath Palihapitiya 从董事退到 CEO 一线，其 AI 编程公司 8090 Labs 完成 $1.35 亿 A 轮（Salesforce Ventures 领投、Craft Ventures/WndrCo 跟投）。产品 Software Factory 面向医疗、金融、航天等受监管行业，提供带审计追踪的生产级 AI 编程。",
+      "meaning": "：企业 AI 编程赛道出现\"合规优先\"新物种——受监管行业的工程 VP 在选 Cursor/Copilot 之外，可以考察 8090 的审计追踪能力是否满足 SOX/HIPAA 合规要求",
+      "source": "TechCrunch",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Salesforce",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-018",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Meta Compute 冲击波持续：CoreWeave 跌 10.8%、Nebius 跌 12.4%",
+      "summary": "Meta Compute 云业务消息（7/1 Bloomberg 独家）的市场冲击在 7/2 持续发酵：CoreWeave 和 Nebius 股价分别再跌 10.8% 和 12.4%。分析师指出 Meta 高达 $1,450 亿的年度 AI 资本支出一旦转化为云收入，新兴云厂商的生存空间将被严重挤压。",
+      "meaning": "：正在使用 CoreWeave/Nebius 等新云的企业应启动供应商风险评估——如果这些厂商因 Meta 入局而陷入财务困境，迁移方案需要提前准备",
+      "source": "CNBC / Yahoo Finance",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Meta",
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-019",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "AI 驱动裁员 2026 年数据：267 起事件、185,894 名员工受影响",
+      "summary": "截至 7/1，2026 年美国已发生 267 起裁员事件，影响 185,894 名员工。56% 的裁员事件明确将 AI/自动化列为原因之一（vs 2025 年全年 54,836 人）。GitLab 6 月裁员 14%、Meta 年初裁 8,000 人同时将 7,000 人转岗 AI。初级岗位受冲击最大。",
+      "meaning": "：CHRO 必须停止把 AI 裁员视为\"个案\"——186K 是结构性数据。人才战略应同步推进两条线：用 AI 提效高级岗位 + 为初级岗位设计\"AI 协同\"转型路径",
+      "source": "Challenger / Tom's Hardware / CBS News",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Meta",
+        "GitLab"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-020",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Google DeepMind 人才流失持续：Shazeer 赴 OpenAI、Jumper 赴 Anthropic",
+      "summary": "Transformer 论文联合作者、Gemini 联合负责人 Noam Shazeer 宣布加入 OpenAI；AlphaFold 创造者、2024 年诺贝尔奖得主 John Jumper 宣布加入 Anthropic。两人几乎同期离开 DeepMind，是 6 月下旬\"六天四走\"人才流失潮的延续。",
+      "meaning": "：企业在选择 AI 模型供应商时，\"核心研发团队稳定性\"应成为长期风险评估因子——DeepMind 的人才流出可能影响 Gemini 未来 1-2 代模型的迭代节奏",
+      "source": "多源",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-021",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Microsoft 6,000 人调配至 Frontier Company：最大规模的 AI 工程驻场部队",
+      "summary": "Microsoft 将 6,000 名员工（含行业专家、变革管理顾问和 AI 工程师）编入新成立的 Frontier Company。该部队被定位为\"业界最大、最有能力、以结果为导向的 AI 工程组织\"，超越传统咨询模式。",
+      "meaning": "：大厂 AI 服务正在从\"卖 API\"进化到\"卖人+API+交付\"——Accenture、Deloitte 等传统咨询公司面临的不只是工具竞争，而是\"6,000 人规模的云厂商驻场团队\"的正面冲击",
+      "source": "CNBC / GeekWire",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-022",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "BCG AI Radar 2026：74% CEO 亲自主导 AI 决策，AI 预算翻倍至营收 1.7%",
+      "summary": "BCG 最新 AI Radar 报告显示：企业 AI 支出预计从营收 0.8% 翻倍至 1.7%。74% CEO 表示自己是 AI 最终决策者（去年仅 37%）。一线员工 AI 使用率飙升至 74%（同比 +23pp），其中 42% 的日常用户报告每周节省 8 小时（相当于一个完整工作日）。",
+      "meaning": "：AI 已从 CTO 议题升级为 CEO 议题——给 CEO 做 AI 汇报的 VP/Director 要把话术从\"技术能力\"切换到\"业务 KPI 影响\"，因为你的听众已经不是技术决策者",
+      "source": "BCG",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "BCG"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-023",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "NVIDIA ISC 2026：35 台 AI 超算覆盖欧洲 23 国，总算力达 800 Exaflops",
+      "summary": "NVIDIA 在 ISC High Performance 2026 宣布，欧洲正在建设创纪录的 35 台 AI HPC 超算，覆盖 23 个国家，服务 300 万+ 研究人员。部署基于 Vera Rubin 平台，应用场景涵盖气候科学、医疗、清洁能源和量子计算。",
+      "meaning": "：欧洲 AI 算力从\"依赖美国云\"向\"主权超算\"转型——在欧洲有研发中心的企业可以考虑接入这些国家级超算资源，替代或补充商用云的 GPU 算力",
+      "source": "NVIDIA Newsroom",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-024",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "AI 数据中心 vs 极端天气：79% 算力容量面临气候灾害威胁",
+      "summary": "研究机构数据显示，全球数据中心 79% 的算力容量面临洪水、极端高温、山火等突发气候灾害威胁。AI 数据中心还产生\"热岛效应\"——平均升温 3.6°F，最高可达 16°F，影响 6.2 英里范围内约 3.43 亿人口。冷却用电已占数据中心总能耗 40%。",
+      "meaning": "：基础设施团队在选址 AI 数据中心时，\"气候韧性评分\"应与电力成本同等权重——保险公司已开始上调高风险区域数据中心的保费",
+      "source": "CNBC / Quartz",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-025",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Meta Compute 进军云计算：$1,450 亿 AI 资本支出转化为新收入源",
+      "summary": "Meta 正在建设 Meta Compute 云业务，计划出售裸算力和托管 AI 模型（含闭源 Muse Spark）。由基础设施负责人 Janardhan、Meta 超级智能实验室的 Daniel Gross 和总裁 Dina Powell McCormick 联合推进。今年 AI 资本支出预计高达 $1,450 亿。",
+      "meaning": "：云市场从\"三巨头\"变\"四强\"——但企业在评估 Meta Compute 时要注意：Meta 的核心能力是社交/广告场景的 AI，企业级 SLA、合规认证和数据隔离是否到位仍需验证",
+      "source": "Bloomberg / CNBC",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Meta"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-026",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "BlueHammer 漏洞 (CVE-2026-33825)：Microsoft Defender 遭勒索软件利用",
+      "summary": "CISA 将 Microsoft Defender 漏洞 BlueHammer（CVE-2026-33825）加入\"已知被利用漏洞\"目录，确认该漏洞已被用于勒索软件攻击。当前 28.3% 的 CVE 在披露 24 小时内即被利用。",
+      "meaning": "：安全团队应立即检查 Microsoft Defender 补丁状态——\"24 小时内被利用\"意味着传统的\"每月补丁周期\"已不够，需要转向\"CVE 发布即补丁\"的自动化响应流程",
+      "source": "SecurityWeek / CISA",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-027",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "EU AI Act Article 50 透明度规则 8/2 生效：企业合规窗口仅剩 30 天",
+      "summary": "EU AI Act 第 50 条将于 8 月 2 日生效，要求：AI 生成内容必须标注、深度伪造必须可检测、高风险 AI 系统需完成 CE 标识和技术文档。合规评估指南已发布。高风险系统义务已获延期（具体日期待定），但透明度条款未延期。",
+      "meaning": "：法务团队需在 7 月内完成三项清单：① 内容生成功能是否标注\"AI 生成\" ② 是否有深度伪造检测机制 ③ 高风险分类评估是否完成——任何一项未达标都将面临执法风险",
+      "source": "欧盟委员会 / 多家律所",
+      "quality_score": 7,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-028",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "UN 首届全球 AI 治理对话：7/6-7 日内瓦，与 WSIS + AI for Good 同期",
+      "summary": "联合国大会设立的首届全球 AI 治理对话将于 7/6-7 在日内瓦 Palexpo 召开，与 WSIS 论坛（7/6-10）和 ITU AI for Good 全球峰会（7/7-10）同期。由萨尔瓦多和爱沙尼亚联合主席。第二届将于 2027 年 5 月在纽约举行。",
+      "meaning": "：跨国企业的政府关系团队应关注 7/6-7 日内瓦会议的结论性文件——这将是 UN 层面首个 AI 治理多边共识框架，可能影响 2027 年各国立法走向",
+      "source": "UN / UNESCO / ITU",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-029",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "AI Agent 安全\"定时炸弹\"：每个 Agent 使网络攻击面增大 450%",
+      "summary": "安全研究显示，每部署一个自治 AI Agent，企业网络的攻击面平均增大 450%（对比人类操作员）。AI 引发的错误配置正成为新的风险类别——单条错误指令即可导致大规模数据泄露。Gartner 预测到年底 40% 企业应用将集成 Agent。",
+      "meaning": "：CISO 在批准 Agent 上线前，应要求安全团队对每个 Agent 做\"攻击面评估\"——特别是 Agent 的权限范围、可访问的内部系统和\"出错后的爆炸半径\"",
+      "source": "多源安全研究",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260703-030",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "字节跳动发布豆包-Seed-2.1 Agent 模型：定位\"编程+Agent 时代的基座\"",
+      "summary": "字节跳动发布 Doubao-Seed-2.1 Agent 模型（Pro/Turbo 两版），定位为编程和 Agent 时代的基座模型，增强了通用 Agent 能力、端到端代码交付和多模态理解。字节 2026 年计划总投入 1,600 亿元（含 850 亿芯片采购），并将抖音推理效率优化 43%。",
+      "meaning": "：国内企业评估 Agent 基座模型时，字节的\"推理效率优化 43% + 成本仅海外大模型 38%\"是重要竞争力数据——但需验证 Agent 能力在受监管场景下的可控性",
+      "source": "多源",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "字节",
+        "豆包"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260703-031",
+      "date": "2026-07-03",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "AI 数据中心热岛效应引发全球基础设施风险预警",
+      "summary": "多家媒体报道 AI 数据中心正在制造\"热岛效应\"，平均升温 3.6°F，影响范围达 6.2 英里、波及全球 3.43 亿人口。NVIDIA 新服务器已支持冷却液温度提至 45°C 以降低能耗，但热浪、洪水和山火对数据中心的威胁仍在升级。",
+      "meaning": "：数据中心选址和运维团队需将\"气候韧性\"纳入核心指标——每升高冷却液温度 1°C 可节约约 4% 冷却能耗，这类优化在 AI 算力密度持续增长的背景下将直接影响 TCO",
+      "source": "CNN / Fortune / Weather.com",
+      "quality_score": 5,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
     {
       "id": "20260702-T01",
       "date": "2026-07-02",
@@ -27283,61 +27836,61 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 249,
-      "💰 商业": 187,
-      "🇨🇳 国内": 186,
-      "🌟 Top 5": 155,
-      "🧠 Tier 0": 151,
-      "🏢 案例": 146,
-      "⚙️ 基础设施": 142,
-      "⚖️ 监管": 126,
-      "👥 组织": 119,
+      "🚀 产品": 254,
+      "💰 商业": 190,
+      "🇨🇳 国内": 188,
+      "🌟 Top 5": 160,
+      "🧠 Tier 0": 154,
+      "🏢 案例": 149,
+      "⚙️ 基础设施": 146,
+      "⚖️ 监管": 129,
+      "👥 组织": 122,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 285,
-      "OpenAI": 244,
-      "Google": 158,
-      "NVIDIA": 99,
-      "FT": 84,
-      "AWS": 82,
-      "Amazon": 70,
+      "Anthropic": 289,
+      "OpenAI": 247,
+      "Google": 163,
+      "NVIDIA": 101,
+      "FT": 91,
+      "AWS": 84,
+      "Amazon": 72,
+      "Microsoft": 71,
       "DeepSeek": 68,
-      "Microsoft": 65,
       "MIT": 54,
-      "Simon Willison": 44,
+      "Simon Willison": 45,
+      "Meta": 45,
       "xAI": 44,
       "Mythos": 43,
-      "Meta": 42,
-      "Gary Marcus": 40,
-      "DeepMind": 38,
-      "Bedrock": 38,
+      "Gary Marcus": 41,
+      "Bedrock": 39,
+      "DeepMind": 39,
       "智谱": 35,
       "腾讯": 34,
-      "Salesforce": 31,
+      "Salesforce": 33,
       "TechCrunch": 31,
+      "BCG": 30,
       "Kimi": 29,
       "阿里": 29,
-      "BCG": 29,
+      "Bloomberg": 28,
       "Hugging Face": 28,
-      "Bloomberg": 27,
       "Stratechery": 24,
       "Deloitte": 24,
-      "豆包": 21,
+      "豆包": 22,
+      "Databricks": 21,
+      "Snowflake": 20,
+      "字节": 20,
       "IBM": 20,
-      "Databricks": 20,
       "Stanford": 20,
-      "字节": 19,
-      "Snowflake": 19,
       "Apple": 19,
       "SAP": 19,
+      "Ring": 18,
       "Karpathy": 18,
       "PwC": 18,
       "Oracle": 16,
       "Accenture": 16,
       "McKinsey": 16,
       "ServiceNow": 15,
-      "Ring": 15,
       "百度": 14,
       "Moonshot": 13,
       "华为": 13,
@@ -27347,15 +27900,11 @@
       "Dario Amodei": 10
     },
     "signal_days": {
-      "medium": 31
+      "medium": 32
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-03",
-        "count": 0
-      },
       {
         "date": "2026-06-04",
         "count": 0
@@ -27471,10 +28020,15 @@
       {
         "date": "2026-07-02",
         "count": 25
+      },
+      {
+        "date": "2026-07-03",
+        "count": 29
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-03": 4,
         "2026-07-02": 9,
         "2026-07-01": 11,
         "2026-06-30": 8,
@@ -27508,6 +28062,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-07-03": 3,
         "2026-07-02": 4,
         "2026-07-01": 2,
         "2026-06-30": 5,
@@ -27541,6 +28096,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-07-03": 5,
         "2026-07-02": 1,
         "2026-07-01": 1,
         "2026-06-30": 3,
@@ -27574,6 +28130,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-07-03": 2,
         "2026-07-02": 1,
         "2026-07-01": 6,
         "2026-06-29": 4,
@@ -27604,6 +28161,7 @@
         "2026-05-14": 2
       },
       "FT": {
+        "2026-07-03": 7,
         "2026-07-02": 2,
         "2026-07-01": 4,
         "2026-06-30": 1,
@@ -27635,6 +28193,7 @@
         "2026-05-14": 4
       },
       "AWS": {
+        "2026-07-03": 2,
         "2026-07-02": 2,
         "2026-06-30": 1,
         "2026-06-29": 2,
@@ -27664,6 +28223,7 @@
         "2026-05-14": 6
       },
       "Amazon": {
+        "2026-07-03": 2,
         "2026-07-02": 2,
         "2026-07-01": 3,
         "2026-06-29": 1,
@@ -27691,31 +28251,8 @@
         "2026-05-15": 5,
         "2026-05-14": 4
       },
-      "DeepSeek": {
-        "2026-07-02": 1,
-        "2026-07-01": 3,
-        "2026-06-28": 4,
-        "2026-06-27": 1,
-        "2026-06-26": 1,
-        "2026-06-25": 3,
-        "2026-06-23": 1,
-        "2026-06-22": 1,
-        "2026-05-27": 5,
-        "2026-05-26": 2,
-        "2026-05-25": 3,
-        "2026-05-24": 4,
-        "2026-05-23": 8,
-        "2026-05-22": 4,
-        "2026-05-21": 2,
-        "2026-05-20": 4,
-        "2026-05-19": 3,
-        "2026-05-18": 3,
-        "2026-05-17": 6,
-        "2026-05-16": 5,
-        "2026-05-15": 3,
-        "2026-05-14": 1
-      },
       "Microsoft": {
+        "2026-07-03": 6,
         "2026-07-02": 1,
         "2026-07-01": 4,
         "2026-06-30": 1,
@@ -27743,6 +28280,30 @@
         "2026-05-16": 3,
         "2026-05-15": 1,
         "2026-05-14": 4
+      },
+      "DeepSeek": {
+        "2026-07-02": 1,
+        "2026-07-01": 3,
+        "2026-06-28": 4,
+        "2026-06-27": 1,
+        "2026-06-26": 1,
+        "2026-06-25": 3,
+        "2026-06-23": 1,
+        "2026-06-22": 1,
+        "2026-05-27": 5,
+        "2026-05-26": 2,
+        "2026-05-25": 3,
+        "2026-05-24": 4,
+        "2026-05-23": 8,
+        "2026-05-22": 4,
+        "2026-05-21": 2,
+        "2026-05-20": 4,
+        "2026-05-19": 3,
+        "2026-05-18": 3,
+        "2026-05-17": 6,
+        "2026-05-16": 5,
+        "2026-05-15": 3,
+        "2026-05-14": 1
       },
       "MIT": {
         "2026-07-01": 1,
@@ -27777,8 +28338,8 @@
       "FT",
       "AWS",
       "Amazon",
-      "DeepSeek",
       "Microsoft",
+      "DeepSeek",
       "MIT"
     ]
   }
