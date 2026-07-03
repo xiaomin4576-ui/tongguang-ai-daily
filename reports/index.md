@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-04 周六](./2026-07-04.md) — 29 篇 — 关键词：Together AI $8亿C轮估值$83亿 / 美国6月非农仅5.7万人AI影响初现 / EU AI Act Article 50签署倒计时19天 / Claude Code隐写标记撤回 / Claude Science公测+GPT-5.6 Sol x Cerebras
 - [2026-07-03 周五](./2026-07-03.md) — 26 篇 — 关键词：Microsoft Frontier Company $25亿+6000人驻场 / AWS $10亿前线工程 / AIEWF闭幕MCP Registry万条目 / EU AI Act Article 50倒计时30天 / Gemini 3.5 Pro推迟+Deep Think
 - [2026-07-02 周四](./2026-07-02.md) — 22 篇 — 关键词：Anthropic Sonnet 5+Fable解禁 / Meta Compute入局云计算 / MGX $490亿AI基金 / 科技金融月失2.8万岗 / Claude Code隐写指纹
 - [2026-07-01 周三](./2026-07-01.md) — 29 篇 — 关键词：GitHub Copilot计量计费首月10-50x账单冲击 / Claude Microsoft Foundry正式GA+GB300 / California全州五折用Claude / Palantir+NVIDIA主权AI气隙部署 / 奥地利邀Anthropic入欧AI主权争夺
