@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-05 周日](./2026-07-05.md) — 21 篇 — 关键词：OpenAI提议美政府持股5%估值$8520亿 / Anthropic封堵中国绕行2.5万假账号 / 美团LongCat-2.0纯国产算力1.6T开源 / Meta Watermelon匹配GPT-5.5 / EU AI Act Omnibus高风险推迟至2027年12月
 - [2026-07-04 周六](./2026-07-04.md) — 29 篇 — 关键词：Together AI $8亿C轮估值$83亿 / 美国6月非农仅5.7万人AI影响初现 / EU AI Act Article 50签署倒计时19天 / Claude Code隐写标记撤回 / Claude Science公测+GPT-5.6 Sol x Cerebras
 - [2026-07-03 周五](./2026-07-03.md) — 26 篇 — 关键词：Microsoft Frontier Company $25亿+6000人驻场 / AWS $10亿前线工程 / AIEWF闭幕MCP Registry万条目 / EU AI Act Article 50倒计时30天 / Gemini 3.5 Pro推迟+Deep Think
 - [2026-07-02 周四](./2026-07-02.md) — 22 篇 — 关键词：Anthropic Sonnet 5+Fable解禁 / Meta Compute入局云计算 / MGX $490亿AI基金 / 科技金融月失2.8万岗 / Claude Code隐写指纹
