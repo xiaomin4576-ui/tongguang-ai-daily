@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-07-04T09:09:15.681041+00:00",
-    "total_reports": 33,
-    "total_articles": 1633,
+    "generated_at": "2026-07-04T16:16:10.097360+00:00",
+    "total_reports": 34,
+    "total_articles": 1661,
     "date_range": [
       "2026-05-14",
-      "2026-07-04"
+      "2026-07-05"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-05",
+      "weekday": "周日",
+      "signal_strength": "medium",
+      "main_count": 21,
+      "tier0_count": 4,
+      "summary": "OpenAI 提议美国政府持股 5%——按 $8520 亿估值计约 $426 亿",
+      "url": "reports/2026-07-05.md",
+      "article_count": 28
+    },
     {
       "date": "2026-07-04",
       "weekday": "周六",
@@ -341,6 +351,475 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260705-T01",
+      "date": "2026-07-05",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "OpenAI 提议美国政府持股 5%——按 $8520 亿估值计约 $426 亿",
+      "summary": "OpenAI 在致白宫备忘录中首次提出让联邦政府直接持股，换取出口管制放松与基础设施审批快通道，标志 AI 公司与国家安全深度绑定新阶段。",
+      "meaning": "：企业评估 OpenAI 供应商风险时需新增\"政府股东利益冲突\"维度，合同审查加入主权条款",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-T02",
+      "date": "2026-07-05",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Anthropic 封堵中国绕行漏洞——2.5 万假账号、2880 万次 API 调用经新加坡/VPN 转发",
+      "summary": "Anthropic 确认已关闭新加坡中转与 VPN 绕行通道，2.5 万欺诈账号批量封禁，此前 Alibaba 蒸馏攻击余波仍在持续。",
+      "meaning": "：依赖 Claude API 的亚太企业应立即审计自身账号合规状态，避免被误封波及",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-T03",
+      "date": "2026-07-05",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "美团 LongCat-2.0：首个完全在 5 万颗国产芯片上训练的 1.6T 参数模型，MIT 开源",
+      "summary": "美团发布 LongCat-2.0，全部训练在昇腾 910B 上完成，MIT 许可开源，OpenRouter 排行榜已跃居前列，是国产算力自主可控的里程碑验证。",
+      "meaning": "：评估国内大模型供应商时可将\"纯国产算力训练\"作为供应链韧性加分项写入 RFP",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "MIT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-T04",
+      "date": "2026-07-05",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Meta \"Watermelon\" 内部模型匹配 GPT-5.5——Alexandr Wang 7/2 告知员工",
+      "summary": "Scale AI CEO Alexandr Wang 在内部会议中透露 Meta 最新内部模型 Watermelon 已达到 GPT-5.5 水平，预计 Q3 开放 API。",
+      "meaning": "：正在选型 LLM 的团队应将 Meta 开源/半开源路线纳入 Q3 评估，避免锁定单一供应商",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Meta"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-T05",
+      "date": "2026-07-05",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "EU AI Act Omnibus 最终通过——高风险 AI 规则推迟 16 个月至 2027 年 12 月",
+      "summary": "欧盟理事会最终批准 Omnibus 修正案，将高风险 AI 合规截止日从 2026 年 8 月推迟至 2027 年 12 月，中小企业获额外缓冲期。",
+      "meaning": "：欧洲业务线的 AI 合规预算可分两阶段规划，但 Article 50 透明度条款 8/2 仍按期生效",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-006",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ethan Mollick (2026-06-30) \"The Twilight of the Chatbots\"",
+      "summary": "Mollick 提出聊天界面正在消亡，AI 能力加速的同时政府管控正在限制普通人接触最前沿模型的渠道，企业级 Agent 将取代消费者对话式交互，形成\"能力越强、触达越窄\"的悖论格局。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-007",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-07-02) \"Coding Agent 认知债务\"",
+      "summary": "引用 Geoffrey Litt 框架，指出编程 Agent 生成的代码虽能通过测试，但会累积\"认知债务\"——开发者对代码理解的空白，长期维护成本远超短期效率收益，呼吁建立 Agent 生成代码的人工审查节奏。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-008",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Cory Doctorow (2026-06-18) \"AI 数字主权风险不存在\"",
+      "summary": "Doctorow 撰文反驳\"AI 主权\"叙事，认为所谓\"主权 AI\"本质上是大厂以地缘政治话术锁定政府采购，真正的自主能力应建立在开源模型与本土算力上，而非购买商业 API 的本地化部署版本。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-009",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Cory Doctorow (2026-06-06) \"The Reverse Centaur's Guide\" 新书预告",
+      "summary": "Doctorow 新书探讨\"反向人马\"——人类沦为 AI 执行器的场景，以 Amazon 仓储工人为原型分析自动化决策如何将人类降格为肌肉接口，呼吁在 AI 部署中保留人类判断权。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Amazon"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-010",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Palantir-NVIDIA 主权 AI 操作系统在 G7 盟国启动部署",
+      "summary": "Palantir 与 NVIDIA 联合推出的\"主权 AI OS\"已在 5 个 G7 国家获得部署许可，面向国防与情报机构，支持气隙（air-gapped）环境运行。系统基于 Palantir Foundry + NVIDIA NIM 微服务架构，首批客户包括北约联合作战中心。",
+      "meaning": "：涉及政府/国防 AI 项目的企业可关注 Palantir-NVIDIA 联合方案作为合规通道，但需评估数据主权条款",
+      "source": "Reuters",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-011",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "8090 Labs \"Software Factory\" 获 $1.35 亿 A 轮——AI 驱动全栈应用生成",
+      "summary": "Y Combinator 出身的 8090 Labs 获 Lightspeed 领投 $1.35 亿 A 轮，其 Software Factory 产品可从需求文档直接生成全栈应用，定位企业内部工具快速交付，声称将交付周期从月级压缩至天级。",
+      "meaning": "：IT 部门评估低代码/无代码平台时应将\"AI 全栈生成\"新品类加入竞品清单，但需验证生成代码的可维护性",
+      "source": "TechCrunch",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-012",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "xAI Grok 4.5 私测开启——1.5T 参数，面向企业推理场景",
+      "summary": "xAI 向约 200 家企业客户开放 Grok 4.5 私测，1.5T 参数规模，主打复杂推理与代码生成，定价暂为 GPT-4o 的 60%。Elon Musk 称 Q3 将全面开放 API，目标抢占 Claude/GPT 企业推理市场份额。",
+      "meaning": "：多模型采购策略中应为 Grok 4.5 预留评测窗口，低价策略可能重塑推理场景的成本基准",
+      "source": "The Information",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "xAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-013",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Dario Amodei CBS 专访：Claude 已用于情报分析与军事辅助决策",
+      "summary": "Anthropic CEO Dario Amodei 在国庆日 CBS 专访中首次公开确认 Claude 正被美国情报机构与军方使用，同时划定\"红线\"——不会让 AI 做出致命性武力决策。他将 AI 竞争类比冷战，强调美国不能落后于中国。",
+      "meaning": "：企业采购 Claude 时可将\"美国国安背书\"作为合规加分，但也需评估地缘关联风险",
+      "source": "CBS News",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Dario Amodei"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-014",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Deloitte State of AI 2026：77% 企业考虑 AI 模型原产国作为采购因素",
+      "summary": "Deloitte 年度 AI 报告显示，77% 受访企业高管表示会将 AI 模型的原产国纳入供应商评估标准，较去年 42% 大幅跃升。报告同时指出 68% 企业已部署至少一个 AI Agent，但仅 21% 建立了成熟的 Agent 治理体系。",
+      "meaning": "：供应商评估矩阵应正式新增\"模型原产国\"维度，同步启动 Agent 治理框架建设",
+      "source": "Deloitte",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Deloitte"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-015",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "OpenAI 提议美国政府持股 5%——估值 $8520 亿下约 $426 亿",
+      "summary": "OpenAI 在致白宫的政策备忘录中提议联邦政府直接持有公司 5% 股权，按最新 $8520 亿估值计约 $426 亿。作为交换，OpenAI 希望获得出口管制豁免与数据中心建设审批绿色通道。若实现，这将是美国政府首次直接持股科技巨头。",
+      "meaning": "：OpenAI 的定价与产品策略可能受政府股东影响，长期合同需加入\"股权结构变更\"触发条款",
+      "source": "The New York Times",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-016",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Venice AI 获 $6500 万 A 轮——隐私优先 AI 估值达 $10 亿",
+      "summary": "主打\"零知识推理\"的 Venice AI 完成 a16z 领投 $6500 万 A 轮，估值 $10 亿晋升独角兽。产品在用户端加密推理请求，服务器仅处理密文，面向金融、医疗等高合规行业。",
+      "meaning": "：数据敏感行业评估 AI 方案时应将\"零知识推理\"加入技术选型清单，验证其性能损耗是否可接受",
+      "source": "VentureBeat",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-017",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Joulent 获 $17.5 亿融资——AI 数据中心电力解决方案",
+      "summary": "Joulent 获 Brookfield 领投 $17.5 亿，专注为 AI 数据中心提供模块化电力解决方案，声称可将数据中心从选址到通电周期从 36 个月压缩至 9 个月。已签约 Microsoft、Oracle 等头部客户。",
+      "meaning": "：规划自建 AI 算力的企业应评估 Joulent 等电力即服务方案，加速基础设施上线节奏",
+      "source": "Bloomberg",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "Oracle",
+        "FT",
+        "Joule"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-018",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "联合国 AI for Good 委员会成立——Benioff 与 Kagame 联合主席",
+      "summary": "联合国秘书长古特雷斯宣布成立 AI for Good 高级委员会，由 Salesforce CEO Benioff 与卢旺达总统 Kagame 联合主席，任务是制定全球 AI 治理建议。委员会 30 名成员来自 22 国，首份报告预计 2027 年 3 月。",
+      "meaning": "：跨国企业 AI 治理团队应关注该委员会动态，其建议可能影响未来多边 AI 监管框架",
+      "source": "UN News",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Salesforce"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-019",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "NVIDIA CEO 黄仁勋 DOE\"夏至计划\"揭幕——首个百亿亿次 AI 超算部署",
+      "summary": "NVIDIA 与美国能源部联合揭幕\"Solstice\"计划，将在橡树岭国家实验室部署首台专为 AI 工作负载优化的百亿亿次超算，基于 GB300 架构，预计 2027 年中投入运行，初期用于气候模拟与药物发现。",
+      "meaning": "：科研密集型企业可提前规划对接 DOE 超算资源的 AI 工作流，尤其是气候与生物医药领域",
+      "source": "NVIDIA Blog",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-020",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "美团 LongCat-2.0：完全国产算力训练的 1.6T 开源模型",
+      "summary": "美团正式发布 LongCat-2.0，1.6T 参数，全部在 5 万颗华为昇腾 910B 上完成训练，MIT 许可开源。在 OpenRouter 多项基准测试中表现优异，128K 上下文窗口，是目前最大的纯国产算力训练模型。",
+      "meaning": "：国内企业部署大模型可将 LongCat-2.0 作为\"供应链安全\"备选项纳入评估，MIT 许可降低商用门槛",
+      "source": "美团技术博客",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "MIT",
+        "华为"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-021",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Meta \"Watermelon\" 内部模型达 GPT-5.5 水平",
+      "summary": "Scale AI CEO Alexandr Wang 在 7 月 2 日内部会议中向员工透露，Meta 最新内部模型代号 Watermelon 在多项基准上匹配 GPT-5.5 性能。该模型预计 Q3 以某种形式开放，可能延续 Meta 开源/半开源策略。",
+      "meaning": "：正在与 Meta 洽谈的企业客户可要求提前获取 Watermelon 私测权限，为 Q3 选型做准备",
+      "source": "The Information",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Meta"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-022",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Together AI 完成 $8 亿 C 轮融资——推理基础设施估值 $83 亿",
+      "summary": "Together AI 获 Salesforce Ventures 领投 $8 亿 C 轮，估值 $83 亿。公司定位推理基础设施层，提供多模型部署与优化服务，客户包括 SAP、Databricks 等企业级用户。融资将用于扩展全球推理节点。",
+      "meaning": "：评估推理服务供应商时将 Together AI 与 AWS Bedrock、Azure AI 同台比较，关注其多模型编排能力",
+      "source": "Bloomberg",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Databricks",
+        "Salesforce",
+        "SAP"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-023",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "EU AI Act Omnibus 修正案最终通过——高风险 AI 推迟至 2027 年 12 月",
+      "summary": "欧盟理事会正式批准 AI Act Omnibus 修正案，将高风险 AI 系统的合规截止日从 2026 年 8 月推迟 16 个月至 2027 年 12 月。但 Article 50 透明度条款（AI 生成内容标注）仍按 2026 年 8 月 2 日生效，倒计时不足 30 天。",
+      "meaning": "：欧洲业务 AI 合规团队可将高风险系统合规工作重新排期，但 AI 内容标注能力须在 8/2 前上线",
+      "source": "European Council",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-024",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Anthropic 关闭中国绕行通道——2.5 万假账号封禁",
+      "summary": "Anthropic 官方确认已关闭通过新加坡中转站与 VPN 绕行访问 Claude API 的漏洞，封禁约 2.5 万个欺诈账号，涉及 2880 万次 API 调用。此举是对此前 Alibaba 蒸馏攻击事件的后续治理，技术手段包括设备指纹与流量模式分析。",
+      "meaning": "：使用 Claude API 的亚太企业应主动联系 Anthropic 确认账号合规状态，建立白名单机制避免误封",
+      "source": "FT / Anthropic Blog",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-025",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Agent 安全新范式：Zero Trust + MCP 安全审计框架发布",
+      "summary": "OWASP 与 Trail of Bits 联合发布首个 AI Agent 安全审计框架，核心原则是将 Zero Trust 安全模型应用于 Agent 间通信，覆盖 MCP（Model Context Protocol）工具调用的权限管控、审计日志与异常检测。",
+      "meaning": "：部署 AI Agent 的企业安全团队应将 OWASP Agent 审计框架纳入安全评审流程，尤其是 MCP 工具调用链",
+      "source": "OWASP / Trail of Bits",
+      "quality_score": 7,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-026",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "中国《人形机器人人格化交互规范》7 月 15 日生效",
+      "summary": "工信部联合多部门发布的《人形机器人人格化交互安全规范》将于 7 月 15 日正式生效，要求具备拟人化交互能力的 AI 系统必须在交互开始时明确告知用户其 AI 身份，禁止模拟情感依赖关系。",
+      "meaning": "：面向中国市场的 AI 产品如涉及拟人化交互，需在 7/15 前完成合规改造，加入强制身份披露机制",
+      "source": "工信部",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260705-027",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "美团 LongCat-2.0 引爆开源社区——纯国产算力训练最大模型",
+      "summary": "美团技术团队发布 LongCat-2.0，在 5 万颗华为昇腾 910B 芯片上完成 1.6T 参数模型训练，全程未使用任何 NVIDIA GPU。MIT 开源许可、128K 上下文，在 MMLU、HumanEval 等基准上接近 GPT-4o 水平，成为国产算力自主可控标杆。",
+      "meaning": "：国内企业大模型选型时 LongCat-2.0 可作为\"去美化\"供应链备选方案，降低出口管制风险敞口",
+      "source": "36氪",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "NVIDIA",
+        "MIT",
+        "华为"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260705-028",
+      "date": "2026-07-05",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🇨🇳 国内",
+      "title": "中国人形机器人拟人化交互新规 7 月 15 日落地——企业须强制 AI 身份披露",
+      "summary": "工信部等三部门联合发布的人形机器人人格化交互规范进入倒计时，7 月 15 日生效。规范要求所有具备拟人化交互的 AI 系统在首次交互中必须以文字或语音形式告知用户\"我是 AI\"，违规企业将面临行政处罚。",
+      "meaning": "：智能客服、虚拟数字人等产品线需在 10 天内完成合规改造，预算拨给法务与前端团队",
+      "source": "财新",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
     {
       "id": "20260704-T01",
       "date": "2026-07-04",
@@ -28526,79 +29005,75 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 261,
-      "💰 商业": 195,
-      "🇨🇳 国内": 190,
-      "🌟 Top 5": 165,
-      "🧠 Tier 0": 159,
-      "🏢 案例": 154,
-      "⚙️ 基础设施": 150,
-      "⚖️ 监管": 133,
-      "👥 组织": 125,
+      "🚀 产品": 264,
+      "💰 商业": 198,
+      "🇨🇳 国内": 192,
+      "🌟 Top 5": 170,
+      "🧠 Tier 0": 163,
+      "🏢 案例": 156,
+      "⚙️ 基础设施": 153,
+      "⚖️ 监管": 137,
+      "👥 组织": 127,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 298,
-      "OpenAI": 251,
+      "Anthropic": 301,
+      "OpenAI": 253,
       "Google": 164,
-      "NVIDIA": 103,
-      "FT": 97,
+      "NVIDIA": 106,
+      "FT": 99,
       "AWS": 85,
-      "Microsoft": 76,
-      "Amazon": 74,
+      "Microsoft": 77,
+      "Amazon": 75,
       "DeepSeek": 68,
-      "MIT": 58,
-      "Simon Willison": 47,
-      "xAI": 45,
-      "Meta": 45,
+      "MIT": 61,
+      "Simon Willison": 48,
+      "Meta": 47,
+      "xAI": 46,
       "Mythos": 43,
       "Gary Marcus": 42,
       "Bedrock": 40,
       "DeepMind": 39,
       "智谱": 37,
+      "Salesforce": 35,
       "腾讯": 34,
-      "Salesforce": 33,
       "BCG": 31,
       "TechCrunch": 31,
       "Kimi": 29,
       "阿里": 29,
       "Bloomberg": 28,
       "Hugging Face": 28,
+      "Deloitte": 25,
       "Stratechery": 24,
-      "Deloitte": 24,
+      "Databricks": 22,
       "豆包": 22,
+      "SAP": 21,
       "IBM": 21,
       "Stanford": 21,
-      "Databricks": 21,
-      "SAP": 20,
       "Snowflake": 20,
       "字节": 20,
       "Ring": 19,
       "Apple": 19,
+      "Oracle": 18,
       "Karpathy": 18,
       "PwC": 18,
       "Accenture": 17,
-      "Oracle": 17,
       "McKinsey": 16,
+      "华为": 15,
       "ServiceNow": 15,
       "百度": 14,
       "Moonshot": 13,
-      "华为": 13,
       "通义": 13,
       "混元": 13,
-      "Mistral": 10,
-      "Dario Amodei": 10
+      "Dario Amodei": 11,
+      "Mistral": 10
     },
     "signal_days": {
-      "medium": 33
+      "medium": 34
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-05",
-        "count": 0
-      },
       {
         "date": "2026-06-06",
         "count": 0
@@ -28714,10 +29189,15 @@
       {
         "date": "2026-07-04",
         "count": 34
+      },
+      {
+        "date": "2026-07-05",
+        "count": 25
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-05": 3,
         "2026-07-04": 9,
         "2026-07-03": 4,
         "2026-07-02": 9,
@@ -28753,6 +29233,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-07-05": 2,
         "2026-07-04": 4,
         "2026-07-03": 3,
         "2026-07-02": 4,
@@ -28823,6 +29304,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-07-05": 3,
         "2026-07-04": 2,
         "2026-07-03": 2,
         "2026-07-02": 1,
@@ -28855,6 +29337,7 @@
         "2026-05-14": 2
       },
       "FT": {
+        "2026-07-05": 2,
         "2026-07-04": 6,
         "2026-07-03": 7,
         "2026-07-02": 2,
@@ -28919,6 +29402,7 @@
         "2026-05-14": 6
       },
       "Microsoft": {
+        "2026-07-05": 1,
         "2026-07-04": 5,
         "2026-07-03": 6,
         "2026-07-02": 1,
@@ -28950,6 +29434,7 @@
         "2026-05-14": 4
       },
       "Amazon": {
+        "2026-07-05": 1,
         "2026-07-04": 2,
         "2026-07-03": 2,
         "2026-07-02": 2,
@@ -29004,6 +29489,7 @@
         "2026-05-14": 1
       },
       "MIT": {
+        "2026-07-05": 3,
         "2026-07-04": 4,
         "2026-07-01": 1,
         "2026-06-30": 2,
