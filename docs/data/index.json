@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-07-05T02:31:05.258812+00:00",
-    "total_reports": 34,
-    "total_articles": 1661,
+    "generated_at": "2026-07-05T16:13:24.954532+00:00",
+    "total_reports": 35,
+    "total_articles": 1692,
     "date_range": [
       "2026-05-14",
-      "2026-07-05"
+      "2026-07-06"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-06",
+      "weekday": "周一",
+      "signal_strength": "medium",
+      "main_count": 22,
+      "tier0_count": 6,
+      "summary": "联合国首届全球 AI 治理对话今日在日内瓦开幕，169 国 1.1 万人参会",
+      "url": "reports/2026-07-06.md",
+      "article_count": 31
+    },
     {
       "date": "2026-07-05",
       "weekday": "周日",
@@ -351,6 +361,510 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260706-T01",
+      "date": "2026-07-06",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "联合国首届全球 AI 治理对话今日在日内瓦开幕，169 国 1.1 万人参会",
+      "summary": "193 个成员国代表与 AI 头部企业高管齐聚，议题涵盖出口管制国际标准、前沿模型审查框架与 EU AI Act 对接。",
+      "meaning": "：跨境部署 AI 的企业应指派合规团队跟踪本次对话产出的「自愿审查框架」，它将成为未来 12 个月各国立法的底稿。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-T02",
+      "date": "2026-07-06",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Tesla AI 支出上限今日生效：每人每周 $200，超支须经理审批",
+      "summary": "继 Uber 4 个月烧完全年 $34 亿 AI 预算后，Tesla 成为第二家公开设限的科技巨头；内部备忘录显示 Grok 产品豁免于限额之外。",
+      "meaning": "：CFO 必须立即建立 token 消耗实时仪表盘——按人/按项目/按模型三维度计量——否则 Q3 预算将像 Uber 一样失控。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-T03",
+      "date": "2026-07-06",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Alibaba 全面禁用 Claude Code，7 月 10 日起生效，转推内部 Qoder",
+      "summary": "因 Anthropic 在 Claude Code 中嵌入隐蔽的中国用户检测逻辑（时区 + 代理 URL 匹配），Alibaba 将其列为「高风险软件」；Anthropic 称该代码已于 7 月 1 日移除。",
+      "meaning": "：中美 AI 工具链正在加速脱钩——依赖单一供应商 coding agent 的企业必须评估「工具主权风险」并准备至少一套备选方案。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-T04",
+      "date": "2026-07-06",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "LiteLLM 网关 CVE-2026-42271 被 CISA 列入已知利用漏洞目录，可无认证远程执行代码",
+      "summary": "该漏洞通过 MCP 端点注入命令，与 Starlette Host Header 绕过组合后 CVSS 达 10.0；受影响版本 1.74.2 至 1.83.6，补丁在 1.83.7。",
+      "meaning": "：使用 LiteLLM 做 AI API 代理的企业必须在 48 小时内升级到 1.83.7+，否则所有已配置的 Anthropic/OpenAI API Key 将暴露。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-T05",
+      "date": "2026-07-06",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Crusoe 洽谈 $30 亿融资，估值或达 $300 亿，三倍于去年",
+      "summary": "这家从加密矿场转型 AI 算力的公司已签约 4.9 GW 容量，管线超 40 GW，Meta 和 Oracle 是主要客户。",
+      "meaning": "：AI 基础设施融资已进入「电力即估值」时代——CIO 评估算力供应商时，签约电力容量和交付时间表比 GPU 型号更关键。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Meta",
+        "Oracle"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-006",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-07-03) \"让顶级模型当主管、廉价模型当工人：subagent 模型分层实战\"",
+      "summary": "Willison 提出 agentic coding 的模型分层架构：顶级模型负责判断、审核和综合，实现类工作交给 Sonnet/Haiku 级别的 subagent 执行。实测显示 token 消耗显著降低而代码质量不变。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-007",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison (2026-07-02) \"与 coding agent 协作的挑战：大变更集的人机边界\"",
+      "summary": "引用 Geoffrey Litt 在 AIE 大会上的演讲，讨论当 coding agent 构建越来越大的变更集时，人类如何有效审查和协作。Willison 认为当前的 diff 审查工具不适应 agent 时代。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-008",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Current AI Gap Map v0.1 (2026-07 首周) \"开源 AI 生态索引：421 产品深度拆解\"",
+      "summary": "覆盖 266 个软件工具/库、85 个模型、50 个数据集、20 个硬件项目，是目前最全面的开源 AI 生态分类索引。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-009",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Fable 5 出口管制 19 天停机复盘 (VentureBeat 2026-07-03) \"三分之二的企业已建好对冲方案\"",
+      "summary": "VentureBeat 调查显示，Fable 5 停机期间 67% 的企业客户已有备用模型方案，但 33% 的企业发现自己无意中形成了单一故障点——工作流自动采用最新模型却无回退机制。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-010",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "BCG AI Radar 2026 (2026-07 首周) \"CEO 亲自掌舵 AI 战略，支出翻倍至营收的 1.7%\"",
+      "summary": "调查显示近四分之三的 CEO 亲自担任 AI 首席决策者，四分之五对 AI ROI 比去年更乐观。一线员工 AI 使用率从 51% 飙升至 74%。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "BCG"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-011",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "BCG (2026-07 首周) \"Agentic AI 在技术服务领域的 $2000 亿机会\"",
+      "summary": "2026 年标志着从孤立的 agentic 用例到企业级部署的转折点。三分之一的企业已在规模化部署 agentic AI，三分之二期望供应商构建并运营优先用例。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "BCG"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-012",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Anthropic Claude Science 工作台进入公开测试：60+ 科学数据库、基因组/蛋白质组原生支持",
+      "summary": "Claude Science 将 Opus 4.8 连接至 60+ 科学数据库（基因组学、蛋白质组学、化学信息学），提供可审计的研究工件和可复现的代码+环境快照。研究资助计划开放申请至 7/15，支持最多 50 个项目、每项最高 $30,000 credits。Anthropic 押注「工作流而非新模型」路线，将科学工具整合到单一研究环境中。",
+      "meaning": "：制药/生科企业应立即评估 Claude Science 能否替代内部碎片化的分析管线——关键看它的可复现性是否满足 GxP 合规要求",
+      "source": "Anthropic / TechCrunch",
+      "quality_score": 7,
+      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-013",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Gemini 3.5 Pro 延迟至 7 月：企业测试者反馈 token 消耗过高",
+      "summary": "Google 原定 6 月发布的旗舰模型推迟至 7 月，主因三个问题：token 效率不达标、编程性能低于旗舰定位、长任务多步推理断裂。此前 Flash 3.5 已因 token 消耗过快遭到用户批评。2026 年「intelligence per dollar」已成为企业采购核心指标。",
+      "meaning": "：正在评估 Gemini 企业版的 CIO 应将「cost-to-complete」（完成同等任务的总 token 成本）写入评估矩阵，而非只看基准跑分",
+      "source": "Bloomberg / Tech-Insider",
+      "quality_score": 7,
+      "url": "https://tech-insider.org/au/gemini-3-5-pro-delayed-july-2026/",
+      "companies": [
+        "Google"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-014",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Alibaba 推内部 Qoder 替代 Claude Code，7 月 10 日全面禁用后者",
+      "summary": "Alibaba 将 Claude Code 列为「有安全漏洞的高风险软件」，要求全员在 7/10 前迁移至自研 coding agent Qoder。此举源于 Anthropic 在 Claude Code v2.1.91（4 月 2 日发布）中嵌入隐蔽检测逻辑：当检测到 Asia/Shanghai 时区或匹配中国 AI 实验室域名时，会悄悄修改系统提示。",
+      "meaning": "：任何在海外和中国都有工程团队的企业，必须审计所用 AI coding 工具是否含有地域检测逻辑——这不仅是合规问题，更是供应链信任问题",
+      "source": "TechCrunch / South China Morning Post",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-015",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Mistral AI 计划夏季发布新开源权重模型，Koyeb 收购后加速「AI 云」布局",
+      "summary": "Mistral（估值 $138 亿）在收购基础设施初创公司 Koyeb 后，正在构建完整的 AI 云平台。新的开源权重模型将在 7 月提供早期访问。Mistral 的 OCR 4 模型也正在将文档提取转化为企业级 AI 应用。",
+      "meaning": "：欧洲主权 AI 路线多了一个全栈选项——企业如果需要在欧盟数据驻留要求下运行前沿模型，Mistral 云 + 开源权重是目前最成熟的候选",
+      "source": "TechCrunch",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "companies": [
+        "Mistral"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-016",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Tesla 今日起限每人每周 $200 AI 支出上限，Grok 豁免引争议",
+      "summary": "Tesla 内部备忘录显示，工程师此前每周消耗数千美元 token。新限额 $200/周通过内部平台 Bottle Rocket 执行，超支需经理审批。但 xAI 产品（Grok）的 Beta 版本不计入限额，引发内部不满——多数员工实际偏好使用 Anthropic Claude 而非 Grok。此前 Uber 已因类似问题实施 $1,500/月上限。",
+      "meaning": "：企业 AI 治理正从「鼓励采用」急转向「成本管控」——CFO 应建立三级预警机制（人均/项目/部门），并在 AI 采购合同中争取 volume discount 条款",
+      "source": "The Information / Electrek",
+      "quality_score": 8,
+      "url": "https://www.theinformation.com/articles/tesla-caps-employee-ai-spend-200-per-week-adoption-push",
+      "companies": [
+        "Anthropic",
+        "xAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-017",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "VentureBeat 调查：79% 的企业已因 AI Agent 失控遭受财务或运营损失",
+      "summary": "145 家百人以上企业调查显示：仅十分之一能自动检测生产环境中失败的 AI 系统，79% 已因自主 Agent 产生实际经济损失——主要来源是「影子 AI」（员工用公司信用卡私自购买未经审批的 agentic 服务）。调查恰逢 Fable 5 停机期（6/12 开始）。",
+      "meaning": "：CIO 必须将 AI agent 的「可观测性 + 自动熔断」纳入 2026 H2 安全路线图——光有治理政策不够，需要运行时监控和自动化关停能力",
+      "source": "VentureBeat Pulse Research",
+      "quality_score": 7,
+      "url": "https://venturebeat.com/resources/the-control-gap-enterprise-ai-organizations-have-an-ownership-problem-not-a-technology-problem-and-most-are-governing-it-by-hand",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-018",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Fable 5 停机 19 天的企业教训：三分之二有对冲，三分之一发现单点故障",
+      "summary": "金融、医疗、SaaS 和关键基础设施客户在 6/13-6/25 期间失去 Fable 5 访问权，被迫回退至 Opus 4.8。67% 的企业已建好备用方案，但 33% 发现工作流自动采用最新模型却无回退机制、无冷启动方案、甚至不知道依赖关系已变更。",
+      "meaning": "：AI 采购合同必须新增「模型不可用 SLA」条款——明确回退模型、切换时间和数据连续性保证，像云灾备一样设计 AI 冗余",
+      "source": "VentureBeat",
+      "quality_score": 7,
+      "url": "https://venturebeat.com/orchestration/enterprises-lost-claude-fable-5-for-a-few-weeks-new-data-shows-two-thirds-had-already-built-their-hedge",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-019",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Crusoe 洽谈 $30 亿融资，估值三倍跳至约 $300 亿",
+      "summary": "Crusoe 从 2018 年加密矿场转型 AI 算力，已签约 4.9 GW 容量、管线超 40 GW，Meta 和 Oracle 是主要客户。去年 Series E 估值 $100 亿，本轮若成行将达 $300 亿。",
+      "meaning": "：AI 数据中心的估值锚点已从「GPU 数量」转向「签约电力容量」——企业评估算力合作伙伴时应优先考察电力交付确定性和地理冗余",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value",
+      "companies": [
+        "Meta",
+        "Oracle"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-020",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Venice AI 首轮融资 $6500 万即达独角兽，隐私优先定位、ARR 超 $7000 万",
+      "summary": "Venice 永不记录 prompt，对话仅存设备端，提供 200+ 模型接入（文本/图像/视频/音频）。Dragonfly 领投，Coinbase Ventures 参投。350 万注册用户，月处理 1.3 万亿 token。融资将用于自建 GPU 集群和数据中心以提升毛利率。",
+      "meaning": "：受 GDPR/行业合规约束的企业（医疗、金融、法律）应关注 Venice 的「零日志」模式是否适合敏感场景——隐私 AI 正从边缘需求变成采购加分项",
+      "source": "TechCrunch",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-021",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Dream 融资 $2.6 亿估值 $30 亿，主权 AI 网络安全瞄准拉美市场",
+      "summary": "以色列 AI 安全公司 Dream（NSO Group 联合创始人 Shalev Hulio 新创）为政府构建国家级网络防御系统，合同价值近 $3 亿。计划在里约/布宜诺斯艾利斯/墨西哥城/波哥大中选址设拉美总部。",
+      "meaning": "：「主权 AI 安全」正成为独立资产类别——在拉美和中东运营的跨国企业应预判当地政府采购国产化 AI 安全产品带来的合规新要求",
+      "source": "Bloomberg",
+      "quality_score": 6,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-03/israeli-ai-startup-eyes-expansion-in-trump-aligned-latin-america",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-022",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Bloomberg：AI token 价格指数从 5 月高点下跌近 20%，定价权受质疑",
+      "summary": "Silicon Data LLM Token Expenditure Index 自 12 月创建以来几乎翻倍后，从 5 月高点回落近 20%。混合 token 成本同比下降 67%（从 $18.40 降至 $6.07/百万 token），但企业总账单反而因 agentic 使用量爆发增长 320%。",
+      "meaning": "：「每 token 单价」下降不等于「AI 总成本」下降——CFO 在做预算时必须基于「预计 token 消耗量 × 单价」而非只看单价趋势",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-03/the-ai-trade-is-losing-one-of-its-key-signals-taking-stock",
+      "companies": [
+        "Bloomberg"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-023",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "美国 6 月非农仅 5.7 万人，AI 密集行业（金融+信息）月均流失 2.8 万岗",
+      "summary": "6 月新增就业 5.7 万人，远低于预期的 11 万。劳动参与率降至 61.5%（2021 年 3 月以来最低）。Goldman Sachs 研究显示 AI 每月减少约 1.6 万个工资单岗位，推高失业率 0.1 个百分点。AI 对就业的冲击正从「更少招聘」而非「大规模裁员」的方式渗透。",
+      "meaning": "：HR 部门应将「AI 影响下的自然减员」（hiring freeze + attrition）纳入人力规划模型——传统的裁员指标可能低估了 AI 对人力市场的实际冲击",
+      "source": "CNBC / BLS",
+      "quality_score": 7,
+      "url": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-024",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "2026 年 AI 裁员追踪：15.6 万人受影响，56% 的裁员事件明确归因 AI",
+      "summary": "截至 7 月初，2026 年共 267 次裁员事件影响 18.6 万人。其中 150 次（56%）明确提及 AI/自动化/机器学习为裁员因素，影响约 15.6 万人。5 月宣布的裁员中近 40% 将 AI 列为首要原因，1 月该比例仅 7%。",
+      "meaning": "：CHRO 应建立「AI 替代风险评估矩阵」——逐岗位分析哪些角色在 6-12 个月内面临 AI 替代，同步启动技能转型项目而非等到被动裁员",
+      "source": "TechCrunch / SkillSyncer",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-025",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "BCG AI Radar 2026：74% 一线员工每日使用 AI，CEO 亲自掌舵成常态",
+      "summary": "企业 AI 支出预计从营收的 0.8% 翻倍至 1.7%。近四分之三的 CEO 是公司 AI 首席决策者。一线员工每日/每周使用 AI 的比例从 51% 跃升至 74%（同比 +23pp）。科技和金融行业计划将 AI 支出提至营收的 2%。",
+      "meaning": "：还在由 CTO 独自推动 AI 战略的企业已落后于四分之三的同行——CEO 直接参与不是「理想状态」而是 2026 年的行业基线",
+      "source": "BCG",
+      "quality_score": 7,
+      "url": "https://www.bcg.com/publications/2026/as-ai-investments-surge-ceos-take-the-lead",
+      "companies": [
+        "BCG"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-026",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "香港占中国芯片进口 52%（$1240 亿），AI 贸易枢纽地位创纪录",
+      "summary": "2026 年 1-5 月，经香港转口至大陆的半导体价值达 $1240 亿，占中国 $2390 亿芯片进口总额的 52%（十年前仅三分之一）。5 月单月港陆贸易额同比暴增近 50%（1992 年以来最大增幅，排除疫情）。AI 相关电子产品占香港出口的 57%。",
+      "meaning": "：依赖亚太供应链的芯片买家需密切关注美国对香港转口贸易的下一步管制——任何针对香港中转节点的新限制都将直接冲击 AI 硬件交付周期",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-02/booming-ai-chip-trade-seals-hong-kongs-role-as-gateway-to-china",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-027",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Morgan Stanley：2026 年 AI 相关债券发行将达 $5700 亿，私募债市场爆发",
+      "summary": "截至 5 月，AI 相关发行人已在全球售出近 $2360 亿债务（同期 4 倍于 2025 年）。私募债（直接卖给保险公司的非公开债券）今年前 5 月发行 $810 亿，创 2016 年以来同期新高。IREN 数据中心 $21 亿、Blackstone 旗下 QTS $8 亿是典型大单。",
+      "meaning": "：AI 基础设施的融资渠道正从 VC/PE 扩展到百年历史的私募债市场——企业在评估 AI 基础设施供应商时应将「融资结构稳定性」纳入尽调清单",
+      "source": "Bloomberg / Morgan Stanley",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-01/ai-s-trillion-dollar-debt-binge-fuels-century-old-private-market",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-028",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Token 价格跌 98%，企业 AI 总账单反涨 3 倍：agent 消耗量吞噬所有降价红利",
+      "summary": "FinOps Foundation 2026 年报告显示 73% 的企业 AI 成本超出预算。年均 AI 预算从 2024 年 $120 万增至 2026 年 $700 万。核心矛盾：每开发者 token 消耗 9 个月增长 18.6 倍（agent 自主循环），完全抵消了单价下降。Linux Foundation 宣布成立 Tokenomics Foundation 标准化组织。",
+      "meaning": "：FinOps 团队必须从「按用量付费可控」的思维模式中走出来——agentic 工作负载的 token 消耗是指数级的，需要预设硬上限和自动熔断机制",
+      "source": "Henon Insights / TechCrunch",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-029",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "联合国首届全球 AI 治理对话今日开幕：169 国、1.1 万人、7 日议程",
+      "summary": "日内瓦 Palexpo 会议中心，萨尔瓦多和爱沙尼亚联合主持。议题包括国际 AI 出口管制标准、前沿模型自愿审查框架与 EU AI Act 的互操作性、2.2 亿无互联网人群的 AI 可及性。同步举行 WSIS 论坛（7/6-10）和 ITU AI for Good 峰会（7/7-10）。",
+      "meaning": "：跨境 AI 部署的企业应指定合规团队全程跟踪——本次对话的产出将直接影响 2027 年各国 AI 监管立法的框架设计",
+      "source": "UNESCO / UN",
+      "quality_score": 8,
+      "url": "https://www.un.org/global-dialogue-ai-governance/en",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260706-030",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "联合国 AI for Good 全球委员会成立：Jensen Huang、Jassy、Benioff、Jack Clark 入列",
+      "summary": "ITU 联合 Salesforce CEO Benioff 和卢旺达总统 Kagame 联合主席，NVIDIA CEO Jensen Huang、Amazon CEO Andy Jassy、Microsoft 总裁 Brad Smith、Anthropic 联合创始人 Jack Clark 等入列。这是联合国治理框架下 AI 企业高管和国家元首的最高级别集会。",
+      "meaning": "：AI 治理正从「各国自治」向「联合国级协调」升级——企业合规团队需追踪该委员会的建议，因为它将成为 G7/G20 AI 治理决议的参考蓝本",
+      "source": "Axios / Salesforce",
+      "quality_score": 7,
+      "url": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders",
+      "companies": [
+        "Anthropic",
+        "Microsoft",
+        "Amazon",
+        "NVIDIA",
+        "Salesforce",
+        "MIT",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260706-031",
+      "date": "2026-07-06",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "LiteLLM 网关 CVE-2026-42271 被 CISA 列入 KEV：MCP 注入 → 无认证 RCE → API Key 全泄露",
+      "summary": "漏洞位于 LiteLLM MCP 服务器预览端点（`/mcp-rest/test/connection` 和 `/mcp-rest/test/tools/list`），接受包含 command/args/env 字段的完整服务器配置，导致命令注入。与 CVE-2026-48710（Starlette Host Header 绕过）组合后 CVSS 10.0——无需登录、无需 API Key、无需任何先前访问即可远程执行代码并窃取所有已配置的 AI 提供商密钥。",
+      "meaning": "：使用 LiteLLM 作为 AI API 代理的企业必须立即升级到 1.83.7+，同时审计是否有暴露在公网的 MCP 预览端点——这不是「下个迭代修」的优先级，是「今天修」的优先级",
+      "source": "The Hacker News / CISA",
+      "quality_score": 8,
+      "url": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
+      "companies": [],
+      "keywords": []
+    },
     {
       "id": "20260705-T01",
       "date": "2026-07-05",
@@ -29005,43 +29519,43 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 264,
-      "💰 商业": 198,
+      "🚀 产品": 268,
+      "💰 商业": 202,
       "🇨🇳 国内": 192,
-      "🌟 Top 5": 170,
-      "🧠 Tier 0": 163,
-      "🏢 案例": 156,
-      "⚙️ 基础设施": 153,
-      "⚖️ 监管": 137,
-      "👥 组织": 127,
+      "🌟 Top 5": 175,
+      "🧠 Tier 0": 169,
+      "🏢 案例": 159,
+      "⚙️ 基础设施": 156,
+      "⚖️ 监管": 140,
+      "👥 组织": 130,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 301,
+      "Anthropic": 306,
       "OpenAI": 253,
-      "Google": 164,
-      "NVIDIA": 106,
-      "FT": 99,
+      "Google": 165,
+      "NVIDIA": 107,
+      "FT": 100,
       "AWS": 85,
-      "Microsoft": 77,
-      "Amazon": 75,
+      "Microsoft": 78,
+      "Amazon": 76,
       "DeepSeek": 68,
-      "MIT": 61,
-      "Simon Willison": 48,
-      "Meta": 47,
-      "xAI": 46,
+      "MIT": 62,
+      "Simon Willison": 50,
+      "Meta": 49,
+      "xAI": 47,
       "Mythos": 43,
       "Gary Marcus": 42,
       "Bedrock": 40,
       "DeepMind": 39,
       "智谱": 37,
-      "Salesforce": 35,
+      "Salesforce": 36,
+      "BCG": 34,
       "腾讯": 34,
-      "BCG": 31,
       "TechCrunch": 31,
+      "Bloomberg": 29,
       "Kimi": 29,
       "阿里": 29,
-      "Bloomberg": 28,
       "Hugging Face": 28,
       "Deloitte": 25,
       "Stratechery": 24,
@@ -29050,11 +29564,11 @@
       "SAP": 21,
       "IBM": 21,
       "Stanford": 21,
+      "Oracle": 20,
       "Snowflake": 20,
       "字节": 20,
       "Ring": 19,
       "Apple": 19,
-      "Oracle": 18,
       "Karpathy": 18,
       "PwC": 18,
       "Accenture": 17,
@@ -29065,19 +29579,15 @@
       "Moonshot": 13,
       "通义": 13,
       "混元": 13,
-      "Dario Amodei": 11,
-      "Mistral": 10
+      "Mistral": 11,
+      "Dario Amodei": 11
     },
     "signal_days": {
-      "medium": 34
+      "medium": 35
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-06",
-        "count": 0
-      },
       {
         "date": "2026-06-07",
         "count": 0
@@ -29193,10 +29703,15 @@
       {
         "date": "2026-07-05",
         "count": 25
+      },
+      {
+        "date": "2026-07-06",
+        "count": 28
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-06": 5,
         "2026-07-05": 3,
         "2026-07-04": 9,
         "2026-07-03": 4,
@@ -29269,6 +29784,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-07-06": 1,
         "2026-07-04": 1,
         "2026-07-03": 5,
         "2026-07-02": 1,
@@ -29304,6 +29820,7 @@
         "2026-05-14": 8
       },
       "NVIDIA": {
+        "2026-07-06": 1,
         "2026-07-05": 3,
         "2026-07-04": 2,
         "2026-07-03": 2,
@@ -29337,6 +29854,7 @@
         "2026-05-14": 2
       },
       "FT": {
+        "2026-07-06": 1,
         "2026-07-05": 2,
         "2026-07-04": 6,
         "2026-07-03": 7,
@@ -29402,6 +29920,7 @@
         "2026-05-14": 6
       },
       "Microsoft": {
+        "2026-07-06": 1,
         "2026-07-05": 1,
         "2026-07-04": 5,
         "2026-07-03": 6,
@@ -29434,6 +29953,7 @@
         "2026-05-14": 4
       },
       "Amazon": {
+        "2026-07-06": 1,
         "2026-07-05": 1,
         "2026-07-04": 2,
         "2026-07-03": 2,
@@ -29489,6 +30009,7 @@
         "2026-05-14": 1
       },
       "MIT": {
+        "2026-07-06": 1,
         "2026-07-05": 3,
         "2026-07-04": 4,
         "2026-07-01": 1,
