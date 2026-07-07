@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-08 周三](./2026-07-08.md) — 24 篇 — 关键词：JADEPUFFER首个自主AI勒索软件Sysdig / 中国AI模型美开发者占比46%CNBC / FTC AI准确性政策声明草案 / 白宫30天模型审查框架即将发布 / 豆包千问7/15下线1.4万智能体AI拟人化新规
 - [2026-07-07 周二](./2026-07-07.md) — 22 篇 — 关键词：UN全球AI治理对话日内瓦193国首届 / Anthropic-Alibaba蒸馏战WaPo独家+Claude Code禁令7/10 / Tesla $200周限生效Grok豁免 / 腾讯混元Hy3正式发布Agent90%Apache2.0 / Amazon MTurk关闭新用户众包时代终结
 - [2026-07-06 周一](./2026-07-06.md) — 22 篇 — 关键词：UN全球AI治理对话日内瓦开幕169国 / Tesla AI支出$200周限今日生效 / Alibaba全面禁用Claude Code推Qoder / LiteLLM CVE-2026-42271 CISA KEV无认证RCE / Crusoe $30亿融资估值$300亿
 - [2026-07-05 周日](./2026-07-05.md) — 21 篇 — 关键词：OpenAI提议美政府持股5%估值$8520亿 / Anthropic封堵中国绕行2.5万假账号 / 美团LongCat-2.0纯国产算力1.6T开源 / Meta Watermelon匹配GPT-5.5 / EU AI Act Omnibus高风险推迟至2027年12月
