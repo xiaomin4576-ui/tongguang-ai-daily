@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T16:17:51.784909+00:00",
+    "generated_at": "2026-07-11T01:25:32.901245+00:00",
     "total_reports": 40,
-    "total_articles": 1848,
+    "total_articles": 1844,
     "date_range": [
       "2026-05-14",
       "2026-07-11"
@@ -14,10 +14,10 @@
       "weekday": "周六",
       "signal_strength": "medium",
       "main_count": 25,
-      "tier0_count": 5,
+      "tier0_count": 1,
       "summary": "Meta Muse Spark 1.1 发布——Meta 首个付费 API 模型，定价 $1.25/$4.25 冲击企业市场",
       "url": "reports/2026-07-11.md",
-      "article_count": 32
+      "article_count": 28
     },
     {
       "date": "2026-07-10",
@@ -496,29 +496,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Gary Marcus（7 月 9 日）\"AI 反弹即将到来\"",
-      "summary": "Marcus 在 Grok 4.5 发布当天发文，指出 Musk 在发布会上\"基本承认不知道如何控制自己的 AI\"。更广泛地论述：AI 基础设施投资已超 $3000 亿，但\"迄今为止没有任何产物能证明哪怕一小部分投入的合理性\"，预言 2026-2027 年将出现\"AI 泡沫回调\"。",
+      "title": "Ed Zitron（7 月 6 日）\"The Hater's Guide to SoftBank\"——AI 泡沫最大赌徒",
+      "summary": "Zitron 深度梳理 SoftBank 在 AI 领域的投资轨迹——从 Vision Fund 的 WeWork 式失败到 2026 年的又一次 AI 豪赌。核心论点：SoftBank 用\"几次早期幸运赢\"积累的信誉反复加杠杆，AI 泡沫崩盘时将成为\"最令人满意的倒塌\"。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
-      "companies": [
-        "Gary Marcus"
-      ],
-      "keywords": []
-    },
-    {
-      "id": "20260711-007",
-      "date": "2026-07-11",
-      "is_top5": false,
-      "is_tier0": true,
-      "dimension": "🧠 Tier 0",
-      "title": "Ed Zitron（7 月 7 日）\"The Hater's Guide to SoftBank\"——AI 泡沫最大赌徒",
-      "summary": "Zitron 深度梳理 SoftBank 在 AI 领域的投资轨迹——从 Vision Fund 的 WeWork 式失败到 2026 年的第 46 次 AI 豪赌。核心论点：SoftBank 用\"几次早期幸运赢\"积累的信誉反复加杠杆，AI 泡沫崩盘时将成为\"最令人满意的倒塌\"。",
-      "meaning": "",
-      "source": "",
-      "quality_score": 6,
-      "url": "",
+      "url": "https://www.wheresyoured.at/premium-the-haters-guide-to-softbank/",
       "companies": [
         "FT",
         "Ed Zitron"
@@ -526,60 +509,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-008",
-      "date": "2026-07-11",
-      "is_top5": false,
-      "is_tier0": true,
-      "dimension": "🧠 Tier 0",
-      "title": "Dwarkesh Patel × Dario Amodei（2026 年）\"Claude Code 的诞生——从内部实验到产品发布\"",
-      "summary": "Dario Amodei 在 Dwarkesh 播客中详述 Claude Code 的起源：最初是 Anthropic 内部鼓励的实验项目，在内部工程团队验证有效后才决定对外发布。讨论涉及持续学习（continual learning）的技术路径和 Anthropic 的产品化决策框架。",
-      "meaning": "",
-      "source": "",
-      "quality_score": 6,
-      "url": "",
-      "companies": [
-        "Anthropic",
-        "Dwarkesh",
-        "Dario Amodei"
-      ],
-      "keywords": []
-    },
-    {
-      "id": "20260711-009",
-      "date": "2026-07-11",
-      "is_top5": false,
-      "is_tier0": true,
-      "dimension": "🧠 Tier 0",
-      "title": "Simon Willison（7 月 3 日）\"用低功率模型做子 Agent 的编程实践\"",
-      "summary": "Willison 分享在编程 Agent 架构中使用低功率模型作为子 Agent 的实践经验：判断、审查和综合留在主循环（高性能模型），具体执行任务委派给更便宜的模型。这种\"分层 Agent\"设计显著降低编程辅助的 token 成本。",
-      "meaning": "",
-      "source": "",
-      "quality_score": 6,
-      "url": "",
-      "companies": [
-        "Simon Willison"
-      ],
-      "keywords": []
-    },
-    {
-      "id": "20260711-010",
-      "date": "2026-07-11",
-      "is_top5": false,
-      "is_tier0": true,
-      "dimension": "🧠 Tier 0",
-      "title": "Stanford 数字经济实验室（2026 年 3 月）\"Enterprise AI Playbook: 51 次成功部署的教训\"",
-      "summary": "Pereira、Graylin 和 Brynjolfsson 研究 41 家组织的 51 次成功 AI 部署，跨 9 个行业 7 个国家。核心发现：77% 的最大实施障碍是\"不可见成本\"（变更管理、数据质量、流程重新设计）；高绩效企业有 55% 围绕 AI 重新设计工作流程（普通企业仅 20%）。",
-      "meaning": "",
-      "source": "",
-      "quality_score": 6,
-      "url": "",
-      "companies": [
-        "Stanford"
-      ],
-      "keywords": []
-    },
-    {
-      "id": "20260711-011",
+      "id": "20260711-007",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -596,7 +526,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-012",
+      "id": "20260711-008",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -613,7 +543,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-013",
+      "id": "20260711-009",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -630,7 +560,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-014",
+      "id": "20260711-010",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -647,7 +577,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-015",
+      "id": "20260711-011",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -664,7 +594,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-016",
+      "id": "20260711-012",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -679,7 +609,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-017",
+      "id": "20260711-013",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -697,7 +627,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-018",
+      "id": "20260711-014",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -712,7 +642,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-019",
+      "id": "20260711-015",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -727,7 +657,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-020",
+      "id": "20260711-016",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -744,7 +674,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-021",
+      "id": "20260711-017",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -761,7 +691,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-022",
+      "id": "20260711-018",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -776,7 +706,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-023",
+      "id": "20260711-019",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -793,7 +723,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-024",
+      "id": "20260711-020",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -808,7 +738,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-025",
+      "id": "20260711-021",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -825,7 +755,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-026",
+      "id": "20260711-022",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -842,7 +772,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-027",
+      "id": "20260711-023",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -860,7 +790,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-028",
+      "id": "20260711-024",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -875,7 +805,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-029",
+      "id": "20260711-025",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -890,7 +820,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-030",
+      "id": "20260711-026",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -905,7 +835,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-031",
+      "id": "20260711-027",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -920,7 +850,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-032",
+      "id": "20260711-028",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -32230,7 +32160,7 @@
       "💰 商业": 222,
       "🌟 Top 5": 200,
       "🇨🇳 国内": 197,
-      "🧠 Tier 0": 190,
+      "🧠 Tier 0": 186,
       "🏢 案例": 174,
       "⚙️ 基础设施": 169,
       "⚖️ 监管": 160,
@@ -32238,7 +32168,7 @@
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 339,
+      "Anthropic": 338,
       "OpenAI": 278,
       "Google": 173,
       "FT": 116,
@@ -32249,10 +32179,10 @@
       "DeepSeek": 71,
       "MIT": 63,
       "Meta": 57,
-      "Simon Willison": 57,
+      "Simon Willison": 56,
       "xAI": 53,
-      "Gary Marcus": 44,
       "Mythos": 44,
+      "Gary Marcus": 43,
       "DeepMind": 41,
       "智谱": 41,
       "Bedrock": 41,
@@ -32268,8 +32198,8 @@
       "Deloitte": 25,
       "字节": 24,
       "Stratechery": 24,
-      "Stanford": 23,
       "SAP": 22,
+      "Stanford": 22,
       "Oracle": 22,
       "Databricks": 22,
       "IBM": 21,
@@ -32287,7 +32217,7 @@
       "百度": 14,
       "Mistral": 13,
       "Moonshot": 13,
-      "Dario Amodei": 12
+      "Cerebras": 11
     },
     "signal_days": {
       "medium": 40
@@ -32413,12 +32343,12 @@
       },
       {
         "date": "2026-07-11",
-        "count": 30
+        "count": 26
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
-        "2026-07-11": 5,
+        "2026-07-11": 4,
         "2026-07-10": 9,
         "2026-07-09": 9,
         "2026-07-08": 7,
