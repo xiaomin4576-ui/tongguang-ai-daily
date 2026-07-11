@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T01:26:10.339542+00:00",
+    "generated_at": "2026-07-11T02:00:46.486476+00:00",
     "total_reports": 40,
-    "total_articles": 1844,
+    "total_articles": 1846,
     "date_range": [
       "2026-05-14",
       "2026-07-11"
@@ -14,10 +14,10 @@
       "weekday": "周六",
       "signal_strength": "medium",
       "main_count": 25,
-      "tier0_count": 1,
+      "tier0_count": 3,
       "summary": "Meta Muse Spark 1.1 发布——Meta 首个付费 API 模型，定价 $1.25/$4.25 冲击企业市场",
       "url": "reports/2026-07-11.md",
-      "article_count": 28
+      "article_count": 30
     },
     {
       "date": "2026-07-10",
@@ -512,6 +512,40 @@
       "id": "20260711-007",
       "date": "2026-07-11",
       "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison（7 月 3 日）\"Fable's judgement\"——把判断力下放给低算力子 Agent",
+      "summary": "Willison 论述编程 Agent 的分层策略：实现层工作很少需要顶级模型，\"用你的判断力选一个合适的低算力模型丢进子 Agent\"；判断、审查与综合决策留在主循环的高级模型。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/",
+      "companies": [
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260711-008",
+      "date": "2026-07-11",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Stanford 数字经济实验室\"Enterprise AI Playbook：51 次成功部署的教训\"",
+      "summary": "Pereira、Graylin 与 Brynjolfsson 研究 41 家组织的 51 次成功 AI 部署：77% 的最大实施障碍是\"不可见成本\"（变更管理、数据质量、流程重设计）；高绩效企业有 55% 围绕 AI 重新设计工作流程（普通企业仅 20%）。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "https://digitaleconomy.stanford.edu/publication/enterprise-ai-playbook/",
+      "companies": [
+        "Stanford"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260711-009",
+      "date": "2026-07-11",
+      "is_top5": false,
       "is_tier0": false,
       "dimension": "🚀 产品",
       "title": "Meta Muse Spark 1.1——Meta 首个付费 API 模型，100 万 token 上下文",
@@ -526,7 +560,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-008",
+      "id": "20260711-010",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -543,7 +577,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-009",
+      "id": "20260711-011",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -560,7 +594,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-010",
+      "id": "20260711-012",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -577,7 +611,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-011",
+      "id": "20260711-013",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -594,7 +628,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-012",
+      "id": "20260711-014",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -609,7 +643,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-013",
+      "id": "20260711-015",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -627,7 +661,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-014",
+      "id": "20260711-016",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -642,7 +676,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-015",
+      "id": "20260711-017",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -657,7 +691,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-016",
+      "id": "20260711-018",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -674,7 +708,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-017",
+      "id": "20260711-019",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -691,7 +725,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-018",
+      "id": "20260711-020",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -706,7 +740,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-019",
+      "id": "20260711-021",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -723,7 +757,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-020",
+      "id": "20260711-022",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -738,7 +772,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-021",
+      "id": "20260711-023",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -755,7 +789,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-022",
+      "id": "20260711-024",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -772,7 +806,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-023",
+      "id": "20260711-025",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -790,7 +824,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-024",
+      "id": "20260711-026",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -805,7 +839,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-025",
+      "id": "20260711-027",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -820,7 +854,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-026",
+      "id": "20260711-028",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -835,7 +869,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-027",
+      "id": "20260711-029",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -850,7 +884,7 @@
       "keywords": []
     },
     {
-      "id": "20260711-028",
+      "id": "20260711-030",
       "date": "2026-07-11",
       "is_top5": false,
       "is_tier0": false,
@@ -956,12 +990,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Simon Willison（7 月 7 日）\"Tencent Hy3: 295B MoE 开源模型，21B 活跃参数\"",
+      "title": "Simon Willison（7 月 6 日）\"Tencent Hy3: 295B MoE 开源模型，21B 活跃参数\"（同文 07-09 期已荐，续荐）",
       "summary": "Simon Willison 分析腾讯新发布的 Hy3 模型——295B 参数 MoE 架构但仅 21B 活跃参数，Apache 2.0 开源，OpenRouter 上免费可用至 7/21。Willison 指出这类\"大骨架小激活\"模型对企业推理成本有结构性影响。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://simonwillison.net/2026/Jul/6/hy3/",
       "companies": [
         "腾讯",
         "Simon Willison"
@@ -974,12 +1008,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Latent Space（7 月 4-6 日）\"Anthropic J-space 研究 + AI 领域能力指数\"",
-      "summary": "Latent Space 覆盖两大发现：① Anthropic 发布 Claude 内部存在\"J-space\"——一个类似全局工作区的特权激活子集，支持报告、调节和灵活推理；② Artificial Analysis 推出六大领域能力指数（金融/法律/医疗/战略/工程/经济），Fable 5 和 Opus 4.8 在不同领域排名差异显著。",
+      "title": "AINews / news.smol.ai（7 月 6-8 日各期）\"Anthropic J-space 研究 + AI 领域能力指数\"",
+      "summary": "- *编辑部更正：本条原误署\"Latent Space（7 月 4-6 日）\"，经核 Latent Space 该窗口无发文，内容实际出自 AINews 日报 7/6-7/8 三期。* AINews 覆盖两大发现：① Anthropic 发布 Claude 内部存在\"J-space\"——一个类似全局工作区的特权激活子集，支持报告、调节和灵活推理；② Artificial Analysis 推出六大领域能力指数（金融/法律/医疗/战略/工程/经济），Fable 5 和 Opus 4.8 在不同领域排名差异显著。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://news.smol.ai/",
       "companies": [
         "Anthropic"
       ],
@@ -991,12 +1025,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Simon Willison（7 月 2 日）\"与编程 Agent 协作的核心挑战\"",
+      "title": "Simon Willison（7 月 2 日）\"Understand to participate\"——与编程 Agent 协作的核心挑战",
       "summary": "Willison 总结 Geoffrey Litt 在 AIE 大会的演讲：与编程 Agent 协作的核心瓶颈不是模型能力而是\"人能否看懂代码才能有效参与\"。Agent 生成的代码越多，人类失去审查能力的风险越大。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/",
       "companies": [
         "Simon Willison"
       ],
@@ -1547,12 +1581,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Simon Willison（7 月 3 日）\"子 Agent 用低算力模型更划算\"",
+      "title": "Simon Willison（7 月 3 日）\"Fable's judgement\"——子 Agent 用低算力模型更划算",
       "summary": "Simon Willison 撰文分析编程 Agent 的分层策略：实现层工作（代码编写、文件搜索）很少需要顶级模型，用低算力模型跑子 Agent 可大幅降低成本；而判断、审查和综合决策留给主循环的高级模型。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/",
       "companies": [
         "Simon Willison"
       ],
@@ -1564,12 +1598,12 @@
       "is_top5": false,
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
-      "title": "Simon Willison（7 月 7 日）\"腾讯 Hy3 模型：295B MoE 开源模型评测\"",
+      "title": "Simon Willison（7 月 6 日）\"腾讯 Hy3 模型：295B MoE 开源模型评测\"",
       "summary": "Simon 评测腾讯混元 Hy3（295B 参数 MoE），认为其\"性能超越同规模模型，媲美 2-5 倍参数的旗舰开源模型\"。OpenRouter 上免费使用至 7 月 21 日。",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://simonwillison.net/2026/Jul/6/hy3/",
       "companies": [
         "腾讯",
         "混元",
@@ -1584,13 +1618,14 @@
       "is_tier0": true,
       "dimension": "🧠 Tier 0",
       "title": "Stanford 数字经济实验室\"企业 AI 手册：51 个成功部署的经验\"",
-      "summary": "Stanford 团队分析 51 个企业 AI 成功案例，发现关键成功因素是端到端工作流重设计而非工具选型，与 McKinsey 回归分析结论一致。95% 的生成式 AI 试点项目无法产生可衡量的财务影响，根因是工作流整合不足和组织激励错位。",
+      "summary": "Stanford 团队分析 51 个企业 AI 成功案例，发现关键成功因素是端到端工作流重设计而非工具选型，与 McKinsey 回归分析结论一致。（另据 MIT《State of AI in Business 2025》：95% 的生成式 AI 试点项目无法产生可衡量的财务影响，根因是工作流整合不足——该数据出自 MIT 报告，非 Stanford 本研究。）",
       "meaning": "",
       "source": "",
       "quality_score": 6,
-      "url": "",
+      "url": "https://digitaleconomy.stanford.edu/publication/enterprise-ai-playbook/",
       "companies": [
         "McKinsey",
+        "MIT",
         "Stanford"
       ],
       "keywords": []
@@ -32160,7 +32195,7 @@
       "💰 商业": 222,
       "🌟 Top 5": 200,
       "🇨🇳 国内": 197,
-      "🧠 Tier 0": 186,
+      "🧠 Tier 0": 188,
       "🏢 案例": 174,
       "⚙️ 基础设施": 169,
       "⚖️ 监管": 160,
@@ -32177,9 +32212,9 @@
       "Microsoft": 88,
       "Amazon": 84,
       "DeepSeek": 71,
-      "MIT": 63,
+      "MIT": 64,
       "Meta": 57,
-      "Simon Willison": 56,
+      "Simon Willison": 57,
       "xAI": 53,
       "Mythos": 44,
       "Gary Marcus": 43,
@@ -32198,8 +32233,8 @@
       "Deloitte": 25,
       "字节": 24,
       "Stratechery": 24,
+      "Stanford": 23,
       "SAP": 22,
-      "Stanford": 22,
       "Oracle": 22,
       "Databricks": 22,
       "IBM": 21,
@@ -32343,7 +32378,7 @@
       },
       {
         "date": "2026-07-11",
-        "count": 26
+        "count": 28
       }
     ],
     "top_companies_timeline": {
@@ -32685,6 +32720,7 @@
       },
       "MIT": {
         "2026-07-10": 1,
+        "2026-07-09": 1,
         "2026-07-06": 1,
         "2026-07-05": 3,
         "2026-07-04": 4,
