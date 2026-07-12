@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-13 周一](./2026-07-13.md) — 25 篇 — 关键词：Fable 5付费时代$10/$50 Mtok / GPT-5.6 Sol Ultra证明50年数学猜想 / Fidji Simo卸任OpenAI二号人物 / Meta Iris自研芯片9月量产14GW / 马来西亚PMX AI全球首个政府Agentic分身
 - [2026-07-12 周日](./2026-07-12.md) — 30 篇 — 关键词：SK Hynix $265亿史上最大外国公司在美IPO / Apple起诉OpenAI窃取商业机密 / GPT-5.6 Sol/Terra/Luna全面公开 / 日本Noetra$61亿主权AI / 中国AI拟人化暂行办法7月15日生效
 - [2026-07-11 周六](./2026-07-11.md) — 25 篇 — 关键词：Meta Muse Spark 1.1首个付费API / Grok4.5首日幻觉率54%信任危机 / ChatGPT Work正式GA+Codex合并 / SambaNova$10亿+JPMorgan本地推理 / Illinois全美首个AI第三方审计法 / 阿里Claude Code禁令生效 / Ollama 85%财富500
 - [2026-07-10 周五](./2026-07-10.md) — 29 篇 — 关键词：GPT-5.6 Sol/Terra/Luna全球公开发布AI模型史最重大单日 / SpaceXAI Grok4.5同日发布Opus级$2/$6 / GPT-Live-1全双工语音 / Claude Reflect使用仪表盘 / Crunchbase H1全球$5100亿创纪录AI占70% / Samsung季度利润超NVIDIA / Microsoft用MAI替换OpenAI降本
