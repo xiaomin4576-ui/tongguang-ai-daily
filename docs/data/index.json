@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T02:03:05.437395+00:00",
-    "total_reports": 40,
-    "total_articles": 1846,
+    "generated_at": "2026-07-12T02:06:23.129035+00:00",
+    "total_reports": 41,
+    "total_articles": 1881,
     "date_range": [
       "2026-05-14",
-      "2026-07-11"
+      "2026-07-12"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-12",
+      "weekday": "周日",
+      "signal_strength": "medium",
+      "main_count": 30,
+      "tier0_count": 3,
+      "summary": "SK Hynix $265 亿美元 US IPO——史上最大外国公司在美上市，AI 芯片大时代标志性事件",
+      "url": "reports/2026-07-12.md",
+      "article_count": 35
+    },
     {
       "date": "2026-07-11",
       "weekday": "周六",
@@ -411,6 +421,593 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260712-T01",
+      "date": "2026-07-12",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "SK Hynix $265 亿美元 US IPO——史上最大外国公司在美上市，AI 芯片大时代标志性事件",
+      "summary": "SK Hynix 以 $149/ADR 定价发行 1.779 亿份美国存托凭证，首日收涨 15% 至 $171.41，超越阿里巴巴 2014 年 $250 亿纪录。募集资金将用于韩国新建 HBM 产能。",
+      "meaning": "：HBM 供应链\"定价权\"从 NVIDIA 采购方转向存储厂商——企业 CTO 应将 HBM 供货稳定性纳入 AI 基础设施长期规划，SK Hynix 上市后产能扩张将影响未来 18 个月 GPU 交付节奏。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "阿里"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-T02",
+      "date": "2026-07-12",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Apple 起诉 OpenAI 窃取商业机密——AI 硬件人才争夺战进入法律层面",
+      "summary": "Apple 提起 40 页诉状，指控 OpenAI 硬件部门招募前 iPhone 工程师 Chang Liu 时系统性窃取商业机密，包括：带走未归还公司 MacBook、利用软件漏洞持续访问内部文件服务器、在面试中展示硬件原型。OpenAI 否认。",
+      "meaning": "：企业 AI 部门招聘应立即升级\"竞业知识隔离\"流程——特别是从硬件巨头挖人时，法务团队需提前审查候选人可能携带的知识产权风险，否则可能面临类似诉讼。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Apple"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-T03",
+      "date": "2026-07-12",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "GPT-5.6 Sol/Terra/Luna 全面公开——Sol 自主完成 Luna 后训练引发技术社区热议",
+      "summary": "OpenAI 7 月 9 日向公众开放 GPT-5.6 三模型家族：Sol（旗舰 $5/$30/Mtok）、Terra（均衡 $2.50/$15）、Luna（轻量 $1/$6）。最引人注目的是 OpenAI 声称 Sol 用一条简短提示自主完成了 Luna 的后训练配置、GPU 选择和脚本执行。",
+      "meaning": "：CTO 在评估 OpenAI 企业版定价时有了\"三档\"选择——日常任务用 Luna 可省 80% token 成本，关键决策链用 Sol；但\"AI 自主训练 AI\"的叙事需要冷静看待，技术社区质疑这更像是受控的配置修改而非真正的端到端训练。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-T04",
+      "date": "2026-07-12",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "日本 Noetra 联盟获 $61 亿——SoftBank/Sony/NEC/Honda 打造主权 AI + 1000 万机器人",
+      "summary": "日本经产省（METI）批准向 Noetra 联盟拨付 5 年 1 万亿日元（$61 亿），首年 3873 亿日元（$24 亿）。44 家企业参与，不追求通用 AI 竞争，而是聚焦日本优势领域——老年医疗、制造业、灾害响应、福岛退役。政府设定 2040 年部署 1000 万 AI 机器人的目标。",
+      "meaning": "：日本走出了与美中截然不同的\"垂直主权 AI\"路径——出海日本市场的 AI 厂商应关注 Noetra 生态的合作机会，同时注意日本可能形成的制造/医疗 AI 数据壁垒。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-T05",
+      "date": "2026-07-12",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "中国《人工智能拟人化互动服务管理暂行办法》7 月 15 日生效——全球首部 AI 拟人化专项法规",
+      "summary": "由网信办、发改委、工信部、公安部、市监总局联合发布，规范以 AI 技术模拟人类性格特征、思维模式、交流方式向公众提供持续情感互动服务的行为。禁止向未成年人提供虚拟亲人/伴侣等亲密关系服务，14 岁以下须监护人同意。",
+      "meaning": "：运营 AI 陪伴/虚拟角色/情感交互产品的企业必须在 7 月 15 日前完成算法审查、用户分级和未成年人保护机制改造——豆包/通义等大模型平台的拟人化功能将首当其冲面临合规整改。",
+      "source": "",
+      "quality_score": 8,
+      "url": "",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-006",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison（7 月 9 日）\"The new GPT-5.6 family: Luna, Terra, Sol\"",
+      "summary": "Willison 第一时间拆解 GPT-5.6 三模型家族的定位与定价策略，将其与 Anthropic 和 Google 的产品矩阵做交叉对比。核心观点：Luna 在 $1/$6 价位的性能如果接近 GPT-5.5，将彻底改变\"日常 AI 调用\"的成本结构——对开发者来说这比 Sol 的前沿能力更有实际影响。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+      "companies": [
+        "Anthropic",
+        "Google",
+        "Simon Willison"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-007",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ben Thompson / Stratechery（7 月 9 日）\"Checking In on AI and the Big Five\"",
+      "summary": "Thompson 评估 AI 对五大科技公司的差异化影响。核心论点：美国对华政策假设\"AI 是毁灭性武器\"，但中国可能通过\"芯片 + AI 双重大宗商品化\"反向受益。Google 的 Android 作为分发渠道构建端云一体 AI 体验的路径被低估。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "https://stratechery.com/2026/checking-in-on-ai-and-the-big-five/",
+      "companies": [
+        "Google",
+        "Stratechery"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-008",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "OpenAI 技术博客（7 月 9 日）\"Sol autonomously post-trained Luna\"——AI 自主训练 AI 的深度技术讨论",
+      "summary": "OpenAI 声称 Sol 用一条\"相当模糊的提示\"自主完成了 Luna 的后训练——包括识别训练配置、选择 GPU、执行后训练脚本。Noam Brown 表示\"更喜欢 5.6 而非人类实习生\"。但技术社区质疑这是否只是受控的配置修改任务，而非真正的端到端自主训练。Sol 在 PostTrainBench 上得分 50.3%，Terra 略高 51.5%。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-009",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "GPT-5.6 Sol/Terra/Luna 全面公开——三档定价覆盖旗舰到轻量全光谱",
+      "summary": "- **原标题** ｜ Previewing GPT-5.6 Sol: a next-generation model OpenAI 7 月 9 日向全球公众开放 GPT-5.6 三模型家族。Sol 定位前沿推理和长周期 Agent 工作，Terra 以 Sol 一半价格提供均衡日常性能，Luna 以 $1/$6/Mtok 成为最快最便宜选项。三者已同步上线 GitHub Copilot。此前仅对约 20 家政府批准机构开放限量预览（6 月 26 日起）。",
+      "meaning": "：企业 IT 部门应立即启动\"三档模型路由\"评估——将 90% 日常任务（摘要/分类/客服）切到 Luna 可节省 80% token 成本，仅在复杂推理/代码审查链中使用 Sol，Terra 作为默认中间档",
+      "source": "OpenAI 官方 + TechCrunch + Latent Space",
+      "quality_score": 8,
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-010",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "NVIDIA Nemotron 3 Ultra——开源 Agent 协调旗舰 + LangChain Deep Agents 适配",
+      "summary": "- **原标题** ｜ NVIDIA Nemotron 3 Ultra: Leading Performance at Lower Cost NVIDIA 发布 Nemotron 3 Ultra，定位\"以低于顶级闭源模型的成本提供领先性能\"的 Agent 协调平台。LangChain 已为其 Deep Agents 框架适配 Nemotron 3 Ultra。发布时间与 GPT-5.6 公开仅差一天，竞争意味明显。",
+      "meaning": "：企业构建 Agent 工作流时多了一个\"NVIDIA 生态原生\"的开源选择——如果已在用 NVIDIA GPU 集群，Nemotron 3 Ultra + LangChain 组合可以减少跨生态集成成本，但需验证其在企业级任务上是否真能匹配 GPT-5.6 Terra 水准",
+      "source": "NVIDIA Blog + LangChain",
+      "quality_score": 7,
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-ultra/",
+      "companies": [
+        "NVIDIA"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-011",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Mistral Robostral Navigate——欧洲 AI 独角兽首个机器人导航模型",
+      "summary": "- **原标题** ｜ Mistral AI Releases Robotics Model to Support Physical AI Push Mistral 发布 Robostral Navigate，8B 参数模型，让机器人仅用单摄像头和语言提示在复杂环境中导航。在 R2R-CE 基准上达到 76.6% 成功率，超越此前最佳单摄像头方法 9.7 个百分点。硬件无关设计，纯模拟训练完成。目标场景：工厂、仓库、物流、酒店。",
+      "meaning": "：制造业和物流企业评估仓库 AGV/AMR 升级方案时，Mistral 提供了一个\"软件定义导航\"的欧洲替代选项——相比硬件锁定的方案，8B 轻量模型 + 单摄像头可大幅降低机器人导航的硬件门槛和部署成本",
+      "source": "Bloomberg + Silicon Republic",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push",
+      "companies": [
+        "Mistral"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-012",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Salesforce Agentforce Commerce GA——Shopper/Buyer/Merchant Agent + ChatGPT 集成",
+      "summary": "- **原标题** ｜ Salesforce Unleashes Its Biggest Agentforce Commerce Release Yet Salesforce 宣布 Shopper Agent、Buyer Agent 和 Merchant Agent 正式 GA，原生集成 ChatGPT、Google Search（含 AI Mode）和 Gemini App。AI 收入达 $34 亿，Agentforce 处理的咨询量已超过人工。这是 Salesforce 迄今最大规模的 Commerce Agent 发布。",
+      "meaning": "：电商和 B2B 采购团队可以直接在 Salesforce 内启用 Agent 自动化——但\"Agent 处理量超人工\"这个里程碑也意味着企业必须同步建立 Agent 决策审计机制，特别是在涉及定价和合同条款的场景",
+      "source": "Salesforce 官方",
+      "quality_score": 7,
+      "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/",
+      "companies": [
+        "Google",
+        "Salesforce"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-013",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Gemini 3.5 Pro 推迟至 7 月 17 日——全面重构架构对标 GPT-5.6 和 Fable 5",
+      "summary": "- **原标题** ｜ Google Delays Gemini 3.5 Pro Launch to July 17 for Full Architectural Rebuild Google DeepMind 宣布将 Gemini 3.5 Pro 发布推迟至 7 月 17 日，放弃 2.5 Pro 架构进行完全重构。新版将包含 200 万 token 上下文窗口、Deep Think 推理层、自主工作流能力，目标对标 GPT-5.6 Sol 和 Fable 5。这是 Google 在前沿模型竞争中罕见的\"推倒重来\"决策。",
+      "meaning": "：已在 Google Cloud/Vertex AI 上构建的企业应预留 7 月 17 日后的评估窗口——3.5 Pro 的架构重构可能带来 API 不兼容变更，需提前检查现有 Gemini 集成的兼容性和升级路径",
+      "source": "BigGo Finance + Google DeepMind",
+      "quality_score": 7,
+      "url": "https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a",
+      "companies": [
+        "Google",
+        "DeepMind"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-014",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI 瞄准家庭市场——招聘家庭/护理/老年产品 PM",
+      "summary": "- **原标题** ｜ OpenAI bets on families as ChatGPT goes deeper into households OpenAI 正在旧金山招聘专门的产品经理，为家庭、护理人员和老年人打造 ChatGPT 体验。35 岁以上用户比例从一年前 26% 升至 31%，美国家长用户季度渗透率从 16% 升至 24%。已推出青少年家长控制、敏感对话路由到推理模型、可选\"信任联系人\"自伤警报等功能。",
+      "meaning": "：AI 产品正从\"个人工具\"向\"家庭基础设施\"扩展——面向家庭/教育/养老的 AI 创业者面临 OpenAI 入场竞争，差异化窗口在于垂直场景深度（如中文教育辅导、老年认知训练）而非通用对话能力",
+      "source": "TechCrunch",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "companies": [
+        "OpenAI"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-015",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "SambaNova 成为 JPMorgan Chase 本地 AI 推理基础设施伙伴",
+      "summary": "- **原标题** ｜ AI chip maker SambaNova raises $1B at $11B valuation JPMorgan Chase 选择 SambaNova 的 SN40L 和 SN50 系统作为安全本地化 AI 推理基础设施，数据不离开银行内网。这是全球最大银行首次公开披露本地化 AI 推理芯片合作伙伴选择，信号意义重大——受监管行业正从\"云 AI 实验\"转向\"本地推理生产化\"。",
+      "meaning": "：金融、医疗、政府等受监管行业的 CIO 现在有了\"JPMorgan 背书\"的本地推理架构参考——采购 AI 推理基础设施时应将 SambaNova 列入短名单，与 NVIDIA DGX/H200 和 Groq 做三方比较",
+      "source": "TechCrunch + Bloomberg",
+      "quality_score": 8,
+      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-016",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Ollama：14 人团队覆盖 85% 财富 500 强、890 万月活开发者",
+      "summary": "- **原标题** ｜ Popular open source AI developer tool Ollama raises $65M, grows to nearly 9M users 由两位前 Docker Desktop 工程师创建的 Ollama，仅 14 人团队已覆盖 85% 财富 500 强企业、890 万月活开发者。产品让开发者在个人电脑上几分钟内运行开源 AI 模型。完成 $6500 万 B 轮融资，累计融资 $8800 万。",
+      "meaning": "：企业 IT 部门如果还没关注 Ollama 在内部的自发扩散，现在是时候了——85% 财富 500 渗透意味着你的开发者很可能已在使用它，应尽早建立\"本地模型使用\"的治理策略，而非等到数据泄漏事件后被动响应",
+      "source": "TechCrunch + Ollama Blog",
+      "quality_score": 7,
+      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-017",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "VentureBeat 调查：50% 企业已遭遇通过内部评估但仍导致客户端故障的 AI Agent",
+      "summary": "- **原标题** ｜ Enterprise AI is entering an evaluation gap VentureBeat 6 月调查 157 家百人以上企业：50% 部署了通过内部评估但仍导致客户端故障的 AI Agent，四分之一企业经历过不止一次。66% 已允许无人审查的生产部署或正在 12 个月内建设此类系统。但仅 5% 完全信任自动化评估。核心结论：Agent 自主权上升速度远超企业验证能力。",
+      "meaning": "：企业 AI 负责人应立即建立\"Agent 回归测试库\"——将每次客户投诉、工具调用失败、错误审批转化为永久回归测试用例，而非停留在孤立的客服工单中。Agent 部署不是一次性上线，而是持续验证循环",
+      "source": "VentureBeat",
+      "quality_score": 7,
+      "url": "https://venturebeat.com/orchestration/enterprise-ai-is-entering-an-evaluation-gap-agents-are-gaining-autonomy-faster-than-companies-can-verify-them",
+      "companies": [
+        "Ring"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-018",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Amazon WorkSpaces for AI Agents GA——Agent 无需改造即可操作桌面应用",
+      "summary": "- **原标题** ｜ Amazon WorkSpaces for AI agents is now generally available AWS 宣布 Amazon WorkSpaces for AI Agents 正式 GA：AI Agent 现在可以通过受管 WorkSpaces 环境安全访问和操作桌面应用，无需应用现代化改造或自定义集成。这解决了企业 Agent 落地的关键痛点——大量遗留系统没有 API 接口。",
+      "meaning": "：拥有大量遗留桌面应用（ERP 客户端/内部管理系统/行业专用软件）的企业现在有了\"AI Agent + 虚拟桌面\"的过渡方案——无需重写遗留系统即可让 Agent 操作，但需评估 WorkSpaces 的延迟和成本是否适配高频操作场景",
+      "source": "AWS Blog",
+      "quality_score": 6,
+      "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/",
+      "companies": [
+        "Amazon",
+        "AWS"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-019",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "SK Hynix $265 亿美元 US IPO——史上最大外国公司在美上市",
+      "summary": "- **原标题** ｜ SK Hynix raises $26.5B in the biggest foreign IPO in US history SK Hynix 以 $149/ADR 发行 1.779 亿份美国存托凭证登陆 Nasdaq，首日收涨 15% 至 $171.41。超越阿里巴巴 2014 年 $250 亿纪录，成为美国历史上最大外国公司 IPO。临时代码 SKHYV，7 月 13 日正式代码 SKHY。Nasdaq 表示此交易将吸引更多外国公司赴美上市。募集资金将用于韩国新产能建设。",
+      "meaning": "：AI 基础设施投资从 GPU 扩展到存储——HBM 成为 AI 训练/推理的关键瓶颈，SK Hynix 上市融资将加速 HBM4 产能爬坡；企业采购 AI 服务器时应将 HBM 供给纳入供应链风险评估，而非只关注 GPU 型号",
+      "source": "Bloomberg + TechCrunch + CNN",
+      "quality_score": 8,
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "companies": [
+        "阿里"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-020",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "SambaNova $10 亿 F 轮估值 $110 亿——General Atlantic 领投",
+      "summary": "- **原标题** ｜ SambaNova Raises $1 Billion, Reaches $11 Billion Valuation in AI Chip Funding SambaNova 完成 $10 亿 F 轮首关，General Atlantic 领投，T. Rowe Price、Capital Group、BlackRock、Intel Capital、卡塔尔投资局等跟投。距上一轮巨额融资仅 5 个月。资金用于扩产能、加速产品创新、扩大企业/主权 AI/Neo Cloud 部署。第二轮关闭预计数周内完成。",
+      "meaning": "：NVIDIA 替代方案赛道进入\"十亿级融资\"阶段——企业在构建长期 AI 基础设施时，应将 SambaNova、Groq、Cerebras 等纳入供应商多元化策略，避免 GPU 单一供应商风险",
+      "source": "TechCrunch + Bloomberg",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-08/ai-chip-startup-sambanova-raises-funds-at-11-billion-valuation",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-021",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "快手可灵 AI 近 $30 亿融资估值 $180 亿——全球视频大模型融资纪录",
+      "summary": "- **原标题** ｜ Alibaba, Tencent Join $2 Billion Funding for Kuaishou's Kling AI 快手旗下视频生成大模型 Kling AI 完成近 $30 亿融资，估值 $180 亿。CPE 源丰、国方创投、腾讯、中关村科学城基金、中信证券联合领投，阿里云、百度、华策影视等 38 家投资方参与。Q1 营收超 6.5 亿元，同比增长 300%+，年化营收近 $5 亿。计划 12 个月内港交所上市。快手持股 68.33%。",
+      "meaning": "：中国 AI 视频赛道已进入\"资本密集 + 上市冲刺\"阶段——使用 Kling 的企业应关注其 IPO 后的定价策略变化（上市公司通常面临更大的盈利压力），同时将 Sora/Veo/Runway 做备选评估",
+      "source": "Bloomberg + SCMP + CNBC",
+      "quality_score": 7,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-02/china-s-kling-ai-raises-2-billion-to-expand-ai-video-operations",
+      "companies": [
+        "阿里",
+        "腾讯",
+        "百度"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-022",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Ollama $6500 万 B 轮——Theory Ventures 领投，累计 $8800 万",
+      "summary": "- **原标题** ｜ Popular open source AI developer tool Ollama raises $65M Ollama 完成 $6500 万 B 轮，Theory Ventures 领投，Benchmark 的 Peter Fenton、8VC 的 Alex Kolicich、Docker 创始人 Solomon Hykes 等参与。累计融资 $8800 万。890 万月活开发者，85% 财富 500 强使用，仅 14 名员工——可能是\"人均客户价值\"最高的 AI 公司之一。",
+      "meaning": "：开源 AI 模型运行工具的商业化路径已被验证——企业开发者工具采购应将 Ollama 纳入\"开发者体验\"评估，其\"Docker for AI models\"的定位意味着企业级功能（审计日志/集中管理/合规控制）的付费版可能在 12 个月内推出",
+      "source": "TechCrunch + SiliconANGLE",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-023",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Agility Robotics $25 亿 SPAC 上市——全球首个人形机器人纯 IPO",
+      "summary": "- **原标题** ｜ Agility Robotics plans to go public via SPAC in a $2.5B deal Agility Robotics 与 Churchill Capital Corp XI 达成 $25 亿 SPAC 合并协议。交易预计产生 $6 亿+总收益，其中 PIPE 由富士康领投 $2 亿+。Agility 的 Digit 双足机器人已在 Amazon 和 Toyota 部署。预计 2026 年底前完成交易，代码 AGLT。",
+      "meaning": "：人形机器人从\"概念\"进入\"二级市场定价\"阶段——制造业和物流企业可以通过其上市后的财报数据判断人形机器人的真实 ROI，而非依赖供应商的 PPT 承诺",
+      "source": "TechCrunch + WSJ",
+      "quality_score": 6,
+      "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+      "companies": [
+        "Amazon"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-024",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Korn Ferry：73% 人才主管将批判性思维列为首要招聘标准，AI 技能仅排第五",
+      "summary": "- **原标题** ｜ Korn Ferry Research Unveils Top Talent Acquisition Trends Shaping 2026 Korn Ferry 调查 1,674 位全球人才主管 + 230 位内部专家：73% 将批判性思维和问题解决列为评估新人的第一优先，AI 相关技能仅排第五。84% 计划明年使用 AI 招聘，但存在关键断层——CEO 聚焦 AI 技术专长，人才主管知道批判性思维才是让 AI 真正落地的关键能力。",
+      "meaning": "：企业 HR 在设计 AI 时代岗位 JD 时，应将\"AI 输出审查能力\"和\"幻觉识别能力\"前置到技能要求中——AI 技能培训的重点不是教员工用 AI，而是教他们何时不信 AI",
+      "source": "Korn Ferry 官方",
+      "quality_score": 7,
+      "url": "https://www.kornferry.com/about-us/press/korn-ferry-research-unveils-top-talent-acquisition-trends-shaping-2026",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-025",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Microsoft 裁员 4,800 人（2.1%）——AI 重塑工作方式，非替代员工",
+      "summary": "- **原标题** ｜ Microsoft cuts 4,800 jobs, about 2% globally Microsoft 裁减约 4,800 个岗位，占全球员工 2.1%。裁员主要影响商业和 Xbox 部门，工程团队也有变动。公司称这是为了更好对齐人工智能投资和长期目标的组织重构，但强调\"AI 改变了工作方式，不是替代员工\"。同期，Microsoft 刚宣布 $25 亿投资 Frontier Company（6,000 人 AI 部署团队）。",
+      "meaning": "：大厂\"一边裁员一边招 AI 人才\"的模式正在常态化——企业 HR 应将\"AI 转型期的组织重构\"纳入年度人力规划，提前识别哪些岗位将被 Agent 替代、哪些需要升级为\"人+AI 协作\"模式",
+      "source": "GeekWire + Fox Business",
+      "quality_score": 7,
+      "url": "https://www.geekwire.com/2026/microsoft-cuts-4800-jobs-about-2-globally-revamps-salesforce-and-launches-massive-xbox-overhaul/",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-026",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "PwC AI 就业晴雨表：AI 正在创造\"双轨劳动力市场\"",
+      "summary": "- **原标题** ｜ 2026 Global AI Jobs Barometer PwC 分析六大洲超 10 亿条招聘广告后发现：AI 正在创造\"双轨劳动力市场\"——判断力和领导力等技能变得更关键也更受奖励，而常规任务岗位加速萎缩。AI 相关岗位的薪资溢价持续扩大。核心洞察：AI 不是简单的\"替代/创造\"二分法，而是把劳动力市场一分为二。",
+      "meaning": "：CHO/CHRO 在做 2027 年人力预算时，应按\"判断力密集型\"和\"执行密集型\"重新分类岗位——前者加薪留人，后者评估 AI Agent 替代方案，而非全部门统一涨薪或裁员",
+      "source": "PwC 官方",
+      "quality_score": 7,
+      "url": "https://www.pwc.com/gx/en/services/ai/ai-jobs-barometer.html",
+      "companies": [
+        "PwC"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-027",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "美联储设立 AI 与生产力工作组——Marc Andreessen + Asha Sharma 共同领导",
+      "summary": "- **原标题** ｜ Fed chief taps Trump ally Marc Andreessen to advise on how AI reshapes work 联储主席 Kevin Warsh 任命 a16z 联合创始人 Marc Andreessen 和 Xbox CEO Asha Sharma 共同领导\"生产力、就业与 AI\"工作组（五大外部工作组之一）。斯坦福经济学家 Charles I. Jones（目前在 Anthropic 休假）也加入。工作组将评估 AI 等通用技术对经济产出和就业的影响，年底前提交建议。",
+      "meaning": "：美联储首次将 AI 影响纳入货币政策制定框架——企业 CFO 应关注年底工作组报告对利率/通胀预测的潜在影响；Andreessen 的\"技术乐观派\"立场可能推动更宽松的 AI 创新监管信号",
+      "source": "Washington Post + Axios + CNBC",
+      "quality_score": 7,
+      "url": "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-028",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "日本 Noetra 联盟获 5 年 $61 亿——SoftBank/Sony/NEC/Honda 打造垂直主权 AI",
+      "summary": "- **原标题** ｜ Japan rallies tech-giant alliance to build sovereign AI 日本经产省批准向 SoftBank 牵头的 Noetra 联盟拨付 1 万亿日元（$61 亿）5 年资金，首年 3873 亿日元。联盟包含 44 家企业，聚焦日本优势垂直领域——老年医疗、制造业质检、灾害响应、福岛退役。设\"阶段门\"审查：未达里程碑可随时停止拨款。2040 年目标：18 个行业部署 1000 万 AI 机器人。",
+      "meaning": "：日本\"垂直主权 AI\"路径对中国制造业 AI 出海是竞争信号——在老年医疗和精密制造 AI 领域，日本可能形成独特的数据壁垒；但\"阶段门\"机制也为国际合作留出窗口，AI 解决方案厂商应关注 Noetra 生态的供应商准入机制",
+      "source": "Asia Times + Japan Times + AI Weekly",
+      "quality_score": 8,
+      "url": "https://asiatimes.com/2026/07/japan-rallies-tech-giant-alliance-to-build-sovereign-ai/",
+      "companies": [
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-029",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Tesla Optimus 工厂在 Fremont 启动生产——Model S/X 产线改造为机器人产线",
+      "summary": "- **原标题** ｜ Tesla Optimus project fires up as Musk sees production line progress Tesla 将 Fremont 工厂的 Model S/X 产线改造为 Optimus Gen3 人形机器人自动化产线，设计年产能 100 万台。7 月 1 日 Musk 分享最新进展照片。但初期产量将\"极其缓慢\"——约 10,000 个全新零部件几乎无成熟供应链。Texas Giga 第二工厂预计 2027 年夏投产 Gen4。当前 Optimus 仅在 Tesla 内部工厂使用，不对外销售。",
+      "meaning": "：人形机器人\"百万级产能\"的供应链建设周期将是 2-3 年——制造业企业不必急于采购人形机器人，但应开始评估产线的\"机器人就绪度\"（标准化工位、安全隔离区、协作接口），为 2028 年后的部署窗口做准备",
+      "source": "Teslarati + Electrek",
+      "quality_score": 7,
+      "url": "https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-030",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "宇树科技获批 $6.19 亿上海科创板 IPO——全球人形机器人销量冠军冲刺上市",
+      "summary": "- **原标题** ｜ Unitree Robotics Wins Approval for $618 Million STAR Market IPO 宇树科技（Unitree）获中国证监会批准在上海科创板上市，计划融资 42 亿元（$6.19 亿），IPO 估值可达 400 亿元（$59 亿）。从申请到获批仅 73 天，创科创板最快记录之一。2025 年收入 16.9 亿元。资金用于 AI 模型研发、机器人本体开发、智能制造基地建设。最快 7 月底上市交易。",
+      "meaning": "：中国机器人供应链即将获得资本市场定价——制造企业评估宇树等国产人形机器人方案时，可通过其上市后的财务数据验证真实交付能力和客户集中度风险",
+      "source": "Caixin Global + Rest of World",
+      "quality_score": 7,
+      "url": "https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-031",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "中国人形机器人全年产量有望突破 10 万台——工信部发布 WAIC 新闻",
+      "summary": "工信部科技司副司长在 2026 世界人工智能大会新闻发布会上表示：中国 AI 核心产业规模 2025 年已超 1.2 万亿元，大模型和智能体加速迭代，今年人形机器人全年整机产量有望突破 10 万台。相比 2025 年全球约 180-200 万台出货量中中国约 1.44 万台，10 万台标志着中国正式进入\"量产阶段\"。",
+      "meaning": "：中国人形机器人从\"概念\"跨入\"量产\"——10 万台跨越的临界点将驱动硬件供应链成本下降 + 软件迭代获得充足数据反馈，制造业企业可以开始小批量试点评估，而非只看展会演示",
+      "source": "新华网 + IT 之家",
+      "quality_score": 6,
+      "url": "https://www.xinhuanet.com/tech/20260708/d1637bc2782c4cb1b2847b28aa799e5d/c.html",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-032",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Apple 起诉 OpenAI 窃取商业机密——40 页诉状揭示 AI 硬件人才争夺暗战",
+      "summary": "- **原标题** ｜ Apple Sues OpenAI for Trade Secret Theft Over AI Hardware Designs Apple 提起 40 页诉状指控 OpenAI 在招募前 iPhone 工程师 Chang Liu 时系统性窃取商业机密：Liu 带走未归还的公司 MacBook、利用软件漏洞持续访问内部文件服务器、在 OpenAI 面试中展示 Apple 硬件原型。诉讼核心是前 Apple 高管 Tang Tan（曾负责 iPhone/Watch 设计）。两家公司在 AI 设备市场的竞争从合作伙伴升级为法律战。",
+      "meaning": "：AI 硬件赛道的人才争夺已进入\"法律武器化\"阶段——企业 CTO 从大厂招聘 AI 硬件/模型核心人才时，法务部门必须前置介入：竞业协议审查、设备归还确认、知识产权隔离墙——否则可能成为下一个被告",
+      "source": "Bloomberg + CNN + Axios",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-10/apple-sues-openai-for-trade-secret-theft-in-blockbuster-case",
+      "companies": [
+        "OpenAI",
+        "Apple",
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-033",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "中国《拟人化 AI 互动暂行办法》7/15 生效——全球首部针对 AI 情感交互的专项法规",
+      "summary": "由网信办、发改委、工信部、公安部、市监总局五部门联合发布。核心条款：禁止向未成年人提供虚拟亲人/伴侣等亲密关系服务；14 岁以下须监护人同意；服务商须建立算法审查、科技伦理审查和应急处置制度；未经权利人同意不得向第三方提供用户交互数据；必须明确告知用户 AI 属性防止认知混淆。",
+      "meaning": "：运营 AI 陪伴/虚拟角色/情感交互产品的中国企业还有 3 天整改窗口——需完成的最低合规动作：① 用户年龄分级系统 ② AI 身份强制提示 ③ 交互数据第三方共享审查 ④ 未成年人亲密关系功能下线。不合规的可能面临下架处罚",
+      "source": "中央网信办",
+      "quality_score": 8,
+      "url": "https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm",
+      "companies": [],
+      "keywords": []
+    },
+    {
+      "id": "20260712-034",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "FTC 就 AI 准确性政策征求意见——将\"隐瞒 AI 输出操纵\"定性为欺骗消费者",
+      "summary": "- **原标题** ｜ FTC Seeks Public Comment on Policy Statement Addressing AI Accuracy FTC 发布拟议政策声明，将 AI 公司\"为未披露的意识形态目标扭曲系统输出\"定性为违反 FTC 法第 5 条的欺骗行为。数据依据：消费者 90%+ 的时间不会独立核查 AI 输出。政策声明点名科罗拉多 AI 法案可能\"要求 AI 公司压制输出准确性以避免差异影响责任\"，认为此类州法与联邦法冲突。公众评议期至 7/31。",
+      "meaning": "：AI 模型厂商面临\"准确性 vs 安全/公平\"的新监管张力——企业使用 AI 做关键决策时应要求供应商披露\"输出调优策略\"（safety tuning / RLHF 偏好），7/31 前向 FTC 提交意见可影响最终政策走向",
+      "source": "FTC 官方 + Federal Register",
+      "quality_score": 7,
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy",
+      "companies": [
+        "FT"
+      ],
+      "keywords": []
+    },
+    {
+      "id": "20260712-035",
+      "date": "2026-07-12",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Anthropic 任命前美联储主席 Ben Bernanke 加入长期利益信托——治理成为竞争护城河",
+      "summary": "- **原标题** ｜ Ben Bernanke appointed to Anthropic's Long-Term Benefit Trust 2022 年诺贝尔经济学奖得主、2006-2014 年美联储主席 Ben Bernanke 加入 Anthropic 的长期利益信托（LTBT）。LTBT 独立于公司管理层和投资者，受托人无股权也无利润分成。Bernanke 将为 AI 经济影响研究和公司工作提供洞察。同期 Anthropic 推出 Claude Reflect——AI 使用习惯审计仪表板。",
+      "meaning": "：企业采购 AI 模型时，\"供应商治理结构\"正成为新的评估维度——Anthropic 通过 LTBT（独立信托 + 诺贝尔/前美联储级人物）率先将\"治理\"做成差异化护城河，OpenAI 和 Google 需跟进，否则在政府和金融客户的 RFP 中处于劣势",
+      "source": "Anthropic 官方 + Bloomberg + CNBC",
+      "quality_score": 7,
+      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "companies": [
+        "Anthropic"
+      ],
+      "keywords": []
+    },
     {
       "id": "20260711-T01",
       "date": "2026-07-11",
@@ -32191,79 +32788,75 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 293,
-      "💰 商业": 222,
-      "🌟 Top 5": 200,
+      "🚀 产品": 299,
+      "💰 商业": 227,
+      "🌟 Top 5": 205,
       "🇨🇳 国内": 197,
-      "🧠 Tier 0": 188,
-      "🏢 案例": 174,
-      "⚙️ 基础设施": 169,
-      "⚖️ 监管": 160,
-      "👥 组织": 142,
+      "🧠 Tier 0": 191,
+      "🏢 案例": 178,
+      "⚙️ 基础设施": 173,
+      "⚖️ 监管": 164,
+      "👥 组织": 146,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 338,
-      "OpenAI": 278,
-      "Google": 173,
-      "FT": 116,
-      "NVIDIA": 114,
-      "AWS": 89,
-      "Microsoft": 88,
-      "Amazon": 84,
+      "Anthropic": 341,
+      "OpenAI": 284,
+      "Google": 177,
+      "FT": 121,
+      "NVIDIA": 115,
+      "AWS": 90,
+      "Microsoft": 89,
+      "Amazon": 86,
       "DeepSeek": 71,
       "MIT": 64,
+      "Simon Willison": 58,
       "Meta": 57,
-      "Simon Willison": 57,
       "xAI": 53,
       "Mythos": 44,
       "Gary Marcus": 43,
-      "DeepMind": 41,
+      "DeepMind": 42,
       "智谱": 41,
       "Bedrock": 41,
-      "腾讯": 39,
+      "腾讯": 40,
+      "阿里": 39,
+      "Salesforce": 38,
       "BCG": 38,
-      "Salesforce": 37,
-      "阿里": 36,
       "Bloomberg": 34,
       "TechCrunch": 33,
       "Kimi": 29,
       "Hugging Face": 28,
+      "Stratechery": 25,
       "豆包": 25,
       "Deloitte": 25,
       "字节": 24,
-      "Stratechery": 24,
       "Stanford": 23,
       "SAP": 22,
       "Oracle": 22,
       "Databricks": 22,
+      "Apple": 21,
       "IBM": 21,
+      "Ring": 20,
       "Snowflake": 20,
-      "Ring": 19,
-      "Apple": 19,
+      "PwC": 19,
       "华为": 18,
       "Karpathy": 18,
-      "PwC": 18,
       "McKinsey": 17,
       "Accenture": 17,
       "混元": 16,
+      "百度": 15,
       "ServiceNow": 15,
+      "Mistral": 14,
       "通义": 14,
-      "百度": 14,
-      "Mistral": 13,
       "Moonshot": 13,
       "Cerebras": 11
     },
     "signal_days": {
-      "medium": 40
+      "medium": 41
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-12",
-        "count": 0
-      },
       {
         "date": "2026-06-13",
         "count": 0
@@ -32379,10 +32972,15 @@
       {
         "date": "2026-07-11",
         "count": 28
+      },
+      {
+        "date": "2026-07-12",
+        "count": 33
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-12": 3,
         "2026-07-11": 4,
         "2026-07-10": 9,
         "2026-07-09": 9,
@@ -32425,6 +33023,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-07-12": 6,
         "2026-07-11": 2,
         "2026-07-10": 9,
         "2026-07-09": 3,
@@ -32466,6 +33065,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-07-12": 4,
         "2026-07-10": 2,
         "2026-07-09": 2,
         "2026-07-08": 2,
@@ -32506,6 +33106,7 @@
         "2026-05-14": 8
       },
       "FT": {
+        "2026-07-12": 5,
         "2026-07-11": 2,
         "2026-07-10": 5,
         "2026-07-09": 2,
@@ -32546,6 +33147,7 @@
         "2026-05-14": 4
       },
       "NVIDIA": {
+        "2026-07-12": 1,
         "2026-07-11": 2,
         "2026-07-10": 2,
         "2026-07-09": 1,
@@ -32585,6 +33187,7 @@
         "2026-05-14": 2
       },
       "AWS": {
+        "2026-07-12": 1,
         "2026-07-11": 1,
         "2026-07-10": 1,
         "2026-07-08": 1,
@@ -32620,6 +33223,7 @@
         "2026-05-14": 6
       },
       "Microsoft": {
+        "2026-07-12": 1,
         "2026-07-10": 5,
         "2026-07-09": 1,
         "2026-07-08": 2,
@@ -32657,6 +33261,7 @@
         "2026-05-14": 4
       },
       "Amazon": {
+        "2026-07-12": 2,
         "2026-07-10": 1,
         "2026-07-08": 1,
         "2026-07-07": 6,
