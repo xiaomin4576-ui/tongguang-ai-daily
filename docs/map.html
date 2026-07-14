@@ -9,58 +9,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:          #fafaf7;
-  --bg-2:        #f0eee8;
-  --bg-3:        #e6e2d6;
-  --ink:         #1a1714;
-  --ink-2:       #4a463e;
-  --ink-3:       #7a7466;
-  --ink-4:       #a09a8a;
-  --accent:      #c2410c;
-  --accent-2:    #b8860b;
-  --line:        #d4cebd;
-  --line-2:      #e8e3d2;
+  --bg:          #0a1020;
+  --bg-2:        #101b33;
+  --bg-3:        #1c2a4a;
+  --ink:         #f2f6fc;
+  --ink-2:       #c9d5e8;
+  --ink-3:       #94a6c4;
+  --ink-4:       #7e90b0;
+  --accent:      #e2c07e;
+  --accent-2:    #33d6c5;
+  --line:        #2f4166;
+  --line-2:      #24344c;
 
-  --layer-l1: #7c3aed;
-  --layer-l2: #0369a1;
-  --layer-l3: #16a34a;
-  --layer-l4: #b8860b;
+  --layer-l1: #b794f6;
+  --layer-l2: #7ab8ff;
+  --layer-l3: #4ade80;
+  --layer-l4: #e2c07e;
 
-  --layer-l1-bg: #faf5ff;
-  --layer-l2-bg: #f0f9ff;
-  --layer-l3-bg: #f0fdf4;
-  --layer-l4-bg: #fffbeb;
+  --layer-l1-bg: rgba(183,148,246,.10);
+  --layer-l2-bg: rgba(122,184,255,.10);
+  --layer-l3-bg: rgba(74,222,128,.10);
+  --layer-l4-bg: rgba(226,192,126,.10);
 
-  --layer-l1-border: #d8b4fe;
-  --layer-l2-border: #bae6fd;
-  --layer-l3-border: #bbf7d0;
-  --layer-l4-border: #fde68a;
+  --layer-l1-border: rgba(183,148,246,.32);
+  --layer-l2-border: rgba(122,184,255,.32);
+  --layer-l3-border: rgba(74,222,128,.32);
+  --layer-l4-border: rgba(226,192,126,.32);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg:    #14110d;
-    --bg-2:  #1c1813;
-    --bg-3:  #24201a;
-    --ink:   #f5f1e8;
-    --ink-2: #d4cdb8;
-    --ink-3: #9b9381;
-    --ink-4: #6a6457;
-    --line:   #36312a;
-    --line-2: #2a2620;
-    --accent:  #fb923c;
-    --layer-l1: #a78bfa;
-    --layer-l2: #38bdf8;
+    --bg:    #0a1020;
+    --bg-2:  #101b33;
+    --bg-3:  #1c2a4a;
+    --ink:   #f2f6fc;
+    --ink-2: #c9d5e8;
+    --ink-3: #94a6c4;
+    --ink-4: #7e90b0;
+    --line:   #2f4166;
+    --line-2: #24344c;
+    --accent:  #e2c07e;
+    --layer-l1: #b794f6;
+    --layer-l2: #7ab8ff;
     --layer-l3: #4ade80;
-    --layer-l4: #fbbf24;
-    --layer-l1-bg: rgba(167, 139, 250, 0.08);
-    --layer-l2-bg: rgba(56, 189, 248, 0.08);
-    --layer-l3-bg: rgba(74, 222, 128, 0.08);
-    --layer-l4-bg: rgba(251, 191, 36, 0.08);
-    --layer-l1-border: rgba(167, 139, 250, 0.3);
-    --layer-l2-border: rgba(56, 189, 248, 0.3);
-    --layer-l3-border: rgba(74, 222, 128, 0.3);
-    --layer-l4-border: rgba(251, 191, 36, 0.3);
+    --layer-l4: #e2c07e;
+    --layer-l1-bg: rgba(183,148,246,.10);
+    --layer-l2-bg: rgba(122,184,255,.10);
+    --layer-l3-bg: rgba(74,222,128,.10);
+    --layer-l4-bg: rgba(226,192,126,.10);
+    --layer-l1-border: rgba(183,148,246,.32);
+    --layer-l2-border: rgba(122,184,255,.32);
+    --layer-l3-border: rgba(74,222,128,.32);
+    --layer-l4-border: rgba(226,192,126,.32);
   }
 }
 
@@ -596,7 +596,7 @@ footer a { color: var(--accent); text-decoration: none; }
 @media print {
   .topbar, .view-tabs { display: none; }
   .view { display: block !important; page-break-after: always; border: none; padding: 0; }
-  body { background: white; }
+  body { background:#1c2a4a; }
 }
 
 @media (max-width: 768px) {

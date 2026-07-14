@@ -10,40 +10,40 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root {
-  --bg:       #fafaf7;
-  --bg-2:     #f0eee8;
-  --bg-3:     #e6e2d6;
-  --ink:      #1a1714;
-  --ink-2:    #4a463e;
-  --ink-3:    #7a7466;
-  --ink-4:    #a09a8a;
-  --accent:   #c2410c;
-  --accent-2: #b8860b;
-  --line:     #d4cebd;
-  --line-2:   #e8e3d2;
+  --bg:       #0a1020;
+  --bg-2:     #101b33;
+  --bg-3:     #1c2a4a;
+  --ink:      #f2f6fc;
+  --ink-2:    #c9d5e8;
+  --ink-3:    #94a6c4;
+  --ink-4:    #7e90b0;
+  --accent:   #e2c07e;
+  --accent-2: #33d6c5;
+  --line:     #2f4166;
+  --line-2:   #24344c;
 
-  --sig-strong:  #2d5016;
-  --sig-medium:  #7a5e1c;
-  --sig-weak:    #8b3a3a;
+  --sig-strong:  #4ade80;
+  --sig-medium:  #fbbf24;
+  --sig-weak:    #ff8080;
 
-  --c1: #c2410c; /* accent */
-  --c2: #0369a1;
-  --c3: #16a34a;
-  --c4: #ca8a04;
-  --c5: #9333ea;
-  --c6: #be123c;
-  --c7: #047857;
-  --c8: #b91c1c;
-  --c9: #7c2d12;
-  --c10: #475569;
+  --c1: #7ab8ff; /* accent */
+  --c2: #4ade80;
+  --c3: #fbbf24;
+  --c4: #ff8080;
+  --c5: #33d6c5;
+  --c6: #b794f6;
+  --c7: #e2c07e;
+  --c8: #ff9db0;
+  --c9: #5eead4;
+  --c10: #a6b4cd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14110d; --bg-2: #1c1813; --bg-3: #24201a;
-    --ink: #f5f1e8; --ink-2: #d4cdb8; --ink-3: #9b9381; --ink-4: #6a6457;
-    --line: #36312a; --line-2: #2a2620;
-    --accent: #fb923c; --accent-2: #fbbf24;
+    --bg: #0a1020; --bg-2: #101b33; --bg-3: #1c2a4a;
+    --ink: #f2f6fc; --ink-2: #c9d5e8; --ink-3: #94a6c4; --ink-4: #7e90b0;
+    --line: #2f4166; --line-2: #24344c;
+    --accent: #e2c07e; --accent-2: #33d6c5;
   }
 }
 
@@ -742,7 +742,7 @@ function renderDimensionChart() {
       datasets: [{
         data: entries.map(([, v]) => v),
         backgroundColor: palette.slice(0, entries.length),
-        borderColor: getComputedStyle(document.body).getPropertyValue('--bg') || '#fafaf7',
+        borderColor: getComputedStyle(document.body).getPropertyValue('--bg') || '#0a1020',
         borderWidth: 2,
       }]
     },
