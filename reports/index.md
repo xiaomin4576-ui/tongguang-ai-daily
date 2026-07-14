@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-15 周三](./2026-07-15.md) — 29 篇 — 关键词：BIS警告AI基建$1万亿支出泡沫风险 / DeepSeek再融资$710亿估值 / 200经济学家+15诺奖联名AI就业警告 / Nadella逆向信息悖论企业付两次钱 / WAIC2026习近平首次亲临+Gemini3.5Pro+Atlas950 / PixVerse$4.39亿C轮$20亿 / Goldman推荐做多中国AI
 - [2026-07-10 周五](./2026-07-10.md) — 29 篇 — 关键词：GPT-5.6 Sol/Terra/Luna全球公开发布AI模型史最重大单日 / SpaceXAI Grok4.5同日发布Opus级$2/$6 / GPT-Live-1全双工语音 / Claude Reflect使用仪表盘 / Crunchbase H1全球$5100亿创纪录AI占70% / Samsung季度利润超NVIDIA / Microsoft用MAI替换OpenAI降本
 - [2026-07-09 周四](./2026-07-09.md) — 22 篇 — 关键词：Claude Cowork移动端+120万会话90%非编程 / SpaceXAI+Cursor联合模型$600亿后首秀 / Illinois全美首个AI第三方审计法案 / Fable5付费延至7/12 / 美热浪能源部命令数据中心启用备用发电机
 - [2026-07-08 周三](./2026-07-08.md) — 24 篇 — 关键词：JADEPUFFER首个自主AI勒索软件Sysdig / 中国AI模型美开发者占比46%CNBC / FTC AI准确性政策声明草案 / 白宫30天模型审查框架即将发布 / 豆包千问7/15下线1.4万智能体AI拟人化新规
