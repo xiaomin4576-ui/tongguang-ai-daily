@@ -705,12 +705,32 @@ async function loadWeeklyData(weekFile) {
     if (resp.ok) {
       const data = await resp.json();
       console.log('✅ 加载周报数据成功:', file);
+      showStaleBanner(data);
       return data;
     }
   } catch (e) {
     console.log('⚠️ 加载失败, 使用 fallback', e.message);
   }
   return FALLBACK;
+}
+
+// 诚实透明:周报为人工整合(非日报自动管线),若数据 >14 天未更新则自动挂陈旧提示;恢复更新后自动消失。
+function showStaleBanner(data){
+  try{
+    var range = (data && data.range) || '';
+    var endStr = (range.split('至').pop() || '').trim();
+    var end = new Date(endStr);
+    if(isNaN(end.getTime())) return;
+    var days = Math.floor((Date.now() - end.getTime())/86400000);
+    if(days <= 14 || document.getElementById('staleBanner')) return;
+    var t = document.querySelector('.page-title');
+    if(!t || !t.parentNode) return;
+    var b = document.createElement('div');
+    b.id = 'staleBanner';
+    b.style.cssText = 'margin:12px 0;padding:10px 16px;border-radius:10px;font-size:13px;line-height:1.6;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.35);color:#fbbf24';
+    b.innerHTML = '⚠️ 本周深度专栏数据截至 <b>'+endStr+'</b>,已 '+days+' 天未更新——周报为人工整合(非日报自动管线产出);恢复更新后本提示自动消失。';
+    t.parentNode.insertBefore(b, t.nextSibling);
+  }catch(e){}
 }
 
 async function loadWeekIndex() {
