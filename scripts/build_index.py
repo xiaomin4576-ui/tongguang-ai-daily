@@ -37,9 +37,9 @@ JSON 结构:
       "source": "Ramp",
       "quality_score": 8,  // 5-8
       "url": "原文链接",
-      "companies": ["Anthropic", "OpenAI", "Ramp"],
-      "keywords": ["企业 AI", "Ramp 指数"]
+      "companies": ["Anthropic", "OpenAI", "Ramp"]
     }
+    // 注:原 keywords 字段已删(生成逻辑从不填充、前端无读取,纯死字段,2026-07-14 审计清理)
   ],
   "tag_index": {
     "dimensions": { "🚀 产品": 12, "🏢 案例": 18, ... },
@@ -82,10 +82,13 @@ DIMENSION_PATTERNS = {
 }
 
 # 信号强度识别
+# 修复(2026-07-14):原字符类 [::] 是两个【半角】冒号(0x3a),而早报实际用【全角】冒号「：」(0xff1a),
+# 导致「信号强度：强/弱」永远匹配不上、42 份全落默认 medium、stats 信号分布图恒显 0强/42中/0弱。
+# 补全角冒号 [:：],并加 \** 兼容 markdown 粗体写法「信号强度：**强**」。
 SIGNAL_PATTERNS = {
-    "strong": [r"\[strong-signal\]", r"强信号日", r"信号强度[::]\s*强"],
-    "medium": [r"\[medium-signal\]", r"中等信号", r"信号强度[::]\s*中"],
-    "weak":   [r"\[weak-signal\]", r"弱信号日", r"信号强度[::]\s*弱"],
+    "strong": [r"\[strong-signal\]", r"强信号日", r"信号强度[:：]\s*\**\s*强"],
+    "medium": [r"\[medium-signal\]", r"中等信号", r"信号强度[:：]\s*\**\s*中"],
+    "weak":   [r"\[weak-signal\]", r"弱信号日", r"信号强度[:：]\s*\**\s*弱"],
 }
 
 # 高频公司名(用来"自动提取关键公司"——白名单方式比 NER 简单可靠)
@@ -255,7 +258,6 @@ def parse_articles(content: str, date_str: str) -> list:
             "quality_score": 8,
             "url": url,
             "companies": extract_companies(title + " " + (summary or "")),
-            "keywords": [],
         }
         articles.append(article)
         counter += 1
@@ -354,7 +356,6 @@ def parse_articles(content: str, date_str: str) -> list:
                 "quality_score": quality,
                 "url": url,
                 "companies": extract_companies(title + " " + summary),
-                "keywords": [],
             }
             articles.append(article)
             counter += 1
