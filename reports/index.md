@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-16 周四](./2026-07-16.md) — 32 篇 — 关键词：中国AI拟人化法规生效豆包千问关停 / Anthropic IPO路演三大投行十月上市 / Hassabis FINRA模式AI监管宣言 / 纽约全美首个数据中心暂停令 / OpenAI首款硬件无屏幕音箱 / Mews裁员15%AI岗位消失 / PwC双轨劳动市场
 - [2026-07-15 周三](./2026-07-15.md) — 29 篇 — 关键词：BIS警告AI基建$1万亿支出泡沫风险 / DeepSeek再融资$710亿估值 / 200经济学家+15诺奖联名AI就业警告 / Nadella逆向信息悖论企业付两次钱 / WAIC2026习近平首次亲临+Gemini3.5Pro+Atlas950 / PixVerse$4.39亿C轮$20亿 / Goldman推荐做多中国AI
 - [2026-07-13 周一](./2026-07-13.md) — 25 篇 — 关键词：Fable 5付费时代$10/$50 Mtok / GPT-5.6 Sol Ultra证明50年数学猜想 / Fidji Simo卸任OpenAI二号人物 / Meta Iris自研芯片9月量产14GW / 马来西亚PMX AI全球首个政府Agentic分身
 - [2026-07-12 周日](./2026-07-12.md) — 30 篇 — 关键词：SK Hynix $265亿史上最大外国公司在美IPO / Apple起诉OpenAI窃取商业机密 / GPT-5.6 Sol/Terra/Luna全面公开 / 日本Noetra$61亿主权AI / 中国AI拟人化暂行办法7月15日生效
