@@ -268,14 +268,10 @@ body {
 .node.l4:hover { background: var(--layer-l4-bg); }
 
 .node.hot {
-  background: linear-gradient(180deg, var(--bg), #fef7e0);
+  /* 恒暗色高亮节点(不随系统浅色模式变亮) */
+  background: linear-gradient(180deg, var(--bg-2), rgba(226, 192, 126, 0.14));
   border-color: var(--accent);
   font-weight: 600;
-}
-@media (prefers-color-scheme: dark) {
-  .node.hot {
-    background: linear-gradient(180deg, var(--bg-2), rgba(251, 146, 60, 0.15));
-  }
 }
 .node.hot::after {
   content: '⭐';
@@ -307,11 +303,9 @@ body {
   border-color: var(--layer-l2-border);
 }
 .country-col.cn {
-  background: #fef2f2;
-  border-color: #fecaca;
-}
-@media (prefers-color-scheme: dark) {
-  .country-col.cn { background: rgba(220, 38, 38, 0.08); border-color: rgba(220, 38, 38, 0.3); }
+  /* 恒暗色(不随系统浅色模式变亮):暗底 + 红调,与美国列(蓝调)对称 */
+  background: rgba(220, 38, 38, 0.08);
+  border-color: rgba(220, 38, 38, 0.3);
 }
 .country-col h3 {
   font-family: 'Noto Serif SC', serif;
@@ -320,22 +314,17 @@ body {
   font-weight: 700;
 }
 .country-col.us h3 { color: var(--layer-l2); }
-.country-col.cn h3 { color: #b91c1c; }
-
-@media (prefers-color-scheme: dark) {
-  .country-col.cn h3 { color: #f87171; }
-}
+.country-col.cn h3 { color: #f87171; }
 
 /* Hot events */
 .event-card {
-  background: linear-gradient(180deg, var(--bg), #fef7e0);
-  border: 1px solid var(--accent);
+  /* 恒暗色卡片(全站暗色主题,不随系统浅色模式变亮):暗底 + 极淡金调 + 金色左边条标识"焦点" */
+  background: linear-gradient(180deg, var(--bg-2), rgba(226, 192, 126, 0.05));
+  border: 1px solid rgba(226, 192, 126, 0.28);
+  border-left: 3px solid var(--accent);
   border-radius: 10px;
   padding: 16px 20px;
   margin-bottom: 12px;
-}
-@media (prefers-color-scheme: dark) {
-  .event-card { background: linear-gradient(180deg, var(--bg-2), rgba(251, 146, 60, 0.08)); }
 }
 .event-title {
   font-family: 'Noto Serif SC', serif;
