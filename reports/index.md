@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-18 周六](./2026-07-18.md) — 28 篇 — 关键词：WAIC2026开幕习近平首次亲临+WAICO29国签署 / Kimi K3 2.8T全球最大开源模型 / NVIDIA+Noetra日本27500GPU国家AI工厂 / Gemini3.5Pro三次跳票 / AI裁员回旋镖55%企业后悔 / 华为Atlas950SuperPod / Check Point AI自主攻击操作员
 - [2026-07-17 周五](./2026-07-17.md) — 30 篇 — 关键词：TSMC资本开支上调$640亿营收40%+ / Apple Intelligence中国获批阿里千问+百度 / IBM暴跌25%创1968年来最大跌幅 / Ode with Anthropic $15亿实施公司启动 / 200经济学家16诺奖联名AI就业 / Thinking Machines Inkling 975B开源 / x402 Foundation 40巨头AI Agent支付标准
 - [2026-07-16 周四](./2026-07-16.md) — 32 篇 — 关键词：中国AI拟人化法规生效豆包千问关停 / Anthropic IPO路演三大投行十月上市 / Hassabis FINRA模式AI监管宣言 / 纽约全美首个数据中心暂停令 / OpenAI首款硬件无屏幕音箱 / Mews裁员15%AI岗位消失 / PwC双轨劳动市场
 - [2026-07-15 周三](./2026-07-15.md) — 29 篇 — 关键词：BIS警告AI基建$1万亿支出泡沫风险 / DeepSeek再融资$710亿估值 / 200经济学家+15诺奖联名AI就业警告 / Nadella逆向信息悖论企业付两次钱 / WAIC2026习近平首次亲临+Gemini3.5Pro+Atlas950 / PixVerse$4.39亿C轮$20亿 / Goldman推荐做多中国AI
