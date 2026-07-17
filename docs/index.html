@@ -303,10 +303,20 @@ header {
 .content-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
   margin-bottom: 20px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--line);
+}
+
+.ch-left {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
 .content-title {
@@ -321,6 +331,38 @@ header {
   font-size: 0.72rem;
   color: var(--ink-3);
   letter-spacing: 0.05em;
+}
+
+/* ═════ 版块导航:阅读库 / 每周深度 / AI地图 / 趋势(跨页切换) ═════ */
+.section-nav {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 4px;
+  flex-wrap: wrap;
+}
+.section-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 7px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+.section-nav a:hover { background: var(--bg-3); color: var(--ink); }
+.section-nav a.active {
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  box-shadow: 0 1px 6px rgba(226, 192, 126, 0.25);
 }
 
 .view-tabs {
@@ -1342,10 +1384,7 @@ mark {
     </div>
     <div class="utility">
       <button onclick="openGistSetupModal()" id="gist-sync-btn" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px; cursor:pointer;">☁️ <span id="gist-status">未连接</span></button>
-      <a href="./weekly.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📅 每周深度</a>
       <a href="./clips.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📎 我的裁剪</a>
-      <a href="./map.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">🗺️ AI 地图</a>
-      <a href="./stats.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📊 趋势</a>
       <span class="meta-pill" id="stat-total-reports">-- 份早报</span>
       <span class="meta-pill" id="stat-total-articles">-- 篇文章</span>
     </div>
@@ -1399,8 +1438,16 @@ mark {
 
   <main class="content">
     <div class="content-header">
-      <h2 class="content-title" id="content-title">📚 全部早报</h2>
-      <div class="content-meta" id="content-meta">--</div>
+      <div class="ch-left">
+        <h2 class="content-title" id="content-title">📚 全部早报</h2>
+        <div class="content-meta" id="content-meta">--</div>
+      </div>
+      <nav class="section-nav">
+        <a href="./index.html" class="active">📚 阅读库</a>
+        <a href="./weekly.html">📅 每周深度</a>
+        <a href="./map.html">🗺️ AI 地图</a>
+        <a href="./stats.html">📊 趋势</a>
+      </nav>
     </div>
 
     <div class="view-tabs">
