@@ -623,477 +623,24 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <h1 class="page-title">AI 世界地图</h1>
-<div class="page-subtitle">2026 年 5 月版 · 4 层架构 · 60+ 关键玩家</div>
-<div class="page-meta">数据来源:同光·AI早报 · 最后更新 2026-05-16</div>
+<div class="page-subtitle" id="page-subtitle">加载中…</div>
+<div class="page-meta" id="page-meta">数据来源:同光·AI早报</div>
 
 <nav class="view-tabs">
   <button class="view-tab active" onclick="switchView('overview', this)">🌐 全景视图</button>
   <button class="view-tab" onclick="switchView('china-us', this)">🇨🇳🇺🇸 中美对比</button>
-  <button class="view-tab" onclick="switchView('hot-events', this)">🔥 本周重磅</button>
-  <button class="view-tab" onclick="switchView('customers', this)">🏢 客户视角</button>
+  <button class="view-tab" onclick="switchView('hot-events', this)">🔥 近期焦点</button>
+  <button class="view-tab" onclick="switchView('cases', this)">🏢 落地案例</button>
 </nav>
 
-<!-- View 1: Overview -->
-<div class="view active" id="view-overview">
-
-<div class="view-insight">
-  <h3>💡 全景视图 · 核心洞察(本周)</h3>
-  <p><strong>4 层正在剧烈分化:</strong> 模型层从"百家争鸣"收敛到"美中各 5 家头部" · 基础设施层 NVIDIA 一家通吃 · 应用层垂直工具仍在百花齐放 · 客户层金融/医药跑得最快。</p>
-  <div class="quote">"AI 真正的钱不在炼金子的(模型), 而在卖铲子的(NVIDIA)和挖矿的(企业 SaaS+AI)" — 本周观察</div>
-  <p style="font-size: 12px; color: var(--ink-3); margin-top: 6px;">📊 数据来源:266 篇早报 · 5/14-5/17 跨度</p>
-</div>
-
-<div class="layer layer-l1">
-  <div class="layer-title">① 模型层 · Foundation Models</div>
-  <div class="layer-subtitle">// 谁在造"大脑"</div>
-
-  <div class="insight-box">
-    <div class="insight-row">
-      <span class="insight-tag fact">📊 数据</span>
-      <span class="insight-text"><strong>全球 22+ 家在竞争, 但本周 90% 资本/报道集中在 5 家头部</strong></span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag">💡 洞察</span>
-      <span class="insight-text">头部 4 家(Anthropic/OpenAI/Google DM/Meta) + 中国 5 家梯队(DeepSeek 领跑) · 其他 15+ 家正在边缘化</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag trend">➡️ 趋势</span>
-      <span class="insight-text">Anthropic 估值 950B 反超 OpenAI 部分企业场景 <span class="trend-bar trend-up">↑</span> · DeepSeek 500B 让中国首次进入第一梯队估值</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag action">🎯 启示</span>
-      <span class="insight-text"><strong>CIO 选型策略:</strong>不押单一供应商, 配置至少 2 家头部 + 1 家中国(防贸易风险)</span>
-    </div>
-  </div>
-
-  <div class="row-label">美国头部</div>
-  <div class="nodes">
-    <div class="node l1 hot" onclick="show('Anthropic')">Anthropic<span class="meta">950B</span></div>
-    <div class="node l1" onclick="show('OpenAI')">OpenAI<span class="meta">5T 设施</span></div>
-    <div class="node l1" onclick="show('Google DeepMind')">Google DeepMind</div>
-    <div class="node l1" onclick="show('Meta AI')">Meta Llama</div>
-    <div class="node l1" onclick="show('xAI')">xAI Grok</div>
-  </div>
-  <div class="row-label">中国梯队</div>
-  <div class="nodes">
-    <div class="node l1 hot" onclick="show('DeepSeek')"><span class="cn-flag">🇨🇳</span>DeepSeek<span class="meta">500B</span></div>
-    <div class="node l1" onclick="show('Moonshot')"><span class="cn-flag">🇨🇳</span>Moonshot · Kimi</div>
-    <div class="node l1" onclick="show('智谱')"><span class="cn-flag">🇨🇳</span>智谱 GLM</div>
-    <div class="node l1" onclick="show('MiniMax')"><span class="cn-flag">🇨🇳</span>MiniMax</div>
-    <div class="node l1" onclick="show('阿里通义')"><span class="cn-flag">🇨🇳</span>阿里通义</div>
-    <div class="node l1" onclick="show('字节豆包')"><span class="cn-flag">🇨🇳</span>字节豆包</div>
-    <div class="node l1" onclick="show('百度文心')"><span class="cn-flag">🇨🇳</span>百度文心</div>
-    <div class="node l1" onclick="show('腾讯混元')"><span class="cn-flag">🇨🇳</span>腾讯混元</div>
-    <div class="node l1" onclick="show('华为盘古')"><span class="cn-flag">🇨🇳</span>华为盘古</div>
-  </div>
-  <div class="row-label">开源 + 欧洲</div>
-  <div class="nodes">
-    <div class="node l1" onclick="show('Mistral')">Mistral</div>
-    <div class="node l1" onclick="show('Cohere')">Cohere</div>
-    <div class="node l1" onclick="show('Hugging Face')">Hugging Face</div>
-  </div>
-</div>
-
-<div class="layer layer-l2">
-  <div class="layer-title">② 基础设施层 · Infrastructure</div>
-  <div class="layer-subtitle">// 芯片 / 云 / 推理 / 工具链</div>
-
-  <div class="insight-box">
-    <div class="insight-row">
-      <span class="insight-tag fact">📊 数据</span>
-      <span class="insight-text"><strong>NVIDIA 占 90%+ 全球 AI 算力市场, 市值近 6 万亿(占美股约 10%)</strong></span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag">💡 洞察</span>
-      <span class="insight-text">真正的"卖铲人"经济:模型层每融资 1 美元, NVIDIA 拿走 ~0.4 美元 · 集中度风险积累中</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag trend">➡️ 趋势</span>
-      <span class="insight-text">NVIDIA 七日涨 20% <span class="trend-bar trend-up">↑</span> · AMD/Cerebras 追赶但短期难撼动 · 中国国产 GPU(华为昇腾)替代加速</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag action">🎯 启示</span>
-      <span class="insight-text"><strong>采购侧:</strong>GPU 短缺周期延长, 自建 AI 基础设施 ROI 评估周期至少 24 个月以上</span>
-    </div>
-  </div>
-
-  <div class="row-label">芯片</div>
-  <div class="nodes">
-    <div class="node l2 hot" onclick="show('NVIDIA')">NVIDIA<span class="meta">市值近 6T</span></div>
-    <div class="node l2" onclick="show('AMD')">AMD</div>
-    <div class="node l2" onclick="show('TSMC')">TSMC</div>
-    <div class="node l2" onclick="show('Broadcom')">Broadcom</div>
-    <div class="node l2" onclick="show('Cerebras')">Cerebras</div>
-    <div class="node l2" onclick="show('Groq')">Groq</div>
-  </div>
-  <div class="row-label">云平台</div>
-  <div class="nodes">
-    <div class="node l2" onclick="show('AWS')">AWS · Bedrock</div>
-    <div class="node l2" onclick="show('Azure')">Azure · Microsoft</div>
-    <div class="node l2" onclick="show('GCP')">GCP</div>
-    <div class="node l2" onclick="show('Oracle')">Oracle</div>
-    <div class="node l2" onclick="show('CoreWeave')">CoreWeave</div>
-    <div class="node l2" onclick="show('阿里云')"><span class="cn-flag">🇨🇳</span>阿里云</div>
-    <div class="node l2" onclick="show('华为云')"><span class="cn-flag">🇨🇳</span>华为云</div>
-  </div>
-  <div class="row-label">开源工具链</div>
-  <div class="nodes">
-    <div class="node l2" onclick="show('LangChain')">LangChain</div>
-    <div class="node l2" onclick="show('LlamaIndex')">LlamaIndex</div>
-    <div class="node l2" onclick="show('Crew AI')">Crew AI</div>
-    <div class="node l2" onclick="show('Vapi')">Vapi 语音</div>
-  </div>
-</div>
-
-<div class="layer layer-l3">
-  <div class="layer-title">③ 应用层 · Applications</div>
-  <div class="layer-subtitle">// 通用 Agent / 企业 SaaS+AI / 垂直工具</div>
-
-  <div class="insight-box">
-    <div class="insight-row">
-      <span class="insight-tag fact">📊 数据</span>
-      <span class="insight-text"><strong>100+ 家应用层公司在竞争, 但已分化为 3 梯队</strong></span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag">💡 洞察</span>
-      <span class="insight-text"><strong>通用 Agent</strong>(Claude Code/Cursor)收敛到 3 家头部 · <strong>企业 SaaS+AI</strong>(Salesforce/SAP)护城河深 · <strong>垂直工具</strong>(Clay/HappyRobot)百花齐放</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag trend">➡️ 趋势</span>
-      <span class="insight-text">通用 Agent 5 月开始 ARR 暴涨 <span class="trend-bar trend-up">↑</span> · 平台型 SaaS 加速集成 AI · 垂直工具创业不再像 2024 年那么热</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag action">🎯 启示</span>
-      <span class="insight-text"><strong>CIO 选型策略:</strong>分场景配置 — 通用任务用 Claude Code, 流程任务用 SaaS+AI, 垂直专家场景用单点工具</span>
-    </div>
-  </div>
-
-  <div class="row-label">编程 / 通用 Agent</div>
-  <div class="nodes">
-    <div class="node l3" onclick="show('Claude Code')">Claude Code</div>
-    <div class="node l3" onclick="show('Cursor')">Cursor</div>
-    <div class="node l3" onclick="show('GitHub Copilot')">GitHub Copilot</div>
-    <div class="node l3" onclick="show('Devin')">Devin</div>
-    <div class="node l3" onclick="show('Replit AI')">Replit AI</div>
-  </div>
-  <div class="row-label">企业 SaaS + AI</div>
-  <div class="nodes">
-    <div class="node l3" onclick="show('Salesforce Agentforce')">Salesforce Agentforce</div>
-    <div class="node l3" onclick="show('SAP Joule')">SAP Joule</div>
-    <div class="node l3" onclick="show('ServiceNow')">ServiceNow</div>
-    <div class="node l3" onclick="show('Workday')">Workday AI</div>
-    <div class="node l3" onclick="show('Adobe AI')">Adobe AI</div>
-    <div class="node l3" onclick="show('Databricks')">Databricks</div>
-    <div class="node l3" onclick="show('Snowflake')">Snowflake</div>
-  </div>
-  <div class="row-label">销售 / 客服 / 营销</div>
-  <div class="nodes">
-    <div class="node l3" onclick="show('Clay')">Clay</div>
-    <div class="node l3" onclick="show('Apollo')">Apollo</div>
-    <div class="node l3" onclick="show('Gong')">Gong</div>
-    <div class="node l3" onclick="show('HappyRobot')">HappyRobot</div>
-    <div class="node l3" onclick="show('Sapphire')">Sapphire</div>
-  </div>
-  <div class="row-label">🇨🇳 中国应用</div>
-  <div class="nodes">
-    <div class="node l3" onclick="show('钉钉 AI')">钉钉 AI</div>
-    <div class="node l3" onclick="show('企业微信 AI')">企业微信 AI</div>
-    <div class="node l3" onclick="show('飞书 AI')">飞书 AI</div>
-    <div class="node l3" onclick="show('Kimi')">Kimi</div>
-    <div class="node l3" onclick="show('豆包')">豆包</div>
-    <div class="node l3" onclick="show('文心一言')">文心一言</div>
-  </div>
-</div>
-
-<div class="layer layer-l4">
-  <div class="layer-title">④ 标杆客户层 · Enterprise Adopters</div>
-  <div class="layer-subtitle">// 真在用 AI 落地的大企业</div>
-
-  <div class="insight-box">
-    <div class="insight-row">
-      <span class="insight-tag fact">📊 数据</span>
-      <span class="insight-text"><strong>金融/医药行业 AI 部署最积极, 但 ROI 还在验证期</strong></span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag">💡 洞察</span>
-      <span class="insight-text">头部金融机构(JPMorgan/BoA)已完成"概念证明 → 全员部署"过渡 · 制造业还在试点(Schneider 是少数全球化先锋)</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag trend">➡️ 趋势</span>
-      <span class="insight-text">采购模式从"单家供应商"转向"多模型混合调度" <span class="trend-bar trend-up">↑</span> · 中国企业更倾向"自研+部分国产"组合</span>
-    </div>
-    <div class="insight-row">
-      <span class="insight-tag action">🎯 启示</span>
-      <span class="insight-text"><strong>对标行动:</strong>看你所在行业的头部 3 家在用什么 · 落后超过 12 个月的企业需立即启动 AI 战略</span>
-    </div>
-  </div>
-
-  <div class="row-label">金融 / 银行</div>
-  <div class="nodes">
-    <div class="node l4" onclick="show('JPMorgan')">JPMorgan Chase</div>
-    <div class="node l4" onclick="show('Bank of America')">Bank of America</div>
-    <div class="node l4" onclick="show('Wells Fargo')">Wells Fargo</div>
-    <div class="node l4" onclick="show('Goldman Sachs')">Goldman Sachs</div>
-    <div class="node l4" onclick="show('Mastercard')">Mastercard</div>
-    <div class="node l4" onclick="show('招商银行')"><span class="cn-flag">🇨🇳</span>招商银行</div>
-    <div class="node l4" onclick="show('平安银行')"><span class="cn-flag">🇨🇳</span>平安</div>
-  </div>
-  <div class="row-label">医药 / 健康</div>
-  <div class="nodes">
-    <div class="node l4" onclick="show('Pfizer')">Pfizer</div>
-    <div class="node l4" onclick="show('Eli Lilly')">Eli Lilly</div>
-    <div class="node l4" onclick="show('Moderna')">Moderna</div>
-    <div class="node l4" onclick="show('Novartis')">Novartis</div>
-  </div>
-  <div class="row-label">零售 / 消费 / 制造</div>
-  <div class="nodes">
-    <div class="node l4" onclick="show('Walmart')">Walmart</div>
-    <div class="node l4" onclick="show('Coca-Cola')">Coca-Cola</div>
-    <div class="node l4" onclick="show('Unilever')">Unilever</div>
-    <div class="node l4" onclick="show('Schneider')">Schneider Electric</div>
-    <div class="node l4" onclick="show('Siemens')">Siemens</div>
-    <div class="node l4" onclick="show('美的')"><span class="cn-flag">🇨🇳</span>美的</div>
-    <div class="node l4" onclick="show('比亚迪')"><span class="cn-flag">🇨🇳</span>比亚迪</div>
-    <div class="node l4" onclick="show('中国移动')"><span class="cn-flag">🇨🇳</span>中国移动</div>
-  </div>
-</div>
-
-<div class="legend">
-  <div class="legend-item"><span class="legend-dot" style="background:#7c3aed"></span> 模型层</div>
-  <div class="legend-item"><span class="legend-dot" style="background:#0369a1"></span> 基础设施层</div>
-  <div class="legend-item"><span class="legend-dot" style="background:#16a34a"></span> 应用层</div>
-  <div class="legend-item"><span class="legend-dot" style="background:#b8860b"></span> 客户层</div>
-  <div class="legend-item">⭐ 本周重磅</div>
-  <div class="legend-item">🇨🇳 中国本土</div>
-  <div class="legend-item">点击节点 → 查看详情</div>
-</div>
-
-</div>
-
-<!-- View 2: China vs US -->
-<div class="view" id="view-china-us">
-
-<div class="view-insight">
-  <h3>💡 中美对比 · 核心洞察</h3>
-  <p><strong>美国全栈领先, 中国应用层快速本地化:</strong>美国头部模型估值已突破 950B, 但商业化压力大 · 中国 DeepSeek 首次进入第一梯队估值, 但芯片受限是天花板。</p>
-  <p><strong>战略意义:</strong>中美 AI 不会"二选一", 而是会形成"两套技术栈并存"格局 · 跨国企业需要双轨采购策略。</p>
-  <div class="quote">"美国卖大脑(模型), 中国卖手脚(应用) · 但中国大脑也在悄悄追赶"</div>
-</div>
-
-<div class="china-us-grid">
-  <div class="country-col us">
-    <h3>🇺🇸 美国 · 全栈领先</h3>
-    <div class="row-label">模型层</div>
-    <div class="nodes">
-      <div class="node l1 hot" onclick="show('Anthropic')">Anthropic 950B</div>
-      <div class="node l1" onclick="show('OpenAI')">OpenAI</div>
-      <div class="node l1" onclick="show('Google DeepMind')">Google DM</div>
-      <div class="node l1" onclick="show('Meta AI')">Meta Llama</div>
-      <div class="node l1" onclick="show('xAI')">xAI Grok</div>
-    </div>
-    <div class="row-label">基础设施</div>
-    <div class="nodes">
-      <div class="node l2 hot" onclick="show('NVIDIA')">NVIDIA</div>
-      <div class="node l2" onclick="show('AWS')">AWS</div>
-      <div class="node l2" onclick="show('Azure')">Azure</div>
-      <div class="node l2" onclick="show('GCP')">GCP</div>
-      <div class="node l2" onclick="show('Cerebras')">Cerebras</div>
-    </div>
-    <div class="row-label">应用</div>
-    <div class="nodes">
-      <div class="node l3" onclick="show('Salesforce Agentforce')">Salesforce</div>
-      <div class="node l3" onclick="show('Claude Code')">Claude Code</div>
-      <div class="node l3" onclick="show('Cursor')">Cursor</div>
-      <div class="node l3" onclick="show('Clay')">Clay</div>
-    </div>
-    <p style="font-size: 12.5px; color: var(--ink-2); margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--layer-l2-border); line-height: 1.65;">
-      <strong>优势:</strong> 全栈领先 · 资本密集 · 头部公司估值千亿级<br>
-      <strong>风险:</strong> 商业化压力大 · 估值合理性存疑
-    </p>
-  </div>
-
-  <div class="country-col cn">
-    <h3>🇨🇳 中国 · 应用层活跃</h3>
-    <div class="row-label">模型层</div>
-    <div class="nodes">
-      <div class="node l1 hot" onclick="show('DeepSeek')">DeepSeek 500B</div>
-      <div class="node l1" onclick="show('Moonshot')">Moonshot</div>
-      <div class="node l1" onclick="show('智谱')">智谱</div>
-      <div class="node l1" onclick="show('MiniMax')">MiniMax</div>
-      <div class="node l1" onclick="show('阿里通义')">阿里通义</div>
-      <div class="node l1" onclick="show('字节豆包')">字节豆包</div>
-    </div>
-    <div class="row-label">基础设施</div>
-    <div class="nodes">
-      <div class="node l2" onclick="show('阿里云')">阿里云</div>
-      <div class="node l2" onclick="show('华为云')">华为云</div>
-      <div class="node l2" onclick="show('腾讯云')">腾讯云</div>
-      <div class="node l2" onclick="show('百度智能云')">百度云</div>
-    </div>
-    <div class="row-label">应用</div>
-    <div class="nodes">
-      <div class="node l3" onclick="show('钉钉 AI')">钉钉 AI</div>
-      <div class="node l3" onclick="show('企业微信 AI')">企业微信</div>
-      <div class="node l3" onclick="show('飞书 AI')">飞书 AI</div>
-      <div class="node l3" onclick="show('Kimi')">Kimi</div>
-      <div class="node l3" onclick="show('豆包')">豆包</div>
-    </div>
-    <p style="font-size: 12.5px; color: var(--ink-2); margin-top: 14px; padding-top: 12px; border-top: 1px dashed #fecaca; line-height: 1.65;">
-      <strong>优势:</strong> 应用层快速本地化 · 政策推动 · 工程能力强<br>
-      <strong>风险:</strong> 芯片受限 · 顶尖模型与美国差距(缩小中)
-    </p>
-  </div>
-</div>
-
-<p style="text-align: center; margin-top: 20px; font-size: 13px; color: var(--ink-3); font-family: 'JetBrains Mono', monospace;">
-  📊 本周(5/13-5/19)早报覆盖:🇺🇸 53 篇 · 🇨🇳 17 篇(占 24.3%)
-</p>
-
-</div>
-
-<!-- View 3: Hot Events -->
-<div class="view" id="view-hot-events">
-
-<div class="view-insight">
-  <h3>💡 本周(5/13-5/19)信号解读</h3>
-  <p><strong>3 个真信号 + 2 个噪音:</strong></p>
-  <p><strong>真信号:</strong> ① Anthropic 估值反超部分 OpenAI 场景 — 长期投入派开始赢 · ② DeepSeek 500B — 中国 AI 投资周期启动 · ③ GPT-5.5 幻觉降 52.5% — 金融/医疗严肃场景将解禁</p>
-  <p><strong>噪音(谨慎):</strong> ① NVIDIA 七日涨 20% — 市场情绪过热, 是否估值合理需观察 · ② 中美对话框架 — 短期不会有政策落地</p>
-  <div class="quote">"区分真信号和噪音:看是否影响 6 个月内的决策, 不影响就是噪音"</div>
-</div>
-
-<h2 style="font-family: 'Noto Serif SC', serif; font-size: 1.3rem; margin-bottom: 18px; color: var(--ink); font-weight: 700;">🔥 本周(2026-05-13 至 2026-05-19)重磅事件</h2>
-
-<div class="event-card">
-  <div class="event-title">⭐⭐⭐ Anthropic 估值 950 亿美元 · 寻求 500 亿融资</div>
-  <div class="event-meta">5/15 · Bloomberg + WSJ + The Information 多源</div>
-  <div class="event-impact">
-    最新估值首次超越 OpenAI 部分企业份额,显示资本市场对"Claude 路线"长期信心。同期 Anthropic 与 AWS 签订深度合作扩大 Bedrock 算力供应。
-    <strong>对企业 CIO 影响:</strong>Anthropic 资金护城河形成,Claude 系列供应稳定性显著提升,可优先纳入选型评估。
-  </div>
-</div>
-
-<div class="event-card">
-  <div class="event-title">⭐⭐⭐ DeepSeek 首轮 500 亿元融资 · 中国 AI 首次进入全球第一梯队</div>
-  <div class="event-meta">5/15 · 36 氪 + 量子位 + Reuters 三方报道</div>
-  <div class="event-impact">
-    中国本土大模型公司首次拿到接近全球第一梯队估值的融资,代表本土资本对 AI 长期投入的信心。
-    <strong>对中国市场影响:</strong>国产替代加速,内资 AI 应用厂商有了真正的"基础设施供应商"选择。
-  </div>
-</div>
-
-<div class="event-card">
-  <div class="event-title">⭐⭐ GPT-5.5 Instant 发布 · 幻觉减少 52.5%</div>
-  <div class="event-meta">5/14 · OpenAI 官方</div>
-  <div class="event-impact">
-    OpenAI 在 GPT-5 之后推出更快更稳定的 Instant 版本,重点降幻觉。对企业级 AI 应用是重大利好——之前阻碍金融/医疗严肃场景上线的最大障碍是幻觉。
-    <strong>对应用层影响:</strong>BFSI 行业 AI Agent 解禁信号,可加速合规场景上线。
-  </div>
-</div>
-
-<div class="event-card">
-  <div class="event-title">⭐ 美中 AI 安全对话框架启动(历史首次)</div>
-  <div class="event-meta">5/13 · 多家权威同步报道</div>
-  <div class="event-impact">
-    全球两大 AI 力量首次坐下来谈安全标准协调。短期不会有立刻政策变化,但确立了一个"长期对话渠道"。
-    <strong>对跨国企业影响:</strong>合规复杂度可能在 2027 年迎来阶段性收敛。
-  </div>
-</div>
-
-<div class="event-card">
-  <div class="event-title">⭐ NVIDIA 七日股价上涨 20% · 市值逼近 6 万亿美元</div>
-  <div class="event-meta">5/14 · Bloomberg / FT</div>
-  <div class="event-impact">
-    AI 算力需求未见任何放缓信号,NVIDIA 进一步巩固"AI 卖铲人"地位。市值占美股约 10%,集中度风险也在累积。
-    <strong>对采购侧:</strong>GPU 短缺周期延长,自建 AI 基础设施 ROI 评估周期需拉长。
-  </div>
-</div>
-
-<p style="font-size: 11px; color: var(--ink-4); text-align: center; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">
-  数据来源:同光·AI早报 · 5/15 v5.5 整套自动化跑出 70 篇精选 · 24.3% 中国相关
-</p>
-</div>
-
-<!-- View 4: Customer View -->
-<div class="view" id="view-customers">
-
-<div class="view-insight">
-  <h3>💡 客户视角 · 三大规律</h3>
-  <p><strong>规律 1 — 多供应商策略已是标配:</strong> JPMorgan、Pfizer、Walmart 都不押单一供应商, 平均使用 2-3 家 AI 厂商</p>
-  <p><strong>规律 2 — "自研 + 采购"组合化:</strong> 头部企业都在保留核心场景自研能力(如 BoA Erica、JPMorgan LLM Suite), 同时采购通用能力</p>
-  <p><strong>规律 3 — 行业渗透速度差异:</strong> 金融(深) > 医药(中) > 零售(中) > 制造(浅) · 你所在行业的位置决定 AI 战略激进度</p>
-  <div class="quote">"对标头部企业:不是模仿他们做什么, 而是看他们没做什么 — 那才是真壁垒"</div>
-</div>
-
-<h2 style="font-family: 'Noto Serif SC', serif; font-size: 1.3rem; margin-bottom: 6px; color: var(--ink); font-weight: 700;">🏢 标杆客户:他们用了哪些 AI</h2>
-<p style="font-size: 12.5px; color: var(--ink-3); margin-bottom: 18px;">从客户视角看 AI 采购组合(基于早报报道整理)</p>
-
-<div class="customer-grid">
-
-<div class="customer-card">
-  <div class="industry-tag">金融 · 银行</div>
-  <div class="name">JPMorgan Chase</div>
-  <div class="uses"><strong>使用:</strong>OpenAI(主) + 自研 LLM Suite<br><strong>场景:</strong>研究 / 合规 / 客服<br><strong>规模:</strong>20 万员工已部署 LLM Suite</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">金融 · 银行</div>
-  <div class="name">Bank of America</div>
-  <div class="uses"><strong>使用:</strong>Erica(自研) + 多家供应商<br><strong>场景:</strong>客服 / 反欺诈 / 信贷<br><strong>规模:</strong>2 亿+ 客户交互/年</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">医药</div>
-  <div class="name">Pfizer</div>
-  <div class="uses"><strong>使用:</strong>OpenAI Enterprise + IBM Watson<br><strong>场景:</strong>药物发现 / 临床试验<br><strong>规模:</strong>50+ AI 项目</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">零售</div>
-  <div class="name">Walmart</div>
-  <div class="uses"><strong>使用:</strong>Microsoft Azure OpenAI + 自研<br><strong>场景:</strong>员工辅助 / 库存预测<br><strong>规模:</strong>50,000+ 员工用 AI Helper</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">消费品</div>
-  <div class="name">Coca-Cola</div>
-  <div class="uses"><strong>使用:</strong>OpenAI + Salesforce Einstein<br><strong>场景:</strong>营销 / 客户洞察 / 创意<br><strong>规模:</strong>"Coca-Cola Y3000" AI 风味试点</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">制造</div>
-  <div class="name">Schneider Electric</div>
-  <div class="uses"><strong>使用:</strong>Microsoft Copilot + 自研工业 AI<br><strong>场景:</strong>能源 / 自动化 / 维护预测<br><strong>规模:</strong>全球 100+ 工厂 AI 化</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">🇨🇳 银行</div>
-  <div class="name">招商银行</div>
-  <div class="uses"><strong>使用:</strong>自研 + 阿里通义 + 智谱<br><strong>场景:</strong>客服 / 财富顾问 / 风控<br><strong>规模:</strong>"招招"AI 助手全行覆盖</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">🇨🇳 通信</div>
-  <div class="name">中国移动</div>
-  <div class="uses"><strong>使用:</strong>九天大模型(自研) + 文心一言<br><strong>场景:</strong>政企 AI / 网络运维<br><strong>规模:</strong>对外提供 AI 算力服务</div>
-</div>
-
-<div class="customer-card">
-  <div class="industry-tag">🇨🇳 制造</div>
-  <div class="name">比亚迪</div>
-  <div class="uses"><strong>使用:</strong>多家供应商混合(含字节豆包)<br><strong>场景:</strong>智能驾驶 / 工厂 / 售后<br><strong>规模:</strong>全球新能源汽车第一</div>
-</div>
-
-</div>
-
-<p style="font-size: 11px; color: var(--ink-4); text-align: center; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">
-  💡 客户数据基于公开报道整理 · 具体使用情况可能变化 · 仅供决策参考
-</p>
-</div>
+<div class="view active" id="view-overview"><div style="text-align:center;color:var(--ink-3);padding:48px;">正在加载最新早报数据…</div></div>
+<div class="view" id="view-china-us"></div>
+<div class="view" id="view-hot-events"></div>
+<div class="view" id="view-cases"></div>
 
 <footer>
-  © 2026 同光·AI早报 · 数据驱动 · 持续更新 · 
-  <a href="./index.html">返回阅读库</a> · 
+  © 2026 同光·AI早报 · 数据随早报每日自动更新 ·
+  <a href="./index.html">返回阅读库</a> ·
   <a href="javascript:print()">打印此页</a>
 </footer>
 
@@ -1108,35 +655,289 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <script>
-const COMPANIES = {
-  'Anthropic': { tag: '模型层 · 美国', desc: 'Claude 系列模型供应商,聚焦 AI 安全与对齐。Constitutional AI 创始团队。', stats: { '估值': '950 亿美元(5/15)', '本周报道': '22 次', '主要合作': 'AWS / Apple' } },
-  'OpenAI': { tag: '模型层 · 美国', desc: 'ChatGPT / GPT 系列。AI 民主化先锋,目前在向"AI Agent + Infra"演进。', stats: { '近期投入': '5 万亿美元基础设施', '本周报道': '23 次', '主要投资方': 'Microsoft' } },
-  'DeepSeek': { tag: '模型层 · 🇨🇳 中国', desc: '中国本土最受瞩目的开源 AI 公司,DeepSeek-V2/V3 在全球榜单排名靠前。', stats: { '本周融资': '500 亿元人民币 ⭐', '战略意义': '中国首次进入全球第一梯队' } },
-  'NVIDIA': { tag: '基础设施 · 美国', desc: '全球 AI 算力核心供应商,GPU 市占率压倒性领先。Blackwell + Rubin 新一代芯片。', stats: { '市值': '近 6 万亿美元', '占美股': '约 10%', '近期股价': '七日上涨 20%' } },
-  'Microsoft': { tag: '生态 · 美国', desc: '通过 OpenAI 投资 + Azure + Copilot 形成全栈 AI 布局。', stats: { '主要押注': 'OpenAI 战略投资', '产品': 'Copilot / Azure AI / Foundry' } },
-  'Salesforce Agentforce': { tag: '应用 · 美国', desc: 'CRM 巨头的 AI Agent 平台,2024 年 9 月发布,快速增长。', stats: { '客户规模': '1000+ 企业上线', '关键卖点': 'No-code AI Agent 构建' } },
-  'JPMorgan': { tag: '客户 · 美国', desc: '全球最大银行之一,AI 部署最积极的金融机构。', stats: { '员工 AI 化': '20 万人用 LLM Suite', '科技投入': '每年 170 亿美元' } },
+/* ===================================================================
+   同光 AI 世界地图 —— 数据驱动版
+   数据源: ./data/index.json(与"趋势"页同源,由 build_index.py 每日生成)
+   四个视图全部按 tag_index.companies(真实提及数)与 articles 动态渲染,
+   不再有任何硬编码的公司/日期,早报更新即地图更新。
+   =================================================================== */
+
+/* 公司 -> 产业链层/国别/标签。只归类"真正的 AI 产业玩家"。
+   layer: l1 模型层 / l2 基础设施 / l3 应用层 / l4 落地层
+   country: us 美 / cn 中 / other 其它 */
+const CLASSIFY = {
+  // —— l1 模型层 ——
+  'Anthropic': {layer:'l1', country:'us',    tag:'模型层 · 美国'},
+  'OpenAI':    {layer:'l1', country:'us',    tag:'模型层 · 美国'},
+  'Google':    {layer:'l1', country:'us',    tag:'模型层 · 美国'},
+  'DeepMind':  {layer:'l1', country:'us',    tag:'模型层 · 美国(英)'},
+  'Meta':      {layer:'l1', country:'us',    tag:'模型层 · 美国'},
+  'xAI':       {layer:'l1', country:'us',    tag:'模型层 · 美国'},
+  'Mistral':   {layer:'l1', country:'other', tag:'模型层 · 法国'},
+  'Mythos':    {layer:'l1', country:'us',    tag:'模型 · Anthropic'},
+  'DeepSeek':  {layer:'l1', country:'cn',    tag:'模型层 · 中国'},
+  '智谱':      {layer:'l1', country:'cn',    tag:'模型层 · 中国'},
+  'Kimi':      {layer:'l1', country:'cn',    tag:'模型层 · 中国'},
+  'Moonshot':  {layer:'l1', country:'cn',    tag:'模型层 · 中国'},
+  '通义':      {layer:'l1', country:'cn',    tag:'模型 · 阿里'},
+  '豆包':      {layer:'l1', country:'cn',    tag:'模型 · 字节'},
+  '混元':      {layer:'l1', country:'cn',    tag:'模型 · 腾讯'},
+  '百度':      {layer:'l1', country:'cn',    tag:'模型层 · 中国'},
+  // —— l2 基础设施(芯片/算力/云) ——
+  'NVIDIA':    {layer:'l2', country:'us',    tag:'算力 · 美国'},
+  'AWS':       {layer:'l2', country:'us',    tag:'云 · 美国'},
+  'Bedrock':   {layer:'l2', country:'us',    tag:'云平台 · AWS'},
+  'Amazon':    {layer:'l2', country:'us',    tag:'云 · 美国'},
+  'Microsoft': {layer:'l2', country:'us',    tag:'云 · 美国'},
+  'Oracle':    {layer:'l2', country:'us',    tag:'云 · 美国'},
+  'Broadcom':  {layer:'l2', country:'us',    tag:'芯片 · 美国'},
+  'Micron':    {layer:'l2', country:'us',    tag:'存储 · 美国'},
+  'Databricks':{layer:'l2', country:'us',    tag:'数据平台 · 美国'},
+  'Snowflake': {layer:'l2', country:'us',    tag:'数据平台 · 美国'},
+  '台积电':    {layer:'l2', country:'other', tag:'晶圆代工 · 台湾'},
+  'TSMC':      {layer:'l2', country:'other', tag:'晶圆代工 · 台湾'},
+  '阿里':      {layer:'l2', country:'cn',    tag:'云 · 中国'},
+  '腾讯':      {layer:'l2', country:'cn',    tag:'云 · 中国'},
+  '华为':      {layer:'l2', country:'cn',    tag:'芯片/云 · 中国'},
+  // —— l3 应用层(Agent/平台/工具) ——
+  'Salesforce':  {layer:'l3', country:'us',    tag:'Agent · 美国'},
+  'Hugging Face':{layer:'l3', country:'us',    tag:'开源平台 · 美国'},
+  'ServiceNow':  {layer:'l3', country:'us',    tag:'企业软件 · 美国'},
+  'SAP':         {layer:'l3', country:'other', tag:'企业软件 · 德国'},
+  'Apple':       {layer:'l3', country:'us',    tag:'端侧生态 · 美国'},
+  '字节':        {layer:'l3', country:'cn',    tag:'应用生态 · 中国'},
+  // —— l4 落地层(企业采用/咨询) ——
+  'IBM':       {layer:'l4', country:'us', tag:'企业 IT · 美国'},
+  'BCG':       {layer:'l4', country:'us', tag:'咨询 · 美国'},
+  'Deloitte':  {layer:'l4', country:'us', tag:'咨询 · 美国'},
+  'PwC':       {layer:'l4', country:'us', tag:'咨询 · 美国'},
+  'McKinsey':  {layer:'l4', country:'us', tag:'咨询 · 美国'},
+  'Accenture': {layer:'l4', country:'us', tag:'咨询 · 美国'},
 };
 
-function show(name) {
-  const d = COMPANIES[name] || { tag: '点击节点查看', desc: '该公司信息正在补充中,后续版本会自动从同光·AI早报抓取最新报道。', stats: { '状态': '基础数据待补充' } };
-  let html = `<h3>${name}</h3><span class="tag">${d.tag}</span><div class="desc">${d.desc}</div><div class="stats">`;
-  for (const k in d.stats) html += `<div class="stat-row"><span class="label">${k}</span><span class="val">${d.stats[k]}</span></div>`;
-  html += `</div><p style="font-size:11.5px;color:var(--ink-3);margin-top:10px;">💡 完整报道请查看<a href="./index.html" style="color:var(--accent);">同光·AI早报阅读库</a></p>`;
+/* 媒体/研究机构/个人观察者:是高频信源,但不是产业玩家,单列标注区分 */
+const OBSERVERS = {
+  'FT':'📰 媒体', 'Bloomberg':'📰 媒体', 'TechCrunch':'📰 媒体', 'Stratechery':'📰 媒体',
+  'MIT':'🎓 研究', 'Stanford':'🎓 研究',
+  'Simon Willison':'🧑 观察者', 'Gary Marcus':'🧑 观察者', 'Karpathy':'🧑 观察者', 'Dario Amodei':'🧑 高管',
+};
+
+/* 子串误匹配等噪声,显式排除(如 engineering 里的 "ring" 被误判成 Ring) */
+const EXCLUDE = new Set(['Ring']);
+
+const LAYER_META = {
+  l1: {title:'① 模型层 · Foundation Models', sub:'// 谁在造"大脑"'},
+  l2: {title:'② 基础设施 · 芯片 · 算力 · 云', sub:'// 谁在供"算力"'},
+  l3: {title:'③ 应用层 · Agent · 平台 · 工具', sub:'// 谁在做"产品"'},
+  l4: {title:'④ 落地层 · 企业采用 · 咨询', sub:'// 谁在"用"'},
+};
+
+let DATA = null;
+let COUNTS = {};
+
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function cnt(name){ return COUNTS[name] || 0; }
+function stripLead(s){ return String(s||'').replace(/^[:：\s]+/, ''); }
+
+async function load(){
+  try{
+    const res = await fetch('./data/index.json?t=' + Date.now());
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    DATA = await res.json();
+    COUNTS = (DATA.tag_index && DATA.tag_index.companies) || {};
+    // 剔除排除项
+    EXCLUDE.forEach(function(k){ delete COUNTS[k]; });
+    renderHeader();
+    renderOverview();
+    renderChinaUs();
+    renderHotEvents();
+    renderCases();
+  }catch(e){
+    document.getElementById('view-overview').innerHTML =
+      '<div style="text-align:center;color:var(--down,#ff8080);padding:48px;">加载失败: ' + esc(e.message) +
+      '<br><span style="color:var(--ink-3);font-size:12px;">请检查 ./data/index.json 是否存在</span></div>';
+  }
+}
+
+function renderHeader(){
+  const m = DATA.meta || {};
+  const range = m.date_range || ['', ''];
+  const players = Object.keys(CLASSIFY).filter(function(n){ return cnt(n) > 0; }).length;
+  const reports = (DATA.reports || []).length;
+  const total = m.total_articles || (DATA.articles || []).length;
+  document.getElementById('page-subtitle').textContent =
+    '产业链 4 层 · ' + players + ' 家核心玩家 · 数据实时取自早报';
+  document.getElementById('page-meta').textContent =
+    '数据来源:同光·AI早报 · 覆盖 ' + range[0] + ' → ' + range[1] + ' · ' +
+    reports + ' 期 / ' + total + ' 篇 · 最后更新 ' + range[1];
+}
+
+function nodeHtml(name, layerCls, hot){
+  const c = CLASSIFY[name];
+  const flag = (c && c.country === 'cn') ? '<span class="cn-flag">🇨🇳</span>' : '';
+  return '<div class="node ' + layerCls + (hot ? ' hot' : '') + '" data-name="' + esc(name) + '">' +
+    flag + esc(name) + '<span class="meta">' + cnt(name) + '</span></div>';
+}
+
+function renderOverview(){
+  const classified = Object.keys(CLASSIFY).filter(function(n){ return cnt(n) > 0; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+  const top3 = classified.slice(0,3).map(function(n){ return esc(n) + '(' + cnt(n) + ')'; }).join(' · ');
+  const usModel = Object.keys(CLASSIFY).filter(function(n){ return CLASSIFY[n].layer === 'l1' && CLASSIFY[n].country === 'us'; }).reduce(function(s,n){ return s + cnt(n); }, 0);
+  const cnModel = Object.keys(CLASSIFY).filter(function(n){ return CLASSIFY[n].layer === 'l1' && CLASSIFY[n].country === 'cn'; }).reduce(function(s,n){ return s + cnt(n); }, 0);
+
+  let html = '<div class="view-insight"><h3>💡 全景视图 · 数据洞察</h3>' +
+    '<p>本期共追踪 <strong>' + classified.length + '</strong> 家产业链玩家,报道最集中:' + top3 + '。</p>' +
+    '<p>模型层中美报道量:美国阵营 <strong>' + usModel + '</strong> 次 vs 中国阵营 <strong>' + cnModel + '</strong> 次。</p>' +
+    '<p class="quote">"钱花在造大脑的(模型)、供算力的(芯片云)、做产品的(应用)与真正用起来的(落地)——四层缺一不可。"</p></div>';
+
+  ['l1','l2','l3','l4'].forEach(function(L){
+    const meta = LAYER_META[L];
+    const comps = Object.keys(CLASSIFY).filter(function(n){ return CLASSIFY[n].layer === L && cnt(n) > 0; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+    let nodes = comps.map(function(n, i){ return nodeHtml(n, L, i === 0); }).join('');
+    if(!nodes) nodes = '<div style="color:var(--ink-3);font-size:12px;">本期无数据</div>';
+    html += '<div class="layer layer-' + L + '"><div class="layer-title">' + meta.title + '</div>' +
+      '<div class="layer-subtitle">' + meta.sub + '</div><div class="nodes">' + nodes + '</div></div>';
+  });
+
+  const obs = Object.keys(OBSERVERS).filter(function(n){ return cnt(n) > 0; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+  if(obs.length){
+    const onodes = obs.map(function(n){
+      return '<div class="node" style="border-color:var(--line);color:var(--ink-2)" data-name="' + esc(n) + '">' +
+        esc(n) + '<span class="meta">' + cnt(n) + '</span></div>';
+    }).join('');
+    html += '<div class="layer" style="border-color:var(--line);background:var(--bg-2)">' +
+      '<div class="layer-title" style="color:var(--ink-2)">📡 高频信源与观察者</div>' +
+      '<div class="layer-subtitle">// 媒体 · 研究机构 · 个人观察者(非产业玩家,单列标注)</div>' +
+      '<div class="nodes">' + onodes + '</div></div>';
+  }
+
+  // 兜底:高频出现但尚未归入产业链层的名词(未来新公司/新信源),避免被静默丢弃(当前分类已覆盖全部高频公司,此桶通常为空)
+  const known = new Set(Object.keys(CLASSIFY).concat(Object.keys(OBSERVERS)));
+  const pending = Object.keys(COUNTS).filter(function(n){ return !known.has(n) && cnt(n) >= 12; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+  if(pending.length){
+    const pnodes = pending.map(function(n){
+      return '<div class="node" style="border-color:var(--warn,#fbbf24);color:var(--warn,#fbbf24)" data-name="' + esc(n) + '">' +
+        esc(n) + '<span class="meta">' + cnt(n) + '</span></div>';
+    }).join('');
+    html += '<div class="layer" style="border-color:var(--line);background:var(--bg-2)">' +
+      '<div class="layer-title" style="color:var(--warn,#fbbf24)">🆕 待归类高频玩家</div>' +
+      '<div class="layer-subtitle">// 近期高频出现但尚未归入产业链层,可能是新公司或新信源(下次维护补类)</div>' +
+      '<div class="nodes">' + pnodes + '</div></div>';
+  }
+  document.getElementById('view-overview').innerHTML = html;
+}
+
+function renderChinaUs(){
+  const layerName = {l1:'模型', l2:'算力/云', l3:'应用', l4:'落地'};
+  const us = Object.keys(CLASSIFY).filter(function(n){ return CLASSIFY[n].country === 'us' && cnt(n) > 0; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+  const cn = Object.keys(CLASSIFY).filter(function(n){ return CLASSIFY[n].country === 'cn' && cnt(n) > 0; }).sort(function(a,b){ return cnt(b) - cnt(a); });
+  const usTotal = us.reduce(function(s,n){ return s + cnt(n); }, 0);
+  const cnTotal = cn.reduce(function(s,n){ return s + cnt(n); }, 0);
+  function col(list){
+    return list.map(function(n){
+      const L = CLASSIFY[n].layer;
+      return '<div class="node ' + L + '" data-name="' + esc(n) + '">' + esc(n) +
+        '<span class="meta">' + layerName[L] + '·' + cnt(n) + '</span></div>';
+    }).join('');
+  }
+  const ratio = cnTotal ? (usTotal / cnTotal).toFixed(1) : '—';
+  let html = '<div class="view-insight"><h3>💡 中美对比 · 报道量</h3>' +
+    '<p>美国阵营 <strong>' + us.length + '</strong> 家共 <strong>' + usTotal + '</strong> 次报道;' +
+    '中国阵营 <strong>' + cn.length + '</strong> 家共 <strong>' + cnTotal + '</strong> 次。' +
+    '美 : 中 报道量约 <strong>' + ratio + ' : 1</strong>(仅反映本站信源关注度,非市场份额)。</p></div>';
+  html += '<div class="china-us-grid">' +
+    '<div class="country-col us"><h3>🇺🇸 美国 · ' + usTotal + ' 次</h3><div class="nodes">' + col(us) + '</div></div>' +
+    '<div class="country-col cn"><h3>🇨🇳 中国 · ' + cnTotal + ' 次</h3><div class="nodes">' + col(cn) + '</div></div></div>';
+  document.getElementById('view-china-us').innerHTML = html;
+}
+
+function renderHotEvents(){
+  const t5 = (DATA.articles || []).filter(function(a){ return a.is_top5; })
+    .sort(function(a,b){ return String(b.date||'').localeCompare(String(a.date||'')); }).slice(0, 12);
+  const span = t5.length ? (t5[t5.length-1].date + ' 至 ' + t5[0].date) : '';
+  let html = '<div class="view-insight"><h3>🔥 近期焦点 · 每日 Top 5 精选</h3>' +
+    '<p>下列为最近 ' + span + ' 早报评出的重磅事件,点标题看原文。</p></div>';
+  if(!t5.length) html += '<div style="color:var(--ink-3);padding:20px;">暂无数据</div>';
+  t5.forEach(function(a){
+    const link = a.url
+      ? '<a href="' + esc(a.url) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">' + esc(a.title) + '</a>'
+      : esc(a.title);
+    const meaning = a.meaning ? '<div class="event-impact">📌 ' + esc(stripLead(a.meaning)) + '</div>' : '';
+    html += '<div class="event-card"><div class="event-title">' + link + '</div>' +
+      '<div class="event-meta">' + esc(a.date) + ' · 质量分 ' + esc(a.quality_score != null ? a.quality_score : '—') + '</div>' +
+      meaning + '</div>';
+  });
+  document.getElementById('view-hot-events').innerHTML = html;
+}
+
+function renderCases(){
+  const cases = (DATA.articles || []).filter(function(a){ return a.dimension && a.dimension.indexOf('案例') >= 0; })
+    .sort(function(a,b){ return String(b.date||'').localeCompare(String(a.date||'')); }).slice(0, 12);
+  let html = '<div class="view-insight"><h3>💡 落地案例 · 企业怎么用 AI</h3>' +
+    '<p>取自早报「🏢 案例」维度最近 <strong>' + cases.length + '</strong> 条真实企业落地报道,点标题看原文。</p></div>';
+  html += '<div class="customer-grid">';
+  if(!cases.length) html += '<div style="color:var(--ink-3);padding:20px;">暂无数据</div>';
+  cases.forEach(function(a){
+    const link = a.url
+      ? '<a href="' + esc(a.url) + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">' + esc(a.title) + '</a>'
+      : esc(a.title);
+    let body = stripLead(a.meaning) || esc(a.summary || '');
+    body = esc(body);
+    if(body.length > 150) body = body.slice(0, 150) + '…';
+    html += '<div class="customer-card"><span class="industry-tag">' + esc(a.date) + '</span>' +
+      '<div class="name" style="font-size:13.5px;line-height:1.45;margin-bottom:8px;">' + link + '</div>' +
+      '<div class="uses">' + body + '</div></div>';
+  });
+  html += '</div>';
+  document.getElementById('view-cases').innerHTML = html;
+}
+
+function show(name){
+  const info = CLASSIFY[name];
+  const obs = OBSERVERS[name];
+  const tag = info ? info.tag : (obs ? obs + ' · 观察者/信源' : '点击查看');
+  const count = cnt(name);
+  const arts = (DATA.articles || []).filter(function(a){ return Array.isArray(a.companies) && a.companies.indexOf(name) >= 0; })
+    .sort(function(a,b){ return String(b.date||'').localeCompare(String(a.date||'')); }).slice(0, 3);
+
+  let html = '<h3>' + esc(name) + '</h3><span class="tag">' + esc(tag) + '</span>';
+  html += '<div class="stats"><div class="stat-row"><span class="label">早报累计提及</span><span class="val">' + count + ' 次</span></div>';
+  if(arts.length) html += '<div class="stat-row"><span class="label">最近出现</span><span class="val">' + esc(arts[0].date) + '</span></div>';
+  html += '</div>';
+  if(arts.length){
+    html += '<div class="desc"><strong style="color:var(--ink)">📰 最近报道</strong></div>';
+    arts.forEach(function(a){
+      const link = a.url
+        ? '<a href="' + esc(a.url) + '" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">' + esc(a.title) + '</a>'
+        : esc(a.title);
+      html += '<div style="font-size:12.5px;color:var(--ink-2);margin-bottom:8px;line-height:1.55;border-left:2px solid var(--line);padding-left:10px;">' +
+        '<span style="font-family:monospace;font-size:10.5px;color:var(--ink-3)">' + esc(a.date) + '</span><br>' + link + '</div>';
+    });
+  }else{
+    html += '<div class="desc">该玩家近期无独立报道条目。</div>';
+  }
+  html += '<p style="font-size:11.5px;color:var(--ink-3);margin-top:10px;">💡 完整报道见 <a href="./index.html" style="color:var(--accent);">同光·AI早报阅读库</a></p>';
   document.getElementById('modal-content').innerHTML = html;
   document.getElementById('modal').classList.add('show');
 }
 
-function closeModal() { document.getElementById('modal').classList.remove('show'); }
+function closeModal(){ document.getElementById('modal').classList.remove('show'); }
 
-function switchView(name, btn) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+function switchView(name, btn){
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  document.querySelectorAll('.view-tab').forEach(function(t){ t.classList.remove('active'); });
   document.getElementById('view-' + name).classList.add('active');
   btn.classList.add('active');
 }
 
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+// 事件委托:点节点弹窗(避免内联 onclick 的引号转义问题)
+document.addEventListener('click', function(e){
+  const node = e.target.closest ? e.target.closest('.node[data-name]') : null;
+  if(node) show(node.getAttribute('data-name'));
+});
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+load();
 </script>
 
 </body>
