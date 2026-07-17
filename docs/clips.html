@@ -55,7 +55,9 @@ body {
   transition: all 0.15s;
 }
 .tab-link:hover { background: var(--bg-3); color: var(--ink); }
-.tab-link.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tab-link.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.portal-back { color: var(--ink-3) !important; }
+.portal-back:hover { color: var(--accent) !important; border-color: var(--accent) !important; }
 
 .page-title {
   text-align: center; margin: 28px 0 6px;
@@ -312,6 +314,7 @@ footer a { color: var(--accent); text-decoration: none; }
     <span class="sub">我的裁剪</span>
   </a>
   <div class="topbar-actions">
+    <a href="../home.html" class="tab-link portal-back" title="返回 LUMORA 门户">🏠 门户</a>
     <a href="./index.html" class="tab-link">📚 阅读库</a>
     <a href="./weekly.html" class="tab-link">📅 每周深度</a>
     <a href="./map.html" class="tab-link">🗺️ AI 地图</a>

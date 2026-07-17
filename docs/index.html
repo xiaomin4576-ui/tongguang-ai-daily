@@ -189,6 +189,67 @@ header {
   border-radius: 12px;
 }
 
+/* 返回 LUMORA 门户 */
+.portal-back {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink-3);
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.portal-back:hover { background: var(--bg-3); color: var(--accent); border-color: var(--accent); }
+
+/* ⚙️ 管理入口下拉 */
+.admin-menu { position: relative; }
+.admin-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  border-radius: 6px;
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.admin-btn:hover { background: var(--bg-3); color: var(--ink); }
+.admin-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 200px;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+.admin-dropdown.open { display: flex; }
+.admin-dropdown a, .admin-dropdown button {
+  display: block;
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: var(--ink-2);
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.admin-dropdown a:hover, .admin-dropdown button:hover { background: var(--bg-3); color: var(--ink); }
+
 /* ═════ 主体 ═════ */
 .main {
   max-width: 1500px;
@@ -1375,6 +1436,7 @@ mark {
 <header>
   <div class="topbar">
     <div class="brand">
+      <a href="../home.html" class="portal-back" title="返回 LUMORA 门户">🏠 门户</a>
       <span class="logo">同光</span>
       <span class="tag">AI 早报</span>
     </div>
@@ -1383,10 +1445,15 @@ mark {
       <span class="kbd">/</span>
     </div>
     <div class="utility">
-      <button onclick="openGistSetupModal()" id="gist-sync-btn" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px; cursor:pointer;">☁️ <span id="gist-status">未连接</span></button>
-      <a href="./clips.html" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; text-decoration: none; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); margin-right: 4px;">📎 我的裁剪</a>
       <span class="meta-pill" id="stat-total-reports">-- 份早报</span>
       <span class="meta-pill" id="stat-total-articles">-- 篇文章</span>
+      <div class="admin-menu">
+        <button class="admin-btn" onclick="toggleAdminMenu(event)" title="管理与同步">⚙️ 管理</button>
+        <div class="admin-dropdown" id="admin-dropdown">
+          <button onclick="closeAdminMenu();openGistSetupModal();">☁️ 云同步 · <span id="gist-status">未连接</span></button>
+          <a href="./clips.html">📎 我的裁剪</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -1659,20 +1726,25 @@ function updateGistStatusUI() {
   if (!el) return;
   const token = getGistToken();
   if (!token) {
-    el.textContent = '☁️ 未连接';
+    el.textContent = '未连接';
     el.style.color = 'var(--ink-3)';
     return;
   }
   const lastSync = getGistLastSync();
   if (lastSync) {
     const d = new Date(lastSync);
-    el.textContent = `☁️ 已同步 ${d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })}`;
+    el.textContent = `已同步 ${d.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' })}`;
     el.style.color = '#16a34a';
   } else {
-    el.textContent = '☁️ 待同步';
+    el.textContent = '待同步';
     el.style.color = 'var(--ink-3)';
   }
 }
+
+// ⚙️ 管理入口下拉:开关 + 点外部关闭
+function toggleAdminMenu(e) { if (e) e.stopPropagation(); const dd = document.getElementById('admin-dropdown'); if (dd) dd.classList.toggle('open'); }
+function closeAdminMenu() { const dd = document.getElementById('admin-dropdown'); if (dd) dd.classList.remove('open'); }
+document.addEventListener('click', function (e) { const inside = e.target.closest ? e.target.closest('.admin-menu') : null; if (!inside) closeAdminMenu(); });
 
 async function openGistSetupModal() {
   const token = getGistToken();
