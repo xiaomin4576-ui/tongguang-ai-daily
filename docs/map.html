@@ -612,7 +612,7 @@ footer a { color: var(--accent); text-decoration: none; }
 <div class="topbar">
   <a href="./index.html" class="brand">
     <span class="pin"></span>
-    <span>同光观澜</span>
+    <span>同光</span>
     <span class="sub">AI 早报</span>
   </a>
   <div class="topbar-actions">
@@ -624,7 +624,7 @@ footer a { color: var(--accent); text-decoration: none; }
 
 <h1 class="page-title">AI 世界地图</h1>
 <div class="page-subtitle">2026 年 5 月版 · 4 层架构 · 60+ 关键玩家</div>
-<div class="page-meta">数据来源:同光观澜·AI早报 · 最后更新 2026-05-16</div>
+<div class="page-meta">数据来源:同光·AI早报 · 最后更新 2026-05-16</div>
 
 <nav class="view-tabs">
   <button class="view-tab active" onclick="switchView('overview', this)">🌐 全景视图</button>
@@ -1010,7 +1010,7 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <p style="font-size: 11px; color: var(--ink-4); text-align: center; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">
-  数据来源:同光观澜·AI早报 · 5/15 v5.5 整套自动化跑出 70 篇精选 · 24.3% 中国相关
+  数据来源:同光·AI早报 · 5/15 v5.5 整套自动化跑出 70 篇精选 · 24.3% 中国相关
 </p>
 </div>
 
@@ -1092,7 +1092,7 @@ footer a { color: var(--accent); text-decoration: none; }
 </div>
 
 <footer>
-  © 2026 同光观澜·AI早报 · 数据驱动 · 持续更新 · 
+  © 2026 同光·AI早报 · 数据驱动 · 持续更新 · 
   <a href="./index.html">返回阅读库</a> · 
   <a href="javascript:print()">打印此页</a>
 </footer>
@@ -1119,10 +1119,10 @@ const COMPANIES = {
 };
 
 function show(name) {
-  const d = COMPANIES[name] || { tag: '点击节点查看', desc: '该公司信息正在补充中,后续版本会自动从同光观澜·AI早报抓取最新报道。', stats: { '状态': '基础数据待补充' } };
+  const d = COMPANIES[name] || { tag: '点击节点查看', desc: '该公司信息正在补充中,后续版本会自动从同光·AI早报抓取最新报道。', stats: { '状态': '基础数据待补充' } };
   let html = `<h3>${name}</h3><span class="tag">${d.tag}</span><div class="desc">${d.desc}</div><div class="stats">`;
   for (const k in d.stats) html += `<div class="stat-row"><span class="label">${k}</span><span class="val">${d.stats[k]}</span></div>`;
-  html += `</div><p style="font-size:11.5px;color:var(--ink-3);margin-top:10px;">💡 完整报道请查看<a href="./index.html" style="color:var(--accent);">同光观澜·AI早报阅读库</a></p>`;
+  html += `</div><p style="font-size:11.5px;color:var(--ink-3);margin-top:10px;">💡 完整报道请查看<a href="./index.html" style="color:var(--accent);">同光·AI早报阅读库</a></p>`;
   document.getElementById('modal-content').innerHTML = html;
   document.getElementById('modal').classList.add('show');
 }
