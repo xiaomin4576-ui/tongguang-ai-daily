@@ -403,6 +403,7 @@ footer a { color: var(--accent); text-decoration: none; }
 <h1 class="page-title">每周深度专栏</h1>
 <div class="page-subtitle">每周一篇深度精选 · 三大方向 · 慢工出细活</div>
 <div class="page-meta">第 20 周 · 2026-05-13 至 2026-05-19</div>
+<div id="fallback-banner"></div>
 
 <div class="week-selector-wrap" style="text-align:center;margin-bottom:18px;">
   <label style="font-family:'JetBrains Mono', monospace;font-size:11px;color:var(--ink-3);margin-right:8px;">📅 切换周次:</label>
@@ -477,7 +478,7 @@ footer a { color: var(--accent); text-decoration: none; }
 // ═══════════════════════════════════════════════════════════════════
 // 收藏(共享 localStorage)
 // ═══════════════════════════════════════════════════════════════════
-const FAV_KEY = 'xianggge:favorites';
+const FAV_KEY = 'tongguang-favorites';  // 审计#7:与阅读库(index)统一 key,兑现"共享收藏"承诺(原 xianggge:favorites 不互通)
 function loadFavs() {
   try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {}; } catch { return {}; }
 }
@@ -490,7 +491,7 @@ function toggleFav(id) {
   if (FAVS[id]) {
     delete FAVS[id];
   } else {
-    FAVS[id] = { saved_at: Date.now(), source: 'weekly', tags: [], note: '' };
+    FAVS[id] = { collected_at: new Date().toISOString(), saved_at: Date.now(), source: 'weekly', tags: [], note: '' };  // collected_at 与阅读库同 schema,互不破坏
   }
   saveFavs(FAVS);
   // 只重渲染列表(不重新加载数据)
@@ -714,7 +715,7 @@ async function loadWeeklyData(weekFile) {
   } catch (e) {
     console.log('⚠️ 加载失败, 使用 fallback', e.message);
   }
-  return FALLBACK;
+  return { ...FALLBACK, _isFallback: true };   // 审计#4:兜底数据打标,渲染层据此显式提示"示例数据",不静默伪装真实周报
 }
 
 // 诚实透明:周报为人工整合(非日报自动管线),若数据 >14 天未更新则自动挂陈旧提示;恢复更新后自动消失。
@@ -832,6 +833,17 @@ async function renderAll(weekFile) {
   CASES = data.cases || [];
   ORGS = data.orgs || [];
   WEEK_META = { week: data.week, range: data.range };
+  // 审计#4:兜底(示例)数据显式黄条,不许静默伪装真实周报
+  const _fb = document.getElementById('fallback-banner');
+  if (_fb) {
+    if (data._isFallback) {
+      _fb.style.cssText = 'background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);color:#fbbf24;border-radius:10px;padding:10px 14px;margin:0 auto 16px;max-width:760px;font-size:13px;font-weight:600;text-align:center';
+      _fb.innerHTML = '⚠️ 当前为<b>内置示例数据</b>(实时周报未能加载)——非最新研判、链接可能不可溯,仅占位参考,请稍后刷新。';
+    } else {
+      _fb.style.display = 'none';
+      _fb.innerHTML = '';
+    }
+  }
   
   // 更新页面元数据
   const metaEl = document.querySelector('.page-meta');

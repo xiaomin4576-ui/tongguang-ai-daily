@@ -260,11 +260,15 @@ header {
   min-height: calc(100vh - 64px);
 }
 
+.menu-toggle { display: none; }
 @media (max-width: 1100px) {
   .topbar { grid-template-columns: 1fr; padding: 12px 16px; gap: 12px; }
   .main { grid-template-columns: 1fr; }
   .sidebar { display: none; }
   .sidebar.mobile-open { display: block; }
+  /* 审计#7:阅读库<1100px 侧栏 display:none 却无按钮触发 mobile-open → 手机端筛选彻底不可达。补汉堡按钮。 */
+  .menu-toggle { display: inline-flex; align-items: center; gap: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 5px 12px; border-radius: 6px; color: var(--ink-2); border: 1px solid var(--line); background: var(--bg-2); cursor: pointer; margin-right: 8px; }
+  .menu-toggle.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
 }
 
 /* ═════ 左侧:标签筛选器 ═════ */
@@ -1436,6 +1440,7 @@ mark {
 <header>
   <div class="topbar">
     <div class="brand">
+      <button class="menu-toggle" onclick="var s=document.querySelector('.sidebar');if(s){var o=s.classList.toggle('mobile-open');this.classList.toggle('on',o);}" title="筛选/视图">☰ 筛选</button>
       <a href="../home.html" class="portal-back" title="返回 LUMORA 门户">🏠 门户</a>
       <span class="logo">同光</span>
       <span class="tag">AI 早报</span>
