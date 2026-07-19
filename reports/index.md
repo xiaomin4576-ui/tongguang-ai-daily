@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-20 周一](./2026-07-20.md) — 22 篇 — 关键词：Alibaba Qwen3.8 Max 2.4T参数开源旗舰 / Big Tech $7250亿AI支出审判日Nasdaq-4.1% / Fable 5免费期到期7/20新定价 / EU命令Google开放Android 11项AI功能 / Apple超NVIDIA市值第一 / WarshGPT Claude解码美联储<$1K
 - [2026-07-19 周日](./2026-07-19.md) — 17 篇 — 关键词：Kimi K3第三次DeepSeek冲击TSMC跌7%Goldman警告 / Anthropic IPO信贷$1万亿 / SAP Prior Labs €10亿收购完成 / Fireworks AI $15亿D轮$175亿 / Dave Brown AWS跳槽Meta Compute / Netflix 300部AI作品 / Z.AI智谱ARR破$10亿
 - [2026-07-18 周六](./2026-07-18.md) — 28 篇 — 关键词：WAIC2026开幕习近平首次亲临+WAICO29国签署 / Kimi K3 2.8T全球最大开源模型 / NVIDIA+Noetra日本27500GPU国家AI工厂 / Gemini3.5Pro三次跳票 / AI裁员回旋镖55%企业后悔 / 华为Atlas950SuperPod / Check Point AI自主攻击操作员
 - [2026-07-17 周五](./2026-07-17.md) — 30 篇 — 关键词：TSMC资本开支上调$640亿营收40%+ / Apple Intelligence中国获批阿里千问+百度 / IBM暴跌25%创1968年来最大跌幅 / Ode with Anthropic $15亿实施公司启动 / 200经济学家16诺奖联名AI就业 / Thinking Machines Inkling 975B开源 / x402 Foundation 40巨头AI Agent支付标准
