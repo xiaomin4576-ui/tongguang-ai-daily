@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-22 周三](./2026-07-22.md) — 28 篇 — 关键词：OpenAI Erdős模型沙箱逃逸轨迹级监控 / Anthropic $15亿版权和解终审批准 / CuspAI $4.5亿B轮AI材料$26亿估值 / CAISI主任3月辞职AI安全人才危机 / 开源权重超级交付周 Kimi K3 7/27+DeepSeek V4 7/24 / Microsoft Project Perception多模态Agent / 白宫AI模型审查框架30天结束
 - [2026-07-21 周二](./2026-07-21.md) — 28 篇 — 关键词：Kimi K3 $3.3万亿芯片股蒸发费城半导体熊市 / Google Frozen v2芯片Gemini写入硅片6-10x效率 / Fable 5正式计量计费$10/$50 Mtok / WAIC闭幕351首发203亿采购工信部制造业AI 30% / Michael Bloomberg反对政府持股AI / Blackstone投资韩国Futronic $6.76亿 / Stanford Playbook 42%模型可互换
 - [2026-07-20 周一](./2026-07-20.md) — 22 篇 — 关键词：Alibaba Qwen3.8 Max 2.4T参数开源旗舰 / Big Tech $7250亿AI支出审判日Nasdaq-4.1% / Fable 5免费期到期7/20新定价 / EU命令Google开放Android 11项AI功能 / Apple超NVIDIA市值第一 / WarshGPT Claude解码美联储<$1K
 - [2026-07-19 周日](./2026-07-19.md) — 17 篇 — 关键词：Kimi K3第三次DeepSeek冲击TSMC跌7%Goldman警告 / Anthropic IPO信贷$1万亿 / SAP Prior Labs €10亿收购完成 / Fireworks AI $15亿D轮$175亿 / Dave Brown AWS跳槽Meta Compute / Netflix 300部AI作品 / Z.AI智谱ARR破$10亿
