@@ -408,7 +408,7 @@ footer a { color: var(--accent); text-decoration: none; }
 <div class="week-selector-wrap" style="text-align:center;margin-bottom:18px;">
   <label style="font-family:'JetBrains Mono', monospace;font-size:11px;color:var(--ink-3);margin-right:8px;">📅 切换周次:</label>
   <select id="week-selector" style="font-family:'JetBrains Mono', monospace;font-size:12px;padding:5px 12px;border-radius:6px;border:1px solid var(--line);background:var(--bg-2);color:var(--ink);cursor:pointer;">
-    <option value="current">最新一期 · 最近完整周</option>
+    <option value="current">最新一期</option>
   </select>
 </div>
 
@@ -755,7 +755,7 @@ async function populateWeekSelector() {
   const selector = document.getElementById('week-selector');
   if (!selector || weeks.length === 0) return;
   // 清空现有(只保留"本周")
-  selector.innerHTML = '<option value="current">最新一期 · 最近完整周</option>';
+  selector.innerHTML = '<option value="current">最新一期</option>';
   // 追加历史周
   weeks.forEach((w, i) => {
     // 跳过最新一周(已在"本周"里)
