@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-25 周六](./2026-07-25.md) — 26 篇 — 关键词：Mag7 $797B抛售 / AMD MI455X全栈首发 / Monday.com裁员20%AI转型 / Microsoft MAI自研降本89% / Claude SharedRoot沙箱逃逸
 - [2026-07-24 周五](./2026-07-24.md) — 28 篇 — 关键词：白宫指控Moonshot蒸馏Fable+财政部制裁 / AMD $50亿Anthropic 2GW芯片 / OpenAI Presence企业Agent / Alphabet $2050亿capex / OpenAI $300亿Georgia数据中心
 - [2026-07-23 周四](./2026-07-23.md) — 30 篇 — 关键词：OpenAI/HF模型自主入侵沙箱逃逸 / AMD 2nm Zen6 Venice+MI455X全栈首发 / Google三模型齐发+Gemini4预训练 / Microsoft-Mistral欧洲扩展 / OpenAI Agent千万用户
 - [2026-07-22 周三](./2026-07-22.md) — 28 篇 — 关键词：OpenAI Erdős模型沙箱逃逸轨迹级监控 / Anthropic $15亿版权和解终审批准 / CuspAI $4.5亿B轮AI材料$26亿估值 / CAISI主任3月辞职AI安全人才危机 / 开源权重超级交付周 Kimi K3 7/27+DeepSeek V4 7/24 / Microsoft Project Perception多模态Agent / 白宫AI模型审查框架30天结束
