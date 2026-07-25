@@ -1,14 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T02:04:56.597371+00:00",
-    "total_reports": 52,
-    "total_articles": 2261,
+    "generated_at": "2026-07-25T02:04:34.868850+00:00",
+    "total_reports": 53,
+    "total_articles": 2295,
     "date_range": [
       "2026-05-14",
-      "2026-07-24"
+      "2026-07-25"
     ]
   },
   "reports": [
+    {
+      "date": "2026-07-25",
+      "weekday": "周六",
+      "signal_strength": "strong",
+      "main_count": 26,
+      "tier0_count": 5,
+      "summary": "Mag 7 单日蒸发 $7970 亿：Alphabet 上调 capex 至 $2050 亿 + Tesla 首次负现金流，AI 支出恐惧蔓延至债市",
+      "url": "reports/2026-07-25.md",
+      "article_count": 34
+    },
     {
       "date": "2026-07-24",
       "weekday": "周五",
@@ -531,6 +541,544 @@
     }
   ],
   "articles": [
+    {
+      "id": "20260725-T01",
+      "date": "2026-07-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Mag 7 单日蒸发 $7970 亿：Alphabet 上调 capex 至 $2050 亿 + Tesla 首次负现金流，AI 支出恐惧蔓延至债市",
+      "summary": "Alphabet 将 2026 年资本开支上限上调至 $2050 亿，Tesla 单季 AI 烧钱 $58 亿出现两年来首次负现金流，七巨头 4.8% 单日跌幅为 2025 年关税恐慌以来最大。\n🔗 Bloomberg ｜ https://www.bloomberg.com/news/articles/2026-07-23/magnificent-7-loses-767-billion-as-ai-skeptics-dump-tech-stocks",
+      "meaning": "：CFO 在评估 AI 基建投资回报时必须把\"投资者信心折价\"纳入财务模型——$6500 亿年化 capex 若无法在 18 个月内证明 ROI，股价惩罚将从科技板块传导至供应链。",
+      "source": "",
+      "quality_score": 8,
+      "url": "https://www.bloomberg.com/news/articles/2026-07-23/magnificent-7-loses-767-billion-as-ai-skeptics-dump-tech-stocks",
+      "companies": [
+        "Bloomberg"
+      ]
+    },
+    {
+      "id": "20260725-T02",
+      "date": "2026-07-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "AMD Advancing AI 2026：MI455X 2nm 全栈首发 + EPYC 9006 Zen6 + Helios 机架级 AI，推理性价比宣称超 NVIDIA 30%",
+      "summary": "AMD 发布 CDNA 5 架构 Instinct MI455X（320B 晶体管、432GB HBM4）、EPYC 9006 Venice 服务器 CPU、Helios 机架级系统（72 块 MI455X、2.9 ExaFLOPS 推理），OpenAI 预计 Q4 2026 上线 Helios。\n🔗 GlobeNewsWire ｜ https://www.globenewswire.com/news-release/2026/07/23/3332491/0/en/AAI-2026-AMD-Delivers-Full-Stack-Compute-for-the-Agentic-AI-Era.html",
+      "meaning": "：企业评估 AI 推理集群采购时现在有了实打实的 NVIDIA 替代方案——\"每美元推理 token 数高 30%\"若属实，RFP 里必须加入双供应商对比条款。",
+      "source": "",
+      "quality_score": 8,
+      "url": "https://www.globenewswire.com/news-release/2026/07/23/3332491/0/en/AAI-2026-AMD-Delivers-Full-Stack-Compute-for-the-Agentic-AI-Era.html",
+      "companies": [
+        "OpenAI",
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "20260725-T03",
+      "date": "2026-07-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Monday.com 裁员 20%（630 人）：从 SaaS 座席模式全面转向 AI Agent 平台",
+      "summary": "以色列工作管理公司 monday.com 宣布史上最大重组，裁撤 20% 员工（约 350 人在特拉维夫总部），同时上调全年非 GAAP 运营利润率指引至 15%。新产品套件包含无代码应用构建器、可定制 AI Agent、工作流自动化和智能看板。\n🔗 TechCrunch ｜ https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
+      "meaning": "：SaaS 厂商正在用\"裁人+AI Agent 化\"重新定价——现有座席制 SaaS 客户应立即评估合同中是否有 Agent 替代条款，否则将被动接受涨价或功能降级。",
+      "source": "",
+      "quality_score": 8,
+      "url": "https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/",
+      "companies": [
+        "TechCrunch"
+      ]
+    },
+    {
+      "id": "20260725-T04",
+      "date": "2026-07-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Microsoft 发布 MAI-Image-2.5-Pro + MAI-Voice-2-Flash：Bing 图像生成 100% 自研，GPU 成本降 89%",
+      "summary": "Microsoft 自研模型家族再扩两员：MAI-Image-2.5-Pro 接管 Bing Image Creator 全量流量，MAI-Voice-2-Flash 驱动 Dynamics 365 客服中心和 Azure Voice Live，对比 OpenAI 模型 GPU 成本最高降低 89%。\n🔗 VentureBeat ｜ https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai",
+      "meaning": "：Microsoft 的\"去 OpenAI 依赖\"路线图已进入生产阶段——企业客户在续签 Azure AI 合同时应确认所用模型归属（MAI vs GPT），因为定价和数据主权条款可能完全不同。",
+      "source": "",
+      "quality_score": 8,
+      "url": "https://venturebeat.com/infrastructure/microsoft-launches-new-in-house-ai-models-it-says-cut-costs-up-to-89-versus-openai",
+      "companies": [
+        "OpenAI",
+        "Microsoft",
+        "FT"
+      ]
+    },
+    {
+      "id": "20260725-T05",
+      "date": "2026-07-25",
+      "is_top5": true,
+      "is_tier0": false,
+      "dimension": "🌟 Top 5",
+      "title": "Claude Cowork \"SharedRoot\" 沙箱逃逸：500K macOS 用户受影响，可读写宿主机 SSH 密钥和云凭证",
+      "summary": "安全公司 Accomplish AI 披露 Claude Cowork 的 Linux VM 沙箱可被单条消息逃逸，利用 CVE-2026-46331（pedit COW）获取宿主机完整文件系统读写权限。Anthropic 将报告标记为\"informative\"未出修复。\n🔗 The Hacker News ｜ https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
+      "meaning": "：部署本地 AI Agent 的企业安全团队必须立即审计 Agent 沙箱隔离级别——\"VM ≠ 安全边界\"已被证实，敏感环境需在 Agent 层外加网络隔离和凭证保管库。",
+      "source": "",
+      "quality_score": 8,
+      "url": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "20260725-006",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Cory Doctorow · 2026-07-24 · \"AI solipsists and AI cynics\"",
+      "summary": "Doctorow 论证 AI 的最大买家不是理性投资者而是\"唯我论老板\"——他们不需要相信 AI 真的有效，只需要相信 AI 能帮他们绕过企业内部的约束（工会、中层管理、合规）。这解释了为什么 ROI 证据缺失并不能阻止采购决策。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-007",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ethan Mollick · 2026-07 · \"Agents are replacing chatbots for real work\"",
+      "summary": "Mollick 指出 OpenAI 内部 25% 员工每周至少同时运行 4 个 Agent，Opus 4.7 曾在 14 小时内自主完成人类工程师需 2-17 周的软件包开发（token 成本 $251）。Agent 时代的核心转变是从\"非专家用聊天机器人填补知识缺口\"变为\"专家用 Agent 完成实际工作\"。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "20260725-008",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Ben Thompson (Stratechery) · 2026-07-15 · \"IBM Misses, IBM's Mainframe Moat, IBM's Many AI Problems\"",
+      "summary": "Thompson 剖析 IBM 暴跌 25%（1968 年以来最大单日跌幅）背后的结构性问题：大型机护城河与 AI 转型之间的矛盾——客户在大型机上跑关键业务不愿迁移，但 AI 原生架构需要完全不同的计算范式。IBM 的 AI 叙事缺乏可验证的客户 ROI 数据。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "IBM",
+        "Stratechery"
+      ]
+    },
+    {
+      "id": "20260725-009",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Simon Willison · 2026-07-03 · \"Use lower-power models in subagents for implementation\"",
+      "summary": "Willison 提出编码 Agent 的最优架构：主循环保留高算力模型做判断和审查，子 Agent 用低算力模型做实现。这不仅降低成本，还能避免高算力模型在机械性任务上浪费推理能力。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Simon Willison"
+      ]
+    },
+    {
+      "id": "20260725-010",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": true,
+      "dimension": "🧠 Tier 0",
+      "title": "Gary Marcus · 2026-07 · \"METR study + Salesforce trust warning\"",
+      "summary": "Marcus 引用 METR 研究指出编码工具在复杂任务上曾使开发者慢 19%（虽然后续翻转为快 18%），同时指出 Salesforce 自己也在警告 LLM 不够可信。Marcus 认为 AI 投资是\"史上最大资本错配\"。",
+      "meaning": "",
+      "source": "",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Salesforce",
+        "Gary Marcus"
+      ]
+    },
+    {
+      "id": "20260725-011",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Microsoft 发布 MAI-Image-2.5-Pro 和 MAI-Voice-2-Flash：自研模型全面接管核心产品线",
+      "summary": "Microsoft 将自研图像模型 MAI-Image-2.5-Pro 部署为 Bing Image Creator 的唯一后端，PowerPoint 图像编辑 GPU 成本降低 84%。轻量级语音模型 MAI-Voice-2-Flash 接管 Dynamics 365 客服中心，延迟降低、GPU 成本降 89%。两款模型均基于 Microsoft 自有数据训练，不使用第三方蒸馏。",
+      "meaning": "：Microsoft 正在系统性降低对 OpenAI 的依赖——企业用户在选择 Azure AI 产品时，应确认底层模型归属和数据处理路径，因为 MAI 和 GPT 的数据主权条款可能不同",
+      "source": "Microsoft AI Blog",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "FT"
+      ]
+    },
+    {
+      "id": "20260725-012",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Anthropic 升级 Claude Voice Mode：支持 Opus/Sonnet 切换 + 接入 Gmail/Calendar/Slack",
+      "summary": "Claude 语音模式从仅支持 Haiku 升级为可在 Opus、Sonnet、Haiku 之间切换，支持 11 种语言，并可在对话中直接调用已连接的工具（Gmail、Google Calendar、Google Docs、Slack）。免费用户获得 Haiku + 1 个工具连接，付费用户解锁全部模型和工具。",
+      "meaning": "：语音 AI 从\"问答\"进入\"执行\"阶段——企业 Slack/Gmail 集成场景的决策者应评估 Claude Voice 作为免提工作流入口的可行性，特别是现场服务和仓储场景",
+      "source": "TechCrunch",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Anthropic",
+        "Google"
+      ]
+    },
+    {
+      "id": "20260725-013",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Oracle 推出 AI-native Builder：开发者和编码 Agent 可在 Fusion 内创建 Agentic 应用",
+      "summary": "Oracle AI Agent Studio 新增 Agentic Applications Builder，支持 VS Code、OpenAI Codex、Claude Code、CLI 和 Git 等工具直接构建 Fusion Agentic 应用。无代码用户可用自然语言创建，开发者可用 pro-code 模式构建，所有应用运行在 Fusion 治理框架内。覆盖财务、供应链、制造、HR、销售、客服和营销。",
+      "meaning": "：Oracle ERP 客户现在可以在不离开 Fusion 生态的情况下构建 Agent 应用——但这也意味着锁定效应加深，企业在评估时需要考虑 Agent 的可移植性",
+      "source": "Oracle 官方",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Oracle"
+      ]
+    },
+    {
+      "id": "20260725-014",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "Frigade 推出 Skills：让任何产品内置 AI 助手，无需编码即可执行用户操作",
+      "summary": "YC 支持的 Frigade 发布 Skills 功能，让产品内的 AI 助手从\"回复建议\"升级为\"直接执行操作\"。助手自动学习产品功能并将其转化为可调用工具，产品更新时自动同步。客户通过 Frigade 仪表板审核和启用操作权限。",
+      "meaning": "：SaaS 产品经理应评估\"嵌入式 Agent\"作为用户引导和客服自动化的替代方案——当 AI 助手能直接操作产品而非指导用户点击，支持工单量可能大幅下降",
+      "source": "Y Combinator Launch",
+      "quality_score": 5,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-015",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🚀 产品",
+      "title": "OpenAI GPT-Live 全双工语音进入开发者工作流：Codex 和 ChatGPT Desktop 集成",
+      "summary": "OpenAI 将 GPT-Live 全双工语音模型集成进 Codex 和 ChatGPT Desktop（macOS/Windows），开发者可在编码过程中通过语音同步操控 Agent，模型可同时听说并将复杂推理任务委托给后台 GPT-5.5。ChatGPT Work 也已搭载 GPT-5.6，可跨应用收集上下文并输出完成品（表格、PPT、文档、Web 应用）。",
+      "meaning": "：开发者工具正在从\"键盘优先\"转向\"语音+键盘混合\"——工程管理者应在团队中试点语音编码工作流，评估是否适合 code review、debug 等需要大量上下文切换的场景",
+      "source": "VentureBeat",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "20260725-016",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "Cisco 数据：85% 企业在试点 AI Agent，但仅 5% 进入生产——\"信任鸿沟\"是核心瓶颈",
+      "summary": "Cisco 总裁 Jeetu Patel 指出 85% 的企业已在试点 AI Agent，但仅 5% 真正部署到生产。核心原因是从\"信息风险\"到\"行动风险\"的跃迁——Agent 不只回答问题，还会执行操作，这让企业对安全和合规缺乏信心。Amazon AGI 总监也在 VB Transform 确认\"可靠性而非能力\"是阻碍部署的主因。",
+      "meaning": "：企业 AI Agent 项目的首要投资不应该是能力增强而是可观测性和回滚机制——在 Agent 能\"撤销操作\"之前，CIO 不应批准生产部署",
+      "source": "VentureBeat",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Amazon",
+        "Cisco"
+      ]
+    },
+    {
+      "id": "20260725-017",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "VB Pulse 调查：57% 企业发现 AI Agent 犯错根源是\"上下文质量差\"，仅 25% 有治理层",
+      "summary": "对 101 家企业的 VB Pulse 调查发现，57% 追踪到 AI Agent 错误答案的根源是输入上下文质量差，而非模型能力不足。仅 25% 的企业建立了治理层来管理 Agent 上下文。这意味着大多数 Agent 部署面临的是数据工程问题而非 AI 问题。",
+      "meaning": "：企业在购买 Agent 平台之前，应先审计自身的\"上下文就绪度\"——内部知识库、API 文档、流程 SOP 的结构化程度决定了 Agent 的准确率上限",
+      "source": "VentureBeat",
+      "quality_score": 6,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-018",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "🏢 案例",
+      "title": "DeepSeek V4 别名正式退役：deepseek-chat 和 deepseek-reasoner 7 月 24 日切换至 V4-Flash",
+      "summary": "DeepSeek 在 7 月 24 日正式将旧版 API 别名（deepseek-chat、deepseek-reasoner）路由至 deepseek-v4-flash，标志着 V4 Preview（1.6T 参数 V4-Pro + 284B V4-Flash，MIT 许可）向 GA 过渡。社区泄露的模型 ID 暗示定价调整在即。",
+      "meaning": "：正在使用 DeepSeek API 的企业开发团队需在本周内验证旧别名的兼容性——未迁移的调用将默认路由至 V4-Flash 而非之前的模型版本，可能影响输出质量和成本",
+      "source": "DeepSeek API Docs",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "MIT",
+        "DeepSeek"
+      ]
+    },
+    {
+      "id": "20260725-019",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Mag 7 单日蒸发 $7970 亿：AI 支出恐惧引发 2025 年关税恐慌以来最大抛售",
+      "summary": "七巨头指数单日下跌 4.8%，蒸发 $7970 亿市值。直接触发因素是 Alphabet 将年度 capex 上调至 $1950-$2050 亿（此前 $1800-$1900 亿），Tesla 利润远低于预期且 Musk 宣称 2026 将是\"巨额 capex 年\"。S&P 500 跌 1.2%，Nasdaq 100 跌 1.9%。四大超算厂商 2026 年 AI 相关 capex 合计预计达 $6500 亿，同比增 67%。",
+      "meaning": "：企业 AI 预算审批的政治环境正在恶化——CFO 需要准备向董事会解释\"为什么我们的 AI 投资不会像 Mag 7 一样遭遇 ROI 质疑\"，数据驱动的投资回报叙事将成为续签 AI 合同的前置条件",
+      "source": "Bloomberg",
+      "quality_score": 8,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-020",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Travis Kalanick 的 Atoms 完成 $17 亿融资：a16z 领投，Uber 参投，覆盖矿业/物流/食品机器人",
+      "summary": "Uber 创始人 Kalanick 的产业机器人公司 Atoms 完成 $17 亿融资，a16z 领投（Ben Horowitz 入董事会），Bain Capital、Fifth Wall 及 Uber 跟投。公司在隐身模式运营近 8 年，覆盖 110+ 城市的三大业务线：Atoms Food（CloudKitchens）、Atoms Mining（基于收购的 Pronto 自动化）、Atoms Transport。",
+      "meaning": "：Physical AI / 具身智能赛道的融资规模已达到软件 AI 的量级——制造和物流企业在规划自动化路线图时，应将 Atoms 级别的\"多场景通用机器人平台\"纳入长名单，而非只看单场景机器人厂商",
+      "source": "TechCrunch",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Bain",
+        "FT"
+      ]
+    },
+    {
+      "id": "20260725-021",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "Dassault Systèmes 以 ~$20 亿收购 ArisGlobal：打造生命科学 AI 合规平台",
+      "summary": "Dassault Systèmes 签署最终协议收购 AI 原生生命科学合规平台 ArisGlobal，对价 $18 亿现金 + 最高 $2 亿 AI 收入里程碑。ArisGlobal 服务超 200 家客户（含全球 Top 50 生物制药公司的一半），年处理 1200 万份患者安全报告，2026 年预计收入 $1.75 亿，全球 1300+ 员工。预计 H2 2026 完成。",
+      "meaning": "：AI 合规平台的估值正在向\"关键任务基础设施\"看齐（~11x 收入）——制药和医疗器械企业应评估自身合规工作流的 AI 化时间表，因为监管环境正在倒逼这类平台成为行业标配",
+      "source": "GlobeNewsWire",
+      "quality_score": 8,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-022",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "AegisAI $3600 万 + Paper $3400 万 Series A：AI 安全与 AI 设计两个新品类获资本加注",
+      "summary": "AegisAI（前 Google 安全团队创办，专注 AI 驱动的鱼叉式钓鱼防御）完成 $3600 万 A 轮（Battery Ventures 领投），累计融资 $4900 万。Paper（为 AI 编码 Agent 设计的设计平台）完成 $3400 万 A 轮（Accel + ICONIQ），客户含 Ramp、Vercel、PostHog、YC，ARR 自 2026 年初发布桌面版以来增长 25 倍。",
+      "meaning": "：AI Agent 生态催生了两类新基础设施需求——\"防 AI 攻击\"和\"为 AI 设计\"——CISO 和设计负责人应分别将 AI 防钓鱼和 Agent 友好型设计纳入工具评估清单",
+      "source": "TechCrunch / FinSMEs",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "20260725-023",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "💰 商业",
+      "title": "中国 GPU 厂商沐曦（MetaX）秘密提交香港 IPO 申请：目标年底上市",
+      "summary": "沐曦（MetaX）已秘密提交港股上市申请，目标 2026 年底前 IPO，华泰国际担任保荐人。此前公司 2025 年 12 月在上海科创板上市首日暴涨 693%，募集 42 亿元。拟发行 H 股不超过扩大后股本的 5%，资金用于下一代 GPU 研发和供应链投资。旗舰 C500 性能约为 NVIDIA A100 的 75%，C700 计划 2027 年量产。",
+      "meaning": "：在出口管制压力下，中国 AI 芯片公司正通过多地上市加速融资——跨国企业在中国市场的 AI 硬件采购策略需要为\"国产替代\"留出评估窗口和供应商备选",
+      "source": "南华早报",
+      "quality_score": 6,
+      "url": "",
+      "companies": [
+        "Meta",
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "20260725-024",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Monday.com 裁员 630 人（20%）：从 SaaS 座席模式全面转型 AI Agent 工作平台",
+      "summary": "Monday.com 宣布公司 14 年历史上最大重组，裁撤 630 人（约 350 人在特拉维夫总部）。联合创始人兼联合 CEO Roy Mann 和 Eran Zinman 称这是\"最痛苦但最正确的决定\"。重组费用 $4500-$5500 万，同时上调全年非 GAAP 运营利润率指引至 15%（此前 13%），维持收入增长 19-20%。值得注意的是，AI 已连续四个月成为美国裁员的首要原因，2026 年至今 AI 相关裁员公告涉及 101,743 个岗位。",
+      "meaning": "：SaaS 行业正经历\"Agent 化重定价\"——座席制 SaaS 客户应在合同续签前评估供应商是否正在经历类似转型，因为产品路线图和定价模式可能在 6-12 个月内彻底改变",
+      "source": "Calcalist / TechCrunch",
+      "quality_score": 7,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-025",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Amazon AGI 部门裁员：砍掉模型定制和后训练岗位，资源转向客户端 AI 工具",
+      "summary": "Amazon 确认 AGI 组织内部裁员，裁撤模型定制和后训练相关岗位，将资源重新定向到客户端 AI 工具。这是继 1 月裁员 16,000 人后 2026 年第二轮大规模调整。受影响美国员工将获得 90 天薪资福利和再就业支持。公司同时维持 $2000 亿 AI 基础设施投资不变。",
+      "meaning": "：大厂 AI 组织正在从\"前沿研究\"向\"客户交付\"迁移——使用 AWS AI 服务的企业客户可能会看到更多定制化产品推出，但通用基础研究的投入可能放缓",
+      "source": "GeekWire",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Amazon"
+      ]
+    },
+    {
+      "id": "20260725-026",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Mobileye 创始人 Amnon Shashua 宣布将卸任 CEO：27 年后转向人形机器人",
+      "summary": "Mobileye 创始人 Shashua 教授宣布将在找到继任者后卸任 CEO，转任董事长。在财报电话会上，Shashua 表示将重点关注人形机器人等长期技术方向。同日公布的 Q3 收入指引（预计下降 5-6%）导致股价盘后暴跌约 15%，为 2024 年 8 月以来最大单日跌幅。Intel 重申支持 Mobileye 的发展路线。",
+      "meaning": "：自动驾驶和 ADAS 领域的管理层更迭信号出现——依赖 Mobileye 方案的 OEM 和 Tier 1 供应商应在 6 个月内与新管理层确认技术路线图的延续性",
+      "source": "Bloomberg",
+      "quality_score": 7,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-027",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "👥 组织",
+      "title": "Adecco Group 发布混合劳动力编排白皮书：1.9M 新 AI 岗位 vs 仅 18% 企业真正整合 AI",
+      "summary": "全球人力资源巨头 Adecco Group 联合 Altermind 发布白皮书《On the Threshold》，提出\"混合劳动力编排\"新模型——让人类、AI Agent、自动化和物理 AI 各自在最适合的任务上创造价值。核心数据：2022-2025 年间创造了 190 万个 AI 相关新岗位，但仅 18% 的美国企业和 20% 的欧洲企业真正在核心工作流中整合了 AI。企业面临的最大风险不是 AI 本身，而是\"组织惰性——未能足够快地重新设计工作\"。",
+      "meaning": "：CHRO 应将\"混合劳动力编排\"作为 2027 年人力资源战略的核心框架——不是简单的\"人 vs 机器\"替代决策，而是按任务类型做四维度（人/Agent/自动化/物理 AI）分配",
+      "source": "PR Newswire",
+      "quality_score": 7,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-028",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Alphabet 将 2026 年 capex 上调至 $1950-$2050 亿：AI 需求强劲但投资者信心动摇",
+      "summary": "Alphabet 在 Q2 财报中将全年 capex 上调至 $1950-$2050 亿（此前 $1800-$1900 亿），并警告 2027 年将进一步提高。Google Cloud 收入同比增 82% 至 $248 亿超预期，但搜索收入略低于预期。Alphabet 股价盘后下跌 6%，引发关于 AI 基建支出可持续性的广泛担忧。",
+      "meaning": "：企业客户与 Google Cloud 议价时现在有了更强的筹码——Google 急需证明 AI 基建投资的商业化能力，愿意在大客户合同上做更大让步来换取收入增长故事",
+      "source": "CNBC",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "20260725-029",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "AMD Advancing AI 2026 全栈发布：MI455X 2nm 320B 晶体管 + EPYC 9006 Zen6 + Helios 机架级",
+      "summary": "AMD CDNA 5 架构首款 GPU Instinct MI455X 采用 2nm 工艺、320B 晶体管、432GB HBM4。Helios 机架级系统集成 72 块 MI455X + EPYC Venice CPU，提供 31TB HBM4 内存、2.9 FP4 ExaFLOPS 推理和 1.4 FP8 ExaFLOPS 训练。OpenAI 计划 Q4 2026 部署 Helios，Meta 与 AMD 联合设计 GW 级部署方案。AMD 宣称推理每美元 token 数比竞品高 30%。",
+      "meaning": "：AI 硬件采购已从\"NVIDIA 独供\"进入\"双源竞争\"阶段——企业数据中心在 2027 年扩容采购中应强制要求供应商提供 NVIDIA 和 AMD 双方案对比报价",
+      "source": "AMD IR",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "OpenAI",
+        "Meta"
+      ]
+    },
+    {
+      "id": "20260725-030",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "科技债券遭抛售：年内 AI 借债 $3500 亿，Alphabet 2046 年债券收益率升至 6.11%",
+      "summary": "科技巨头债券周四遭抛售，Alphabet 2046 年到期的 5.5% 债券收益率上升约 9bp 至 6.11%，Oracle 2030 年债券收益率升 17bp 至 6.09%，Microsoft 和 Amazon 的 CDS 利差也在走阔。2026 年科技公司已借入约 $3500 亿用于 AI 投资。Forbes 报道指出，AI 相关债务正在迈向 $5700 亿大关，叠加中东局势推高油价至 $100/桶以上，通胀预期升温进一步加剧长端利率压力。",
+      "meaning": "：AI 的融资成本正在上升——企业在签署长期 AI 基建合同时需要评估供应商的债务健康度，高杠杆供应商在利率上行环境中可能被迫削减服务或提高定价",
+      "source": "Bloomberg",
+      "quality_score": 8,
+      "url": "",
+      "companies": [
+        "Microsoft",
+        "Amazon",
+        "Oracle",
+        "FT"
+      ]
+    },
+    {
+      "id": "20260725-031",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚙️ 基础设施",
+      "title": "Tesla 单季 AI 烧钱 $58 亿：两年来首次负现金流，Musk 称 2026 是\"巨额 capex 年\"",
+      "summary": "Tesla 在 Q2 2026 财报中披露 AI 相关支出约 $58 亿，导致公司出现两年来首次负自由现金流。Musk 在投资者电话会上宣称 2026 将是\"massive capex year\"，全年 capex 预计超 $250 亿。Tesla 股价盘后暴跌超 12%，成为 Mag 7 抛售的领跌者。公司利润远低于市场预期。",
+      "meaning": "：AI 基建投资的\"现金流考验\"已从初创公司扩展到大型上市公司——CFO 在制定 AI 投资计划时必须做现金流压力测试，确保 AI 支出不会导致核心业务出现流动性危机",
+      "source": "CNBC",
+      "quality_score": 8,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-032",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "欧盟委员会发布 AI Act Article 50 透明度指南：August 2 生效倒计时 9 天",
+      "summary": "欧盟委员会发布 51 页最终版指南，阐明 AI Act 第 50 条透明度义务的具体要求：AI 系统提供商必须告知用户正在与 AI 交互，AI 生成内容需添加机器可读标记以便检测。8 月 2 日起，聊天机器人透明度义务正式生效，AI 生成内容标注义务推迟至 12 月 2 日。虽然高风险 AI 系统的核心义务已被推迟至 2027 年 12 月，但透明度条款基本不受影响。",
+      "meaning": "：在欧盟市场运营 AI 聊天机器人的企业必须在 8 月 2 日前完成合规改造——最低要求是在 AI 对话界面添加\"您正在与 AI 交互\"的明确提示，否则面临处罚风险",
+      "source": "European Commission",
+      "quality_score": 8,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-033",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "中美 AI 博弈升级：马朝旭赴美探底 + Bessent 威胁制裁中国 AI 实验室蒸馏行为",
+      "summary": "中国副外长马朝旭本周访问华盛顿，就即将举行的首轮 AI 对话（预计 9 月，Bessent 领队，习近平访美前夕）进行先行探底。同时，美国财长 Bessent 在 Fox Business 采访中明确表示中国开源 AI 模型将受到更严格审查，指出\"美国大模型的水印在许多中国模型中被发现\"，并将蒸馏行为定性为\"知识产权窃取\"。",
+      "meaning": "：使用中国开源 AI 模型（DeepSeek、Qwen 等）的跨国企业需要立即评估合规风险——如果美国对蒸馏行为实施制裁，使用被认定含有美国模型\"水印\"的中国模型可能违反出口管制",
+      "source": "Bloomberg / CNBC",
+      "quality_score": 8,
+      "url": "",
+      "companies": []
+    },
+    {
+      "id": "20260725-034",
+      "date": "2026-07-25",
+      "is_top5": false,
+      "is_tier0": false,
+      "dimension": "⚖️ 监管",
+      "title": "Claude Cowork \"SharedRoot\" 沙箱逃逸漏洞：利用 CVE-2026-46331 获取宿主机完整访问权限",
+      "summary": "Accomplish AI 披露 Claude Cowork 的 Linux VM 沙箱可通过单条消息逃逸：在无特权用户命名空间中加载 Linux 内核的 act_pedit Traffic Control 子系统，利用 CVE-2026-46331（pedit COW）破坏页缓存，获取 guest-root 后进而读写宿主机 Mac 的完整文件系统，包括 SSH 密钥和云凭证。约 500,000 macOS 用户受影响。Anthropic 将报告标记为\"informative\"未出修复。",
+      "meaning": "：AI Agent 的安全威胁模型需要从\"提示注入\"扩展到\"基础设施逃逸\"——CISO 在批准 AI Agent 部署时必须将沙箱逃逸纳入威胁矩阵，要求供应商提供内核级安全审计报告",
+      "source": "The Hacker News / Accomplish AI",
+      "quality_score": 7,
+      "url": "",
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "20260724-T01",
       "date": "2026-07-24",
@@ -37163,50 +37711,50 @@
   ],
   "tag_index": {
     "dimensions": {
-      "🚀 产品": 354,
-      "💰 商业": 274,
-      "🌟 Top 5": 260,
-      "🧠 Tier 0": 250,
-      "🏢 案例": 217,
+      "🚀 产品": 359,
+      "💰 商业": 279,
+      "🌟 Top 5": 265,
+      "🧠 Tier 0": 255,
+      "🏢 案例": 220,
       "🇨🇳 国内": 215,
-      "⚙️ 基础设施": 210,
-      "⚖️ 监管": 199,
-      "👥 组织": 181,
+      "⚙️ 基础设施": 214,
+      "⚖️ 监管": 202,
+      "👥 组织": 185,
       "📊 咨询": 101
     },
     "companies": {
-      "Anthropic": 401,
-      "OpenAI": 339,
-      "Google": 212,
-      "FT": 154,
-      "NVIDIA": 146,
-      "Microsoft": 109,
+      "Anthropic": 404,
+      "OpenAI": 345,
+      "Google": 215,
+      "FT": 158,
+      "NVIDIA": 148,
+      "Microsoft": 112,
       "AWS": 99,
-      "Amazon": 93,
-      "DeepSeek": 92,
-      "Meta": 73,
-      "Simon Willison": 71,
-      "MIT": 70,
+      "Amazon": 96,
+      "DeepSeek": 93,
+      "Meta": 75,
+      "Simon Willison": 72,
+      "MIT": 71,
+      "Bloomberg": 60,
       "xAI": 60,
-      "Bloomberg": 59,
       "Kimi": 57,
       "DeepMind": 54,
-      "Gary Marcus": 51,
+      "Gary Marcus": 52,
       "阿里": 48,
       "Mythos": 47,
       "智谱": 46,
+      "Salesforce": 43,
       "BCG": 43,
-      "Salesforce": 42,
+      "TechCrunch": 42,
       "Bedrock": 42,
       "腾讯": 42,
-      "TechCrunch": 41,
       "字节": 31,
+      "IBM": 30,
+      "Stratechery": 30,
+      "Oracle": 30,
       "Hugging Face": 30,
-      "IBM": 29,
-      "Stratechery": 29,
       "豆包": 29,
       "Deloitte": 28,
-      "Oracle": 28,
       "Apple": 28,
       "SAP": 27,
       "Moonshot": 25,
@@ -37227,17 +37775,13 @@
       "Dario Amodei": 13
     },
     "signal_days": {
-      "strong": 15,
+      "strong": 16,
       "medium": 32,
       "weak": 5
     }
   },
   "trends": {
     "timeline_30d": [
-      {
-        "date": "2026-06-25",
-        "count": 36
-      },
       {
         "date": "2026-06-26",
         "count": 39
@@ -37353,10 +37897,15 @@
       {
         "date": "2026-07-24",
         "count": 33
+      },
+      {
+        "date": "2026-07-25",
+        "count": 31
       }
     ],
     "top_companies_timeline": {
       "Anthropic": {
+        "2026-07-25": 3,
         "2026-07-24": 7,
         "2026-07-23": 4,
         "2026-07-22": 5,
@@ -37411,6 +37960,7 @@
         "2026-05-14": 14
       },
       "OpenAI": {
+        "2026-07-25": 6,
         "2026-07-24": 8,
         "2026-07-23": 9,
         "2026-07-22": 5,
@@ -37464,6 +38014,7 @@
         "2026-05-14": 10
       },
       "Google": {
+        "2026-07-25": 3,
         "2026-07-24": 4,
         "2026-07-23": 3,
         "2026-07-22": 2,
@@ -37516,6 +38067,7 @@
         "2026-05-14": 8
       },
       "FT": {
+        "2026-07-25": 4,
         "2026-07-24": 4,
         "2026-07-23": 5,
         "2026-07-22": 1,
@@ -37568,6 +38120,7 @@
         "2026-05-14": 4
       },
       "NVIDIA": {
+        "2026-07-25": 2,
         "2026-07-24": 4,
         "2026-07-23": 5,
         "2026-07-22": 3,
@@ -37619,6 +38172,7 @@
         "2026-05-14": 2
       },
       "Microsoft": {
+        "2026-07-25": 3,
         "2026-07-24": 2,
         "2026-07-23": 3,
         "2026-07-22": 1,
@@ -37709,6 +38263,7 @@
         "2026-05-14": 6
       },
       "Amazon": {
+        "2026-07-25": 3,
         "2026-07-24": 1,
         "2026-07-21": 1,
         "2026-07-20": 2,
@@ -37750,6 +38305,7 @@
         "2026-05-14": 4
       },
       "DeepSeek": {
+        "2026-07-25": 1,
         "2026-07-24": 1,
         "2026-07-23": 2,
         "2026-07-22": 4,
@@ -37786,6 +38342,7 @@
         "2026-05-14": 1
       },
       "Meta": {
+        "2026-07-25": 2,
         "2026-07-24": 1,
         "2026-07-23": 1,
         "2026-07-22": 4,
