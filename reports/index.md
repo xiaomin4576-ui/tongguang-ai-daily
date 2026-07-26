@@ -4,6 +4,7 @@
 
 <!-- AUTO-GENERATED LIST START -->
 
+- [2026-07-27 周一](./2026-07-27.md) — 28 篇 — 关键词：Alphabet Q2负现金流$449亿CapEx / Opus 5 FrontierBench登顶半价 / 25家公司联名保卫开源权重 / Kimi K3 2.8T开放权重7/27 / EU AI Act 8月2日生效倒计时
 - [2026-07-26 周日](./2026-07-26.md) — 25 篇 — 关键词：Claude Opus 5半价发布 / 25家公司联名保卫开源权重AI / 亚洲基金集体撤离AI股 / Patreon+Uber AI裁员 / Midjourney收购Co-Star
 - [2026-07-25 周六](./2026-07-25.md) — 26 篇 — 关键词：Mag7 $797B抛售 / AMD MI455X全栈首发 / Monday.com裁员20%AI转型 / Microsoft MAI自研降本89% / Claude SharedRoot沙箱逃逸
 - [2026-07-24 周五](./2026-07-24.md) — 28 篇 — 关键词：白宫指控Moonshot蒸馏Fable+财政部制裁 / AMD $50亿Anthropic 2GW芯片 / OpenAI Presence企业Agent / Alphabet $2050亿capex / OpenAI $300亿Georgia数据中心
