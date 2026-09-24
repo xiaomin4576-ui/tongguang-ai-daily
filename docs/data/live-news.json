@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-24T15:48:47.230495+00:00",
-    "last_success_at": "2026-09-24T15:48:47.230495+00:00",
+    "attempted_at": "2026-09-24T20:29:19.259864+00:00",
+    "last_success_at": "2026-09-24T20:29:19.259864+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-24T14:08:57+00:00",
     "sources_ok": 7,
@@ -17,7 +17,7 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "nvidia",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 62,
-    "received_items": 60,
+    "received_items": 59,
     "mode": "rss-source-excerpts"
   },
   "articles": [
