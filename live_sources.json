@@ -1,0 +1,44 @@
+[
+  {
+    "id": "openai",
+    "name": "OpenAI 官方",
+    "url": "https://openai.com/news/rss.xml",
+    "all_ai": true
+  },
+  {
+    "id": "google-ai",
+    "name": "Google AI 官方",
+    "url": "https://blog.google/technology/ai/rss/",
+    "all_ai": true
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA 官方",
+    "url": "https://blogs.nvidia.com/feed/",
+    "all_ai": false
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face 官方",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "all_ai": true
+  },
+  {
+    "id": "simonwillison",
+    "name": "Simon Willison",
+    "url": "https://simonwillison.net/atom/everything/",
+    "all_ai": false
+  },
+  {
+    "id": "qbitai",
+    "name": "量子位",
+    "url": "https://www.qbitai.com/feed",
+    "all_ai": false
+  },
+  {
+    "id": "mit-ai",
+    "name": "MIT AI 研究新闻",
+    "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+    "all_ai": false
+  }
+]

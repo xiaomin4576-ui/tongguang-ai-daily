@@ -1433,6 +1433,8 @@ mark {
 
 .toast.show { opacity: 1; }
 
+.news-freshness{margin:0 0 20px;padding:18px 20px;border:1px solid #cddfd9;border-radius:12px;background:#eff8f4;color:#244f42;line-height:1.7;font-size:13px}
+.news-freshness strong{display:block;font-size:15px;margin-bottom:4px}.news-freshness p{margin:3px 0}.news-freshness.stale{background:#fff7e8;border-color:#e9c995;color:#785018}.news-freshness details{margin-top:5px}.news-freshness summary{cursor:pointer}
 </style>
 </head>
 <body>
@@ -1468,7 +1470,7 @@ mark {
   <aside class="sidebar">
     <h4>视图</h4>
     <ul class="filter-list" id="view-list">
-      <li class="filter-item active" data-view="all">
+      <li class="filter-item" data-view="all">
         <span class="filter-label">📚 全部</span>
         <span class="filter-count" id="count-all">-</span>
       </li>
@@ -1477,14 +1479,14 @@ mark {
         <span class="filter-count" id="count-favorites">0</span>
       </li>
       <li class="filter-item" data-view="top5">
-        <span class="filter-label">⭐ Top 5(每日重磅)</span>
+        <span class="filter-label">⭐ 历史 Top 5</span>
         <span class="filter-count" id="count-top5">-</span>
       </li>
       <li class="filter-item" data-view="tier0">
-        <span class="filter-label">🧠 Tier 0 深度</span>
+        <span class="filter-label">🧠 历史深度</span>
         <span class="filter-count" id="count-tier0">-</span>
       </li>
-      <li class="filter-item" data-view="recent7">
+      <li class="filter-item active" data-view="recent7">
         <span class="filter-label">🗓 最近 7 天</span>
         <span class="filter-count" id="count-recent7">-</span>
       </li>
@@ -1511,7 +1513,7 @@ mark {
   <main class="content">
     <div class="content-header">
       <div class="ch-left">
-        <h2 class="content-title" id="content-title">📚 全部早报</h2>
+        <h2 class="content-title" id="content-title">📚 快讯与早报</h2>
         <div class="content-meta" id="content-meta">--</div>
       </div>
       <nav class="section-nav">
@@ -1521,6 +1523,8 @@ mark {
         <a href="./stats.html">📊 趋势</a>
       </nav>
     </div>
+
+    <div id="news-freshness" role="status" class="news-freshness">正在核对内容更新时间…</div>
 
     <div class="view-tabs">
       <button class="view-tab active" data-sort="date-desc">📅 最新 ↓</button>
@@ -1582,7 +1586,7 @@ mark {
 // ═══════════════════════════════════════════════════════════════════
 let DATA = null;
 let activeFilters = {
-  view: 'all',           // all / favorites / top5 / tier0 / recent7
+  view: 'recent7',       // all / favorites / top5 / tier0 / recent7
   dimension: null,
   company: null,
   myTag: null,           // 个人标签筛选
@@ -1923,6 +1927,19 @@ async function load() {
     const res = await fetch('./data/index.json?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     DATA = await res.json();
+    let live = null;
+    try {
+      const liveRes = await fetch('./data/live-news.json?t=' + Date.now(), {signal: AbortSignal.timeout(10000)});
+      if (!liveRes.ok) throw new Error('Live feed unavailable');
+      live = await liveRes.json();
+      const urls = new Set(DATA.articles.map(a => a.url));
+      const fresh = (live.articles || []).filter(a => a.automated && a.title && a.date && /^https?:\/\//i.test(a.url) && !urls.has(a.url));
+      DATA.articles.push(...fresh);
+      DATA.tag_index.dimensions = {'📰 自动快讯': fresh.length, ...DATA.tag_index.dimensions};
+      for (const a of fresh) for (const c of a.companies || []) DATA.tag_index.companies[c] = (DATA.tag_index.companies[c] || 0) + 1;
+    } catch (_) { /* Show archive and an explicit intake warning below. */ }
+    DATA.meta.total_articles = DATA.articles.length;
+    renderFreshness(live);
     init();
   } catch (e) {
     document.getElementById('article-list').innerHTML = `
@@ -1934,8 +1951,33 @@ async function load() {
   }
 }
 
+function recentCutoff() {
+  // Beijing calendar days, based on today, never on the last archived report.
+  return new Date(Date.now() + 8 * 3600000 - 6 * 86400000).toISOString().slice(0, 10);
+}
+
+function renderFreshness(live) {
+  const el = document.getElementById('news-freshness');
+  const meta = live?.meta || {};
+  const sinceSuccess = Date.now() - new Date(meta.last_success_at).getTime();
+  const sinceArticle = Date.now() - new Date(meta.latest_article_at).getTime();
+  const stale = !meta.last_success_at || !meta.latest_article_at || !Number.isFinite(sinceSuccess) || !Number.isFinite(sinceArticle) || sinceSuccess > 30 * 3600000 || sinceArticle > 72 * 3600000 || meta.status === 'stale';
+  const fmt = v => v && Number.isFinite(new Date(v).getTime()) ? new Date(v).toLocaleString('zh-CN', {timeZone:'Asia/Shanghai',hour12:false}) : '暂无记录';
+  const archivedDate = DATA.reports?.[0]?.date || '暂无';
+  const recent = (live?.articles || []).filter(a => a.date >= recentCutoff()).length;
+  el.classList.toggle('stale', stale);
+  el.innerHTML = `<strong>${stale ? '更新提醒：自动快讯已过期或采集异常' : '全球 AI 自动快讯 · 持续更新'}</strong>
+    <p>最近 7 天 ${recent} 条 · 最新内容：${escapeHtml(fmt(meta.latest_article_at))}（北京时间）</p>
+    <p>最近成功采集：${escapeHtml(fmt(meta.last_success_at))} · 最近检查：${escapeHtml(fmt(meta.attempted_at))} · 信源可用 ${Number(meta.sources_ok || 0)}/${Number(meta.sources_total || 0)}</p>
+    <p>快讯保留原文标题与来源摘要，未经人工精选或评分。历史深度早报截至 ${escapeHtml(archivedDate)}，周报与趋势页展示历史早报。</p>
+    <details><summary>查看信源状态与更新说明${meta.status === 'partial' ? '（部分信源暂不可用）' : ''}</summary>
+      <p>每天自动检查 4 次；上次成功采集超过 30 小时，或 72 小时没有新内容，会显示过期提醒。采集失败时保留已有文章。</p>
+      ${(meta.source_checks || []).map(c => `<div>${escapeHtml(c.name)}：${c.ok ? `可用 · 本次 ${Number(c.items)} 条` : '暂不可用'}</div>`).join('')}
+    </details>`;
+}
+
 function init() {
-  document.getElementById('stat-total-reports').textContent = DATA.meta.total_reports + ' 份早报';
+  document.getElementById('stat-total-reports').textContent = DATA.meta.total_reports + ' 份历史早报';
   document.getElementById('stat-total-articles').textContent = DATA.meta.total_articles + ' 篇';
 
   renderViewCounts();
@@ -1958,9 +2000,8 @@ function renderViewCounts() {
 
   // 最近 7 天
   if (DATA.reports.length > 0) {
-    const latest = new Date(DATA.reports[0].date);
-    const cutoff = new Date(latest.getTime() - 6 * 86400000);
-    const recent7 = DATA.articles.filter(a => new Date(a.date) >= cutoff).length;
+    const cutoff = recentCutoff();
+    const recent7 = DATA.articles.filter(a => a.date >= cutoff).length;
     document.getElementById('count-recent7').textContent = recent7;
   }
 }
@@ -2019,7 +2060,7 @@ function renderCompanyList() {
   const list = document.getElementById('company-list');
   list.innerHTML = '';
   // 取前 25 家
-  const top = Object.entries(DATA.tag_index.companies).slice(0, 25);
+  const top = Object.entries(DATA.tag_index.companies).sort((a, b) => b[1] - a[1]).slice(0, 25);
   for (const [company, count] of top) {
     const li = document.createElement('li');
     li.className = 'filter-item';
@@ -2035,7 +2076,9 @@ function renderCompanyList() {
 // ═══════════════════════════════════════════════════════════════════
 // 主要的文章列表渲染逻辑
 // ═══════════════════════════════════════════════════════════════════
-function renderArticles() {
+let articleLimit = 100;
+function renderArticles(append = false) {
+  if (!append) articleLimit = 100;
   // ⭐ 特殊路径:收藏视图(独立分支,带按日聚合 + 时间范围)
   if (activeFilters.view === 'favorites') {
     renderFavoritesView();
@@ -2050,9 +2093,8 @@ function renderArticles() {
   } else if (activeFilters.view === 'tier0') {
     articles = articles.filter(a => a.is_tier0);
   } else if (activeFilters.view === 'recent7') {
-    const latest = new Date(DATA.reports[0].date);
-    const cutoff = new Date(latest.getTime() - 6 * 86400000);
-    articles = articles.filter(a => new Date(a.date) >= cutoff);
+    const cutoff = recentCutoff();
+    articles = articles.filter(a => a.date >= cutoff);
   }
 
   // 维度筛选
@@ -2078,7 +2120,7 @@ function renderArticles() {
 
   // 排序
   if (activeFilters.sort === 'date-desc') {
-    articles.sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
+    articles.sort((a, b) => b.date.localeCompare(a.date) || (b.published_at || '').localeCompare(a.published_at || '') || a.id.localeCompare(b.id));
   } else if (activeFilters.sort === 'date-asc') {
     articles.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
   } else if (activeFilters.sort === 'quality-desc') {
@@ -2088,7 +2130,7 @@ function renderArticles() {
   }
 
   // 更新计数
-  document.getElementById('content-meta').textContent = `${articles.length} 篇 · ${DATA.meta.total_reports} 份早报`;
+  document.getElementById('content-meta').textContent = `${articles.length} 篇 · 自动快讯 + ${DATA.meta.total_reports} 份历史早报`;
 
   // 渲染 active filter 标签
   renderActiveFiltersBar();
@@ -2100,7 +2142,14 @@ function renderArticles() {
     return;
   }
 
-  listEl.innerHTML = articles.map(a => renderCard(a)).join('');
+  listEl.innerHTML = articles.slice(0, articleLimit).map(a => renderCard(a)).join('');
+  if (articles.length > articleLimit) {
+    const more = document.createElement('button');
+    more.className = 'clear-filters';
+    more.textContent = `继续加载（已显示 ${articleLimit} / ${articles.length} 篇）`;
+    more.addEventListener('click', () => { articleLimit += 100; renderArticles(true); });
+    listEl.appendChild(more);
+  }
 
   // 卡片点击事件
   listEl.querySelectorAll('.article-card').forEach((el, idx) => {
@@ -2150,7 +2199,7 @@ function renderCard(a) {
   const isFav = !!fav;
 
   let companyChips = (a.companies || []).slice(0, 6).map(c =>
-    `<span class="company-chip">${c}</span>`
+    `<span class="company-chip">${escapeHtml(c)}</span>`
   ).join('');
 
   // 个人备注 + 标签(仅已收藏的文章显示)
@@ -2172,7 +2221,7 @@ function renderCard(a) {
         ${isTop5 ? '<span class="top5-flag">TOP 5</span>' : ''}
         ${isTier0 ? '<span class="tier0-flag">TIER 0</span>' : ''}
         <span class="dim-tag dim-${dimClass}">${a.dimension || ''}</span>
-        <span class="quality">${a.quality_score}/8</span>
+        <span class="quality">${a.automated ? "来源摘要 · 未评分" : `${a.quality_score}/8`}</span>
         <button class="bookmark-btn ${isFav ? 'active' : ''}" data-bookmark-id="${a.id}" title="${isFav ? '已收藏(点击编辑)' : '加入收藏'}">${isFav ? '🔖' : '🔖'}</button>
       </div>
       <h3 class="article-title">${hl(a.title)}</h3>
@@ -2182,8 +2231,8 @@ function renderCard(a) {
       ${myTagsHtml}
       <div class="article-footer">
         ${companyChips}
-        ${a.source ? `<span class="source-line">来源:${a.source}</span>` : ''}
-        ${a.url ? `<a href="${a.url}" target="_blank" rel="noopener">原文 ↗</a>` : ''}
+        ${a.source ? `<span class="source-line">来源:${escapeHtml(a.source)}</span>` : ''}
+        ${a.url ? `<a href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">原文 ↗</a>` : ''}
       </div>
     </article>
   `;
@@ -2625,7 +2674,7 @@ function generateDeepReport(articles, sortedDates, groups) {
   md += `## 一、执行摘要\n\n`;
   md += `**核心数字**:${rangeLabel}你共收藏 ${articles.length} 篇 AI 早报文章, `;
   md += `其中 ⭐ Top 5 级 ${top5Count} 篇(${(top5Count/articles.length*100).toFixed(0)}%) · `;
-  md += `🧠 Tier 0 深度 ${tier0Count} 篇(${(tier0Count/articles.length*100).toFixed(0)}%)。\n\n`;
+  md += `🧠 历史深度 ${tier0Count} 篇(${(tier0Count/articles.length*100).toFixed(0)}%)。\n\n`;
 
   if (topTags.length > 0) {
     md += `**关注的 3 大主题**(按个人标签数量):\n`;
@@ -2836,7 +2885,7 @@ function generateDeepReport(articles, sortedDates, groups) {
       if (a.meaning) md += `📌 **这意味着**:${a.meaning}\n\n`;
       if (a._fav?.note) md += `💭 **我的备注**:${a._fav.note}\n\n`;
       if (a.url) {
-        md += `🔗 [原文](${a.url}) · 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
+        md += `🔗 [原文](${a.url}) ${a.automated ? "· 自动快讯" : `· 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)`}\n\n`;
       } else {
         md += `📄 [所在早报: ${a.date}](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
       }
@@ -3226,7 +3275,7 @@ function exportToMarkdown(articles, sortedDates, groups) {
       if (a.url) {
         md += `🔗 [原文链接](${a.url})`;
         // 同时附带 GitHub 早报回链(方便溯源)
-        md += ` · 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)\n\n`;
+        md += ` ${a.automated ? "· 自动快讯" : `· 📄 [所在早报](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)`}\n\n`;
       } else {
         // 无原文链接时, 至少提供 GitHub 早报文件回链, 方便用户查找
         md += `📄 [所在早报: ${a.date}.md](https://github.com/xiaomin4576-ui/tongguang-ai-daily/blob/main/reports/${a.date}.md)`;
@@ -3269,10 +3318,9 @@ function showToast(msg) {
 }
 
 function highlight(text, term) {
-  if (!text || !term) return text || '';
+  if (!text || !term) return escapeHtml(text || '');
   const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const re = new RegExp(`(${escaped})`, 'gi');
-  return text.replace(re, '<mark>$1</mark>');
+  return String(text).split(new RegExp(`(${escaped})`, 'gi')).map((part, i) => i % 2 ? `<mark>${escapeHtml(part)}</mark>` : escapeHtml(part)).join('');
 }
 
 // ═══════════════════════════════════════════════════════════════════
@@ -3354,13 +3402,13 @@ function updateContentTitle() {
   } else if (activeFilters.searchTerm) {
     titleEl.textContent = '🔍 ' + activeFilters.searchTerm;
   } else if (activeFilters.view === 'top5') {
-    titleEl.textContent = '⭐ Top 5(每日重磅)';
+    titleEl.textContent = '⭐ 历史 Top 5';
   } else if (activeFilters.view === 'tier0') {
-    titleEl.textContent = '🧠 Tier 0 深度参考';
+    titleEl.textContent = '🧠 历史深度参考';
   } else if (activeFilters.view === 'recent7') {
     titleEl.textContent = '🗓 最近 7 天';
   } else {
-    titleEl.textContent = '📚 全部早报';
+    titleEl.textContent = '📚 快讯与早报';
   }
 }
 

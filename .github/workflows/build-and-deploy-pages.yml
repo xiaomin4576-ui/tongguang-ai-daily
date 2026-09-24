@@ -6,6 +6,8 @@ name: 构建并部署阅读库到 GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '17 23,5,11,17 * * *'  # 北京 07:17 / 13:17 / 19:17 / 01:17
   workflow_dispatch:          # 手动触发选项
 
 permissions:
@@ -21,14 +23,27 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      intake: ${{ steps.intake.outcome }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: 验证采集与日期规则
+        run: python3 -m unittest discover -s tests
+
+      - name: 采集有发布日期的 AI 快讯
+        id: intake
+        continue-on-error: true  # 先发布故障状态和保留内容，再由 health job 报错
+        run: python3 scripts/refresh_live_news.py
 
       - name: 1. 解析 reports/ 生成 index.json
         run: |
@@ -42,12 +57,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/index.json
+          git add docs/data/index.json docs/data/live-news.json
           if git diff --staged --quiet; then
             echo "index.json 无变化, 跳过 commit"
           else
-            git commit -m "chore: 自动更新 index.json [skip ci]"
-            git push origin main
+            git commit -m "chore: 更新 AI 快讯与阅读库索引 [skip ci]"
+            # Clips / report publishers can advance main during collection.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
           fi
 
       - name: 3. Setup Pages
@@ -75,3 +95,13 @@ jobs:
           echo "✅ GitHub Pages 部署完成"
           echo "🔗 URL: ${{ steps.deployment.outputs.page_url }}"
           echo "═══════════════════════════════════════════"
+
+  health:
+    needs: [build, deploy]
+    if: ${{ always() && needs.build.outputs.intake == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 标记真实采集故障
+        run: |
+          echo "::error::AI 快讯采集失败或超过 72 小时无新内容；已保留历史数据并发布更新提醒。请检查 build 的采集日志。"
+          exit 1

@@ -18,12 +18,18 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-clips:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout tongguang-ai-daily
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: Checkout my-clips
         uses: actions/checkout@v4
@@ -57,6 +63,7 @@ jobs:
             echo "clips-index.json 无变化, 跳过 commit"
           else
             git commit -m "chore: 自动更新 clips 索引 (每日 8:00 跑) [skip ci]"
+            git pull --rebase origin main
             git push origin main
             echo "✅ 已 push clips-index.json 更新"
           fi
