@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-24T09:29:10.412123+00:00",
-    "last_success_at": "2026-09-24T09:29:10.412123+00:00",
+    "attempted_at": "2026-09-24T15:48:47.230495+00:00",
+    "last_success_at": "2026-09-24T15:48:47.230495+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-24T08:20:12+00:00",
+    "latest_article_at": "2026-09-24T14:08:57+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,30 @@
         "items": 2
       }
     ],
-    "total_articles": 61,
-    "received_items": 61,
+    "total_articles": 62,
+    "received_items": 60,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-280bf64dcca75cee1131",
+      "date": "2026-09-24",
+      "published_at": "2026-09-24T14:08:57+00:00",
+      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-b7bdd15f47627de89c4f",
       "date": "2026-09-24",
