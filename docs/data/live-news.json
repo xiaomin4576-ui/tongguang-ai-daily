@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-25T15:48:21.471349+00:00",
-    "last_success_at": "2026-09-25T15:48:21.471349+00:00",
+    "attempted_at": "2026-09-25T20:28:34.732907+00:00",
+    "last_success_at": "2026-09-25T20:28:34.732907+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-25T13:24:20+00:00",
+    "latest_article_at": "2026-09-25T19:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 15
+        "items": 14
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 2
       }
     ],
-    "total_articles": 66,
+    "total_articles": 67,
     "received_items": 54,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9de028fbe46cac8b155a",
+      "date": "2026-09-26",
+      "published_at": "2026-09-25T19:00:00+00:00",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+      "meaning": "",
+      "url": "https://openai.com/index/proaction",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-fbc160e17cfb6d4245db",
       "date": "2026-09-25",
