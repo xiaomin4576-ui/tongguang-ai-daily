@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-25T02:56:49.815820+00:00",
-    "last_success_at": "2026-09-25T02:56:49.815820+00:00",
+    "attempted_at": "2026-09-25T10:10:38.119679+00:00",
+    "last_success_at": "2026-09-25T10:10:38.119679+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-24T14:08:57+00:00",
+    "latest_article_at": "2026-09-25T06:14:07+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 5
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,45 @@
         "items": 2
       }
     ],
-    "total_articles": 62,
-    "received_items": 57,
+    "total_articles": 64,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-4e721d0976c50e21fbfb",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T06:14:07+00:00",
+      "title": "华为大模型双子星联手创业，要找物理世界的Scaling Law",
+      "summary": "一场物理世界的基模实验",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/497070.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-be711a0088bbc0cf51d0",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T05:52:18+00:00",
+      "title": "给机器人当老师，还能赚外快？“中国版Index”觅蜂派来了",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/497012.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-280bf64dcca75cee1131",
       "date": "2026-09-24",
@@ -935,7 +969,7 @@
       "id": "live-d2871d486c61275aa183",
       "date": "2026-09-21",
       "published_at": "2026-09-21T00:00:00+00:00",
-      "title": "How V7 gives AI agents institutional memory",
+      "title": "V7 cuts costs 78% while boosting accuracy with GPT-5.6 Luna",
       "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
       "meaning": "",
       "url": "https://openai.com/index/v7",
