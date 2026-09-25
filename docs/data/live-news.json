@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-25T10:10:38.119679+00:00",
-    "last_success_at": "2026-09-25T10:10:38.119679+00:00",
+    "attempted_at": "2026-09-25T15:48:21.471349+00:00",
+    "last_success_at": "2026-09-25T15:48:21.471349+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-25T06:14:07+00:00",
+    "latest_article_at": "2026-09-25T13:24:20+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 19
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 3
+        "items": 1
       },
       {
         "id": "nvidia",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 14
+        "items": 15
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 5
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 2
       }
     ],
-    "total_articles": 64,
-    "received_items": 58,
+    "total_articles": 66,
+    "received_items": 54,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-fbc160e17cfb6d4245db",
+      "date": "2026-09-25",
+      "published_at": "2026-09-25T13:24:20+00:00",
+      "title": "“AlphaGo”杀进足球场！自我对弈140年，机器人成“梅西终结者”",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/497278.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-4e721d0976c50e21fbfb",
       "date": "2026-09-25",
@@ -82,6 +99,23 @@
       "url": "https://www.qbitai.com/2026/09/497012.html",
       "source": "量子位",
       "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-eee7ce72da23ef2f47be",
+      "date": "2026-09-25",
+      "published_at": "2026-09-24T23:31:08+00:00",
+      "title": "Note on 24th September 2026",
+      "summary": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: coding-agents , ai , llms",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/24/harder/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
