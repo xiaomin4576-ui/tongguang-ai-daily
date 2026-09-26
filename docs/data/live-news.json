@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-26T02:59:55.986928+00:00",
-    "last_success_at": "2026-09-26T02:59:55.986928+00:00",
+    "attempted_at": "2026-09-26T09:50:56.981534+00:00",
+    "last_success_at": "2026-09-26T09:50:56.981534+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-25T19:00:00+00:00",
+    "latest_article_at": "2026-09-26T09:07:41+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,45 @@
         "items": 2
       }
     ],
-    "total_articles": 67,
-    "received_items": 53,
+    "total_articles": 69,
+    "received_items": 54,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a27a0ab22bc89264b813",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T09:07:41+00:00",
+      "title": "AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo",
+      "summary": "Simate将训练、推理与评测全流程接入自研Infra，通过极致的任务编排与资源调度，同时并行推进数十条相互独立的研究路线。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/498271.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-fd97b6b16429298a328f",
+      "date": "2026-09-26",
+      "published_at": "2026-09-26T09:01:00+00:00",
+      "title": "笔记本跑7000亿参数GLM！无GPU也行? SSD当显存用火爆GitHub",
+      "summary": "GitHub现在最火热的大模型开源小蜂鸟Colibrì是个啥？",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/497624.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-9de028fbe46cac8b155a",
       "date": "2026-09-26",
