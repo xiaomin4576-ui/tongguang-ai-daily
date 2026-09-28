@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-28T01:38:11.704177+00:00",
-    "last_success_at": "2026-09-28T01:38:11.704177+00:00",
+    "attempted_at": "2026-09-28T03:02:02.064683+00:00",
+    "last_success_at": "2026-09-28T03:02:02.064683+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-27T14:20:35+00:00",
     "sources_ok": 7,
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -50,8 +50,8 @@
         "items": 2
       }
     ],
-    "total_articles": 70,
-    "received_items": 47,
+    "total_articles": 71,
+    "received_items": 48,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -292,6 +292,23 @@
       "url": "https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924",
       "source": "MIT AI 研究新闻",
       "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-03a38f20f9628179a595",
+      "date": "2026-09-24",
+      "published_at": "2026-09-23T23:14:57+00:00",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "summary": "My comment on We just shipped support for the ugliest part of HTTP: Vary — Hacker News. I've been wanting this from Cloudflare for years . The classic problem here is if you do that thing where user agents that send \"accept: text/html\" get HTML, while user agents that don't get JSON or some other fo",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/23/hn-49823961/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
