@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-28T03:02:02.064683+00:00",
-    "last_success_at": "2026-09-28T03:02:02.064683+00:00",
+    "attempted_at": "2026-09-28T11:40:02.010298+00:00",
+    "last_success_at": "2026-09-28T11:40:02.010298+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-27T14:20:35+00:00",
+    "latest_article_at": "2026-09-28T09:44:05+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 17
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -50,11 +50,47 @@
         "items": 2
       }
     ],
-    "total_articles": 71,
-    "received_items": 48,
+    "total_articles": 73,
+    "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-09d1d26fa19dd694ec40",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T09:44:05+00:00",
+      "title": "Holo4: powering generalist computer-use agents",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-1fb466641ec80a8dc13c",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T04:01:30+00:00",
+      "title": "Quoting Muse AI Agent",
+      "summary": "Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, messaged a bunch of times, and nobody came down. He left angry at 9:38 and left a negative rating. Worse, my auto-reply told him \"Yep I'm here!\" at 9:27 when you clearly weren't available, which is on me. T",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-845b2674c3cde20b35c6",
       "date": "2026-09-27",
