@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-27T20:08:04.816212+00:00",
-    "last_success_at": "2026-09-27T20:08:04.816212+00:00",
+    "attempted_at": "2026-09-28T01:38:11.704177+00:00",
+    "last_success_at": "2026-09-28T01:38:11.704177+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-27T14:20:35+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 9
       },
       {
         "id": "qbitai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 70,
-    "received_items": 51,
+    "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
