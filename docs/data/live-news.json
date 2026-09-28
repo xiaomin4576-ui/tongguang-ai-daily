@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-28T11:40:02.010298+00:00",
-    "last_success_at": "2026-09-28T11:40:02.010298+00:00",
+    "attempted_at": "2026-09-28T22:31:48.275862+00:00",
+    "last_success_at": "2026-09-28T22:31:48.275862+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-28T09:44:05+00:00",
+    "latest_article_at": "2026-09-28T22:07:38+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,31 +11,31 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 17
+        "items": 18
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 6
+        "items": 2
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -50,11 +50,49 @@
         "items": 2
       }
     ],
-    "total_articles": 73,
-    "received_items": 47,
+    "total_articles": 78,
+    "received_items": 45,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-64e27cc1872ee8386150",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T22:07:38+00:00",
+      "title": "Claude Sonnet 5.5",
+      "summary": "Claude Sonnet 5.5 New Sonnet model from Anthropic today. They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well. Here are some pelicans riding bicycles . Sonnet 5.5 suff",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-db713ef86bd59ea8f7ba",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T19:00:00+00:00",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-09d1d26fa19dd694ec40",
       "date": "2026-09-28",
@@ -75,6 +113,25 @@
       ]
     },
     {
+      "id": "live-0adf5bb2a473897d1252",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T07:00:00+00:00",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+      "meaning": "",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-1fb466641ec80a8dc13c",
       "date": "2026-09-28",
       "published_at": "2026-09-28T04:01:30+00:00",
@@ -90,6 +147,44 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-833e9419a34f8836dc9d",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "title": "Are you a Codex Original?",
+      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
+      "meaning": "",
+      "url": "https://openai.com/form/codex-originals",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-eb674100bb687fff7643",
+      "date": "2026-09-28",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+      "meaning": "",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-845b2674c3cde20b35c6",
