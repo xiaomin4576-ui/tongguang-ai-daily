@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-28T22:31:48.275862+00:00",
-    "last_success_at": "2026-09-28T22:31:48.275862+00:00",
+    "attempted_at": "2026-09-29T02:34:12.267644+00:00",
+    "last_success_at": "2026-09-29T02:34:12.267644+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-28T22:07:38+00:00",
+    "latest_article_at": "2026-09-29T01:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 3
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 2
       }
     ],
-    "total_articles": 78,
-    "received_items": 45,
+    "total_articles": 79,
+    "received_items": 41,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-50d71cd52400f551c336",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T01:00:00+00:00",
+      "title": "How we will do better for Australia",
+      "summary": "OpenAI apologizes for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+      "meaning": "",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-64e27cc1872ee8386150",
       "date": "2026-09-29",
