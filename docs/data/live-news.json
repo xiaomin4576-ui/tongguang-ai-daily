@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-29T03:41:35.603057+00:00",
-    "last_success_at": "2026-09-29T03:41:35.603057+00:00",
+    "attempted_at": "2026-09-29T11:21:04.843510+00:00",
+    "last_success_at": "2026-09-29T11:21:04.843510+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-28T22:07:38+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 1
       },
       {
         "id": "mit-ai",
@@ -50,8 +50,8 @@
         "items": 2
       }
     ],
-    "total_articles": 79,
-    "received_items": 41,
+    "total_articles": 80,
+    "received_items": 40,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -110,6 +110,25 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-2fc54b690d7b20a2e143",
+      "date": "2026-09-29",
+      "published_at": "2026-09-28T19:00:00+00:00",
+      "title": "Towards safety cases for frontier AI training",
+      "summary": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
+      "meaning": "",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
