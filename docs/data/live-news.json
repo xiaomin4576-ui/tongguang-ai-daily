@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-29T11:21:04.843510+00:00",
-    "last_success_at": "2026-09-29T11:21:04.843510+00:00",
+    "attempted_at": "2026-09-29T21:23:34.455329+00:00",
+    "last_success_at": "2026-09-29T21:23:34.455329+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-28T22:07:38+00:00",
+    "latest_article_at": "2026-09-29T15:55:13+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,11 +50,126 @@
         "items": 2
       }
     ],
-    "total_articles": 80,
-    "received_items": 40,
+    "total_articles": 86,
+    "received_items": 37,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d3b185d971abc0ead807",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T15:55:13+00:00",
+      "title": "OpenAI DevDay 2026 live blog",
+      "summary": "I'm at OpenAI DevDay today, in Fort Mason, San Francisco. Same as last year I'll be live blogging the keynote and some other notes during the day. OpenAI gave me a free ticket and a seat in the \"creator\" area for the keynote. Tags: ai , openai , generative-ai , llms , coding-agents , live-blog",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-dc53fce90c6f36f5c727",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T15:30:38+00:00",
+      "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-afa8c33f8eb7996a3941",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T13:07:00+00:00",
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-d6b9f5e651b1891e950e",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T10:00:00+00:00",
+      "title": "Introducing GPT-6.1 Sol",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-6071f63e21f6425413eb",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T10:00:00+00:00",
+      "title": "DevDay 2026 Recap",
+      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+      "meaning": "",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-dec620cb7225d2434a9b",
+      "date": "2026-09-29",
+      "published_at": "2026-09-29T00:00:00+00:00",
+      "title": "Introducing dots",
+      "summary": "Dots by OpenAI are a proactive assistant that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-dots",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-64e27cc1872ee8386150",
       "date": "2026-09-29",
