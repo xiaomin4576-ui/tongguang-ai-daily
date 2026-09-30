@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-30T16:48:54.022008+00:00",
-    "last_success_at": "2026-09-30T16:48:54.022008+00:00",
+    "attempted_at": "2026-09-30T21:25:07.912326+00:00",
+    "last_success_at": "2026-09-30T21:25:07.912326+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-30T15:15:00+00:00",
     "sources_ok": 7,
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "nvidia",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,8 +50,8 @@
         "items": 3
       }
     ],
-    "total_articles": 98,
-    "received_items": 34,
+    "total_articles": 99,
+    "received_items": 33,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -126,6 +126,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-90249c2a3882c6d31b88",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T10:30:00+00:00",
+      "title": "Disrupting a coordinated model-distillation campaign",
+      "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+      "meaning": "",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-448196b76eaf09f98ed7",
