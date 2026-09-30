@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-09-30T02:05:41.470156+00:00",
-    "last_success_at": "2026-09-30T02:05:41.470156+00:00",
+    "attempted_at": "2026-09-30T03:29:14.188756+00:00",
+    "last_success_at": "2026-09-30T03:29:14.188756+00:00",
     "status": "ok",
     "latest_article_at": "2026-09-29T22:20:28+00:00",
     "sources_ok": 7,
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 1
+        "items": 0
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 88,
-    "received_items": 35,
+    "received_items": 33,
     "mode": "rss-source-excerpts"
   },
   "articles": [
