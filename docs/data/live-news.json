@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-09-30T11:09:15.134262+00:00",
-    "last_success_at": "2026-09-30T11:09:15.134262+00:00",
+    "attempted_at": "2026-09-30T16:48:54.022008+00:00",
+    "last_success_at": "2026-09-30T16:48:54.022008+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-30T10:04:12+00:00",
+    "latest_article_at": "2026-09-30T15:15:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 15
+        "items": 10
       },
       {
         "id": "google-ai",
@@ -23,38 +23,110 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 0
+        "items": 1
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 4
+        "items": 5
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 2
+        "items": 3
       }
     ],
-    "total_articles": 91,
+    "total_articles": 98,
     "received_items": 34,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-17f635e65de8780754dc",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:15:00+00:00",
+      "title": "MIT Transit Lab to develop an AI platform for public transit agencies",
+      "summary": "With $2.1 million funding from Google.org, the open-source Public Transit Intelligence Hub will unify public transit monitoring, operations, and passenger communication.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/mit-transit-lab-to-develop-ai-platform-public-transit-agencies-0930",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-532f254b17e03693cf54",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:00:00+00:00",
+      "title": "From Training to Production, NVIDIA and CoreWeave Close the Loop on Agentic AI",
+      "summary": "Building on nearly a decade of co-engineering, CoreWeave has built NVIDIA compute, networking and software into a cloud purpose-built for AI that’s still returning on investment across multiple generations of deployment. Now, CoreWeave is bringing the next generation of NVIDIA infrastructure to prod",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-03dddcc866a982e13bdd",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T15:00:00+00:00",
+      "title": "This game-playing AI is the new champ at Stratego",
+      "summary": "Able to defeat top-ranked human players and more efficient than other models, the new system could help decision-makers in military maneuvers or business negotiations.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/game-playing-ai-stratego-new-champ-0930",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-a56429335c603ae5d195",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T14:03:43+00:00",
+      "title": "OpenAI推理之父最新访谈！数学只是多智能体时代的开胃菜",
+      "summary": "千禧年难题的突破，10000个Agent最多占了10%的功劳。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/09/499654.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-448196b76eaf09f98ed7",
       "date": "2026-09-30",
@@ -72,6 +144,25 @@
       "is_tier0": false,
       "companies": [
         "Anthropic"
+      ]
+    },
+    {
+      "id": "live-061338e668ed697490e5",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T10:00:00+00:00",
+      "title": "Helping small businesses put AI to work",
+      "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+      "meaning": "",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -111,6 +202,25 @@
       "companies": []
     },
     {
+      "id": "live-74c2ff7e2707d1f61043",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T00:00:00+00:00",
+      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/open-tts-leaderboard",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
       "id": "live-c48f1ff5058b49fc9610",
       "date": "2026-09-30",
       "published_at": "2026-09-29T22:20:28+00:00",
@@ -137,6 +247,25 @@
       "summary": "My comment on GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price — Hacker News. I'm a bit late with the pelicans because I was live-blogging the keynote: https://simonwillison.net/2026/Sep/29/openai-devday-2026-liv... Here they are for GPT-6.1-Sol: https://tools.simonwillison.net/markdown",
       "meaning": "",
       "url": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-023d364db8b33fc2047d",
+      "date": "2026-09-30",
+      "published_at": "2026-09-29T16:45:27+00:00",
+      "title": "Photo Scrubber — local face blur & metadata removal",
+      "summary": "Tool: Photo Scrubber — local face blur & metadata removal I took a photograph of some protesters, then thought about how I don't like sharing photographs of strangers with identifiable faces. I had GPT-6 Astra build this experimental tool that would identify faces and automatically blur them out. It",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
       "source": "Simon Willison",
       "source_id": "simonwillison",
       "automated": true,
