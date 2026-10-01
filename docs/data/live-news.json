@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-01T03:34:28.453457+00:00",
-    "last_success_at": "2026-10-01T03:34:28.453457+00:00",
+    "attempted_at": "2026-10-01T11:35:58.253009+00:00",
+    "last_success_at": "2026-10-01T11:35:58.253009+00:00",
     "status": "ok",
-    "latest_article_at": "2026-09-30T15:15:00+00:00",
+    "latest_article_at": "2026-10-01T06:29:01+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -47,14 +47,31 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 2
       }
     ],
-    "total_articles": 99,
+    "total_articles": 100,
     "received_items": 32,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-e48a7f736f56ad596c7c",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T06:29:01+00:00",
+      "title": "Quoting Matthew Green",
+      "summary": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and tho",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-17f635e65de8780754dc",
       "date": "2026-09-30",
