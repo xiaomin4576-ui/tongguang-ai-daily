@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-01T11:35:58.253009+00:00",
-    "last_success_at": "2026-10-01T11:35:58.253009+00:00",
+    "attempted_at": "2026-10-01T21:48:31.390568+00:00",
+    "last_success_at": "2026-10-01T21:48:31.390568+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-01T06:29:01+00:00",
+    "latest_article_at": "2026-10-01T17:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 11
+        "items": 14
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "huggingface",
@@ -50,11 +50,87 @@
         "items": 2
       }
     ],
-    "total_articles": 100,
-    "received_items": 32,
+    "total_articles": 105,
+    "received_items": 36,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b8087b88cb63ae7fc829",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T17:00:00+00:00",
+      "title": "The eternal complement",
+      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
+      "meaning": "",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-637d3dfa247fa816a4c4",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T16:00:00+00:00",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+      "meaning": "",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-f928531f963725197f57",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T15:01:43+00:00",
+      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-c2600e87db69552d07dc",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T13:00:49+00:00",
+      "title": "Productive, Durable, Fungible: How NVIDIA AI Factories Maximize Return on Investment",
+      "summary": "AI factories are built by the megawatt, even by the gigawatt. Each megawatt factory costs roughly $60 million, and AI factory operators will only commit capital on that scale with a clear view of the return on investment. Three key things shape AI factory returns: Earning capacity: What the factory ",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-e48a7f736f56ad596c7c",
       "date": "2026-10-01",
@@ -71,6 +147,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-2167384f51e2a4466793",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+      "meaning": "",
+      "url": "https://openai.com/index/the-den-family-social",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-17f635e65de8780754dc",
