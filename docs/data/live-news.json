@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-02T16:37:28.952947+00:00",
-    "last_success_at": "2026-10-02T16:37:28.952947+00:00",
+    "attempted_at": "2026-10-02T21:18:48.869779+00:00",
+    "last_success_at": "2026-10-02T21:18:48.869779+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-02T16:15:00+00:00",
     "sources_ok": 7,
@@ -50,7 +50,7 @@
         "items": 3
       }
     ],
-    "total_articles": 112,
+    "total_articles": 113,
     "received_items": 40,
     "mode": "rss-source-excerpts"
   },
@@ -148,6 +148,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-882596cbc7639eb42bf2",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T00:00:00+00:00",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+      "meaning": "",
+      "url": "https://openai.com/index/chatham-financial",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
