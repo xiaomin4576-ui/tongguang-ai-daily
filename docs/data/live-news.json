@@ -1,10 +1,10 @@
 {
   "meta": {
-    "attempted_at": "2026-10-01T21:48:31.390568+00:00",
-    "last_success_at": "2026-10-01T21:48:31.390568+00:00",
-    "status": "ok",
-    "latest_article_at": "2026-10-01T17:00:00+00:00",
-    "sources_ok": 7,
+    "attempted_at": "2026-10-02T02:13:27.907786+00:00",
+    "last_success_at": "2026-10-02T02:13:27.907786+00:00",
+    "status": "partial",
+    "latest_article_at": "2026-10-01T23:44:13+00:00",
+    "sources_ok": 6,
     "sources_total": 7,
     "source_checks": [
       {
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "huggingface",
@@ -35,26 +35,64 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": true,
-        "items": 4
+        "ok": false,
+        "items": 0,
+        "error": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 2
+        "items": 3
       }
     ],
-    "total_articles": 105,
-    "received_items": 36,
+    "total_articles": 107,
+    "received_items": 33,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-5395303ce74d411ba3f8",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T23:44:13+00:00",
+      "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+      "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x fast",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI",
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-02c744c8cb64f92f8cff",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T22:00:00+00:00",
+      "title": "New tool lets users repair AI-generated 3D models, then fabricate them just the way they want",
+      "summary": "“InstructMesh” can generate designs for everyday objects that are easy to edit and fabricate for both experts and newcomers to 3D modeling.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/instructmesh-tool-lets-users-repair-ai-3d-models-then-fabricate-them-1001",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-b8087b88cb63ae7fc829",
       "date": "2026-10-02",
