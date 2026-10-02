@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-02T03:34:42.498551+00:00",
-    "last_success_at": "2026-10-02T03:34:42.498551+00:00",
+    "attempted_at": "2026-10-02T11:05:30.377940+00:00",
+    "last_success_at": "2026-10-02T11:05:30.377940+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-01T23:44:13+00:00",
+    "latest_article_at": "2026-10-02T04:01:31+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 107,
+    "total_articles": 108,
     "received_items": 37,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-56c490db040147f1def4",
+      "date": "2026-10-02",
+      "published_at": "2026-10-02T04:01:31+00:00",
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-5395303ce74d411ba3f8",
       "date": "2026-10-02",
