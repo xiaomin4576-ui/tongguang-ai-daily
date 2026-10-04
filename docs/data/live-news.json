@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-04T03:46:49.526465+00:00",
-    "last_success_at": "2026-10-04T03:46:49.526465+00:00",
+    "attempted_at": "2026-10-04T11:06:01.759490+00:00",
+    "last_success_at": "2026-10-04T11:06:01.759490+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-04T00:53:29+00:00",
+    "latest_article_at": "2026-10-04T06:12:22+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 115,
+    "total_articles": 116,
     "received_items": 40,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d8195ce58ea0db28a8ce",
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T06:12:22+00:00",
+      "title": "AI算力硬合作，马斯克还是更相信中国制造",
+      "summary": "一种混搭的可能：英特尔继续供先进工艺，即前端用14A；后端再接台积电，来补工厂运营、良率、封装这些能力。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/501605.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-17fb655922dd5d25a2c2",
       "date": "2026-10-04",
