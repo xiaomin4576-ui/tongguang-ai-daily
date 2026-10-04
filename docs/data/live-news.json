@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-03T19:50:06.515785+00:00",
-    "last_success_at": "2026-10-03T19:50:06.515785+00:00",
+    "attempted_at": "2026-10-04T02:36:12.042864+00:00",
+    "last_success_at": "2026-10-04T02:36:12.042864+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-02T16:15:00+00:00",
+    "latest_article_at": "2026-10-04T00:53:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,49 @@
         "items": 3
       }
     ],
-    "total_articles": 113,
-    "received_items": 38,
+    "total_articles": 115,
+    "received_items": 40,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-17fb655922dd5d25a2c2",
+      "date": "2026-10-04",
+      "published_at": "2026-10-04T00:53:29+00:00",
+      "title": "GPT-6要“吃掉”3D公司？这家公司不到2年ARR翻百倍，破1亿美元",
+      "summary": "专业3D模型反而更稀缺了",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/501451.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-bd1136d0fcfd6f1357de",
+      "date": "2026-10-04",
+      "published_at": "2026-10-03T22:56:48+00:00",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-c38af6e5cae43e23a64c",
       "date": "2026-10-03",
