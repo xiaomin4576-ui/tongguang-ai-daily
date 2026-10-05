@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-05T03:31:09.686655+00:00",
-    "last_success_at": "2026-10-05T03:31:09.686655+00:00",
+    "attempted_at": "2026-10-05T12:14:41.870053+00:00",
+    "last_success_at": "2026-10-05T12:14:41.870053+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-04T06:12:22+00:00",
+    "latest_article_at": "2026-10-05T10:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 116,
-    "received_items": 38,
+    "total_articles": 117,
+    "received_items": 36,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-2d8e70fb45cef7470a5b",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T10:00:00+00:00",
+      "title": "Building advertising for the way people use AI",
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+      "meaning": "",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-d8195ce58ea0db28a8ce",
       "date": "2026-10-04",
