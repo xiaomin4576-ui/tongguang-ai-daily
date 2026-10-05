@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-05T12:14:41.870053+00:00",
-    "last_success_at": "2026-10-05T12:14:41.870053+00:00",
+    "attempted_at": "2026-10-05T23:09:21.680354+00:00",
+    "last_success_at": "2026-10-05T23:09:21.680354+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-05T10:00:00+00:00",
+    "latest_article_at": "2026-10-05T15:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,19 +11,19 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 4
+        "items": 5
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "qbitai",
@@ -50,11 +50,49 @@
         "items": 3
       }
     ],
-    "total_articles": 117,
+    "total_articles": 121,
     "received_items": 36,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d2b5b29b4c8155256199",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T15:00:00+00:00",
+      "title": "Our approach to EU text provenance rules",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+      "meaning": "",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-56541a536ae3f25f9fd1",
+      "date": "2026-10-05",
+      "published_at": "2026-10-05T13:00:57+00:00",
+      "title": "From Scan to Treatment Plan, AI Helps Close Breast Cancer’s Deadliest Gaps",
+      "summary": "Breast cancer is the most commonly diagnosed cancer among American women — yet the gaps in care are wide. A majority of women over age 40 skip the recommended annual screening. Radiologists are reading more mammograms with fewer colleagues. And when a diagnosis arrives, the tests that inform treatme",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-2d8e70fb45cef7470a5b",
       "date": "2026-10-05",
@@ -65,6 +103,25 @@
       "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
       "source": "OpenAI 官方",
       "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-69f5bd9058f87f8c2c94",
+      "date": "2026-10-05",
+      "published_at": "2026-10-04T23:34:00+00:00",
+      "title": "Qwen3.8 27B addition in words",
+      "summary": "Research: Qwen3.8 27B addition in words Colin Frasier posted on Bluesky about an experiment he ran over two years ago using GPT-4o to see how well it could \"compute the sum but return the answer in words\" across increasingly large numbers. Here's the chart he shared of those results: I'm confident G",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
@@ -279,6 +336,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-b11f8970e721dabc844f",
+      "date": "2026-10-02",
+      "published_at": "2026-10-01T17:10:31+00:00",
+      "title": "pwasm 0.2a0",
+      "summary": "Release: pwasm 0.2a0 pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of AI mania . I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it and see if it could make any significant improv",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/1/pwasm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
     },
     {
       "id": "live-b8087b88cb63ae7fc829",
