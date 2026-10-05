@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-04T20:09:51.225419+00:00",
-    "last_success_at": "2026-10-04T20:09:51.225419+00:00",
+    "attempted_at": "2026-10-05T01:58:05.055550+00:00",
+    "last_success_at": "2026-10-05T01:58:05.055550+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-04T06:12:22+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 15
+        "items": 13
       },
       {
         "id": "google-ai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 116,
-    "received_items": 40,
+    "received_items": 38,
     "mode": "rss-source-excerpts"
   },
   "articles": [
