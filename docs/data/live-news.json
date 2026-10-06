@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-05T23:09:21.680354+00:00",
-    "last_success_at": "2026-10-05T23:09:21.680354+00:00",
+    "attempted_at": "2026-10-06T02:56:51.854759+00:00",
+    "last_success_at": "2026-10-06T02:56:51.854759+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-05T15:00:00+00:00",
+    "latest_article_at": "2026-10-05T23:56:47+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 121,
+    "total_articles": 122,
     "received_items": 36,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d43019accfd19e1ed1c4",
+      "date": "2026-10-06",
+      "published_at": "2026-10-05T23:56:47+00:00",
+      "title": "Quoting Felix Rieseberg",
+      "summary": "The \"old\" version of Cowork runs model inference in the cloud, executing tool calls in an Anthropic-provided VM we shipped to your computer. We added the VM for capability, safety, and security reasons - mapping in just the data you explicitly added to your session. People loved what they were able ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-d2b5b29b4c8155256199",
       "date": "2026-10-05",
