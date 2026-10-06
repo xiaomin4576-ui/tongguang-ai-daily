@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-06T12:00:25.828916+00:00",
-    "last_success_at": "2026-10-06T12:00:25.828916+00:00",
+    "attempted_at": "2026-10-06T21:36:46.601942+00:00",
+    "last_success_at": "2026-10-06T21:36:46.601942+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-06T06:45:40+00:00",
+    "latest_article_at": "2026-10-06T20:55:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 9
+        "items": 11
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 5
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "qbitai",
@@ -47,14 +47,143 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 5
       }
     ],
-    "total_articles": 124,
-    "received_items": 36,
+    "total_articles": 131,
+    "received_items": 38,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d64d5a2b545447f78bd9",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T20:55:00+00:00",
+      "title": "Supercomputing researchers document evolution of AI hardware",
+      "summary": "An ongoing survey tracks the latest AI accelerator systems to keep hardware relevant for Lincoln Laboratory staff and sponsors.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/supercomputing-researchers-document-evolution-ai-hardware-1006",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-6218e0219f6856f2edb6",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T18:20:58+00:00",
+      "title": "Mistral Large 4",
+      "summary": "My comment on Mistral Large 4 — Hacker News. wren6991 : The benchmark is saturated. Frontier models are tested with an armadillo in fishnet tights jaywalking on Mars. OK well I couldn't resist this one: llm -m claude-opus-5.5 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars' llm",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-2896758265cec81d9589",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T16:00:00+00:00",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
+      "meaning": "",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-40554e21f87e8f4beef1",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:17:39+00:00",
+      "title": "Scrimshaw Jukebox",
+      "summary": "Tool: Scrimshaw Jukebox I wanted to see if Claude Opus 5.5 could compose music, so I tried this : I want you to write some computer game music for me. First design simple text based format for the music and build an artifact that can play it out loud - include some example tracks in that artifact I ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-caed2b7e642ba54e5122",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T15:00:00+00:00",
+      "title": "MIT announces the MIT for America initiative, to strengthen STEM education across the country",
+      "summary": "The effort aims to help U.S. learners from kindergarten to community college, with an emphasis on math, making, and the constructive use of AI.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/mit-america-initiative-strengthens-stem-education-across-country-1006",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ffaa7d5210e63e20b90a",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T13:00:19+00:00",
+      "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
+      "summary": "Telecom operators are increasingly building their AI strategies on open models — and the reasons go beyond mere cost. Open models give telcos the ability to trust, control and customize AI across their most critical workloads — from autonomous networks to customer care. NVIDIA’s latest State of AI i",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-f57eff9c23a4454b476b",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T10:00:00+00:00",
+      "title": "Advancing computer use with Ironclad",
+      "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+      "meaning": "",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-38e9f19da1062a81f51c",
       "date": "2026-10-06",
