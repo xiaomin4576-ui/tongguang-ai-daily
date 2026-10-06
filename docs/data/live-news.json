@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-06T04:18:50.732873+00:00",
-    "last_success_at": "2026-10-06T04:18:50.732873+00:00",
+    "attempted_at": "2026-10-06T12:00:25.828916+00:00",
+    "last_success_at": "2026-10-06T12:00:25.828916+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-05T23:56:47+00:00",
+    "latest_article_at": "2026-10-06T06:45:40+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 11
+        "items": 9
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,49 @@
         "items": 3
       }
     ],
-    "total_articles": 122,
+    "total_articles": 124,
     "received_items": 36,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-38e9f19da1062a81f51c",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T06:45:40+00:00",
+      "title": "OpenAI「疯狂28天」首日，这都发了些啥啊…",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/501726.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-fe424883c3cacf664f5b",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T06:44:39+00:00",
+      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-d43019accfd19e1ed1c4",
       "date": "2026-10-06",
