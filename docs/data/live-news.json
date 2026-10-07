@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-06T21:36:46.601942+00:00",
-    "last_success_at": "2026-10-06T21:36:46.601942+00:00",
+    "attempted_at": "2026-10-07T02:21:28.907056+00:00",
+    "last_success_at": "2026-10-07T02:21:28.907056+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-06T20:55:00+00:00",
+    "latest_article_at": "2026-10-07T00:16:45+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 11
+        "items": 13
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -50,11 +50,85 @@
         "items": 5
       }
     ],
-    "total_articles": 131,
-    "received_items": 38,
+    "total_articles": 137,
+    "received_items": 42,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a919ba35a5e056c2278b",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T00:16:45+00:00",
+      "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
+      "summary": "OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it's not a huge surprise that Wikipedia found evidence of that activity once they went looking: The Wikimedia Foundation conducted its own investigation to see whether Wikimedia ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-d1e512dab3854dc0079a",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T23:58:56+00:00",
+      "title": "Quoting Victoria Kim",
+      "summary": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. — Victoria Kim , Reporting from the Aust",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-62c509640c5df97d8609",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T23:04:13+00:00",
+      "title": "llm-openai-decisions 0.1a0",
+      "summary": "Release: llm-openai-decisions 0.1a0 OpenAI released their new Jev-style Decisions API , as previously announced at last week's DevDay. Since I already have an llm-typesafe plugin for talking to Jev, I had GPT-6 Astra read the new OpenAI API documentation and build an llm-openai-decisions plugin insp",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-1244a96b60ce187188fe",
+      "date": "2026-10-07",
+      "published_at": "2026-10-06T21:32:34+00:00",
+      "title": "llm-mistral 0.16",
+      "summary": "Release: llm-mistral 0.16 Adds support for reasoning models, such as the newly released Mistral Large 4 . Tags: llm , mistral , llm-reasoning",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-d64d5a2b545447f78bd9",
       "date": "2026-10-07",
@@ -163,6 +237,44 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-ebb413cc5359756bf923",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+      "meaning": "",
+      "url": "https://openai.com/index/jump-trading",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-00427e47df5ef3064509",
+      "date": "2026-10-06",
+      "published_at": "2026-10-06T12:00:00+00:00",
+      "title": "Sharing AI progress in mathematics",
+      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
+      "meaning": "",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
