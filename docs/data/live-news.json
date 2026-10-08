@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-08T02:41:25.833404+00:00",
-    "last_success_at": "2026-10-08T02:41:25.833404+00:00",
+    "attempted_at": "2026-10-08T03:58:44.876500+00:00",
+    "last_success_at": "2026-10-08T03:58:44.876500+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-08T01:07:19+00:00",
+    "latest_article_at": "2026-10-08T02:15:37+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 148,
+    "total_articles": 149,
     "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-98a871bfc6772bd852dd",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T02:15:37+00:00",
+      "title": "大模型原生智能体手机STEPX Neo将于10月13日正式发布",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/501915.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-7448d3ae9dbceef79450",
       "date": "2026-10-08",
