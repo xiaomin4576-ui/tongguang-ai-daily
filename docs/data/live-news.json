@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-08T12:00:18.754841+00:00",
-    "last_success_at": "2026-10-08T12:00:18.754841+00:00",
+    "attempted_at": "2026-10-08T22:03:22.946716+00:00",
+    "last_success_at": "2026-10-08T22:03:22.946716+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-08T04:00:00+00:00",
+    "latest_article_at": "2026-10-08T21:25:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -50,11 +50,85 @@
         "items": 4
       }
     ],
-    "total_articles": 150,
-    "received_items": 43,
+    "total_articles": 156,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-876267fe4c4097eeb940",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T21:25:00+00:00",
+      "title": "3 Questions: What is the best path forward for AI in academia?",
+      "summary": "MIT Statistics and Data Science Center Director Alexander (Sasha) Rakhlin shares important considerations for departments and institutions.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/3-questions-what-best-path-forward-ai-academia-0925",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5beef147a7815df46333",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T21:06:35+00:00",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for explori",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-db7b9e6fe248e3146f87",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T16:00:00+00:00",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "meaning": "",
+      "url": "https://openai.com/index/oracle",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-855092fba1df7e8a668b",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T12:00:00+00:00",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "meaning": "",
+      "url": "https://openai.com/index/pollo-ai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-4564112263663773d0ba",
       "date": "2026-10-08",
@@ -99,6 +173,25 @@
       "url": "https://www.qbitai.com/2026/10/501834.html",
       "source": "量子位",
       "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-d9e485b409fe8517ac6e",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T00:00:00+00:00",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "meaning": "",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
@@ -172,6 +265,25 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-16b7810afb00bdc03cf9",
+      "date": "2026-10-07",
+      "published_at": "2026-10-07T13:21:03+00:00",
+      "title": "Introducing Falcon ASR",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
