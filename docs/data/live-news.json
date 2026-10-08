@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-07T21:57:49.744809+00:00",
-    "last_success_at": "2026-10-07T21:57:49.744809+00:00",
+    "attempted_at": "2026-10-08T02:41:25.833404+00:00",
+    "last_success_at": "2026-10-08T02:41:25.833404+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-07T20:56:21+00:00",
+    "latest_article_at": "2026-10-08T01:07:19+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 14
+        "items": 13
       },
       {
         "id": "google-ai",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 12
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,47 @@
         "items": 3
       }
     ],
-    "total_articles": 146,
-    "received_items": 43,
+    "total_articles": 148,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-7448d3ae9dbceef79450",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T01:07:19+00:00",
+      "title": "GPT-6今起免费用！拒答变少，话变多了",
+      "summary": "ChatGPT聊天框长出界面",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/501834.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-f60f92689e069107e062",
+      "date": "2026-10-08",
+      "published_at": "2026-10-07T23:14:58+00:00",
+      "title": "Quoting Ben Affleck",
+      "summary": "I've always been kind of into computers since I was young. And then when film started to move from analog film to digital, I became more interested in that aspect of it. And the visual effects workflow for many years has included machine learning. So I can write like pretty shitty Python scripts and",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/7/ben-affleck/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-231befe88d753d0247c6",
       "date": "2026-10-08",
@@ -79,7 +115,7 @@
       "date": "2026-10-08",
       "published_at": "2026-10-07T18:45:28+00:00",
       "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
-      "summary": "At a Microsoft event in San Francisco on Wednesday, Jensen Huang and Satya Nadella outlined how NVIDIA and Microsoft are co-engineering hardware and software for AI agents to run on Windows PCs. NVIDIA was founded because of Windows, Huang said. Now AI agents are coming to Windows. “If you look at t",
+      "summary": "At a Microsoft event in San Francisco on Wednesday, NVIDIA founder and CEO Jensen Huang and Microsoft CEO Satya Nadella outlined how NVIDIA and Microsoft are co-engineering hardware and software for AI agents to run on Windows PCs. NVIDIA was founded because of Windows, Huang said. Now AI agents are",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
       "source": "NVIDIA 官方",
