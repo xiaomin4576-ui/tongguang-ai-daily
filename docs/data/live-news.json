@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-08T03:58:44.876500+00:00",
-    "last_success_at": "2026-10-08T03:58:44.876500+00:00",
+    "attempted_at": "2026-10-08T12:00:18.754841+00:00",
+    "last_success_at": "2026-10-08T12:00:18.754841+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-08T02:15:37+00:00",
+    "latest_article_at": "2026-10-08T04:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,26 +35,43 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 4
       }
     ],
-    "total_articles": 149,
-    "received_items": 44,
+    "total_articles": 150,
+    "received_items": 43,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-4564112263663773d0ba",
+      "date": "2026-10-08",
+      "published_at": "2026-10-08T04:00:00+00:00",
+      "title": "Using AI to mitigate the growing environmental threat of data centers",
+      "summary": "By rethinking how large cloud computing systems operate, Associate Professor Christina Delimitrou seeks to make data centers more energy efficient.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-98a871bfc6772bd852dd",
       "date": "2026-10-08",
