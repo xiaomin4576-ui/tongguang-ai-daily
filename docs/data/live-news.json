@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-09T02:55:52.026537+00:00",
-    "last_success_at": "2026-10-09T02:55:52.026537+00:00",
+    "attempted_at": "2026-10-09T04:04:09.883957+00:00",
+    "last_success_at": "2026-10-09T04:04:09.883957+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-09T02:03:48+00:00",
+    "latest_article_at": "2026-10-09T02:37:22+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 4
       }
     ],
-    "total_articles": 160,
+    "total_articles": 161,
     "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-fdd53ad010f53e82981c",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T02:37:22+00:00",
+      "title": "openJiuwen发布并开源企业级AgentOS，加速智能体规模落地企业",
+      "summary": "多Agent协同还能自我进化",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502106.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-9f2ef6e68fca1dbf1935",
       "date": "2026-10-09",
