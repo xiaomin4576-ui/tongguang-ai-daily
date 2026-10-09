@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-09T11:52:38.195836+00:00",
-    "last_success_at": "2026-10-09T11:52:38.195836+00:00",
+    "attempted_at": "2026-10-09T21:39:50.044704+00:00",
+    "last_success_at": "2026-10-09T21:39:50.044704+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-09T08:53:08+00:00",
+    "latest_article_at": "2026-10-09T15:20:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,13 +17,13 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "huggingface",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 167,
-    "received_items": 50,
+    "total_articles": 169,
+    "received_items": 48,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-e05551817b225bef5e8c",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T15:20:29+00:00",
+      "title": "Impactful scheduling for GPU clusters",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-1aa889340694b5febaeb",
       "date": "2026-10-09",
@@ -97,6 +116,25 @@
       "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
       "meaning": "",
       "url": "https://openai.com/index/sophos",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-9bf93d58cc35db9987f8",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T07:00:00+00:00",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "meaning": "",
+      "url": "https://openai.com/index/asana-browser-agent",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
