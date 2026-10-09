@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-09T04:04:09.883957+00:00",
-    "last_success_at": "2026-10-09T04:04:09.883957+00:00",
+    "attempted_at": "2026-10-09T11:52:38.195836+00:00",
+    "last_success_at": "2026-10-09T11:52:38.195836+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-09T02:37:22+00:00",
+    "latest_article_at": "2026-10-09T08:53:08+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 14
+        "items": 15
       },
       {
         "id": "google-ai",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 12
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 6
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,100 @@
         "items": 4
       }
     ],
-    "total_articles": 161,
-    "received_items": 44,
+    "total_articles": 167,
+    "received_items": 50,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-1aa889340694b5febaeb",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T08:53:08+00:00",
+      "title": "联想天禧自研代码智能体TianxiCode斩获SWE-bench-Live全球第一",
+      "summary": "联想天禧AI自主研发的专业代码智能体框架TianxiCode 以71%的问题解决率登顶全球第一名",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502422.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-72e58c805245f520107b",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T08:47:34+00:00",
+      "title": "0.2秒急停、秒级重规划！因果智能走进真实世界",
+      "summary": "这是一台机器人正在关闭微波炉门时，因人手突然插进来而紧急悬停的时间",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502411.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-570fe3204556675e8dd9",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T07:00:00+00:00",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "meaning": "",
+      "url": "https://openai.com/index/sophos",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-12d4d6f92408cad9a7f2",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T06:28:55+00:00",
+      "title": "《柳叶刀》研究表明：AI 有望改善医患关系",
+      "summary": "Google 研究成果首次登上《柳叶刀》主刊",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502359.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-188f7b1e7309fbb55995",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T04:15:05+00:00",
+      "title": "灵巧操作头号玩家：Sharpa把指尖「触觉」进化到全面「体感」",
+      "summary": "机器人摆脱展会、舞台Demo，产生真实商业价值，究竟需要哪些东西？",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502330.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-fdd53ad010f53e82981c",
       "date": "2026-10-09",
@@ -88,6 +177,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-4531aaeb11d6a46bc256",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T00:34:43+00:00",
+      "title": "ttok 1.0",
+      "summary": "Release: ttok 1.0 I released ttok 0.4 , ran uv tool upgrade ttok , piped a file into the new version... and realized that it was defaulting to the GPT-4 tokenizer when it should very clearly default to GPT-5/GPT-6 instead! I figured switching the default was a reasonable excuse to finally ship a 1.0",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/9/ttok/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-f242adb232a8919dd940",
