@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-09T21:39:50.044704+00:00",
-    "last_success_at": "2026-10-09T21:39:50.044704+00:00",
+    "attempted_at": "2026-10-10T02:18:37.142636+00:00",
+    "last_success_at": "2026-10-10T02:18:37.142636+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-09T15:20:29+00:00",
+    "latest_article_at": "2026-10-10T02:04:12+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 169,
-    "received_items": 48,
+    "total_articles": 170,
+    "received_items": 49,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-5af1a93eb20fb54cb0fa",
+      "date": "2026-10-10",
+      "published_at": "2026-10-10T02:04:12+00:00",
+      "title": "Quoting The New York Times",
+      "summary": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website. All the appli",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-e05551817b225bef5e8c",
       "date": "2026-10-09",
