@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-11T03:22:58.774030+00:00",
-    "last_success_at": "2026-10-11T03:22:58.774030+00:00",
+    "attempted_at": "2026-10-11T11:23:13.367920+00:00",
+    "last_success_at": "2026-10-11T11:23:13.367920+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-10T23:58:04+00:00",
+    "latest_article_at": "2026-10-11T05:22:38+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 5
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,47 @@
         "items": 4
       }
     ],
-    "total_articles": 171,
-    "received_items": 48,
+    "total_articles": 173,
+    "received_items": 45,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-748c8874539cde8929a8",
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T05:22:38+00:00",
+      "title": "硅谷AI现状：谁有算力谁是爹",
+      "summary": "马斯克连横A社，硅谷VC开始囤GPU",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502585.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5a08641eb2b294984359",
+      "date": "2026-10-11",
+      "published_at": "2026-10-11T05:18:04+00:00",
+      "title": "下架8个月，GPT-4o的拯救行动居然还在继续",
+      "summary": "初代4o的API快照进入停用倒计时",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502550.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-a2dbc26766a3bd99231d",
       "date": "2026-10-11",
