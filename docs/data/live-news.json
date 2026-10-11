@@ -1,10 +1,10 @@
 {
   "meta": {
-    "attempted_at": "2026-10-10T20:33:36.949393+00:00",
-    "last_success_at": "2026-10-10T20:33:36.949393+00:00",
-    "status": "ok",
-    "latest_article_at": "2026-10-10T02:04:12+00:00",
-    "sources_ok": 7,
+    "attempted_at": "2026-10-11T01:50:36.341930+00:00",
+    "last_success_at": "2026-10-11T01:50:36.341930+00:00",
+    "status": "partial",
+    "latest_article_at": "2026-10-10T23:58:04+00:00",
+    "sources_ok": 6,
     "sources_total": 7,
     "source_checks": [
       {
@@ -29,19 +29,20 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 5
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": true,
-        "items": 5
+        "ok": false,
+        "items": 0,
+        "error": "URLError: <urlopen error timed out>"
       },
       {
         "id": "mit-ai",
@@ -50,11 +51,30 @@
         "items": 4
       }
     ],
-    "total_articles": 170,
-    "received_items": 48,
+    "total_articles": 171,
+    "received_items": 43,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a2dbc26766a3bd99231d",
+      "date": "2026-10-11",
+      "published_at": "2026-10-10T23:58:04+00:00",
+      "title": "Python 3.15.0 added to actions/python-versions",
+      "summary": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that th",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-5af1a93eb20fb54cb0fa",
       "date": "2026-10-10",
