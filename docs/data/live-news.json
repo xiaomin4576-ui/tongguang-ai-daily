@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-12T13:08:47.143597+00:00",
-    "last_success_at": "2026-10-12T13:08:47.143597+00:00",
+    "attempted_at": "2026-10-12T23:36:53.939096+00:00",
+    "last_success_at": "2026-10-12T23:36:53.939096+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-12T05:48:36+00:00",
+    "latest_article_at": "2026-10-12T15:00:25+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 14
+        "items": 13
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "huggingface",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 176,
+    "total_articles": 177,
     "received_items": 45,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-cb1d8044b50f43a24e9c",
+      "date": "2026-10-12",
+      "published_at": "2026-10-12T15:00:25+00:00",
+      "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
+      "summary": "As AI factories grow from megawatts to gigawatts, building them takes more than advanced computing. Open standards are helping the industry scale AI infrastructure faster, more efficiently and more reliably. At the Open Compute Project (OCP) Global Summit, taking place in the San Jose McEnery Conven",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-dd2dec0afb23c8e31db6",
       "date": "2026-10-12",
