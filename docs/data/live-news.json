@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-11T20:57:31.619855+00:00",
-    "last_success_at": "2026-10-11T20:57:31.619855+00:00",
+    "attempted_at": "2026-10-12T02:21:59.730560+00:00",
+    "last_success_at": "2026-10-12T02:21:59.730560+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-11T09:04:31+00:00",
     "sources_ok": 7,
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 14
+        "items": 13
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 174,
-    "received_items": 46,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
