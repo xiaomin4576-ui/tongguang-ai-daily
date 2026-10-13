@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-13T04:58:00.207158+00:00",
-    "last_success_at": "2026-10-13T04:58:00.207158+00:00",
+    "attempted_at": "2026-10-13T12:41:07.328165+00:00",
+    "last_success_at": "2026-10-13T12:41:07.328165+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-13T04:00:00+00:00",
+    "latest_article_at": "2026-10-13T12:00:49+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 13
+        "items": 10
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 4
+        "items": 6
       },
       {
         "id": "huggingface",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,117 @@
         "items": 5
       }
     ],
-    "total_articles": 179,
-    "received_items": 46,
+    "total_articles": 185,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-8bb1da51925f69396745",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T12:00:49+00:00",
+      "title": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
+      "summary": "NVIDIA RTX Spark is a new beginning for the PC — a reinvention combining the capabilities of a gaming PC, a creative studio and a personal AI supercomputer into a single superchip. With up to 128GB of unified memory and 1 petaflop of AI compute, RTX Spark delivers the full stack of NVIDIA RTX and […",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-7e7dc0ccabb4f344d653",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T09:33:37+00:00",
+      "title": "梁文锋投了Swin Transformer作者！DeepSeek开始布局具身大脑",
+      "summary": "Winverse AI",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503093.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-cdcd9ee8e1001ab0ed81",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T07:19:21+00:00",
+      "title": "华为哈勃投了个98年博士！让机器人皮肤变色，团队平均23岁",
+      "summary": "让材料感知压力，造出超薄高密度电子皮肤",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502954.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-9351ce1d6528fa37e3d0",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T06:00:20+00:00",
+      "title": "“模态进化”：第八届亿邦产业互联网年会暨首届产业智能体大会双会合体定档",
+      "summary": "由亿邦动力主办的“2026第八届亿邦产业互联网年会暨首届产业智能体大会”正式定档",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502907.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-293b85c97d55fe8c4e9e",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T05:00:31+00:00",
+      "title": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With NVIDIA",
+      "summary": "Companies in France are deploying agentic computing across industries spanning space, financial services, the public sector and scientific research, demonstrating how the country’s ecosystem has moved from ambition to application. France’s progress sits on deliberate groundwork. The AI Action Summit",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-612a9b83d2855ceb2573",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T04:01:15+00:00",
+      "title": "单轮23亿，累计43亿，无问芯穹刷新国产AI Infra赛道融资双重纪录",
+      "summary": "算力、模型、行业，三层生意一起做",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/502767.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-86d056a4b8dd3b41c17b",
       "date": "2026-10-13",
