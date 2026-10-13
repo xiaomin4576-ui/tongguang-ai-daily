@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-13T12:41:07.328165+00:00",
-    "last_success_at": "2026-10-13T12:41:07.328165+00:00",
+    "attempted_at": "2026-10-13T21:50:03.238250+00:00",
+    "last_success_at": "2026-10-13T21:50:03.238250+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-13T12:00:49+00:00",
+    "latest_article_at": "2026-10-13T17:05:48+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,13 +17,13 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 6
+        "items": 5
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -47,14 +47,69 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 3
       }
     ],
-    "total_articles": 185,
-    "received_items": 44,
+    "total_articles": 190,
+    "received_items": 40,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-53911f98c21c784fce1a",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T17:05:48+00:00",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-74c9e10c02543c499970",
+      "date": "2026-10-14",
+      "published_at": "2026-10-13T16:00:00+00:00",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "TBD",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-7e80df2842c6c98c629e",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T13:32:00+00:00",
+      "title": "Quoting Geoffrey Huntley",
+      "summary": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-8bb1da51925f69396745",
       "date": "2026-10-13",
@@ -72,6 +127,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-8d45898e533e591d4241",
+      "date": "2026-10-13",
+      "published_at": "2026-10-13T12:00:00+00:00",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "meaning": "",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -129,7 +203,7 @@
       "id": "live-293b85c97d55fe8c4e9e",
       "date": "2026-10-13",
       "published_at": "2026-10-13T05:00:31+00:00",
-      "title": "From Earth to Orbit, France’s Ecosystem Delivers Agentic Computing at Scale With NVIDIA",
+      "title": "NVIDIA Announces New Investments in France’s Startups",
       "summary": "Companies in France are deploying agentic computing across industries spanning space, financial services, the public sector and scientific research, demonstrating how the country’s ecosystem has moved from ambition to application. France’s progress sits on deliberate groundwork. The AI Action Summit",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
@@ -548,6 +622,23 @@
       "summary": "MIT Statistics and Data Science Center Director Alexander (Sasha) Rakhlin shares important considerations for departments and institutions.",
       "meaning": "",
       "url": "https://news.mit.edu/2026/3-questions-what-best-path-forward-ai-academia-0925",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-2f2b75ba2a94fb2ddbb9",
+      "date": "2026-10-09",
+      "published_at": "2026-10-08T21:25:00+00:00",
+      "title": "3 Questions: What is the best path forward for AI in academia?",
+      "summary": "MIT Statistics and Data Science Center Director Alexander (Sasha) Rakhlin shares important considerations for departments and institutions.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/3-questions-best-path-forward-for-ai-academia-1008",
       "source": "MIT AI 研究新闻",
       "source_id": "mit-ai",
       "automated": true,
