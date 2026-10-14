@@ -1,10 +1,10 @@
 {
   "meta": {
-    "attempted_at": "2026-10-14T10:09:28.125292+00:00",
-    "last_success_at": "2026-10-14T10:09:28.125292+00:00",
-    "status": "partial",
-    "latest_article_at": "2026-10-14T06:00:28+00:00",
-    "sources_ok": 6,
+    "attempted_at": "2026-10-14T15:49:07.215219+00:00",
+    "last_success_at": "2026-10-14T15:49:07.215219+00:00",
+    "status": "ok",
+    "latest_article_at": "2026-10-14T07:00:00+00:00",
+    "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
       {
@@ -17,7 +17,7 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "nvidia",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 3
       },
       {
         "id": "simonwillison",
@@ -40,9 +40,8 @@
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": false,
-        "items": 0,
-        "error": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
+        "ok": true,
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -51,11 +50,47 @@
         "items": 3
       }
     ],
-    "total_articles": 197,
-    "received_items": 38,
+    "total_articles": 202,
+    "received_items": 39,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a8b8c31de898145e14c8",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "meaning": "",
+      "url": "https://openai.com/index/third-moment-research",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-97691530f1e0ee6e5773",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T06:45:38+00:00",
+      "title": "STEPX首款大模型原生智能体手机STEPX Neo正式发布",
+      "summary": "2026年10月13日，大模型原生AI终端品牌STEPX（阶跃终端）旗下首款大模型原生智能体手机STEPX Neo正式发布",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503201.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-8323b3b7fc78f153da00",
       "date": "2026-10-14",
@@ -74,6 +109,57 @@
       "companies": [
         "NVIDIA"
       ]
+    },
+    {
+      "id": "live-cfda48beeb2498c1f491",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T04:09:29+00:00",
+      "title": "调度效率提升80%！商汤大装置助力上海量子城市首批智能体落地",
+      "summary": "从“懂空间”到“能干活”",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503173.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ece85599f868ffd83f51",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T03:32:48+00:00",
+      "title": "响应速度比Claude Code快3倍，实现真正无限上下文！APUS AI开源Reflex Agent",
+      "summary": "10月13日，APUS AI（麒麟合盛网络技术股份有限公司）宣布开源Personal Agent产品Reflex Agent",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503165.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ddb3c88c5cea23dac6ac",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T02:14:50+00:00",
+      "title": "告别资料散落，让知识持续积累：openJiuwen首发个人知识空间，重塑个人办公智能体新体验！",
+      "summary": "一次采集，反复使用",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503157.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-200a5d3dd39c6bfb7a20",
