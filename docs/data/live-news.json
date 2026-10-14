@@ -1,10 +1,10 @@
 {
   "meta": {
-    "attempted_at": "2026-10-14T03:04:48.810164+00:00",
-    "last_success_at": "2026-10-14T03:04:48.810164+00:00",
-    "status": "ok",
-    "latest_article_at": "2026-10-13T23:00:06+00:00",
-    "sources_ok": 7,
+    "attempted_at": "2026-10-14T10:09:28.125292+00:00",
+    "last_success_at": "2026-10-14T10:09:28.125292+00:00",
+    "status": "partial",
+    "latest_article_at": "2026-10-14T06:00:28+00:00",
+    "sources_ok": 6,
     "sources_total": 7,
     "source_checks": [
       {
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "huggingface",
@@ -40,8 +40,9 @@
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": true,
-        "items": 4
+        "ok": false,
+        "items": 0,
+        "error": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
       },
       {
         "id": "mit-ai",
@@ -50,11 +51,49 @@
         "items": 3
       }
     ],
-    "total_articles": 195,
-    "received_items": 41,
+    "total_articles": 197,
+    "received_items": 38,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-8323b3b7fc78f153da00",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T06:00:28+00:00",
+      "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+      "summary": "Keeping a city running means making decisions that affect residents every day — from when to repair a road to how to use energy more efficiently. Across the EMEA region, cities and local software, infrastructure and integration partners are using NVIDIA accelerated computing to build physical AI age",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-200a5d3dd39c6bfb7a20",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T00:00:00+00:00",
+      "title": "The EU’s next chapter in AI is agentic",
+      "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+      "meaning": "",
+      "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-fdc555784f18363338e2",
       "date": "2026-10-14",
