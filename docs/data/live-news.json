@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-14T20:42:06.002680+00:00",
-    "last_success_at": "2026-10-14T20:42:06.002680+00:00",
+    "attempted_at": "2026-10-15T01:26:42.152314+00:00",
+    "last_success_at": "2026-10-15T01:26:42.152314+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-14T16:26:53+00:00",
+    "latest_article_at": "2026-10-14T21:23:01+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 14
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 206,
-    "received_items": 41,
+    "total_articles": 208,
+    "received_items": 39,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-eb4b2d9063ab8e79fdab",
+      "date": "2026-10-15",
+      "published_at": "2026-10-14T21:23:01+00:00",
+      "title": "Tree Appreciator",
+      "summary": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode) where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechani",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-8b2cab1489374fa7ca00",
       "date": "2026-10-15",
@@ -137,6 +156,25 @@
       "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
       "meaning": "",
       "url": "https://openai.com/index/third-moment-research",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-94ee28b93f9d2d830319",
+      "date": "2026-10-14",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
+      "meaning": "",
+      "url": "https://openai.com/index/block-ai-powered-security",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
