@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-15T02:44:51.128898+00:00",
-    "last_success_at": "2026-10-15T02:44:51.128898+00:00",
+    "attempted_at": "2026-10-15T09:52:07.262723+00:00",
+    "last_success_at": "2026-10-15T09:52:07.262723+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-14T21:23:01+00:00",
+    "latest_article_at": "2026-10-15T04:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,17 +50,34 @@
         "items": 3
       }
     ],
-    "total_articles": 208,
+    "total_articles": 209,
     "received_items": 38,
     "mode": "rss-source-excerpts"
   },
   "articles": [
     {
+      "id": "live-6961d7c2dc9bbc858b72",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T04:00:00+00:00",
+      "title": "Q&A: The “collision” between AI, your brain, and society",
+      "summary": "In a new book, Professor Eric So explores how the technology affects our thinking skills.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/collision-between-ai-your-brain-and-society-eric-so-book-1015",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-eb4b2d9063ab8e79fdab",
       "date": "2026-10-15",
       "published_at": "2026-10-14T21:23:01+00:00",
       "title": "Tree Appreciator",
-      "summary": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode) where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechani",
+      "summary": "Tool: Tree Appreciator Another game experiment with Claude. This one used the default Claude iPhone app (chat mode, not Claude Code mode), where I prompted Claude Opus 5.5 Max with: Build a three js game called \"Tree appreciator\" - it shows you two algorithmically generated trees and the game mechan",
       "meaning": "",
       "url": "https://simonwillison.net/2026/Oct/14/tree-appreciator/",
       "source": "Simon Willison",
