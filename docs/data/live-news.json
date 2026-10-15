@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-15T09:52:07.262723+00:00",
-    "last_success_at": "2026-10-15T09:52:07.262723+00:00",
+    "attempted_at": "2026-10-15T15:35:07.834777+00:00",
+    "last_success_at": "2026-10-15T15:35:07.834777+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-15T04:00:00+00:00",
+    "latest_article_at": "2026-10-15T15:00:24+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 2
+        "items": 4
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "qbitai",
@@ -50,11 +50,87 @@
         "items": 3
       }
     ],
-    "total_articles": 209,
-    "received_items": 38,
+    "total_articles": 214,
+    "received_items": 41,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b655aadac97a31177c2f",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T15:00:24+00:00",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-782d5b0065aab2f93bad",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:04:03+00:00",
+      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+      "summary": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO The phrase \"told investors\" appears four times in this FT article, which reports on Anthropic's day of hosting investors on Wednesday. Lots of details in here from \" people with knowledge of the matter \". Key things I ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-a60f4a701f887ae8f46b",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T13:00:00+00:00",
+      "title": "Teaching students to think and learn through questions",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
+      "meaning": "",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-39052ad94a8a76cc68a2",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T09:08:45+00:00",
+      "title": "Apertus 1.5 Release Notes",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-6961d7c2dc9bbc858b72",
       "date": "2026-10-15",
@@ -71,6 +147,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-eb67409897ed2136a753",
+      "date": "2026-10-15",
+      "published_at": "2026-10-15T00:00:00+00:00",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/flux-3",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
     },
     {
       "id": "live-eb4b2d9063ab8e79fdab",
