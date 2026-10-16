@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-16T01:18:47.195429+00:00",
-    "last_success_at": "2026-10-16T01:18:47.195429+00:00",
+    "attempted_at": "2026-10-16T02:41:09.658545+00:00",
+    "last_success_at": "2026-10-16T02:41:09.658545+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-15T20:50:00+00:00",
+    "latest_article_at": "2026-10-16T01:44:47+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 6
       },
       {
         "id": "simonwillison",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 225,
-    "received_items": 42,
+    "total_articles": 226,
+    "received_items": 43,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-138e9b7e7d9747243aa5",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T01:44:47+00:00",
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-38a125a6c95bf33498ac",
       "date": "2026-10-16",
