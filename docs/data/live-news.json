@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-16T09:45:57.987867+00:00",
-    "last_success_at": "2026-10-16T09:45:57.987867+00:00",
+    "attempted_at": "2026-10-16T15:21:54.174745+00:00",
+    "last_success_at": "2026-10-16T15:21:54.174745+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-16T01:44:47+00:00",
     "sources_ok": 7,
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "simonwillison",
@@ -50,8 +50,8 @@
         "items": 3
       }
     ],
-    "total_articles": 226,
-    "received_items": 43,
+    "total_articles": 227,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -63,6 +63,25 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-c9a6184923cc1a5837b4",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/reflection-beam",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
