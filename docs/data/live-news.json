@@ -1,17 +1,17 @@
 {
   "meta": {
-    "attempted_at": "2026-10-16T19:56:17.306298+00:00",
-    "last_success_at": "2026-10-16T19:56:17.306298+00:00",
-    "status": "ok",
-    "latest_article_at": "2026-10-16T01:44:47+00:00",
-    "sources_ok": 7,
+    "attempted_at": "2026-10-17T01:17:11.685165+00:00",
+    "last_success_at": "2026-10-17T01:17:11.685165+00:00",
+    "status": "partial",
+    "latest_article_at": "2026-10-16T19:00:00+00:00",
+    "sources_ok": 6,
     "sources_total": 7,
     "source_checks": [
       {
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "google-ai",
@@ -40,8 +40,9 @@
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": true,
-        "items": 5
+        "ok": false,
+        "items": 0,
+        "error": "URLError: <urlopen error timed out>"
       },
       {
         "id": "mit-ai",
@@ -50,11 +51,30 @@
         "items": 3
       }
     ],
-    "total_articles": 228,
-    "received_items": 44,
+    "total_articles": 229,
+    "received_items": 40,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9732b2763df5a67ab945",
+      "date": "2026-10-17",
+      "published_at": "2026-10-16T19:00:00+00:00",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "meaning": "",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-138e9b7e7d9747243aa5",
       "date": "2026-10-16",
