@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-17T19:21:57.641444+00:00",
-    "last_success_at": "2026-10-17T19:21:57.641444+00:00",
+    "attempted_at": "2026-10-18T01:00:16.420441+00:00",
+    "last_success_at": "2026-10-18T01:00:16.420441+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-16T19:00:00+00:00",
+    "latest_article_at": "2026-10-17T21:00:13+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "huggingface",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,48 @@
         "items": 3
       }
     ],
-    "total_articles": 234,
-    "received_items": 44,
+    "total_articles": 236,
+    "received_items": 43,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-3e1bb6f4d90247655c88",
+      "date": "2026-10-18",
+      "published_at": "2026-10-17T21:00:13+00:00",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gam",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ]
+    },
+    {
+      "id": "live-7fc73ab44f09b73ffc4e",
+      "date": "2026-10-17",
+      "published_at": "2026-10-17T12:10:35+00:00",
+      "title": "清华开源！智能体操作系统任务成本降83%，AI记忆可查可改",
+      "summary": "整套系统原生支持MCP",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/503935.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-9732b2763df5a67ab945",
       "date": "2026-10-17",
