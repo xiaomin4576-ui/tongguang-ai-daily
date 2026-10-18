@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-18T02:33:43.066845+00:00",
-    "last_success_at": "2026-10-18T02:33:43.066845+00:00",
+    "attempted_at": "2026-10-18T09:34:00.276922+00:00",
+    "last_success_at": "2026-10-18T09:34:00.276922+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-17T21:00:13+00:00",
+    "latest_article_at": "2026-10-18T04:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,20 +41,37 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 4
       }
     ],
-    "total_articles": 236,
+    "total_articles": 238,
     "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9692486eeb77934b280e",
+      "date": "2026-10-18",
+      "published_at": "2026-10-18T04:00:00+00:00",
+      "title": "Giving AI a “crystal clear” view of the materials world",
+      "summary": "New research can help AI models understand crystalline materials in 3D and reason about their properties.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-3e1bb6f4d90247655c88",
       "date": "2026-10-18",
@@ -110,6 +127,23 @@
       "companies": [
         "OpenAI"
       ]
+    },
+    {
+      "id": "live-06d110e31202a17559e5",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T13:48:10+00:00",
+      "title": "端侧跑通超千亿大模型！联想YOGA Pro 15 RTX Spark超级AIPC今日正式发售",
+      "summary": "买AIPC就选联想YOGA。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504116.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-8a6f4c3d5eb5b65fde16",
