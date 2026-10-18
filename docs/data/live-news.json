@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-18T01:00:16.420441+00:00",
-    "last_success_at": "2026-10-18T01:00:16.420441+00:00",
+    "attempted_at": "2026-10-18T02:33:43.066845+00:00",
+    "last_success_at": "2026-10-18T02:33:43.066845+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-17T21:00:13+00:00",
     "sources_ok": 7,
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 236,
-    "received_items": 43,
+    "received_items": 44,
     "mode": "rss-source-excerpts"
   },
   "articles": [
