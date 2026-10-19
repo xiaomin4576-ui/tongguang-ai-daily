@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-18T19:25:01.849919+00:00",
-    "last_success_at": "2026-10-18T19:25:01.849919+00:00",
+    "attempted_at": "2026-10-19T01:13:14.087536+00:00",
+    "last_success_at": "2026-10-19T01:13:14.087536+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-18T04:00:00+00:00",
+    "latest_article_at": "2026-10-18T23:43:09+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -50,11 +50,45 @@
         "items": 4
       }
     ],
-    "total_articles": 238,
-    "received_items": 44,
+    "total_articles": 240,
+    "received_items": 46,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-ae7b31dc246e27601c98",
+      "date": "2026-10-19",
+      "published_at": "2026-10-18T23:43:09+00:00",
+      "title": "llm-tools-datasette 0.1.1",
+      "summary": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-9d2417f40cde50f04449",
+      "date": "2026-10-19",
+      "published_at": "2026-10-18T23:16:16+00:00",
+      "title": "llm-echo 0.5",
+      "summary": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-9692486eeb77934b280e",
       "date": "2026-10-18",
