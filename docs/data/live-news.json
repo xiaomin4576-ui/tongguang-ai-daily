@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-19T02:47:30.870330+00:00",
-    "last_success_at": "2026-10-19T02:47:30.870330+00:00",
+    "attempted_at": "2026-10-19T10:43:25.030128+00:00",
+    "last_success_at": "2026-10-19T10:43:25.030128+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-18T23:43:09+00:00",
     "sources_ok": 7,
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "simonwillison",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 240,
-    "received_items": 46,
+    "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
