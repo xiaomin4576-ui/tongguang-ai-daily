@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-20T02:58:16.687917+00:00",
-    "last_success_at": "2026-10-20T02:58:16.687917+00:00",
+    "attempted_at": "2026-10-20T10:00:54.630131+00:00",
+    "last_success_at": "2026-10-20T10:00:54.630131+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-19T23:58:25+00:00",
+    "latest_article_at": "2026-10-20T05:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -47,14 +47,33 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 4
       }
     ],
-    "total_articles": 246,
-    "received_items": 48,
+    "total_articles": 250,
+    "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-64133903258a4e471984",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T05:00:00+00:00",
+      "title": "Spain-Based Startups Advance Regional Innovation With Barcelona Supercomputing Center",
+      "summary": "The Barcelona Supercomputing Center (BSC)’s AI Factory Accelerator Programme, now in full operation following a pilot initiative, gives startups access to sovereign compute, technical support and training to support innovation across industries. Many of these companies are also members of the NVIDIA",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-a286ccfbec858524d381",
       "date": "2026-10-20",
@@ -128,6 +147,23 @@
       ]
     },
     {
+      "id": "live-415d59bb4bc1760921ec",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T14:33:26+00:00",
+      "title": "从百比特芯片到整机交付，这家量子计算公司正将量子算力推向可调用服务",
+      "summary": "同步搭建千比特规模量子算力云平台",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504277.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-1dbe22633003a2af4fdd",
       "date": "2026-10-19",
       "published_at": "2026-10-19T12:00:00+00:00",
@@ -145,6 +181,40 @@
       "companies": [
         "OpenAI"
       ]
+    },
+    {
+      "id": "live-46929abac940a57c25b0",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T10:04:18+00:00",
+      "title": "AI 开始挑战最复杂的系统：生命",
+      "summary": "10 月 17 日，哲源科技发布 WHIRLPO 计算医学平台。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504242.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-09cb8fc2597db20e6e18",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T08:12:45+00:00",
+      "title": "赛场交卷 未来已来——首届全球具身智能应用创新挑战赛暨2026中国机器人大赛闭幕",
+      "summary": "10月18日下午，首届全球具身智能应用创新挑战赛暨2026中国机器人大赛落下帷幕。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504199.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-5c52b7d34becd1ccf770",
