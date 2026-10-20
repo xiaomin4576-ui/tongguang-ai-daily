@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-19T17:27:11.366109+00:00",
-    "last_success_at": "2026-10-19T17:27:11.366109+00:00",
+    "attempted_at": "2026-10-20T01:48:05.954373+00:00",
+    "last_success_at": "2026-10-20T01:48:05.954373+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-19T15:00:31+00:00",
+    "latest_article_at": "2026-10-19T23:58:25+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 12
+        "items": 13
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "qbitai",
@@ -47,14 +47,67 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 5
       }
     ],
-    "total_articles": 241,
-    "received_items": 45,
+    "total_articles": 246,
+    "received_items": 48,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a286ccfbec858524d381",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T23:58:25+00:00",
+      "title": "My obituary for programming",
+      "summary": "My obituary for programming Jeremy Scheff poignantly captures the key loss caused by coding agents for career programmers who enjoyed the puzzle of developing code: Programming turned into one of the greatest jobs you could imagine. You got paid to work on tricky little logic puzzles. The trickier t",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-494a9fa3bb713759384d",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T19:27:08+00:00",
+      "title": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+      "summary": "In the cavernous hall of Kraftwerk, a former power station in Berlin, German Chancellor Friedrich Merz and NVIDIA founder and CEO Jensen Huang sat down to discuss Germany’s AI roadmap, and in particular, the industrial applications of AI. Huang opened by tracing NVIDIA’s longstanding relationship wi",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-820876c7f3cb0963dddc",
+      "date": "2026-10-20",
+      "published_at": "2026-10-19T18:20:00+00:00",
+      "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
+      "summary": "A model developed by researchers at MIT and Boston Children's Hospital adjusts scans on the fly to track fetal movement, potentially sparing families repeat hospital visits.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-ca2be23ea0a1d60912da",
       "date": "2026-10-19",
@@ -72,6 +125,44 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-1dbe22633003a2af4fdd",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T12:00:00+00:00",
+      "title": "Advancing coding in low‑resource programming languages",
+      "summary": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+      "meaning": "",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5c52b7d34becd1ccf770",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
