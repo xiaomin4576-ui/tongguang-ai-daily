@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-20T15:38:32.728527+00:00",
-    "last_success_at": "2026-10-20T15:38:32.728527+00:00",
+    "attempted_at": "2026-10-20T20:33:53.574464+00:00",
+    "last_success_at": "2026-10-20T20:33:53.574464+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-20T15:19:48+00:00",
+    "latest_article_at": "2026-10-20T19:34:19+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 12
+        "items": 14
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 1
+        "items": 0
       },
       {
         "id": "nvidia",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "qbitai",
@@ -50,11 +50,69 @@
         "items": 4
       }
     ],
-    "total_articles": 253,
-    "received_items": 47,
+    "total_articles": 259,
+    "received_items": 49,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-7fa30abfca2c7ff1033a",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T19:34:19+00:00",
+      "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+      "summary": "My latest vibe coded game experiment is a Command & Conquer style RTS (Real Time Strategy) game called Battle Drones ( play it here ). Unlike my previous experiments , this one is actually fun to play . I'm somewhat embarrassed to admit that I got there by telling Claude to \"Make it a LOT more fun\".",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-e8a8161ff83426ef4f6b",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T18:17:47+00:00",
+      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-ef73bf2ace8ac6719291",
+      "date": "2026-10-21",
+      "published_at": "2026-10-20T16:09:19+00:00",
+      "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/fairstress",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-536f23cd94f139849c62",
       "date": "2026-10-20",
@@ -72,6 +130,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-1725d137aa3debc0d8ae",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T10:00:00+00:00",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
+      "meaning": "",
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -120,6 +197,44 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-1cfb6291fa158d05a5ba",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "title": "OpenAI acquires Orchestra Bio",
+      "summary": "OpenAI is acquiring Orchestra Bio to bring AI-powered operations to life sciences R&D, helping biopharma teams accelerate drug development and advance new treatments.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-39e60f901a735303e0c0",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/hf-torchtpu",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
