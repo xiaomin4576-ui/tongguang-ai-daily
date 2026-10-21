@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-21T15:56:15.556074+00:00",
-    "last_success_at": "2026-10-21T15:56:15.556074+00:00",
+    "attempted_at": "2026-10-21T20:36:55.085227+00:00",
+    "last_success_at": "2026-10-21T20:36:55.085227+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-21T14:58:18+00:00",
+    "latest_article_at": "2026-10-21T18:26:30+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 15
+        "items": 17
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 12
+        "items": 14
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "qbitai",
@@ -50,11 +50,88 @@
         "items": 4
       }
     ],
-    "total_articles": 278,
-    "received_items": 55,
+    "total_articles": 283,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-94a5f6526eada9bc0f52",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T18:26:30+00:00",
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-40a01666d562060bfdf9",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T17:35:36+00:00",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-39cad894cdd240fbe2db",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T17:00:00+00:00",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+      "meaning": "",
+      "url": "https://openai.com/index/att-legal",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5b4e08461387ba3b4483",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T16:04:43+00:00",
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-c2ed162a157709f5cb47",
       "date": "2026-10-21",
@@ -360,6 +437,25 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-e270f5ba4688033de075",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+      "meaning": "",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
