@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-21T10:05:45.976267+00:00",
-    "last_success_at": "2026-10-21T10:05:45.976267+00:00",
+    "attempted_at": "2026-10-21T15:56:15.556074+00:00",
+    "last_success_at": "2026-10-21T15:56:15.556074+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-21T10:00:07+00:00",
+    "latest_article_at": "2026-10-21T14:58:18+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 12
+        "items": 15
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 7
+        "items": 15
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,11 +50,223 @@
         "items": 4
       }
     ],
-    "total_articles": 262,
-    "received_items": 43,
+    "total_articles": 278,
+    "received_items": 55,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-c2ed162a157709f5cb47",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T14:58:18+00:00",
+      "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-b1215e1aefc04c61e203",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T13:00:00+00:00",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "meaning": "",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5c32755a71da49edb4fe",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T12:51:24+00:00",
+      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-95dedf578de78f3ec264",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "title": "OpenAI models are coming to Google Cloud",
+      "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI",
+        "Google"
+      ]
+    },
+    {
+      "id": "live-8722385c6c33a84607c3",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:50:37+00:00",
+      "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+      "summary": "At GTC Berlin, NVIDIA is showcasing its full lineup of local AI hardware. RTX Spark, which launched last week, powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station serves enterprise teams running frontier workloads on Linux,",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-12c1cb38a75e4a7b39f0",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:45:17+00:00",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "summary": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 Su",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google",
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-804d4d957ec690829705",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:30:41+00:00",
+      "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+      "summary": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by design. NVIDIA Cloud Partners across Europe, the Nordics, Afric",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-86185ff09c24ae9f959f",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:30:40+00:00",
+      "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+      "summary": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries, as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle. Bringing those capab",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-b2b697f42a42e82a6010",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:30:25+00:00",
+      "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+      "summary": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs. Complex engineering feats — from advanced chips to aircraft to industrial systems —– depend on simulation to predict how designs will per",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-f2380296be9197f11910",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:30:02+00:00",
+      "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+      "summary": "NVIDIA builds tools to enable safe agents across the stack. The NVIDIA OpenShell Reference Architecture, announced today, is part of NVIDIA’s growing portfolio of technologies that enables organizations to safely deploy agents at scale. NVIDIA Confidential Computing is the infrastructure layer that ",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-09d942bb1aad0976da41",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:10:01+00:00",
+      "title": "NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data",
+      "summary": "Agents are only as useful as what they know, and only as trustworthy as the boundaries they run within. Leading enterprises are using the open source NVIDIA Agent Toolkit — now expanded with new tools — to customize and control agents, use company data to inform their answers and actions, monitor wh",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-d46c8940730c093aa2d0",
       "date": "2026-10-21",
@@ -72,6 +284,63 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-de9db6f384cbc7887755",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T07:00:00+00:00",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+      "meaning": "",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-ea92da5c121ecb452702",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T07:00:00+00:00",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "meaning": "",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-64ddfb139fec8a1cb459",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T04:50:00+00:00",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "meaning": "",
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -168,6 +437,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-c582a39d486e86676aaa",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T10:30:11+00:00",
+      "title": "European Leaders Turn to NVIDIA Vera CPUs to Build Local Infrastructure",
+      "summary": "Nebius and Nscale are among global technology partners looking to NVIDIA Vera CPUs to build the next wave of infrastructure. Their momentum reflects rapid advancements in agentic computing. Agents do more than generate answers: they retrieve information, run software tools, execute code and evaluate",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/european-leaders-vera-cpu-infrastructure/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
       ]
     },
     {
@@ -656,6 +944,25 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-35b4b4388c707810b3e0",
+      "date": "2026-10-16",
+      "published_at": "2026-10-16T01:58:00+00:00",
+      "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
+      "summary": "Research: sparqlite: SPARQL 1.1 inside SQLite, written in Rust This research task is really an experiment in running Claude Code for web in \"Ultracode\" mode, as described in Orchestrate subagents at scale with dynamic workflows in the Claude Code documentation. With Ultracode turned on, Claude Code ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
       ]
     },
     {
