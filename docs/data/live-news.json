@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-21T02:52:42.255098+00:00",
-    "last_success_at": "2026-10-21T02:52:42.255098+00:00",
+    "attempted_at": "2026-10-21T10:05:45.976267+00:00",
+    "last_success_at": "2026-10-21T10:05:45.976267+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-20T19:34:19+00:00",
+    "latest_article_at": "2026-10-21T10:00:07+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 14
+        "items": 12
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 0
+        "items": 1
       },
       {
         "id": "nvidia",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 0
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,49 @@
         "items": 4
       }
     ],
-    "total_articles": 260,
-    "received_items": 47,
+    "total_articles": 262,
+    "received_items": 43,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d46c8940730c093aa2d0",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T10:00:07+00:00",
+      "title": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
+      "summary": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemo",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-c7c1db1d24f97b169309",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T04:00:00+00:00",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "summary": "Cover image for the e-Conomy SEA 2026 report titled Building the intelligent economy by Google, Temasek, and Bain and Company. A 3D illustration features a glowing yellow star surrounded by miniature scenes representing digital sectors, including data cen",
+      "meaning": "",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-7fa30abfca2c7ff1033a",
       "date": "2026-10-21",
