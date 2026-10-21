@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-20T20:33:53.574464+00:00",
-    "last_success_at": "2026-10-20T20:33:53.574464+00:00",
+    "attempted_at": "2026-10-21T01:32:41.555480+00:00",
+    "last_success_at": "2026-10-21T01:32:41.555480+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-20T19:34:19+00:00",
     "sources_ok": 7,
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 7
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 1
       },
       {
         "id": "mit-ai",
@@ -50,8 +50,8 @@
         "items": 4
       }
     ],
-    "total_articles": 259,
-    "received_items": 49,
+    "total_articles": 260,
+    "received_items": 45,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -140,6 +140,25 @@
       "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
       "meaning": "",
       "url": "https://openai.com/index/ted-taylor-restaurant",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-aa8847d44cbae3328f3c",
+      "date": "2026-10-20",
+      "published_at": "2026-10-20T07:00:00+00:00",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "meaning": "",
+      "url": "https://openai.com/index/terminal-x",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
