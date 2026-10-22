@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-22T10:08:35.037896+00:00",
-    "last_success_at": "2026-10-22T10:08:35.037896+00:00",
+    "attempted_at": "2026-10-22T15:52:15.065777+00:00",
+    "last_success_at": "2026-10-22T15:52:15.065777+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-22T07:51:31+00:00",
+    "latest_article_at": "2026-10-22T15:34:13+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 14
+        "items": 13
       },
       {
         "id": "huggingface",
@@ -50,11 +50,47 @@
         "items": 3
       }
     ],
-    "total_articles": 292,
-    "received_items": 56,
+    "total_articles": 295,
+    "received_items": 55,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-2eded73c1a58a8ad57ea",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T15:34:13+00:00",
+      "title": "Quoting Armin Ronacher",
+      "summary": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. — Armin Ronacher Tags: security , generative-ai , armin-ronacher , ai , ai-security-research , llms",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-af6b159eb6ea2f663c90",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T15:00:02+00:00",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are ",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-0e5fad3ca5f8a881acf7",
       "date": "2026-10-22",
@@ -90,6 +126,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-6400feb681472530a689",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T06:00:00+00:00",
+      "title": "What FDE means at OpenAI",
+      "summary": "What forward deployed engineering means at OpenAI",
+      "meaning": "",
+      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-f8df91dc14194fe527ef",
