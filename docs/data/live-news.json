@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-22T15:52:15.065777+00:00",
-    "last_success_at": "2026-10-22T15:52:15.065777+00:00",
+    "attempted_at": "2026-10-22T20:33:04.239276+00:00",
+    "last_success_at": "2026-10-22T20:33:04.239276+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-22T15:34:13+00:00",
+    "latest_article_at": "2026-10-22T19:42:26+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 6
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,11 +50,85 @@
         "items": 3
       }
     ],
-    "total_articles": 295,
-    "received_items": 55,
+    "total_articles": 300,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-87e22db35085845a3193",
+      "date": "2026-10-23",
+      "published_at": "2026-10-22T19:42:26+00:00",
+      "title": "DE STAAT - FREEDOM (Official Music Video)",
+      "summary": "DE STAAT - FREEDOM (Official Music Video) OK well this is a first for me... at 00:44 in this new music video by Dutch alternative rock band De Staat : The visual effects are credited to Matties Grooten of Fake it or Leave it . Via flir on Hacker News Tags: music , ai , generative-ai , pelican-riding",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-891b7e0bbf66f86d27b7",
+      "date": "2026-10-23",
+      "published_at": "2026-10-22T19:00:00+00:00",
+      "title": "Build more responsive apps with the Decisions API",
+      "summary": "Fast, focused, low-cost decisions for any application.",
+      "meaning": "",
+      "url": "https://openai.com/index/decisions-api",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-2f38489938aada9ceff8",
+      "date": "2026-10-23",
+      "published_at": "2026-10-22T18:09:56+00:00",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "summary": "Donating Agent Skills to the Agentic AI Foundation News today from Anthropic: We’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and Ope",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-67297d2df9a3d7f196c3",
+      "date": "2026-10-23",
+      "published_at": "2026-10-22T16:11:31+00:00",
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-2eded73c1a58a8ad57ea",
       "date": "2026-10-22",
@@ -201,6 +275,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-eda525050cea8fce4b13",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "summary": "Uber is rolling out ChatGPT Work to more than 30,000 employees, helping teams research, analyze data, create presentations, and complete complex workflows.",
+      "meaning": "",
+      "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
