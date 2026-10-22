@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-22T02:51:18.913817+00:00",
-    "last_success_at": "2026-10-22T02:51:18.913817+00:00",
+    "attempted_at": "2026-10-22T10:08:35.037896+00:00",
+    "last_success_at": "2026-10-22T10:08:35.037896+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-21T21:00:00+00:00",
+    "latest_article_at": "2026-10-22T07:51:31+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,13 +23,13 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 15
+        "items": 14
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "simonwillison",
@@ -41,20 +41,113 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 0
+        "items": 3
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 3
       }
     ],
-    "total_articles": 285,
+    "total_articles": 292,
     "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-0e5fad3ca5f8a881acf7",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T07:51:31+00:00",
+      "title": "Ensemble forecasting with IBM Granite time-series models",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-de46add1373038e954ad",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T07:11:14+00:00",
+      "title": "既能“做选择题”，也能“做填空题”——星辰意图理解模型Xing4.0-29B-Intent发布",
+      "summary": "中电信人工智能科技有限公司星辰通用人工智能实验室正式发布并开源意图理解专用模型 Xing4.0-29B-Intent",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504832.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-f8df91dc14194fe527ef",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T05:00:27+00:00",
+      "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+      "summary": "To help developers rapidly build world models, which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints. Ranking top five on six different open models leaderboards",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-6f92d29565569592ae8a",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T05:00:25+00:00",
+      "title": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
+      "summary": "Companies around the world are building on the NVIDIA DSX AI Factory Platform to plan, simulate and run the grid and the AI factory as one system, from the substation to the rack. Their adoption of the platform responds to an acute problem. Power is now the biggest bottleneck in infrastructure. More",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/dsx-power/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-13b603cf56b699869be4",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T05:00:23+00:00",
+      "title": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+      "summary": "European retailers are using open models and physical intelligence across use cases — from a commerce platform cutting inference costs by 90% to to a fulfillment center where collaboration of different robotic fleets is simulated inside a digital twin. Frontier Results With Open Models Retail leader",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-3f1a11956436b1673800",
       "date": "2026-10-22",
@@ -230,6 +323,23 @@
       ]
     },
     {
+      "id": "live-b9dc1a91e45ba8558c68",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T11:30:59+00:00",
+      "title": "多智能体协同重构医疗AI！清华AIR孵化：医生AI分身“坐诊”医院",
+      "summary": "医疗AI质变时刻",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504734.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-8722385c6c33a84607c3",
       "date": "2026-10-21",
       "published_at": "2026-10-21T10:50:37+00:00",
@@ -381,6 +491,23 @@
       "companies": [
         "NVIDIA"
       ]
+    },
+    {
+      "id": "live-6a161c5da62b293f0250",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T07:15:05+00:00",
+      "title": "LeCun押注的世界模型，中国一家清华系公司已经做进了机器人",
+      "summary": "世界模型赛道新看点：千诀隐变量可辨识性方向的研究，比LeCun相近工作早一年，不堆画面预测，主打物理规律与跨本体复用。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504653.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-de9db6f384cbc7887755",
