@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-21T20:36:55.085227+00:00",
-    "last_success_at": "2026-10-21T20:36:55.085227+00:00",
+    "attempted_at": "2026-10-22T01:28:49.990142+00:00",
+    "last_success_at": "2026-10-22T01:28:49.990142+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-21T18:26:30+00:00",
+    "latest_article_at": "2026-10-21T21:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 17
+        "items": 18
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 14
+        "items": 12
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 283,
-    "received_items": 58,
+    "total_articles": 285,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-3f1a11956436b1673800",
+      "date": "2026-10-22",
+      "published_at": "2026-10-21T21:00:00+00:00",
+      "title": "Broad access through consistent standards",
+      "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
+      "meaning": "",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-94a5f6526eada9bc0f52",
       "date": "2026-10-22",
@@ -447,6 +466,25 @@
       "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
       "meaning": "",
       "url": "https://openai.com/index/empowering-cyber-defenders",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-3fe372fb2e8166f0e814",
+      "date": "2026-10-21",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+      "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
+      "meaning": "",
+      "url": "https://openai.com/index/cloudflare-cyber",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
