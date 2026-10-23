@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-23T15:43:42.573080+00:00",
-    "last_success_at": "2026-10-23T15:43:42.573080+00:00",
+    "attempted_at": "2026-10-23T20:26:15.354391+00:00",
+    "last_success_at": "2026-10-23T20:26:15.354391+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-23T04:00:00+00:00",
+    "latest_article_at": "2026-10-23T19:40:54+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -50,11 +50,85 @@
         "items": 3
       }
     ],
-    "total_articles": 305,
-    "received_items": 57,
+    "total_articles": 309,
+    "received_items": 59,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9e0308113d32ae3fc536",
+      "date": "2026-10-24",
+      "published_at": "2026-10-23T19:40:54+00:00",
+      "title": "Introducing Kimi K3.1 Pro",
+      "summary": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which ar",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ee4c22366ef7e7abd786",
+      "date": "2026-10-24",
+      "published_at": "2026-10-23T17:00:00+00:00",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+      "meaning": "",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5d794c3788a3a4be0d42",
+      "date": "2026-10-24",
+      "published_at": "2026-10-23T16:15:50+00:00",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-f8c156dba7886826388b",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T10:00:00+00:00",
+      "title": "Securing our frontier model training environment",
+      "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
+      "meaning": "",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-000b68dcd1349dc11835",
       "date": "2026-10-23",
