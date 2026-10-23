@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-23T10:01:03.686989+00:00",
-    "last_success_at": "2026-10-23T10:01:03.686989+00:00",
+    "attempted_at": "2026-10-23T15:43:42.573080+00:00",
+    "last_success_at": "2026-10-23T15:43:42.573080+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-23T04:00:00+00:00",
     "sources_ok": 7,
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 11
+        "items": 12
       },
       {
         "id": "simonwillison",
@@ -50,8 +50,8 @@
         "items": 3
       }
     ],
-    "total_articles": 304,
-    "received_items": 56,
+    "total_articles": 305,
+    "received_items": 57,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -108,6 +108,25 @@
       "is_tier0": false,
       "companies": [
         "OpenAI"
+      ]
+    },
+    {
+      "id": "live-2b3f616d26d343fed778",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
