@@ -1,10 +1,10 @@
 {
   "meta": {
-    "attempted_at": "2026-10-23T01:28:24.738456+00:00",
-    "last_success_at": "2026-10-23T01:28:24.738456+00:00",
-    "status": "partial",
-    "latest_article_at": "2026-10-22T22:24:34+00:00",
-    "sources_ok": 6,
+    "attempted_at": "2026-10-23T02:54:47.477978+00:00",
+    "last_success_at": "2026-10-23T02:54:47.477978+00:00",
+    "status": "ok",
+    "latest_article_at": "2026-10-23T02:00:13+00:00",
+    "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
       {
@@ -35,14 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "qbitai",
         "name": "量子位",
-        "ok": false,
-        "items": 0,
-        "error": "URLError: <urlopen error _ssl.c:999: The handshake operation timed out>"
+        "ok": true,
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -51,11 +50,30 @@
         "items": 2
       }
     ],
-    "total_articles": 301,
-    "received_items": 52,
+    "total_articles": 302,
+    "received_items": 54,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-f07d0bb3b14ff2bf4391",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T02:00:13+00:00",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s increasing supply of accelerated computing — along with its gr",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-51888f116f5b083740bc",
       "date": "2026-10-23",
