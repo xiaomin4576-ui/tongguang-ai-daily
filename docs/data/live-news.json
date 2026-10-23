@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-23T02:54:47.477978+00:00",
-    "last_success_at": "2026-10-23T02:54:47.477978+00:00",
+    "attempted_at": "2026-10-23T10:01:03.686989+00:00",
+    "last_success_at": "2026-10-23T10:01:03.686989+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-23T02:00:13+00:00",
+    "latest_article_at": "2026-10-23T04:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 17
+        "items": 18
       },
       {
         "id": "google-ai",
@@ -47,20 +47,37 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 2
+        "items": 3
       }
     ],
-    "total_articles": 302,
-    "received_items": 54,
+    "total_articles": 304,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-000b68dcd1349dc11835",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "title": "Q&A: How AI came to model the “messy” human mind",
+      "summary": "Assistant Professor Benjamin Lindquist studies how engineers deliberately injected randomness into early AI, giving rise to deep-learning models that sometimes hallucinate.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/qa-how-ai-came-to-model-messy-human-mind-1023",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-f07d0bb3b14ff2bf4391",
       "date": "2026-10-23",
       "published_at": "2026-10-23T02:00:13+00:00",
       "title": "Kazakhstan Expands Compute for Its AI Future",
-      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s increasing supply of accelerated computing — along with its gr",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s incre",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
       "source": "NVIDIA 官方",
@@ -72,6 +89,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-1a543055a02f9816518c",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "summary": "OpenAI and Poland’s NASK are partnering on AI safety, security, and technical research to strengthen safeguards and support a more resilient digital ecosystem.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
