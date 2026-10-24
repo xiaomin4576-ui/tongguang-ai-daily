@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-23T20:26:15.354391+00:00",
-    "last_success_at": "2026-10-23T20:26:15.354391+00:00",
+    "attempted_at": "2026-10-24T01:33:37.496118+00:00",
+    "last_success_at": "2026-10-24T01:33:37.496118+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-23T19:40:54+00:00",
+    "latest_article_at": "2026-10-23T21:35:13+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "qbitai",
@@ -47,14 +47,50 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 4
       }
     ],
-    "total_articles": 309,
-    "received_items": 59,
+    "total_articles": 311,
+    "received_items": 61,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-1560ea04dee0e58af37b",
+      "date": "2026-10-24",
+      "published_at": "2026-10-23T21:35:13+00:00",
+      "title": "Quick Study",
+      "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-303db39c14fcfc30a17e",
+      "date": "2026-10-24",
+      "published_at": "2026-10-23T21:00:00+00:00",
+      "title": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI",
+      "summary": "In Compton Lecture, the distinguished legal scholar warns of potential “loss of the Enlightenment” while suggesting ways innovations can meet our civic and cultural needs.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-9e0308113d32ae3fc536",
       "date": "2026-10-24",
