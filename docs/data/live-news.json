@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-25T02:44:11.934764+00:00",
-    "last_success_at": "2026-10-25T02:44:11.934764+00:00",
+    "attempted_at": "2026-10-25T09:47:07.680363+00:00",
+    "last_success_at": "2026-10-25T09:47:07.680363+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-24T03:59:57+00:00",
     "sources_ok": 7,
@@ -47,11 +47,11 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 3
       }
     ],
     "total_articles": 312,
-    "received_items": 62,
+    "received_items": 61,
     "mode": "rss-source-excerpts"
   },
   "articles": [
