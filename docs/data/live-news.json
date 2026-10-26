@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-26T11:02:58.631051+00:00",
-    "last_success_at": "2026-10-26T11:02:58.631051+00:00",
+    "attempted_at": "2026-10-26T17:20:25.670993+00:00",
+    "last_success_at": "2026-10-26T17:20:25.670993+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-24T03:59:57+00:00",
+    "latest_article_at": "2026-10-26T16:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,7 +17,7 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "nvidia",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,83 @@
         "items": 3
       }
     ],
-    "total_articles": 313,
-    "received_items": 56,
+    "total_articles": 317,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b1d7eb2dedce5839f589",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T16:00:00+00:00",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "summary": "An illustration of a planet rotating to show various cartoon figures waving. At the top is the text \"AI Quests\"",
+      "meaning": "",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-d4bbee2537468653c796",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T08:38:49+00:00",
+      "title": "从“言传身教”到“触类旁通”：AI既需要“名师指引”，也需要“自我修行”",
+      "summary": "人工智能正在从人机“言传身教”走向自学“触类旁通”。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505443.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-7e73eebe3e909303c4c5",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T07:00:00+00:00",
+      "title": "How Fanatics and OpenAI streamline the fan experience",
+      "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+      "meaning": "",
+      "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-ce681d327da382ce277c",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T06:50:44+00:00",
+      "title": "趋境科技完成 B 轮融资，半年实现超十倍速增长，加速高品质 AI Token 规模化交付",
+      "summary": "高品质 AI Token 成为行业新风向",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505429.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-d1879513a33727bd2922",
       "date": "2026-10-24",
