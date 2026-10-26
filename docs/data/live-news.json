@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-26T02:42:02.703848+00:00",
-    "last_success_at": "2026-10-26T02:42:02.703848+00:00",
+    "attempted_at": "2026-10-26T11:02:58.631051+00:00",
+    "last_success_at": "2026-10-26T11:02:58.631051+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-24T03:59:57+00:00",
     "sources_ok": 7,
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 1
       },
       {
         "id": "mit-ai",
@@ -50,8 +50,8 @@
         "items": 3
       }
     ],
-    "total_articles": 312,
-    "received_items": 58,
+    "total_articles": 313,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -181,6 +181,23 @@
       "companies": [
         "OpenAI"
       ]
+    },
+    {
+      "id": "live-1b0a695e72b124426023",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T08:40:57+00:00",
+      "title": "高德发布首个基于开放世界行为的全身基座模型λ0，推动机器人从“局部学习”迈向“全身动作对齐”",
+      "summary": "阿里巴巴集团旗下高德正式发布首个基于开放世界行为的全身基座模型λ0",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/504905.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-000b68dcd1349dc11835",
