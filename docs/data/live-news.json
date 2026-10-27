@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-27T03:16:39.748849+00:00",
-    "last_success_at": "2026-10-27T03:16:39.748849+00:00",
+    "attempted_at": "2026-10-27T10:30:31.481547+00:00",
+    "last_success_at": "2026-10-27T10:30:31.481547+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-26T23:53:07+00:00",
+    "latest_article_at": "2026-10-27T08:27:46+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 24
+        "items": 22
       },
       {
         "id": "google-ai",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,81 @@
         "items": 2
       }
     ],
-    "total_articles": 325,
-    "received_items": 59,
+    "total_articles": 329,
+    "received_items": 60,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-55eebcae912c07d46d83",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T08:27:46+00:00",
+      "title": "GPT-6.1 Terra首批网友实测来了！1折价格获得Astra级电脑操作能力",
+      "summary": "同一天，OpenAI还甩出3项AI科学新发现",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505719.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-662cec4c533afa61a5b5",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T08:18:59+00:00",
+      "title": "国产AI 3D大模型Hi3D来了！开源可商用，PK干掉GPT-6",
+      "summary": "还是专业的模型做专业的事情",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505694.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ed9d714f686e14b40694",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T07:44:41+00:00",
+      "title": "做能源与算力的“搭桥人”：达卯科技以能源大脑定义算电协同 | CPE 2026",
+      "summary": "破解绿电直连项目落地僵局",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505687.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-fafd3718bd44303a7934",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T03:23:55+00:00",
+      "title": "钛动科技发布行业首个Pro-Agent, Navos Pro定义结果导向的AI for Work | TGC 2026科技增长大会",
+      "summary": "10 月 23 日，以 “ AI is Profitable ” 为主题的 2026 TGC 科技增长大会于广州召开。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/505580.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-c15b1e3c66d845646c4c",
       "date": "2026-10-27",
