@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-27T10:30:31.481547+00:00",
-    "last_success_at": "2026-10-27T10:30:31.481547+00:00",
+    "attempted_at": "2026-10-27T16:35:19.310593+00:00",
+    "last_success_at": "2026-10-27T16:35:19.310593+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-27T08:27:46+00:00",
+    "latest_article_at": "2026-10-27T16:12:42+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 23
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "huggingface",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,49 @@
         "items": 2
       }
     ],
-    "total_articles": 329,
-    "received_items": 60,
+    "total_articles": 332,
+    "received_items": 61,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-1d6c5c59e46e52b936cb",
+      "date": "2026-10-28",
+      "published_at": "2026-10-27T16:12:42+00:00",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-85fdf95f1fdc5eecfcb1",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T15:00:20+00:00",
+      "title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
+      "summary": "There are 57 million people worldwide living with dementia today. For the researchers working to help them, the obstacle isn’t a lack of effort — it’s too much data, too few experts to synthesize it and a pace of discovery that can’t keep up with the disease. The Consortium for Biomedical Research a",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-55eebcae912c07d46d83",
       "date": "2026-10-27",
@@ -565,6 +603,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-3b5a2a6a27ab5490f80a",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T00:00:00+00:00",
+      "title": "Anima helps clinics cut call waits by 75% with GPT-6 and GPT-Live",
+      "summary": "Anima expands what care teams can do with OpenAI models, giving them more capacity to respond to patients.",
+      "meaning": "",
+      "url": "https://openai.com/index/anima",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
