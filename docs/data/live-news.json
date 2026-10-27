@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-26T17:20:25.670993+00:00",
-    "last_success_at": "2026-10-26T17:20:25.670993+00:00",
+    "attempted_at": "2026-10-27T02:02:53.368405+00:00",
+    "last_success_at": "2026-10-27T02:02:53.368405+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-26T16:00:00+00:00",
+    "latest_article_at": "2026-10-26T23:53:07+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 24
       },
       {
         "id": "google-ai",
@@ -29,32 +29,89 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 11
+        "items": 8
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 2
       }
     ],
-    "total_articles": 317,
-    "received_items": 58,
+    "total_articles": 325,
+    "received_items": 59,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-c15b1e3c66d845646c4c",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T23:53:07+00:00",
+      "title": "GPT-6.1 Terra",
+      "summary": "GPT-6.1 Terra It's always interesting to note which aspects of a new model are emphasized in the release announcement. In the case of GPT-6.1 Terra, OpenAI went with visual reasoning and computer use: We’re introducing GPT-6.1 Terra , a fast, efficient model that combines detailed visual reasoning a",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a9c488820a62ac4adcd9",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T22:00:00+00:00",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "summary": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
+      "meaning": "",
+      "url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-de56fb996b09bd294143",
+      "date": "2026-10-27",
+      "published_at": "2026-10-26T19:00:25+00:00",
+      "title": "Quoting Jason Koebler",
+      "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-b1d7eb2dedce5839f589",
       "date": "2026-10-27",
@@ -72,6 +129,63 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-8eb6001a836a6e50b8fb",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T14:30:00+00:00",
+      "title": "Working with academic communities to build scientific understanding",
+      "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
+      "meaning": "",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-7d972df501d01ba1f64a",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T13:45:00+00:00",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+      "meaning": "",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-27334100e818b98514ff",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T10:00:00+00:00",
+      "title": "ChatGPT’s expanding world of work",
+      "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
+      "meaning": "",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -111,6 +225,25 @@
       ]
     },
     {
+      "id": "live-742d30efdc4090c11a97",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T07:00:00+00:00",
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-cut-incident-investigation",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-ce681d327da382ce277c",
       "date": "2026-10-26",
       "published_at": "2026-10-26T06:50:44+00:00",
@@ -126,6 +259,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-35e334c198740f741663",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T00:00:00+00:00",
+      "title": "Introducing GPT-6.1 Terra",
+      "summary": "Bringing fast and capable computer use to everyone",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-d1879513a33727bd2922",
