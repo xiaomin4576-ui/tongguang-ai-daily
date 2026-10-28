@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-28T11:18:41.494281+00:00",
-    "last_success_at": "2026-10-28T11:18:41.494281+00:00",
+    "attempted_at": "2026-10-28T21:38:39.682450+00:00",
+    "last_success_at": "2026-10-28T21:38:39.682450+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-28T10:09:07+00:00",
+    "latest_article_at": "2026-10-28T16:45:23+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 6
+        "items": 7
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 9
+        "items": 6
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -47,14 +47,126 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 4
       }
     ],
-    "total_articles": 343,
-    "received_items": 57,
+    "total_articles": 351,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-e9a7a10b5a66f3aae2c2",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T16:45:23+00:00",
+      "title": "GitHub Octoverse 2026",
+      "summary": "GitHub Octoverse 2026 I'm at GitHub Universe today (GitHub gave me a free ticket through their \"GitHub Stars\" program). EVP Jay Parikh just announced this year's Octoverse report, and highlighted these numbers in particular: This is a pretty stark representation of the impact of agentic engineering ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-ba816ae2c66dda0a8ef1",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T16:00:00+00:00",
+      "title": "3 Questions: Why infrastructure is entering a defining era",
+      "summary": "Professor Ali Jadbabaie describes how AI, digital transformation, climate change, and complex geopolitics are forcing engineers and policymakers to rethink how infrastructure is designed, built, and managed.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-9fa8e4999dc547768cea",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T15:00:46+00:00",
+      "title": "Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "summary": "NVIDIA RTX Spark powers thin and light laptops built for everything that developers, creators and gamers do. RTX Spark laptops are now available from ASUS, Dell, HP, Lenovo, Microsoft and MSI. These powerful systems combine an NVIDIA Blackwell RTX GPU and an NVIDIA Grace CPU in a single superchip wi",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Microsoft"
+      ]
+    },
+    {
+      "id": "live-ec733f799e1aaee3d1ac",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T14:58:17+00:00",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-7f577f4b01c6fc58e5ce",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:55:15+00:00",
+      "title": "The October inflection point for vibe game development",
+      "summary": "I've written before about how November 2025 was an inflection point for coding agents - the point where Opus 4.5 and GPT-5.1 crossed a tipping point that meant their respective coding agents became reliable daily drivers for software engineers. I think we've reached a new inflection point in October",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a395c7da350b5086cc15",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T13:15:00+00:00",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-2cf23206607f40daee57",
       "date": "2026-10-28",
@@ -73,6 +185,25 @@
       "companies": []
     },
     {
+      "id": "live-e2ed7680c50ae3f074e0",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T10:00:00+00:00",
+      "title": "The future of the firm",
+      "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+      "meaning": "",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-67c6b18b0a76451db874",
       "date": "2026-10-28",
       "published_at": "2026-10-28T09:30:00+00:00",
@@ -80,6 +211,25 @@
       "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
       "meaning": "",
       "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-709cc8e2bd467b791689",
+      "date": "2026-10-28",
+      "published_at": "2026-10-28T09:30:00+00:00",
+      "title": "Legora is building the agentic operating system for legal work",
+      "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "meaning": "",
+      "url": "https://openai.com/index/legora",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
