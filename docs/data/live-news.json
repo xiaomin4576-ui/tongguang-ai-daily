@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-29T03:53:41.666008+00:00",
-    "last_success_at": "2026-10-29T03:53:41.666008+00:00",
+    "attempted_at": "2026-10-29T11:29:42.204489+00:00",
+    "last_success_at": "2026-10-29T11:29:42.204489+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-28T23:23:21+00:00",
+    "latest_article_at": "2026-10-29T00:03:58+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 18
       },
       {
         "id": "google-ai",
@@ -23,13 +23,13 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 7
+        "items": 4
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 6
+        "items": 5
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 6
+        "items": 1
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 352,
-    "received_items": 56,
+    "total_articles": 353,
+    "received_items": 46,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-6ccd1352f98e15c3a6d4",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:03:58+00:00",
+      "title": "刚刚，Gemini 4 Carbon全面超越Opus 5.5！首发Token半价",
+      "summary": "能连肝数日修Bug，免疫提示词注入",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506227.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-da9c62c52f6c35e6916b",
       "date": "2026-10-29",
