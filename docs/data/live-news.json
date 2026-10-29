@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-28T21:38:39.682450+00:00",
-    "last_success_at": "2026-10-28T21:38:39.682450+00:00",
+    "attempted_at": "2026-10-29T02:24:44.586414+00:00",
+    "last_success_at": "2026-10-29T02:24:44.586414+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-28T16:45:23+00:00",
+    "latest_article_at": "2026-10-28T23:23:21+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -50,11 +50,28 @@
         "items": 4
       }
     ],
-    "total_articles": 351,
+    "total_articles": 352,
     "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-da9c62c52f6c35e6916b",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T23:23:21+00:00",
+      "title": "Quoting Ted Sanders",
+      "summary": "In general, LLM performance is incredibly multidimensional. There's no guarantee of a fixed ordering where the model that is best at math is also the model that's best at jokes. Despite that complexity, much of the variation in performance is explained by just a single variable: model size. In gener",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-e9a7a10b5a66f3aae2c2",
       "date": "2026-10-29",
