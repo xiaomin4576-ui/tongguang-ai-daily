@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-29T11:29:42.204489+00:00",
-    "last_success_at": "2026-10-29T11:29:42.204489+00:00",
+    "attempted_at": "2026-10-29T21:47:18.884579+00:00",
+    "last_success_at": "2026-10-29T21:47:18.884579+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-29T00:03:58+00:00",
+    "latest_article_at": "2026-10-29T17:00:26+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 5
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -50,11 +50,140 @@
         "items": 4
       }
     ],
-    "total_articles": 353,
-    "received_items": 46,
+    "total_articles": 362,
+    "received_items": 51,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a41c6b1e5e903c631014",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T17:00:26+00:00",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "summary": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models. Spawn is a massiv",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-9349f418e7bc7ab45091",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T17:00:00+00:00",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "meaning": "",
+      "url": "https://openai.com/index/updated-model-spec",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5beef147a7815df46333",
+      "date": "2026-10-30",
+      "published_at": "2026-10-29T16:00:35+00:00",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for explori",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-95cafd4597e819bbe57b",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T14:06:27+00:00",
+      "title": "Quoting Ben Hylak",
+      "summary": "every product i use should just be a headless mcp, that feeds into an agent, where i never have to think about anything underneath. except for our product, of course. in our product, customers love the ui and love us very much. we're special that way. — Ben Hylak Tags: model-context-protocol , ai",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-e508e29ae812fe586e8d",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T13:37:07+00:00",
+      "title": "Granite Switch 4.1.1 — Update models like you update software",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-0f01adb2acab0a67ba71",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T09:00:00+00:00",
+      "title": "How we detect frontier model misalignment",
+      "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+      "meaning": "",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-d948735545c20cf30721",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T07:00:00+00:00",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+      "meaning": "",
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-6ccd1352f98e15c3a6d4",
       "date": "2026-10-29",
@@ -72,6 +201,63 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-718617961cab3abcc8e8",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-b6b30743068c26272d89",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-6394645bd5105adc5435",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
@@ -3425,25 +3611,6 @@
       "is_tier0": false,
       "companies": [
         "Anthropic"
-      ]
-    },
-    {
-      "id": "live-5beef147a7815df46333",
-      "date": "2026-10-10",
-      "published_at": "2026-10-09T16:00:35+00:00",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for explori",
-      "meaning": "",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "NVIDIA 官方",
-      "source_id": "nvidia",
-      "automated": true,
-      "dimension": "📰 自动快讯",
-      "quality_score": null,
-      "is_top5": false,
-      "is_tier0": false,
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
