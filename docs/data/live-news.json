@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-30T11:22:38.161208+00:00",
-    "last_success_at": "2026-10-30T11:22:38.161208+00:00",
+    "attempted_at": "2026-10-30T21:28:48.060945+00:00",
+    "last_success_at": "2026-10-30T21:28:48.060945+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-30T03:48:04+00:00",
+    "latest_article_at": "2026-10-30T20:15:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 17
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -47,14 +47,124 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 4
       }
     ],
-    "total_articles": 366,
-    "received_items": 47,
+    "total_articles": 373,
+    "received_items": 50,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-d42b8e56046bc19f14b3",
+      "date": "2026-10-31",
+      "published_at": "2026-10-30T20:15:00+00:00",
+      "title": "MIT affiliates named 2026 Schmidt Sciences AI2050 Fellows",
+      "summary": "Five MIT faculty members and two additional alumni are honored with fellowships to advance research on beneficial AI.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/mit-affiliates-named-schmidt-sciences-ai2050-fellows-1030",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-3dbc47c31caae53214cc",
+      "date": "2026-10-31",
+      "published_at": "2026-10-30T19:00:00+00:00",
+      "title": "Q&A: Hey AI, who should I vote for this year?",
+      "summary": "MIT professors Adam Berinsky and Chara Podimata discuss a new project to track how AI chatbots are responding to questions about the 2026 U.S. midterm elections.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/qa-hey-ai-who-should-i-vote-for-this-year-1030",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-037154e824aaff256e14",
+      "date": "2026-10-31",
+      "published_at": "2026-10-30T17:57:24+00:00",
+      "title": "nemotron-halloween",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-d5d3db1f3a9a150388c4",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T15:00:10+00:00",
+      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
+      "summary": "While science fiction lore tells us that humans will meet extraterrestrial life in the form of little green men, the detail that should raise hairs this Halloween is this: the search for extraterrestrial intelligence took a major leap forward with AI, and it increasingly focuses on AI agents built b",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-84abd1857de5dfd951d9",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T09:30:00+00:00",
+      "title": "Making it easier for websites to express AI training preferences",
+      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "meaning": "",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a86d24c59c826150d16d",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T09:00:00+00:00",
+      "title": "Community safety report and new protections for teens",
+      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+      "meaning": "",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-ea10750046a09d2c4c8c",
       "date": "2026-10-30",
@@ -329,6 +439,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-85f94c0fe8f02a81789b",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+      "meaning": "",
+      "url": "https://openai.com/index/credit-saison",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
