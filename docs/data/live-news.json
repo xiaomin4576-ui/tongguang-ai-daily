@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-30T03:55:28.598891+00:00",
-    "last_success_at": "2026-10-30T03:55:28.598891+00:00",
+    "attempted_at": "2026-10-30T11:22:38.161208+00:00",
+    "last_success_at": "2026-10-30T11:22:38.161208+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-29T22:48:29+00:00",
+    "latest_article_at": "2026-10-30T03:48:04+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 17
       },
       {
         "id": "google-ai",
@@ -41,20 +41,37 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 3
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 3
       }
     ],
-    "total_articles": 363,
+    "total_articles": 366,
     "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-ea10750046a09d2c4c8c",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T03:48:04+00:00",
+      "title": "从学习人类到学习机器人同伴，清华大学联合无问芯穹、智元提出具身智能规模化落地新路径",
+      "summary": "让机器人成为彼此的“老师”",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506662.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-49d99f09e516b736e5fe",
       "date": "2026-10-30",
@@ -165,6 +182,40 @@
       "companies": [
         "Hugging Face"
       ]
+    },
+    {
+      "id": "live-a7910cb6e3eece02b72a",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T09:58:26+00:00",
+      "title": "STEPX Neo 发布两周即迎首次升级，智能体能力持续释放",
+      "summary": "阶跃终端旗下大模型原生智能体手机 STEPX Neo 在发布两周后即迎来首次升级",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506554.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-e2e73d2081d624674be3",
+      "date": "2026-10-29",
+      "published_at": "2026-10-29T09:52:05+00:00",
+      "title": "中国MaaS市场TOP2，商汤大装置再度蝉联",
+      "summary": "在大模型私有化市场，商汤大装置以9.4%的市场份额，再次稳居第二位",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506550.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-0f01adb2acab0a67ba71",
