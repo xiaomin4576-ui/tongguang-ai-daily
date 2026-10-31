@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-31T03:39:36.470951+00:00",
-    "last_success_at": "2026-10-31T03:39:36.470951+00:00",
+    "attempted_at": "2026-10-31T10:54:07.078897+00:00",
+    "last_success_at": "2026-10-31T10:54:07.078897+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-30T20:15:00+00:00",
+    "latest_article_at": "2026-10-31T05:11:19+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 4
       }
     ],
-    "total_articles": 374,
+    "total_articles": 378,
     "received_items": 50,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-4360b42bce7a074b01fa",
+      "date": "2026-10-31",
+      "published_at": "2026-10-31T05:11:19+00:00",
+      "title": "世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用",
+      "summary": "AI算力利用“九九成”",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506866.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-d42b8e56046bc19f14b3",
       "date": "2026-10-31",
@@ -128,6 +145,23 @@
       ]
     },
     {
+      "id": "live-d7a89d9676f987bb6a25",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T12:58:31+00:00",
+      "title": "榜一，拿来吧你！智元这波双模型杀穿多榜榜单",
+      "summary": "xs，还要给机器人打绩效",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506819.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-84abd1857de5dfd951d9",
       "date": "2026-10-30",
       "published_at": "2026-10-30T09:30:00+00:00",
@@ -164,6 +198,40 @@
       "companies": [
         "OpenAI"
       ]
+    },
+    {
+      "id": "live-666a1f719c44600b5278",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T08:50:44+00:00",
+      "title": "百度 APP 发布四大 AI 升级，搜索已实现递归自我进化",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506771.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-d2b4a29464db2093b84d",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T08:12:11+00:00",
+      "title": "好莱坞最缺的答案，被这家 10 亿美元估值的 AI 影视独角兽写进了片单",
+      "summary": "创立 4 年，估值站上 10 亿美元——资本市场定价的不是一部电影，而是一套内容生产基础设施。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/10/506747.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-ea10750046a09d2c4c8c",
