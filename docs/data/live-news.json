@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-10-30T21:28:48.060945+00:00",
-    "last_success_at": "2026-10-30T21:28:48.060945+00:00",
+    "attempted_at": "2026-10-31T02:20:05.330038+00:00",
+    "last_success_at": "2026-10-31T02:20:05.330038+00:00",
     "status": "ok",
     "latest_article_at": "2026-10-30T20:15:00+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -50,7 +50,7 @@
         "items": 4
       }
     ],
-    "total_articles": 373,
+    "total_articles": 374,
     "received_items": 50,
     "mode": "rss-source-excerpts"
   },
@@ -181,6 +181,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-574dbaf7fc8731e40575",
+      "date": "2026-10-30",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "title": "Fair use benefits everyone",
+      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+      "meaning": "",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-49d99f09e516b736e5fe",
