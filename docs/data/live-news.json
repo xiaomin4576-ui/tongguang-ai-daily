@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-01T03:46:28.096747+00:00",
-    "last_success_at": "2026-11-01T03:46:28.096747+00:00",
+    "attempted_at": "2026-11-01T11:49:08.895567+00:00",
+    "last_success_at": "2026-11-01T11:49:08.895567+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-31T23:15:22+00:00",
+    "latest_article_at": "2026-11-01T07:50:57+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 4
       }
     ],
-    "total_articles": 380,
-    "received_items": 52,
+    "total_articles": 381,
+    "received_items": 51,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-08b28bcc30dbb7416ae2",
+      "date": "2026-11-01",
+      "published_at": "2026-11-01T07:50:57+00:00",
+      "title": "老牌便利店机器人售货折戟：实验室锤炼上万次，货架前还是摔瓶子",
+      "summary": "这事还是想得太简单了",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/506990.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-a181817ce8345f3ad63c",
       "date": "2026-11-01",
