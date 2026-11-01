@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-10-31T20:26:42.218135+00:00",
-    "last_success_at": "2026-10-31T20:26:42.218135+00:00",
+    "attempted_at": "2026-11-01T02:11:21.270735+00:00",
+    "last_success_at": "2026-11-01T02:11:21.270735+00:00",
     "status": "ok",
-    "latest_article_at": "2026-10-31T05:11:19+00:00",
+    "latest_article_at": "2026-10-31T23:15:22+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -50,11 +50,47 @@
         "items": 4
       }
     ],
-    "total_articles": 378,
-    "received_items": 50,
+    "total_articles": 380,
+    "received_items": 52,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a181817ce8345f3ad63c",
+      "date": "2026-11-01",
+      "published_at": "2026-10-31T23:15:22+00:00",
+      "title": "How We Took Over ChatGPT Accounts",
+      "summary": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxe",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-5433d48c0a4a7162778e",
+      "date": "2026-11-01",
+      "published_at": "2026-10-31T22:10:01+00:00",
+      "title": "datasette-llm 0.1a9",
+      "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without need",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-4360b42bce7a074b01fa",
       "date": "2026-10-31",
