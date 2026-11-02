@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-02T03:51:33.000949+00:00",
-    "last_success_at": "2026-11-02T03:51:33.000949+00:00",
+    "attempted_at": "2026-11-02T13:27:18.413724+00:00",
+    "last_success_at": "2026-11-02T13:27:18.413724+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-01T07:50:57+00:00",
+    "latest_article_at": "2026-11-02T07:47:38+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 16
       },
       {
         "id": "google-ai",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,65 @@
         "items": 4
       }
     ],
-    "total_articles": 381,
-    "received_items": 50,
+    "total_articles": 384,
+    "received_items": 48,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9a2cca1d9b1361246c35",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T07:47:38+00:00",
+      "title": "从“能调用”到“敢托付”：仪电智算云 Token 工厂的三重可信",
+      "summary": "上海仪电与上海创智学院联合发布“飞轮转・万象生”仪电智算数链生态。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507260.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5f7bb6dbd76b6274d051",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T07:27:54+00:00",
+      "title": "OpenAI重写大模型法则，第一条：忠于人类！！",
+      "summary": "新版“机器人三定律”。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507225.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-c8fb213cef90e5c449ea",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T04:28:53+00:00",
+      "title": "GPT-6.2 Astra开启灰测！Claude Mythos 5.5同日曝光",
+      "summary": "HuggingFace疑似泄露权重已被下5000次",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507082.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI",
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-08b28bcc30dbb7416ae2",
       "date": "2026-11-01",
