@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-02T13:27:18.413724+00:00",
-    "last_success_at": "2026-11-02T13:27:18.413724+00:00",
+    "attempted_at": "2026-11-02T23:52:04.479070+00:00",
+    "last_success_at": "2026-11-02T23:52:04.479070+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-02T07:47:38+00:00",
+    "latest_article_at": "2026-11-02T17:45:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -47,14 +47,88 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 5
       }
     ],
-    "total_articles": 384,
-    "received_items": 48,
+    "total_articles": 390,
+    "received_items": 49,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-c45a0b6d7de18ac55a14",
+      "date": "2026-11-03",
+      "published_at": "2026-11-02T17:45:00+00:00",
+      "title": "The latest AI news we announced in October 2026",
+      "summary": "Animated carousel of images from AI posts in October",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-5d33ed0c66ace544e65f",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "title": "Introducing the Grid Protectors Program",
+      "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+      "meaning": "",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-93776c9c2a6b392fe84f",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T13:31:26+00:00",
+      "title": "The U.S. Census Bureau and “Super Intelligence”",
+      "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstr",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5a014341bc3fc0f1d8b6",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T09:00:00+00:00",
+      "title": "LifeVal",
+      "summary": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+      "meaning": "",
+      "url": "https://openai.com/index/lifeval",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-9a2cca1d9b1361246c35",
       "date": "2026-11-02",
@@ -90,6 +164,23 @@
       "companies": []
     },
     {
+      "id": "live-981c51fa20c4c252ae3d",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T05:35:00+00:00",
+      "title": "Regina Barzilay and Jim Collins win Pritzker Prize for AI and Science Research Excellence for work in AI-enabled antibiotic discovery",
+      "summary": "The MIT professors collaborated to identify the first AI-discovered antibiotic, a scientific breakthrough that is widely recognized as a milestone in AI-driven drug discovery.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/regina-barzilay-jim-collins-win-pritzker-prize-ai-and-science-research-excellence-1102",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-c8fb213cef90e5c449ea",
       "date": "2026-11-02",
       "published_at": "2026-11-02T04:28:53+00:00",
@@ -107,6 +198,25 @@
       "companies": [
         "OpenAI",
         "Anthropic"
+      ]
+    },
+    {
+      "id": "live-4094d4340f9e66f9e2fc",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "title": "Qodo builds context into AI code review with Codex",
+      "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+      "meaning": "",
+      "url": "https://openai.com/index/qodo-codex-plugin",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
