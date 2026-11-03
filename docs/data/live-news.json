@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-02T23:52:04.479070+00:00",
-    "last_success_at": "2026-11-02T23:52:04.479070+00:00",
+    "attempted_at": "2026-11-03T04:54:23.537731+00:00",
+    "last_success_at": "2026-11-03T04:54:23.537731+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-02T17:45:00+00:00",
+    "latest_article_at": "2026-11-03T01:57:30+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 16
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 5
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,106 @@
         "items": 5
       }
     ],
-    "total_articles": 390,
-    "received_items": 49,
+    "total_articles": 397,
+    "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-2f75960bd5a3d720fd8d",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T01:57:30+00:00",
+      "title": "MIT：GPT-6 Astra能直接修改Qwen权重，数学能力暴涨6倍",
+      "summary": "指令执行能力也同步提升",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507322.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-04ee5ea2d0db419ba9c2",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T01:46:55+00:00",
+      "title": "爱诗科技PixVerse 与 OpenAI 共同推出产品集成和创作者教育计划，高效打通 AI 创意全流程",
+      "summary": "近日，爱诗科技（AIsphere）旗下模型和开放平台PixVerse 与 OpenAI 宣布开启深度合作",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507313.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-8fbbc27028afdfad518c",
+      "date": "2026-11-03",
+      "published_at": "2026-11-02T23:49:30+00:00",
+      "title": "llm 0.37",
+      "summary": "Release: llm 0.37 There's a lot of stuff in this new release of my LLM CLI tool and Python library, representing around two months of accumulated features and fixes. I added gpt-6.1-sol and gpt-6.1-terra , plus a new llm openai endpoint add command to make it easier to configure additional models th",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/2/llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-bca108e4c77bd86b238b",
+      "date": "2026-11-03",
+      "published_at": "2026-11-02T18:00:00+00:00",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+      "meaning": "",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-0d297090385ad5a72451",
+      "date": "2026-11-03",
+      "published_at": "2026-11-02T18:00:00+00:00",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+      "meaning": "",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-c45a0b6d7de18ac55a14",
       "date": "2026-11-03",
@@ -72,6 +167,25 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-277870ffc8d71544c046",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T15:30:00+00:00",
+      "title": "Scaling Git at OpenAI",
+      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+      "meaning": "",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -208,6 +322,25 @@
       "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
       "meaning": "",
       "url": "https://openai.com/index/qodo-codex-plugin",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-945f879ef3a469b4aebe",
+      "date": "2026-11-02",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+      "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+      "meaning": "",
+      "url": "https://openai.com/index/dan-driscoll-joins-openai",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
