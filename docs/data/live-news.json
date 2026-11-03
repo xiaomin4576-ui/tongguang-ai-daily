@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-03T12:45:14.938381+00:00",
-    "last_success_at": "2026-11-03T12:45:14.938381+00:00",
+    "attempted_at": "2026-11-03T22:17:01.017724+00:00",
+    "last_success_at": "2026-11-03T22:17:01.017724+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-03T08:00:00+00:00",
+    "latest_article_at": "2026-11-03T17:15:21+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 22
       },
       {
         "id": "google-ai",
@@ -29,32 +29,125 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 4
       }
     ],
-    "total_articles": 401,
-    "received_items": 53,
+    "total_articles": 410,
+    "received_items": 54,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-8d86676710497099b109",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T17:15:21+00:00",
+      "title": "StateBench: Testing how language models track state changes over long documents",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-4d3938441f216409a8f1",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T16:35:36+00:00",
+      "title": "Palette: teaching a small model to build decks in your design language",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-55e43bcf2392574765df",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T16:00:45+00:00",
+      "title": "AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It",
+      "summary": "Demand for advanced chips is rising. The processes to build them are getting more complex. And the margin for error is shrinking. For engineers, understanding how a process change will behave, how a material will interact with a new step, how a defect maps back to a root cause are critical, challeng",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-fd5d0690f18ae05567bc",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T13:57:11+00:00",
+      "title": "机器人干活，AI当厂长！这家巨头要造下一代自主智能仓",
+      "summary": "AI接管调度运营，仓库越干越聪明",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507507.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-25493a43cba550c7fe81",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T12:00:00+00:00",
+      "title": "Accelerating engineering for the physical world",
+      "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
+      "meaning": "",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-fc87a45dcfbf03d41725",
       "date": "2026-11-03",
@@ -63,6 +156,25 @@
       "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
       "meaning": "",
       "url": "https://openai.com/index/heimstaden",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-34e7d62615202d0de65f",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T08:00:00+00:00",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "summary": "Cisco combines network intelligence with OpenAI models to strengthen enterprise security. Learn how it is building more adaptive defenses.",
+      "meaning": "",
+      "url": "https://openai.com/index/cisco-cyber",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -156,6 +268,44 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/transformers-mic",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-019edb616369c3322f4c",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
+      "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
+      "meaning": "",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-63945bc794809749828f",
+      "date": "2026-11-03",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/cwe-bench",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
@@ -987,6 +1137,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-16681fd606d5f6994d06",
+      "date": "2026-10-29",
+      "published_at": "2026-10-28T19:40:49+00:00",
+      "title": "Evernote turns AI-driven discovery into paid subscriptions",
+      "summary": "Evernote used ChatGPT Ads to introduce its note-taking app to people working with AI. The team tracked how often free trials led to paid subscriptions.",
+      "meaning": "",
+      "url": "https://openai.com/ads/customers/evernote",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-e9a7a10b5a66f3aae2c2",
