@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-04T04:24:16.016265+00:00",
-    "last_success_at": "2026-11-04T04:24:16.016265+00:00",
+    "attempted_at": "2026-11-04T12:57:36.993698+00:00",
+    "last_success_at": "2026-11-04T12:57:36.993698+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-04T02:49:02+00:00",
+    "latest_article_at": "2026-11-04T10:08:38+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 4
       }
     ],
-    "total_articles": 411,
-    "received_items": 55,
+    "total_articles": 412,
+    "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-1e6f2ae7c668b9f9af7a",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T10:08:38+00:00",
+      "title": "不靠堆砌数据，让机器人看懂真实物理世界 | 招商局狮子山实验室发布「驭物™ Lion-ER-35B-A3B」具身推理模型",
+      "summary": "仅激活3B参数，十项基准全线提升！",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507586.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-4930107de9b722ac929d",
       "date": "2026-11-04",
