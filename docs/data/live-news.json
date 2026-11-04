@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-04T12:57:36.993698+00:00",
-    "last_success_at": "2026-11-04T12:57:36.993698+00:00",
+    "attempted_at": "2026-11-04T22:36:41.522643+00:00",
+    "last_success_at": "2026-11-04T22:36:41.522643+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-04T10:08:38+00:00",
+    "latest_article_at": "2026-11-04T17:50:10+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 22
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 9
+        "items": 10
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -47,14 +47,69 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 3
       }
     ],
-    "total_articles": 412,
-    "received_items": 53,
+    "total_articles": 421,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-32d4e91d243ef07f0795",
+      "date": "2026-11-05",
+      "published_at": "2026-11-04T17:50:10+00:00",
+      "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-6b1c4708310c50a052ce",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T15:26:02+00:00",
+      "title": "datasette-llm 0.1a10",
+      "summary": "Release: datasette-llm 0.1a10 Fixes a bug that affected my agent.datasette.io demo site, where the set of available LLM models was not correctly restricted to just those in the configuration. Tags: datasette , llm",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-1be4fdd8e6ca80f0ec01",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T14:30:00+00:00",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
+      "meaning": "",
+      "url": "https://openai.com/index/openai-to-acquire-pierre",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-1e6f2ae7c668b9f9af7a",
       "date": "2026-11-04",
@@ -73,6 +128,44 @@
       "companies": []
     },
     {
+      "id": "live-fbaa86a829ad59fd10c5",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T08:00:00+00:00",
+      "title": "A thousand fewer paths to root",
+      "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
+      "meaning": "",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a3433e936d2c04bfa772",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T07:00:00+00:00",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
+      "meaning": "",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-4930107de9b722ac929d",
       "date": "2026-11-04",
       "published_at": "2026-11-04T02:49:02+00:00",
@@ -82,6 +175,76 @@
       "url": "https://www.qbitai.com/2026/11/507533.html",
       "source": "量子位",
       "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-8265b69742e725bac3ff",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T00:29:36+00:00",
+      "title": "datasette-apps 0.3a0",
+      "summary": "Release: datasette-apps 0.3a0 Datasette Apps adds support for hosting and editing custom HTML applications inside of Datasette. These can be created by hand, but it's easier to create them using LLMs via Datasette Agent . This release improves that integration: Apps can now be tagged in Datasette Ag",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-981785a01550309d0739",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
+      "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
+      "meaning": "",
+      "url": "https://openai.com/index/devrev-enterprise-self-service",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-abbb96cf14716a168d88",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T23:13:45+00:00",
+      "title": "datasette-agent 0.5a0",
+      "summary": "Release: datasette-agent 0.5a0 This is a significant release of Datasette Agent . The most notable new feature is called the panel - it lets the agent chat open and then sit next to pages from Datasette, for example a table or query page. When combined with datasette-apps this means you can prompt a",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/3/datasette-agent/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-aac81467646f1d039bd2",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T21:41:42+00:00",
+      "title": "llm 0.37.1",
+      "summary": "Release: llm 0.37.1 A bugfix release for LLM , with contributions from Steven Huang , Tao An , Arjan Mossel , and XQ . Tags: llm",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/3/llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
