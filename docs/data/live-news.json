@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-05T03:28:00.667223+00:00",
-    "last_success_at": "2026-11-05T03:28:00.667223+00:00",
+    "attempted_at": "2026-11-05T04:40:33.649681+00:00",
+    "last_success_at": "2026-11-05T04:40:33.649681+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-05T01:59:37+00:00",
+    "latest_article_at": "2026-11-05T02:01:51+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 423,
+    "total_articles": 424,
     "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-3c40aaf7e6e47fbb2704",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T02:01:51+00:00",
+      "title": "基于本体+知识+Harness+Datat Agent的智能体完整落地链路！",
+      "summary": "Data + AI 技术实践巡展 · 上海站",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507696.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-956920c75bf306b4c633",
       "date": "2026-11-05",
