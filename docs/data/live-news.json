@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-04T22:36:41.522643+00:00",
-    "last_success_at": "2026-11-04T22:36:41.522643+00:00",
+    "attempted_at": "2026-11-05T03:28:00.667223+00:00",
+    "last_success_at": "2026-11-05T03:28:00.667223+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-04T17:50:10+00:00",
+    "latest_article_at": "2026-11-05T01:59:37+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,19 +29,19 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 10
+        "items": 7
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 421,
-    "received_items": 56,
+    "total_articles": 423,
+    "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-956920c75bf306b4c633",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T01:59:37+00:00",
+      "title": "GPT-Image-2.6全量上线！直出GIF和SVG，6.2 Astra也现身了",
+      "summary": "最快6秒出图",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507707.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-32d4e91d243ef07f0795",
       "date": "2026-11-05",
@@ -207,6 +224,25 @@
       "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
       "meaning": "",
       "url": "https://openai.com/index/devrev-enterprise-self-service",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-295354ff422b0d4db922",
+      "date": "2026-11-04",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "title": "Introducing Images 2.6",
+      "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-images-2-6",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
