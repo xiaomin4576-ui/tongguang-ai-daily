@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-05T04:40:33.649681+00:00",
-    "last_success_at": "2026-11-05T04:40:33.649681+00:00",
+    "attempted_at": "2026-11-05T13:09:31.980488+00:00",
+    "last_success_at": "2026-11-05T13:09:31.980488+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-05T02:01:51+00:00",
+    "latest_article_at": "2026-11-05T05:25:37+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 21
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 424,
-    "received_items": 53,
+    "total_articles": 427,
+    "received_items": 52,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-2a433192d76fe3a837fd",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T05:25:37+00:00",
+      "title": "以“真实工作”检验机器人价值，XROGO在CeMAT ASIA发布机器人到岗计划",
+      "summary": "像雇人一样雇机器人",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507767.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-3c40aaf7e6e47fbb2704",
       "date": "2026-11-05",
@@ -73,6 +90,25 @@
       "companies": []
     },
     {
+      "id": "live-25fa4dd18ec78a48a923",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T02:00:00+00:00",
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "meaning": "",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-956920c75bf306b4c633",
       "date": "2026-11-05",
       "published_at": "2026-11-05T01:59:37+00:00",
@@ -88,6 +124,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-c65c7708e93995ca4541",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/phonon-tts",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
     },
     {
       "id": "live-32d4e91d243ef07f0795",
