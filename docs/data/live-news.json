@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-05T22:40:14.659743+00:00",
-    "last_success_at": "2026-11-05T22:40:14.659743+00:00",
+    "attempted_at": "2026-11-06T03:24:43.240681+00:00",
+    "last_success_at": "2026-11-06T03:24:43.240681+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-05T20:00:41+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 25
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "qbitai",
@@ -50,8 +50,8 @@
         "items": 3
       }
     ],
-    "total_articles": 433,
-    "received_items": 53,
+    "total_articles": 438,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -72,6 +72,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-bbd492caba72ca544b8b",
+      "date": "2026-11-06",
+      "published_at": "2026-11-05T20:00:00+00:00",
+      "title": "Cult.fit builds operational muscle with Codex",
+      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+      "meaning": "",
+      "url": "https://openai.com/index/cultfit-builds-with-codex",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
@@ -133,6 +152,25 @@
       ]
     },
     {
+      "id": "live-616c68177b707eae60eb",
+      "date": "2026-11-06",
+      "published_at": "2026-11-05T17:00:00+00:00",
+      "title": "Australian universities are creating AI-native graduates",
+      "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+      "meaning": "",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-e944b7536cec799b63e4",
       "date": "2026-11-06",
       "published_at": "2026-11-05T16:00:05+00:00",
@@ -178,6 +216,25 @@
       "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
       "meaning": "",
       "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-db9792e954d447010915",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T08:00:00+00:00",
+      "title": "Merge builds product and business tools with OpenAI technology",
+      "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+      "meaning": "",
+      "url": "https://openai.com/index/merge-builds-with-openai",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -260,6 +317,25 @@
       "companies": []
     },
     {
+      "id": "live-2d1d326185a62641bed0",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T00:45:15+00:00",
+      "title": "Flipsnack grows product signups with conversion optimization",
+      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+      "meaning": "",
+      "url": "https://openai.com/ads/customers/flipsnack",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
       "id": "live-c65c7708e93995ca4541",
       "date": "2026-11-05",
       "published_at": "2026-11-05T00:00:00+00:00",
@@ -276,6 +352,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-a8e215d1c3fca63aee0f",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "title": "Franklin Templeton uses OpenAI to support investment research",
+      "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+      "meaning": "",
+      "url": "https://openai.com/index/franklin-templeton",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
