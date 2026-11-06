@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-06T04:40:04.120435+00:00",
-    "last_success_at": "2026-11-06T04:40:04.120435+00:00",
+    "attempted_at": "2026-11-06T12:54:54.643817+00:00",
+    "last_success_at": "2026-11-06T12:54:54.643817+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-05T20:00:41+00:00",
+    "latest_article_at": "2026-11-06T06:43:14+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 25
+        "items": 23
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,81 @@
         "items": 3
       }
     ],
-    "total_articles": 438,
+    "total_articles": 443,
     "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-f0f3a5086ac35a6bc977",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T06:43:14+00:00",
+      "title": "从RSI、Agent、Physical AI到整个系统栈，2026 奇点智能技术大会最新日程公布！",
+      "summary": "11 月 20—21 日，2026 奇点智能技术大会将在北京万达文华酒店举行。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508143.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-14b89f475667ab390ebe",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T03:36:34+00:00",
+      "title": "香港金融科技周 x StartmeupHK 2026主论坛：以「金融+」、「AI+」及全球拓展开拓新机遇",
+      "summary": "香港金融科技周 x StartmeupHK 2026踏入第11届",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507988.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-e15769ca5c01e8abe498",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T02:00:11+00:00",
+      "title": "腾讯 Hy4 调用激增已十倍扩容，Agent 能力开源模型第一",
+      "summary": "11月 5 日，腾讯宣布因 Hy4 调用激增，WorkBuddy 已进行十倍扩容",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507967.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-13e4c95dcbaa6d34090e",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-b1feafc8620ed538b62a",
       "date": "2026-11-06",
@@ -207,6 +277,23 @@
       "companies": [
         "NVIDIA"
       ]
+    },
+    {
+      "id": "live-63dc60d2e4de5bee7d5f",
+      "date": "2026-11-05",
+      "published_at": "2026-11-05T09:37:40+00:00",
+      "title": "三条AI技术路线终将合流？智象创始人梅涛提出智能体化的世界模型",
+      "summary": "走向“智能体化世界模型”。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/507834.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-14e90e72d3401ddf817f",
