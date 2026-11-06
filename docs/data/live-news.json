@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-06T12:54:54.643817+00:00",
-    "last_success_at": "2026-11-06T12:54:54.643817+00:00",
+    "attempted_at": "2026-11-06T22:05:35.968227+00:00",
+    "last_success_at": "2026-11-06T22:05:35.968227+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-06T06:43:14+00:00",
+    "latest_article_at": "2026-11-06T17:13:12+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 23
+        "items": 25
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 7
+        "items": 6
       },
       {
         "id": "huggingface",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -47,14 +47,69 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 3
+        "items": 1
       }
     ],
-    "total_articles": 443,
+    "total_articles": 447,
     "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-db8aad7567ee0d78097e",
+      "date": "2026-11-07",
+      "published_at": "2026-11-06T17:13:12+00:00",
+      "title": "Quoting Nilay Patel",
+      "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren'",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5a90caffb2c87d2e6e8e",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T14:00:48+00:00",
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-a0a44ed09dc9a1089b4e",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T08:00:00+00:00",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
+      "meaning": "",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-f0f3a5086ac35a6bc977",
       "date": "2026-11-06",
@@ -123,6 +178,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-5f721228af3682c2417b",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T00:00:00+00:00",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+      "meaning": "",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
