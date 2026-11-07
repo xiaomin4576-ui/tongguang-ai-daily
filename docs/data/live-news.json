@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-07T04:05:57.893232+00:00",
-    "last_success_at": "2026-11-07T04:05:57.893232+00:00",
+    "attempted_at": "2026-11-07T11:41:49.059750+00:00",
+    "last_success_at": "2026-11-07T11:41:49.059750+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-06T17:13:12+00:00",
+    "latest_article_at": "2026-11-07T03:43:55+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,28 @@
         "items": 1
       }
     ],
-    "total_articles": 447,
-    "received_items": 56,
+    "total_articles": 450,
+    "received_items": 55,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-2b5cf155038f62ec3389",
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T03:43:55+00:00",
+      "title": "AGENTS.MD，危险危险危险！！！",
+      "summary": "全新的电脑病毒",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508244.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-db8aad7567ee0d78097e",
       "date": "2026-11-07",
@@ -90,6 +107,40 @@
       "companies": [
         "Hugging Face"
       ]
+    },
+    {
+      "id": "live-1b638886fbb2827906a3",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T09:25:59+00:00",
+      "title": "为什么每个 Personal Agent 背后，都必须配备一台“云电脑”？",
+      "summary": "PPIO 沙箱，把“云电脑”做成开箱即用的 API",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508174.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-7d7b186592d48999aee3",
+      "date": "2026-11-06",
+      "published_at": "2026-11-06T09:21:51+00:00",
+      "title": "阶跃终端 STEPX Neo 智能体手机亮相进博会高通展台，软硬模一体打造智能体新体验",
+      "summary": "阶跃终端旗下 STEPX Neo 智能体手机首次亮相",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508170.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-a0a44ed09dc9a1089b4e",
