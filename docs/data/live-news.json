@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-07T20:51:47.085068+00:00",
-    "last_success_at": "2026-11-07T20:51:47.085068+00:00",
+    "attempted_at": "2026-11-08T02:25:59.926586+00:00",
+    "last_success_at": "2026-11-08T02:25:59.926586+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-07T03:43:55+00:00",
     "sources_ok": 7,
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 8
       },
       {
         "id": "qbitai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 450,
-    "received_items": 55,
+    "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
