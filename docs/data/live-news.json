@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-09T04:03:27.372013+00:00",
-    "last_success_at": "2026-11-09T04:03:27.372013+00:00",
+    "attempted_at": "2026-11-09T13:51:26.294267+00:00",
+    "last_success_at": "2026-11-09T13:51:26.294267+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-07T03:43:55+00:00",
+    "latest_article_at": "2026-11-09T12:34:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 23
+        "items": 22
       },
       {
         "id": "google-ai",
@@ -23,38 +23,224 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 6
+        "items": 11
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 8
+        "items": 10
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 0
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 1
+        "items": 2
       }
     ],
-    "total_articles": 450,
-    "received_items": 50,
+    "total_articles": 461,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-55d059b88c6c576a2f3d",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T12:34:29+00:00",
+      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-78a38ab1bb2e5e3a2eb9",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T08:00:53+00:00",
+      "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "summary": "Korea’s Ministry of Science and ICT and NVIDIA hosted the MSIT-NVIDIA AI Startup Partnership Forum at COEX. Ryu Je-myung, vice minister of science and ICT, joined NVIDIA leaders to meet with over 20 Korean startups across foundation models, physical AI, AI infrastructure and AI semiconductors. NVIDI",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-59b779471e81fefef54a",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:40+00:00",
+      "title": "Korea Advances Physical AI Across Industries With NVIDIA",
+      "summary": "Tapping into the country’s strengths in manufacturing and engineering, NVIDIA is helping advance Korea’s physical AI ecosystem. The country’s industry leaders are applying accelerated computing, AI and simulation to everything from semiconductor manufacturing to robotics and autonomous vehicles. The",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-d7c73c4b9a79782fc5fe",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:39+00:00",
+      "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+      "summary": "As AI agents take on more work, they need capable open models and security that advances alongside them. Hyundai Motor Group is exploring NVIDIA NemoClaw blueprints and the NVIDIA OpenShell runtime, while AIM Intelligence is integrating its Starfort platform with NVIDIA OpenShell to support secure A",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-51e504680490a66d88e4",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:04+00:00",
+      "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+      "summary": "NVIDIA and Korea’s Ministry of Science and ICT (MSIT) are expanding their collaboration across the country’s sovereign AI ecosystem, from AI semiconductors and data center infrastructure to talent, startups, models, agents and security. The collaboration lays the groundwork for Korean NPU and XPU co",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-1d980cecae4ce0aab063",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:00+00:00",
+      "title": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+      "summary": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom, K-EXAONE 2.0 from LG AI Research, Solar Open 2 from Upstage and Motif-3 from Motif Technologies. As models grow beyond the capacity of a single GPU, they must be split across multiple GPU",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-6fbb9cbc09ce7eb4c3ad",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:00+00:00",
+      "title": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
+      "summary": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-f2b130fea883df692eb4",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T05:00:00+00:00",
+      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
+      "summary": "The new approach, known as FLEX, could lead to more intuitive, interactive household and assistive robots.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5963f0ac8271398585a3",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T04:32:33+00:00",
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "summary": "My comment on The Web Is More Than Enough, by Paul Ford — Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-cfd192eda4f22e6c6e73",
+      "date": "2026-11-09",
+      "published_at": "2026-11-09T04:25:05+00:00",
+      "title": "Hide your slop PR descriptions behind",
+      "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-2b5cf155038f62ec3389",
       "date": "2026-11-07",
@@ -819,6 +1005,23 @@
       "companies": [
         "Hugging Face"
       ]
+    },
+    {
+      "id": "live-4104450b512f4e78f61c",
+      "date": "2026-11-04",
+      "published_at": "2026-11-03T16:42:02+00:00",
+      "title": "AI is destroying my CS degree",
+      "summary": "My comment on AI is destroying my CS degree — Hacker News. I don't envy educators right now. AI clearly means you need to change how you teach and evaluate students. We are only a few years in though, and it's still extremely unclear what effective teaching with these tools looks like. The worst par",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/3/hn-50354278/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
     },
     {
       "id": "live-4d3938441f216409a8f1",
