@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-10T13:26:20.848542+00:00",
-    "last_success_at": "2026-11-10T13:26:20.848542+00:00",
+    "attempted_at": "2026-11-10T22:21:21.636947+00:00",
+    "last_success_at": "2026-11-10T22:21:21.636947+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-10T13:00:00+00:00",
+    "latest_article_at": "2026-11-10T20:09:44+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 22
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 2
+        "items": 4
       },
       {
         "id": "nvidia",
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -50,11 +50,89 @@
         "items": 3
       }
     ],
-    "total_articles": 477,
-    "received_items": 57,
+    "total_articles": 485,
+    "received_items": 61,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-e5607ea9b345667894ac",
+      "date": "2026-11-11",
+      "published_at": "2026-11-10T20:09:44+00:00",
+      "title": "llm-gemini 0.36",
+      "summary": "Release: llm-gemini 0.36 Gemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else . This is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but sched",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI",
+        "Anthropic",
+        "Google"
+      ]
+    },
+    {
+      "id": "live-c0101f36ad82bf9132fd",
+      "date": "2026-11-11",
+      "published_at": "2026-11-10T19:00:00+00:00",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'",
+      "meaning": "",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-9ccf20ad200fc0ba5e4f",
+      "date": "2026-11-11",
+      "published_at": "2026-11-10T16:00:03+00:00",
+      "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
+      "summary": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing. To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon, the flagship conference f",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-59a8a5dd3afc5312ddae",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T14:00:00+00:00",
+      "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+      "summary": "Google and Adobe are integrating creative and productivity tools. Edit PDFs in Drive and use Adobe AI in Gemini. See what’s new in this partnership.",
+      "meaning": "",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-ef83b8dc18b1604dec2e",
       "date": "2026-11-10",
@@ -82,6 +160,25 @@
       "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
       "meaning": "",
       "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-991ad48e8559b2fefa9f",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T10:00:00+00:00",
+      "title": "Introducing Businesses in ChatGPT",
+      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -148,6 +245,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-f3fc54cd1d78c100d666",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T07:00:00+00:00",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
+      "meaning": "",
+      "url": "https://openai.com/index/ai-effect-on-freelance-work",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-f932ce86887297f16c58",
@@ -221,6 +337,45 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-cb93d68b445c05b0e3dc",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-5f3963726dbe36e6ccf9",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "title": "Decision Models in Hugging Face",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/decision",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
     },
     {
       "id": "live-86b4ba3155e4ca0c3b2f",
