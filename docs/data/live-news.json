@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-10T00:40:29.242643+00:00",
-    "last_success_at": "2026-11-10T00:40:29.242643+00:00",
+    "attempted_at": "2026-11-10T05:36:00.368219+00:00",
+    "last_success_at": "2026-11-10T05:36:00.368219+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-09T23:58:46+00:00",
+    "latest_article_at": "2026-11-10T05:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -47,20 +47,37 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 2
+        "items": 3
       }
     ],
-    "total_articles": 468,
+    "total_articles": 469,
     "received_items": 53,
     "mode": "rss-source-excerpts"
   },
   "articles": [
     {
+      "id": "live-ec52a02e1b50c5bf7b9e",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T05:00:00+00:00",
+      "title": "MIT-led team receives funding to develop next-generation alternatives to modern weed killers",
+      "summary": "With up to $53 million from ARPA-H, the researchers will use AI to generate safer herbicides that reduce dependence on imports and improve the security of the U.S. food supply.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-86b4ba3155e4ca0c3b2f",
       "date": "2026-11-10",
       "published_at": "2026-11-09T23:58:46+00:00",
       "title": "llm-anthropic 0.31",
-      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. I've added them to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm llm install llm-anthropic llm keys set anthropic # paste key here llm -m claude-fable-5.2 \"Generate an SVG of ",
+      "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious! I've added the new m",
       "meaning": "",
       "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
       "source": "Simon Willison",
