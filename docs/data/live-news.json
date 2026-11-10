@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-10T05:36:00.368219+00:00",
-    "last_success_at": "2026-11-10T05:36:00.368219+00:00",
+    "attempted_at": "2026-11-10T13:26:20.848542+00:00",
+    "last_success_at": "2026-11-10T13:26:20.848542+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-10T05:00:00+00:00",
+    "latest_article_at": "2026-11-10T13:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,19 +11,19 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 20
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 1
+        "items": 2
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "huggingface",
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 13
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 0
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,124 @@
         "items": 3
       }
     ],
-    "total_articles": 469,
-    "received_items": 53,
+    "total_articles": 477,
+    "received_items": 57,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-ef83b8dc18b1604dec2e",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T13:00:00+00:00",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-0f0020abcf733229d29f",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T12:00:00+00:00",
+      "title": "Helping caregivers use AI in everyday life",
+      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+      "meaning": "",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-69d4d9d74efa01629a6c",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T09:00:00+00:00",
+      "title": "Closing the AI guidance gap in education",
+      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+      "meaning": "",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-c80838f46e535c12a5f2",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T07:28:21+00:00",
+      "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+      "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls,",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic",
+        "Meta"
+      ]
+    },
+    {
+      "id": "live-f6164407cb9fd2a38cf9",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T07:26:53+00:00",
+      "title": "Token卷到触觉了！机器人终于有了通用手感",
+      "summary": "蚂蚁灵波开源LingBot-Touch",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508919.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-f932ce86887297f16c58",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T05:34:14+00:00",
+      "title": "Quoting Prompting Claude Fable 5.2",
+      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repe",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-ec52a02e1b50c5bf7b9e",
       "date": "2026-11-10",
@@ -65,6 +178,43 @@
       "url": "https://news.mit.edu/2026/mit-led-team-receives-funding-next-generation-alternatives-modern-weed-killers-1110",
       "source": "MIT AI 研究新闻",
       "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-c4312adb767125dc5107",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T03:53:04+00:00",
+      "title": "Yonkers Rises",
+      "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed its location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers sta",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic",
+        "Google"
+      ]
+    },
+    {
+      "id": "live-eb17f6ea48108447abc4",
+      "date": "2026-11-10",
+      "published_at": "2026-11-10T01:27:09+00:00",
+      "title": "千问办公2.0卷向Team Agent，我们用它跑了一遍编辑部日常",
+      "summary": "办公AI结束单机模式",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/508798.html",
+      "source": "量子位",
+      "source_id": "qbitai",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
