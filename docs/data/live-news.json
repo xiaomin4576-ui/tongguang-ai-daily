@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-11T12:41:25.833325+00:00",
-    "last_success_at": "2026-11-11T12:41:25.833325+00:00",
+    "attempted_at": "2026-11-11T23:27:09.312758+00:00",
+    "last_success_at": "2026-11-11T23:27:09.312758+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-11T09:00:00+00:00",
+    "latest_article_at": "2026-11-11T22:03:25+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,7 +17,7 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 5
+        "items": 7
       },
       {
         "id": "nvidia",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -50,11 +50,124 @@
         "items": 3
       }
     ],
-    "total_articles": 493,
-    "received_items": 61,
+    "total_articles": 501,
+    "received_items": 66,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-485ec329c8b74027b381",
+      "date": "2026-11-12",
+      "published_at": "2026-11-11T22:03:25+00:00",
+      "title": "Gemini Decisions API",
+      "summary": "Gemini Decisions API Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question. It's pri",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI",
+        "Google"
+      ]
+    },
+    {
+      "id": "live-967141e571a3a88a0b65",
+      "date": "2026-11-12",
+      "published_at": "2026-11-11T21:18:30+00:00",
+      "title": "aws-emulator",
+      "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Si",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-c06fca3b9549fb95708d",
+      "date": "2026-11-12",
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-460872e68e9eeabbb2b4",
+      "date": "2026-11-12",
+      "published_at": "2026-11-11T17:19:52+00:00",
+      "title": "llm 0.37.2",
+      "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from othe",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/11/llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-eac4d84ef949975e755c",
+      "date": "2026-11-12",
+      "published_at": "2026-11-11T16:00:00+00:00",
+      "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+      "summary": "Tabletop is a new Google Labs experiment for group collaboration. Build interactive itineraries, polls, and brackets with your team. Join the waitlist.",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-6e96a802abbc1d38b48b",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T15:11:59+00:00",
+      "title": "Anthropic's IPO roadshow video",
+      "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic t",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-8e8e851f9ac38a1986e4",
       "date": "2026-11-11",
@@ -146,6 +259,44 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-55ff14dc4213127df72a",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T00:00:00+00:00",
+      "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+      "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+      "meaning": "",
+      "url": "https://openai.com/index/jiostar-vijay-seshadri",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-11568aa8dfcf9a3c0750",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T00:00:00+00:00",
+      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/token-pooling",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
@@ -401,7 +552,7 @@
       "date": "2026-11-10",
       "published_at": "2026-11-10T05:34:14+00:00",
       "title": "Quoting Prompting Claude Fable 5.2",
-      "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repe",
+      "summary": "Claude Fable 5.2 pays close attention to who owns the code it works on. In Anthropic’s testing on small coding tasks, the model tended to add to the existing structure when the prompt said nothing about ownership or presented the code base as someone else’s, even when that duplicated existing code. ",
       "meaning": "",
       "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
       "source": "Simon Willison",
