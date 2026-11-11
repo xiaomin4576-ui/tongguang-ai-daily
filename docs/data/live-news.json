@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-10T22:21:21.636947+00:00",
-    "last_success_at": "2026-11-10T22:21:21.636947+00:00",
+    "attempted_at": "2026-11-11T02:45:25.116055+00:00",
+    "last_success_at": "2026-11-11T02:45:25.116055+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-10T20:09:44+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 10
       },
       {
         "id": "qbitai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 485,
-    "received_items": 61,
+    "received_items": 57,
     "mode": "rss-source-excerpts"
   },
   "articles": [
