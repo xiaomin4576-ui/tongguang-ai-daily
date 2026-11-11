@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-11T02:45:25.116055+00:00",
-    "last_success_at": "2026-11-11T02:45:25.116055+00:00",
+    "attempted_at": "2026-11-11T04:08:04.769630+00:00",
+    "last_success_at": "2026-11-11T04:08:04.769630+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-10T20:09:44+00:00",
+    "latest_article_at": "2026-11-11T03:00:20+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "huggingface",
@@ -50,11 +50,30 @@
         "items": 3
       }
     ],
-    "total_articles": 485,
-    "received_items": 57,
+    "total_articles": 486,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-0a9ebdb63db3687d3463",
+      "date": "2026-11-11",
+      "published_at": "2026-11-11T03:00:20+00:00",
+      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "summary": "Vision AI and robotics pick what’s worth recovering out of conveyor belts of used clothing, bottles and mixed recyclables, diverting thousands of tons of materials from landfills.",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
     {
       "id": "live-e5607ea9b345667894ac",
       "date": "2026-11-11",
