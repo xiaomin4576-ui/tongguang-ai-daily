@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-12T05:19:41.473070+00:00",
-    "last_success_at": "2026-11-12T05:19:41.473070+00:00",
+    "attempted_at": "2026-11-12T13:44:04.566539+00:00",
+    "last_success_at": "2026-11-12T13:44:04.566539+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-12T05:00:00+00:00",
+    "latest_article_at": "2026-11-12T10:45:33+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,64 @@
         "items": 4
       }
     ],
-    "total_articles": 503,
-    "received_items": 64,
+    "total_articles": 508,
+    "received_items": 65,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-8bcb3bdfd90af28177f5",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T10:45:33+00:00",
+      "title": "从通用大模型到学习过程智能，AI如何真正进入课堂？",
+      "summary": "银河智学首席科学家邓澍军博士发表主题演讲",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/509404.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-203ead1ccfc13e5be1b2",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T09:34:06+00:00",
+      "title": "让AI真正懂业务：璇玑如何成为企业AI的语义基础设施",
+      "summary": "企业 AI 的难题，不只是模型够不够强",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/509349.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-4922ca6fb0dd92994c34",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T09:30:00+00:00",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-d652bf4e1f2db5615f13",
       "date": "2026-11-12",
@@ -73,6 +126,23 @@
       "companies": []
     },
     {
+      "id": "live-c1b3c3ae46228862f9c8",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T01:45:04+00:00",
+      "title": "“双十一”机器人在物流仓“埋头苦干”：昆腾动力开启具身智能规模化获客与交付阶段",
+      "summary": "跨境称重量方等场景完成PMF验证并出现客户复购，新一代构型机器人计划12月底发布",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/509281.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
       "id": "live-65b96c238445cdedc96b",
       "date": "2026-11-12",
       "published_at": "2026-11-12T00:00:00+00:00",
@@ -80,6 +150,25 @@
       "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
       "meaning": "",
       "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-d7c1da8cb7dc41da688b",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "title": "Supporting research on AI and children’s safety",
+      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "meaning": "",
+      "url": "https://openai.com/index/children-first-declaration",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
