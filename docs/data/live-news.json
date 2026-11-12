@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-12T13:44:04.566539+00:00",
-    "last_success_at": "2026-11-12T13:44:04.566539+00:00",
+    "attempted_at": "2026-11-12T22:42:54.506220+00:00",
+    "last_success_at": "2026-11-12T22:42:54.506220+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-12T10:45:33+00:00",
+    "latest_article_at": "2026-11-12T20:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 19
+        "items": 18
       },
       {
         "id": "google-ai",
@@ -23,13 +23,13 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 11
+        "items": 7
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 10
       },
       {
         "id": "simonwillison",
@@ -50,11 +50,68 @@
         "items": 4
       }
     ],
-    "total_articles": 508,
-    "received_items": 65,
+    "total_articles": 512,
+    "received_items": 62,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a491aa90d650ab2bf91e",
+      "date": "2026-11-13",
+      "published_at": "2026-11-12T20:00:00+00:00",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "meaning": "",
+      "url": "https://openai.com/index/amplitude",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-84ec87286cb35a64f463",
+      "date": "2026-11-13",
+      "published_at": "2026-11-12T19:07:35+00:00",
+      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-f19cddd04797ae7d9ed5",
+      "date": "2026-11-13",
+      "published_at": "2026-11-12T18:00:00+00:00",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "summary": "Rotating carousel of cards with text \"Gemini 4 Hydrogen\" \"Now in Google Search\" and examples from the Google Search UI",
+      "meaning": "",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-8bcb3bdfd90af28177f5",
       "date": "2026-11-12",
@@ -178,6 +235,25 @@
       "is_tier0": false,
       "companies": [
         "OpenAI"
+      ]
+    },
+    {
+      "id": "live-cbda9238a3684b28e47a",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/3d-lora-finetuning",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
@@ -468,7 +544,7 @@
       "id": "live-9ccf20ad200fc0ba5e4f",
       "date": "2026-11-11",
       "published_at": "2026-11-10T16:00:03+00:00",
-      "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
+      "title": "NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure",
       "summary": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing. To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon, the flagship conference f",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
