@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-12T22:42:54.506220+00:00",
-    "last_success_at": "2026-11-12T22:42:54.506220+00:00",
+    "attempted_at": "2026-11-13T03:23:48.564639+00:00",
+    "last_success_at": "2026-11-13T03:23:48.564639+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-12T20:00:00+00:00",
+    "latest_article_at": "2026-11-12T22:55:19+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 4
       }
     ],
-    "total_articles": 512,
+    "total_articles": 515,
     "received_items": 62,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-5b86eed0286e0e3b833c",
+      "date": "2026-11-13",
+      "published_at": "2026-11-12T22:55:19+00:00",
+      "title": "llm-gemini 0.37",
+      "summary": "Release: llm-gemini 0.37 Google launched Gemini 4 Hydrogen today - the lowest cost member of the Gemini 4 family. It's actually not too far off the price of its much bigger siblings, Carbon and Argon. I'm finding Gemini 4's pricing really confusing. Here's the pricing scheme: Model Dates Input ($/M)",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
     {
       "id": "live-a491aa90d650ab2bf91e",
       "date": "2026-11-13",
@@ -63,6 +82,25 @@
       "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
       "meaning": "",
       "url": "https://openai.com/index/amplitude",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-67672a694e389b29af55",
+      "date": "2026-11-13",
+      "published_at": "2026-11-12T20:00:00+00:00",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/amplitude",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -110,6 +148,25 @@
       "is_tier0": false,
       "companies": [
         "Google"
+      ]
+    },
+    {
+      "id": "live-b9840fd67063a36a400d",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T12:00:00+00:00",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
