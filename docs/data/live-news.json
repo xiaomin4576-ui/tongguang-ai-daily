@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-13T04:34:54.683816+00:00",
-    "last_success_at": "2026-11-13T04:34:54.683816+00:00",
+    "attempted_at": "2026-11-13T13:03:49.564545+00:00",
+    "last_success_at": "2026-11-13T13:03:49.564545+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-12T22:55:19+00:00",
+    "latest_article_at": "2026-11-13T07:51:08+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 17
       },
       {
         "id": "google-ai",
@@ -41,20 +41,88 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 4
+        "items": 6
       }
     ],
-    "total_articles": 515,
+    "total_articles": 519,
     "received_items": 62,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-8058d23f3864fcfe1541",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T07:51:08+00:00",
+      "title": "MEET2027含金量再加码：AI4S/量子计算/AI Infra…第二批嘉宾强势来袭！",
+      "summary": "12.9 北京，来MEET2027现场",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/509827.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-d55cf32200773ccd4fd1",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T06:29:23+00:00",
+      "title": "中国机器人学会隔墙“递眼色”！成功率从0飙到100%，组队干活不烧心",
+      "summary": "信息少传80%，准确率反而提高",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/509614.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-babb1d695637283d5ca3",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T05:00:00+00:00",
+      "title": "New AI “copilot” helps engineers design better structures",
+      "summary": "The system asks humans for feedback to increase trust in machine-generated designs for buildings and bridges.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-e07fedf840f05ba0c75f",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T05:00:00+00:00",
+      "title": "Helping robots fit into the human workplace",
+      "summary": "Founded by Anthony Jules ’92, SM ’92 and Professor Emeritus Rodney Brooks, Robust AI’s robots are designed to collaborate with humans in factories and warehouses.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-5b86eed0286e0e3b833c",
       "date": "2026-11-13",
