@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-14T12:08:24.967662+00:00",
-    "last_success_at": "2026-11-14T12:08:24.967662+00:00",
+    "attempted_at": "2026-11-14T21:26:26.438387+00:00",
+    "last_success_at": "2026-11-14T21:26:26.438387+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-13T18:00:39+00:00",
+    "latest_article_at": "2026-11-14T09:58:22+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,28 @@
         "items": 6
       }
     ],
-    "total_articles": 525,
+    "total_articles": 526,
     "received_items": 65,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-cd9e3aa4df660d341ada",
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T09:58:22+00:00",
+      "title": "「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭",
+      "summary": "斯坦福、哈佛、康奈尔……十余家顶尖团队齐坐一桌了",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510232.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-cdc8eef67bc55a0d0fa5",
       "date": "2026-11-14",
