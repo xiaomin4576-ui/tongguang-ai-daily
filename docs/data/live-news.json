@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-13T22:34:48.384620+00:00",
-    "last_success_at": "2026-11-13T22:34:48.384620+00:00",
+    "attempted_at": "2026-11-14T03:11:10.070375+00:00",
+    "last_success_at": "2026-11-14T03:11:10.070375+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-13T18:00:39+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 18
+        "items": 19
       },
       {
         "id": "google-ai",
@@ -50,8 +50,8 @@
         "items": 6
       }
     ],
-    "total_articles": 524,
-    "received_items": 64,
+    "total_articles": 525,
+    "received_items": 65,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -149,6 +149,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-a99dfdd20d85acbbb850",
+      "date": "2026-11-13",
+      "published_at": "2026-11-13T08:00:00+00:00",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
