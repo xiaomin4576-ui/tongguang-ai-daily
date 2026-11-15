@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-14T21:26:26.438387+00:00",
-    "last_success_at": "2026-11-14T21:26:26.438387+00:00",
+    "attempted_at": "2026-11-15T02:37:41.035539+00:00",
+    "last_success_at": "2026-11-15T02:37:41.035539+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-14T09:58:22+00:00",
+    "latest_article_at": "2026-11-14T23:59:28+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 14
       },
       {
         "id": "qbitai",
@@ -50,11 +50,30 @@
         "items": 6
       }
     ],
-    "total_articles": 526,
-    "received_items": 65,
+    "total_articles": 527,
+    "received_items": 66,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-e9477865501b0215260c",
+      "date": "2026-11-15",
+      "published_at": "2026-11-14T23:59:28+00:00",
+      "title": "datasette-llm 0.1a11",
+      "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseu",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-cd9e3aa4df660d341ada",
       "date": "2026-11-14",
