@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-16T04:17:15.491224+00:00",
-    "last_success_at": "2026-11-16T04:17:15.491224+00:00",
+    "attempted_at": "2026-11-16T13:35:53.358427+00:00",
+    "last_success_at": "2026-11-16T13:35:53.358427+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-16T00:00:28+00:00",
+    "latest_article_at": "2026-11-16T09:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -23,19 +23,19 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 9
+        "items": 4
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 17
+        "items": 15
       },
       {
         "id": "qbitai",
@@ -47,14 +47,33 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 6
+        "items": 4
       }
     ],
-    "total_articles": 533,
-    "received_items": 72,
+    "total_articles": 535,
+    "received_items": 61,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-ff7833693fa2a06713dc",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T09:00:00+00:00",
+      "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+      "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+      "meaning": "",
+      "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-7890886c01383a50e638",
       "date": "2026-11-16",
@@ -72,6 +91,25 @@
       "is_tier0": false,
       "companies": [
         "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-60f3c7381bc61eae5e3d",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "title": "The King’s Trust and OpenAI launch £1m partnership",
+      "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+      "meaning": "",
+      "url": "https://openai.com/index/the-kings-trust-and-openai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
