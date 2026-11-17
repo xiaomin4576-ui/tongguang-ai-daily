@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-17T06:01:47.509205+00:00",
-    "last_success_at": "2026-11-17T06:01:47.509205+00:00",
+    "attempted_at": "2026-11-17T14:20:19.967086+00:00",
+    "last_success_at": "2026-11-17T14:20:19.967086+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-17T05:00:00+00:00",
     "sources_ok": 7,
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 25
+        "items": 23
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 8
+        "items": 6
       },
       {
         "id": "nvidia",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -50,8 +50,8 @@
         "items": 5
       }
     ],
-    "total_articles": 555,
-    "received_items": 70,
+    "total_articles": 558,
+    "received_items": 65,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -88,6 +88,44 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-0e7f690aa4ff229bd2e8",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "meaning": "",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-3b3be741a87f5e2153e6",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "title": "Introducing OpenAI for Chile",
+      "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-openai-for-chile",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-a50437ccc021c623712f",
@@ -312,6 +350,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-b82b64ef90f76e66fb00",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T09:30:00+00:00",
+      "title": "How Revolut raises ambition without lowering the bar",
+      "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/revolut",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-ff7833693fa2a06713dc",
