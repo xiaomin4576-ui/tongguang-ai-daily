@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-17T14:20:19.967086+00:00",
-    "last_success_at": "2026-11-17T14:20:19.967086+00:00",
+    "attempted_at": "2026-11-17T23:50:08.217715+00:00",
+    "last_success_at": "2026-11-17T23:50:08.217715+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-17T05:00:00+00:00",
+    "latest_article_at": "2026-11-17T22:52:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 23
+        "items": 25
       },
       {
         "id": "google-ai",
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 12
       },
       {
         "id": "qbitai",
@@ -47,14 +47,160 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 6
       }
     ],
-    "total_articles": 558,
-    "received_items": 65,
+    "total_articles": 568,
+    "received_items": 69,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b4439a7527ca175b45e5",
+      "date": "2026-11-18",
+      "published_at": "2026-11-17T22:52:29+00:00",
+      "title": "External sandboxes for coding agents",
+      "summary": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this pr",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-0b5f35342ecc69a52f03",
+      "date": "2026-11-18",
+      "published_at": "2026-11-17T22:38:52+00:00",
+      "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+      "summary": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new mode",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-89ca5c5934ce4af9eee6",
+      "date": "2026-11-18",
+      "published_at": "2026-11-17T20:40:00+00:00",
+      "title": "Putting a spotlight on AI, society, and humanity",
+      "summary": "Supported by the MIT Human Insight Collaborative, scholars are exploring how AI is impacting the human experience and reshaping higher education.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/putting-spotlight-ai-society-humanity-1117",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-8f6af8c44a4a1bfb5de3",
+      "date": "2026-11-18",
+      "published_at": "2026-11-17T17:45:00+00:00",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-b451aff394adbb427d3a",
+      "date": "2026-11-18",
+      "published_at": "2026-11-17T17:00:00+00:00",
+      "title": "Put Gemini to work for you",
+      "summary": "A user interface displaying the prompt \"What can I get done for you?\" above an input box containing placeholder text \"Describe a task\".",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-49e988fe944963bc5d35",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T14:00:10+00:00",
+      "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+      "summary": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems. In NVIDIA’s special address, Buck announced Nemotron for Science, the Rubin HPC GPU and an expanded V",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-3047d7657748ea760feb",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T08:00:00+00:00",
+      "title": "Introducing ChatGPT for Sales",
+      "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-826bb3231e4fa6e87526",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T06:09:40+00:00",
+      "title": "材料科学智能体MatOS正式开源！大幅提高材料研发任务成功率",
+      "summary": "筛材料、找配方、开发新模型…拿下多项科研任务",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510652.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-685512f6ef114dea767c",
       "date": "2026-11-17",
@@ -116,6 +262,25 @@
       "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
       "meaning": "",
       "url": "https://openai.com/index/introducing-openai-for-chile",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-b43ef08ac3ed4f7af6f4",
+      "date": "2026-11-17",
+      "published_at": "2026-11-17T00:00:00+00:00",
+      "title": "Astra for Law leads in legal intelligence",
+      "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+      "meaning": "",
+      "url": "https://openai.com/index/astra-law-6-2",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -1107,6 +1272,25 @@
       "is_tier0": false,
       "companies": [
         "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-35bcc4b3dafe10f2abb0",
+      "date": "2026-11-12",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "title": "ChatGPT Ads increases its market presence in 44 countries",
+      "summary": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
+      "meaning": "",
+      "url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
       ]
     },
     {
