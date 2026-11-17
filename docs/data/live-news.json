@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-16T13:35:53.358427+00:00",
-    "last_success_at": "2026-11-16T13:35:53.358427+00:00",
+    "attempted_at": "2026-11-17T00:46:41.958511+00:00",
+    "last_success_at": "2026-11-17T00:46:41.958511+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-16T09:00:00+00:00",
+    "latest_article_at": "2026-11-16T23:57:26+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,31 +11,31 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 25
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 4
+        "items": 10
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 9
+        "items": 8
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 15
+        "items": 14
       },
       {
         "id": "qbitai",
@@ -50,11 +50,235 @@
         "items": 4
       }
     ],
-    "total_articles": 535,
-    "received_items": 61,
+    "total_articles": 553,
+    "received_items": 71,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-a50437ccc021c623712f",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T23:57:26+00:00",
+      "title": "llm 0.37.3",
+      "summary": "Release: llm 0.37.3 A bug fix release for LLM , mainly to cover a problem with the most recent Homebrew package of the software. Homebrew now ships the latest SQLite, 3.54.1 , which includes a fix that broke LLM's logging code . Short version: in SQLite 3.54.0 the following SQL: select json_object('",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/16/llm/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-4c9c656647cd3a23c71c",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T20:00:37+00:00",
+      "title": "How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+      "summary": "Deb Shoquist leads operations at NVIDIA, overseeing the supply chain and manufacturing behind its AI platforms. That description sums up the job, but it doesn’t begin to encompass what Shoquist has made possible over decades. Shoquist, her team and their global network of manufacturing partners enab",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-2d7a5d6b20fff3cd431e",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T17:00:00+00:00",
+      "title": "Broadening access to AI for scientists",
+      "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+      "meaning": "",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-dd659f011024f04f24b0",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T17:00:00+00:00",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "summary": "New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
+      "meaning": "",
+      "url": "https://openai.com/index/strengthening-online-child-safety",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-fc3a56c14a550ef5b6bc",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T16:00:51+00:00",
+      "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+      "summary": "To train an AI model, thousands of GPUs have to work together, requiring a network that’s fast, efficient and resilient. Lambda is tackling the network piece of the puzzle with NVIDIA Photonics co-packaged optics (CPO) switches. The cloud provider is using the switches to connect NVIDIA GB300 NVL72 ",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-b696bf684c37a1c04a6f",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T16:00:25+00:00",
+      "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+      "summary": "In its MLPerf benchmarks debut, with results released today, the NVIDIA Vera Rubin platform delivers leading performance across training, post-training and agentic inference. NVIDIA swept every MLPerf Training v6.1 benchmark and, in its first MLPerf Endpoints submission, delivered more than 10x gene",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-970d377277e32883700d",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T16:00:16+00:00",
+      "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+      "summary": "With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, from astrophysics and materials science to single-cell biology. The speedups are helping scientists analyze larger datasets and model more compl",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-1d9f84a1774659ade8b8",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T16:00:11+00:00",
+      "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+      "summary": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI. CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-9332b18c5744f2a0ae4c",
+      "date": "2026-11-17",
+      "published_at": "2026-11-16T16:00:01+00:00",
+      "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+      "summary": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows. As agents help scientists and engineers explore more candidate materials, molecules and designs, they rely ",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-dfc32ad6652396f06f7a",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T14:00:00+00:00",
+      "title": "New Ask Maps features to help with holiday travel and prep",
+      "summary": "tbd",
+      "meaning": "",
+      "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-d91fd06de7b8771ee8ad",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T12:00:00+00:00",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+      "meaning": "",
+      "url": "https://openai.com/index/science-at-the-frontier",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-0deff323b14a8bbea27f",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T10:57:31+00:00",
+      "title": "睿尔曼智能郑随兵：质量、经济性、稳定性是机器人落地三大标准",
+      "summary": "具身智能的真正价值是“把人的经验、技能复刻出来”",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510542.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-ff7833693fa2a06713dc",
       "date": "2026-11-16",
@@ -63,6 +287,80 @@
       "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
       "meaning": "",
       "url": "https://openai.com/index/lvmh-media-division-partnership",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-9fe6d2ae73e55f52b807",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T08:00:00+00:00",
+      "title": "Our first phase of embedded assessments",
+      "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+      "meaning": "",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-950d93174fb288e31c26",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T07:51:57+00:00",
+      "title": "阿里正式发布Qwen4，智能体及编程能力进阶，迈向真实全场景",
+      "summary": "11月16日，阿里巴巴发布全新一代基座大模型Qwen4-Max",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510486.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-21b4758ab52123ac78ff",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T06:00:00+00:00",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "summary": "",
+      "meaning": "",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-21e886491b30cfff0403",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T06:00:00+00:00",
+      "title": "More ways to move care forward with ChatGPT for Healthcare",
+      "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+      "meaning": "",
+      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
@@ -110,6 +408,44 @@
       "is_tier0": false,
       "companies": [
         "OpenAI"
+      ]
+    },
+    {
+      "id": "live-3d4aeac88b69acfaa9cd",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "title": "At Holiday Extras, dots get to work before anyone asks",
+      "summary": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-8ec21efa2c62273428cb",
+      "date": "2026-11-16",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/openrouter",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
@@ -322,7 +658,7 @@
       "id": "live-a0730e6c360a165831b4",
       "date": "2026-11-13",
       "published_at": "2026-11-13T13:00:42+00:00",
-      "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+      "title": "AI Is Helping Care Teams Get Patients the Right Care, Sooner",
       "summary": "From pediatric research to smart hospitals, AI is helping care teams spend less time on routine tasks and more time with patients. Health systems and startups are putting it to work across healthcare, from matching patients to clinical trials to supporting radiologists, hospital teams and patients a",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
@@ -873,7 +1209,7 @@
       "id": "live-0a9ebdb63db3687d3463",
       "date": "2026-11-11",
       "published_at": "2026-11-11T03:00:20+00:00",
-      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "title": "AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
       "summary": "Vision AI and robotics pick what’s worth recovering out of conveyor belts of used clothing, bottles and mixed recyclables, diverting thousands of tons of materials from landfills.",
       "meaning": "",
       "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
