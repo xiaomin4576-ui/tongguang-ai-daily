@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-18T05:30:32.111311+00:00",
-    "last_success_at": "2026-11-18T05:30:32.111311+00:00",
+    "attempted_at": "2026-11-18T13:54:50.093843+00:00",
+    "last_success_at": "2026-11-18T13:54:50.093843+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-18T05:00:00+00:00",
+    "latest_article_at": "2026-11-18T07:53:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,7 +17,7 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 6
+        "items": 5
       },
       {
         "id": "nvidia",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,47 @@
         "items": 7
       }
     ],
-    "total_articles": 570,
+    "total_articles": 573,
     "received_items": 67,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-9b1d4b1c8e4709a4ac68",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T07:53:29+00:00",
+      "title": "GPT-6.2难产！OpenAI怕了",
+      "summary": "OpenAI也终于活成了2022年谷歌的样子",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510914.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-7fb501c0936f691c53c1",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T07:24:50+00:00",
+      "title": "全球首个医疗健康AI独立评测与分析平台InclusionMed正式上线",
+      "summary": "近日，全球首个医疗健康 AI 独立评测与分析平台InclusionMed 正式上线",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510916.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-55cafb7085284a534355",
       "date": "2026-11-18",
@@ -82,6 +118,25 @@
       "url": "https://www.qbitai.com/2026/11/510707.html",
       "source": "量子位",
       "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a1de396d3910fa2e0f79",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "summary": "Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+      "meaning": "",
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
       "automated": true,
       "dimension": "📰 自动快讯",
       "quality_score": null,
