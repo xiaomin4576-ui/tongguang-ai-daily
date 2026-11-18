@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-17T23:50:08.217715+00:00",
-    "last_success_at": "2026-11-17T23:50:08.217715+00:00",
+    "attempted_at": "2026-11-18T05:30:32.111311+00:00",
+    "last_success_at": "2026-11-18T05:30:32.111311+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-17T22:52:29+00:00",
+    "latest_article_at": "2026-11-18T05:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,13 +23,13 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 6
       },
       {
         "id": "simonwillison",
@@ -47,14 +47,50 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 6
+        "items": 7
       }
     ],
-    "total_articles": 568,
-    "received_items": 69,
+    "total_articles": 570,
+    "received_items": 67,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-55cafb7085284a534355",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T05:00:00+00:00",
+      "title": "Helping AI text detectors keep up with changing conditions",
+      "summary": "A more flexible training method can make AI text detectors more robust when new models emerge or AI-generated text is disguised to appear human.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/helping-ai-text-detectors-keep-up-with-changing-conditions-1118",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-dd09c1f84b47eec6ed10",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T00:49:14+00:00",
+      "title": "GPT-6.2 Astra和Sol王炸双发！3D又危了",
+      "summary": "Sol逼近旗舰性能",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/510707.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-b4439a7527ca175b45e5",
       "date": "2026-11-18",
