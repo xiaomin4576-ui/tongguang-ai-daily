@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-19T05:28:57.029260+00:00",
-    "last_success_at": "2026-11-19T05:28:57.029260+00:00",
+    "attempted_at": "2026-11-19T14:23:39.336819+00:00",
+    "last_success_at": "2026-11-19T14:23:39.336819+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-19T03:01:45+00:00",
     "sources_ok": 7,
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 9
+        "items": 10
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,7 +50,7 @@
         "items": 6
       }
     ],
-    "total_articles": 588,
+    "total_articles": 589,
     "received_items": 67,
     "mode": "rss-source-excerpts"
   },
@@ -71,6 +71,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-02f125d9c6cc44016cdd",
+      "date": "2026-11-19",
+      "published_at": "2026-11-18T23:59:20+00:00",
+      "title": "llm-gemini 0.38",
+      "summary": "Release: llm-gemini 0.38 Today Google introduced Gemini 4 Neon . I wrote recently about how confusing the pricing for the Gemini 4 series was - Neon has somehow made this even worse. Previously the Gemini 4 lineup was Hydrogen, Argon, and Carbon - where Argon and Carbon were the same price , and Hyd",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
     },
     {
       "id": "live-f0b81ce3c14612880642",
