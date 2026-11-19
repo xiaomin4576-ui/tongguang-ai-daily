@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-19T14:23:39.336819+00:00",
-    "last_success_at": "2026-11-19T14:23:39.336819+00:00",
+    "attempted_at": "2026-11-19T23:33:43.259367+00:00",
+    "last_success_at": "2026-11-19T23:33:43.259367+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-19T03:01:45+00:00",
+    "latest_article_at": "2026-11-19T22:15:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -17,19 +17,19 @@
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 4
+        "items": 5
       },
       {
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "simonwillison",
@@ -47,14 +47,124 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 6
+        "items": 7
       }
     ],
-    "total_articles": 589,
-    "received_items": 67,
+    "total_articles": 597,
+    "received_items": 69,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-c842cebd4bd1f2ab5a8a",
+      "date": "2026-11-20",
+      "published_at": "2026-11-19T22:15:00+00:00",
+      "title": "AI helps researchers investigate how thousands of medical studies share code",
+      "summary": "An MIT and Dana-Farber Institute-led team used large language models to examine nearly 4,000 studies and hundreds of code repositories, revealing gaps in the information needed to scrutinize and reuse published research.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-a457925fbd609abe8fd6",
+      "date": "2026-11-20",
+      "published_at": "2026-11-19T20:43:57+00:00",
+      "title": "PostgreSQL 19 Released",
+      "summary": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-1b3aafed7dd5d45c6822",
+      "date": "2026-11-20",
+      "published_at": "2026-11-19T18:00:00+00:00",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "summary": "Gemini spark on a space background",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-5beef147a7815df46333",
+      "date": "2026-11-20",
+      "published_at": "2026-11-19T17:00:35+00:00",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for explori",
+      "meaning": "",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source": "NVIDIA 官方",
+      "source_id": "nvidia",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "NVIDIA"
+      ]
+    },
+    {
+      "id": "live-d47c74f9a7ce43a8bb22",
+      "date": "2026-11-20",
+      "published_at": "2026-11-19T17:00:00+00:00",
+      "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+      "summary": "Walter Isaacson joins Google to discuss how history’s greatest innovators inspire creativity and human judgment in the AI age. Watch the episode.",
+      "meaning": "",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-9342dbf934e428aa00c1",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T08:00:00+00:00",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "summary": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+      "meaning": "",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-4e8e62a0bf22e4265571",
       "date": "2026-11-19",
@@ -71,6 +181,63 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-82fe289fe466dcc1d4f7",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "title": "Explore the Codex Security Plugin",
+      "summary": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+      "meaning": "",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-17b7a2b39f098895a220",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "title": "See PR scans in action",
+      "summary": "Watch a walkthrough of PR scans and see how the presenter reviews scan results in a pull request workflow.",
+      "meaning": "",
+      "url": "https://openai.com/business/learn/pr-scans-demo",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-da30645137037f0052cd",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "title": "Get started with Daybreak Blue",
+      "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
+      "meaning": "",
+      "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-02f125d9c6cc44016cdd",
@@ -2877,25 +3044,6 @@
       "companies": [
         "NVIDIA",
         "Hugging Face"
-      ]
-    },
-    {
-      "id": "live-5beef147a7815df46333",
-      "date": "2026-11-06",
-      "published_at": "2026-11-05T17:00:35+00:00",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for explori",
-      "meaning": "",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "NVIDIA 官方",
-      "source_id": "nvidia",
-      "automated": true,
-      "dimension": "📰 自动快讯",
-      "quality_score": null,
-      "is_top5": false,
-      "is_tier0": false,
-      "companies": [
-        "NVIDIA"
       ]
     },
     {
