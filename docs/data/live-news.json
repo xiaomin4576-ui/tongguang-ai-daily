@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-18T23:22:32.448806+00:00",
-    "last_success_at": "2026-11-18T23:22:32.448806+00:00",
+    "attempted_at": "2026-11-19T05:28:57.029260+00:00",
+    "last_success_at": "2026-11-19T05:28:57.029260+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-18T19:54:56+00:00",
+    "latest_article_at": "2026-11-19T03:01:45+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 11
+        "items": 10
       },
       {
         "id": "simonwillison",
@@ -47,14 +47,31 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 7
+        "items": 6
       }
     ],
-    "total_articles": 585,
-    "received_items": 69,
+    "total_articles": 588,
+    "received_items": 67,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-4e8e62a0bf22e4265571",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T03:01:45+00:00",
+      "title": "范式下场做基模了！国产算力全链路训练，双模型同步亮相",
+      "summary": "语言模型单张3090卡即可运行",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/511071.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-f0b81ce3c14612880642",
       "date": "2026-11-19",
@@ -194,6 +211,44 @@
       "summary": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
       "meaning": "",
       "url": "https://openai.com/index/inside-the-codex-sandbox",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-58da586369f33999eb92",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T08:00:00+00:00",
+      "title": "Research acceleration: The jagged frontier",
+      "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+      "meaning": "",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-53d809d7420a3923e8ba",
+      "date": "2026-11-18",
+      "published_at": "2026-11-18T08:00:00+00:00",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "summary": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/sumitomo-life",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
