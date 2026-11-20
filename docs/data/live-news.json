@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-20T13:58:43.312824+00:00",
-    "last_success_at": "2026-11-20T13:58:43.312824+00:00",
+    "attempted_at": "2026-11-20T23:04:12.596111+00:00",
+    "last_success_at": "2026-11-20T23:04:12.596111+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-20T08:04:58+00:00",
+    "latest_article_at": "2026-11-20T20:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -29,13 +29,13 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 10
+        "items": 8
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 11
+        "items": 13
       },
       {
         "id": "qbitai",
@@ -47,14 +47,103 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 7
       }
     ],
-    "total_articles": 602,
-    "received_items": 68,
+    "total_articles": 610,
+    "received_items": 70,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b2926e8e7f4e634ac812",
+      "date": "2026-11-21",
+      "published_at": "2026-11-20T20:00:00+00:00",
+      "title": "New approach enables physically consistent AI models of chaotic systems",
+      "summary": "Enforcing physics-based constraints prevents AI models from generating unreliable predictions for complex nonlinear systems in weather, climate, and turbulent flows.",
+      "meaning": "",
+      "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-cf3b0c6c1cbc2369e530",
+      "date": "2026-11-21",
+      "published_at": "2026-11-20T19:21:49+00:00",
+      "title": "Quoting Ravi Vakil",
+      "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford fo",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-f27b1f34ce20932cc3d0",
+      "date": "2026-11-21",
+      "published_at": "2026-11-20T16:30:48+00:00",
+      "title": "Quoting Levent Alpöge",
+      "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the argum",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-29c6398dc2aba28f7ebb",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T15:20:00+00:00",
+      "title": "Following the “mathocalypse,” mathematicians consider the future",
+      "summary": "A panel discussion at MIT explored AI’s implications for mathematical discovery and the people who make it their profession.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/following-mathocalypse-mathematicians-consider-future-1120",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-7ad44f990f0c53ef2e2a",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T10:00:00+00:00",
+      "title": "Combatting adversarial distillation",
+      "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+      "meaning": "",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-d0a61d8eb89b4a5fb6c0",
       "date": "2026-11-20",
@@ -116,6 +205,63 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-8145fefb47ff1ca9fa55",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "summary": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-c1a2af93db54bfcf7c21",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "summary": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+      "meaning": "",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-824c03b970f1dc58cad6",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T00:00:00+00:00",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/inkling2mini",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
