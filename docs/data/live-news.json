@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-19T23:33:43.259367+00:00",
-    "last_success_at": "2026-11-19T23:33:43.259367+00:00",
+    "attempted_at": "2026-11-20T05:16:06.056091+00:00",
+    "last_success_at": "2026-11-20T05:16:06.056091+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-19T22:15:00+00:00",
+    "latest_article_at": "2026-11-20T02:49:57+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,7 +35,7 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 10
+        "items": 11
       },
       {
         "id": "qbitai",
@@ -47,14 +47,50 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 7
+        "items": 5
       }
     ],
-    "total_articles": 597,
-    "received_items": 69,
+    "total_articles": 600,
+    "received_items": 68,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-478ea25aeed3c99796b0",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T02:49:57+00:00",
+      "title": "Token fraud is here and it’s BAD (YouTube)",
+      "summary": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying ",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-15bb46163c51fe489b0a",
+      "date": "2026-11-20",
+      "published_at": "2026-11-20T01:07:38+00:00",
+      "title": "具身机器人进入真机时代，华为云CloudRobo开始组队发力了",
+      "summary": "一批卡可以轮流服务多家公司，一次适配也能让更多团队受益。算力不必家家从头买，工程上的坑也不用家家重新踩。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/511426.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-c842cebd4bd1f2ab5a8a",
       "date": "2026-11-20",
@@ -228,6 +264,25 @@
       "summary": "Watch a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.",
       "meaning": "",
       "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a890a236270cc5e31862",
+      "date": "2026-11-19",
+      "published_at": "2026-11-19T00:00:00+00:00",
+      "title": "Deploying Daybreak Red",
+      "summary": "Explore a reference architecture for supervised security investigations with Daybreak Red, including safety controls, setup, and monitoring.",
+      "meaning": "",
+      "url": "https://openai.com/business/learn/deploying-daybreak-red",
       "source": "OpenAI 官方",
       "source_id": "openai",
       "automated": true,
