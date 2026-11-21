@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-21T05:09:05.249498+00:00",
-    "last_success_at": "2026-11-21T05:09:05.249498+00:00",
+    "attempted_at": "2026-11-21T13:26:22.729542+00:00",
+    "last_success_at": "2026-11-21T13:26:22.729542+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-20T20:00:00+00:00",
+    "latest_article_at": "2026-11-21T06:35:59+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,30 @@
         "items": 7
       }
     ],
-    "total_articles": 610,
+    "total_articles": 611,
     "received_items": 70,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-30830ca4509d4d79a445",
+      "date": "2026-11-21",
+      "published_at": "2026-11-21T06:35:59+00:00",
+      "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
+      "summary": "还实现可变形物体操控全球首通",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/511779.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-b2926e8e7f4e634ac812",
       "date": "2026-11-21",
