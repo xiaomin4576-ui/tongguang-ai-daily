@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-22T13:18:01.479881+00:00",
-    "last_success_at": "2026-11-22T13:18:01.479881+00:00",
+    "attempted_at": "2026-11-22T22:27:28.285780+00:00",
+    "last_success_at": "2026-11-22T22:27:28.285780+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-21T23:56:28+00:00",
+    "latest_article_at": "2026-11-22T00:00:00+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,30 @@
         "items": 7
       }
     ],
-    "total_articles": 613,
+    "total_articles": 614,
     "received_items": 68,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-1a10f1676d46fc01a909",
+      "date": "2026-11-22",
+      "published_at": "2026-11-22T00:00:00+00:00",
+      "title": "Perplexity and Intelligence",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "meaning": "",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-dc9b4a0c426ddc42fdcf",
       "date": "2026-11-22",
