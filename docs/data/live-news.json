@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-22T22:27:28.285780+00:00",
-    "last_success_at": "2026-11-22T22:27:28.285780+00:00",
+    "attempted_at": "2026-11-23T03:42:12.598787+00:00",
+    "last_success_at": "2026-11-23T03:42:12.598787+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-22T00:00:00+00:00",
+    "latest_article_at": "2026-11-22T19:45:06+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -23,13 +23,13 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "simonwillison",
@@ -50,11 +50,30 @@
         "items": 7
       }
     ],
-    "total_articles": 614,
-    "received_items": 68,
+    "total_articles": 615,
+    "received_items": 66,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b0c1b6250591975f9e1e",
+      "date": "2026-11-23",
+      "published_at": "2026-11-22T19:45:06+00:00",
+      "title": "Select Styling Specimens",
+      "summary": "Tool: Select Styling Specimens I got frustrated at how HTML boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a selec",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-1a10f1676d46fc01a909",
       "date": "2026-11-22",
