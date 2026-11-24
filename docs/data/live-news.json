@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-24T07:55:17.159058+00:00",
-    "last_success_at": "2026-11-24T07:55:17.159058+00:00",
+    "attempted_at": "2026-11-24T15:49:56.201764+00:00",
+    "last_success_at": "2026-11-24T15:49:56.201764+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-24T04:24:29+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 20
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "huggingface",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "mit-ai",
@@ -51,7 +51,7 @@
       }
     ],
     "total_articles": 634,
-    "received_items": 62,
+    "received_items": 59,
     "mode": "rss-source-excerpts"
   },
   "articles": [
@@ -77,7 +77,7 @@
       "date": "2026-11-24",
       "published_at": "2026-11-24T03:45:57+00:00",
       "title": "datasette-agent 0.7a1",
-      "summary": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hash",
+      "summary": "Release: datasette-agent 0.7a1 A small improvement to Datasette Agent : chat sessions could already open an iframe side panel that could then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment has",
       "meaning": "",
       "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
       "source": "Simon Willison",
