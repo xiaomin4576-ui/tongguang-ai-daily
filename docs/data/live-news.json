@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-24T03:19:17.535251+00:00",
-    "last_success_at": "2026-11-24T03:19:17.535251+00:00",
+    "attempted_at": "2026-11-24T07:55:17.159058+00:00",
+    "last_success_at": "2026-11-24T07:55:17.159058+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-23T23:40:49+00:00",
+    "latest_article_at": "2026-11-24T04:24:29+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,26 +35,77 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 13
+        "items": 15
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 6
+        "items": 2
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 9
+        "items": 7
       }
     ],
-    "total_articles": 631,
-    "received_items": 66,
+    "total_articles": 634,
+    "received_items": 62,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-bfe39e5b176c7b576ee4",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T04:24:29+00:00",
+      "title": "datasette-charts 0.2a0",
+      "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools. Here's a demo video",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-cde2e4331c947b3b8676",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T03:45:57+00:00",
+      "title": "datasette-agent 0.7a1",
+      "summary": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hash",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-98c6a4bd74657365f4f8",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T03:21:12+00:00",
+      "title": "释放AI与出海强预期，近1500人参与亿邦产业互联网年会暨首届产业智能体大会",
+      "summary": "2026年11月20日，第八届亿邦产业互联网年会与首届产业智能体大会在北京国贸大酒店首次合体举行。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512305.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-2f3ef0ead000ffc6df4c",
       "date": "2026-11-24",
