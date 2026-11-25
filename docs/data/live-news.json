@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-24T15:49:56.201764+00:00",
-    "last_success_at": "2026-11-24T15:49:56.201764+00:00",
+    "attempted_at": "2026-11-25T01:25:09.106010+00:00",
+    "last_success_at": "2026-11-25T01:25:09.106010+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-24T04:24:29+00:00",
+    "latest_article_at": "2026-11-24T23:02:07+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 20
+        "items": 22
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 9
+        "items": 8
       },
       {
         "id": "simonwillison",
@@ -50,11 +50,140 @@
         "items": 7
       }
     ],
-    "total_articles": 634,
-    "received_items": 59,
+    "total_articles": 644,
+    "received_items": 60,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-0b260d07579db8478ef4",
+      "date": "2026-11-25",
+      "published_at": "2026-11-24T23:02:07+00:00",
+      "title": "Three LLM inflection points in twelve months",
+      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-15de07f0ce6e60833b26",
+      "date": "2026-11-25",
+      "published_at": "2026-11-24T19:30:00+00:00",
+      "title": "Agentic system personalizes physical controls to help users “DJ their art”",
+      "summary": "“TangiMap” uses an AI agent to reprogram how buttons, knobs, and sliders are used, helping users do things like edit photos and perform music in a more dynamic, tactile way.",
+      "meaning": "",
+      "url": "https://news.mit.edu/2026/tangimap-agentic-system-personalizes-physical-controls-help-users-dj-their-art-1124",
+      "source": "MIT AI 研究新闻",
+      "source_id": "mit-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-2d9b2b8de4028adf7548",
+      "date": "2026-11-25",
+      "published_at": "2026-11-24T16:53:59+00:00",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "summary": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Be",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-6a28e842b3bf4bfd8400",
+      "date": "2026-11-25",
+      "published_at": "2026-11-24T16:34:13+00:00",
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-0d108e7b71c406494d2f",
+      "date": "2026-11-25",
+      "published_at": "2026-11-24T16:00:00+00:00",
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "summary": "Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "meaning": "",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "source": "Google AI 官方",
+      "source_id": "google-ai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Google"
+      ]
+    },
+    {
+      "id": "live-ac2f786b30f6d45772c4",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T13:00:00+00:00",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "meaning": "",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-7758c04a629331bf9638",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T11:00:00+00:00",
+      "title": "Searching for distant planets with Astra",
+      "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+      "meaning": "",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
     {
       "id": "live-bfe39e5b176c7b576ee4",
       "date": "2026-11-24",
@@ -105,6 +234,63 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-7e14b56be67443085907",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "title": "How Intentful uses dots to make more time for growth",
+      "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-89a905d5eae9fa3ef5a8",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "summary": "",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
+    },
+    {
+      "id": "live-a3c9028eefd69cfd15ff",
+      "date": "2026-11-24",
+      "published_at": "2026-11-24T00:00:00+00:00",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+      "meaning": "",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "source": "OpenAI 官方",
+      "source_id": "openai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "OpenAI"
+      ]
     },
     {
       "id": "live-2f3ef0ead000ffc6df4c",
