@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-25T06:30:26.851481+00:00",
-    "last_success_at": "2026-11-25T06:30:26.851481+00:00",
+    "attempted_at": "2026-11-25T15:33:12.718825+00:00",
+    "last_success_at": "2026-11-25T15:33:12.718825+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-24T23:02:07+00:00",
+    "latest_article_at": "2026-11-25T14:32:57+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 21
+        "items": 17
       },
       {
         "id": "google-ai",
@@ -23,7 +23,7 @@
         "id": "nvidia",
         "name": "NVIDIA 官方",
         "ok": true,
-        "items": 2
+        "items": 1
       },
       {
         "id": "huggingface",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 1
+        "items": 4
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,100 @@
         "items": 6
       }
     ],
-    "total_articles": 644,
-    "received_items": 58,
+    "total_articles": 649,
+    "received_items": 56,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-b96dec21a3c74fed0e8e",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T14:32:57+00:00",
+      "title": "零基础也能做开发，智元灵心平台一年孵化超3万个机器人智能体",
+      "summary": "智元推出行业首个开放且完整的具身智能生态技术体系AIMA",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512715.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-439fbf13769c355d2901",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T14:21:20+00:00",
+      "title": "算力唤醒真实世界：九章云极发布物理AI工厂与生态开放计划",
+      "summary": "11月25日，以“算力唤醒真实世界”为主题的2026物理AI行业峰会暨九章云极智算生态大会在深圳举行。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512582.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-5259b63e74e590812b1a",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T14:20:24+00:00",
+      "title": "逐际动⼒与商汤⼤装置达成合作，以高质量算力全⾯⽀撑机器⼈仿真训练与测试",
+      "summary": "贯通具⾝智能研发流程",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512683.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-0077e07924e43bf73f6b",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T10:22:09+00:00",
+      "title": "An Indic Voice Agent with CUGA",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-729f0e2d8737638594a0",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T02:43:07+00:00",
+      "title": "Claude Opus 5.6灰测效果来了",
+      "summary": "整体效率大约是此前Opus版本的2到3倍。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512478.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
     {
       "id": "live-0b260d07579db8478ef4",
       "date": "2026-11-25",
