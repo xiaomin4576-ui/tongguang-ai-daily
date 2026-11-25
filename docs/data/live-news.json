@@ -1,7 +1,7 @@
 {
   "meta": {
-    "attempted_at": "2026-11-25T01:25:09.106010+00:00",
-    "last_success_at": "2026-11-25T01:25:09.106010+00:00",
+    "attempted_at": "2026-11-25T06:30:26.851481+00:00",
+    "last_success_at": "2026-11-25T06:30:26.851481+00:00",
     "status": "ok",
     "latest_article_at": "2026-11-24T23:02:07+00:00",
     "sources_ok": 7,
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 22
+        "items": 21
       },
       {
         "id": "google-ai",
@@ -47,11 +47,11 @@
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 7
+        "items": 6
       }
     ],
     "total_articles": 644,
-    "received_items": 60,
+    "received_items": 58,
     "mode": "rss-source-excerpts"
   },
   "articles": [
