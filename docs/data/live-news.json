@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-26T06:22:20.707145+00:00",
-    "last_success_at": "2026-11-26T06:22:20.707145+00:00",
+    "attempted_at": "2026-11-26T15:08:25.346404+00:00",
+    "last_success_at": "2026-11-26T15:08:25.346404+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-26T05:05:36+00:00",
+    "latest_article_at": "2026-11-26T12:39:08+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 13
+        "items": 12
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 9
       },
       {
         "id": "simonwillison",
@@ -41,7 +41,7 @@
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 2
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,65 @@
         "items": 6
       }
     ],
-    "total_articles": 652,
+    "total_articles": 656,
     "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-09833f9f7cac1a74f625",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T12:39:08+00:00",
+      "title": "AI 3D界的“X光”来了！一图直出巴洛克雕塑，3D打印开箱即用",
+      "summary": "还得是科班尖子生",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512981.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-a734da9d3a1d876054f8",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:37:17+00:00",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Meta",
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-240d5b9605884f656844",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T10:07:55+00:00",
+      "title": "90 秒自动换装补能，具微科技“潘多拉”支撑机器人无人化值守",
+      "summary": "全栈方案破解工业机器人连续作业难题",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/512972.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-3d2697b636d74b834fc0",
       "date": "2026-11-26",
@@ -63,6 +117,25 @@
       "summary": "",
       "meaning": "",
       "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
+    {
+      "id": "live-819f2bb8e324e5e7f3ab",
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T00:00:00+00:00",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/training-swarms",
       "source": "Hugging Face 官方",
       "source_id": "huggingface",
       "automated": true,
