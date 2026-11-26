@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-25T15:33:12.718825+00:00",
-    "last_success_at": "2026-11-25T15:33:12.718825+00:00",
+    "attempted_at": "2026-11-26T00:58:59.220622+00:00",
+    "last_success_at": "2026-11-26T00:58:59.220622+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-25T14:32:57+00:00",
+    "latest_article_at": "2026-11-25T18:52:55+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,13 +11,13 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 17
+        "items": 13
       },
       {
         "id": "google-ai",
         "name": "Google AI 官方",
         "ok": true,
-        "items": 5
+        "items": 4
       },
       {
         "id": "nvidia",
@@ -29,19 +29,19 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 8
+        "items": 7
       },
       {
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 15
+        "items": 13
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 4
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,30 @@
         "items": 6
       }
     ],
-    "total_articles": 649,
-    "received_items": 56,
+    "total_articles": 651,
+    "received_items": 47,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-88bd06d7e0e9b82f43a3",
+      "date": "2026-11-26",
+      "published_at": "2026-11-25T18:52:55+00:00",
+      "title": "Where scientists draw the line on AI agents",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
+    },
     {
       "id": "live-b96dec21a3c74fed0e8e",
       "date": "2026-11-25",
@@ -142,6 +161,25 @@
       "is_tier0": false,
       "companies": [
         "Anthropic"
+      ]
+    },
+    {
+      "id": "live-df3be113c8aed13fbadf",
+      "date": "2026-11-25",
+      "published_at": "2026-11-25T00:00:00+00:00",
+      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
       ]
     },
     {
