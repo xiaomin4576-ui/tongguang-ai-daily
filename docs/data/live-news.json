@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-27T06:11:44.862798+00:00",
-    "last_success_at": "2026-11-27T06:11:44.862798+00:00",
+    "attempted_at": "2026-11-27T15:00:01.292094+00:00",
+    "last_success_at": "2026-11-27T15:00:01.292094+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-27T04:05:56+00:00",
+    "latest_article_at": "2026-11-27T07:01:20+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -11,7 +11,7 @@
         "id": "openai",
         "name": "OpenAI 官方",
         "ok": true,
-        "items": 10
+        "items": 9
       },
       {
         "id": "google-ai",
@@ -29,7 +29,7 @@
         "id": "huggingface",
         "name": "Hugging Face 官方",
         "ok": true,
-        "items": 7
+        "items": 8
       },
       {
         "id": "simonwillison",
@@ -50,11 +50,28 @@
         "items": 5
       }
     ],
-    "total_articles": 660,
+    "total_articles": 662,
     "received_items": 39,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-efc4d8bbad49c23c1b4e",
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T07:01:20+00:00",
+      "title": "刚刚，首个带跨任务空间记忆的原生基模开源！机器人端侧就能跑",
+      "summary": "地图能随时修，记忆能跨任务用",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/513227.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-27dfd36c46dd32b9224d",
       "date": "2026-11-27",
@@ -88,6 +105,25 @@
       "is_top5": false,
       "is_tier0": false,
       "companies": []
+    },
+    {
+      "id": "live-c2bd7953104652e48b06",
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T00:00:00+00:00",
+      "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+      "summary": "",
+      "meaning": "",
+      "url": "https://huggingface.co/blog/video-trainium3",
+      "source": "Hugging Face 官方",
+      "source_id": "huggingface",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Hugging Face"
+      ]
     },
     {
       "id": "live-fcbb41954277a0a1d4ec",
