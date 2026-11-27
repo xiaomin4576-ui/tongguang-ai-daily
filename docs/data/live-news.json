@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-27T00:59:59.234054+00:00",
-    "last_success_at": "2026-11-27T00:59:59.234054+00:00",
+    "attempted_at": "2026-11-27T06:11:44.862798+00:00",
+    "last_success_at": "2026-11-27T06:11:44.862798+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-26T15:09:31+00:00",
+    "latest_article_at": "2026-11-27T04:05:56+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,13 +35,13 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 14
+        "items": 12
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "id": "mit-ai",
@@ -50,11 +50,45 @@
         "items": 5
       }
     ],
-    "total_articles": 658,
-    "received_items": 40,
+    "total_articles": 660,
+    "received_items": 39,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-27dfd36c46dd32b9224d",
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T04:05:56+00:00",
+      "title": "钛动科技 × 腾讯云达成战略合作，用AI打开企业全球增长新空间",
+      "summary": "企业需要有用的 AI",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/513194.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
+    {
+      "id": "live-a063b16e223d7f89dcd5",
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T03:33:11+00:00",
+      "title": "具身公司抱团回应：通用大模型跨维打击？没那么简单",
+      "summary": "",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/513125.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-fcbb41954277a0a1d4ec",
       "date": "2026-11-26",
