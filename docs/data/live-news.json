@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-28T05:51:50.303087+00:00",
-    "last_success_at": "2026-11-28T05:51:50.303087+00:00",
+    "attempted_at": "2026-11-28T14:09:11.251120+00:00",
+    "last_success_at": "2026-11-28T14:09:11.251120+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-27T23:57:17+00:00",
+    "latest_article_at": "2026-11-28T05:54:46+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -50,11 +50,28 @@
         "items": 3
       }
     ],
-    "total_articles": 664,
+    "total_articles": 665,
     "received_items": 37,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-47e927e579600768aba7",
+      "date": "2026-11-28",
+      "published_at": "2026-11-28T05:54:46+00:00",
+      "title": "亏贼！卡帕西用Claude搓出“美国版《文明》”，网友直接玩成全球接力赛",
+      "summary": "这种大模型现做的即时交互工具，能不能来一波知识付费？",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/513428.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-bedee2e9acb0a56aa261",
       "date": "2026-11-28",
