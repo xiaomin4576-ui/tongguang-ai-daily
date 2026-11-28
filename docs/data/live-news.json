@@ -1,9 +1,9 @@
 {
   "meta": {
-    "attempted_at": "2026-11-27T15:00:01.292094+00:00",
-    "last_success_at": "2026-11-27T15:00:01.292094+00:00",
+    "attempted_at": "2026-11-28T00:31:58.047780+00:00",
+    "last_success_at": "2026-11-28T00:31:58.047780+00:00",
     "status": "ok",
-    "latest_article_at": "2026-11-27T07:01:20+00:00",
+    "latest_article_at": "2026-11-27T23:57:17+00:00",
     "sources_ok": 7,
     "sources_total": 7,
     "source_checks": [
@@ -35,26 +35,62 @@
         "id": "simonwillison",
         "name": "Simon Willison",
         "ok": true,
-        "items": 12
+        "items": 11
       },
       {
         "id": "qbitai",
         "name": "量子位",
         "ok": true,
-        "items": 3
+        "items": 4
       },
       {
         "id": "mit-ai",
         "name": "MIT AI 研究新闻",
         "ok": true,
-        "items": 5
+        "items": 3
       }
     ],
-    "total_articles": 662,
-    "received_items": 39,
+    "total_articles": 664,
+    "received_items": 37,
     "mode": "rss-source-excerpts"
   },
   "articles": [
+    {
+      "id": "live-bedee2e9acb0a56aa261",
+      "date": "2026-11-28",
+      "published_at": "2026-11-27T23:57:17+00:00",
+      "title": "datasette-charts 0.4a0",
+      "summary": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the hook and it came up with a bunch of fricti",
+      "meaning": "",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+      "source": "Simon Willison",
+      "source_id": "simonwillison",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": [
+        "Anthropic"
+      ]
+    },
+    {
+      "id": "live-5bdd6335cec81c84b52f",
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T14:07:33+00:00",
+      "title": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了",
+      "summary": "一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。",
+      "meaning": "",
+      "url": "https://www.qbitai.com/2026/11/513352.html",
+      "source": "量子位",
+      "source_id": "qbitai",
+      "automated": true,
+      "dimension": "📰 自动快讯",
+      "quality_score": null,
+      "is_top5": false,
+      "is_tier0": false,
+      "companies": []
+    },
     {
       "id": "live-efc4d8bbad49c23c1b4e",
       "date": "2026-11-27",
